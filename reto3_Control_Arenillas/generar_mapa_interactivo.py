@@ -1,17 +1,16 @@
 """
 Generador del Visor Geoespacial Interactivo - Reto 3: Control de Arenillas
-Equipo: Algoritmo Verde YT
-Yachay Open Science Week 2026
+Equipo: Algoritmo Verde YT | Yachay Open Science Week 2026
+Calibrado con Coordenadas GPS Oficiales de Google Maps
 """
 
 import folium
 from folium import plugins
-import json
 
 def generar_mapa():
-    # Coordenadas centrales del campus de Yachay Tech
-    center_lat = 0.4050
-    center_lon = -78.1750
+    # Coordenadas centrales calibradas de Yachay Tech
+    center_lat = 0.4048
+    center_lon = -78.1725
     
     # Crear el mapa base centrado en Yachay Tech
     m = folium.Map(
@@ -21,8 +20,20 @@ def generar_mapa():
         control_scale=True
     )
     
-    # Capa 1: Satélite de Alta Resolución (Esri World Imagery)
-    esri_satellite = folium.TileLayer(
+    # -------------------------------------------------------------
+    # CAPAS BASE
+    # -------------------------------------------------------------
+    # 1. Google Híbrido (Satélite de máxima fidelidad + Vías)
+    folium.TileLayer(
+        tiles='https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}',
+        attr='Google Maps Satellite Hybrid',
+        name='Google Satélite Híbrido (Recomendado)',
+        overlay=False,
+        control=True
+    ).add_to(m)
+
+    # 2. Satélite Esri
+    folium.TileLayer(
         tiles='https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
         attr='Esri World Imagery',
         name='Satélite Esri (Alta Resolución)',
@@ -30,44 +41,36 @@ def generar_mapa():
         control=True
     ).add_to(m)
     
-    # Capa 2: OpenStreetMap
+    # 3. OpenStreetMap
     folium.TileLayer(
         tiles='OpenStreetMap',
         name='Mapa Callejero (OSM)',
         overlay=False,
         control=True
     ).add_to(m)
-    
-    # Capa 3: Google Maps Satellite (Tiles estándar)
-    folium.TileLayer(
-        tiles='https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}',
-        attr='Google Maps Satellite Hybrid',
-        name='Google Híbrido (Satélite + Vías)',
-        overlay=False,
-        control=True
-    ).add_to(m)
-    
-    # ==========================================
-    # GRUPOS DE CAPAS INTERACTIVAS
-    # ==========================================
-    fg_zonas = folium.FeatureGroup(name="⚠️ Zonas Críticas Oficiales (Mapa Corregido)", show=True)
-    fg_canales = folium.FeatureGroup(name="💧 Canales de Agua y Focos Larvarios (Simuliidae)", show=True)
-    fg_edificios = folium.FeatureGroup(name="🏛️ Edificaciones Vulnerables (Aulas / Dormitorios)", show=True)
-    fg_cercas = folium.FeatureGroup(name="🌿 Propuesta: Cercas Vivas Repelentes", show=True)
-    fg_trampas = folium.FeatureGroup(name="🎯 Red de Trampas de Monitoreo Biológico", show=True)
-    fg_buffer = folium.FeatureGroup(name="🛡️ Cobertura de Protección (Buffer Repelente)", show=True)
 
-    # ------------------------------------------
-    # 1. ZONAS CRÍTICAS (Polígonos aproximados al mapa corregido)
-    # ------------------------------------------
-    # Zona 1: Multifamiliares y Pats (Sur/Suroeste - Residencias estudiantiles)
+    # -------------------------------------------------------------
+    # FEATURE GROUPS (CAPAS TEMÁTICAS)
+    # -------------------------------------------------------------
+    fg_zonas = folium.FeatureGroup(name="⚠️ Zonas Críticas Oficiales (Calibradas GPS)", show=True)
+    fg_edificios = folium.FeatureGroup(name="🏛️ Edificaciones Reales (Google Maps)", show=True)
+    fg_canales = folium.FeatureGroup(name="💧 Canales Hídricos y Focos Larvarios (Simuliidae)", show=True)
+    fg_biocontrol = folium.FeatureGroup(name="🦗 Control Biológico Acuático (Libélulas + Bti)", show=True)
+    fg_cercas = folium.FeatureGroup(name="🌿 Cercas Vivas en 3 Estratos (Algoritmo Verde)", show=True)
+    fg_buffer = folium.FeatureGroup(name="🛡️ Cobertura Repelente (Buffer de Monoterpenos)", show=True)
+    fg_trampas = folium.FeatureGroup(name="🎯 Red de Trampas de Monitoreo Biológico", show=True)
+
+    # -------------------------------------------------------------
+    # 1. POLÍGONOS DE ZONAS CRÍTICAS (CALIBRADOS GPS)
+    # -------------------------------------------------------------
+    # Zona 1: Multifamiliares y Pats (Sur - Las Multis, Residencias Patrimoniales, Concha Acústica)
     poly_z1 = [
-        [0.4022, -78.1785],
-        [0.4035, -78.1795],
-        [0.4045, -78.1788],
-        [0.4048, -78.1768],
         [0.4032, -78.1755],
-        [0.4020, -78.1765]
+        [0.4034, -78.1742],
+        [0.4025, -78.1725],
+        [0.4014, -78.1730],
+        [0.4010, -78.1750],
+        [0.4018, -78.1762]
     ]
     folium.Polygon(
         locations=poly_z1,
@@ -77,23 +80,24 @@ def generar_mapa():
         fill_color="#2ecc71",
         fill_opacity=0.25,
         popup=folium.Popup("""
-            <div style="font-family: Arial; width: 220px;">
-                <h4 style="color: #27ae60; margin-bottom: 5px;">Zona 1: Multifamiliares y Pats</h4>
-                <b>Categoría:</b> Residencial Estudiantil<br>
-                <b>Riesgo:</b> Alto (picaduras matutinas y vespertinas al aire libre).<br>
-                <b>Intervención:</b> Barrera perimetral vegetal de amortiguamiento (380 m).
+            <div style="font-family: Arial; width: 240px;">
+                <h4 style="color: #27ae60; margin: 0 0 5px 0;">Zona 1: Multifamiliares y Pats</h4>
+                <b>Hitos GPS:</b> Residencias Patrimoniales (0.4023, -78.1738), Las Multis, Concha Acústica.<br>
+                <b>Población:</b> Alta densidad estudiantil.<br>
+                <b>Riesgo:</b> Picaduras severas en horas de descanso y tránsito.<br>
+                <b>Estrategia:</b> Cerca Viva Multiestrato 1 (380m) + 2 estaciones de monitoreo.
             </div>
-        """, max_width=250),
-        tooltip="Zona 1: Multifamiliares y Pats"
+        """, max_width=260),
+        tooltip="Zona 1: Multifamiliares y Pats (Residencias)"
     ).add_to(fg_zonas)
 
-    # Zona 2: Ingenio Azucarero (Centro - Patrimonio, laboratorios, acequias)
+    # Zona 2: Ingenio Azucarero (Centro - Patrimonio, Biblioteca, Laboratorios, Chimenea)
     poly_z2 = [
-        [0.4042, -78.1752],
-        [0.4058, -78.1758],
-        [0.4065, -78.1742],
-        [0.4055, -78.1725],
-        [0.4040, -78.1732]
+        [0.4058, -78.1748],
+        [0.4057, -78.1735],
+        [0.4045, -78.1720],
+        [0.4038, -78.1730],
+        [0.4043, -78.1755]
     ]
     folium.Polygon(
         locations=poly_z2,
@@ -103,23 +107,23 @@ def generar_mapa():
         fill_color="#3498db",
         fill_opacity=0.25,
         popup=folium.Popup("""
-            <div style="font-family: Arial; width: 220px;">
-                <h4 style="color: #2980b9; margin-bottom: 5px;">Zona 2: Ingenio Azucarero</h4>
-                <b>Categoría:</b> Académica / Patrimonial<br>
-                <b>Riesgo:</b> Muy Alto (proximidad a canales de riego y acequias activas).<br>
-                <b>Intervención:</b> Manejo de flujo marginal y cercas vivas en bordes de canal (280 m).
+            <div style="font-family: Arial; width: 240px;">
+                <h4 style="color: #2980b9; margin: 0 0 5px 0;">Zona 2: Ingenio Azucarero</h4>
+                <b>Hitos GPS:</b> Biblioteca Patrimonial (0.4051, -78.1742), Chimenea Patrimonial, Laboratorios de Carrera.<br>
+                <b>Riesgo:</b> Muy alto por cruce de acequias y sombra.<br>
+                <b>Estrategia:</b> Cerca Viva Multiestrato 2 (280m) + intervención biológica en canal.
             </div>
-        """, max_width=250),
-        tooltip="Zona 2: Ingenio Azucarero"
+        """, max_width=260),
+        tooltip="Zona 2: Ingenio Azucarero (Patrimonio / Laboratorios)"
     ).add_to(fg_zonas)
 
-    # Zona 3: Bloques de Aulas y Senescyt (Noreste - Aulas, comedores y laboratorios)
+    # Zona 3: Bloques y Senescyt (Noreste - Edificio Senescyt, Los Bloques, Vida Comunitaria)
     poly_z3 = [
-        [0.4068, -78.1738],
-        [0.4082, -78.1742],
-        [0.4095, -78.1720],
-        [0.4085, -78.1705],
-        [0.4065, -78.1718]
+        [0.4076, -78.1720],
+        [0.4076, -78.1698],
+        [0.4060, -78.1695],
+        [0.4058, -78.1712],
+        [0.4068, -78.1718]
     ]
     folium.Polygon(
         locations=poly_z3,
@@ -129,220 +133,232 @@ def generar_mapa():
         fill_color="#e74c3c",
         fill_opacity=0.25,
         popup=folium.Popup("""
-            <div style="font-family: Arial; width: 220px;">
-                <h4 style="color: #c0392b; margin-bottom: 5px;">Zona 3: Bloques y Senescyt</h4>
-                <b>Categoría:</b> Aulas / Administración / Laboratorios<br>
-                <b>Riesgo:</b> Alto en horas diurnas por exposición en caminerías y áreas abiertas.<br>
-                <b>Intervención:</b> Cordón perimetral de especies aromáticas nativas (320 m).
+            <div style="font-family: Arial; width: 240px;">
+                <h4 style="color: #c0392b; margin: 0 0 5px 0;">Zona 3: Bloques y Senescyt</h4>
+                <b>Hitos GPS:</b> Edificio Senescyt (0.4067, -78.1702), Residencias Los Bloques, Vida Comunitaria.<br>
+                <b>Riesgo:</b> Exposición diurna en aulas y nocturna en dormitorios.<br>
+                <b>Estrategia:</b> Cerca Viva Multiestrato 3 (320m) + 2 estaciones de monitoreo.
             </div>
-        """, max_width=250),
-        tooltip="Zona 3: Bloques y Senescyt"
+        """, max_width=260),
+        tooltip="Zona 3: Bloques y Senescyt (Aulas / Los Bloques)"
     ).add_to(fg_zonas)
 
-    # ------------------------------------------
-    # 2. CANALES HÍDRICOS Y ACEQUIAS (Focos Larvarios)
-    # ------------------------------------------
-    # Canal de riego principal que cruza desde la cuenca alta hacia los campos agrícolas
+    # -------------------------------------------------------------
+    # 2. HITOS Y EDIFICACIONES REALES (EXTRAÍDOS DE GOOGLE MAPS)
+    # -------------------------------------------------------------
+    hitos_reales = [
+        # Zona 1
+        ([0.402297, -78.173836], "Residencias Patrimoniales", "home", "green", "Residencias Estudiantiles"),
+        ([0.402750, -78.174800], "Las Multis (Residencias)", "home", "green", "Residencias Estudiantiles"),
+        ([0.402350, -78.175500], "Concha Acústica Yachay Tech", "music", "darkgreen", "Espacio Cultural al Aire Libre"),
+        ([0.402500, -78.171800], "Canchas Deportivas", "futbol-o", "cadetblue", "Recreación Estudiantil"),
+        ([0.402550, -78.172800], "Parada Fasta (Arco Pats)", "bus", "gray", "Transporte Universitario"),
+        # Zona 2
+        ([0.405072, -78.174159], "Biblioteca Patrimonial 'Yachay Tech'", "book", "blue", "Área de Estudio Central"),
+        ([0.405320, -78.174000], "Chimenea Ingenio Azucarero", "industry", "purple", "Patrimonio Histórico"),
+        ([0.404900, -78.173900], "Laboratorio de Química", "flask", "darkpurple", "Docencia e Investigación"),
+        ([0.404780, -78.172450], "Laboratorios de Carrera, Yachay Tech", "cogs", "darkpurple", "Laboratorios Tecnológicos"),
+        # Zona 3
+        ([0.406691, -78.170214], "Edificio Senescyt (Yachay Tech)", "graduation-cap", "red", "Aulas y Oficinas Docentes"),
+        ([0.406950, -78.171150], "Residencias 'Los Bloques'", "bed", "darkred", "Residencias Estudiantiles"),
+        ([0.407400, -78.171500], "Promoción de la Vida Comunitaria", "users", "orange", "Bienestar Estudiantil"),
+        ([0.406500, -78.170500], "Minimarket Krispan", "shopping-cart", "orange", "Zona de Alimentación y Servicios")
+    ]
+    for coord, nombre, icono, color, tipo in hitos_reales:
+        folium.Marker(
+            location=coord,
+            icon=folium.Icon(icon=icono, prefix='fa', color=color),
+            popup=f"<b>{nombre}</b><br>Tipo: {tipo}<br>GPS: {coord[0]:.6f}, {coord[1]:.6f}",
+            tooltip=nombre
+        ).add_to(fg_edificios)
+
+    # -------------------------------------------------------------
+    # 3. CANALES HÍDRICOS (FOCOS LARVARIOS DE SIMULIIDAE)
+    # -------------------------------------------------------------
+    # Canal de riego que baja por la franja oriental de la Vía a Yachay
     canal_coords = [
-        [0.4098, -78.1765],
-        [0.4080, -78.1755],
-        [0.4062, -78.1748],
-        [0.4048, -78.1740],
-        [0.4035, -78.1732],
-        [0.4018, -78.1720]
+        [0.4085, -78.1690],
+        [0.4072, -78.1705],
+        [0.4058, -78.1715],
+        [0.4048, -78.1720],
+        [0.4035, -78.1725],
+        [0.4015, -78.1728]
     ]
     folium.PolyLine(
         locations=canal_coords,
         color="#00d2d3",
         weight=5,
         dash_array='8, 8',
-        popup="<b>Canal de Riego Principal (Agua Corriente):</b> Foco clave de fijación y eclosión de larvas de <i>Simuliidae</i>.",
-        tooltip="Canal de Riego / Acequia (Foco Larvario)"
+        popup="<b>Canal de Riego Principal (Agua Lótica / Corriente):</b> Sustrato rocoso y macrófitas sumergidas donde se fijan las larvas de <i>Simuliidae</i>.",
+        tooltip="Canal de Riego Principal (Foco Larvario)"
     ).add_to(fg_canales)
 
-    # Acequia secundaria cerca del Ingenio
+    # Acequia secundaria patrimonial del Ingenio
     acequia_ingenio = [
-        [0.4060, -78.1752],
-        [0.4052, -78.1745],
-        [0.4045, -78.1742]
+        [0.4056, -78.1738],
+        [0.4050, -78.1732],
+        [0.4045, -78.1728]
     ]
     folium.PolyLine(
         locations=acequia_ingenio,
         color="#00d2d3",
         weight=4,
         dash_array='5, 5',
-        popup="<b>Acequia de Desvío Ingenio:</b> Monitoreo de macrófitas acuáticas.",
+        popup="<b>Acequia de Desvío Patrimonial:</b> Conexión hídrica en sector de laboratorios.",
         tooltip="Acequia Secundaria Ingenio"
     ).add_to(fg_canales)
 
-    # Marcadores en puntos críticos de corriente hídrica
-    focos_puntos = [
-        ([0.4062, -78.1748], "Foco Larvario Norte - Turbulencia Oxigenada"),
-        ([0.4048, -78.1740], "Foco Larvario Central - Conexión Ingenio"),
-        ([0.4035, -78.1732], "Foco Larvario Sur - Desagüe Agrícola")
+    # -------------------------------------------------------------
+    # 4. CONTROL BIOLÓGICO ACUÁTICO (LIBÉLULAS + Bti)
+    # -------------------------------------------------------------
+    puntos_biocontrol = [
+        ([0.4072, -78.1705], "Bio-Estación Norte (Bti + Nicho Odonatos)", "Canal Senescyt"),
+        ([0.4048, -78.1720], "Bio-Estación Central (Monitoreo Macroinvertebrados)", "Canal Laboratorios"),
+        ([0.4028, -78.1726], "Bio-Estación Sur (Refugio de Libélulas Nativas)", "Canal Canchas / Pats")
     ]
-    for pt, desc in focos_puntos:
+    for pt, titulo, detalle in puntos_biocontrol:
         folium.CircleMarker(
             location=pt,
-            radius=6,
+            radius=8,
             color="#0984e3",
             fill=True,
             fill_color="#74b9ff",
             fill_opacity=0.9,
-            popup=f"<b>Punto Crítico Hidrológico:</b> {desc}",
-            tooltip="Punto crítico de desarrollo larvario"
-        ).add_to(fg_canales)
+            popup=f"<b>{titulo}</b><br>{detalle}<br>• Depredación larval por ninfas de libélula.<br>• Aplicación selectiva de <i>Bacillus thuringiensis israelensis</i> (Bti).",
+            tooltip=titulo
+        ).add_to(fg_biocontrol)
 
-    # ------------------------------------------
-    # 3. EDIFICACIONES CLAVE (Del Mapa Georreferencial)
-    # ------------------------------------------
-    edificios_info = [
-        ([0.4030, -78.1775], "Multifamiliares (Bloque A-D)", "home", "green", "Residencias Estudiantiles"),
-        ([0.4040, -78.1780], "Pats Residenciales", "home", "green", "Residencias Estudiantiles"),
-        ([0.4050, -78.1745], "Aulas Patrimoniales Ingenio", "book", "blue", "Aulas y Talleres"),
-        ([0.4055, -78.1735], "Laboratorios Centrales", "flask", "darkpurple", "Investigación"),
-        ([0.4075, -78.1725], "Bloques de Aulas Senescyt", "graduation-cap", "red", "Aulas Académicas"),
-        ([0.4082, -78.1718], "Comedor / Cafetería Campus", "cutlery", "orange", "Zona de Alimentación"),
-        ([0.4046, -78.1738], "Cafetería Ingenio", "coffee", "orange", "Zona de Alimentación")
-    ]
-    for coord, nombre, icono, color, cat in edificios_info:
-        folium.Marker(
-            location=coord,
-            icon=folium.Icon(icon=icono, prefix='fa', color=color),
-            popup=f"<b>{nombre}</b><br>Categoría: {cat}",
-            tooltip=nombre
-        ).add_to(fg_edificios)
-
-    # ------------------------------------------
-    # 4. PROPUESTA: CERCAS VIVAS REPELENTES (Algoritmo Verde YT)
-    # ------------------------------------------
-    # Cerca 1: Cordón de protección residencial (Multifamiliares y Pats)
-    cerca_residencias = [
-        [0.4025, -78.1760],
-        [0.4036, -78.1752],
-        [0.4047, -78.1762]
+    # -------------------------------------------------------------
+    # 5. CERCAS VIVAS EN 3 ESTRATOS (PROPUESTA ALGORITMO VERDE YT)
+    # -------------------------------------------------------------
+    # Cerca 1: Sector Las Multis / Residencias Patrimoniales (380m)
+    cerca1 = [
+        [0.4031, -78.1750],
+        [0.4030, -78.1738],
+        [0.4024, -78.1730]
     ]
     folium.PolyLine(
-        locations=cerca_residencias,
+        locations=cerca1,
         color="#27ae60",
         weight=6,
         popup=folium.Popup("""
-            <div style="font-family: Arial; width: 230px;">
-                <h4 style="color: #27ae60; margin: 0 0 5px 0;">Cerca Viva 1 - Sector Residencial</h4>
-                <b>Longitud:</b> 380 metros lineales.<br>
-                <b>Especies:</b> <i>Cymbopogon citratus</i> (Hierba Luisa/Citronela) + <i>Schinus molle</i> (Pimiento nativo).<br>
-                <b>Densidad:</b> 2 plántulas / metro.<br>
-                <b>Efecto:</b> Bloqueo del viento Este-Oeste con fitocompuestos repelentes volátiles.
+            <div style="font-family: Arial; width: 250px;">
+                <h4 style="color: #27ae60; margin: 0 0 5px 0;">🌿 Cerca Viva 1 - Sector Residencial (380m)</h4>
+                <b>Estructura en 3 Estratos:</b><br>
+                • <b>Alto (3.5-5m):</b> <i>Schinus molle</i> (Pimiento andino nativo) - Rompevientos.<br>
+                • <b>Medio (1.2-2m):</b> <i>Myrcianthes hallii</i> (Arrayán) & Romero - Bloqueo de vuelo.<br>
+                • <b>Bajo (0.4-0.8m):</b> <i>Cymbopogon citratus</i> (Hierba luisa) - Citronelal basal.<br>
+                <b>Eficacia proyectada:</b> ~85% reducción de picaduras.
             </div>
-        """, max_width=250),
-        tooltip="🌿 Cerca Viva 1: Sector Residencias (380m)"
+        """, max_width=270),
+        tooltip="🌿 Cerca Viva 1: Residencias Las Multis / Patrimoniales (380m)"
     ).add_to(fg_cercas)
 
-    # Cerca 2: Barrera de ribera canal Ingenio
-    cerca_ingenio = [
-        [0.4061, -78.1744],
-        [0.4052, -78.1738],
-        [0.4042, -78.1730]
+    # Cerca 2: Sector Ingenio / Laboratorios (280m)
+    cerca2 = [
+        [0.4055, -78.1734],
+        [0.4048, -78.1728],
+        [0.4040, -78.1726]
     ]
     folium.PolyLine(
-        locations=cerca_ingenio,
+        locations=cerca2,
         color="#27ae60",
         weight=6,
         popup=folium.Popup("""
-            <div style="font-family: Arial; width: 230px;">
-                <h4 style="color: #27ae60; margin: 0 0 5px 0;">Cerca Viva 2 - Sector Ingenio</h4>
-                <b>Longitud:</b> 280 metros lineales.<br>
-                <b>Especies:</b> <i>Lantana camara</i> + <i>Lavandula angustifolia</i>.<br>
-                <b>Función:</b> Barrera aromática de transición entre canal y caminerías de aulas.
+            <div style="font-family: Arial; width: 250px;">
+                <h4 style="color: #27ae60; margin: 0 0 5px 0;">🌿 Cerca Viva 2 - Sector Ingenio / Laboratorios (280m)</h4>
+                <b>Estructura en 3 Estratos:</b><br>
+                • <b>Alto:</b> <i>Schinus molle</i>.<br>
+                • <b>Medio:</b> <i>Lantana camara</i> y Lavanda.<br>
+                • <b>Bajo:</b> <i>Cymbopogon citratus</i>.<br>
+                <b>Función:</b> Amortiguamiento entre canal de riego y caminerías de aulas.
             </div>
-        """, max_width=250),
-        tooltip="🌿 Cerca Viva 2: Sector Ingenio (280m)"
+        """, max_width=270),
+        tooltip="🌿 Cerca Viva 2: Ingenio / Laboratorios (280m)"
     ).add_to(fg_cercas)
 
-    # Cerca 3: Cordón perimetral Senescyt
-    cerca_senescyt = [
-        [0.4072, -78.1735],
-        [0.4085, -78.1730],
-        [0.4092, -78.1712]
+    # Cerca 3: Sector Edificio Senescyt / Los Bloques (320m)
+    cerca3 = [
+        [0.4072, -78.1718],
+        [0.4066, -78.1710],
+        [0.4060, -78.1702]
     ]
     folium.PolyLine(
-        locations=cerca_senescyt,
+        locations=cerca3,
         color="#27ae60",
         weight=6,
         popup=folium.Popup("""
-            <div style="font-family: Arial; width: 230px;">
-                <h4 style="color: #27ae60; margin: 0 0 5px 0;">Cerca Viva 3 - Sector Senescyt</h4>
-                <b>Longitud:</b> 320 metros lineales.<br>
-                <b>Especies:</b> <i>Myrcianthes hallii</i> (Arrayán nativo) + <i>Rosmarinus officinalis</i>.<br>
-                <b>Función:</b> Protección contra corrientes de aire ascendentes del valle.
+            <div style="font-family: Arial; width: 250px;">
+                <h4 style="color: #27ae60; margin: 0 0 5px 0;">🌿 Cerca Viva 3 - Sector Senescyt / Los Bloques (320m)</h4>
+                <b>Estructura en 3 Estratos:</b><br>
+                • <b>Alto:</b> <i>Schinus molle</i>.<br>
+                • <b>Medio:</b> <i>Myrcianthes hallii</i> (Arrayán) & Romero.<br>
+                • <b>Bajo:</b> <i>Cymbopogon citratus</i>.<br>
+                <b>Protección:</b> Complejo habitacional y aulas académicas.
             </div>
-        """, max_width=250),
-        tooltip="🌿 Cerca Viva 3: Sector Senescyt (320m)"
+        """, max_width=270),
+        tooltip="🌿 Cerca Viva 3: Edificio Senescyt / Los Bloques (320m)"
     ).add_to(fg_cercas)
 
-    # ------------------------------------------
-    # 5. BUFFERS DE PROTECCIÓN REPELENTE (Área de Amortiguamiento)
-    # ------------------------------------------
-    # Simulación de buffer de 40m alrededor de las cercas vivas
-    for coords, name in [(cerca_residencias, "Buffer Residencial"), (cerca_ingenio, "Buffer Ingenio"), (cerca_senescyt, "Buffer Senescyt")]:
+    # -------------------------------------------------------------
+    # 6. BUFFERS DE COBERTURA DE MONOTERPENOS REPELENTES (40m)
+    # -------------------------------------------------------------
+    for c_coords, c_name in [(cerca1, "Buffer Residencias"), (cerca2, "Buffer Ingenio"), (cerca3, "Buffer Senescyt")]:
         folium.PolyLine(
-            locations=coords,
+            locations=c_coords,
             color="#2ecc71",
             weight=35,
             opacity=0.25,
-            tooltip=f"Área de Amortiguamiento Repelente ({name})"
+            tooltip=f"Área de Amortiguamiento Repelente ({c_name})"
         ).add_to(fg_buffer)
 
-    # ------------------------------------------
-    # 6. RED DE TRAMPAS BIOLÓGICAS DE MONITOREO
-    # ------------------------------------------
-    trampas_pos = [
-        ([0.4038, -78.1750], "T-01: Intersección Pats / Canal"),
-        ([0.4028, -78.1758], "T-02: Borde Sur Residencias"),
-        ([0.4050, -78.1735], "T-03: Paso Peatonal Central Ingenio"),
-        ([0.4058, -78.1742], "T-04: Transición Ingenio-Laboratorios"),
-        ([0.4075, -78.1732], "T-05: Entrada Bloques Senescyt"),
-        ([0.4088, -78.1722], "T-06: Perímetro Comedor Central")
+    # -------------------------------------------------------------
+    # 7. RED DE TRAMPAS DE MONITOREO BIOLÓGICO (6 ESTACIONES GPS)
+    # -------------------------------------------------------------
+    trampas_gps = [
+        ([0.4024, -78.1730], "T-01: Residencias Patrimoniales / Canchas"),
+        ([0.4028, -78.1750], "T-02: Las Multis / Concha Acústica"),
+        ([0.4052, -78.1742], "T-03: Biblioteca Patrimonial / Chimenea"),
+        ([0.4047, -78.1724], "T-04: Laboratorios de Carrera"),
+        ([0.4067, -78.1702], "T-05: Edificio Senescyt (Fachada Sur)"),
+        ([0.4070, -78.1714], "T-06: Residencias Los Bloques / Vida Comunitaria")
     ]
-    for coord, label in trampas_pos:
+    for pt, label in trampas_gps:
         folium.Marker(
-            location=coord,
+            location=pt,
             icon=folium.Icon(icon="crosshairs", prefix="fa", color="darkblue"),
             popup=f"""
-                <b>Trampa Ecológica de Monitoreo</b><br>
+                <b>Estación de Bio-Monitoreo</b><br>
                 <b>Código:</b> {label}<br>
-                <b>Atrayente:</b> Cebo bio-ecológico (ácido L-láctico + CO2 por fermentación controlada).<br>
-                <b>Función:</b> Cuantificación de densidad de <i>Simuliidae</i> y validación de eficacia (RF-04).
+                <b>Mecanismo:</b> Trampa de silueta + cebo bio-ecológico (ácido L-láctico y fermentación CO2).<br>
+                <b>Objetivo:</b> Validación empírica de reducción de picaduras (RF-04).
             """,
             tooltip=label
         ).add_to(fg_trampas)
 
-    # Agregar todas las capas al mapa
+    # Agregar capas al mapa
     fg_zonas.add_to(m)
     fg_canales.add_to(m)
+    fg_biocontrol.add_to(m)
     fg_edificios.add_to(m)
     fg_cercas.add_to(m)
     fg_buffer.add_to(m)
     fg_trampas.add_to(m)
 
-    # Control de Capas
+    # Controles de interfaz
     folium.LayerControl(position='topright', collapsed=False).add_to(m)
-
-    # MiniMap
     plugins.MiniMap(toggle_display=True, position='bottomleft').add_to(m)
-
-    # Medidor de distancia
     plugins.MeasureControl(position='topleft', primary_length_unit='meters', primary_area_unit='sqmeters').add_to(m)
 
-    # Widget / Dashboard Flotante Superior Izquierdo con CSS Personalizado
+    # Dashboard flotante
     dashboard_html = """
     <div style="
         position: fixed;
         bottom: 30px;
         right: 30px;
-        width: 310px;
+        width: 320px;
         z-index: 9999;
-        background: rgba(255, 255, 255, 0.95);
+        background: rgba(255, 255, 255, 0.96);
         border: 2px solid #27ae60;
         border-radius: 12px;
         padding: 14px 18px;
@@ -354,12 +370,12 @@ def generar_mapa():
             <h3 style="margin: 0; color: #1e3799; font-size: 15px; font-weight: bold;">Algoritmo Verde YT</h3>
         </div>
         <p style="margin: 0 0 10px 0; font-size: 11px; color: #57606f; line-height: 1.3;">
-            <b>YOSW 2026 · Reto 3:</b> Control de Arenillas mediante Manejo Integrado y Optimización Espacial.
+            <b>YOSW 2026 · Reto 3:</b> Manejo Integrado de Arenillas calibrado con coordenadas satelitales oficiales.
         </p>
         <hr style="border: none; border-top: 1px solid #dfe4ea; margin: 8px 0;">
         <table style="width: 100%; font-size: 11px; line-height: 1.6; color: #2f3542;">
             <tr>
-                <td>🌿 <b>Cercas Vivas:</b></td>
+                <td>🌿 <b>Cercas en 3 Estratos:</b></td>
                 <td style="text-align: right; font-weight: bold; color: #27ae60;">980 m lineales</td>
             </tr>
             <tr>
@@ -367,20 +383,24 @@ def generar_mapa():
                 <td style="text-align: right; font-weight: bold; color: #27ae60;">~1,960 unid.</td>
             </tr>
             <tr>
-                <td>🎯 <b>Trampas de Monitoreo:</b></td>
-                <td style="text-align: right; font-weight: bold; color: #1e3799;">6 estaciones</td>
+                <td>🦗 <b>Control Biológico:</b></td>
+                <td style="text-align: right; font-weight: bold; color: #0984e3;">Odonatos + Bti</td>
             </tr>
             <tr>
-                <td>🛡️ <b>Área Protegida:</b></td>
+                <td>🎯 <b>Trampas Bio-Monitoreo:</b></td>
+                <td style="text-align: right; font-weight: bold; color: #1e3799;">6 estaciones GPS</td>
+            </tr>
+            <tr>
+                <td>🛡️ <b>Área de Protección:</b></td>
                 <td style="text-align: right; font-weight: bold; color: #009432;">~39,200 m²</td>
             </tr>
             <tr>
-                <td>📉 <b>Reducción de Riesgo:</b></td>
-                <td style="text-align: right; font-weight: bold; color: #e74c3c;">82% estimada</td>
+                <td>📉 <b>Mitigación Estimada:</b></td>
+                <td style="text-align: right; font-weight: bold; color: #e74c3c;">82% picaduras</td>
             </tr>
         </table>
         <div style="margin-top: 10px; font-size: 10px; color: #747d8c; text-align: center;">
-            *Use el selector superior derecho para filtrar capas
+            *Haga clic en las capas para filtrar elementos
         </div>
     </div>
     """
