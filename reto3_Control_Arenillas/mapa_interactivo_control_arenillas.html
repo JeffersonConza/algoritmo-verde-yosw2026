@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_850003012df7aa3e8fb26710f8817873 {
+                #map_3d069734d4f5f289d59532cb7715d1d0 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -467,42 +467,64 @@
 
     <!-- JAVASCRIPT DE INTERACTIVIDAD DINÁMICA -->
     <script>
-        // Referencia directa al mapa y FeatureGroups creados por Folium
-        var foliumMap = map_850003012df7aa3e8fb26710f8817873;
-        var fgZonas = feature_group_6bf53ebeb54172fb5065f9d3e4ead944;
-        var fgCercas = feature_group_d0c7939ddd669ee82038bd38501d113c;
-        var fgBuffer = feature_group_dbe8000e5f8933d540d7f82034a409b0;
-        var fgCanales = feature_group_9f5a1956d06401686dcaf0624c3c4f59;
-        var fgBiocontrol = feature_group_c7bea6d52660d4bf7a098ca394aefcd6;
-        var fgTrampas = feature_group_07e3a8a6b0abff26095cc6aa998c285e;
-        var fgEdificios = feature_group_562558786dc719871419bf08a636d9fc;
+        // Getters perezosos y seguros para acceder a las instancias de Leaflet una vez inicializadas
+        function getMap() { return window['map_3d069734d4f5f289d59532cb7715d1d0']; }
+        function getFGZonas() { return window['feature_group_a6b4cf5505ebaa64f8d66b70936af1d7']; }
+        function getFGCercas() { return window['feature_group_d091f7d7836998d1552e10b6e480a246']; }
+        function getFGBuffer() { return window['feature_group_b9137f009f693a443e74a16834679a18']; }
+        function getFGCanales() { return window['feature_group_a040d620254a8c980a1f0734a7195d6c']; }
+        function getFGBiocontrol() { return window['feature_group_757dbd7a113bb102cb057f10f848193e']; }
+        function getFGTrampas() { return window['feature_group_b086616bcced576c7edadc2612739250']; }
+        function getFGEdificios() { return window['feature_group_4d54bc394b913cbb362da4019359ed5d']; }
 
         // 1. Alternar modo Solución Verde
         function activarModoSolucion() {
-            if (!foliumMap.hasLayer(fgCercas)) foliumMap.addLayer(fgCercas);
-            if (!foliumMap.hasLayer(fgBuffer)) foliumMap.addLayer(fgBuffer);
-            if (!foliumMap.hasLayer(fgBiocontrol)) foliumMap.addLayer(fgBiocontrol);
-            if (!foliumMap.hasLayer(fgTrampas)) foliumMap.addLayer(fgTrampas);
-            if (!foliumMap.hasLayer(fgEdificios)) foliumMap.addLayer(fgEdificios);
-            if (foliumMap.hasLayer(fgZonas)) foliumMap.removeLayer(fgZonas);
+            var foliumMap = getMap();
+            var fgCercas = getFGCercas();
+            var fgBuffer = getFGBuffer();
+            var fgBiocontrol = getFGBiocontrol();
+            var fgTrampas = getFGTrampas();
+            var fgEdificios = getFGEdificios();
+            var fgZonas = getFGZonas();
+            if (!foliumMap) return;
 
-            document.getElementById('btn-solucion').classList.add('nav-btn-highlight');
-            document.getElementById('btn-diagnostico').classList.remove('nav-btn-alert');
+            if (fgCercas && !foliumMap.hasLayer(fgCercas)) foliumMap.addLayer(fgCercas);
+            if (fgBuffer && !foliumMap.hasLayer(fgBuffer)) foliumMap.addLayer(fgBuffer);
+            if (fgBiocontrol && !foliumMap.hasLayer(fgBiocontrol)) foliumMap.addLayer(fgBiocontrol);
+            if (fgTrampas && !foliumMap.hasLayer(fgTrampas)) foliumMap.addLayer(fgTrampas);
+            if (fgEdificios && !foliumMap.hasLayer(fgEdificios)) foliumMap.addLayer(fgEdificios);
+            if (fgZonas && foliumMap.hasLayer(fgZonas)) foliumMap.removeLayer(fgZonas);
+
+            var btnSol = document.getElementById('btn-solucion');
+            var btnDiag = document.getElementById('btn-diagnostico');
+            if (btnSol) btnSol.classList.add('nav-btn-highlight');
+            if (btnDiag) btnDiag.classList.remove('nav-btn-alert');
         }
 
         // 2. Alternar modo Diagnóstico de Afectación
         function activarModoDiagnostico() {
-            if (!foliumMap.hasLayer(fgZonas)) foliumMap.addLayer(fgZonas);
-            if (!foliumMap.hasLayer(fgCanales)) foliumMap.addLayer(fgCanales);
-            if (!foliumMap.hasLayer(fgEdificios)) foliumMap.addLayer(fgEdificios);
-            if (foliumMap.hasLayer(fgBuffer)) foliumMap.removeLayer(fgBuffer);
+            var foliumMap = getMap();
+            var fgZonas = getFGZonas();
+            var fgCanales = getFGCanales();
+            var fgEdificios = getFGEdificios();
+            var fgBuffer = getFGBuffer();
+            if (!foliumMap) return;
 
-            document.getElementById('btn-diagnostico').classList.add('nav-btn-alert');
-            document.getElementById('btn-solucion').classList.remove('nav-btn-highlight');
+            if (fgZonas && !foliumMap.hasLayer(fgZonas)) foliumMap.addLayer(fgZonas);
+            if (fgCanales && !foliumMap.hasLayer(fgCanales)) foliumMap.addLayer(fgCanales);
+            if (fgEdificios && !foliumMap.hasLayer(fgEdificios)) foliumMap.addLayer(fgEdificios);
+            if (fgBuffer && foliumMap.hasLayer(fgBuffer)) foliumMap.removeLayer(fgBuffer);
+
+            var btnSol = document.getElementById('btn-solucion');
+            var btnDiag = document.getElementById('btn-diagnostico');
+            if (btnDiag) btnDiag.classList.add('nav-btn-alert');
+            if (btnSol) btnSol.classList.remove('nav-btn-highlight');
         }
 
         // 3. Vuelos suaves a sectores clave (Storytelling)
         function irAZona(zona) {
+            var foliumMap = getMap();
+            if (!foliumMap) return;
             if (zona === 'residencias') {
                 foliumMap.flyTo([0.4024, -78.1740], 17.5, { animate: true, duration: 1.2 });
             } else if (zona === 'ingenio') {
@@ -517,13 +539,14 @@
         // 4. Modal de bienvenida
         function toggleModalBienvenida(show) {
             var modal = document.getElementById('modal-bienvenida');
-            modal.style.display = show ? 'flex' : 'none';
+            if (modal) modal.style.display = show ? 'flex' : 'none';
         }
 
         // 5. Minimizar/Expandir Dashboard
         function toggleDashboard() {
             var content = document.getElementById('dash-content');
             var btn = document.getElementById('btn-dash-toggle');
+            if (!content || !btn) return;
             if (content.style.display === 'none') {
                 content.style.display = 'block';
                 btn.innerHTML = '−';
@@ -537,6 +560,7 @@
         function toggleLeyenda() {
             var body = document.getElementById('leyenda-body');
             var icon = document.getElementById('leyenda-icon-toggle');
+            if (!body || !icon) return;
             if (body.style.display === 'none') {
                 body.style.display = 'block';
                 icon.innerHTML = '−';
@@ -546,24 +570,23 @@
             }
         }
 
-        // Mostrar bienvenida automáticamente la primera vez que se carga
-        window.addEventListener('DOMContentLoaded', function() {
-            // Dejar visible para causar gran primera impresión
+        // Mostrar bienvenida automáticamente cuando la ventana haya cargado
+        window.addEventListener('load', function() {
             setTimeout(function() {
                 toggleModalBienvenida(true);
-            }, 400);
+            }, 350);
         });
     </script>
     
     
-            <div class="folium-map" id="map_850003012df7aa3e8fb26710f8817873" ></div>
+            <div class="folium-map" id="map_3d069734d4f5f289d59532cb7715d1d0" ></div>
         
 </body>
 <script>
     
     
-            var map_850003012df7aa3e8fb26710f8817873 = L.map(
-                "map_850003012df7aa3e8fb26710f8817873",
+            var map_3d069734d4f5f289d59532cb7715d1d0 = L.map(
+                "map_3d069734d4f5f289d59532cb7715d1d0",
                 {
                     center: [0.4048, -78.1725],
                     crs: L.CRS.EPSG3857,
@@ -575,13 +598,13 @@
 
                 }
             );
-            L.control.scale().addTo(map_850003012df7aa3e8fb26710f8817873);
+            L.control.scale().addTo(map_3d069734d4f5f289d59532cb7715d1d0);
 
             
 
         
     
-            var tile_layer_127df439cf85b1369f770a418a175de4 = L.tileLayer(
+            var tile_layer_6eb36b306621b485d366d06b18990ab7 = L.tileLayer(
                 "https://mt1.google.com/vt/lyrs=y\u0026x={x}\u0026y={y}\u0026z={z}",
                 {
   "minZoom": 0,
@@ -598,10 +621,10 @@
             );
         
     
-            tile_layer_127df439cf85b1369f770a418a175de4.addTo(map_850003012df7aa3e8fb26710f8817873);
+            tile_layer_6eb36b306621b485d366d06b18990ab7.addTo(map_3d069734d4f5f289d59532cb7715d1d0);
         
     
-            var tile_layer_56ebe6b999126ba6baf691b2cec62f23 = L.tileLayer(
+            var tile_layer_3ed2b2127fb2e9aa72561ab762631635 = L.tileLayer(
                 "https://mt1.google.com/vt/lyrs=m\u0026x={x}\u0026y={y}\u0026z={z}",
                 {
   "minZoom": 0,
@@ -618,10 +641,10 @@
             );
         
     
-            tile_layer_56ebe6b999126ba6baf691b2cec62f23.addTo(map_850003012df7aa3e8fb26710f8817873);
+            tile_layer_3ed2b2127fb2e9aa72561ab762631635.addTo(map_3d069734d4f5f289d59532cb7715d1d0);
         
     
-            var tile_layer_d39100d87aa9f995e1b772c5d60b46f6 = L.tileLayer(
+            var tile_layer_b1410c82a01bf2225edbf03b0a02ce06 = L.tileLayer(
                 "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
                 {
   "minZoom": 0,
@@ -638,10 +661,10 @@
             );
         
     
-            tile_layer_d39100d87aa9f995e1b772c5d60b46f6.addTo(map_850003012df7aa3e8fb26710f8817873);
+            tile_layer_b1410c82a01bf2225edbf03b0a02ce06.addTo(map_3d069734d4f5f289d59532cb7715d1d0);
         
     
-            var tile_layer_279954fdad4be5264ad12752f9f64397 = L.tileLayer(
+            var tile_layer_2dadaf350584509fa217918f0d9c3084 = L.tileLayer(
                 "https://{s}.tile.openstreetmap.de/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -658,10 +681,10 @@
             );
         
     
-            tile_layer_279954fdad4be5264ad12752f9f64397.addTo(map_850003012df7aa3e8fb26710f8817873);
+            tile_layer_2dadaf350584509fa217918f0d9c3084.addTo(map_3d069734d4f5f289d59532cb7715d1d0);
         
     
-            var tile_layer_6ee39f9f285e8f1dd765fbbd2f0efb24 = L.tileLayer(
+            var tile_layer_183fc54fefe18f3ed2e30c45b03edb5f = L.tileLayer(
                 "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
                 {
   "minZoom": 0,
@@ -678,10 +701,10 @@
             );
         
     
-            tile_layer_6ee39f9f285e8f1dd765fbbd2f0efb24.addTo(map_850003012df7aa3e8fb26710f8817873);
+            tile_layer_183fc54fefe18f3ed2e30c45b03edb5f.addTo(map_3d069734d4f5f289d59532cb7715d1d0);
         
     
-            var tile_layer_dbd73ede6bdaf6d4c59be9a9a9127448 = L.tileLayer(
+            var tile_layer_c38da08e215c5b478ac3c35325608a34 = L.tileLayer(
                 "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}",
                 {
   "minZoom": 0,
@@ -698,39 +721,39 @@
             );
         
     
-            tile_layer_dbd73ede6bdaf6d4c59be9a9a9127448.addTo(map_850003012df7aa3e8fb26710f8817873);
+            tile_layer_c38da08e215c5b478ac3c35325608a34.addTo(map_3d069734d4f5f289d59532cb7715d1d0);
         
     
-            var feature_group_6bf53ebeb54172fb5065f9d3e4ead944 = L.featureGroup(
+            var feature_group_a6b4cf5505ebaa64f8d66b70936af1d7 = L.featureGroup(
                 {
 }
             );
         
     
-            var polygon_1db56a1e652ce86ec949590554bb2b0c = L.polygon(
+            var polygon_408005b9ab6a574d92f244419ae471a1 = L.polygon(
                 [[0.4032, -78.1755], [0.4034, -78.1742], [0.4025, -78.1725], [0.4014, -78.173], [0.401, -78.175], [0.4018, -78.1762]],
                 {"bubblingMouseEvents": true, "color": "#e67e22", "dashArray": "6, 6", "dashOffset": null, "fill": true, "fillColor": "#f39c12", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
-            ).addTo(feature_group_6bf53ebeb54172fb5065f9d3e4ead944);
+            ).addTo(feature_group_a6b4cf5505ebaa64f8d66b70936af1d7);
         
     
-        var popup_a79cf77ce4078d15ff40ca11ee05fd9f = L.popup({
+        var popup_36cd2c0abfd70208e171be5959b9f5ce = L.popup({
   "maxWidth": 290,
 });
 
         
             
-                var html_a6f5055e1d3b529e31e423aea26ff832 = $(`<div id="html_a6f5055e1d3b529e31e423aea26ff832" style="width: 100.0%; height: 100.0%;">             <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 270px; line-height: 1.4;">                 <div style="background: #e67e22; color: white; padding: 6px 10px; border-radius: 6px 6px 0 0; font-weight: bold; font-size: 13px;">                     ⚠️ Diagnóstico: Zona 1 - Hogar Estudiantil                 </div>                 <div style="padding: 10px; border: 1px solid #e67e22; border-top: none; border-radius: 0 0 6px 6px; background: #fffdfa;">                     <b>👥 Comunidad Afectada:</b> ~320 estudiantes en Residencias Patrimoniales y Las Multis.<br>                     <b>💔 Impacto Humano:</b> Picaduras dolorosas en horas de descanso y recreación en la Concha Acústica; interrupción del sueño y dermatitis.<br>                     <b>🌿 Solución Verde:</b> Cerca Viva 1 (380m) de protección perimetral + aromaterapia con arrayán y molle.                 </div>             </div>         </div>`)[0];
-                popup_a79cf77ce4078d15ff40ca11ee05fd9f.setContent(html_a6f5055e1d3b529e31e423aea26ff832);
+                var html_1438cba31454c1b37059fca3dbf125d6 = $(`<div id="html_1438cba31454c1b37059fca3dbf125d6" style="width: 100.0%; height: 100.0%;">             <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 270px; line-height: 1.4;">                 <div style="background: #e67e22; color: white; padding: 6px 10px; border-radius: 6px 6px 0 0; font-weight: bold; font-size: 13px;">                     ⚠️ Diagnóstico: Zona 1 - Hogar Estudiantil                 </div>                 <div style="padding: 10px; border: 1px solid #e67e22; border-top: none; border-radius: 0 0 6px 6px; background: #fffdfa;">                     <b>👥 Comunidad Afectada:</b> ~320 estudiantes en Residencias Patrimoniales y Las Multis.<br>                     <b>💔 Impacto Humano:</b> Picaduras dolorosas en horas de descanso y recreación en la Concha Acústica; interrupción del sueño y dermatitis.<br>                     <b>🌿 Solución Verde:</b> Cerca Viva 1 (380m) de protección perimetral + aromaterapia con arrayán y molle.                 </div>             </div>         </div>`)[0];
+                popup_36cd2c0abfd70208e171be5959b9f5ce.setContent(html_1438cba31454c1b37059fca3dbf125d6);
             
         
 
-        polygon_1db56a1e652ce86ec949590554bb2b0c.bindPopup(popup_a79cf77ce4078d15ff40ca11ee05fd9f)
+        polygon_408005b9ab6a574d92f244419ae471a1.bindPopup(popup_36cd2c0abfd70208e171be5959b9f5ce)
         ;
 
         
     
     
-            polygon_1db56a1e652ce86ec949590554bb2b0c.bindTooltip(
+            polygon_408005b9ab6a574d92f244419ae471a1.bindTooltip(
                 `<div>
                      Zona 1: Multifamiliares y Pats (Diagnóstico de Afectación)
                  </div>`,
@@ -740,30 +763,30 @@
             );
         
     
-            var polygon_f8f913ace26414712d21b4af8edfae7c = L.polygon(
+            var polygon_536bc89de1a0cc402e0e1e3c4830a2a9 = L.polygon(
                 [[0.4058, -78.1748], [0.4057, -78.1735], [0.4045, -78.172], [0.4038, -78.173], [0.4043, -78.1755]],
                 {"bubblingMouseEvents": true, "color": "#3498db", "dashArray": "6, 6", "dashOffset": null, "fill": true, "fillColor": "#3498db", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
-            ).addTo(feature_group_6bf53ebeb54172fb5065f9d3e4ead944);
+            ).addTo(feature_group_a6b4cf5505ebaa64f8d66b70936af1d7);
         
     
-        var popup_4975cae90a2481445ca4518ec6ae6526 = L.popup({
+        var popup_d65007399eec5473d5ddfb19c6f961f7 = L.popup({
   "maxWidth": 290,
 });
 
         
             
-                var html_17d9565af0e8b6ed176d8d75db81d3c6 = $(`<div id="html_17d9565af0e8b6ed176d8d75db81d3c6" style="width: 100.0%; height: 100.0%;">             <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 270px; line-height: 1.4;">                 <div style="background: #2980b9; color: white; padding: 6px 10px; border-radius: 6px 6px 0 0; font-weight: bold; font-size: 13px;">                     ⚠️ Diagnóstico: Zona 2 - Corazón Académico                 </div>                 <div style="padding: 10px; border: 1px solid #2980b9; border-top: none; border-radius: 0 0 6px 6px; background: #fbfdff;">                     <b>👥 Comunidad Afectada:</b> Estudiantes, docentes e investigadores en Biblioteca y Laboratorios.<br>                     <b>💔 Impacto Humano:</b> Pérdida de concentración por ataque diurno constante de jejenes en caminerías patrimoniales.<br>                     <b>🌿 Solución Verde:</b> Cerca Viva 2 (280m) que aísla las acequias y crea senderos perfumados con lavanda y hierba luisa.                 </div>             </div>         </div>`)[0];
-                popup_4975cae90a2481445ca4518ec6ae6526.setContent(html_17d9565af0e8b6ed176d8d75db81d3c6);
+                var html_eb6e489c24ba4bf1bfb227b07ec6a000 = $(`<div id="html_eb6e489c24ba4bf1bfb227b07ec6a000" style="width: 100.0%; height: 100.0%;">             <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 270px; line-height: 1.4;">                 <div style="background: #2980b9; color: white; padding: 6px 10px; border-radius: 6px 6px 0 0; font-weight: bold; font-size: 13px;">                     ⚠️ Diagnóstico: Zona 2 - Corazón Académico                 </div>                 <div style="padding: 10px; border: 1px solid #2980b9; border-top: none; border-radius: 0 0 6px 6px; background: #fbfdff;">                     <b>👥 Comunidad Afectada:</b> Estudiantes, docentes e investigadores en Biblioteca y Laboratorios.<br>                     <b>💔 Impacto Humano:</b> Pérdida de concentración por ataque diurno constante de jejenes en caminerías patrimoniales.<br>                     <b>🌿 Solución Verde:</b> Cerca Viva 2 (280m) que aísla las acequias y crea senderos perfumados con lavanda y hierba luisa.                 </div>             </div>         </div>`)[0];
+                popup_d65007399eec5473d5ddfb19c6f961f7.setContent(html_eb6e489c24ba4bf1bfb227b07ec6a000);
             
         
 
-        polygon_f8f913ace26414712d21b4af8edfae7c.bindPopup(popup_4975cae90a2481445ca4518ec6ae6526)
+        polygon_536bc89de1a0cc402e0e1e3c4830a2a9.bindPopup(popup_d65007399eec5473d5ddfb19c6f961f7)
         ;
 
         
     
     
-            polygon_f8f913ace26414712d21b4af8edfae7c.bindTooltip(
+            polygon_536bc89de1a0cc402e0e1e3c4830a2a9.bindTooltip(
                 `<div>
                      Zona 2: Ingenio Azucarero (Diagnóstico de Afectación)
                  </div>`,
@@ -773,30 +796,30 @@
             );
         
     
-            var polygon_ff2ad76c89aa7b77f9e947d1b4c1cdee = L.polygon(
+            var polygon_27a5a12684ea0beab36470b6ae0099b0 = L.polygon(
                 [[0.4076, -78.172], [0.4076, -78.1698], [0.406, -78.1695], [0.4058, -78.1712], [0.4068, -78.1718]],
                 {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": "6, 6", "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
-            ).addTo(feature_group_6bf53ebeb54172fb5065f9d3e4ead944);
+            ).addTo(feature_group_a6b4cf5505ebaa64f8d66b70936af1d7);
         
     
-        var popup_efd6bad3d06e4c122741da14debb6ec3 = L.popup({
+        var popup_94068559997cc76399738fc571e2d3d2 = L.popup({
   "maxWidth": 290,
 });
 
         
             
-                var html_03398913d735c88dd36c8466d8906590 = $(`<div id="html_03398913d735c88dd36c8466d8906590" style="width: 100.0%; height: 100.0%;">             <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 270px; line-height: 1.4;">                 <div style="background: #c0392b; color: white; padding: 6px 10px; border-radius: 6px 6px 0 0; font-weight: bold; font-size: 13px;">                     ⚠️ Diagnóstico: Zona 3 - Aulas y Comunidad                 </div>                 <div style="padding: 10px; border: 1px solid #c0392b; border-top: none; border-radius: 0 0 6px 6px; background: #fffcfc;">                     <b>👥 Comunidad Afectada:</b> ~450 estudiantes y personal docente en Edificio Senescyt y Los Bloques.<br>                     <b>💔 Impacto Humano:</b> Imposibilidad de abrir ventanas en clases por invasión de arenillas; estrés en exámenes y áreas de estudio.<br>                     <b>🌿 Solución Verde:</b> Cerca Viva 3 (320m) con estrato alto rompevientos y reducción del 82% del ingreso de insectos.                 </div>             </div>         </div>`)[0];
-                popup_efd6bad3d06e4c122741da14debb6ec3.setContent(html_03398913d735c88dd36c8466d8906590);
+                var html_d71402e495508936cf21d5d069c3db1c = $(`<div id="html_d71402e495508936cf21d5d069c3db1c" style="width: 100.0%; height: 100.0%;">             <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 270px; line-height: 1.4;">                 <div style="background: #c0392b; color: white; padding: 6px 10px; border-radius: 6px 6px 0 0; font-weight: bold; font-size: 13px;">                     ⚠️ Diagnóstico: Zona 3 - Aulas y Comunidad                 </div>                 <div style="padding: 10px; border: 1px solid #c0392b; border-top: none; border-radius: 0 0 6px 6px; background: #fffcfc;">                     <b>👥 Comunidad Afectada:</b> ~450 estudiantes y personal docente en Edificio Senescyt y Los Bloques.<br>                     <b>💔 Impacto Humano:</b> Imposibilidad de abrir ventanas en clases por invasión de arenillas; estrés en exámenes y áreas de estudio.<br>                     <b>🌿 Solución Verde:</b> Cerca Viva 3 (320m) con estrato alto rompevientos y reducción del 82% del ingreso de insectos.                 </div>             </div>         </div>`)[0];
+                popup_94068559997cc76399738fc571e2d3d2.setContent(html_d71402e495508936cf21d5d069c3db1c);
             
         
 
-        polygon_ff2ad76c89aa7b77f9e947d1b4c1cdee.bindPopup(popup_efd6bad3d06e4c122741da14debb6ec3)
+        polygon_27a5a12684ea0beab36470b6ae0099b0.bindPopup(popup_94068559997cc76399738fc571e2d3d2)
         ;
 
         
     
     
-            polygon_ff2ad76c89aa7b77f9e947d1b4c1cdee.bindTooltip(
+            polygon_27a5a12684ea0beab36470b6ae0099b0.bindTooltip(
                 `<div>
                      Zona 3: Bloques y Senescyt (Diagnóstico de Afectación)
                  </div>`,
@@ -806,36 +829,36 @@
             );
         
     
-            var feature_group_9f5a1956d06401686dcaf0624c3c4f59 = L.featureGroup(
+            var feature_group_a040d620254a8c980a1f0734a7195d6c = L.featureGroup(
                 {
 }
             );
         
     
-            var poly_line_ca514af07116ee81350af94f21ed3aa9 = L.polyline(
+            var poly_line_3a0e65e8d1f417292b73ce476a537d2f = L.polyline(
                 [[0.4085, -78.169], [0.4072, -78.1705], [0.4058, -78.1715], [0.4048, -78.172], [0.4035, -78.1725], [0.4015, -78.1728]],
                 {"bubblingMouseEvents": true, "color": "#0abde3", "dashArray": "7, 7", "dashOffset": null, "fill": false, "fillColor": "#0abde3", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
-            ).addTo(feature_group_9f5a1956d06401686dcaf0624c3c4f59);
+            ).addTo(feature_group_a040d620254a8c980a1f0734a7195d6c);
         
     
-        var popup_86d1120c1c97f41b57bd83998f448fae = L.popup({
+        var popup_26d7f308ea083ed689b5200831957753 = L.popup({
   "maxWidth": 270,
 });
 
         
             
-                var html_58ef6be9eb245671aaeab3862aa0bc3d = $(`<div id="html_58ef6be9eb245671aaeab3862aa0bc3d" style="width: 100.0%; height: 100.0%;">             <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 250px;">                 <h4 style="color: #0abde3; margin: 0 0 5px 0;">💧 Canal de Riego Principal</h4>                 <p style="font-size: 12px; color: #34495e; margin: 0;">                     Agua corriente que nutre la agricultura del valle. Es el hábitat lótico donde se fija la larva de <i>Simulium</i>.<br>                     <b>Tratamiento Verde:</b> No usamos venenos químicos. Se introduce control biológico con ninfas de libélulas y Bti ecológico.                 </p>             </div>         </div>`)[0];
-                popup_86d1120c1c97f41b57bd83998f448fae.setContent(html_58ef6be9eb245671aaeab3862aa0bc3d);
+                var html_e0f6cdc8fdb670b753feff859bcfe52d = $(`<div id="html_e0f6cdc8fdb670b753feff859bcfe52d" style="width: 100.0%; height: 100.0%;">             <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 250px;">                 <h4 style="color: #0abde3; margin: 0 0 5px 0;">💧 Canal de Riego Principal</h4>                 <p style="font-size: 12px; color: #34495e; margin: 0;">                     Agua corriente que nutre la agricultura del valle. Es el hábitat lótico donde se fija la larva de <i>Simulium</i>.<br>                     <b>Tratamiento Verde:</b> No usamos venenos químicos. Se introduce control biológico con ninfas de libélulas y Bti ecológico.                 </p>             </div>         </div>`)[0];
+                popup_26d7f308ea083ed689b5200831957753.setContent(html_e0f6cdc8fdb670b753feff859bcfe52d);
             
         
 
-        poly_line_ca514af07116ee81350af94f21ed3aa9.bindPopup(popup_86d1120c1c97f41b57bd83998f448fae)
+        poly_line_3a0e65e8d1f417292b73ce476a537d2f.bindPopup(popup_26d7f308ea083ed689b5200831957753)
         ;
 
         
     
     
-            poly_line_ca514af07116ee81350af94f21ed3aa9.bindTooltip(
+            poly_line_3a0e65e8d1f417292b73ce476a537d2f.bindTooltip(
                 `<div>
                      💧 Canal de Riego: Hábitat Hídrico (Intervención Limpia)
                  </div>`,
@@ -845,30 +868,30 @@
             );
         
     
-            var poly_line_85f9d32954929361f1750e3cfc14337c = L.polyline(
+            var poly_line_b7697200d0f297f9305bc0eb6ce2c21c = L.polyline(
                 [[0.4056, -78.1738], [0.405, -78.1732], [0.4045, -78.1728]],
                 {"bubblingMouseEvents": true, "color": "#0abde3", "dashArray": "5, 5", "dashOffset": null, "fill": false, "fillColor": "#0abde3", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-            ).addTo(feature_group_9f5a1956d06401686dcaf0624c3c4f59);
+            ).addTo(feature_group_a040d620254a8c980a1f0734a7195d6c);
         
     
-        var popup_6782e27bf46382688acacb05990eb023 = L.popup({
+        var popup_405abaac90ec5818ddafc6396db4da74 = L.popup({
   "maxWidth": 260,
 });
 
         
             
-                var html_68da191ae302ea9982d513437aef7723 = $(`<div id="html_68da191ae302ea9982d513437aef7723" style="width: 100.0%; height: 100.0%;">             <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 240px;">                 <h4 style="color: #0abde3; margin: 0 0 5px 0;">💧 Acequia Secundaria Ingenio</h4>                 <p style="font-size: 12px; color: #34495e; margin: 0;">                     Flujo patrimonial intervenido con micro-dosificación selectiva y barrera arbórea perimetral.                 </p>             </div>         </div>`)[0];
-                popup_6782e27bf46382688acacb05990eb023.setContent(html_68da191ae302ea9982d513437aef7723);
+                var html_6143488c3afc86c38ad51d5b1b8b7027 = $(`<div id="html_6143488c3afc86c38ad51d5b1b8b7027" style="width: 100.0%; height: 100.0%;">             <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 240px;">                 <h4 style="color: #0abde3; margin: 0 0 5px 0;">💧 Acequia Secundaria Ingenio</h4>                 <p style="font-size: 12px; color: #34495e; margin: 0;">                     Flujo patrimonial intervenido con micro-dosificación selectiva y barrera arbórea perimetral.                 </p>             </div>         </div>`)[0];
+                popup_405abaac90ec5818ddafc6396db4da74.setContent(html_6143488c3afc86c38ad51d5b1b8b7027);
             
         
 
-        poly_line_85f9d32954929361f1750e3cfc14337c.bindPopup(popup_6782e27bf46382688acacb05990eb023)
+        poly_line_b7697200d0f297f9305bc0eb6ce2c21c.bindPopup(popup_405abaac90ec5818ddafc6396db4da74)
         ;
 
         
     
     
-            poly_line_85f9d32954929361f1750e3cfc14337c.bindTooltip(
+            poly_line_b7697200d0f297f9305bc0eb6ce2c21c.bindTooltip(
                 `<div>
                      💧 Acequia Secundaria Ingenio
                  </div>`,
@@ -878,39 +901,39 @@
             );
         
     
-            feature_group_9f5a1956d06401686dcaf0624c3c4f59.addTo(map_850003012df7aa3e8fb26710f8817873);
+            feature_group_a040d620254a8c980a1f0734a7195d6c.addTo(map_3d069734d4f5f289d59532cb7715d1d0);
         
     
-            var feature_group_c7bea6d52660d4bf7a098ca394aefcd6 = L.featureGroup(
+            var feature_group_757dbd7a113bb102cb057f10f848193e = L.featureGroup(
                 {
 }
             );
         
     
-            var circle_marker_9e35c33c4a7533710adc58a43c4ad815 = L.circleMarker(
+            var circle_marker_07cd55e169c6075b00864c169a3c040f = L.circleMarker(
                 [0.4072, -78.1705],
                 {"bubblingMouseEvents": true, "color": "#0984e3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#74b9ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
-            ).addTo(feature_group_c7bea6d52660d4bf7a098ca394aefcd6);
+            ).addTo(feature_group_757dbd7a113bb102cb057f10f848193e);
         
     
-        var popup_9612e4ff6970b3eb6d4db287c209d7d0 = L.popup({
+        var popup_bf02ceb0e0e2231efff107673723ad90 = L.popup({
   "maxWidth": 270,
 });
 
         
             
-                var html_ea2b171aa446f86fb2a71cd7898a7a3e = $(`<div id="html_ea2b171aa446f86fb2a71cd7898a7a3e" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 250px;">                     <h4 style="color: #0984e3; margin: 0 0 4px 0;">🦗 Bio-Estación Hídrica Norte</h4>                     <span style="color: #636e72; font-size: 11px;">Sector Canal Senescyt</span>                     <p style="font-size: 12px; color: #2d3436; margin: 8px 0 0 0;">                         • <b>Ninfas de Libélula (Odonata):</b> Depredador voraz y natural de larvas acuáticas.<br>                         • <b>Micro-larvicida Bti:</b> <i>Bacillus thuringiensis israelensis</i>, 100% inocuo para humanos, peces, aves y abejas.                     </p>                 </div>             </div>`)[0];
-                popup_9612e4ff6970b3eb6d4db287c209d7d0.setContent(html_ea2b171aa446f86fb2a71cd7898a7a3e);
+                var html_a7e6e9d64d34f9e4287984fa3dac9272 = $(`<div id="html_a7e6e9d64d34f9e4287984fa3dac9272" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 250px;">                     <h4 style="color: #0984e3; margin: 0 0 4px 0;">🦗 Bio-Estación Hídrica Norte</h4>                     <span style="color: #636e72; font-size: 11px;">Sector Canal Senescyt</span>                     <p style="font-size: 12px; color: #2d3436; margin: 8px 0 0 0;">                         • <b>Ninfas de Libélula (Odonata):</b> Depredador voraz y natural de larvas acuáticas.<br>                         • <b>Micro-larvicida Bti:</b> <i>Bacillus thuringiensis israelensis</i>, 100% inocuo para humanos, peces, aves y abejas.                     </p>                 </div>             </div>`)[0];
+                popup_bf02ceb0e0e2231efff107673723ad90.setContent(html_a7e6e9d64d34f9e4287984fa3dac9272);
             
         
 
-        circle_marker_9e35c33c4a7533710adc58a43c4ad815.bindPopup(popup_9612e4ff6970b3eb6d4db287c209d7d0)
+        circle_marker_07cd55e169c6075b00864c169a3c040f.bindPopup(popup_bf02ceb0e0e2231efff107673723ad90)
         ;
 
         
     
     
-            circle_marker_9e35c33c4a7533710adc58a43c4ad815.bindTooltip(
+            circle_marker_07cd55e169c6075b00864c169a3c040f.bindTooltip(
                 `<div>
                      🦗 Bio-Estación Hídrica Norte (Depredación Natural y Bti)
                  </div>`,
@@ -920,30 +943,30 @@
             );
         
     
-            var circle_marker_c8383a841016167430def7c10a169b79 = L.circleMarker(
+            var circle_marker_dd5622185f045c88eae653b7041f47cc = L.circleMarker(
                 [0.4048, -78.172],
                 {"bubblingMouseEvents": true, "color": "#0984e3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#74b9ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
-            ).addTo(feature_group_c7bea6d52660d4bf7a098ca394aefcd6);
+            ).addTo(feature_group_757dbd7a113bb102cb057f10f848193e);
         
     
-        var popup_8837b5d763957a773504be40b0893e58 = L.popup({
+        var popup_9ce7973c073cc2839edfba4ed2cf544d = L.popup({
   "maxWidth": 270,
 });
 
         
             
-                var html_0d3d63d2e91fbc255b449863421c4b91 = $(`<div id="html_0d3d63d2e91fbc255b449863421c4b91" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 250px;">                     <h4 style="color: #0984e3; margin: 0 0 4px 0;">🦗 Bio-Estación Hídrica Central</h4>                     <span style="color: #636e72; font-size: 11px;">Sector Canal Laboratorios</span>                     <p style="font-size: 12px; color: #2d3436; margin: 8px 0 0 0;">                         • <b>Ninfas de Libélula (Odonata):</b> Depredador voraz y natural de larvas acuáticas.<br>                         • <b>Micro-larvicida Bti:</b> <i>Bacillus thuringiensis israelensis</i>, 100% inocuo para humanos, peces, aves y abejas.                     </p>                 </div>             </div>`)[0];
-                popup_8837b5d763957a773504be40b0893e58.setContent(html_0d3d63d2e91fbc255b449863421c4b91);
+                var html_a67210dbc1c6660133eca7ff644a93ac = $(`<div id="html_a67210dbc1c6660133eca7ff644a93ac" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 250px;">                     <h4 style="color: #0984e3; margin: 0 0 4px 0;">🦗 Bio-Estación Hídrica Central</h4>                     <span style="color: #636e72; font-size: 11px;">Sector Canal Laboratorios</span>                     <p style="font-size: 12px; color: #2d3436; margin: 8px 0 0 0;">                         • <b>Ninfas de Libélula (Odonata):</b> Depredador voraz y natural de larvas acuáticas.<br>                         • <b>Micro-larvicida Bti:</b> <i>Bacillus thuringiensis israelensis</i>, 100% inocuo para humanos, peces, aves y abejas.                     </p>                 </div>             </div>`)[0];
+                popup_9ce7973c073cc2839edfba4ed2cf544d.setContent(html_a67210dbc1c6660133eca7ff644a93ac);
             
         
 
-        circle_marker_c8383a841016167430def7c10a169b79.bindPopup(popup_8837b5d763957a773504be40b0893e58)
+        circle_marker_dd5622185f045c88eae653b7041f47cc.bindPopup(popup_9ce7973c073cc2839edfba4ed2cf544d)
         ;
 
         
     
     
-            circle_marker_c8383a841016167430def7c10a169b79.bindTooltip(
+            circle_marker_dd5622185f045c88eae653b7041f47cc.bindTooltip(
                 `<div>
                      🦗 Bio-Estación Hídrica Central (Depredación Natural y Bti)
                  </div>`,
@@ -953,30 +976,30 @@
             );
         
     
-            var circle_marker_78f1c2d194c4c63e1c4b8979a1d15cfc = L.circleMarker(
+            var circle_marker_8d5057292f097babc920aa756b4c30af = L.circleMarker(
                 [0.4028, -78.1726],
                 {"bubblingMouseEvents": true, "color": "#0984e3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#74b9ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
-            ).addTo(feature_group_c7bea6d52660d4bf7a098ca394aefcd6);
+            ).addTo(feature_group_757dbd7a113bb102cb057f10f848193e);
         
     
-        var popup_d37b408b742964adfc249fd6721c04a5 = L.popup({
+        var popup_7f63f2fac28073e509b66255fa880ae2 = L.popup({
   "maxWidth": 270,
 });
 
         
             
-                var html_b4042d1f72603fca0b17f2e92881acd8 = $(`<div id="html_b4042d1f72603fca0b17f2e92881acd8" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 250px;">                     <h4 style="color: #0984e3; margin: 0 0 4px 0;">🦗 Bio-Estación Hídrica Sur</h4>                     <span style="color: #636e72; font-size: 11px;">Sector Canal Canchas y Residencias</span>                     <p style="font-size: 12px; color: #2d3436; margin: 8px 0 0 0;">                         • <b>Ninfas de Libélula (Odonata):</b> Depredador voraz y natural de larvas acuáticas.<br>                         • <b>Micro-larvicida Bti:</b> <i>Bacillus thuringiensis israelensis</i>, 100% inocuo para humanos, peces, aves y abejas.                     </p>                 </div>             </div>`)[0];
-                popup_d37b408b742964adfc249fd6721c04a5.setContent(html_b4042d1f72603fca0b17f2e92881acd8);
+                var html_cb7be39ed89b33bb096a3d0e2f99b1ff = $(`<div id="html_cb7be39ed89b33bb096a3d0e2f99b1ff" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 250px;">                     <h4 style="color: #0984e3; margin: 0 0 4px 0;">🦗 Bio-Estación Hídrica Sur</h4>                     <span style="color: #636e72; font-size: 11px;">Sector Canal Canchas y Residencias</span>                     <p style="font-size: 12px; color: #2d3436; margin: 8px 0 0 0;">                         • <b>Ninfas de Libélula (Odonata):</b> Depredador voraz y natural de larvas acuáticas.<br>                         • <b>Micro-larvicida Bti:</b> <i>Bacillus thuringiensis israelensis</i>, 100% inocuo para humanos, peces, aves y abejas.                     </p>                 </div>             </div>`)[0];
+                popup_7f63f2fac28073e509b66255fa880ae2.setContent(html_cb7be39ed89b33bb096a3d0e2f99b1ff);
             
         
 
-        circle_marker_78f1c2d194c4c63e1c4b8979a1d15cfc.bindPopup(popup_d37b408b742964adfc249fd6721c04a5)
+        circle_marker_8d5057292f097babc920aa756b4c30af.bindPopup(popup_7f63f2fac28073e509b66255fa880ae2)
         ;
 
         
     
     
-            circle_marker_78f1c2d194c4c63e1c4b8979a1d15cfc.bindTooltip(
+            circle_marker_8d5057292f097babc920aa756b4c30af.bindTooltip(
                 `<div>
                      🦗 Bio-Estación Hídrica Sur (Depredación Natural y Bti)
                  </div>`,
@@ -986,23 +1009,23 @@
             );
         
     
-            feature_group_c7bea6d52660d4bf7a098ca394aefcd6.addTo(map_850003012df7aa3e8fb26710f8817873);
+            feature_group_757dbd7a113bb102cb057f10f848193e.addTo(map_3d069734d4f5f289d59532cb7715d1d0);
         
     
-            var feature_group_562558786dc719871419bf08a636d9fc = L.featureGroup(
+            var feature_group_4d54bc394b913cbb362da4019359ed5d = L.featureGroup(
                 {
 }
             );
         
     
-            var marker_189ab96c16ddf00b71d245219189daf3 = L.marker(
+            var marker_64907322969a5049ed7beff33eac23a8 = L.marker(
                 [0.402297, -78.173836],
                 {
 }
-            ).addTo(feature_group_562558786dc719871419bf08a636d9fc);
+            ).addTo(feature_group_4d54bc394b913cbb362da4019359ed5d);
         
     
-            var icon_0adeb24228fa67f68a810920f8ea8e4e = L.AwesomeMarkers.icon(
+            var icon_b64a30e1ccb5f71b1bfbb06bc34f5d10 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -1013,24 +1036,24 @@
             );
         
     
-        var popup_3eafae085fd2cce572cedca81a393b28 = L.popup({
+        var popup_90b0c640043d8583f35c727482772199 = L.popup({
   "maxWidth": 270,
 });
 
         
             
-                var html_59e875280e30223d61a49e7c47c2adaa = $(`<div id="html_59e875280e30223d61a49e7c47c2adaa" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 250px; line-height: 1.4;">                     <div style="color: #1e3799; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Residencias Patrimoniales</div>                     <span style="background: #eef2f7; color: #34495e; padding: 2px 7px; border-radius: 4px; font-size: 11px; font-weight: 600;">🏡 Hogar Estudiantil</span>                     <p style="margin: 8px 0 6px 0; font-size: 12px; color: #2c3e50;">Alojamiento universitario patrimonial. Con el buffer verde, los estudiantes descansan sin zumbidos ni picaduras nocturnas.</p>                     <div style="font-size: 10px; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 4px;">                         📍 GPS Google: 0.402297, -78.173836                     </div>                 </div>             </div>`)[0];
-                popup_3eafae085fd2cce572cedca81a393b28.setContent(html_59e875280e30223d61a49e7c47c2adaa);
+                var html_b9276e96ecff126360a49e98092609d4 = $(`<div id="html_b9276e96ecff126360a49e98092609d4" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 250px; line-height: 1.4;">                     <div style="color: #1e3799; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Residencias Patrimoniales</div>                     <span style="background: #eef2f7; color: #34495e; padding: 2px 7px; border-radius: 4px; font-size: 11px; font-weight: 600;">🏡 Hogar Estudiantil</span>                     <p style="margin: 8px 0 6px 0; font-size: 12px; color: #2c3e50;">Alojamiento universitario patrimonial. Con el buffer verde, los estudiantes descansan sin zumbidos ni picaduras nocturnas.</p>                     <div style="font-size: 10px; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 4px;">                         📍 GPS Google: 0.402297, -78.173836                     </div>                 </div>             </div>`)[0];
+                popup_90b0c640043d8583f35c727482772199.setContent(html_b9276e96ecff126360a49e98092609d4);
             
         
 
-        marker_189ab96c16ddf00b71d245219189daf3.bindPopup(popup_3eafae085fd2cce572cedca81a393b28)
+        marker_64907322969a5049ed7beff33eac23a8.bindPopup(popup_90b0c640043d8583f35c727482772199)
         ;
 
         
     
     
-            marker_189ab96c16ddf00b71d245219189daf3.bindTooltip(
+            marker_64907322969a5049ed7beff33eac23a8.bindTooltip(
                 `<div>
                      Residencias Patrimoniales (🏡 Hogar Estudiantil)
                  </div>`,
@@ -1040,17 +1063,17 @@
             );
         
     
-                marker_189ab96c16ddf00b71d245219189daf3.setIcon(icon_0adeb24228fa67f68a810920f8ea8e4e);
+                marker_64907322969a5049ed7beff33eac23a8.setIcon(icon_b64a30e1ccb5f71b1bfbb06bc34f5d10);
             
     
-            var marker_1d1c14769f1e8a721619a781fa9fcce4 = L.marker(
+            var marker_da0ef010867cf7450aabb771c4b6d1f8 = L.marker(
                 [0.40275, -78.1748],
                 {
 }
-            ).addTo(feature_group_562558786dc719871419bf08a636d9fc);
+            ).addTo(feature_group_4d54bc394b913cbb362da4019359ed5d);
         
     
-            var icon_9305bf9fadd3416213eb3abece57d7c8 = L.AwesomeMarkers.icon(
+            var icon_4a09359a69b8071d2c8371334aacc4a7 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -1061,24 +1084,24 @@
             );
         
     
-        var popup_97f028b4eb162ff572871a4ca14abcae = L.popup({
+        var popup_7ef1e6ced377eff212619ba9f23ce448 = L.popup({
   "maxWidth": 270,
 });
 
         
             
-                var html_d2159f228a087b36178a274fedcb6616 = $(`<div id="html_d2159f228a087b36178a274fedcb6616" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 250px; line-height: 1.4;">                     <div style="color: #1e3799; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Las Multis (Residencias)</div>                     <span style="background: #eef2f7; color: #34495e; padding: 2px 7px; border-radius: 4px; font-size: 11px; font-weight: 600;">🏡 Residencias Las Multis</span>                     <p style="margin: 8px 0 6px 0; font-size: 12px; color: #2c3e50;">Alta concentración juvenil. La barrera vegetal disminuye en 85% la presencia de arenillas en balcones y entradas.</p>                     <div style="font-size: 10px; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 4px;">                         📍 GPS Google: 0.402750, -78.174800                     </div>                 </div>             </div>`)[0];
-                popup_97f028b4eb162ff572871a4ca14abcae.setContent(html_d2159f228a087b36178a274fedcb6616);
+                var html_7e86ca63ecf22510128f65c6a41e5376 = $(`<div id="html_7e86ca63ecf22510128f65c6a41e5376" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 250px; line-height: 1.4;">                     <div style="color: #1e3799; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Las Multis (Residencias)</div>                     <span style="background: #eef2f7; color: #34495e; padding: 2px 7px; border-radius: 4px; font-size: 11px; font-weight: 600;">🏡 Residencias Las Multis</span>                     <p style="margin: 8px 0 6px 0; font-size: 12px; color: #2c3e50;">Alta concentración juvenil. La barrera vegetal disminuye en 85% la presencia de arenillas en balcones y entradas.</p>                     <div style="font-size: 10px; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 4px;">                         📍 GPS Google: 0.402750, -78.174800                     </div>                 </div>             </div>`)[0];
+                popup_7ef1e6ced377eff212619ba9f23ce448.setContent(html_7e86ca63ecf22510128f65c6a41e5376);
             
         
 
-        marker_1d1c14769f1e8a721619a781fa9fcce4.bindPopup(popup_97f028b4eb162ff572871a4ca14abcae)
+        marker_da0ef010867cf7450aabb771c4b6d1f8.bindPopup(popup_7ef1e6ced377eff212619ba9f23ce448)
         ;
 
         
     
     
-            marker_1d1c14769f1e8a721619a781fa9fcce4.bindTooltip(
+            marker_da0ef010867cf7450aabb771c4b6d1f8.bindTooltip(
                 `<div>
                      Las Multis (Residencias) (🏡 Residencias Las Multis)
                  </div>`,
@@ -1088,17 +1111,17 @@
             );
         
     
-                marker_1d1c14769f1e8a721619a781fa9fcce4.setIcon(icon_9305bf9fadd3416213eb3abece57d7c8);
+                marker_da0ef010867cf7450aabb771c4b6d1f8.setIcon(icon_4a09359a69b8071d2c8371334aacc4a7);
             
     
-            var marker_0add0ce4a94316a2a94a2dac9e2121cc = L.marker(
+            var marker_56321ca2d309eff2dddf67b3d38b46a5 = L.marker(
                 [0.40235, -78.1755],
                 {
 }
-            ).addTo(feature_group_562558786dc719871419bf08a636d9fc);
+            ).addTo(feature_group_4d54bc394b913cbb362da4019359ed5d);
         
     
-            var icon_d57064e325c06591582532037776cdbc = L.AwesomeMarkers.icon(
+            var icon_0fcf6d5501b73954a87ec5f58b287330 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "darkgreen",
   "iconColor": "white",
@@ -1109,24 +1132,24 @@
             );
         
     
-        var popup_8e4827e3c80676f54778e749ff57c668 = L.popup({
+        var popup_a6b04d7c1b671e82b94188b1504ff0c4 = L.popup({
   "maxWidth": 270,
 });
 
         
             
-                var html_c5770eeec4b016766d419e2739f94d30 = $(`<div id="html_c5770eeec4b016766d419e2739f94d30" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 250px; line-height: 1.4;">                     <div style="color: #1e3799; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Concha Acústica Yachay Tech</div>                     <span style="background: #eef2f7; color: #34495e; padding: 2px 7px; border-radius: 4px; font-size: 11px; font-weight: 600;">🎭 Cultura y Esparcimiento</span>                     <p style="margin: 8px 0 6px 0; font-size: 12px; color: #2c3e50;">Espacio emblemático al aire libre recuperado para conciertos, debates y actividades culturales sin picaduras.</p>                     <div style="font-size: 10px; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 4px;">                         📍 GPS Google: 0.402350, -78.175500                     </div>                 </div>             </div>`)[0];
-                popup_8e4827e3c80676f54778e749ff57c668.setContent(html_c5770eeec4b016766d419e2739f94d30);
+                var html_3dc986e858b18897b50039fff282c4b9 = $(`<div id="html_3dc986e858b18897b50039fff282c4b9" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 250px; line-height: 1.4;">                     <div style="color: #1e3799; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Concha Acústica Yachay Tech</div>                     <span style="background: #eef2f7; color: #34495e; padding: 2px 7px; border-radius: 4px; font-size: 11px; font-weight: 600;">🎭 Cultura y Esparcimiento</span>                     <p style="margin: 8px 0 6px 0; font-size: 12px; color: #2c3e50;">Espacio emblemático al aire libre recuperado para conciertos, debates y actividades culturales sin picaduras.</p>                     <div style="font-size: 10px; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 4px;">                         📍 GPS Google: 0.402350, -78.175500                     </div>                 </div>             </div>`)[0];
+                popup_a6b04d7c1b671e82b94188b1504ff0c4.setContent(html_3dc986e858b18897b50039fff282c4b9);
             
         
 
-        marker_0add0ce4a94316a2a94a2dac9e2121cc.bindPopup(popup_8e4827e3c80676f54778e749ff57c668)
+        marker_56321ca2d309eff2dddf67b3d38b46a5.bindPopup(popup_a6b04d7c1b671e82b94188b1504ff0c4)
         ;
 
         
     
     
-            marker_0add0ce4a94316a2a94a2dac9e2121cc.bindTooltip(
+            marker_56321ca2d309eff2dddf67b3d38b46a5.bindTooltip(
                 `<div>
                      Concha Acústica Yachay Tech (🎭 Cultura y Esparcimiento)
                  </div>`,
@@ -1136,17 +1159,17 @@
             );
         
     
-                marker_0add0ce4a94316a2a94a2dac9e2121cc.setIcon(icon_d57064e325c06591582532037776cdbc);
+                marker_56321ca2d309eff2dddf67b3d38b46a5.setIcon(icon_0fcf6d5501b73954a87ec5f58b287330);
             
     
-            var marker_308e82ba6f7019046583d1feb4903321 = L.marker(
+            var marker_14c30970623e5a97c4f5743bae64074c = L.marker(
                 [0.4025, -78.1718],
                 {
 }
-            ).addTo(feature_group_562558786dc719871419bf08a636d9fc);
+            ).addTo(feature_group_4d54bc394b913cbb362da4019359ed5d);
         
     
-            var icon_38f6c001550395b0dee4523b2e9ef64f = L.AwesomeMarkers.icon(
+            var icon_87279c1b83ea6efb73f26cbe781f5031 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "cadetblue",
   "iconColor": "white",
@@ -1157,24 +1180,24 @@
             );
         
     
-        var popup_1ce25b5e662c45b3ef89957b77a9e1b5 = L.popup({
+        var popup_89e0c6357f5ad54d163c19fc74356836 = L.popup({
   "maxWidth": 270,
 });
 
         
             
-                var html_29a4c407ae4fcf385024f462931bfe9a = $(`<div id="html_29a4c407ae4fcf385024f462931bfe9a" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 250px; line-height: 1.4;">                     <div style="color: #1e3799; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Canchas Deportivas</div>                     <span style="background: #eef2f7; color: #34495e; padding: 2px 7px; border-radius: 4px; font-size: 11px; font-weight: 600;">⚽ Salud y Deporte</span>                     <p style="margin: 8px 0 6px 0; font-size: 12px; color: #2c3e50;">Área para fútbol y básquetbol. Los deportistas disfrutan de aire limpio sin necesidad de aplicarse repelentes pegajosos.</p>                     <div style="font-size: 10px; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 4px;">                         📍 GPS Google: 0.402500, -78.171800                     </div>                 </div>             </div>`)[0];
-                popup_1ce25b5e662c45b3ef89957b77a9e1b5.setContent(html_29a4c407ae4fcf385024f462931bfe9a);
+                var html_5d205d1099c4530f0f318c5e68057f2b = $(`<div id="html_5d205d1099c4530f0f318c5e68057f2b" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 250px; line-height: 1.4;">                     <div style="color: #1e3799; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Canchas Deportivas</div>                     <span style="background: #eef2f7; color: #34495e; padding: 2px 7px; border-radius: 4px; font-size: 11px; font-weight: 600;">⚽ Salud y Deporte</span>                     <p style="margin: 8px 0 6px 0; font-size: 12px; color: #2c3e50;">Área para fútbol y básquetbol. Los deportistas disfrutan de aire limpio sin necesidad de aplicarse repelentes pegajosos.</p>                     <div style="font-size: 10px; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 4px;">                         📍 GPS Google: 0.402500, -78.171800                     </div>                 </div>             </div>`)[0];
+                popup_89e0c6357f5ad54d163c19fc74356836.setContent(html_5d205d1099c4530f0f318c5e68057f2b);
             
         
 
-        marker_308e82ba6f7019046583d1feb4903321.bindPopup(popup_1ce25b5e662c45b3ef89957b77a9e1b5)
+        marker_14c30970623e5a97c4f5743bae64074c.bindPopup(popup_89e0c6357f5ad54d163c19fc74356836)
         ;
 
         
     
     
-            marker_308e82ba6f7019046583d1feb4903321.bindTooltip(
+            marker_14c30970623e5a97c4f5743bae64074c.bindTooltip(
                 `<div>
                      Canchas Deportivas (⚽ Salud y Deporte)
                  </div>`,
@@ -1184,17 +1207,17 @@
             );
         
     
-                marker_308e82ba6f7019046583d1feb4903321.setIcon(icon_38f6c001550395b0dee4523b2e9ef64f);
+                marker_14c30970623e5a97c4f5743bae64074c.setIcon(icon_87279c1b83ea6efb73f26cbe781f5031);
             
     
-            var marker_07de96f03173d4fc6e66e70570bae6c3 = L.marker(
+            var marker_4667f0fd1ab0a7ae53c250a2d2e95ca9 = L.marker(
                 [0.40255, -78.1728],
                 {
 }
-            ).addTo(feature_group_562558786dc719871419bf08a636d9fc);
+            ).addTo(feature_group_4d54bc394b913cbb362da4019359ed5d);
         
     
-            var icon_7719e5f2ceed80ca33110e4c138eee45 = L.AwesomeMarkers.icon(
+            var icon_1d41cc9c8b9f661232130c5dfb175bd6 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "gray",
   "iconColor": "white",
@@ -1205,24 +1228,24 @@
             );
         
     
-        var popup_efeb50cc482dd35d63e4edb66cfd3ece = L.popup({
+        var popup_7a7c96c7a3dc0809c42948245db90673 = L.popup({
   "maxWidth": 270,
 });
 
         
             
-                var html_8019dab85f562919a07df53d73778980 = $(`<div id="html_8019dab85f562919a07df53d73778980" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 250px; line-height: 1.4;">                     <div style="color: #1e3799; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Parada Fasta (Arco Pats)</div>                     <span style="background: #eef2f7; color: #34495e; padding: 2px 7px; border-radius: 4px; font-size: 11px; font-weight: 600;">🚌 Transporte Seguro</span>                     <p style="margin: 8px 0 6px 0; font-size: 12px; color: #2c3e50;">Punto neurálgico de espera de buses. Espera cómoda bajo sombra vegetal.</p>                     <div style="font-size: 10px; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 4px;">                         📍 GPS Google: 0.402550, -78.172800                     </div>                 </div>             </div>`)[0];
-                popup_efeb50cc482dd35d63e4edb66cfd3ece.setContent(html_8019dab85f562919a07df53d73778980);
+                var html_cc2edfb085b286fb22ca46a99e77a65a = $(`<div id="html_cc2edfb085b286fb22ca46a99e77a65a" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 250px; line-height: 1.4;">                     <div style="color: #1e3799; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Parada Fasta (Arco Pats)</div>                     <span style="background: #eef2f7; color: #34495e; padding: 2px 7px; border-radius: 4px; font-size: 11px; font-weight: 600;">🚌 Transporte Seguro</span>                     <p style="margin: 8px 0 6px 0; font-size: 12px; color: #2c3e50;">Punto neurálgico de espera de buses. Espera cómoda bajo sombra vegetal.</p>                     <div style="font-size: 10px; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 4px;">                         📍 GPS Google: 0.402550, -78.172800                     </div>                 </div>             </div>`)[0];
+                popup_7a7c96c7a3dc0809c42948245db90673.setContent(html_cc2edfb085b286fb22ca46a99e77a65a);
             
         
 
-        marker_07de96f03173d4fc6e66e70570bae6c3.bindPopup(popup_efeb50cc482dd35d63e4edb66cfd3ece)
+        marker_4667f0fd1ab0a7ae53c250a2d2e95ca9.bindPopup(popup_7a7c96c7a3dc0809c42948245db90673)
         ;
 
         
     
     
-            marker_07de96f03173d4fc6e66e70570bae6c3.bindTooltip(
+            marker_4667f0fd1ab0a7ae53c250a2d2e95ca9.bindTooltip(
                 `<div>
                      Parada Fasta (Arco Pats) (🚌 Transporte Seguro)
                  </div>`,
@@ -1232,17 +1255,17 @@
             );
         
     
-                marker_07de96f03173d4fc6e66e70570bae6c3.setIcon(icon_7719e5f2ceed80ca33110e4c138eee45);
+                marker_4667f0fd1ab0a7ae53c250a2d2e95ca9.setIcon(icon_1d41cc9c8b9f661232130c5dfb175bd6);
             
     
-            var marker_bdde65ba1553c1b78ba940350c7190ef = L.marker(
+            var marker_43e1ed15b4a430a9f2d2a565da2affc2 = L.marker(
                 [0.405072, -78.174159],
                 {
 }
-            ).addTo(feature_group_562558786dc719871419bf08a636d9fc);
+            ).addTo(feature_group_4d54bc394b913cbb362da4019359ed5d);
         
     
-            var icon_0e65f22ed27782b2d59f8510e86574ea = L.AwesomeMarkers.icon(
+            var icon_455a56959724c4f968041b994856c02a = L.AwesomeMarkers.icon(
                 {
   "markerColor": "blue",
   "iconColor": "white",
@@ -1253,24 +1276,24 @@
             );
         
     
-        var popup_fab40414f8ef7bf29ce6a38ab786c63a = L.popup({
+        var popup_79382dff7347a2e484ad9899d65e6621 = L.popup({
   "maxWidth": 270,
 });
 
         
             
-                var html_45db190bd169d24eac710bdeb4e4a70a = $(`<div id="html_45db190bd169d24eac710bdeb4e4a70a" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 250px; line-height: 1.4;">                     <div style="color: #1e3799; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Biblioteca Patrimonial 'Yachay Tech'</div>                     <span style="background: #eef2f7; color: #34495e; padding: 2px 7px; border-radius: 4px; font-size: 11px; font-weight: 600;">📚 Sabiduría y Concentración</span>                     <p style="margin: 8px 0 6px 0; font-size: 12px; color: #2c3e50;">Templo del estudio e investigación. Lectura tranquila en jardines y terrazas sin la distracción de insectos picadores.</p>                     <div style="font-size: 10px; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 4px;">                         📍 GPS Google: 0.405072, -78.174159                     </div>                 </div>             </div>`)[0];
-                popup_fab40414f8ef7bf29ce6a38ab786c63a.setContent(html_45db190bd169d24eac710bdeb4e4a70a);
+                var html_eea2136588e4033e1ac8184375fdb5cc = $(`<div id="html_eea2136588e4033e1ac8184375fdb5cc" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 250px; line-height: 1.4;">                     <div style="color: #1e3799; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Biblioteca Patrimonial 'Yachay Tech'</div>                     <span style="background: #eef2f7; color: #34495e; padding: 2px 7px; border-radius: 4px; font-size: 11px; font-weight: 600;">📚 Sabiduría y Concentración</span>                     <p style="margin: 8px 0 6px 0; font-size: 12px; color: #2c3e50;">Templo del estudio e investigación. Lectura tranquila en jardines y terrazas sin la distracción de insectos picadores.</p>                     <div style="font-size: 10px; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 4px;">                         📍 GPS Google: 0.405072, -78.174159                     </div>                 </div>             </div>`)[0];
+                popup_79382dff7347a2e484ad9899d65e6621.setContent(html_eea2136588e4033e1ac8184375fdb5cc);
             
         
 
-        marker_bdde65ba1553c1b78ba940350c7190ef.bindPopup(popup_fab40414f8ef7bf29ce6a38ab786c63a)
+        marker_43e1ed15b4a430a9f2d2a565da2affc2.bindPopup(popup_79382dff7347a2e484ad9899d65e6621)
         ;
 
         
     
     
-            marker_bdde65ba1553c1b78ba940350c7190ef.bindTooltip(
+            marker_43e1ed15b4a430a9f2d2a565da2affc2.bindTooltip(
                 `<div>
                      Biblioteca Patrimonial 'Yachay Tech' (📚 Sabiduría y Concentración)
                  </div>`,
@@ -1280,17 +1303,17 @@
             );
         
     
-                marker_bdde65ba1553c1b78ba940350c7190ef.setIcon(icon_0e65f22ed27782b2d59f8510e86574ea);
+                marker_43e1ed15b4a430a9f2d2a565da2affc2.setIcon(icon_455a56959724c4f968041b994856c02a);
             
     
-            var marker_ed45a4a2ef3690ac0719e64c26baedc2 = L.marker(
+            var marker_fe143145593400d1c6587daa30b754d0 = L.marker(
                 [0.40532, -78.174],
                 {
 }
-            ).addTo(feature_group_562558786dc719871419bf08a636d9fc);
+            ).addTo(feature_group_4d54bc394b913cbb362da4019359ed5d);
         
     
-            var icon_566fc5142775b246732d18a8d050bc58 = L.AwesomeMarkers.icon(
+            var icon_a37e373a561a1997053e4a89527fb7b9 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "purple",
   "iconColor": "white",
@@ -1301,24 +1324,24 @@
             );
         
     
-        var popup_e039799a06e7b93b40b6dba8f682e326 = L.popup({
+        var popup_f77fc3549b19d1638ee040ac1224d7fc = L.popup({
   "maxWidth": 270,
 });
 
         
             
-                var html_0d1ab2de6094172081f139585f44d880 = $(`<div id="html_0d1ab2de6094172081f139585f44d880" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 250px; line-height: 1.4;">                     <div style="color: #1e3799; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Chimenea Ingenio Azucarero</div>                     <span style="background: #eef2f7; color: #34495e; padding: 2px 7px; border-radius: 4px; font-size: 11px; font-weight: 600;">🏛️ Patrimonio Histórico</span>                     <p style="margin: 8px 0 6px 0; font-size: 12px; color: #2c3e50;">Símbolo de la memoria de Urcuquí. Integrado paisajísticamente con árboles de molle y flores melíferas.</p>                     <div style="font-size: 10px; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 4px;">                         📍 GPS Google: 0.405320, -78.174000                     </div>                 </div>             </div>`)[0];
-                popup_e039799a06e7b93b40b6dba8f682e326.setContent(html_0d1ab2de6094172081f139585f44d880);
+                var html_c86005d58bf3d25ff0e4447e7ac10c2d = $(`<div id="html_c86005d58bf3d25ff0e4447e7ac10c2d" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 250px; line-height: 1.4;">                     <div style="color: #1e3799; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Chimenea Ingenio Azucarero</div>                     <span style="background: #eef2f7; color: #34495e; padding: 2px 7px; border-radius: 4px; font-size: 11px; font-weight: 600;">🏛️ Patrimonio Histórico</span>                     <p style="margin: 8px 0 6px 0; font-size: 12px; color: #2c3e50;">Símbolo de la memoria de Urcuquí. Integrado paisajísticamente con árboles de molle y flores melíferas.</p>                     <div style="font-size: 10px; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 4px;">                         📍 GPS Google: 0.405320, -78.174000                     </div>                 </div>             </div>`)[0];
+                popup_f77fc3549b19d1638ee040ac1224d7fc.setContent(html_c86005d58bf3d25ff0e4447e7ac10c2d);
             
         
 
-        marker_ed45a4a2ef3690ac0719e64c26baedc2.bindPopup(popup_e039799a06e7b93b40b6dba8f682e326)
+        marker_fe143145593400d1c6587daa30b754d0.bindPopup(popup_f77fc3549b19d1638ee040ac1224d7fc)
         ;
 
         
     
     
-            marker_ed45a4a2ef3690ac0719e64c26baedc2.bindTooltip(
+            marker_fe143145593400d1c6587daa30b754d0.bindTooltip(
                 `<div>
                      Chimenea Ingenio Azucarero (🏛️ Patrimonio Histórico)
                  </div>`,
@@ -1328,17 +1351,17 @@
             );
         
     
-                marker_ed45a4a2ef3690ac0719e64c26baedc2.setIcon(icon_566fc5142775b246732d18a8d050bc58);
+                marker_fe143145593400d1c6587daa30b754d0.setIcon(icon_a37e373a561a1997053e4a89527fb7b9);
             
     
-            var marker_e0ae2f043f7ef819e3672feea39b79ef = L.marker(
+            var marker_2a60a933d084eeae4ba336f832c59d6a = L.marker(
                 [0.4049, -78.1739],
                 {
 }
-            ).addTo(feature_group_562558786dc719871419bf08a636d9fc);
+            ).addTo(feature_group_4d54bc394b913cbb362da4019359ed5d);
         
     
-            var icon_f7471889586648942e7db7e7eb98d20c = L.AwesomeMarkers.icon(
+            var icon_dd433d4f6bc01cb867079cdba36bfa0f = L.AwesomeMarkers.icon(
                 {
   "markerColor": "darkpurple",
   "iconColor": "white",
@@ -1349,24 +1372,24 @@
             );
         
     
-        var popup_7a3756087593237a23b0caadee9aec11 = L.popup({
+        var popup_1dc32da80191d3a4b6e56e36c4894ecc = L.popup({
   "maxWidth": 270,
 });
 
         
             
-                var html_e85eab0f6a4488e5bc237b1e6544d100 = $(`<div id="html_e85eab0f6a4488e5bc237b1e6544d100" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 250px; line-height: 1.4;">                     <div style="color: #1e3799; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Laboratorio de Química</div>                     <span style="background: #eef2f7; color: #34495e; padding: 2px 7px; border-radius: 4px; font-size: 11px; font-weight: 600;">🔬 Ciencia e Innovación</span>                     <p style="margin: 8px 0 6px 0; font-size: 12px; color: #2c3e50;">Espacio donde la biotecnología se aplica para caracterizar los monoterpenos protectores.</p>                     <div style="font-size: 10px; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 4px;">                         📍 GPS Google: 0.404900, -78.173900                     </div>                 </div>             </div>`)[0];
-                popup_7a3756087593237a23b0caadee9aec11.setContent(html_e85eab0f6a4488e5bc237b1e6544d100);
+                var html_0cd783d7c14547dc3e3fa5314965b596 = $(`<div id="html_0cd783d7c14547dc3e3fa5314965b596" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 250px; line-height: 1.4;">                     <div style="color: #1e3799; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Laboratorio de Química</div>                     <span style="background: #eef2f7; color: #34495e; padding: 2px 7px; border-radius: 4px; font-size: 11px; font-weight: 600;">🔬 Ciencia e Innovación</span>                     <p style="margin: 8px 0 6px 0; font-size: 12px; color: #2c3e50;">Espacio donde la biotecnología se aplica para caracterizar los monoterpenos protectores.</p>                     <div style="font-size: 10px; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 4px;">                         📍 GPS Google: 0.404900, -78.173900                     </div>                 </div>             </div>`)[0];
+                popup_1dc32da80191d3a4b6e56e36c4894ecc.setContent(html_0cd783d7c14547dc3e3fa5314965b596);
             
         
 
-        marker_e0ae2f043f7ef819e3672feea39b79ef.bindPopup(popup_7a3756087593237a23b0caadee9aec11)
+        marker_2a60a933d084eeae4ba336f832c59d6a.bindPopup(popup_1dc32da80191d3a4b6e56e36c4894ecc)
         ;
 
         
     
     
-            marker_e0ae2f043f7ef819e3672feea39b79ef.bindTooltip(
+            marker_2a60a933d084eeae4ba336f832c59d6a.bindTooltip(
                 `<div>
                      Laboratorio de Química (🔬 Ciencia e Innovación)
                  </div>`,
@@ -1376,17 +1399,17 @@
             );
         
     
-                marker_e0ae2f043f7ef819e3672feea39b79ef.setIcon(icon_f7471889586648942e7db7e7eb98d20c);
+                marker_2a60a933d084eeae4ba336f832c59d6a.setIcon(icon_dd433d4f6bc01cb867079cdba36bfa0f);
             
     
-            var marker_c2ffeb6b285d4ae5a9b4c8e7a8d55e18 = L.marker(
+            var marker_ba9ea75a2062b21a79018844ad02aa48 = L.marker(
                 [0.40478, -78.17245],
                 {
 }
-            ).addTo(feature_group_562558786dc719871419bf08a636d9fc);
+            ).addTo(feature_group_4d54bc394b913cbb362da4019359ed5d);
         
     
-            var icon_b105eed3df290f840a042917aa3e247f = L.AwesomeMarkers.icon(
+            var icon_c79653fd0741494a396d4d33aaff5c59 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "darkpurple",
   "iconColor": "white",
@@ -1397,24 +1420,24 @@
             );
         
     
-        var popup_541d5695c310df08113d7c1a20eafd45 = L.popup({
+        var popup_933aca8d2955fed9dd6a28ace9619ef6 = L.popup({
   "maxWidth": 270,
 });
 
         
             
-                var html_38ac6d317d52807725943eb74e93c867 = $(`<div id="html_38ac6d317d52807725943eb74e93c867" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 250px; line-height: 1.4;">                     <div style="color: #1e3799; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Laboratorios de Carrera</div>                     <span style="background: #eef2f7; color: #34495e; padding: 2px 7px; border-radius: 4px; font-size: 11px; font-weight: 600;">💻 Práctica Tecnológica</span>                     <p style="margin: 8px 0 6px 0; font-size: 12px; color: #2c3e50;">Tránsito seguro entre naves de laboratorios y áreas experimentales.</p>                     <div style="font-size: 10px; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 4px;">                         📍 GPS Google: 0.404780, -78.172450                     </div>                 </div>             </div>`)[0];
-                popup_541d5695c310df08113d7c1a20eafd45.setContent(html_38ac6d317d52807725943eb74e93c867);
+                var html_69452377f17fdddd2e65fa25294cc5de = $(`<div id="html_69452377f17fdddd2e65fa25294cc5de" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 250px; line-height: 1.4;">                     <div style="color: #1e3799; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Laboratorios de Carrera</div>                     <span style="background: #eef2f7; color: #34495e; padding: 2px 7px; border-radius: 4px; font-size: 11px; font-weight: 600;">💻 Práctica Tecnológica</span>                     <p style="margin: 8px 0 6px 0; font-size: 12px; color: #2c3e50;">Tránsito seguro entre naves de laboratorios y áreas experimentales.</p>                     <div style="font-size: 10px; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 4px;">                         📍 GPS Google: 0.404780, -78.172450                     </div>                 </div>             </div>`)[0];
+                popup_933aca8d2955fed9dd6a28ace9619ef6.setContent(html_69452377f17fdddd2e65fa25294cc5de);
             
         
 
-        marker_c2ffeb6b285d4ae5a9b4c8e7a8d55e18.bindPopup(popup_541d5695c310df08113d7c1a20eafd45)
+        marker_ba9ea75a2062b21a79018844ad02aa48.bindPopup(popup_933aca8d2955fed9dd6a28ace9619ef6)
         ;
 
         
     
     
-            marker_c2ffeb6b285d4ae5a9b4c8e7a8d55e18.bindTooltip(
+            marker_ba9ea75a2062b21a79018844ad02aa48.bindTooltip(
                 `<div>
                      Laboratorios de Carrera (💻 Práctica Tecnológica)
                  </div>`,
@@ -1424,17 +1447,17 @@
             );
         
     
-                marker_c2ffeb6b285d4ae5a9b4c8e7a8d55e18.setIcon(icon_b105eed3df290f840a042917aa3e247f);
+                marker_ba9ea75a2062b21a79018844ad02aa48.setIcon(icon_c79653fd0741494a396d4d33aaff5c59);
             
     
-            var marker_08222a69dacc541e8b782809cc9dcef3 = L.marker(
+            var marker_5943c31bf7091cc553dbd6aa0024fc10 = L.marker(
                 [0.406691, -78.170214],
                 {
 }
-            ).addTo(feature_group_562558786dc719871419bf08a636d9fc);
+            ).addTo(feature_group_4d54bc394b913cbb362da4019359ed5d);
         
     
-            var icon_ff497eae12faa4bbb8ce47941e53b202 = L.AwesomeMarkers.icon(
+            var icon_8c8e0785d7275fd6d06558985e59d5b2 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "red",
   "iconColor": "white",
@@ -1445,24 +1468,24 @@
             );
         
     
-        var popup_9ebe15e7b1ce139371541bce98338686 = L.popup({
+        var popup_a8cf386a9cc63080ac706d229b7e43f8 = L.popup({
   "maxWidth": 270,
 });
 
         
             
-                var html_3313d60f9be33c2d8488199f1501501a = $(`<div id="html_3313d60f9be33c2d8488199f1501501a" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 250px; line-height: 1.4;">                     <div style="color: #1e3799; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Edificio Senescyt (Yachay Tech)</div>                     <span style="background: #eef2f7; color: #34495e; padding: 2px 7px; border-radius: 4px; font-size: 11px; font-weight: 600;">🎓 Aulas y Aprendizaje</span>                     <p style="margin: 8px 0 6px 0; font-size: 12px; color: #2c3e50;">Salas de clase con ventilación natural abierta, sin calor sofocante ni ingreso de plagas.</p>                     <div style="font-size: 10px; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 4px;">                         📍 GPS Google: 0.406691, -78.170214                     </div>                 </div>             </div>`)[0];
-                popup_9ebe15e7b1ce139371541bce98338686.setContent(html_3313d60f9be33c2d8488199f1501501a);
+                var html_08ac5bb5edad643173704db77f30f4a2 = $(`<div id="html_08ac5bb5edad643173704db77f30f4a2" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 250px; line-height: 1.4;">                     <div style="color: #1e3799; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Edificio Senescyt (Yachay Tech)</div>                     <span style="background: #eef2f7; color: #34495e; padding: 2px 7px; border-radius: 4px; font-size: 11px; font-weight: 600;">🎓 Aulas y Aprendizaje</span>                     <p style="margin: 8px 0 6px 0; font-size: 12px; color: #2c3e50;">Salas de clase con ventilación natural abierta, sin calor sofocante ni ingreso de plagas.</p>                     <div style="font-size: 10px; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 4px;">                         📍 GPS Google: 0.406691, -78.170214                     </div>                 </div>             </div>`)[0];
+                popup_a8cf386a9cc63080ac706d229b7e43f8.setContent(html_08ac5bb5edad643173704db77f30f4a2);
             
         
 
-        marker_08222a69dacc541e8b782809cc9dcef3.bindPopup(popup_9ebe15e7b1ce139371541bce98338686)
+        marker_5943c31bf7091cc553dbd6aa0024fc10.bindPopup(popup_a8cf386a9cc63080ac706d229b7e43f8)
         ;
 
         
     
     
-            marker_08222a69dacc541e8b782809cc9dcef3.bindTooltip(
+            marker_5943c31bf7091cc553dbd6aa0024fc10.bindTooltip(
                 `<div>
                      Edificio Senescyt (Yachay Tech) (🎓 Aulas y Aprendizaje)
                  </div>`,
@@ -1472,17 +1495,17 @@
             );
         
     
-                marker_08222a69dacc541e8b782809cc9dcef3.setIcon(icon_ff497eae12faa4bbb8ce47941e53b202);
+                marker_5943c31bf7091cc553dbd6aa0024fc10.setIcon(icon_8c8e0785d7275fd6d06558985e59d5b2);
             
     
-            var marker_1b7cd39f54d0f620ca9f72ba4d4debde = L.marker(
+            var marker_58547df701fec0a54a11a84bc623c3ec = L.marker(
                 [0.40695, -78.17115],
                 {
 }
-            ).addTo(feature_group_562558786dc719871419bf08a636d9fc);
+            ).addTo(feature_group_4d54bc394b913cbb362da4019359ed5d);
         
     
-            var icon_65c3c51fe87e315b4e0f46dc40e76489 = L.AwesomeMarkers.icon(
+            var icon_8714d12f6c006116d55ae9174faea097 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "darkred",
   "iconColor": "white",
@@ -1493,24 +1516,24 @@
             );
         
     
-        var popup_f41af1266437969c89140e805295c7c3 = L.popup({
+        var popup_06835a154cb263b14d7096e0e32f8d5c = L.popup({
   "maxWidth": 270,
 });
 
         
             
-                var html_09470a01ebeca8772820c6e41ab56aa2 = $(`<div id="html_09470a01ebeca8772820c6e41ab56aa2" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 250px; line-height: 1.4;">                     <div style="color: #1e3799; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Residencias 'Los Bloques'</div>                     <span style="background: #eef2f7; color: #34495e; padding: 2px 7px; border-radius: 4px; font-size: 11px; font-weight: 600;">🛌 Descanso Juvenil</span>                     <p style="margin: 8px 0 6px 0; font-size: 12px; color: #2c3e50;">Habitaciones tranquilas y seguras para el descanso y estudio individual.</p>                     <div style="font-size: 10px; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 4px;">                         📍 GPS Google: 0.406950, -78.171150                     </div>                 </div>             </div>`)[0];
-                popup_f41af1266437969c89140e805295c7c3.setContent(html_09470a01ebeca8772820c6e41ab56aa2);
+                var html_b97ea846dfee62187c46c8f6f93ac61c = $(`<div id="html_b97ea846dfee62187c46c8f6f93ac61c" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 250px; line-height: 1.4;">                     <div style="color: #1e3799; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Residencias 'Los Bloques'</div>                     <span style="background: #eef2f7; color: #34495e; padding: 2px 7px; border-radius: 4px; font-size: 11px; font-weight: 600;">🛌 Descanso Juvenil</span>                     <p style="margin: 8px 0 6px 0; font-size: 12px; color: #2c3e50;">Habitaciones tranquilas y seguras para el descanso y estudio individual.</p>                     <div style="font-size: 10px; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 4px;">                         📍 GPS Google: 0.406950, -78.171150                     </div>                 </div>             </div>`)[0];
+                popup_06835a154cb263b14d7096e0e32f8d5c.setContent(html_b97ea846dfee62187c46c8f6f93ac61c);
             
         
 
-        marker_1b7cd39f54d0f620ca9f72ba4d4debde.bindPopup(popup_f41af1266437969c89140e805295c7c3)
+        marker_58547df701fec0a54a11a84bc623c3ec.bindPopup(popup_06835a154cb263b14d7096e0e32f8d5c)
         ;
 
         
     
     
-            marker_1b7cd39f54d0f620ca9f72ba4d4debde.bindTooltip(
+            marker_58547df701fec0a54a11a84bc623c3ec.bindTooltip(
                 `<div>
                      Residencias 'Los Bloques' (🛌 Descanso Juvenil)
                  </div>`,
@@ -1520,17 +1543,17 @@
             );
         
     
-                marker_1b7cd39f54d0f620ca9f72ba4d4debde.setIcon(icon_65c3c51fe87e315b4e0f46dc40e76489);
+                marker_58547df701fec0a54a11a84bc623c3ec.setIcon(icon_8714d12f6c006116d55ae9174faea097);
             
     
-            var marker_fbba42bad4afcef748799b6c6c716e55 = L.marker(
+            var marker_cf073e8f9aa2ee82851e45f82bf8690c = L.marker(
                 [0.4074, -78.1715],
                 {
 }
-            ).addTo(feature_group_562558786dc719871419bf08a636d9fc);
+            ).addTo(feature_group_4d54bc394b913cbb362da4019359ed5d);
         
     
-            var icon_c4884705655ada17ae3b526a0de828dc = L.AwesomeMarkers.icon(
+            var icon_f7c75f13a0a49a337ef771357a61a6ff = L.AwesomeMarkers.icon(
                 {
   "markerColor": "orange",
   "iconColor": "white",
@@ -1541,24 +1564,24 @@
             );
         
     
-        var popup_109224e937f70b747a214962655f3f8d = L.popup({
+        var popup_c372d8561ce75a6949f70bc0c56c1389 = L.popup({
   "maxWidth": 270,
 });
 
         
             
-                var html_c2d069c5af414c91ed07238318a8ecef = $(`<div id="html_c2d069c5af414c91ed07238318a8ecef" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 250px; line-height: 1.4;">                     <div style="color: #1e3799; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Vida Comunitaria</div>                     <span style="background: #eef2f7; color: #34495e; padding: 2px 7px; border-radius: 4px; font-size: 11px; font-weight: 600;">🤝 Bienestar y Convivencia</span>                     <p style="margin: 8px 0 6px 0; font-size: 12px; color: #2c3e50;">Centro de apoyo emocional y social universitario en un entorno natural y armónico.</p>                     <div style="font-size: 10px; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 4px;">                         📍 GPS Google: 0.407400, -78.171500                     </div>                 </div>             </div>`)[0];
-                popup_109224e937f70b747a214962655f3f8d.setContent(html_c2d069c5af414c91ed07238318a8ecef);
+                var html_b97e5208f40bb38f304f59a30d7acb63 = $(`<div id="html_b97e5208f40bb38f304f59a30d7acb63" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 250px; line-height: 1.4;">                     <div style="color: #1e3799; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Vida Comunitaria</div>                     <span style="background: #eef2f7; color: #34495e; padding: 2px 7px; border-radius: 4px; font-size: 11px; font-weight: 600;">🤝 Bienestar y Convivencia</span>                     <p style="margin: 8px 0 6px 0; font-size: 12px; color: #2c3e50;">Centro de apoyo emocional y social universitario en un entorno natural y armónico.</p>                     <div style="font-size: 10px; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 4px;">                         📍 GPS Google: 0.407400, -78.171500                     </div>                 </div>             </div>`)[0];
+                popup_c372d8561ce75a6949f70bc0c56c1389.setContent(html_b97e5208f40bb38f304f59a30d7acb63);
             
         
 
-        marker_fbba42bad4afcef748799b6c6c716e55.bindPopup(popup_109224e937f70b747a214962655f3f8d)
+        marker_cf073e8f9aa2ee82851e45f82bf8690c.bindPopup(popup_c372d8561ce75a6949f70bc0c56c1389)
         ;
 
         
     
     
-            marker_fbba42bad4afcef748799b6c6c716e55.bindTooltip(
+            marker_cf073e8f9aa2ee82851e45f82bf8690c.bindTooltip(
                 `<div>
                      Vida Comunitaria (🤝 Bienestar y Convivencia)
                  </div>`,
@@ -1568,17 +1591,17 @@
             );
         
     
-                marker_fbba42bad4afcef748799b6c6c716e55.setIcon(icon_c4884705655ada17ae3b526a0de828dc);
+                marker_cf073e8f9aa2ee82851e45f82bf8690c.setIcon(icon_f7c75f13a0a49a337ef771357a61a6ff);
             
     
-            var marker_18318205967e25a1bd009f46733208b8 = L.marker(
+            var marker_575d17d5f6e4672a8b9e841e8a8b586d = L.marker(
                 [0.4065, -78.1705],
                 {
 }
-            ).addTo(feature_group_562558786dc719871419bf08a636d9fc);
+            ).addTo(feature_group_4d54bc394b913cbb362da4019359ed5d);
         
     
-            var icon_9515694057289a99231036cde2680d7f = L.AwesomeMarkers.icon(
+            var icon_13a6cbb64c05ba693d63eb0540274aee = L.AwesomeMarkers.icon(
                 {
   "markerColor": "orange",
   "iconColor": "white",
@@ -1589,24 +1612,24 @@
             );
         
     
-        var popup_c2c7ec3cc5c569199ae23aebbeae65ab = L.popup({
+        var popup_3fbb3415bcd39acbdc1e96bfce372153 = L.popup({
   "maxWidth": 270,
 });
 
         
             
-                var html_549267a314fe94d7846cc2e3118cfccd = $(`<div id="html_549267a314fe94d7846cc2e3118cfccd" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 250px; line-height: 1.4;">                     <div style="color: #1e3799; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Minimarket Krispan</div>                     <span style="background: #eef2f7; color: #34495e; padding: 2px 7px; border-radius: 4px; font-size: 11px; font-weight: 600;">☕ Encuentro y Servicios</span>                     <p style="margin: 8px 0 6px 0; font-size: 12px; color: #2c3e50;">Punto de café y descanso estudiantil al aire libre en un ambiente fresco y perfumado.</p>                     <div style="font-size: 10px; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 4px;">                         📍 GPS Google: 0.406500, -78.170500                     </div>                 </div>             </div>`)[0];
-                popup_c2c7ec3cc5c569199ae23aebbeae65ab.setContent(html_549267a314fe94d7846cc2e3118cfccd);
+                var html_309347540842649fc28bdfb9e70d5a23 = $(`<div id="html_309347540842649fc28bdfb9e70d5a23" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 250px; line-height: 1.4;">                     <div style="color: #1e3799; font-weight: bold; font-size: 14px; margin-bottom: 3px;">Minimarket Krispan</div>                     <span style="background: #eef2f7; color: #34495e; padding: 2px 7px; border-radius: 4px; font-size: 11px; font-weight: 600;">☕ Encuentro y Servicios</span>                     <p style="margin: 8px 0 6px 0; font-size: 12px; color: #2c3e50;">Punto de café y descanso estudiantil al aire libre en un ambiente fresco y perfumado.</p>                     <div style="font-size: 10px; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 4px;">                         📍 GPS Google: 0.406500, -78.170500                     </div>                 </div>             </div>`)[0];
+                popup_3fbb3415bcd39acbdc1e96bfce372153.setContent(html_309347540842649fc28bdfb9e70d5a23);
             
         
 
-        marker_18318205967e25a1bd009f46733208b8.bindPopup(popup_c2c7ec3cc5c569199ae23aebbeae65ab)
+        marker_575d17d5f6e4672a8b9e841e8a8b586d.bindPopup(popup_3fbb3415bcd39acbdc1e96bfce372153)
         ;
 
         
     
     
-            marker_18318205967e25a1bd009f46733208b8.bindTooltip(
+            marker_575d17d5f6e4672a8b9e841e8a8b586d.bindTooltip(
                 `<div>
                      Minimarket Krispan (☕ Encuentro y Servicios)
                  </div>`,
@@ -1616,42 +1639,42 @@
             );
         
     
-                marker_18318205967e25a1bd009f46733208b8.setIcon(icon_9515694057289a99231036cde2680d7f);
+                marker_575d17d5f6e4672a8b9e841e8a8b586d.setIcon(icon_13a6cbb64c05ba693d63eb0540274aee);
             
     
-            feature_group_562558786dc719871419bf08a636d9fc.addTo(map_850003012df7aa3e8fb26710f8817873);
+            feature_group_4d54bc394b913cbb362da4019359ed5d.addTo(map_3d069734d4f5f289d59532cb7715d1d0);
         
     
-            var feature_group_d0c7939ddd669ee82038bd38501d113c = L.featureGroup(
+            var feature_group_d091f7d7836998d1552e10b6e480a246 = L.featureGroup(
                 {
 }
             );
         
     
-            var poly_line_3f018bacd174d357d4f7e9ee21743e66 = L.polyline(
+            var poly_line_2d2ea07db316a9d4d83059be3cc36251 = L.polyline(
                 [[0.4031, -78.175], [0.403, -78.1738], [0.4024, -78.173]],
                 {"bubblingMouseEvents": true, "color": "#10ac84", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#10ac84", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 6}
-            ).addTo(feature_group_d0c7939ddd669ee82038bd38501d113c);
+            ).addTo(feature_group_d091f7d7836998d1552e10b6e480a246);
         
     
-        var popup_784083bc5b5e08efa44f95e9cd7845de = L.popup({
+        var popup_60395a5f4b964d8debbbad4e6304ffd5 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_ef5650de17b6be1bea660ebf200fc7fc = $(`<div id="html_ef5650de17b6be1bea660ebf200fc7fc" style="width: 100.0%; height: 100.0%;">             <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 280px;">                 <div style="background: #10ac84; color: white; padding: 6px 10px; border-radius: 6px 6px 0 0; font-weight: bold; font-size: 13px;">                     🌿 Cerca Viva 1 · Sector Residencial (380m)                 </div>                 <div style="padding: 10px; border: 1px solid #10ac84; border-top: none; border-radius: 0 0 6px 6px; font-size: 12px;">                     <b>🌱 Arquitectura en 3 Estratos:</b><br>                     • <b>Alto (3.5-5m):</b> <i>Schinus molle</i> (Molle andino) - Sombra fresca y rompevientos con pineno.<br>                     • <b>Medio (1.2-2m):</b> <i>Myrcianthes hallii</i> (Arrayán) & Romero - Aroma relajante y bloqueo de vuelo.<br>                     • <b>Bajo (0.4-0.8m):</b> <i>Cymbopogon citratus</i> (Hierba luisa) - Perfume cítrico y barrera basal de citronelal.<br>                     <div style="margin-top: 6px; padding: 5px; background: #e8f8f5; border-radius: 4px; color: #0e6251;">                         <b>✨ Impacto Estudiantil:</b> Transforma los accesos a residencias en paseos aromáticos seguros.                     </div>                 </div>             </div>         </div>`)[0];
-                popup_784083bc5b5e08efa44f95e9cd7845de.setContent(html_ef5650de17b6be1bea660ebf200fc7fc);
+                var html_d335e9883475aecbd52e85512e0e6e42 = $(`<div id="html_d335e9883475aecbd52e85512e0e6e42" style="width: 100.0%; height: 100.0%;">             <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 280px;">                 <div style="background: #10ac84; color: white; padding: 6px 10px; border-radius: 6px 6px 0 0; font-weight: bold; font-size: 13px;">                     🌿 Cerca Viva 1 · Sector Residencial (380m)                 </div>                 <div style="padding: 10px; border: 1px solid #10ac84; border-top: none; border-radius: 0 0 6px 6px; font-size: 12px;">                     <b>🌱 Arquitectura en 3 Estratos:</b><br>                     • <b>Alto (3.5-5m):</b> <i>Schinus molle</i> (Molle andino) - Sombra fresca y rompevientos con pineno.<br>                     • <b>Medio (1.2-2m):</b> <i>Myrcianthes hallii</i> (Arrayán) & Romero - Aroma relajante y bloqueo de vuelo.<br>                     • <b>Bajo (0.4-0.8m):</b> <i>Cymbopogon citratus</i> (Hierba luisa) - Perfume cítrico y barrera basal de citronelal.<br>                     <div style="margin-top: 6px; padding: 5px; background: #e8f8f5; border-radius: 4px; color: #0e6251;">                         <b>✨ Impacto Estudiantil:</b> Transforma los accesos a residencias en paseos aromáticos seguros.                     </div>                 </div>             </div>         </div>`)[0];
+                popup_60395a5f4b964d8debbbad4e6304ffd5.setContent(html_d335e9883475aecbd52e85512e0e6e42);
             
         
 
-        poly_line_3f018bacd174d357d4f7e9ee21743e66.bindPopup(popup_784083bc5b5e08efa44f95e9cd7845de)
+        poly_line_2d2ea07db316a9d4d83059be3cc36251.bindPopup(popup_60395a5f4b964d8debbbad4e6304ffd5)
         ;
 
         
     
     
-            poly_line_3f018bacd174d357d4f7e9ee21743e66.bindTooltip(
+            poly_line_2d2ea07db316a9d4d83059be3cc36251.bindTooltip(
                 `<div>
                      🌿 Cerca Viva 1: Corredor Residencial (380m) - Confort y Protección
                  </div>`,
@@ -1661,30 +1684,30 @@
             );
         
     
-            var poly_line_1a434cddc5e06bf6af1726e130dd97cf = L.polyline(
+            var poly_line_0b89424ae49d8e2b7a10d4532413ff6d = L.polyline(
                 [[0.4055, -78.1734], [0.4048, -78.1728], [0.404, -78.1726]],
                 {"bubblingMouseEvents": true, "color": "#10ac84", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#10ac84", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 6}
-            ).addTo(feature_group_d0c7939ddd669ee82038bd38501d113c);
+            ).addTo(feature_group_d091f7d7836998d1552e10b6e480a246);
         
     
-        var popup_fc44bde3b10b73d68b3d21ba0f20ed58 = L.popup({
+        var popup_53f56d9ccac95bb5bb4d7adcd819b3e4 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_007d4aefb3ec20f000437de1a48e7dc9 = $(`<div id="html_007d4aefb3ec20f000437de1a48e7dc9" style="width: 100.0%; height: 100.0%;">             <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 280px;">                 <div style="background: #10ac84; color: white; padding: 6px 10px; border-radius: 6px 6px 0 0; font-weight: bold; font-size: 13px;">                     🌿 Cerca Viva 2 · Sector Ingenio / Laboratorios (280m)                 </div>                 <div style="padding: 10px; border: 1px solid #10ac84; border-top: none; border-radius: 0 0 6px 6px; font-size: 12px;">                     <b>🌱 Arquitectura en 3 Estratos:</b><br>                     • <b>Alto:</b> <i>Schinus molle</i> (Cortina contra vientos del valle).<br>                     • <b>Medio:</b> <i>Lantana camara</i> y Lavanda (Flores melíferas para polinizadores).<br>                     • <b>Bajo:</b> <i>Cymbopogon citratus</i> (Aroma cítrico continuo).<br>                     <div style="margin-top: 6px; padding: 5px; background: #e8f8f5; border-radius: 4px; color: #0e6251;">                         <b>✨ Impacto en el Estudio:</b> Permite disfrutar las caminerías históricas y estudiar en áreas abiertas del Ingenio.                     </div>                 </div>             </div>         </div>`)[0];
-                popup_fc44bde3b10b73d68b3d21ba0f20ed58.setContent(html_007d4aefb3ec20f000437de1a48e7dc9);
+                var html_1b423e9219578ceb740dbeccd3a48f8a = $(`<div id="html_1b423e9219578ceb740dbeccd3a48f8a" style="width: 100.0%; height: 100.0%;">             <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 280px;">                 <div style="background: #10ac84; color: white; padding: 6px 10px; border-radius: 6px 6px 0 0; font-weight: bold; font-size: 13px;">                     🌿 Cerca Viva 2 · Sector Ingenio / Laboratorios (280m)                 </div>                 <div style="padding: 10px; border: 1px solid #10ac84; border-top: none; border-radius: 0 0 6px 6px; font-size: 12px;">                     <b>🌱 Arquitectura en 3 Estratos:</b><br>                     • <b>Alto:</b> <i>Schinus molle</i> (Cortina contra vientos del valle).<br>                     • <b>Medio:</b> <i>Lantana camara</i> y Lavanda (Flores melíferas para polinizadores).<br>                     • <b>Bajo:</b> <i>Cymbopogon citratus</i> (Aroma cítrico continuo).<br>                     <div style="margin-top: 6px; padding: 5px; background: #e8f8f5; border-radius: 4px; color: #0e6251;">                         <b>✨ Impacto en el Estudio:</b> Permite disfrutar las caminerías históricas y estudiar en áreas abiertas del Ingenio.                     </div>                 </div>             </div>         </div>`)[0];
+                popup_53f56d9ccac95bb5bb4d7adcd819b3e4.setContent(html_1b423e9219578ceb740dbeccd3a48f8a);
             
         
 
-        poly_line_1a434cddc5e06bf6af1726e130dd97cf.bindPopup(popup_fc44bde3b10b73d68b3d21ba0f20ed58)
+        poly_line_0b89424ae49d8e2b7a10d4532413ff6d.bindPopup(popup_53f56d9ccac95bb5bb4d7adcd819b3e4)
         ;
 
         
     
     
-            poly_line_1a434cddc5e06bf6af1726e130dd97cf.bindTooltip(
+            poly_line_0b89424ae49d8e2b7a10d4532413ff6d.bindTooltip(
                 `<div>
                      🌿 Cerca Viva 2: Corredor Histórico / Laboratorios (280m)
                  </div>`,
@@ -1694,30 +1717,30 @@
             );
         
     
-            var poly_line_aef7a1be273214cf5292936fedc49275 = L.polyline(
+            var poly_line_eb22dd6154efa9639ac3310822fbec4e = L.polyline(
                 [[0.4072, -78.1718], [0.4066, -78.171], [0.406, -78.1702]],
                 {"bubblingMouseEvents": true, "color": "#10ac84", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#10ac84", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 6}
-            ).addTo(feature_group_d0c7939ddd669ee82038bd38501d113c);
+            ).addTo(feature_group_d091f7d7836998d1552e10b6e480a246);
         
     
-        var popup_b20e52d23880318ad1d939707b076a9c = L.popup({
+        var popup_0740fc6255611e9fd54ea62ba271e06d = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_053e0552e38ea3a76d6de227d88d6cc9 = $(`<div id="html_053e0552e38ea3a76d6de227d88d6cc9" style="width: 100.0%; height: 100.0%;">             <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 280px;">                 <div style="background: #10ac84; color: white; padding: 6px 10px; border-radius: 6px 6px 0 0; font-weight: bold; font-size: 13px;">                     🌿 Cerca Viva 3 · Sector Senescyt / Los Bloques (320m)                 </div>                 <div style="padding: 10px; border: 1px solid #10ac84; border-top: none; border-radius: 0 0 6px 6px; font-size: 12px;">                     <b>🌱 Arquitectura en 3 Estratos:</b><br>                     • <b>Alto:</b> <i>Schinus molle</i>.<br>                     • <b>Medio:</b> <i>Myrcianthes hallii</i> (Arrayán) & Romero.<br>                     • <b>Bajo:</b> <i>Cymbopogon citratus</i>.<br>                     <div style="margin-top: 6px; padding: 5px; background: #e8f8f5; border-radius: 4px; color: #0e6251;">                         <b>✨ Impacto Académico:</b> Ventilación natural en las aulas y descanso profundo en las habitaciones de Los Bloques.                     </div>                 </div>             </div>         </div>`)[0];
-                popup_b20e52d23880318ad1d939707b076a9c.setContent(html_053e0552e38ea3a76d6de227d88d6cc9);
+                var html_45fa54cf434a8d9d5630661fa402e09b = $(`<div id="html_45fa54cf434a8d9d5630661fa402e09b" style="width: 100.0%; height: 100.0%;">             <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 280px;">                 <div style="background: #10ac84; color: white; padding: 6px 10px; border-radius: 6px 6px 0 0; font-weight: bold; font-size: 13px;">                     🌿 Cerca Viva 3 · Sector Senescyt / Los Bloques (320m)                 </div>                 <div style="padding: 10px; border: 1px solid #10ac84; border-top: none; border-radius: 0 0 6px 6px; font-size: 12px;">                     <b>🌱 Arquitectura en 3 Estratos:</b><br>                     • <b>Alto:</b> <i>Schinus molle</i>.<br>                     • <b>Medio:</b> <i>Myrcianthes hallii</i> (Arrayán) & Romero.<br>                     • <b>Bajo:</b> <i>Cymbopogon citratus</i>.<br>                     <div style="margin-top: 6px; padding: 5px; background: #e8f8f5; border-radius: 4px; color: #0e6251;">                         <b>✨ Impacto Académico:</b> Ventilación natural en las aulas y descanso profundo en las habitaciones de Los Bloques.                     </div>                 </div>             </div>         </div>`)[0];
+                popup_0740fc6255611e9fd54ea62ba271e06d.setContent(html_45fa54cf434a8d9d5630661fa402e09b);
             
         
 
-        poly_line_aef7a1be273214cf5292936fedc49275.bindPopup(popup_b20e52d23880318ad1d939707b076a9c)
+        poly_line_eb22dd6154efa9639ac3310822fbec4e.bindPopup(popup_0740fc6255611e9fd54ea62ba271e06d)
         ;
 
         
     
     
-            poly_line_aef7a1be273214cf5292936fedc49275.bindTooltip(
+            poly_line_eb22dd6154efa9639ac3310822fbec4e.bindTooltip(
                 `<div>
                      🌿 Cerca Viva 3: Corredor Académico Senescyt / Los Bloques (320m)
                  </div>`,
@@ -1727,39 +1750,39 @@
             );
         
     
-            feature_group_d0c7939ddd669ee82038bd38501d113c.addTo(map_850003012df7aa3e8fb26710f8817873);
+            feature_group_d091f7d7836998d1552e10b6e480a246.addTo(map_3d069734d4f5f289d59532cb7715d1d0);
         
     
-            var feature_group_dbe8000e5f8933d540d7f82034a409b0 = L.featureGroup(
+            var feature_group_b9137f009f693a443e74a16834679a18 = L.featureGroup(
                 {
 }
             );
         
     
-            var poly_line_6a2e56078e1f90061431913d0f911d70 = L.polyline(
+            var poly_line_94d2a522ec2f888d8ba5e267ba3d28a5 = L.polyline(
                 [[0.4031, -78.175], [0.403, -78.1738], [0.4024, -78.173]],
                 {"bubblingMouseEvents": true, "color": "#2ecc71", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#2ecc71", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.25, "smoothFactor": 1.0, "stroke": true, "weight": 36}
-            ).addTo(feature_group_dbe8000e5f8933d540d7f82034a409b0);
+            ).addTo(feature_group_b9137f009f693a443e74a16834679a18);
         
     
-        var popup_0988ce0cfb9a62043735ca719250fa2d = L.popup({
+        var popup_c6da7a1dbfb7527bbe995e609efbbe72 = L.popup({
   "maxWidth": 260,
 });
 
         
             
-                var html_be495ecacd1d040e19a17ac86f0f994c = $(`<div id="html_be495ecacd1d040e19a17ac86f0f994c" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 240px;">                     <b style="color: #27ae60;">🛡️ Zona Protegida Residencias (Buffer 40m)</b><br>                     <span style="font-size: 12px; color: #2c3e50;">Cubre Las Multis, Patrimoniales y Concha Acústica</span><br>                     <p style="font-size: 11px; color: #555; margin: 4px 0 0 0;">                         Los monoterpenos volátiles (citronelal, cineol, pineno) saturan los receptores olfativos de las arenillas, impidiendo que ubiquen a las personas.                     </p>                 </div>             </div>`)[0];
-                popup_0988ce0cfb9a62043735ca719250fa2d.setContent(html_be495ecacd1d040e19a17ac86f0f994c);
+                var html_65327679ab74daa44d276f4de8bfbbc5 = $(`<div id="html_65327679ab74daa44d276f4de8bfbbc5" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 240px;">                     <b style="color: #27ae60;">🛡️ Zona Protegida Residencias (Buffer 40m)</b><br>                     <span style="font-size: 12px; color: #2c3e50;">Cubre Las Multis, Patrimoniales y Concha Acústica</span><br>                     <p style="font-size: 11px; color: #555; margin: 4px 0 0 0;">                         Los monoterpenos volátiles (citronelal, cineol, pineno) saturan los receptores olfativos de las arenillas, impidiendo que ubiquen a las personas.                     </p>                 </div>             </div>`)[0];
+                popup_c6da7a1dbfb7527bbe995e609efbbe72.setContent(html_65327679ab74daa44d276f4de8bfbbc5);
             
         
 
-        poly_line_6a2e56078e1f90061431913d0f911d70.bindPopup(popup_0988ce0cfb9a62043735ca719250fa2d)
+        poly_line_94d2a522ec2f888d8ba5e267ba3d28a5.bindPopup(popup_c6da7a1dbfb7527bbe995e609efbbe72)
         ;
 
         
     
     
-            poly_line_6a2e56078e1f90061431913d0f911d70.bindTooltip(
+            poly_line_94d2a522ec2f888d8ba5e267ba3d28a5.bindTooltip(
                 `<div>
                      🛡️ Área de Confort y Protección Aromática (Zona Protegida Residencias)
                  </div>`,
@@ -1769,30 +1792,30 @@
             );
         
     
-            var poly_line_d4f6d3684c415b7e3f73dedc05f5faca = L.polyline(
+            var poly_line_81c905eec4122d676d34d2552b08f120 = L.polyline(
                 [[0.4055, -78.1734], [0.4048, -78.1728], [0.404, -78.1726]],
                 {"bubblingMouseEvents": true, "color": "#2ecc71", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#2ecc71", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.25, "smoothFactor": 1.0, "stroke": true, "weight": 36}
-            ).addTo(feature_group_dbe8000e5f8933d540d7f82034a409b0);
+            ).addTo(feature_group_b9137f009f693a443e74a16834679a18);
         
     
-        var popup_30a2489de50defdc41b28aacb7323371 = L.popup({
+        var popup_1710d4df8f018d412b4806d93cd2af56 = L.popup({
   "maxWidth": 260,
 });
 
         
             
-                var html_0d296ec3a6aa4e20ec1ff87f693bdcda = $(`<div id="html_0d296ec3a6aa4e20ec1ff87f693bdcda" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 240px;">                     <b style="color: #27ae60;">🛡️ Zona Protegida Ingenio (Buffer 40m)</b><br>                     <span style="font-size: 12px; color: #2c3e50;">Cubre Biblioteca, Chimenea y Caminerías</span><br>                     <p style="font-size: 11px; color: #555; margin: 4px 0 0 0;">                         Los monoterpenos volátiles (citronelal, cineol, pineno) saturan los receptores olfativos de las arenillas, impidiendo que ubiquen a las personas.                     </p>                 </div>             </div>`)[0];
-                popup_30a2489de50defdc41b28aacb7323371.setContent(html_0d296ec3a6aa4e20ec1ff87f693bdcda);
+                var html_a5598369cc413b3fd838ac92ba0a5839 = $(`<div id="html_a5598369cc413b3fd838ac92ba0a5839" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 240px;">                     <b style="color: #27ae60;">🛡️ Zona Protegida Ingenio (Buffer 40m)</b><br>                     <span style="font-size: 12px; color: #2c3e50;">Cubre Biblioteca, Chimenea y Caminerías</span><br>                     <p style="font-size: 11px; color: #555; margin: 4px 0 0 0;">                         Los monoterpenos volátiles (citronelal, cineol, pineno) saturan los receptores olfativos de las arenillas, impidiendo que ubiquen a las personas.                     </p>                 </div>             </div>`)[0];
+                popup_1710d4df8f018d412b4806d93cd2af56.setContent(html_a5598369cc413b3fd838ac92ba0a5839);
             
         
 
-        poly_line_d4f6d3684c415b7e3f73dedc05f5faca.bindPopup(popup_30a2489de50defdc41b28aacb7323371)
+        poly_line_81c905eec4122d676d34d2552b08f120.bindPopup(popup_1710d4df8f018d412b4806d93cd2af56)
         ;
 
         
     
     
-            poly_line_d4f6d3684c415b7e3f73dedc05f5faca.bindTooltip(
+            poly_line_81c905eec4122d676d34d2552b08f120.bindTooltip(
                 `<div>
                      🛡️ Área de Confort y Protección Aromática (Zona Protegida Ingenio)
                  </div>`,
@@ -1802,30 +1825,30 @@
             );
         
     
-            var poly_line_5634bfc40cd2afb19ec77f49d980458b = L.polyline(
+            var poly_line_587489c9cb71eff0e1b62ecdc8a68f29 = L.polyline(
                 [[0.4072, -78.1718], [0.4066, -78.171], [0.406, -78.1702]],
                 {"bubblingMouseEvents": true, "color": "#2ecc71", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#2ecc71", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.25, "smoothFactor": 1.0, "stroke": true, "weight": 36}
-            ).addTo(feature_group_dbe8000e5f8933d540d7f82034a409b0);
+            ).addTo(feature_group_b9137f009f693a443e74a16834679a18);
         
     
-        var popup_7200756ce6d074e72d92f3639892302b = L.popup({
+        var popup_f69c7d526673928272916437ff392ea4 = L.popup({
   "maxWidth": 260,
 });
 
         
             
-                var html_213a81723456fe33cee9afec3f840cab = $(`<div id="html_213a81723456fe33cee9afec3f840cab" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 240px;">                     <b style="color: #27ae60;">🛡️ Zona Protegida Senescyt (Buffer 40m)</b><br>                     <span style="font-size: 12px; color: #2c3e50;">Cubre Aulas Ed. Senescyt y Residencias Los Bloques</span><br>                     <p style="font-size: 11px; color: #555; margin: 4px 0 0 0;">                         Los monoterpenos volátiles (citronelal, cineol, pineno) saturan los receptores olfativos de las arenillas, impidiendo que ubiquen a las personas.                     </p>                 </div>             </div>`)[0];
-                popup_7200756ce6d074e72d92f3639892302b.setContent(html_213a81723456fe33cee9afec3f840cab);
+                var html_c454b97269a72e9420733155541a0e53 = $(`<div id="html_c454b97269a72e9420733155541a0e53" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 240px;">                     <b style="color: #27ae60;">🛡️ Zona Protegida Senescyt (Buffer 40m)</b><br>                     <span style="font-size: 12px; color: #2c3e50;">Cubre Aulas Ed. Senescyt y Residencias Los Bloques</span><br>                     <p style="font-size: 11px; color: #555; margin: 4px 0 0 0;">                         Los monoterpenos volátiles (citronelal, cineol, pineno) saturan los receptores olfativos de las arenillas, impidiendo que ubiquen a las personas.                     </p>                 </div>             </div>`)[0];
+                popup_f69c7d526673928272916437ff392ea4.setContent(html_c454b97269a72e9420733155541a0e53);
             
         
 
-        poly_line_5634bfc40cd2afb19ec77f49d980458b.bindPopup(popup_7200756ce6d074e72d92f3639892302b)
+        poly_line_587489c9cb71eff0e1b62ecdc8a68f29.bindPopup(popup_f69c7d526673928272916437ff392ea4)
         ;
 
         
     
     
-            poly_line_5634bfc40cd2afb19ec77f49d980458b.bindTooltip(
+            poly_line_587489c9cb71eff0e1b62ecdc8a68f29.bindTooltip(
                 `<div>
                      🛡️ Área de Confort y Protección Aromática (Zona Protegida Senescyt)
                  </div>`,
@@ -1835,23 +1858,23 @@
             );
         
     
-            feature_group_dbe8000e5f8933d540d7f82034a409b0.addTo(map_850003012df7aa3e8fb26710f8817873);
+            feature_group_b9137f009f693a443e74a16834679a18.addTo(map_3d069734d4f5f289d59532cb7715d1d0);
         
     
-            var feature_group_07e3a8a6b0abff26095cc6aa998c285e = L.featureGroup(
+            var feature_group_b086616bcced576c7edadc2612739250 = L.featureGroup(
                 {
 }
             );
         
     
-            var marker_06d4cd243ae629500ab0a25145af922f = L.marker(
+            var marker_1f7dd6030f3930009a6b4e91d1ea3aa8 = L.marker(
                 [0.4024, -78.173],
                 {
 }
-            ).addTo(feature_group_07e3a8a6b0abff26095cc6aa998c285e);
+            ).addTo(feature_group_b086616bcced576c7edadc2612739250);
         
     
-            var icon_efa75c7884933faf47982816675ccb12 = L.AwesomeMarkers.icon(
+            var icon_f826b413c90e257f960785727fa5941b = L.AwesomeMarkers.icon(
                 {
   "markerColor": "darkblue",
   "iconColor": "white",
@@ -1862,24 +1885,24 @@
             );
         
     
-        var popup_c26c8d162638c31592792606ce963208 = L.popup({
+        var popup_9ace54a016c582173e4fa246086aeacd = L.popup({
   "maxWidth": 260,
 });
 
         
             
-                var html_5d75c6708c8bc9489719f6087d48755e = $(`<div id="html_5d75c6708c8bc9489719f6087d48755e" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 240px;">                     <div style="color: #1e3799; font-weight: bold; font-size: 13px;">🎯 Estación Sur 1</div>                     <b>Lugar:</b> Residencias Patrimoniales y Canchas Deportivas<br>                     <p style="font-size: 11px; color: #333; margin: 6px 0 0 0;">                         <b>Cebo Ecológico:</b> Ácido L-láctico y fermentación bio-orgánica de CO2.<br>                         <b>Misión:</b> Comprobar semanalmente la disminución del 82% en la molestia por picaduras reportada por la comunidad.                     </p>                 </div>             </div>`)[0];
-                popup_c26c8d162638c31592792606ce963208.setContent(html_5d75c6708c8bc9489719f6087d48755e);
+                var html_4d477b8129238012d29d217bda793ed0 = $(`<div id="html_4d477b8129238012d29d217bda793ed0" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 240px;">                     <div style="color: #1e3799; font-weight: bold; font-size: 13px;">🎯 Estación Sur 1</div>                     <b>Lugar:</b> Residencias Patrimoniales y Canchas Deportivas<br>                     <p style="font-size: 11px; color: #333; margin: 6px 0 0 0;">                         <b>Cebo Ecológico:</b> Ácido L-láctico y fermentación bio-orgánica de CO2.<br>                         <b>Misión:</b> Comprobar semanalmente la disminución del 82% en la molestia por picaduras reportada por la comunidad.                     </p>                 </div>             </div>`)[0];
+                popup_9ace54a016c582173e4fa246086aeacd.setContent(html_4d477b8129238012d29d217bda793ed0);
             
         
 
-        marker_06d4cd243ae629500ab0a25145af922f.bindPopup(popup_c26c8d162638c31592792606ce963208)
+        marker_1f7dd6030f3930009a6b4e91d1ea3aa8.bindPopup(popup_9ace54a016c582173e4fa246086aeacd)
         ;
 
         
     
     
-            marker_06d4cd243ae629500ab0a25145af922f.bindTooltip(
+            marker_1f7dd6030f3930009a6b4e91d1ea3aa8.bindTooltip(
                 `<div>
                      🎯 Estación Sur 1: Monitoreo de Bienestar (Residencias Patrimoniales y Canchas Deportivas)
                  </div>`,
@@ -1889,17 +1912,17 @@
             );
         
     
-                marker_06d4cd243ae629500ab0a25145af922f.setIcon(icon_efa75c7884933faf47982816675ccb12);
+                marker_1f7dd6030f3930009a6b4e91d1ea3aa8.setIcon(icon_f826b413c90e257f960785727fa5941b);
             
     
-            var marker_0a76be6c10508364966db672d3bcfc0d = L.marker(
+            var marker_e74bda590c08e0c420ba987b05276703 = L.marker(
                 [0.4028, -78.175],
                 {
 }
-            ).addTo(feature_group_07e3a8a6b0abff26095cc6aa998c285e);
+            ).addTo(feature_group_b086616bcced576c7edadc2612739250);
         
     
-            var icon_c3d885875c27d03e3686859f15149b36 = L.AwesomeMarkers.icon(
+            var icon_85dbf57a99a19a19f2203c53917ac373 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "darkblue",
   "iconColor": "white",
@@ -1910,24 +1933,24 @@
             );
         
     
-        var popup_3e8037df7449e7fa186377ce4b43c92b = L.popup({
+        var popup_78e4ff737103ee9d42a9a85091cbfa3a = L.popup({
   "maxWidth": 260,
 });
 
         
             
-                var html_0e226602ad13751ed96f88f1bc4ee2c3 = $(`<div id="html_0e226602ad13751ed96f88f1bc4ee2c3" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 240px;">                     <div style="color: #1e3799; font-weight: bold; font-size: 13px;">🎯 Estación Sur 2</div>                     <b>Lugar:</b> Las Multis y Concha Acústica<br>                     <p style="font-size: 11px; color: #333; margin: 6px 0 0 0;">                         <b>Cebo Ecológico:</b> Ácido L-láctico y fermentación bio-orgánica de CO2.<br>                         <b>Misión:</b> Comprobar semanalmente la disminución del 82% en la molestia por picaduras reportada por la comunidad.                     </p>                 </div>             </div>`)[0];
-                popup_3e8037df7449e7fa186377ce4b43c92b.setContent(html_0e226602ad13751ed96f88f1bc4ee2c3);
+                var html_569953257076465e2bb67f9aa9e49583 = $(`<div id="html_569953257076465e2bb67f9aa9e49583" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 240px;">                     <div style="color: #1e3799; font-weight: bold; font-size: 13px;">🎯 Estación Sur 2</div>                     <b>Lugar:</b> Las Multis y Concha Acústica<br>                     <p style="font-size: 11px; color: #333; margin: 6px 0 0 0;">                         <b>Cebo Ecológico:</b> Ácido L-láctico y fermentación bio-orgánica de CO2.<br>                         <b>Misión:</b> Comprobar semanalmente la disminución del 82% en la molestia por picaduras reportada por la comunidad.                     </p>                 </div>             </div>`)[0];
+                popup_78e4ff737103ee9d42a9a85091cbfa3a.setContent(html_569953257076465e2bb67f9aa9e49583);
             
         
 
-        marker_0a76be6c10508364966db672d3bcfc0d.bindPopup(popup_3e8037df7449e7fa186377ce4b43c92b)
+        marker_e74bda590c08e0c420ba987b05276703.bindPopup(popup_78e4ff737103ee9d42a9a85091cbfa3a)
         ;
 
         
     
     
-            marker_0a76be6c10508364966db672d3bcfc0d.bindTooltip(
+            marker_e74bda590c08e0c420ba987b05276703.bindTooltip(
                 `<div>
                      🎯 Estación Sur 2: Monitoreo de Bienestar (Las Multis y Concha Acústica)
                  </div>`,
@@ -1937,17 +1960,17 @@
             );
         
     
-                marker_0a76be6c10508364966db672d3bcfc0d.setIcon(icon_c3d885875c27d03e3686859f15149b36);
+                marker_e74bda590c08e0c420ba987b05276703.setIcon(icon_85dbf57a99a19a19f2203c53917ac373);
             
     
-            var marker_c265f1099004c72acf325b5e01a9be79 = L.marker(
+            var marker_9344a4abbc99113b3eddbebb0fa637f7 = L.marker(
                 [0.4052, -78.1742],
                 {
 }
-            ).addTo(feature_group_07e3a8a6b0abff26095cc6aa998c285e);
+            ).addTo(feature_group_b086616bcced576c7edadc2612739250);
         
     
-            var icon_1e0eecd74adcf42ef4d58ff1b0a1bca4 = L.AwesomeMarkers.icon(
+            var icon_39f72625af880743ca543c046c14c135 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "darkblue",
   "iconColor": "white",
@@ -1958,24 +1981,24 @@
             );
         
     
-        var popup_80fc147a1fd32a7a49b7c8606e4839d8 = L.popup({
+        var popup_f8cf70cbc89f4e73c2dec4d772ccd2cf = L.popup({
   "maxWidth": 260,
 });
 
         
             
-                var html_50a70d5f469287e4f4312d672794250a = $(`<div id="html_50a70d5f469287e4f4312d672794250a" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 240px;">                     <div style="color: #1e3799; font-weight: bold; font-size: 13px;">🎯 Estación Central 1</div>                     <b>Lugar:</b> Biblioteca Patrimonial y Jardines<br>                     <p style="font-size: 11px; color: #333; margin: 6px 0 0 0;">                         <b>Cebo Ecológico:</b> Ácido L-láctico y fermentación bio-orgánica de CO2.<br>                         <b>Misión:</b> Comprobar semanalmente la disminución del 82% en la molestia por picaduras reportada por la comunidad.                     </p>                 </div>             </div>`)[0];
-                popup_80fc147a1fd32a7a49b7c8606e4839d8.setContent(html_50a70d5f469287e4f4312d672794250a);
+                var html_86b51d38b412220170391112faf0b821 = $(`<div id="html_86b51d38b412220170391112faf0b821" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 240px;">                     <div style="color: #1e3799; font-weight: bold; font-size: 13px;">🎯 Estación Central 1</div>                     <b>Lugar:</b> Biblioteca Patrimonial y Jardines<br>                     <p style="font-size: 11px; color: #333; margin: 6px 0 0 0;">                         <b>Cebo Ecológico:</b> Ácido L-láctico y fermentación bio-orgánica de CO2.<br>                         <b>Misión:</b> Comprobar semanalmente la disminución del 82% en la molestia por picaduras reportada por la comunidad.                     </p>                 </div>             </div>`)[0];
+                popup_f8cf70cbc89f4e73c2dec4d772ccd2cf.setContent(html_86b51d38b412220170391112faf0b821);
             
         
 
-        marker_c265f1099004c72acf325b5e01a9be79.bindPopup(popup_80fc147a1fd32a7a49b7c8606e4839d8)
+        marker_9344a4abbc99113b3eddbebb0fa637f7.bindPopup(popup_f8cf70cbc89f4e73c2dec4d772ccd2cf)
         ;
 
         
     
     
-            marker_c265f1099004c72acf325b5e01a9be79.bindTooltip(
+            marker_9344a4abbc99113b3eddbebb0fa637f7.bindTooltip(
                 `<div>
                      🎯 Estación Central 1: Monitoreo de Bienestar (Biblioteca Patrimonial y Jardines)
                  </div>`,
@@ -1985,17 +2008,17 @@
             );
         
     
-                marker_c265f1099004c72acf325b5e01a9be79.setIcon(icon_1e0eecd74adcf42ef4d58ff1b0a1bca4);
+                marker_9344a4abbc99113b3eddbebb0fa637f7.setIcon(icon_39f72625af880743ca543c046c14c135);
             
     
-            var marker_8e796222520966a29e95d917d8e92f70 = L.marker(
+            var marker_9456a32100a81151f9300bf0c83edf1c = L.marker(
                 [0.4047, -78.1724],
                 {
 }
-            ).addTo(feature_group_07e3a8a6b0abff26095cc6aa998c285e);
+            ).addTo(feature_group_b086616bcced576c7edadc2612739250);
         
     
-            var icon_a3da25e7fc2f3d91975c7f014e7924d3 = L.AwesomeMarkers.icon(
+            var icon_62f1e90660f880dc06480834891fe207 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "darkblue",
   "iconColor": "white",
@@ -2006,24 +2029,24 @@
             );
         
     
-        var popup_e5467300ca53037091b1d7c9a5924b24 = L.popup({
+        var popup_c1727aa5021acd0f27977d47b0beee84 = L.popup({
   "maxWidth": 260,
 });
 
         
             
-                var html_eb50ff8ad02789787afe0865ceb799f3 = $(`<div id="html_eb50ff8ad02789787afe0865ceb799f3" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 240px;">                     <div style="color: #1e3799; font-weight: bold; font-size: 13px;">🎯 Estación Central 2</div>                     <b>Lugar:</b> Acceso a Laboratorios de Carrera<br>                     <p style="font-size: 11px; color: #333; margin: 6px 0 0 0;">                         <b>Cebo Ecológico:</b> Ácido L-láctico y fermentación bio-orgánica de CO2.<br>                         <b>Misión:</b> Comprobar semanalmente la disminución del 82% en la molestia por picaduras reportada por la comunidad.                     </p>                 </div>             </div>`)[0];
-                popup_e5467300ca53037091b1d7c9a5924b24.setContent(html_eb50ff8ad02789787afe0865ceb799f3);
+                var html_e824a72c53f3289518e6192f347daa4d = $(`<div id="html_e824a72c53f3289518e6192f347daa4d" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 240px;">                     <div style="color: #1e3799; font-weight: bold; font-size: 13px;">🎯 Estación Central 2</div>                     <b>Lugar:</b> Acceso a Laboratorios de Carrera<br>                     <p style="font-size: 11px; color: #333; margin: 6px 0 0 0;">                         <b>Cebo Ecológico:</b> Ácido L-láctico y fermentación bio-orgánica de CO2.<br>                         <b>Misión:</b> Comprobar semanalmente la disminución del 82% en la molestia por picaduras reportada por la comunidad.                     </p>                 </div>             </div>`)[0];
+                popup_c1727aa5021acd0f27977d47b0beee84.setContent(html_e824a72c53f3289518e6192f347daa4d);
             
         
 
-        marker_8e796222520966a29e95d917d8e92f70.bindPopup(popup_e5467300ca53037091b1d7c9a5924b24)
+        marker_9456a32100a81151f9300bf0c83edf1c.bindPopup(popup_c1727aa5021acd0f27977d47b0beee84)
         ;
 
         
     
     
-            marker_8e796222520966a29e95d917d8e92f70.bindTooltip(
+            marker_9456a32100a81151f9300bf0c83edf1c.bindTooltip(
                 `<div>
                      🎯 Estación Central 2: Monitoreo de Bienestar (Acceso a Laboratorios de Carrera)
                  </div>`,
@@ -2033,17 +2056,17 @@
             );
         
     
-                marker_8e796222520966a29e95d917d8e92f70.setIcon(icon_a3da25e7fc2f3d91975c7f014e7924d3);
+                marker_9456a32100a81151f9300bf0c83edf1c.setIcon(icon_62f1e90660f880dc06480834891fe207);
             
     
-            var marker_5871cc988c44aa2ccc6e5b252ebdd01a = L.marker(
+            var marker_b48c57bf436a7f4fc4835e08b8812cad = L.marker(
                 [0.4067, -78.1702],
                 {
 }
-            ).addTo(feature_group_07e3a8a6b0abff26095cc6aa998c285e);
+            ).addTo(feature_group_b086616bcced576c7edadc2612739250);
         
     
-            var icon_b28824c132be24c80cf1bd21e50ad2b2 = L.AwesomeMarkers.icon(
+            var icon_e3bf308c62c4f3408270b0b3e926b5e8 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "darkblue",
   "iconColor": "white",
@@ -2054,24 +2077,24 @@
             );
         
     
-        var popup_876681d96b07c73b147b26c7c3ef0bb6 = L.popup({
+        var popup_c4a6c234d41550a6649884affaa3ae42 = L.popup({
   "maxWidth": 260,
 });
 
         
             
-                var html_2aa3d5f7f25462c5dbb5febb9a72b244 = $(`<div id="html_2aa3d5f7f25462c5dbb5febb9a72b244" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 240px;">                     <div style="color: #1e3799; font-weight: bold; font-size: 13px;">🎯 Estación Norte 1</div>                     <b>Lugar:</b> Edificio Senescyt (Fachada Aulas)<br>                     <p style="font-size: 11px; color: #333; margin: 6px 0 0 0;">                         <b>Cebo Ecológico:</b> Ácido L-láctico y fermentación bio-orgánica de CO2.<br>                         <b>Misión:</b> Comprobar semanalmente la disminución del 82% en la molestia por picaduras reportada por la comunidad.                     </p>                 </div>             </div>`)[0];
-                popup_876681d96b07c73b147b26c7c3ef0bb6.setContent(html_2aa3d5f7f25462c5dbb5febb9a72b244);
+                var html_f4157a6f03f670a8f40cf36187d77e74 = $(`<div id="html_f4157a6f03f670a8f40cf36187d77e74" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 240px;">                     <div style="color: #1e3799; font-weight: bold; font-size: 13px;">🎯 Estación Norte 1</div>                     <b>Lugar:</b> Edificio Senescyt (Fachada Aulas)<br>                     <p style="font-size: 11px; color: #333; margin: 6px 0 0 0;">                         <b>Cebo Ecológico:</b> Ácido L-láctico y fermentación bio-orgánica de CO2.<br>                         <b>Misión:</b> Comprobar semanalmente la disminución del 82% en la molestia por picaduras reportada por la comunidad.                     </p>                 </div>             </div>`)[0];
+                popup_c4a6c234d41550a6649884affaa3ae42.setContent(html_f4157a6f03f670a8f40cf36187d77e74);
             
         
 
-        marker_5871cc988c44aa2ccc6e5b252ebdd01a.bindPopup(popup_876681d96b07c73b147b26c7c3ef0bb6)
+        marker_b48c57bf436a7f4fc4835e08b8812cad.bindPopup(popup_c4a6c234d41550a6649884affaa3ae42)
         ;
 
         
     
     
-            marker_5871cc988c44aa2ccc6e5b252ebdd01a.bindTooltip(
+            marker_b48c57bf436a7f4fc4835e08b8812cad.bindTooltip(
                 `<div>
                      🎯 Estación Norte 1: Monitoreo de Bienestar (Edificio Senescyt (Fachada Aulas))
                  </div>`,
@@ -2081,17 +2104,17 @@
             );
         
     
-                marker_5871cc988c44aa2ccc6e5b252ebdd01a.setIcon(icon_b28824c132be24c80cf1bd21e50ad2b2);
+                marker_b48c57bf436a7f4fc4835e08b8812cad.setIcon(icon_e3bf308c62c4f3408270b0b3e926b5e8);
             
     
-            var marker_338120df554677b66891f98b0807f31b = L.marker(
+            var marker_8ca53294bd5e81ee6951cf20a832a8c2 = L.marker(
                 [0.407, -78.1714],
                 {
 }
-            ).addTo(feature_group_07e3a8a6b0abff26095cc6aa998c285e);
+            ).addTo(feature_group_b086616bcced576c7edadc2612739250);
         
     
-            var icon_27f32e3e9a18c7d5d5734eafdfef22d7 = L.AwesomeMarkers.icon(
+            var icon_a9c3345297b730d2a9e11ed786de9931 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "darkblue",
   "iconColor": "white",
@@ -2102,24 +2125,24 @@
             );
         
     
-        var popup_a58ed983994e6cddd7133354c7bda987 = L.popup({
+        var popup_0c5fb0a4e7d37a311615b85bcfdd777a = L.popup({
   "maxWidth": 260,
 });
 
         
             
-                var html_206b64c88a953f95a7db409272b74a8a = $(`<div id="html_206b64c88a953f95a7db409272b74a8a" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 240px;">                     <div style="color: #1e3799; font-weight: bold; font-size: 13px;">🎯 Estación Norte 2</div>                     <b>Lugar:</b> Residencias Los Bloques y Vida Comunitaria<br>                     <p style="font-size: 11px; color: #333; margin: 6px 0 0 0;">                         <b>Cebo Ecológico:</b> Ácido L-láctico y fermentación bio-orgánica de CO2.<br>                         <b>Misión:</b> Comprobar semanalmente la disminución del 82% en la molestia por picaduras reportada por la comunidad.                     </p>                 </div>             </div>`)[0];
-                popup_a58ed983994e6cddd7133354c7bda987.setContent(html_206b64c88a953f95a7db409272b74a8a);
+                var html_70d9da0d8e8ca2881481f7104f8cd0db = $(`<div id="html_70d9da0d8e8ca2881481f7104f8cd0db" style="width: 100.0%; height: 100.0%;">                 <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 240px;">                     <div style="color: #1e3799; font-weight: bold; font-size: 13px;">🎯 Estación Norte 2</div>                     <b>Lugar:</b> Residencias Los Bloques y Vida Comunitaria<br>                     <p style="font-size: 11px; color: #333; margin: 6px 0 0 0;">                         <b>Cebo Ecológico:</b> Ácido L-láctico y fermentación bio-orgánica de CO2.<br>                         <b>Misión:</b> Comprobar semanalmente la disminución del 82% en la molestia por picaduras reportada por la comunidad.                     </p>                 </div>             </div>`)[0];
+                popup_0c5fb0a4e7d37a311615b85bcfdd777a.setContent(html_70d9da0d8e8ca2881481f7104f8cd0db);
             
         
 
-        marker_338120df554677b66891f98b0807f31b.bindPopup(popup_a58ed983994e6cddd7133354c7bda987)
+        marker_8ca53294bd5e81ee6951cf20a832a8c2.bindPopup(popup_0c5fb0a4e7d37a311615b85bcfdd777a)
         ;
 
         
     
     
-            marker_338120df554677b66891f98b0807f31b.bindTooltip(
+            marker_8ca53294bd5e81ee6951cf20a832a8c2.bindTooltip(
                 `<div>
                      🎯 Estación Norte 2: Monitoreo de Bienestar (Residencias Los Bloques y Vida Comunitaria)
                  </div>`,
@@ -2129,49 +2152,49 @@
             );
         
     
-                marker_338120df554677b66891f98b0807f31b.setIcon(icon_27f32e3e9a18c7d5d5734eafdfef22d7);
+                marker_8ca53294bd5e81ee6951cf20a832a8c2.setIcon(icon_a9c3345297b730d2a9e11ed786de9931);
             
     
-            feature_group_07e3a8a6b0abff26095cc6aa998c285e.addTo(map_850003012df7aa3e8fb26710f8817873);
+            feature_group_b086616bcced576c7edadc2612739250.addTo(map_3d069734d4f5f289d59532cb7715d1d0);
         
     
-            var layer_control_25d5ade4740fdbbf3150dc11fad1d802_layers = {
+            var layer_control_9d3b5bd6c80567f528e151b1ac67ba26_layers = {
                 base_layers : {
-                    "\ud83d\udef0\ufe0f Google Sat\u00e9lite H\u00edbrido" : tile_layer_127df439cf85b1369f770a418a175de4,
-                    "\ud83d\uddfa\ufe0f Google Callejero Oficial" : tile_layer_56ebe6b999126ba6baf691b2cec62f23,
-                    "\ud83c\udfd9\ufe0f Esri Callejero (Calles y Campus)" : tile_layer_d39100d87aa9f995e1b772c5d60b46f6,
-                    "\ud83c\udf10 OpenStreetMap (FOSSGIS Libre)" : tile_layer_279954fdad4be5264ad12752f9f64397,
-                    "\ud83c\udf0d Sat\u00e9lite Esri (Fotograf\u00eda A\u00e9rea)" : tile_layer_6ee39f9f285e8f1dd765fbbd2f0efb24,
-                    "\u26f0\ufe0f Relieve y Topograf\u00eda (Esri Topo)" : tile_layer_dbd73ede6bdaf6d4c59be9a9a9127448,
+                    "\ud83d\udef0\ufe0f Google Sat\u00e9lite H\u00edbrido" : tile_layer_6eb36b306621b485d366d06b18990ab7,
+                    "\ud83d\uddfa\ufe0f Google Callejero Oficial" : tile_layer_3ed2b2127fb2e9aa72561ab762631635,
+                    "\ud83c\udfd9\ufe0f Esri Callejero (Calles y Campus)" : tile_layer_b1410c82a01bf2225edbf03b0a02ce06,
+                    "\ud83c\udf10 OpenStreetMap (FOSSGIS Libre)" : tile_layer_2dadaf350584509fa217918f0d9c3084,
+                    "\ud83c\udf0d Sat\u00e9lite Esri (Fotograf\u00eda A\u00e9rea)" : tile_layer_183fc54fefe18f3ed2e30c45b03edb5f,
+                    "\u26f0\ufe0f Relieve y Topograf\u00eda (Esri Topo)" : tile_layer_c38da08e215c5b478ac3c35325608a34,
                 },
                 overlays :  {
-                    "\u26a0\ufe0f Diagn\u00f3stico: Zonas de Molestia y Picaduras" : feature_group_6bf53ebeb54172fb5065f9d3e4ead944,
-                    "\ud83d\udca7 Red H\u00eddrica y Acequias (Focos L\u00f3ticos)" : feature_group_9f5a1956d06401686dcaf0624c3c4f59,
-                    "\ud83e\udd97 Biocontrol Acu\u00e1tico (Lib\u00e9lulas Nativas + Bti)" : feature_group_c7bea6d52660d4bf7a098ca394aefcd6,
-                    "\ud83c\udfdb\ufe0f Vida en el Campus (Residencias, Aulas, Cultura)" : feature_group_562558786dc719871419bf08a636d9fc,
-                    "\ud83c\udf3f Cercas Vivas en 3 Estratos (Algoritmo Verde)" : feature_group_d0c7939ddd669ee82038bd38501d113c,
-                    "\ud83d\udee1\ufe0f Espacios Protegidos y Aromaterapia (Buffer 40m)" : feature_group_dbe8000e5f8933d540d7f82034a409b0,
-                    "\ud83c\udfaf Bio-Monitoreo Continuo de Bienestar (6 Puntos)" : feature_group_07e3a8a6b0abff26095cc6aa998c285e,
+                    "\u26a0\ufe0f Diagn\u00f3stico: Zonas de Molestia y Picaduras" : feature_group_a6b4cf5505ebaa64f8d66b70936af1d7,
+                    "\ud83d\udca7 Red H\u00eddrica y Acequias (Focos L\u00f3ticos)" : feature_group_a040d620254a8c980a1f0734a7195d6c,
+                    "\ud83e\udd97 Biocontrol Acu\u00e1tico (Lib\u00e9lulas Nativas + Bti)" : feature_group_757dbd7a113bb102cb057f10f848193e,
+                    "\ud83c\udfdb\ufe0f Vida en el Campus (Residencias, Aulas, Cultura)" : feature_group_4d54bc394b913cbb362da4019359ed5d,
+                    "\ud83c\udf3f Cercas Vivas en 3 Estratos (Algoritmo Verde)" : feature_group_d091f7d7836998d1552e10b6e480a246,
+                    "\ud83d\udee1\ufe0f Espacios Protegidos y Aromaterapia (Buffer 40m)" : feature_group_b9137f009f693a443e74a16834679a18,
+                    "\ud83c\udfaf Bio-Monitoreo Continuo de Bienestar (6 Puntos)" : feature_group_b086616bcced576c7edadc2612739250,
                 },
             };
-            let layer_control_25d5ade4740fdbbf3150dc11fad1d802 = L.control.layers(
-                layer_control_25d5ade4740fdbbf3150dc11fad1d802_layers.base_layers,
-                layer_control_25d5ade4740fdbbf3150dc11fad1d802_layers.overlays,
+            let layer_control_9d3b5bd6c80567f528e151b1ac67ba26 = L.control.layers(
+                layer_control_9d3b5bd6c80567f528e151b1ac67ba26_layers.base_layers,
+                layer_control_9d3b5bd6c80567f528e151b1ac67ba26_layers.overlays,
                 {
   "position": "topright",
   "collapsed": false,
   "autoZIndex": true,
 }
-            ).addTo(map_850003012df7aa3e8fb26710f8817873);
+            ).addTo(map_3d069734d4f5f289d59532cb7715d1d0);
 
         
     
-            var tile_layer_7dc41baeffa381ccb3d83ec2ea3bc1eb = L.tileLayer(
+            var tile_layer_2799d61a27e5840df4583390f577c161 = L.tileLayer(
                 "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
                 {"attribution": "Esri", "detect_retina": false, "max_native_zoom": 18, "max_zoom": 18, "min_zoom": 0, "no_wrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
-            var mini_map_df317f01b40a64b7d8041799d680d56d = new L.Control.MiniMap(
-                tile_layer_7dc41baeffa381ccb3d83ec2ea3bc1eb,
+            var mini_map_733e4d1aa545346b9e858bfd4df56ca4 = new L.Control.MiniMap(
+                tile_layer_2799d61a27e5840df4583390f577c161,
                 {
   "position": "bottomleft",
   "width": 150,
@@ -2186,10 +2209,10 @@
   "minimized": false,
 }
             );
-            map_850003012df7aa3e8fb26710f8817873.addControl(mini_map_df317f01b40a64b7d8041799d680d56d);
+            map_3d069734d4f5f289d59532cb7715d1d0.addControl(mini_map_733e4d1aa545346b9e858bfd4df56ca4);
         
     
-            var measure_control_d790a180115e77269a7a9632d581efa1 = new L.Control.Measure(
+            var measure_control_34fea9df00ba62ddb98876357551267b = new L.Control.Measure(
                 {
   "position": "topleft",
   "primaryLengthUnit": "meters",
@@ -2197,7 +2220,7 @@
   "primaryAreaUnit": "sqmeters",
   "secondaryAreaUnit": "acres",
 });
-            map_850003012df7aa3e8fb26710f8817873.addControl(measure_control_d790a180115e77269a7a9632d581efa1);
+            map_3d069734d4f5f289d59532cb7715d1d0.addControl(measure_control_34fea9df00ba62ddb98876357551267b);
 
             // Workaround for using this plugin with Leaflet>=1.8.0
             // https://github.com/ljagis/leaflet-measure/issues/171

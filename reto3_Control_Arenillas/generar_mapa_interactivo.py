@@ -899,42 +899,64 @@ def generar_mapa():
 
     <!-- JAVASCRIPT DE INTERACTIVIDAD DINÁMICA -->
     <script>
-        // Referencia directa al mapa y FeatureGroups creados por Folium
-        var foliumMap = {map_var};
-        var fgZonas = {zonas_var};
-        var fgCercas = {cercas_var};
-        var fgBuffer = {buffer_var};
-        var fgCanales = {canales_var};
-        var fgBiocontrol = {biocontrol_var};
-        var fgTrampas = {trampas_var};
-        var fgEdificios = {edificios_var};
+        // Getters perezosos y seguros para acceder a las instancias de Leaflet una vez inicializadas
+        function getMap() {{ return window['{map_var}']; }}
+        function getFGZonas() {{ return window['{zonas_var}']; }}
+        function getFGCercas() {{ return window['{cercas_var}']; }}
+        function getFGBuffer() {{ return window['{buffer_var}']; }}
+        function getFGCanales() {{ return window['{canales_var}']; }}
+        function getFGBiocontrol() {{ return window['{biocontrol_var}']; }}
+        function getFGTrampas() {{ return window['{trampas_var}']; }}
+        function getFGEdificios() {{ return window['{edificios_var}']; }}
 
         // 1. Alternar modo Solución Verde
         function activarModoSolucion() {{
-            if (!foliumMap.hasLayer(fgCercas)) foliumMap.addLayer(fgCercas);
-            if (!foliumMap.hasLayer(fgBuffer)) foliumMap.addLayer(fgBuffer);
-            if (!foliumMap.hasLayer(fgBiocontrol)) foliumMap.addLayer(fgBiocontrol);
-            if (!foliumMap.hasLayer(fgTrampas)) foliumMap.addLayer(fgTrampas);
-            if (!foliumMap.hasLayer(fgEdificios)) foliumMap.addLayer(fgEdificios);
-            if (foliumMap.hasLayer(fgZonas)) foliumMap.removeLayer(fgZonas);
+            var foliumMap = getMap();
+            var fgCercas = getFGCercas();
+            var fgBuffer = getFGBuffer();
+            var fgBiocontrol = getFGBiocontrol();
+            var fgTrampas = getFGTrampas();
+            var fgEdificios = getFGEdificios();
+            var fgZonas = getFGZonas();
+            if (!foliumMap) return;
 
-            document.getElementById('btn-solucion').classList.add('nav-btn-highlight');
-            document.getElementById('btn-diagnostico').classList.remove('nav-btn-alert');
+            if (fgCercas && !foliumMap.hasLayer(fgCercas)) foliumMap.addLayer(fgCercas);
+            if (fgBuffer && !foliumMap.hasLayer(fgBuffer)) foliumMap.addLayer(fgBuffer);
+            if (fgBiocontrol && !foliumMap.hasLayer(fgBiocontrol)) foliumMap.addLayer(fgBiocontrol);
+            if (fgTrampas && !foliumMap.hasLayer(fgTrampas)) foliumMap.addLayer(fgTrampas);
+            if (fgEdificios && !foliumMap.hasLayer(fgEdificios)) foliumMap.addLayer(fgEdificios);
+            if (fgZonas && foliumMap.hasLayer(fgZonas)) foliumMap.removeLayer(fgZonas);
+
+            var btnSol = document.getElementById('btn-solucion');
+            var btnDiag = document.getElementById('btn-diagnostico');
+            if (btnSol) btnSol.classList.add('nav-btn-highlight');
+            if (btnDiag) btnDiag.classList.remove('nav-btn-alert');
         }}
 
         // 2. Alternar modo Diagnóstico de Afectación
         function activarModoDiagnostico() {{
-            if (!foliumMap.hasLayer(fgZonas)) foliumMap.addLayer(fgZonas);
-            if (!foliumMap.hasLayer(fgCanales)) foliumMap.addLayer(fgCanales);
-            if (!foliumMap.hasLayer(fgEdificios)) foliumMap.addLayer(fgEdificios);
-            if (foliumMap.hasLayer(fgBuffer)) foliumMap.removeLayer(fgBuffer);
+            var foliumMap = getMap();
+            var fgZonas = getFGZonas();
+            var fgCanales = getFGCanales();
+            var fgEdificios = getFGEdificios();
+            var fgBuffer = getFGBuffer();
+            if (!foliumMap) return;
 
-            document.getElementById('btn-diagnostico').classList.add('nav-btn-alert');
-            document.getElementById('btn-solucion').classList.remove('nav-btn-highlight');
+            if (fgZonas && !foliumMap.hasLayer(fgZonas)) foliumMap.addLayer(fgZonas);
+            if (fgCanales && !foliumMap.hasLayer(fgCanales)) foliumMap.addLayer(fgCanales);
+            if (fgEdificios && !foliumMap.hasLayer(fgEdificios)) foliumMap.addLayer(fgEdificios);
+            if (fgBuffer && foliumMap.hasLayer(fgBuffer)) foliumMap.removeLayer(fgBuffer);
+
+            var btnSol = document.getElementById('btn-solucion');
+            var btnDiag = document.getElementById('btn-diagnostico');
+            if (btnDiag) btnDiag.classList.add('nav-btn-alert');
+            if (btnSol) btnSol.classList.remove('nav-btn-highlight');
         }}
 
         // 3. Vuelos suaves a sectores clave (Storytelling)
         function irAZona(zona) {{
+            var foliumMap = getMap();
+            if (!foliumMap) return;
             if (zona === 'residencias') {{
                 foliumMap.flyTo([0.4024, -78.1740], 17.5, {{ animate: true, duration: 1.2 }});
             }} else if (zona === 'ingenio') {{
@@ -949,13 +971,14 @@ def generar_mapa():
         // 4. Modal de bienvenida
         function toggleModalBienvenida(show) {{
             var modal = document.getElementById('modal-bienvenida');
-            modal.style.display = show ? 'flex' : 'none';
+            if (modal) modal.style.display = show ? 'flex' : 'none';
         }}
 
         // 5. Minimizar/Expandir Dashboard
         function toggleDashboard() {{
             var content = document.getElementById('dash-content');
             var btn = document.getElementById('btn-dash-toggle');
+            if (!content || !btn) return;
             if (content.style.display === 'none') {{
                 content.style.display = 'block';
                 btn.innerHTML = '−';
@@ -969,6 +992,7 @@ def generar_mapa():
         function toggleLeyenda() {{
             var body = document.getElementById('leyenda-body');
             var icon = document.getElementById('leyenda-icon-toggle');
+            if (!body || !icon) return;
             if (body.style.display === 'none') {{
                 body.style.display = 'block';
                 icon.innerHTML = '−';
@@ -978,12 +1002,11 @@ def generar_mapa():
             }}
         }}
 
-        // Mostrar bienvenida automáticamente la primera vez que se carga
-        window.addEventListener('DOMContentLoaded', function() {{
-            // Dejar visible para causar gran primera impresión
+        // Mostrar bienvenida automáticamente cuando la ventana haya cargado
+        window.addEventListener('load', function() {{
             setTimeout(function() {{
                 toggleModalBienvenida(true);
-            }}, 400);
+            }}, 350);
         }});
     </script>
     """
