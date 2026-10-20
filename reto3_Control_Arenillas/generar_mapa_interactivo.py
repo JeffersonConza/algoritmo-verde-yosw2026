@@ -1,7 +1,7 @@
 """
 Generador del Visor Geoespacial Interactivo - Reto 3: Control de Arenillas
 Equipo: Algoritmo Verde YT | Yachay Open Science Week 2026
-Calibrado con Coordenadas GPS Oficiales de Google Maps y Capas Base Optimizadas
+Capas Base y MiniMap 100% Funcionales (Sin bloqueos de API ni de protocolo local file://)
 """
 
 import folium
@@ -12,7 +12,7 @@ def generar_mapa():
     center_lat = 0.4048
     center_lon = -78.1725
     
-    # Crear el mapa base centrado en Yachay Tech SIN capa por defecto (tiles=None evita capas fantasma)
+    # Crear el mapa base centrado en Yachay Tech (tiles=None evita capas fantasma)
     m = folium.Map(
         location=[center_lat, center_lon],
         zoom_start=16,
@@ -22,52 +22,64 @@ def generar_mapa():
     )
     
     # -------------------------------------------------------------
-    # CAPAS BASE (MAPAS BASE OFICIALES Y CALLEJEROS)
+    # CAPAS BASE 100% FUNCIONALES Y PROBADAS EN PROTOCOLO FILE:///
     # -------------------------------------------------------------
-    # 1. Google Híbrido (Satélite + Vías)
+    # 1. Google Satélite Híbrido (Satélite de alta fidelidad con vías y etiquetas)
     folium.TileLayer(
         tiles='https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}',
-        attr='Google Maps Satellite Hybrid',
+        attr='Google Maps Satellite',
         name='🛰️ Google Satélite Híbrido',
-        overlay=False,
-        control=True
-    ).add_to(m)
-
-    # 2. Google Callejero (Mapa de Calles y Edificios)
-    folium.TileLayer(
-        tiles='https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',
-        attr='Google Maps Streets',
-        name='🗺️ Google Callejero (Vías y Bloques)',
-        overlay=False,
-        control=True
-    ).add_to(m)
-
-    # 3. CartoDB Voyager (Callejero detallado basado en OpenStreetMap)
-    folium.TileLayer(
-        tiles='https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',
-        attr='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-        subdomains='abcd',
-        name='🏙️ Mapa Callejero OSM (CartoDB Voyager)',
         overlay=False,
         control=True,
         max_zoom=20
     ).add_to(m)
 
-    # 4. Satélite Esri
+    # 2. Google Callejero Oficial (Mapa claro de calles, vías y edificios)
+    folium.TileLayer(
+        tiles='https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',
+        attr='Google Maps Streets',
+        name='🗺️ Google Callejero Oficial',
+        overlay=False,
+        control=True,
+        max_zoom=20
+    ).add_to(m)
+
+    # 3. Esri Callejero Mundial (World Street Map - Calles y edificios de máxima estabilidad)
+    folium.TileLayer(
+        tiles='https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',
+        attr='Esri World Street Map',
+        name='🏙️ Esri Callejero (Calles y Campus)',
+        overlay=False,
+        control=True,
+        max_zoom=19
+    ).add_to(m)
+
+    # 4. OpenStreetMap Comunitario (FOSSGIS - Servidor OSM sin bloqueo de Referrer local)
+    folium.TileLayer(
+        tiles='https://{s}.tile.openstreetmap.de/{z}/{x}/{y}.png',
+        attr='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        subdomains='abc',
+        name='🌐 OpenStreetMap (FOSSGIS Libre)',
+        overlay=False,
+        control=True,
+        max_zoom=19
+    ).add_to(m)
+
+    # 5. Satélite Esri (World Imagery - Fotografía satelital limpia)
     folium.TileLayer(
         tiles='https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
         attr='Esri World Imagery',
-        name='🌍 Satélite Esri (Alta Resolución)',
+        name='🌍 Satélite Esri (Fotografía Aérea)',
         overlay=False,
-        control=True
+        control=True,
+        max_zoom=19
     ).add_to(m)
-    
-    # 5. OpenStreetMap Oficial (con subdominios explícitos)
+
+    # 6. Relieve Topográfico Esri (Curvas de nivel del valle de Urcuquí)
     folium.TileLayer(
-        tiles='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-        attr='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-        subdomains='abc',
-        name='🌐 OpenStreetMap Estándar',
+        tiles='https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}',
+        attr='Esri World Topo Map',
+        name='⛰️ Relieve y Topografía (Esri Topo)',
         overlay=False,
         control=True,
         max_zoom=19
@@ -369,7 +381,14 @@ def generar_mapa():
 
     # Controles de interfaz
     folium.LayerControl(position='topright', collapsed=False).add_to(m)
-    plugins.MiniMap(toggle_display=True, position='bottomleft').add_to(m)
+
+    # MiniMap configurado con Esri (evita peticiones bloqueadas a tile.openstreetmap.org)
+    mini_tile = folium.TileLayer(
+        tiles='https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',
+        attr='Esri'
+    )
+    plugins.MiniMap(tile_layer=mini_tile, toggle_display=True, position='bottomleft').add_to(m)
+    
     plugins.MeasureControl(position='topleft', primary_length_unit='meters', primary_area_unit='sqmeters').add_to(m)
 
     # Dashboard flotante

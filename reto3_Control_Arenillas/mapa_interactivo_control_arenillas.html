@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_57661a06664f3d7d8023cefb70aa1ce5 {
+                #map_03ca985e6a04504362cdc02743b5d81b {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -111,14 +111,14 @@
     </div>
     
     
-            <div class="folium-map" id="map_57661a06664f3d7d8023cefb70aa1ce5" ></div>
+            <div class="folium-map" id="map_03ca985e6a04504362cdc02743b5d81b" ></div>
         
 </body>
 <script>
     
     
-            var map_57661a06664f3d7d8023cefb70aa1ce5 = L.map(
-                "map_57661a06664f3d7d8023cefb70aa1ce5",
+            var map_03ca985e6a04504362cdc02743b5d81b = L.map(
+                "map_03ca985e6a04504362cdc02743b5d81b",
                 {
                     center: [0.4048, -78.1725],
                     crs: L.CRS.EPSG3857,
@@ -130,20 +130,20 @@
 
                 }
             );
-            L.control.scale().addTo(map_57661a06664f3d7d8023cefb70aa1ce5);
+            L.control.scale().addTo(map_03ca985e6a04504362cdc02743b5d81b);
 
             
 
         
     
-            var tile_layer_fe23611f75dd64ebdb47690a404a62a7 = L.tileLayer(
+            var tile_layer_067481d1ef149593579bbc27757d0d81 = L.tileLayer(
                 "https://mt1.google.com/vt/lyrs=y\u0026x={x}\u0026y={y}\u0026z={z}",
                 {
   "minZoom": 0,
-  "maxZoom": 18,
-  "maxNativeZoom": 18,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
   "noWrap": false,
-  "attribution": "Google Maps Satellite Hybrid",
+  "attribution": "Google Maps Satellite",
   "subdomains": "abc",
   "detectRetina": false,
   "tms": false,
@@ -153,15 +153,15 @@
             );
         
     
-            tile_layer_fe23611f75dd64ebdb47690a404a62a7.addTo(map_57661a06664f3d7d8023cefb70aa1ce5);
+            tile_layer_067481d1ef149593579bbc27757d0d81.addTo(map_03ca985e6a04504362cdc02743b5d81b);
         
     
-            var tile_layer_a9a82a4cbf625332f620b32ce6a6ef62 = L.tileLayer(
+            var tile_layer_7e8e135cd58653f8a87a56acae4a47f3 = L.tileLayer(
                 "https://mt1.google.com/vt/lyrs=m\u0026x={x}\u0026y={y}\u0026z={z}",
                 {
   "minZoom": 0,
-  "maxZoom": 18,
-  "maxNativeZoom": 18,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
   "noWrap": false,
   "attribution": "Google Maps Streets",
   "subdomains": "abc",
@@ -173,37 +173,17 @@
             );
         
     
-            tile_layer_a9a82a4cbf625332f620b32ce6a6ef62.addTo(map_57661a06664f3d7d8023cefb70aa1ce5);
+            tile_layer_7e8e135cd58653f8a87a56acae4a47f3.addTo(map_03ca985e6a04504362cdc02743b5d81b);
         
     
-            var tile_layer_45f01d8e4e63d01ed28481672f805da0 = L.tileLayer(
-                "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png",
+            var tile_layer_9843464b7df2cefb4606fd5bb96e0f85 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
                 {
   "minZoom": 0,
-  "maxZoom": 20,
-  "maxNativeZoom": 20,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
   "noWrap": false,
-  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
-  "subdomains": "abcd",
-  "detectRetina": false,
-  "tms": false,
-  "opacity": 1,
-}
-
-            );
-        
-    
-            tile_layer_45f01d8e4e63d01ed28481672f805da0.addTo(map_57661a06664f3d7d8023cefb70aa1ce5);
-        
-    
-            var tile_layer_0854dd53dc109ea0dc3c758a878c7a68 = L.tileLayer(
-                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
-                {
-  "minZoom": 0,
-  "maxZoom": 18,
-  "maxNativeZoom": 18,
-  "noWrap": false,
-  "attribution": "Esri World Imagery",
+  "attribution": "Esri World Street Map",
   "subdomains": "abc",
   "detectRetina": false,
   "tms": false,
@@ -213,11 +193,11 @@
             );
         
     
-            tile_layer_0854dd53dc109ea0dc3c758a878c7a68.addTo(map_57661a06664f3d7d8023cefb70aa1ce5);
+            tile_layer_9843464b7df2cefb4606fd5bb96e0f85.addTo(map_03ca985e6a04504362cdc02743b5d81b);
         
     
-            var tile_layer_d999473bbb3a6be4eae5160c58a180f0 = L.tileLayer(
-                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+            var tile_layer_7045eccf87ae4f7951e4d6262d22bedf = L.tileLayer(
+                "https://{s}.tile.openstreetmap.de/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
   "maxZoom": 19,
@@ -233,39 +213,79 @@
             );
         
     
-            tile_layer_d999473bbb3a6be4eae5160c58a180f0.addTo(map_57661a06664f3d7d8023cefb70aa1ce5);
+            tile_layer_7045eccf87ae4f7951e4d6262d22bedf.addTo(map_03ca985e6a04504362cdc02743b5d81b);
         
     
-            var feature_group_b3c689f0bbd1c95508952b1704cc7815 = L.featureGroup(
+            var tile_layer_4b06a0c1be66092e2dad36130b9bdd6e = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "Esri World Imagery",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_4b06a0c1be66092e2dad36130b9bdd6e.addTo(map_03ca985e6a04504362cdc02743b5d81b);
+        
+    
+            var tile_layer_6043002ea3ef314db8c4363e7290d8f0 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "Esri World Topo Map",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_6043002ea3ef314db8c4363e7290d8f0.addTo(map_03ca985e6a04504362cdc02743b5d81b);
+        
+    
+            var feature_group_5cf06b178386ee85322b35ddc3f260e5 = L.featureGroup(
                 {
 }
             );
         
     
-            var polygon_aae1f24ae861b9becc17d0dadb7950ff = L.polygon(
+            var polygon_0a7077ea8b43bd52a46e483d09d827f6 = L.polygon(
                 [[0.4032, -78.1755], [0.4034, -78.1742], [0.4025, -78.1725], [0.4014, -78.173], [0.401, -78.175], [0.4018, -78.1762]],
                 {"bubblingMouseEvents": true, "color": "#2ecc71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ecc71", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-            ).addTo(feature_group_b3c689f0bbd1c95508952b1704cc7815);
+            ).addTo(feature_group_5cf06b178386ee85322b35ddc3f260e5);
         
     
-        var popup_6e8b432ce72d4bcb718e18fb78a6ef74 = L.popup({
+        var popup_cbfa6128fefdc4615a1dc9a3af077ba3 = L.popup({
   "maxWidth": 260,
 });
 
         
             
-                var html_f38ca5fd62776367121114dd397fd6bf = $(`<div id="html_f38ca5fd62776367121114dd397fd6bf" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; width: 240px;">                 <h4 style="color: #27ae60; margin: 0 0 5px 0;">Zona 1: Multifamiliares y Pats</h4>                 <b>Hitos GPS:</b> Residencias Patrimoniales (0.4023, -78.1738), Las Multis, Concha Acústica.<br>                 <b>Población:</b> Alta densidad estudiantil.<br>                 <b>Riesgo:</b> Picaduras severas en horas de descanso y tránsito.<br>                 <b>Estrategia:</b> Cerca Viva Multiestrato 1 (380m) + 2 estaciones de monitoreo.             </div>         </div>`)[0];
-                popup_6e8b432ce72d4bcb718e18fb78a6ef74.setContent(html_f38ca5fd62776367121114dd397fd6bf);
+                var html_3877232695c95a749ddff916e7f6edd9 = $(`<div id="html_3877232695c95a749ddff916e7f6edd9" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; width: 240px;">                 <h4 style="color: #27ae60; margin: 0 0 5px 0;">Zona 1: Multifamiliares y Pats</h4>                 <b>Hitos GPS:</b> Residencias Patrimoniales (0.4023, -78.1738), Las Multis, Concha Acústica.<br>                 <b>Población:</b> Alta densidad estudiantil.<br>                 <b>Riesgo:</b> Picaduras severas en horas de descanso y tránsito.<br>                 <b>Estrategia:</b> Cerca Viva Multiestrato 1 (380m) + 2 estaciones de monitoreo.             </div>         </div>`)[0];
+                popup_cbfa6128fefdc4615a1dc9a3af077ba3.setContent(html_3877232695c95a749ddff916e7f6edd9);
             
         
 
-        polygon_aae1f24ae861b9becc17d0dadb7950ff.bindPopup(popup_6e8b432ce72d4bcb718e18fb78a6ef74)
+        polygon_0a7077ea8b43bd52a46e483d09d827f6.bindPopup(popup_cbfa6128fefdc4615a1dc9a3af077ba3)
         ;
 
         
     
     
-            polygon_aae1f24ae861b9becc17d0dadb7950ff.bindTooltip(
+            polygon_0a7077ea8b43bd52a46e483d09d827f6.bindTooltip(
                 `<div>
                      Zona 1: Multifamiliares y Pats (Residencias)
                  </div>`,
@@ -275,30 +295,30 @@
             );
         
     
-            var polygon_1637367ac6dceb15c068e90412af1476 = L.polygon(
+            var polygon_445ccf672305248ab424a204f597d41e = L.polygon(
                 [[0.4058, -78.1748], [0.4057, -78.1735], [0.4045, -78.172], [0.4038, -78.173], [0.4043, -78.1755]],
                 {"bubblingMouseEvents": true, "color": "#3498db", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3498db", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-            ).addTo(feature_group_b3c689f0bbd1c95508952b1704cc7815);
+            ).addTo(feature_group_5cf06b178386ee85322b35ddc3f260e5);
         
     
-        var popup_86a0fd1681718202b651b3ec5166481b = L.popup({
+        var popup_e68437319a6a9a295ec2e7c6efa874ce = L.popup({
   "maxWidth": 260,
 });
 
         
             
-                var html_01b246201e795854fe18c1011ce81cbf = $(`<div id="html_01b246201e795854fe18c1011ce81cbf" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; width: 240px;">                 <h4 style="color: #2980b9; margin: 0 0 5px 0;">Zona 2: Ingenio Azucarero</h4>                 <b>Hitos GPS:</b> Biblioteca Patrimonial (0.4051, -78.1742), Chimenea Patrimonial, Laboratorios de Carrera.<br>                 <b>Riesgo:</b> Muy alto por cruce de acequias y sombra.<br>                 <b>Estrategia:</b> Cerca Viva Multiestrato 2 (280m) + intervención biológica en canal.             </div>         </div>`)[0];
-                popup_86a0fd1681718202b651b3ec5166481b.setContent(html_01b246201e795854fe18c1011ce81cbf);
+                var html_97a91a616b6010f6215a83bb37f0a1b1 = $(`<div id="html_97a91a616b6010f6215a83bb37f0a1b1" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; width: 240px;">                 <h4 style="color: #2980b9; margin: 0 0 5px 0;">Zona 2: Ingenio Azucarero</h4>                 <b>Hitos GPS:</b> Biblioteca Patrimonial (0.4051, -78.1742), Chimenea Patrimonial, Laboratorios de Carrera.<br>                 <b>Riesgo:</b> Muy alto por cruce de acequias y sombra.<br>                 <b>Estrategia:</b> Cerca Viva Multiestrato 2 (280m) + intervención biológica en canal.             </div>         </div>`)[0];
+                popup_e68437319a6a9a295ec2e7c6efa874ce.setContent(html_97a91a616b6010f6215a83bb37f0a1b1);
             
         
 
-        polygon_1637367ac6dceb15c068e90412af1476.bindPopup(popup_86a0fd1681718202b651b3ec5166481b)
+        polygon_445ccf672305248ab424a204f597d41e.bindPopup(popup_e68437319a6a9a295ec2e7c6efa874ce)
         ;
 
         
     
     
-            polygon_1637367ac6dceb15c068e90412af1476.bindTooltip(
+            polygon_445ccf672305248ab424a204f597d41e.bindTooltip(
                 `<div>
                      Zona 2: Ingenio Azucarero (Patrimonio / Laboratorios)
                  </div>`,
@@ -308,30 +328,30 @@
             );
         
     
-            var polygon_742a66c03ae646f766a0b01e29d809cf = L.polygon(
+            var polygon_dcef5b26b64885ba2f90a03cad26d62b = L.polygon(
                 [[0.4076, -78.172], [0.4076, -78.1698], [0.406, -78.1695], [0.4058, -78.1712], [0.4068, -78.1718]],
                 {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.25, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
-            ).addTo(feature_group_b3c689f0bbd1c95508952b1704cc7815);
+            ).addTo(feature_group_5cf06b178386ee85322b35ddc3f260e5);
         
     
-        var popup_6e1d50b6ca1f67d8803fd934dcc48fa3 = L.popup({
+        var popup_5cce2cef7c720b0a697ea1591360724b = L.popup({
   "maxWidth": 260,
 });
 
         
             
-                var html_318c0189318b73f9b1e1b71fec8c84df = $(`<div id="html_318c0189318b73f9b1e1b71fec8c84df" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; width: 240px;">                 <h4 style="color: #c0392b; margin: 0 0 5px 0;">Zona 3: Bloques y Senescyt</h4>                 <b>Hitos GPS:</b> Edificio Senescyt (0.4067, -78.1702), Residencias Los Bloques, Vida Comunitaria.<br>                 <b>Riesgo:</b> Exposición diurna en aulas y nocturna en dormitorios.<br>                 <b>Estrategia:</b> Cerca Viva Multiestrato 3 (320m) + 2 estaciones de monitoreo.             </div>         </div>`)[0];
-                popup_6e1d50b6ca1f67d8803fd934dcc48fa3.setContent(html_318c0189318b73f9b1e1b71fec8c84df);
+                var html_e714dfe97804de19976afe0a2dbbb2b4 = $(`<div id="html_e714dfe97804de19976afe0a2dbbb2b4" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; width: 240px;">                 <h4 style="color: #c0392b; margin: 0 0 5px 0;">Zona 3: Bloques y Senescyt</h4>                 <b>Hitos GPS:</b> Edificio Senescyt (0.4067, -78.1702), Residencias Los Bloques, Vida Comunitaria.<br>                 <b>Riesgo:</b> Exposición diurna en aulas y nocturna en dormitorios.<br>                 <b>Estrategia:</b> Cerca Viva Multiestrato 3 (320m) + 2 estaciones de monitoreo.             </div>         </div>`)[0];
+                popup_5cce2cef7c720b0a697ea1591360724b.setContent(html_e714dfe97804de19976afe0a2dbbb2b4);
             
         
 
-        polygon_742a66c03ae646f766a0b01e29d809cf.bindPopup(popup_6e1d50b6ca1f67d8803fd934dcc48fa3)
+        polygon_dcef5b26b64885ba2f90a03cad26d62b.bindPopup(popup_5cce2cef7c720b0a697ea1591360724b)
         ;
 
         
     
     
-            polygon_742a66c03ae646f766a0b01e29d809cf.bindTooltip(
+            polygon_dcef5b26b64885ba2f90a03cad26d62b.bindTooltip(
                 `<div>
                      Zona 3: Bloques y Senescyt (Aulas / Los Bloques)
                  </div>`,
@@ -341,39 +361,39 @@
             );
         
     
-            feature_group_b3c689f0bbd1c95508952b1704cc7815.addTo(map_57661a06664f3d7d8023cefb70aa1ce5);
+            feature_group_5cf06b178386ee85322b35ddc3f260e5.addTo(map_03ca985e6a04504362cdc02743b5d81b);
         
     
-            var feature_group_64105a6d652abf049e8fc113b98d2363 = L.featureGroup(
+            var feature_group_7e7640f1aa96b742175b04a356219350 = L.featureGroup(
                 {
 }
             );
         
     
-            var poly_line_4755ff1f14f28eff854c090265556614 = L.polyline(
+            var poly_line_430bea2c788aa6fd218b908c9c9164f0 = L.polyline(
                 [[0.4085, -78.169], [0.4072, -78.1705], [0.4058, -78.1715], [0.4048, -78.172], [0.4035, -78.1725], [0.4015, -78.1728]],
                 {"bubblingMouseEvents": true, "color": "#00d2d3", "dashArray": "8, 8", "dashOffset": null, "fill": false, "fillColor": "#00d2d3", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
-            ).addTo(feature_group_64105a6d652abf049e8fc113b98d2363);
+            ).addTo(feature_group_7e7640f1aa96b742175b04a356219350);
         
     
-        var popup_f760f1f5c40771a4429dff908572f102 = L.popup({
+        var popup_2861720f65822711d3b771ffadb1cc6e = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_e07b2f187f1981e6234f87c5e11c236b = $(`<div id="html_e07b2f187f1981e6234f87c5e11c236b" style="width: 100.0%; height: 100.0%;"><b>Canal de Riego Principal (Agua Lótica / Corriente):</b> Sustrato rocoso y macrófitas sumergidas donde se fijan las larvas de <i>Simuliidae</i>.</div>`)[0];
-                popup_f760f1f5c40771a4429dff908572f102.setContent(html_e07b2f187f1981e6234f87c5e11c236b);
+                var html_91e6fcdad899a3dd84dbf04d30c2ccf7 = $(`<div id="html_91e6fcdad899a3dd84dbf04d30c2ccf7" style="width: 100.0%; height: 100.0%;"><b>Canal de Riego Principal (Agua Lótica / Corriente):</b> Sustrato rocoso y macrófitas sumergidas donde se fijan las larvas de <i>Simuliidae</i>.</div>`)[0];
+                popup_2861720f65822711d3b771ffadb1cc6e.setContent(html_91e6fcdad899a3dd84dbf04d30c2ccf7);
             
         
 
-        poly_line_4755ff1f14f28eff854c090265556614.bindPopup(popup_f760f1f5c40771a4429dff908572f102)
+        poly_line_430bea2c788aa6fd218b908c9c9164f0.bindPopup(popup_2861720f65822711d3b771ffadb1cc6e)
         ;
 
         
     
     
-            poly_line_4755ff1f14f28eff854c090265556614.bindTooltip(
+            poly_line_430bea2c788aa6fd218b908c9c9164f0.bindTooltip(
                 `<div>
                      Canal de Riego Principal (Foco Larvario)
                  </div>`,
@@ -383,30 +403,30 @@
             );
         
     
-            var poly_line_4ee654a2a135eba2cb014601d2eb6e60 = L.polyline(
+            var poly_line_9fe8caba8889c79ecf10f03ae948797e = L.polyline(
                 [[0.4056, -78.1738], [0.405, -78.1732], [0.4045, -78.1728]],
                 {"bubblingMouseEvents": true, "color": "#00d2d3", "dashArray": "5, 5", "dashOffset": null, "fill": false, "fillColor": "#00d2d3", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
-            ).addTo(feature_group_64105a6d652abf049e8fc113b98d2363);
+            ).addTo(feature_group_7e7640f1aa96b742175b04a356219350);
         
     
-        var popup_281cfd5318f671ebb47a28374a321ccb = L.popup({
+        var popup_a9c1fc562863d634052c2963e812656a = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_1cfa1cd13c362cee2a88f112558a4c1c = $(`<div id="html_1cfa1cd13c362cee2a88f112558a4c1c" style="width: 100.0%; height: 100.0%;"><b>Acequia de Desvío Patrimonial:</b> Conexión hídrica en sector de laboratorios.</div>`)[0];
-                popup_281cfd5318f671ebb47a28374a321ccb.setContent(html_1cfa1cd13c362cee2a88f112558a4c1c);
+                var html_9ae7f14ff85f0e2e314ea4bb263b3cdd = $(`<div id="html_9ae7f14ff85f0e2e314ea4bb263b3cdd" style="width: 100.0%; height: 100.0%;"><b>Acequia de Desvío Patrimonial:</b> Conexión hídrica en sector de laboratorios.</div>`)[0];
+                popup_a9c1fc562863d634052c2963e812656a.setContent(html_9ae7f14ff85f0e2e314ea4bb263b3cdd);
             
         
 
-        poly_line_4ee654a2a135eba2cb014601d2eb6e60.bindPopup(popup_281cfd5318f671ebb47a28374a321ccb)
+        poly_line_9fe8caba8889c79ecf10f03ae948797e.bindPopup(popup_a9c1fc562863d634052c2963e812656a)
         ;
 
         
     
     
-            poly_line_4ee654a2a135eba2cb014601d2eb6e60.bindTooltip(
+            poly_line_9fe8caba8889c79ecf10f03ae948797e.bindTooltip(
                 `<div>
                      Acequia Secundaria Ingenio
                  </div>`,
@@ -416,39 +436,39 @@
             );
         
     
-            feature_group_64105a6d652abf049e8fc113b98d2363.addTo(map_57661a06664f3d7d8023cefb70aa1ce5);
+            feature_group_7e7640f1aa96b742175b04a356219350.addTo(map_03ca985e6a04504362cdc02743b5d81b);
         
     
-            var feature_group_9c21c266e722dfdc6c5aaa9b3c359812 = L.featureGroup(
+            var feature_group_eaaf94be8f75385db66a85d9b5bb03c9 = L.featureGroup(
                 {
 }
             );
         
     
-            var circle_marker_2282cf5aa8059d237d2cd33ac8cabce2 = L.circleMarker(
+            var circle_marker_fd0a56771f082eace0c88ff272331c9a = L.circleMarker(
                 [0.4072, -78.1705],
                 {"bubblingMouseEvents": true, "color": "#0984e3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#74b9ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
-            ).addTo(feature_group_9c21c266e722dfdc6c5aaa9b3c359812);
+            ).addTo(feature_group_eaaf94be8f75385db66a85d9b5bb03c9);
         
     
-        var popup_005587d725acb9b97228882eb06491a7 = L.popup({
+        var popup_6da589ae04ade93f4e0c0cf824ce194b = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_373b1f06708cb659c9b449d4ff718a59 = $(`<div id="html_373b1f06708cb659c9b449d4ff718a59" style="width: 100.0%; height: 100.0%;"><b>Bio-Estación Norte (Bti + Nicho Odonatos)</b><br>Canal Senescyt<br>• Depredación larval por ninfas de libélula.<br>• Aplicación selectiva de <i>Bacillus thuringiensis israelensis</i> (Bti).</div>`)[0];
-                popup_005587d725acb9b97228882eb06491a7.setContent(html_373b1f06708cb659c9b449d4ff718a59);
+                var html_50b58bf9f654ad061914fda5a9528869 = $(`<div id="html_50b58bf9f654ad061914fda5a9528869" style="width: 100.0%; height: 100.0%;"><b>Bio-Estación Norte (Bti + Nicho Odonatos)</b><br>Canal Senescyt<br>• Depredación larval por ninfas de libélula.<br>• Aplicación selectiva de <i>Bacillus thuringiensis israelensis</i> (Bti).</div>`)[0];
+                popup_6da589ae04ade93f4e0c0cf824ce194b.setContent(html_50b58bf9f654ad061914fda5a9528869);
             
         
 
-        circle_marker_2282cf5aa8059d237d2cd33ac8cabce2.bindPopup(popup_005587d725acb9b97228882eb06491a7)
+        circle_marker_fd0a56771f082eace0c88ff272331c9a.bindPopup(popup_6da589ae04ade93f4e0c0cf824ce194b)
         ;
 
         
     
     
-            circle_marker_2282cf5aa8059d237d2cd33ac8cabce2.bindTooltip(
+            circle_marker_fd0a56771f082eace0c88ff272331c9a.bindTooltip(
                 `<div>
                      Bio-Estación Norte (Bti + Nicho Odonatos)
                  </div>`,
@@ -458,30 +478,30 @@
             );
         
     
-            var circle_marker_f7c98266c5eb304d7181b3173bd2a548 = L.circleMarker(
+            var circle_marker_74853c4b9befa039bed01e6e6f1603a3 = L.circleMarker(
                 [0.4048, -78.172],
                 {"bubblingMouseEvents": true, "color": "#0984e3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#74b9ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
-            ).addTo(feature_group_9c21c266e722dfdc6c5aaa9b3c359812);
+            ).addTo(feature_group_eaaf94be8f75385db66a85d9b5bb03c9);
         
     
-        var popup_f4441ddc1de57bbc1699e10855771d2e = L.popup({
+        var popup_9c7bb2af74d4c88f92895c2e98483b2f = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_9cb9e67231b797d261acb4575e6e7956 = $(`<div id="html_9cb9e67231b797d261acb4575e6e7956" style="width: 100.0%; height: 100.0%;"><b>Bio-Estación Central (Monitoreo Macroinvertebrados)</b><br>Canal Laboratorios<br>• Depredación larval por ninfas de libélula.<br>• Aplicación selectiva de <i>Bacillus thuringiensis israelensis</i> (Bti).</div>`)[0];
-                popup_f4441ddc1de57bbc1699e10855771d2e.setContent(html_9cb9e67231b797d261acb4575e6e7956);
+                var html_511403469ee2fc85ebe0ce91bec652b2 = $(`<div id="html_511403469ee2fc85ebe0ce91bec652b2" style="width: 100.0%; height: 100.0%;"><b>Bio-Estación Central (Monitoreo Macroinvertebrados)</b><br>Canal Laboratorios<br>• Depredación larval por ninfas de libélula.<br>• Aplicación selectiva de <i>Bacillus thuringiensis israelensis</i> (Bti).</div>`)[0];
+                popup_9c7bb2af74d4c88f92895c2e98483b2f.setContent(html_511403469ee2fc85ebe0ce91bec652b2);
             
         
 
-        circle_marker_f7c98266c5eb304d7181b3173bd2a548.bindPopup(popup_f4441ddc1de57bbc1699e10855771d2e)
+        circle_marker_74853c4b9befa039bed01e6e6f1603a3.bindPopup(popup_9c7bb2af74d4c88f92895c2e98483b2f)
         ;
 
         
     
     
-            circle_marker_f7c98266c5eb304d7181b3173bd2a548.bindTooltip(
+            circle_marker_74853c4b9befa039bed01e6e6f1603a3.bindTooltip(
                 `<div>
                      Bio-Estación Central (Monitoreo Macroinvertebrados)
                  </div>`,
@@ -491,30 +511,30 @@
             );
         
     
-            var circle_marker_dac3768b124dc848b27db9ade62deb20 = L.circleMarker(
+            var circle_marker_e5949f4aeae8e26809e6e588ae5da226 = L.circleMarker(
                 [0.4028, -78.1726],
                 {"bubblingMouseEvents": true, "color": "#0984e3", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#74b9ff", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
-            ).addTo(feature_group_9c21c266e722dfdc6c5aaa9b3c359812);
+            ).addTo(feature_group_eaaf94be8f75385db66a85d9b5bb03c9);
         
     
-        var popup_a7746ed46748260fa33db81817a5a998 = L.popup({
+        var popup_b4b908d65d24438ae75748d3f218a647 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_a18a08d26bd3f57c785134b020d66cbc = $(`<div id="html_a18a08d26bd3f57c785134b020d66cbc" style="width: 100.0%; height: 100.0%;"><b>Bio-Estación Sur (Refugio de Libélulas Nativas)</b><br>Canal Canchas / Pats<br>• Depredación larval por ninfas de libélula.<br>• Aplicación selectiva de <i>Bacillus thuringiensis israelensis</i> (Bti).</div>`)[0];
-                popup_a7746ed46748260fa33db81817a5a998.setContent(html_a18a08d26bd3f57c785134b020d66cbc);
+                var html_d66883d7225e75a4a559ff699f10d8e7 = $(`<div id="html_d66883d7225e75a4a559ff699f10d8e7" style="width: 100.0%; height: 100.0%;"><b>Bio-Estación Sur (Refugio de Libélulas Nativas)</b><br>Canal Canchas / Pats<br>• Depredación larval por ninfas de libélula.<br>• Aplicación selectiva de <i>Bacillus thuringiensis israelensis</i> (Bti).</div>`)[0];
+                popup_b4b908d65d24438ae75748d3f218a647.setContent(html_d66883d7225e75a4a559ff699f10d8e7);
             
         
 
-        circle_marker_dac3768b124dc848b27db9ade62deb20.bindPopup(popup_a7746ed46748260fa33db81817a5a998)
+        circle_marker_e5949f4aeae8e26809e6e588ae5da226.bindPopup(popup_b4b908d65d24438ae75748d3f218a647)
         ;
 
         
     
     
-            circle_marker_dac3768b124dc848b27db9ade62deb20.bindTooltip(
+            circle_marker_e5949f4aeae8e26809e6e588ae5da226.bindTooltip(
                 `<div>
                      Bio-Estación Sur (Refugio de Libélulas Nativas)
                  </div>`,
@@ -524,23 +544,23 @@
             );
         
     
-            feature_group_9c21c266e722dfdc6c5aaa9b3c359812.addTo(map_57661a06664f3d7d8023cefb70aa1ce5);
+            feature_group_eaaf94be8f75385db66a85d9b5bb03c9.addTo(map_03ca985e6a04504362cdc02743b5d81b);
         
     
-            var feature_group_a46019caa0aab79e2fd17cbb10a4762f = L.featureGroup(
+            var feature_group_8ace48b263c62d0a5e54c36340886825 = L.featureGroup(
                 {
 }
             );
         
     
-            var marker_84f4db52d87f565ea50d1e92edab27e5 = L.marker(
+            var marker_3cca10ee1df6cf1b00f40cc01c4f49fd = L.marker(
                 [0.402297, -78.173836],
                 {
 }
-            ).addTo(feature_group_a46019caa0aab79e2fd17cbb10a4762f);
+            ).addTo(feature_group_8ace48b263c62d0a5e54c36340886825);
         
     
-            var icon_a9c4a6e9559c334d23cf218ef1977df2 = L.AwesomeMarkers.icon(
+            var icon_9afea455bf711d4fe65dd084fa581d6e = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -551,24 +571,24 @@
             );
         
     
-        var popup_e98d94f476b59dec89438ed006c6b37c = L.popup({
+        var popup_dbd2c6cb18b6a24d606dc70acbf17f15 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_fe6c890235b344b812c13621587033e3 = $(`<div id="html_fe6c890235b344b812c13621587033e3" style="width: 100.0%; height: 100.0%;"><b>Residencias Patrimoniales</b><br>Tipo: Residencias Estudiantiles<br>GPS: 0.402297, -78.173836</div>`)[0];
-                popup_e98d94f476b59dec89438ed006c6b37c.setContent(html_fe6c890235b344b812c13621587033e3);
+                var html_af1c923845fd2f955df925552a887f9b = $(`<div id="html_af1c923845fd2f955df925552a887f9b" style="width: 100.0%; height: 100.0%;"><b>Residencias Patrimoniales</b><br>Tipo: Residencias Estudiantiles<br>GPS: 0.402297, -78.173836</div>`)[0];
+                popup_dbd2c6cb18b6a24d606dc70acbf17f15.setContent(html_af1c923845fd2f955df925552a887f9b);
             
         
 
-        marker_84f4db52d87f565ea50d1e92edab27e5.bindPopup(popup_e98d94f476b59dec89438ed006c6b37c)
+        marker_3cca10ee1df6cf1b00f40cc01c4f49fd.bindPopup(popup_dbd2c6cb18b6a24d606dc70acbf17f15)
         ;
 
         
     
     
-            marker_84f4db52d87f565ea50d1e92edab27e5.bindTooltip(
+            marker_3cca10ee1df6cf1b00f40cc01c4f49fd.bindTooltip(
                 `<div>
                      Residencias Patrimoniales
                  </div>`,
@@ -578,17 +598,17 @@
             );
         
     
-                marker_84f4db52d87f565ea50d1e92edab27e5.setIcon(icon_a9c4a6e9559c334d23cf218ef1977df2);
+                marker_3cca10ee1df6cf1b00f40cc01c4f49fd.setIcon(icon_9afea455bf711d4fe65dd084fa581d6e);
             
     
-            var marker_278fd5e87ad976c1583786b931b6b7d4 = L.marker(
+            var marker_9d48db943005aa389fa62a0b4818ba22 = L.marker(
                 [0.40275, -78.1748],
                 {
 }
-            ).addTo(feature_group_a46019caa0aab79e2fd17cbb10a4762f);
+            ).addTo(feature_group_8ace48b263c62d0a5e54c36340886825);
         
     
-            var icon_488f604e8b9f6fc5c41640ba3ff03c9e = L.AwesomeMarkers.icon(
+            var icon_e1c865a88cecd27b54fcc7ed68c1877b = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -599,24 +619,24 @@
             );
         
     
-        var popup_d9d40e3c8f6ae3e94778fea34c0087bd = L.popup({
+        var popup_9d9ce02a01ea6f1e5987776e7d179d96 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_b56a161463bd43ccb13e171e48ae9cff = $(`<div id="html_b56a161463bd43ccb13e171e48ae9cff" style="width: 100.0%; height: 100.0%;"><b>Las Multis (Residencias)</b><br>Tipo: Residencias Estudiantiles<br>GPS: 0.402750, -78.174800</div>`)[0];
-                popup_d9d40e3c8f6ae3e94778fea34c0087bd.setContent(html_b56a161463bd43ccb13e171e48ae9cff);
+                var html_7b9494442c5d13e559320884e2902501 = $(`<div id="html_7b9494442c5d13e559320884e2902501" style="width: 100.0%; height: 100.0%;"><b>Las Multis (Residencias)</b><br>Tipo: Residencias Estudiantiles<br>GPS: 0.402750, -78.174800</div>`)[0];
+                popup_9d9ce02a01ea6f1e5987776e7d179d96.setContent(html_7b9494442c5d13e559320884e2902501);
             
         
 
-        marker_278fd5e87ad976c1583786b931b6b7d4.bindPopup(popup_d9d40e3c8f6ae3e94778fea34c0087bd)
+        marker_9d48db943005aa389fa62a0b4818ba22.bindPopup(popup_9d9ce02a01ea6f1e5987776e7d179d96)
         ;
 
         
     
     
-            marker_278fd5e87ad976c1583786b931b6b7d4.bindTooltip(
+            marker_9d48db943005aa389fa62a0b4818ba22.bindTooltip(
                 `<div>
                      Las Multis (Residencias)
                  </div>`,
@@ -626,17 +646,17 @@
             );
         
     
-                marker_278fd5e87ad976c1583786b931b6b7d4.setIcon(icon_488f604e8b9f6fc5c41640ba3ff03c9e);
+                marker_9d48db943005aa389fa62a0b4818ba22.setIcon(icon_e1c865a88cecd27b54fcc7ed68c1877b);
             
     
-            var marker_d9d3da9caa7544cebb94eeb4769accea = L.marker(
+            var marker_f763eb9dd1609a37ef8f0b24b0f1b7b8 = L.marker(
                 [0.40235, -78.1755],
                 {
 }
-            ).addTo(feature_group_a46019caa0aab79e2fd17cbb10a4762f);
+            ).addTo(feature_group_8ace48b263c62d0a5e54c36340886825);
         
     
-            var icon_e21361857f3c0af020df0bdc93fcfc63 = L.AwesomeMarkers.icon(
+            var icon_24d2b53a52e266b595da0349f9408a80 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "darkgreen",
   "iconColor": "white",
@@ -647,24 +667,24 @@
             );
         
     
-        var popup_f4729cda3e436ed9a3fe83dec4a88e49 = L.popup({
+        var popup_fa8d5d32e91893796724daa3694084fe = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_a1f2793f7418bdae772be12c3ecd9a44 = $(`<div id="html_a1f2793f7418bdae772be12c3ecd9a44" style="width: 100.0%; height: 100.0%;"><b>Concha Acústica Yachay Tech</b><br>Tipo: Espacio Cultural al Aire Libre<br>GPS: 0.402350, -78.175500</div>`)[0];
-                popup_f4729cda3e436ed9a3fe83dec4a88e49.setContent(html_a1f2793f7418bdae772be12c3ecd9a44);
+                var html_74674e7de584dabd7bb417b9cfdda81d = $(`<div id="html_74674e7de584dabd7bb417b9cfdda81d" style="width: 100.0%; height: 100.0%;"><b>Concha Acústica Yachay Tech</b><br>Tipo: Espacio Cultural al Aire Libre<br>GPS: 0.402350, -78.175500</div>`)[0];
+                popup_fa8d5d32e91893796724daa3694084fe.setContent(html_74674e7de584dabd7bb417b9cfdda81d);
             
         
 
-        marker_d9d3da9caa7544cebb94eeb4769accea.bindPopup(popup_f4729cda3e436ed9a3fe83dec4a88e49)
+        marker_f763eb9dd1609a37ef8f0b24b0f1b7b8.bindPopup(popup_fa8d5d32e91893796724daa3694084fe)
         ;
 
         
     
     
-            marker_d9d3da9caa7544cebb94eeb4769accea.bindTooltip(
+            marker_f763eb9dd1609a37ef8f0b24b0f1b7b8.bindTooltip(
                 `<div>
                      Concha Acústica Yachay Tech
                  </div>`,
@@ -674,17 +694,17 @@
             );
         
     
-                marker_d9d3da9caa7544cebb94eeb4769accea.setIcon(icon_e21361857f3c0af020df0bdc93fcfc63);
+                marker_f763eb9dd1609a37ef8f0b24b0f1b7b8.setIcon(icon_24d2b53a52e266b595da0349f9408a80);
             
     
-            var marker_4c23383f14b719e8d2b883f1acf03e7c = L.marker(
+            var marker_34b4210a22436fcba7fa6ff38faa5982 = L.marker(
                 [0.4025, -78.1718],
                 {
 }
-            ).addTo(feature_group_a46019caa0aab79e2fd17cbb10a4762f);
+            ).addTo(feature_group_8ace48b263c62d0a5e54c36340886825);
         
     
-            var icon_1565ea9414ebb33acb887eb3781e1c42 = L.AwesomeMarkers.icon(
+            var icon_a4d2f27cd2248c47b609cd9215bb8046 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "cadetblue",
   "iconColor": "white",
@@ -695,24 +715,24 @@
             );
         
     
-        var popup_4cc7b7537399b842985086f156138e8d = L.popup({
+        var popup_5426f369a9bc82d3626b270fd366c9e7 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_653cdbbf8fc033ef356eee2ba49223cb = $(`<div id="html_653cdbbf8fc033ef356eee2ba49223cb" style="width: 100.0%; height: 100.0%;"><b>Canchas Deportivas</b><br>Tipo: Recreación Estudiantil<br>GPS: 0.402500, -78.171800</div>`)[0];
-                popup_4cc7b7537399b842985086f156138e8d.setContent(html_653cdbbf8fc033ef356eee2ba49223cb);
+                var html_9dd3d9f2e58a869f2303f08f965f2365 = $(`<div id="html_9dd3d9f2e58a869f2303f08f965f2365" style="width: 100.0%; height: 100.0%;"><b>Canchas Deportivas</b><br>Tipo: Recreación Estudiantil<br>GPS: 0.402500, -78.171800</div>`)[0];
+                popup_5426f369a9bc82d3626b270fd366c9e7.setContent(html_9dd3d9f2e58a869f2303f08f965f2365);
             
         
 
-        marker_4c23383f14b719e8d2b883f1acf03e7c.bindPopup(popup_4cc7b7537399b842985086f156138e8d)
+        marker_34b4210a22436fcba7fa6ff38faa5982.bindPopup(popup_5426f369a9bc82d3626b270fd366c9e7)
         ;
 
         
     
     
-            marker_4c23383f14b719e8d2b883f1acf03e7c.bindTooltip(
+            marker_34b4210a22436fcba7fa6ff38faa5982.bindTooltip(
                 `<div>
                      Canchas Deportivas
                  </div>`,
@@ -722,17 +742,17 @@
             );
         
     
-                marker_4c23383f14b719e8d2b883f1acf03e7c.setIcon(icon_1565ea9414ebb33acb887eb3781e1c42);
+                marker_34b4210a22436fcba7fa6ff38faa5982.setIcon(icon_a4d2f27cd2248c47b609cd9215bb8046);
             
     
-            var marker_0a5709f81c38fb60f53cc5812a9a75a9 = L.marker(
+            var marker_c6f7e9e67cb9355c49c140089848beb1 = L.marker(
                 [0.40255, -78.1728],
                 {
 }
-            ).addTo(feature_group_a46019caa0aab79e2fd17cbb10a4762f);
+            ).addTo(feature_group_8ace48b263c62d0a5e54c36340886825);
         
     
-            var icon_43710c18f7553403c62b3922602be8d4 = L.AwesomeMarkers.icon(
+            var icon_497ee6938a8dc63e8c2d812394cee5b2 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "gray",
   "iconColor": "white",
@@ -743,24 +763,24 @@
             );
         
     
-        var popup_5dff76bc17bbde727e33475a2a92d00c = L.popup({
+        var popup_0e60ae5025c5cadd67b97cffa5b6ed9f = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_30f168c2f663df2eaf4eb0d9f2f413e8 = $(`<div id="html_30f168c2f663df2eaf4eb0d9f2f413e8" style="width: 100.0%; height: 100.0%;"><b>Parada Fasta (Arco Pats)</b><br>Tipo: Transporte Universitario<br>GPS: 0.402550, -78.172800</div>`)[0];
-                popup_5dff76bc17bbde727e33475a2a92d00c.setContent(html_30f168c2f663df2eaf4eb0d9f2f413e8);
+                var html_9cc6e4f52f583e96c4ee2abf3cfdb1c5 = $(`<div id="html_9cc6e4f52f583e96c4ee2abf3cfdb1c5" style="width: 100.0%; height: 100.0%;"><b>Parada Fasta (Arco Pats)</b><br>Tipo: Transporte Universitario<br>GPS: 0.402550, -78.172800</div>`)[0];
+                popup_0e60ae5025c5cadd67b97cffa5b6ed9f.setContent(html_9cc6e4f52f583e96c4ee2abf3cfdb1c5);
             
         
 
-        marker_0a5709f81c38fb60f53cc5812a9a75a9.bindPopup(popup_5dff76bc17bbde727e33475a2a92d00c)
+        marker_c6f7e9e67cb9355c49c140089848beb1.bindPopup(popup_0e60ae5025c5cadd67b97cffa5b6ed9f)
         ;
 
         
     
     
-            marker_0a5709f81c38fb60f53cc5812a9a75a9.bindTooltip(
+            marker_c6f7e9e67cb9355c49c140089848beb1.bindTooltip(
                 `<div>
                      Parada Fasta (Arco Pats)
                  </div>`,
@@ -770,17 +790,17 @@
             );
         
     
-                marker_0a5709f81c38fb60f53cc5812a9a75a9.setIcon(icon_43710c18f7553403c62b3922602be8d4);
+                marker_c6f7e9e67cb9355c49c140089848beb1.setIcon(icon_497ee6938a8dc63e8c2d812394cee5b2);
             
     
-            var marker_1962785913a7060b0e747488d7b47c2e = L.marker(
+            var marker_1f1bb5fe63332637f109b4dd3af8c2d5 = L.marker(
                 [0.405072, -78.174159],
                 {
 }
-            ).addTo(feature_group_a46019caa0aab79e2fd17cbb10a4762f);
+            ).addTo(feature_group_8ace48b263c62d0a5e54c36340886825);
         
     
-            var icon_6079673a9467f4e79b19fa691a5a7daa = L.AwesomeMarkers.icon(
+            var icon_a88a904a40544a812c3f147ae7ea414b = L.AwesomeMarkers.icon(
                 {
   "markerColor": "blue",
   "iconColor": "white",
@@ -791,24 +811,24 @@
             );
         
     
-        var popup_3aa2b6fcc6d3d258e6a82a10c8079347 = L.popup({
+        var popup_0f92213f1166f45c5dca2daa9bef5157 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_b1f21002855bc9b7a8ab5bf7d68f3b1b = $(`<div id="html_b1f21002855bc9b7a8ab5bf7d68f3b1b" style="width: 100.0%; height: 100.0%;"><b>Biblioteca Patrimonial 'Yachay Tech'</b><br>Tipo: Área de Estudio Central<br>GPS: 0.405072, -78.174159</div>`)[0];
-                popup_3aa2b6fcc6d3d258e6a82a10c8079347.setContent(html_b1f21002855bc9b7a8ab5bf7d68f3b1b);
+                var html_4d01e52b0fc9750cf09e1684af8442f4 = $(`<div id="html_4d01e52b0fc9750cf09e1684af8442f4" style="width: 100.0%; height: 100.0%;"><b>Biblioteca Patrimonial 'Yachay Tech'</b><br>Tipo: Área de Estudio Central<br>GPS: 0.405072, -78.174159</div>`)[0];
+                popup_0f92213f1166f45c5dca2daa9bef5157.setContent(html_4d01e52b0fc9750cf09e1684af8442f4);
             
         
 
-        marker_1962785913a7060b0e747488d7b47c2e.bindPopup(popup_3aa2b6fcc6d3d258e6a82a10c8079347)
+        marker_1f1bb5fe63332637f109b4dd3af8c2d5.bindPopup(popup_0f92213f1166f45c5dca2daa9bef5157)
         ;
 
         
     
     
-            marker_1962785913a7060b0e747488d7b47c2e.bindTooltip(
+            marker_1f1bb5fe63332637f109b4dd3af8c2d5.bindTooltip(
                 `<div>
                      Biblioteca Patrimonial 'Yachay Tech'
                  </div>`,
@@ -818,17 +838,17 @@
             );
         
     
-                marker_1962785913a7060b0e747488d7b47c2e.setIcon(icon_6079673a9467f4e79b19fa691a5a7daa);
+                marker_1f1bb5fe63332637f109b4dd3af8c2d5.setIcon(icon_a88a904a40544a812c3f147ae7ea414b);
             
     
-            var marker_36b3f5393dc0c89dd0afce19976e5d47 = L.marker(
+            var marker_45a3f1c6e436f9ff920e23f80d0dd673 = L.marker(
                 [0.40532, -78.174],
                 {
 }
-            ).addTo(feature_group_a46019caa0aab79e2fd17cbb10a4762f);
+            ).addTo(feature_group_8ace48b263c62d0a5e54c36340886825);
         
     
-            var icon_a39439ff5e142fcf05abd3b4af2aee1c = L.AwesomeMarkers.icon(
+            var icon_b47d2ae427e85c15134356f118952d68 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "purple",
   "iconColor": "white",
@@ -839,24 +859,24 @@
             );
         
     
-        var popup_4a10548a8ab84f48e8150899293522ca = L.popup({
+        var popup_27dbf261f7eb8dd8b06fd62cee5c7118 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_d938ee8b6d4cc77adb3c17b2f431630e = $(`<div id="html_d938ee8b6d4cc77adb3c17b2f431630e" style="width: 100.0%; height: 100.0%;"><b>Chimenea Ingenio Azucarero</b><br>Tipo: Patrimonio Histórico<br>GPS: 0.405320, -78.174000</div>`)[0];
-                popup_4a10548a8ab84f48e8150899293522ca.setContent(html_d938ee8b6d4cc77adb3c17b2f431630e);
+                var html_00dcc56217fce82758c298a08aeafc5c = $(`<div id="html_00dcc56217fce82758c298a08aeafc5c" style="width: 100.0%; height: 100.0%;"><b>Chimenea Ingenio Azucarero</b><br>Tipo: Patrimonio Histórico<br>GPS: 0.405320, -78.174000</div>`)[0];
+                popup_27dbf261f7eb8dd8b06fd62cee5c7118.setContent(html_00dcc56217fce82758c298a08aeafc5c);
             
         
 
-        marker_36b3f5393dc0c89dd0afce19976e5d47.bindPopup(popup_4a10548a8ab84f48e8150899293522ca)
+        marker_45a3f1c6e436f9ff920e23f80d0dd673.bindPopup(popup_27dbf261f7eb8dd8b06fd62cee5c7118)
         ;
 
         
     
     
-            marker_36b3f5393dc0c89dd0afce19976e5d47.bindTooltip(
+            marker_45a3f1c6e436f9ff920e23f80d0dd673.bindTooltip(
                 `<div>
                      Chimenea Ingenio Azucarero
                  </div>`,
@@ -866,17 +886,17 @@
             );
         
     
-                marker_36b3f5393dc0c89dd0afce19976e5d47.setIcon(icon_a39439ff5e142fcf05abd3b4af2aee1c);
+                marker_45a3f1c6e436f9ff920e23f80d0dd673.setIcon(icon_b47d2ae427e85c15134356f118952d68);
             
     
-            var marker_052e0e13646e1049950df7ba4fc66763 = L.marker(
+            var marker_32b2629f2c54639eeb39d7ac95473e73 = L.marker(
                 [0.4049, -78.1739],
                 {
 }
-            ).addTo(feature_group_a46019caa0aab79e2fd17cbb10a4762f);
+            ).addTo(feature_group_8ace48b263c62d0a5e54c36340886825);
         
     
-            var icon_a64615c774e5020ef10c3935011644bc = L.AwesomeMarkers.icon(
+            var icon_2585d6d9e07d1dcb3f64e823943c355b = L.AwesomeMarkers.icon(
                 {
   "markerColor": "darkpurple",
   "iconColor": "white",
@@ -887,24 +907,24 @@
             );
         
     
-        var popup_703e2f817d1ec8ebb3b9a5d233087eec = L.popup({
+        var popup_69593cf1260e11e5246204745805b79f = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_f2d984de5416914c16ca8195dfde75e2 = $(`<div id="html_f2d984de5416914c16ca8195dfde75e2" style="width: 100.0%; height: 100.0%;"><b>Laboratorio de Química</b><br>Tipo: Docencia e Investigación<br>GPS: 0.404900, -78.173900</div>`)[0];
-                popup_703e2f817d1ec8ebb3b9a5d233087eec.setContent(html_f2d984de5416914c16ca8195dfde75e2);
+                var html_6d6c3f36c9469404749444cc7b4e9a97 = $(`<div id="html_6d6c3f36c9469404749444cc7b4e9a97" style="width: 100.0%; height: 100.0%;"><b>Laboratorio de Química</b><br>Tipo: Docencia e Investigación<br>GPS: 0.404900, -78.173900</div>`)[0];
+                popup_69593cf1260e11e5246204745805b79f.setContent(html_6d6c3f36c9469404749444cc7b4e9a97);
             
         
 
-        marker_052e0e13646e1049950df7ba4fc66763.bindPopup(popup_703e2f817d1ec8ebb3b9a5d233087eec)
+        marker_32b2629f2c54639eeb39d7ac95473e73.bindPopup(popup_69593cf1260e11e5246204745805b79f)
         ;
 
         
     
     
-            marker_052e0e13646e1049950df7ba4fc66763.bindTooltip(
+            marker_32b2629f2c54639eeb39d7ac95473e73.bindTooltip(
                 `<div>
                      Laboratorio de Química
                  </div>`,
@@ -914,17 +934,17 @@
             );
         
     
-                marker_052e0e13646e1049950df7ba4fc66763.setIcon(icon_a64615c774e5020ef10c3935011644bc);
+                marker_32b2629f2c54639eeb39d7ac95473e73.setIcon(icon_2585d6d9e07d1dcb3f64e823943c355b);
             
     
-            var marker_66b601f2351317fbb2bcde2263af3f76 = L.marker(
+            var marker_66fe81728ff9cb9b29a4dee39ad7e85e = L.marker(
                 [0.40478, -78.17245],
                 {
 }
-            ).addTo(feature_group_a46019caa0aab79e2fd17cbb10a4762f);
+            ).addTo(feature_group_8ace48b263c62d0a5e54c36340886825);
         
     
-            var icon_7de09f183717e4579ca57ceb83ede55e = L.AwesomeMarkers.icon(
+            var icon_cad83c71268d4d5c4257dbfff1905b40 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "darkpurple",
   "iconColor": "white",
@@ -935,24 +955,24 @@
             );
         
     
-        var popup_f865adb46f3cc884ebfcda028c373337 = L.popup({
+        var popup_702b6ed4c39c8a76bd61bb6456ae8444 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_b4a35ad63d2db8537deec5a1a384af28 = $(`<div id="html_b4a35ad63d2db8537deec5a1a384af28" style="width: 100.0%; height: 100.0%;"><b>Laboratorios de Carrera, Yachay Tech</b><br>Tipo: Laboratorios Tecnológicos<br>GPS: 0.404780, -78.172450</div>`)[0];
-                popup_f865adb46f3cc884ebfcda028c373337.setContent(html_b4a35ad63d2db8537deec5a1a384af28);
+                var html_35911a281bc1c2c3b772b486d7f544b1 = $(`<div id="html_35911a281bc1c2c3b772b486d7f544b1" style="width: 100.0%; height: 100.0%;"><b>Laboratorios de Carrera, Yachay Tech</b><br>Tipo: Laboratorios Tecnológicos<br>GPS: 0.404780, -78.172450</div>`)[0];
+                popup_702b6ed4c39c8a76bd61bb6456ae8444.setContent(html_35911a281bc1c2c3b772b486d7f544b1);
             
         
 
-        marker_66b601f2351317fbb2bcde2263af3f76.bindPopup(popup_f865adb46f3cc884ebfcda028c373337)
+        marker_66fe81728ff9cb9b29a4dee39ad7e85e.bindPopup(popup_702b6ed4c39c8a76bd61bb6456ae8444)
         ;
 
         
     
     
-            marker_66b601f2351317fbb2bcde2263af3f76.bindTooltip(
+            marker_66fe81728ff9cb9b29a4dee39ad7e85e.bindTooltip(
                 `<div>
                      Laboratorios de Carrera, Yachay Tech
                  </div>`,
@@ -962,17 +982,17 @@
             );
         
     
-                marker_66b601f2351317fbb2bcde2263af3f76.setIcon(icon_7de09f183717e4579ca57ceb83ede55e);
+                marker_66fe81728ff9cb9b29a4dee39ad7e85e.setIcon(icon_cad83c71268d4d5c4257dbfff1905b40);
             
     
-            var marker_a1d731b342f88931f140febb9569c2a1 = L.marker(
+            var marker_7d4d164f79c4c855c68abecf14e879fd = L.marker(
                 [0.406691, -78.170214],
                 {
 }
-            ).addTo(feature_group_a46019caa0aab79e2fd17cbb10a4762f);
+            ).addTo(feature_group_8ace48b263c62d0a5e54c36340886825);
         
     
-            var icon_b90467c80bc6defec317f9f4c654ccdd = L.AwesomeMarkers.icon(
+            var icon_6849ad39b2d346727622d5c48049ac0a = L.AwesomeMarkers.icon(
                 {
   "markerColor": "red",
   "iconColor": "white",
@@ -983,24 +1003,24 @@
             );
         
     
-        var popup_ebbf6e73fa624eaa9ee14bdfb4a6dd7d = L.popup({
+        var popup_a5f31a3438d07ff1460be475082ded3a = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_31271c1092bba82e34956e727e3a38d7 = $(`<div id="html_31271c1092bba82e34956e727e3a38d7" style="width: 100.0%; height: 100.0%;"><b>Edificio Senescyt (Yachay Tech)</b><br>Tipo: Aulas y Oficinas Docentes<br>GPS: 0.406691, -78.170214</div>`)[0];
-                popup_ebbf6e73fa624eaa9ee14bdfb4a6dd7d.setContent(html_31271c1092bba82e34956e727e3a38d7);
+                var html_328e110a028bcb722b886c82ae1dfa12 = $(`<div id="html_328e110a028bcb722b886c82ae1dfa12" style="width: 100.0%; height: 100.0%;"><b>Edificio Senescyt (Yachay Tech)</b><br>Tipo: Aulas y Oficinas Docentes<br>GPS: 0.406691, -78.170214</div>`)[0];
+                popup_a5f31a3438d07ff1460be475082ded3a.setContent(html_328e110a028bcb722b886c82ae1dfa12);
             
         
 
-        marker_a1d731b342f88931f140febb9569c2a1.bindPopup(popup_ebbf6e73fa624eaa9ee14bdfb4a6dd7d)
+        marker_7d4d164f79c4c855c68abecf14e879fd.bindPopup(popup_a5f31a3438d07ff1460be475082ded3a)
         ;
 
         
     
     
-            marker_a1d731b342f88931f140febb9569c2a1.bindTooltip(
+            marker_7d4d164f79c4c855c68abecf14e879fd.bindTooltip(
                 `<div>
                      Edificio Senescyt (Yachay Tech)
                  </div>`,
@@ -1010,17 +1030,17 @@
             );
         
     
-                marker_a1d731b342f88931f140febb9569c2a1.setIcon(icon_b90467c80bc6defec317f9f4c654ccdd);
+                marker_7d4d164f79c4c855c68abecf14e879fd.setIcon(icon_6849ad39b2d346727622d5c48049ac0a);
             
     
-            var marker_ea108e5ac7a1187e093cffa7abacb158 = L.marker(
+            var marker_0fc52d60bd88ac52b12960095b69374d = L.marker(
                 [0.40695, -78.17115],
                 {
 }
-            ).addTo(feature_group_a46019caa0aab79e2fd17cbb10a4762f);
+            ).addTo(feature_group_8ace48b263c62d0a5e54c36340886825);
         
     
-            var icon_d40b87be35a017c478a4cb53ce67053e = L.AwesomeMarkers.icon(
+            var icon_38b86bff69bbf6e58d15028e2f6d3c8c = L.AwesomeMarkers.icon(
                 {
   "markerColor": "darkred",
   "iconColor": "white",
@@ -1031,24 +1051,24 @@
             );
         
     
-        var popup_9cefc4ba183193a2df17746412e5f6d6 = L.popup({
+        var popup_da8a6cb5167758e4fb9a4948f9a19aec = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_855cfd74368786a5adb87af52a8b2446 = $(`<div id="html_855cfd74368786a5adb87af52a8b2446" style="width: 100.0%; height: 100.0%;"><b>Residencias 'Los Bloques'</b><br>Tipo: Residencias Estudiantiles<br>GPS: 0.406950, -78.171150</div>`)[0];
-                popup_9cefc4ba183193a2df17746412e5f6d6.setContent(html_855cfd74368786a5adb87af52a8b2446);
+                var html_89ee0a96574e28557b201a1a29a21c03 = $(`<div id="html_89ee0a96574e28557b201a1a29a21c03" style="width: 100.0%; height: 100.0%;"><b>Residencias 'Los Bloques'</b><br>Tipo: Residencias Estudiantiles<br>GPS: 0.406950, -78.171150</div>`)[0];
+                popup_da8a6cb5167758e4fb9a4948f9a19aec.setContent(html_89ee0a96574e28557b201a1a29a21c03);
             
         
 
-        marker_ea108e5ac7a1187e093cffa7abacb158.bindPopup(popup_9cefc4ba183193a2df17746412e5f6d6)
+        marker_0fc52d60bd88ac52b12960095b69374d.bindPopup(popup_da8a6cb5167758e4fb9a4948f9a19aec)
         ;
 
         
     
     
-            marker_ea108e5ac7a1187e093cffa7abacb158.bindTooltip(
+            marker_0fc52d60bd88ac52b12960095b69374d.bindTooltip(
                 `<div>
                      Residencias 'Los Bloques'
                  </div>`,
@@ -1058,17 +1078,17 @@
             );
         
     
-                marker_ea108e5ac7a1187e093cffa7abacb158.setIcon(icon_d40b87be35a017c478a4cb53ce67053e);
+                marker_0fc52d60bd88ac52b12960095b69374d.setIcon(icon_38b86bff69bbf6e58d15028e2f6d3c8c);
             
     
-            var marker_ea5b2d662f2933794e9f32f5aa4157d3 = L.marker(
+            var marker_bb73d71af5697ea5d434057bce8e6b0d = L.marker(
                 [0.4074, -78.1715],
                 {
 }
-            ).addTo(feature_group_a46019caa0aab79e2fd17cbb10a4762f);
+            ).addTo(feature_group_8ace48b263c62d0a5e54c36340886825);
         
     
-            var icon_f88474414f086f751e765707548bd1b8 = L.AwesomeMarkers.icon(
+            var icon_82e0e5729dee3ac12301e432c990e52a = L.AwesomeMarkers.icon(
                 {
   "markerColor": "orange",
   "iconColor": "white",
@@ -1079,24 +1099,24 @@
             );
         
     
-        var popup_725f7bbba467ba5b96f349b155539b3a = L.popup({
+        var popup_24f4ab093eee3ecb74e8868914bb28a9 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_fad70cf6db2039b9c943cbd222e69c5a = $(`<div id="html_fad70cf6db2039b9c943cbd222e69c5a" style="width: 100.0%; height: 100.0%;"><b>Promoción de la Vida Comunitaria</b><br>Tipo: Bienestar Estudiantil<br>GPS: 0.407400, -78.171500</div>`)[0];
-                popup_725f7bbba467ba5b96f349b155539b3a.setContent(html_fad70cf6db2039b9c943cbd222e69c5a);
+                var html_cad5c7d613b3149eee9aa76d2b5163e5 = $(`<div id="html_cad5c7d613b3149eee9aa76d2b5163e5" style="width: 100.0%; height: 100.0%;"><b>Promoción de la Vida Comunitaria</b><br>Tipo: Bienestar Estudiantil<br>GPS: 0.407400, -78.171500</div>`)[0];
+                popup_24f4ab093eee3ecb74e8868914bb28a9.setContent(html_cad5c7d613b3149eee9aa76d2b5163e5);
             
         
 
-        marker_ea5b2d662f2933794e9f32f5aa4157d3.bindPopup(popup_725f7bbba467ba5b96f349b155539b3a)
+        marker_bb73d71af5697ea5d434057bce8e6b0d.bindPopup(popup_24f4ab093eee3ecb74e8868914bb28a9)
         ;
 
         
     
     
-            marker_ea5b2d662f2933794e9f32f5aa4157d3.bindTooltip(
+            marker_bb73d71af5697ea5d434057bce8e6b0d.bindTooltip(
                 `<div>
                      Promoción de la Vida Comunitaria
                  </div>`,
@@ -1106,17 +1126,17 @@
             );
         
     
-                marker_ea5b2d662f2933794e9f32f5aa4157d3.setIcon(icon_f88474414f086f751e765707548bd1b8);
+                marker_bb73d71af5697ea5d434057bce8e6b0d.setIcon(icon_82e0e5729dee3ac12301e432c990e52a);
             
     
-            var marker_0faaf999a7fa2ac97a85a811c55e5053 = L.marker(
+            var marker_27a6c6dbac11916997de17b0264603f6 = L.marker(
                 [0.4065, -78.1705],
                 {
 }
-            ).addTo(feature_group_a46019caa0aab79e2fd17cbb10a4762f);
+            ).addTo(feature_group_8ace48b263c62d0a5e54c36340886825);
         
     
-            var icon_48f034115dd156d347dec7fc7682c0b4 = L.AwesomeMarkers.icon(
+            var icon_fbe35dfe306af924b89f1e231af1bd68 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "orange",
   "iconColor": "white",
@@ -1127,24 +1147,24 @@
             );
         
     
-        var popup_1c887b1cceca81c23d48e8398116f364 = L.popup({
+        var popup_46e1bb6ab0828505af711155343c7c0a = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_f80ce0a31f9cdcd0ff0d91053cbc02ef = $(`<div id="html_f80ce0a31f9cdcd0ff0d91053cbc02ef" style="width: 100.0%; height: 100.0%;"><b>Minimarket Krispan</b><br>Tipo: Zona de Alimentación y Servicios<br>GPS: 0.406500, -78.170500</div>`)[0];
-                popup_1c887b1cceca81c23d48e8398116f364.setContent(html_f80ce0a31f9cdcd0ff0d91053cbc02ef);
+                var html_1d01a22f26cbec8d82dd9adcd7beae7d = $(`<div id="html_1d01a22f26cbec8d82dd9adcd7beae7d" style="width: 100.0%; height: 100.0%;"><b>Minimarket Krispan</b><br>Tipo: Zona de Alimentación y Servicios<br>GPS: 0.406500, -78.170500</div>`)[0];
+                popup_46e1bb6ab0828505af711155343c7c0a.setContent(html_1d01a22f26cbec8d82dd9adcd7beae7d);
             
         
 
-        marker_0faaf999a7fa2ac97a85a811c55e5053.bindPopup(popup_1c887b1cceca81c23d48e8398116f364)
+        marker_27a6c6dbac11916997de17b0264603f6.bindPopup(popup_46e1bb6ab0828505af711155343c7c0a)
         ;
 
         
     
     
-            marker_0faaf999a7fa2ac97a85a811c55e5053.bindTooltip(
+            marker_27a6c6dbac11916997de17b0264603f6.bindTooltip(
                 `<div>
                      Minimarket Krispan
                  </div>`,
@@ -1154,42 +1174,42 @@
             );
         
     
-                marker_0faaf999a7fa2ac97a85a811c55e5053.setIcon(icon_48f034115dd156d347dec7fc7682c0b4);
+                marker_27a6c6dbac11916997de17b0264603f6.setIcon(icon_fbe35dfe306af924b89f1e231af1bd68);
             
     
-            feature_group_a46019caa0aab79e2fd17cbb10a4762f.addTo(map_57661a06664f3d7d8023cefb70aa1ce5);
+            feature_group_8ace48b263c62d0a5e54c36340886825.addTo(map_03ca985e6a04504362cdc02743b5d81b);
         
     
-            var feature_group_c8513a1fb25bec182fb4ffae9750297e = L.featureGroup(
+            var feature_group_04b117f1585288d7caaeadd8c8048a8d = L.featureGroup(
                 {
 }
             );
         
     
-            var poly_line_ddec16c57bf6d0e9fb2dc0ead3e2110c = L.polyline(
+            var poly_line_1d10c9a9076ef1e2621376ee9d6b4d68 = L.polyline(
                 [[0.4031, -78.175], [0.403, -78.1738], [0.4024, -78.173]],
                 {"bubblingMouseEvents": true, "color": "#27ae60", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#27ae60", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 6}
-            ).addTo(feature_group_c8513a1fb25bec182fb4ffae9750297e);
+            ).addTo(feature_group_04b117f1585288d7caaeadd8c8048a8d);
         
     
-        var popup_b57e7faa817399e18d5613782154189e = L.popup({
+        var popup_eb9aad782887009cc08ce74069aa7793 = L.popup({
   "maxWidth": 270,
 });
 
         
             
-                var html_d3c790ab43849df8027a37842463888f = $(`<div id="html_d3c790ab43849df8027a37842463888f" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; width: 250px;">                 <h4 style="color: #27ae60; margin: 0 0 5px 0;">🌿 Cerca Viva 1 - Sector Residencial (380m)</h4>                 <b>Estructura en 3 Estratos:</b><br>                 • <b>Alto (3.5-5m):</b> <i>Schinus molle</i> (Pimiento andino nativo) - Rompevientos.<br>                 • <b>Medio (1.2-2m):</b> <i>Myrcianthes hallii</i> (Arrayán) & Romero - Bloqueo de vuelo.<br>                 • <b>Bajo (0.4-0.8m):</b> <i>Cymbopogon citratus</i> (Hierba luisa) - Citronelal basal.<br>                 <b>Eficacia proyectada:</b> ~85% reducción de picaduras.             </div>         </div>`)[0];
-                popup_b57e7faa817399e18d5613782154189e.setContent(html_d3c790ab43849df8027a37842463888f);
+                var html_25df18f9223eab66e24f529e190d3767 = $(`<div id="html_25df18f9223eab66e24f529e190d3767" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; width: 250px;">                 <h4 style="color: #27ae60; margin: 0 0 5px 0;">🌿 Cerca Viva 1 - Sector Residencial (380m)</h4>                 <b>Estructura en 3 Estratos:</b><br>                 • <b>Alto (3.5-5m):</b> <i>Schinus molle</i> (Pimiento andino nativo) - Rompevientos.<br>                 • <b>Medio (1.2-2m):</b> <i>Myrcianthes hallii</i> (Arrayán) & Romero - Bloqueo de vuelo.<br>                 • <b>Bajo (0.4-0.8m):</b> <i>Cymbopogon citratus</i> (Hierba luisa) - Citronelal basal.<br>                 <b>Eficacia proyectada:</b> ~85% reducción de picaduras.             </div>         </div>`)[0];
+                popup_eb9aad782887009cc08ce74069aa7793.setContent(html_25df18f9223eab66e24f529e190d3767);
             
         
 
-        poly_line_ddec16c57bf6d0e9fb2dc0ead3e2110c.bindPopup(popup_b57e7faa817399e18d5613782154189e)
+        poly_line_1d10c9a9076ef1e2621376ee9d6b4d68.bindPopup(popup_eb9aad782887009cc08ce74069aa7793)
         ;
 
         
     
     
-            poly_line_ddec16c57bf6d0e9fb2dc0ead3e2110c.bindTooltip(
+            poly_line_1d10c9a9076ef1e2621376ee9d6b4d68.bindTooltip(
                 `<div>
                      🌿 Cerca Viva 1: Residencias Las Multis / Patrimoniales (380m)
                  </div>`,
@@ -1199,30 +1219,30 @@
             );
         
     
-            var poly_line_8a803c5820755ffadfd692dd1e3a0a39 = L.polyline(
+            var poly_line_d0f089277b7b925e756434e688ec8384 = L.polyline(
                 [[0.4055, -78.1734], [0.4048, -78.1728], [0.404, -78.1726]],
                 {"bubblingMouseEvents": true, "color": "#27ae60", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#27ae60", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 6}
-            ).addTo(feature_group_c8513a1fb25bec182fb4ffae9750297e);
+            ).addTo(feature_group_04b117f1585288d7caaeadd8c8048a8d);
         
     
-        var popup_aea9bf50d08ae9e908cbfd26357dd34f = L.popup({
+        var popup_aded20ea1dfc240cadcf664191ebebc9 = L.popup({
   "maxWidth": 270,
 });
 
         
             
-                var html_85903565c640c1a3f8e3f70a3ee3fec6 = $(`<div id="html_85903565c640c1a3f8e3f70a3ee3fec6" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; width: 250px;">                 <h4 style="color: #27ae60; margin: 0 0 5px 0;">🌿 Cerca Viva 2 - Sector Ingenio / Laboratorios (280m)</h4>                 <b>Estructura en 3 Estratos:</b><br>                 • <b>Alto:</b> <i>Schinus molle</i>.<br>                 • <b>Medio:</b> <i>Lantana camara</i> y Lavanda.<br>                 • <b>Bajo:</b> <i>Cymbopogon citratus</i>.<br>                 <b>Función:</b> Amortiguamiento entre canal de riego y caminerías de aulas.             </div>         </div>`)[0];
-                popup_aea9bf50d08ae9e908cbfd26357dd34f.setContent(html_85903565c640c1a3f8e3f70a3ee3fec6);
+                var html_5dd4715255d437ae31a84a20bba08a12 = $(`<div id="html_5dd4715255d437ae31a84a20bba08a12" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; width: 250px;">                 <h4 style="color: #27ae60; margin: 0 0 5px 0;">🌿 Cerca Viva 2 - Sector Ingenio / Laboratorios (280m)</h4>                 <b>Estructura en 3 Estratos:</b><br>                 • <b>Alto:</b> <i>Schinus molle</i>.<br>                 • <b>Medio:</b> <i>Lantana camara</i> y Lavanda.<br>                 • <b>Bajo:</b> <i>Cymbopogon citratus</i>.<br>                 <b>Función:</b> Amortiguamiento entre canal de riego y caminerías de aulas.             </div>         </div>`)[0];
+                popup_aded20ea1dfc240cadcf664191ebebc9.setContent(html_5dd4715255d437ae31a84a20bba08a12);
             
         
 
-        poly_line_8a803c5820755ffadfd692dd1e3a0a39.bindPopup(popup_aea9bf50d08ae9e908cbfd26357dd34f)
+        poly_line_d0f089277b7b925e756434e688ec8384.bindPopup(popup_aded20ea1dfc240cadcf664191ebebc9)
         ;
 
         
     
     
-            poly_line_8a803c5820755ffadfd692dd1e3a0a39.bindTooltip(
+            poly_line_d0f089277b7b925e756434e688ec8384.bindTooltip(
                 `<div>
                      🌿 Cerca Viva 2: Ingenio / Laboratorios (280m)
                  </div>`,
@@ -1232,30 +1252,30 @@
             );
         
     
-            var poly_line_3f8173d810781b995e03f95127251c1a = L.polyline(
+            var poly_line_2a740fd824f234ff4adcd04f3977cbfb = L.polyline(
                 [[0.4072, -78.1718], [0.4066, -78.171], [0.406, -78.1702]],
                 {"bubblingMouseEvents": true, "color": "#27ae60", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#27ae60", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 6}
-            ).addTo(feature_group_c8513a1fb25bec182fb4ffae9750297e);
+            ).addTo(feature_group_04b117f1585288d7caaeadd8c8048a8d);
         
     
-        var popup_d3790a9aade0e2e00f2c353aa82c6c0c = L.popup({
+        var popup_581f4f692d74674b0fcd250b8c3d494c = L.popup({
   "maxWidth": 270,
 });
 
         
             
-                var html_66e4f93ba433b8a0162874d23f5f1101 = $(`<div id="html_66e4f93ba433b8a0162874d23f5f1101" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; width: 250px;">                 <h4 style="color: #27ae60; margin: 0 0 5px 0;">🌿 Cerca Viva 3 - Sector Senescyt / Los Bloques (320m)</h4>                 <b>Estructura en 3 Estratos:</b><br>                 • <b>Alto:</b> <i>Schinus molle</i>.<br>                 • <b>Medio:</b> <i>Myrcianthes hallii</i> (Arrayán) & Romero.<br>                 • <b>Bajo:</b> <i>Cymbopogon citratus</i>.<br>                 <b>Protección:</b> Complejo habitacional y aulas académicas.             </div>         </div>`)[0];
-                popup_d3790a9aade0e2e00f2c353aa82c6c0c.setContent(html_66e4f93ba433b8a0162874d23f5f1101);
+                var html_d5ac21eb505d1d05866b86d288f25245 = $(`<div id="html_d5ac21eb505d1d05866b86d288f25245" style="width: 100.0%; height: 100.0%;">             <div style="font-family: Arial; width: 250px;">                 <h4 style="color: #27ae60; margin: 0 0 5px 0;">🌿 Cerca Viva 3 - Sector Senescyt / Los Bloques (320m)</h4>                 <b>Estructura en 3 Estratos:</b><br>                 • <b>Alto:</b> <i>Schinus molle</i>.<br>                 • <b>Medio:</b> <i>Myrcianthes hallii</i> (Arrayán) & Romero.<br>                 • <b>Bajo:</b> <i>Cymbopogon citratus</i>.<br>                 <b>Protección:</b> Complejo habitacional y aulas académicas.             </div>         </div>`)[0];
+                popup_581f4f692d74674b0fcd250b8c3d494c.setContent(html_d5ac21eb505d1d05866b86d288f25245);
             
         
 
-        poly_line_3f8173d810781b995e03f95127251c1a.bindPopup(popup_d3790a9aade0e2e00f2c353aa82c6c0c)
+        poly_line_2a740fd824f234ff4adcd04f3977cbfb.bindPopup(popup_581f4f692d74674b0fcd250b8c3d494c)
         ;
 
         
     
     
-            poly_line_3f8173d810781b995e03f95127251c1a.bindTooltip(
+            poly_line_2a740fd824f234ff4adcd04f3977cbfb.bindTooltip(
                 `<div>
                      🌿 Cerca Viva 3: Edificio Senescyt / Los Bloques (320m)
                  </div>`,
@@ -1265,22 +1285,22 @@
             );
         
     
-            feature_group_c8513a1fb25bec182fb4ffae9750297e.addTo(map_57661a06664f3d7d8023cefb70aa1ce5);
+            feature_group_04b117f1585288d7caaeadd8c8048a8d.addTo(map_03ca985e6a04504362cdc02743b5d81b);
         
     
-            var feature_group_28e7af7db1e389559b38190c8a720890 = L.featureGroup(
+            var feature_group_a7f718d058a4249feb718107f49f81e1 = L.featureGroup(
                 {
 }
             );
         
     
-            var poly_line_b428dc656b1b0e8118cc48464b5b83d8 = L.polyline(
+            var poly_line_00cf32a2980edea7fbe607f521c3c115 = L.polyline(
                 [[0.4031, -78.175], [0.403, -78.1738], [0.4024, -78.173]],
                 {"bubblingMouseEvents": true, "color": "#2ecc71", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#2ecc71", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.25, "smoothFactor": 1.0, "stroke": true, "weight": 35}
-            ).addTo(feature_group_28e7af7db1e389559b38190c8a720890);
+            ).addTo(feature_group_a7f718d058a4249feb718107f49f81e1);
         
     
-            poly_line_b428dc656b1b0e8118cc48464b5b83d8.bindTooltip(
+            poly_line_00cf32a2980edea7fbe607f521c3c115.bindTooltip(
                 `<div>
                      Área de Amortiguamiento Repelente (Buffer Residencias)
                  </div>`,
@@ -1290,13 +1310,13 @@
             );
         
     
-            var poly_line_f29d7dcdfa055da8fa28fca50a13cfed = L.polyline(
+            var poly_line_23bfd3768568f91c42e6f1c2dc82c00b = L.polyline(
                 [[0.4055, -78.1734], [0.4048, -78.1728], [0.404, -78.1726]],
                 {"bubblingMouseEvents": true, "color": "#2ecc71", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#2ecc71", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.25, "smoothFactor": 1.0, "stroke": true, "weight": 35}
-            ).addTo(feature_group_28e7af7db1e389559b38190c8a720890);
+            ).addTo(feature_group_a7f718d058a4249feb718107f49f81e1);
         
     
-            poly_line_f29d7dcdfa055da8fa28fca50a13cfed.bindTooltip(
+            poly_line_23bfd3768568f91c42e6f1c2dc82c00b.bindTooltip(
                 `<div>
                      Área de Amortiguamiento Repelente (Buffer Ingenio)
                  </div>`,
@@ -1306,13 +1326,13 @@
             );
         
     
-            var poly_line_3ddf12879a7b9114718756505c96ea3d = L.polyline(
+            var poly_line_58a6d722b62951d8b0e970ed17742eb7 = L.polyline(
                 [[0.4072, -78.1718], [0.4066, -78.171], [0.406, -78.1702]],
                 {"bubblingMouseEvents": true, "color": "#2ecc71", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#2ecc71", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.25, "smoothFactor": 1.0, "stroke": true, "weight": 35}
-            ).addTo(feature_group_28e7af7db1e389559b38190c8a720890);
+            ).addTo(feature_group_a7f718d058a4249feb718107f49f81e1);
         
     
-            poly_line_3ddf12879a7b9114718756505c96ea3d.bindTooltip(
+            poly_line_58a6d722b62951d8b0e970ed17742eb7.bindTooltip(
                 `<div>
                      Área de Amortiguamiento Repelente (Buffer Senescyt)
                  </div>`,
@@ -1322,23 +1342,23 @@
             );
         
     
-            feature_group_28e7af7db1e389559b38190c8a720890.addTo(map_57661a06664f3d7d8023cefb70aa1ce5);
+            feature_group_a7f718d058a4249feb718107f49f81e1.addTo(map_03ca985e6a04504362cdc02743b5d81b);
         
     
-            var feature_group_9821dfbcf5bb9bf2ae65fdf7c4ffffbb = L.featureGroup(
+            var feature_group_f1d0942849e938018566bf8df94a1e5a = L.featureGroup(
                 {
 }
             );
         
     
-            var marker_899324212b19c12a599fa5ab1e14074f = L.marker(
+            var marker_8a7b3ac07dfb617200c85cf52462eab8 = L.marker(
                 [0.4024, -78.173],
                 {
 }
-            ).addTo(feature_group_9821dfbcf5bb9bf2ae65fdf7c4ffffbb);
+            ).addTo(feature_group_f1d0942849e938018566bf8df94a1e5a);
         
     
-            var icon_f0c80113815c8c007b578758c3f92651 = L.AwesomeMarkers.icon(
+            var icon_d41a01945ba2b8715b5b279328aef4b2 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "darkblue",
   "iconColor": "white",
@@ -1349,24 +1369,24 @@
             );
         
     
-        var popup_5caad89cc538a67a161d77a074f38a6e = L.popup({
+        var popup_5cee1bcebc4120a5876d25853459f1e9 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_1cd7863f02fdcd42dbbc139a3222f56f = $(`<div id="html_1cd7863f02fdcd42dbbc139a3222f56f" style="width: 100.0%; height: 100.0%;">                 <b>Estación de Bio-Monitoreo</b><br>                 <b>Código:</b> T-01: Residencias Patrimoniales / Canchas<br>                 <b>Mecanismo:</b> Trampa de silueta + cebo bio-ecológico (ácido L-láctico y fermentación CO2).<br>                 <b>Objetivo:</b> Validación empírica de reducción de picaduras (RF-04).             </div>`)[0];
-                popup_5caad89cc538a67a161d77a074f38a6e.setContent(html_1cd7863f02fdcd42dbbc139a3222f56f);
+                var html_bc4e23785bdb762f4f6b072a92092330 = $(`<div id="html_bc4e23785bdb762f4f6b072a92092330" style="width: 100.0%; height: 100.0%;">                 <b>Estación de Bio-Monitoreo</b><br>                 <b>Código:</b> T-01: Residencias Patrimoniales / Canchas<br>                 <b>Mecanismo:</b> Trampa de silueta + cebo bio-ecológico (ácido L-láctico y fermentación CO2).<br>                 <b>Objetivo:</b> Validación empírica de reducción de picaduras (RF-04).             </div>`)[0];
+                popup_5cee1bcebc4120a5876d25853459f1e9.setContent(html_bc4e23785bdb762f4f6b072a92092330);
             
         
 
-        marker_899324212b19c12a599fa5ab1e14074f.bindPopup(popup_5caad89cc538a67a161d77a074f38a6e)
+        marker_8a7b3ac07dfb617200c85cf52462eab8.bindPopup(popup_5cee1bcebc4120a5876d25853459f1e9)
         ;
 
         
     
     
-            marker_899324212b19c12a599fa5ab1e14074f.bindTooltip(
+            marker_8a7b3ac07dfb617200c85cf52462eab8.bindTooltip(
                 `<div>
                      T-01: Residencias Patrimoniales / Canchas
                  </div>`,
@@ -1376,17 +1396,17 @@
             );
         
     
-                marker_899324212b19c12a599fa5ab1e14074f.setIcon(icon_f0c80113815c8c007b578758c3f92651);
+                marker_8a7b3ac07dfb617200c85cf52462eab8.setIcon(icon_d41a01945ba2b8715b5b279328aef4b2);
             
     
-            var marker_50eac6d154a7d197664b2fa180a1a861 = L.marker(
+            var marker_dcb4294f2a7e4e3cb7b6e0170ba1e86f = L.marker(
                 [0.4028, -78.175],
                 {
 }
-            ).addTo(feature_group_9821dfbcf5bb9bf2ae65fdf7c4ffffbb);
+            ).addTo(feature_group_f1d0942849e938018566bf8df94a1e5a);
         
     
-            var icon_dc76ecdf6750c2abe13da94699dafb1c = L.AwesomeMarkers.icon(
+            var icon_864f8999b07165da12608e1ead87a195 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "darkblue",
   "iconColor": "white",
@@ -1397,24 +1417,24 @@
             );
         
     
-        var popup_b3a91ba39dcf4c95826d66b50f43b4cb = L.popup({
+        var popup_84e65fcb4b3170fab672533fc5e25daa = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_533533bbdabff39025f42d3f8d229374 = $(`<div id="html_533533bbdabff39025f42d3f8d229374" style="width: 100.0%; height: 100.0%;">                 <b>Estación de Bio-Monitoreo</b><br>                 <b>Código:</b> T-02: Las Multis / Concha Acústica<br>                 <b>Mecanismo:</b> Trampa de silueta + cebo bio-ecológico (ácido L-láctico y fermentación CO2).<br>                 <b>Objetivo:</b> Validación empírica de reducción de picaduras (RF-04).             </div>`)[0];
-                popup_b3a91ba39dcf4c95826d66b50f43b4cb.setContent(html_533533bbdabff39025f42d3f8d229374);
+                var html_af8e21beac5611003d5ff09c9f0da534 = $(`<div id="html_af8e21beac5611003d5ff09c9f0da534" style="width: 100.0%; height: 100.0%;">                 <b>Estación de Bio-Monitoreo</b><br>                 <b>Código:</b> T-02: Las Multis / Concha Acústica<br>                 <b>Mecanismo:</b> Trampa de silueta + cebo bio-ecológico (ácido L-láctico y fermentación CO2).<br>                 <b>Objetivo:</b> Validación empírica de reducción de picaduras (RF-04).             </div>`)[0];
+                popup_84e65fcb4b3170fab672533fc5e25daa.setContent(html_af8e21beac5611003d5ff09c9f0da534);
             
         
 
-        marker_50eac6d154a7d197664b2fa180a1a861.bindPopup(popup_b3a91ba39dcf4c95826d66b50f43b4cb)
+        marker_dcb4294f2a7e4e3cb7b6e0170ba1e86f.bindPopup(popup_84e65fcb4b3170fab672533fc5e25daa)
         ;
 
         
     
     
-            marker_50eac6d154a7d197664b2fa180a1a861.bindTooltip(
+            marker_dcb4294f2a7e4e3cb7b6e0170ba1e86f.bindTooltip(
                 `<div>
                      T-02: Las Multis / Concha Acústica
                  </div>`,
@@ -1424,17 +1444,17 @@
             );
         
     
-                marker_50eac6d154a7d197664b2fa180a1a861.setIcon(icon_dc76ecdf6750c2abe13da94699dafb1c);
+                marker_dcb4294f2a7e4e3cb7b6e0170ba1e86f.setIcon(icon_864f8999b07165da12608e1ead87a195);
             
     
-            var marker_fcc9c5d9e15aa03fee8a05ac54609f6f = L.marker(
+            var marker_838c02ba3e63f1671e2df306386057aa = L.marker(
                 [0.4052, -78.1742],
                 {
 }
-            ).addTo(feature_group_9821dfbcf5bb9bf2ae65fdf7c4ffffbb);
+            ).addTo(feature_group_f1d0942849e938018566bf8df94a1e5a);
         
     
-            var icon_3cce527be02cd2448b6954b04354d648 = L.AwesomeMarkers.icon(
+            var icon_b4011239f26e808775808cdffae3676d = L.AwesomeMarkers.icon(
                 {
   "markerColor": "darkblue",
   "iconColor": "white",
@@ -1445,24 +1465,24 @@
             );
         
     
-        var popup_b3955a75d52ce549a2a3f41e9f319331 = L.popup({
+        var popup_98a24c6f53e3f71552f933b8227adeb3 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_d884d4ecf7d83cdd7e45a5c66889b8c1 = $(`<div id="html_d884d4ecf7d83cdd7e45a5c66889b8c1" style="width: 100.0%; height: 100.0%;">                 <b>Estación de Bio-Monitoreo</b><br>                 <b>Código:</b> T-03: Biblioteca Patrimonial / Chimenea<br>                 <b>Mecanismo:</b> Trampa de silueta + cebo bio-ecológico (ácido L-láctico y fermentación CO2).<br>                 <b>Objetivo:</b> Validación empírica de reducción de picaduras (RF-04).             </div>`)[0];
-                popup_b3955a75d52ce549a2a3f41e9f319331.setContent(html_d884d4ecf7d83cdd7e45a5c66889b8c1);
+                var html_0aac96e963204a61812df036a575b920 = $(`<div id="html_0aac96e963204a61812df036a575b920" style="width: 100.0%; height: 100.0%;">                 <b>Estación de Bio-Monitoreo</b><br>                 <b>Código:</b> T-03: Biblioteca Patrimonial / Chimenea<br>                 <b>Mecanismo:</b> Trampa de silueta + cebo bio-ecológico (ácido L-láctico y fermentación CO2).<br>                 <b>Objetivo:</b> Validación empírica de reducción de picaduras (RF-04).             </div>`)[0];
+                popup_98a24c6f53e3f71552f933b8227adeb3.setContent(html_0aac96e963204a61812df036a575b920);
             
         
 
-        marker_fcc9c5d9e15aa03fee8a05ac54609f6f.bindPopup(popup_b3955a75d52ce549a2a3f41e9f319331)
+        marker_838c02ba3e63f1671e2df306386057aa.bindPopup(popup_98a24c6f53e3f71552f933b8227adeb3)
         ;
 
         
     
     
-            marker_fcc9c5d9e15aa03fee8a05ac54609f6f.bindTooltip(
+            marker_838c02ba3e63f1671e2df306386057aa.bindTooltip(
                 `<div>
                      T-03: Biblioteca Patrimonial / Chimenea
                  </div>`,
@@ -1472,17 +1492,17 @@
             );
         
     
-                marker_fcc9c5d9e15aa03fee8a05ac54609f6f.setIcon(icon_3cce527be02cd2448b6954b04354d648);
+                marker_838c02ba3e63f1671e2df306386057aa.setIcon(icon_b4011239f26e808775808cdffae3676d);
             
     
-            var marker_d1672cd2b4d3c934f236ee8b55e59fc8 = L.marker(
+            var marker_dc5b1124c5a08370c60c005fd1f4c073 = L.marker(
                 [0.4047, -78.1724],
                 {
 }
-            ).addTo(feature_group_9821dfbcf5bb9bf2ae65fdf7c4ffffbb);
+            ).addTo(feature_group_f1d0942849e938018566bf8df94a1e5a);
         
     
-            var icon_7b9e6d8dd5f1cb79482062e3f7fed6bf = L.AwesomeMarkers.icon(
+            var icon_3d19db26a39d7a0439b114b1fa2e7212 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "darkblue",
   "iconColor": "white",
@@ -1493,24 +1513,24 @@
             );
         
     
-        var popup_9a7382adfff6eceac8a097b478d744e8 = L.popup({
+        var popup_d794bbb5d59b4b3f69ff5ebf086071db = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_1c2df6cda553b15a66e1c5a89038af25 = $(`<div id="html_1c2df6cda553b15a66e1c5a89038af25" style="width: 100.0%; height: 100.0%;">                 <b>Estación de Bio-Monitoreo</b><br>                 <b>Código:</b> T-04: Laboratorios de Carrera<br>                 <b>Mecanismo:</b> Trampa de silueta + cebo bio-ecológico (ácido L-láctico y fermentación CO2).<br>                 <b>Objetivo:</b> Validación empírica de reducción de picaduras (RF-04).             </div>`)[0];
-                popup_9a7382adfff6eceac8a097b478d744e8.setContent(html_1c2df6cda553b15a66e1c5a89038af25);
+                var html_83c134f5ebcfc7be84e3dc9c5f6bcfda = $(`<div id="html_83c134f5ebcfc7be84e3dc9c5f6bcfda" style="width: 100.0%; height: 100.0%;">                 <b>Estación de Bio-Monitoreo</b><br>                 <b>Código:</b> T-04: Laboratorios de Carrera<br>                 <b>Mecanismo:</b> Trampa de silueta + cebo bio-ecológico (ácido L-láctico y fermentación CO2).<br>                 <b>Objetivo:</b> Validación empírica de reducción de picaduras (RF-04).             </div>`)[0];
+                popup_d794bbb5d59b4b3f69ff5ebf086071db.setContent(html_83c134f5ebcfc7be84e3dc9c5f6bcfda);
             
         
 
-        marker_d1672cd2b4d3c934f236ee8b55e59fc8.bindPopup(popup_9a7382adfff6eceac8a097b478d744e8)
+        marker_dc5b1124c5a08370c60c005fd1f4c073.bindPopup(popup_d794bbb5d59b4b3f69ff5ebf086071db)
         ;
 
         
     
     
-            marker_d1672cd2b4d3c934f236ee8b55e59fc8.bindTooltip(
+            marker_dc5b1124c5a08370c60c005fd1f4c073.bindTooltip(
                 `<div>
                      T-04: Laboratorios de Carrera
                  </div>`,
@@ -1520,17 +1540,17 @@
             );
         
     
-                marker_d1672cd2b4d3c934f236ee8b55e59fc8.setIcon(icon_7b9e6d8dd5f1cb79482062e3f7fed6bf);
+                marker_dc5b1124c5a08370c60c005fd1f4c073.setIcon(icon_3d19db26a39d7a0439b114b1fa2e7212);
             
     
-            var marker_0803dc9a2b9670b91cdc643cd82096f2 = L.marker(
+            var marker_b4e2ed26863e4f61bc0a599a04d00240 = L.marker(
                 [0.4067, -78.1702],
                 {
 }
-            ).addTo(feature_group_9821dfbcf5bb9bf2ae65fdf7c4ffffbb);
+            ).addTo(feature_group_f1d0942849e938018566bf8df94a1e5a);
         
     
-            var icon_5eaf4bd79f414e6a22d1e5fbb9c0357c = L.AwesomeMarkers.icon(
+            var icon_0f778b5082faafc21e885a5d360eaa1f = L.AwesomeMarkers.icon(
                 {
   "markerColor": "darkblue",
   "iconColor": "white",
@@ -1541,24 +1561,24 @@
             );
         
     
-        var popup_d7a1c5a30740a4cc89dc71c2d190f1f0 = L.popup({
+        var popup_f3802a608faf77103d376dd08e98223c = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_3d4a61622deefcce9087c98545baa231 = $(`<div id="html_3d4a61622deefcce9087c98545baa231" style="width: 100.0%; height: 100.0%;">                 <b>Estación de Bio-Monitoreo</b><br>                 <b>Código:</b> T-05: Edificio Senescyt (Fachada Sur)<br>                 <b>Mecanismo:</b> Trampa de silueta + cebo bio-ecológico (ácido L-láctico y fermentación CO2).<br>                 <b>Objetivo:</b> Validación empírica de reducción de picaduras (RF-04).             </div>`)[0];
-                popup_d7a1c5a30740a4cc89dc71c2d190f1f0.setContent(html_3d4a61622deefcce9087c98545baa231);
+                var html_35b23ffd6136017cc03e5b7866e10cfd = $(`<div id="html_35b23ffd6136017cc03e5b7866e10cfd" style="width: 100.0%; height: 100.0%;">                 <b>Estación de Bio-Monitoreo</b><br>                 <b>Código:</b> T-05: Edificio Senescyt (Fachada Sur)<br>                 <b>Mecanismo:</b> Trampa de silueta + cebo bio-ecológico (ácido L-láctico y fermentación CO2).<br>                 <b>Objetivo:</b> Validación empírica de reducción de picaduras (RF-04).             </div>`)[0];
+                popup_f3802a608faf77103d376dd08e98223c.setContent(html_35b23ffd6136017cc03e5b7866e10cfd);
             
         
 
-        marker_0803dc9a2b9670b91cdc643cd82096f2.bindPopup(popup_d7a1c5a30740a4cc89dc71c2d190f1f0)
+        marker_b4e2ed26863e4f61bc0a599a04d00240.bindPopup(popup_f3802a608faf77103d376dd08e98223c)
         ;
 
         
     
     
-            marker_0803dc9a2b9670b91cdc643cd82096f2.bindTooltip(
+            marker_b4e2ed26863e4f61bc0a599a04d00240.bindTooltip(
                 `<div>
                      T-05: Edificio Senescyt (Fachada Sur)
                  </div>`,
@@ -1568,17 +1588,17 @@
             );
         
     
-                marker_0803dc9a2b9670b91cdc643cd82096f2.setIcon(icon_5eaf4bd79f414e6a22d1e5fbb9c0357c);
+                marker_b4e2ed26863e4f61bc0a599a04d00240.setIcon(icon_0f778b5082faafc21e885a5d360eaa1f);
             
     
-            var marker_61c650e520cd01b0c1b6d70a00a96c6d = L.marker(
+            var marker_4d0b46b275c73c17b9fd568a208b943a = L.marker(
                 [0.407, -78.1714],
                 {
 }
-            ).addTo(feature_group_9821dfbcf5bb9bf2ae65fdf7c4ffffbb);
+            ).addTo(feature_group_f1d0942849e938018566bf8df94a1e5a);
         
     
-            var icon_06fa780bf3cf288a9cd60322d4416377 = L.AwesomeMarkers.icon(
+            var icon_c2214e5292bf4c7c4338a56e43614b9e = L.AwesomeMarkers.icon(
                 {
   "markerColor": "darkblue",
   "iconColor": "white",
@@ -1589,24 +1609,24 @@
             );
         
     
-        var popup_3fd5df121dcfb452dd38dfcbff097ed3 = L.popup({
+        var popup_aec2d1ad29fd54b0ebe5f827d5273193 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_37518380d3b7f0a03ea775d6e92085fe = $(`<div id="html_37518380d3b7f0a03ea775d6e92085fe" style="width: 100.0%; height: 100.0%;">                 <b>Estación de Bio-Monitoreo</b><br>                 <b>Código:</b> T-06: Residencias Los Bloques / Vida Comunitaria<br>                 <b>Mecanismo:</b> Trampa de silueta + cebo bio-ecológico (ácido L-láctico y fermentación CO2).<br>                 <b>Objetivo:</b> Validación empírica de reducción de picaduras (RF-04).             </div>`)[0];
-                popup_3fd5df121dcfb452dd38dfcbff097ed3.setContent(html_37518380d3b7f0a03ea775d6e92085fe);
+                var html_86f8b531d8d0085c83dd8ec39032f1d7 = $(`<div id="html_86f8b531d8d0085c83dd8ec39032f1d7" style="width: 100.0%; height: 100.0%;">                 <b>Estación de Bio-Monitoreo</b><br>                 <b>Código:</b> T-06: Residencias Los Bloques / Vida Comunitaria<br>                 <b>Mecanismo:</b> Trampa de silueta + cebo bio-ecológico (ácido L-láctico y fermentación CO2).<br>                 <b>Objetivo:</b> Validación empírica de reducción de picaduras (RF-04).             </div>`)[0];
+                popup_aec2d1ad29fd54b0ebe5f827d5273193.setContent(html_86f8b531d8d0085c83dd8ec39032f1d7);
             
         
 
-        marker_61c650e520cd01b0c1b6d70a00a96c6d.bindPopup(popup_3fd5df121dcfb452dd38dfcbff097ed3)
+        marker_4d0b46b275c73c17b9fd568a208b943a.bindPopup(popup_aec2d1ad29fd54b0ebe5f827d5273193)
         ;
 
         
     
     
-            marker_61c650e520cd01b0c1b6d70a00a96c6d.bindTooltip(
+            marker_4d0b46b275c73c17b9fd568a208b943a.bindTooltip(
                 `<div>
                      T-06: Residencias Los Bloques / Vida Comunitaria
                  </div>`,
@@ -1616,48 +1636,49 @@
             );
         
     
-                marker_61c650e520cd01b0c1b6d70a00a96c6d.setIcon(icon_06fa780bf3cf288a9cd60322d4416377);
+                marker_4d0b46b275c73c17b9fd568a208b943a.setIcon(icon_c2214e5292bf4c7c4338a56e43614b9e);
             
     
-            feature_group_9821dfbcf5bb9bf2ae65fdf7c4ffffbb.addTo(map_57661a06664f3d7d8023cefb70aa1ce5);
+            feature_group_f1d0942849e938018566bf8df94a1e5a.addTo(map_03ca985e6a04504362cdc02743b5d81b);
         
     
-            var layer_control_6cde4615487077cd9299321e927db776_layers = {
+            var layer_control_478f31c8e05d533944584e49346e11e2_layers = {
                 base_layers : {
-                    "\ud83d\udef0\ufe0f Google Sat\u00e9lite H\u00edbrido" : tile_layer_fe23611f75dd64ebdb47690a404a62a7,
-                    "\ud83d\uddfa\ufe0f Google Callejero (V\u00edas y Bloques)" : tile_layer_a9a82a4cbf625332f620b32ce6a6ef62,
-                    "\ud83c\udfd9\ufe0f Mapa Callejero OSM (CartoDB Voyager)" : tile_layer_45f01d8e4e63d01ed28481672f805da0,
-                    "\ud83c\udf0d Sat\u00e9lite Esri (Alta Resoluci\u00f3n)" : tile_layer_0854dd53dc109ea0dc3c758a878c7a68,
-                    "\ud83c\udf10 OpenStreetMap Est\u00e1ndar" : tile_layer_d999473bbb3a6be4eae5160c58a180f0,
+                    "\ud83d\udef0\ufe0f Google Sat\u00e9lite H\u00edbrido" : tile_layer_067481d1ef149593579bbc27757d0d81,
+                    "\ud83d\uddfa\ufe0f Google Callejero Oficial" : tile_layer_7e8e135cd58653f8a87a56acae4a47f3,
+                    "\ud83c\udfd9\ufe0f Esri Callejero (Calles y Campus)" : tile_layer_9843464b7df2cefb4606fd5bb96e0f85,
+                    "\ud83c\udf10 OpenStreetMap (FOSSGIS Libre)" : tile_layer_7045eccf87ae4f7951e4d6262d22bedf,
+                    "\ud83c\udf0d Sat\u00e9lite Esri (Fotograf\u00eda A\u00e9rea)" : tile_layer_4b06a0c1be66092e2dad36130b9bdd6e,
+                    "\u26f0\ufe0f Relieve y Topograf\u00eda (Esri Topo)" : tile_layer_6043002ea3ef314db8c4363e7290d8f0,
                 },
                 overlays :  {
-                    "\u26a0\ufe0f Zonas Cr\u00edticas Oficiales (Calibradas GPS)" : feature_group_b3c689f0bbd1c95508952b1704cc7815,
-                    "\ud83d\udca7 Canales H\u00eddricos y Focos Larvarios (Simuliidae)" : feature_group_64105a6d652abf049e8fc113b98d2363,
-                    "\ud83e\udd97 Control Biol\u00f3gico Acu\u00e1tico (Lib\u00e9lulas + Bti)" : feature_group_9c21c266e722dfdc6c5aaa9b3c359812,
-                    "\ud83c\udfdb\ufe0f Edificaciones Reales (Google Maps)" : feature_group_a46019caa0aab79e2fd17cbb10a4762f,
-                    "\ud83c\udf3f Cercas Vivas en 3 Estratos (Algoritmo Verde)" : feature_group_c8513a1fb25bec182fb4ffae9750297e,
-                    "\ud83d\udee1\ufe0f Cobertura Repelente (Buffer de Monoterpenos)" : feature_group_28e7af7db1e389559b38190c8a720890,
-                    "\ud83c\udfaf Red de Trampas de Monitoreo Biol\u00f3gico" : feature_group_9821dfbcf5bb9bf2ae65fdf7c4ffffbb,
+                    "\u26a0\ufe0f Zonas Cr\u00edticas Oficiales (Calibradas GPS)" : feature_group_5cf06b178386ee85322b35ddc3f260e5,
+                    "\ud83d\udca7 Canales H\u00eddricos y Focos Larvarios (Simuliidae)" : feature_group_7e7640f1aa96b742175b04a356219350,
+                    "\ud83e\udd97 Control Biol\u00f3gico Acu\u00e1tico (Lib\u00e9lulas + Bti)" : feature_group_eaaf94be8f75385db66a85d9b5bb03c9,
+                    "\ud83c\udfdb\ufe0f Edificaciones Reales (Google Maps)" : feature_group_8ace48b263c62d0a5e54c36340886825,
+                    "\ud83c\udf3f Cercas Vivas en 3 Estratos (Algoritmo Verde)" : feature_group_04b117f1585288d7caaeadd8c8048a8d,
+                    "\ud83d\udee1\ufe0f Cobertura Repelente (Buffer de Monoterpenos)" : feature_group_a7f718d058a4249feb718107f49f81e1,
+                    "\ud83c\udfaf Red de Trampas de Monitoreo Biol\u00f3gico" : feature_group_f1d0942849e938018566bf8df94a1e5a,
                 },
             };
-            let layer_control_6cde4615487077cd9299321e927db776 = L.control.layers(
-                layer_control_6cde4615487077cd9299321e927db776_layers.base_layers,
-                layer_control_6cde4615487077cd9299321e927db776_layers.overlays,
+            let layer_control_478f31c8e05d533944584e49346e11e2 = L.control.layers(
+                layer_control_478f31c8e05d533944584e49346e11e2_layers.base_layers,
+                layer_control_478f31c8e05d533944584e49346e11e2_layers.overlays,
                 {
   "position": "topright",
   "collapsed": false,
   "autoZIndex": true,
 }
-            ).addTo(map_57661a06664f3d7d8023cefb70aa1ce5);
+            ).addTo(map_03ca985e6a04504362cdc02743b5d81b);
 
         
     
-            var tile_layer_d8c8f7a1d25fb0c01b1a0a5152ced48f = L.tileLayer(
-                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
-                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detect_retina": false, "max_native_zoom": 19, "max_zoom": 19, "min_zoom": 0, "no_wrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            var tile_layer_c14f9e81f07c5565d05fd4821d051a81 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "Esri", "detect_retina": false, "max_native_zoom": 18, "max_zoom": 18, "min_zoom": 0, "no_wrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
-            var mini_map_3111e36374fe651e3d775a1c9bef84ab = new L.Control.MiniMap(
-                tile_layer_d8c8f7a1d25fb0c01b1a0a5152ced48f,
+            var mini_map_575f579dbbc937cd72fa204c36247a7e = new L.Control.MiniMap(
+                tile_layer_c14f9e81f07c5565d05fd4821d051a81,
                 {
   "position": "bottomleft",
   "width": 150,
@@ -1672,10 +1693,10 @@
   "minimized": false,
 }
             );
-            map_57661a06664f3d7d8023cefb70aa1ce5.addControl(mini_map_3111e36374fe651e3d775a1c9bef84ab);
+            map_03ca985e6a04504362cdc02743b5d81b.addControl(mini_map_575f579dbbc937cd72fa204c36247a7e);
         
     
-            var measure_control_8e473f74d77a78270641856992d34691 = new L.Control.Measure(
+            var measure_control_53cb1c8a5497e3d708deb5f474b4af99 = new L.Control.Measure(
                 {
   "position": "topleft",
   "primaryLengthUnit": "meters",
@@ -1683,7 +1704,7 @@
   "primaryAreaUnit": "sqmeters",
   "secondaryAreaUnit": "acres",
 });
-            map_57661a06664f3d7d8023cefb70aa1ce5.addControl(measure_control_8e473f74d77a78270641856992d34691);
+            map_03ca985e6a04504362cdc02743b5d81b.addControl(measure_control_53cb1c8a5497e3d708deb5f474b4af99);
 
             // Workaround for using this plugin with Leaflet>=1.8.0
             // https://github.com/ljagis/leaflet-measure/issues/171
