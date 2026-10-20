@@ -4,9 +4,12 @@ Equipo: Algoritmo Verde YT - Reto 3: Control de Arenillas (YOSW 2026)
 Formato: APA 7ma Edición (300 DPI) - Versión de Alta Precisión Gráfica
 """
 
+import os
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 import numpy as np
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 def generar_figura_3():
     fig, ax = plt.subplots(figsize=(14.5, 8.5), dpi=300)
@@ -178,7 +181,7 @@ def generar_figura_3():
     ax.set_axisbelow(True)
 
     plt.tight_layout()
-    output_path = "reto3_Control_Arenillas/Figura3_Corte_Transversal_Cercas_3Estratos.png"
+    output_path = os.path.join(BASE_DIR, "Figura3_Corte_Transversal_Cercas_3Estratos.png")
     plt.savefig(output_path, dpi=300, bbox_inches='tight')
     plt.close()
     print(f"Figura 3 generada exitosamente en: {output_path}")

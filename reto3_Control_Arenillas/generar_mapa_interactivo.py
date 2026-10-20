@@ -5,6 +5,7 @@ Enfoque: Humanista, Amigable, Intuitivo y Fácil de Usar
 Calibrado con Coordenadas GPS Oficiales de Google Maps y Capas Base Optimizadas
 """
 
+import os
 import folium
 from folium import plugins
 
@@ -1021,7 +1022,8 @@ def generar_mapa():
 
     m.get_root().html.add_child(folium.Element(interfaz_humanista_html))
 
-    output_path = "reto3_Control_Arenillas/mapa_interactivo_control_arenillas.html"
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    output_path = os.path.join(base_dir, "mapa_interactivo_control_arenillas.html")
     m.save(output_path)
     print(f"Mapa generado exitosamente con Interfaz Humanista en: {output_path}")
 

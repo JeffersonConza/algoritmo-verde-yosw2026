@@ -5,12 +5,15 @@ Autor Principal: Jefferson Conza (Líder Técnico - Matemáticas y Computación)
 Enfoque: Formulación Multiobjetivo, Simulación Estocástica y Validación APA 7ma Edición
 """
 
+import os
 import json
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from scipy.optimize import minimize
 from scipy.stats import ttest_rel
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 def ejecutar_optimizacion_espacial():
     print("="*65)
@@ -121,9 +124,10 @@ def ejecutar_optimizacion_espacial():
         ]
     }
     
-    with open("reto3_Control_Arenillas/datos_optimizacion_cercas.json", "w", encoding="utf-8") as f:
+    out_json = os.path.join(BASE_DIR, "datos_optimizacion_cercas.json")
+    with open(out_json, "w", encoding="utf-8") as f:
         json.dump(datos_optimizacion, f, indent=4, ensure_ascii=False)
-    print("Guardado: reto3_Control_Arenillas/datos_optimizacion_cercas.json")
+    print(f"Guardado: {out_json}")
     
     return L_opt, datos_optimizacion
 
@@ -187,17 +191,19 @@ def simular_telemetria_biomonitoreo():
     df_telemetria = pd.DataFrame(registros)
     
     # Exportar CSV y JSON
-    df_telemetria.to_csv("reto3_Control_Arenillas/telemetria_trampas_simulada.csv", index=False)
+    out_csv = os.path.join(BASE_DIR, "telemetria_trampas_simulada.csv")
+    df_telemetria.to_csv(out_csv, index=False)
     
     resumen_json = {
         "estaciones": estaciones,
         "series_temporales": registros
     }
-    with open("reto3_Control_Arenillas/telemetria_trampas_simulada.json", "w", encoding="utf-8") as f:
+    out_telemetria_json = os.path.join(BASE_DIR, "telemetria_trampas_simulada.json")
+    with open(out_telemetria_json, "w", encoding="utf-8") as f:
         json.dump(resumen_json, f, indent=2, ensure_ascii=False)
         
-    print("Guardado: reto3_Control_Arenillas/telemetria_trampas_simulada.csv")
-    print("Guardado: reto3_Control_Arenillas/telemetria_trampas_simulada.json")
+    print(f"Guardado: {out_csv}")
+    print(f"Guardado: {out_telemetria_json}")
     
     # Prueba estadística T de Student pareada (Semana 1 vs Semana 16)
     sem1 = df_telemetria[df_telemetria["semana"] == 1]["capturas_semanales"].values
@@ -297,7 +303,7 @@ def generar_figura4_apa(df_telemetria):
     fig.text(0.5, 0.01, nota_apa, ha='center', fontsize=8, style='italic', color='#333333', wrap=True)
     
     plt.tight_layout(rect=[0, 0.05, 1, 0.94])
-    output_png = "reto3_Control_Arenillas/Figura4_Curva_Reduccion_BioMonitoreo.png"
+    output_png = os.path.join(BASE_DIR, "Figura4_Curva_Reduccion_BioMonitoreo.png")
     plt.savefig(output_png, dpi=300)
     plt.close()
     print(f"Figura 4 APA guardada exitosamente en: {output_png}")

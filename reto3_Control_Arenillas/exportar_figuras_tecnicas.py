@@ -4,8 +4,11 @@ Equipo: Algoritmo Verde YT - Reto 3: Control de Arenillas
 Calibrado con Hitos Oficiales de Google Maps
 """
 
+import os
 import matplotlib.pyplot as plt
 import numpy as np
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 def crear_figura_diagnostico():
     fig, ax = plt.subplots(figsize=(11.5, 7.5), dpi=300)
@@ -52,7 +55,7 @@ def crear_figura_diagnostico():
                 arrowprops=dict(facecolor='black', width=2.5, headwidth=8),
                 ha='center', va='center', xycoords='axes fraction', fontsize=12, fontweight='bold')
 
-    output_f1 = "reto3_Control_Arenillas/Figura1_Diagnostico_Espacial_Yachay.png"
+    output_f1 = os.path.join(BASE_DIR, "Figura1_Diagnostico_Espacial_Yachay.png")
     plt.savefig(output_f1, dpi=300, bbox_inches='tight')
     plt.close()
     print(f"Figura 1 generada en: {output_f1}")
@@ -109,7 +112,7 @@ def crear_figura_diseno_tecnico():
                 arrowprops=dict(facecolor='black', width=2.5, headwidth=8),
                 ha='center', va='center', xycoords='axes fraction', fontsize=12, fontweight='bold')
 
-    output_f2 = "reto3_Control_Arenillas/Figura2_Diseno_Tecnico_Intervencion.png"
+    output_f2 = os.path.join(BASE_DIR, "Figura2_Diseno_Tecnico_Intervencion.png")
     plt.savefig(output_f2, dpi=300, bbox_inches='tight')
     plt.close()
     print(f"Figura 2 generada en: {output_f2}")
