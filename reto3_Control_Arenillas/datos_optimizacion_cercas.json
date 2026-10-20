@@ -6,39 +6,39 @@
         "algoritmo": "Sequential Least Squares Programming (SLSQP)"
     },
     "parametros_sistema": {
-        "longitud_total_m": 900,
-        "costo_total_usd": 2250.0,
-        "total_plantulas": 1800,
-        "area_protegida_m2": 36000,
+        "longitud_total_m": 980,
+        "costo_total_usd": 1470.0,
+        "total_plantulas": 1960,
+        "area_protegida_m2": 39200,
         "efectividad_proyectada_pct": 82.4
     },
     "cercas_optimizadas": [
         {
             "id": "C-01",
             "sector": "Residencias Las Multis y Patrimoniales",
-            "longitud_m": 350,
-            "plantas": 700,
-            "estrato_alto_molle": 175,
-            "estrato_medio_arrayan_romero": 350,
-            "estrato_bajo_hierbaluisa": 700
+            "longitud_m": 380,
+            "plantas": 760,
+            "estrato_alto_molle": 190,
+            "estrato_medio_arrayan_romero": 380,
+            "estrato_bajo_hierbaluisa": 760
         },
         {
             "id": "C-02",
             "sector": "Ingenio Azucarero y Laboratorios",
-            "longitud_m": 250,
-            "plantas": 500,
-            "estrato_alto_molle": 125,
-            "estrato_medio_arrayan_romero": 250,
-            "estrato_bajo_hierbaluisa": 500
+            "longitud_m": 280,
+            "plantas": 560,
+            "estrato_alto_molle": 140,
+            "estrato_medio_arrayan_romero": 280,
+            "estrato_bajo_hierbaluisa": 560
         },
         {
             "id": "C-03",
             "sector": "Edificio Senescyt y Los Bloques",
-            "longitud_m": 300,
-            "plantas": 600,
-            "estrato_alto_molle": 150,
-            "estrato_medio_arrayan_romero": 300,
-            "estrato_bajo_hierbaluisa": 600
+            "longitud_m": 320,
+            "plantas": 640,
+            "estrato_alto_molle": 160,
+            "estrato_medio_arrayan_romero": 320,
+            "estrato_bajo_hierbaluisa": 640
         }
     ]
 }

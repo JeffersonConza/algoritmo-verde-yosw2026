@@ -138,9 +138,9 @@
       "estacion_nombre": "Residencias Patrimoniales / Canchas",
       "lat": 0.4024,
       "lon": -78.173,
-      "capturas_semanales": 44,
+      "capturas_semanales": 31,
       "linea_base": 88,
-      "reduccion_pct": 50.0,
+      "reduccion_pct": 64.8,
       "fase": "Consolidación Ecosistémica"
     },
     {
@@ -149,9 +149,9 @@
       "estacion_nombre": "Residencias Patrimoniales / Canchas",
       "lat": 0.4024,
       "lon": -78.173,
-      "capturas_semanales": 41,
+      "capturas_semanales": 28,
       "linea_base": 88,
-      "reduccion_pct": 53.4,
+      "reduccion_pct": 68.2,
       "fase": "Consolidación Ecosistémica"
     },
     {
@@ -160,9 +160,9 @@
       "estacion_nombre": "Residencias Patrimoniales / Canchas",
       "lat": 0.4024,
       "lon": -78.173,
-      "capturas_semanales": 35,
+      "capturas_semanales": 22,
       "linea_base": 88,
-      "reduccion_pct": 60.2,
+      "reduccion_pct": 75.0,
       "fase": "Consolidación Ecosistémica"
     },
     {
@@ -171,9 +171,9 @@
       "estacion_nombre": "Residencias Patrimoniales / Canchas",
       "lat": 0.4024,
       "lon": -78.173,
-      "capturas_semanales": 31,
+      "capturas_semanales": 20,
       "linea_base": 88,
-      "reduccion_pct": 64.8,
+      "reduccion_pct": 77.3,
       "fase": "Consolidación Ecosistémica"
     },
     {
@@ -182,9 +182,9 @@
       "estacion_nombre": "Residencias Patrimoniales / Canchas",
       "lat": 0.4024,
       "lon": -78.173,
-      "capturas_semanales": 30,
+      "capturas_semanales": 19,
       "linea_base": 88,
-      "reduccion_pct": 65.9,
+      "reduccion_pct": 78.4,
       "fase": "Consolidación Ecosistémica"
     },
     {
@@ -193,9 +193,9 @@
       "estacion_nombre": "Residencias Patrimoniales / Canchas",
       "lat": 0.4024,
       "lon": -78.173,
-      "capturas_semanales": 23,
+      "capturas_semanales": 14,
       "linea_base": 88,
-      "reduccion_pct": 73.9,
+      "reduccion_pct": 84.1,
       "fase": "Consolidación Ecosistémica"
     },
     {
@@ -204,9 +204,9 @@
       "estacion_nombre": "Residencias Patrimoniales / Canchas",
       "lat": 0.4024,
       "lon": -78.173,
-      "capturas_semanales": 21,
+      "capturas_semanales": 13,
       "linea_base": 88,
-      "reduccion_pct": 76.1,
+      "reduccion_pct": 85.2,
       "fase": "Consolidación Ecosistémica"
     },
     {
@@ -215,9 +215,9 @@
       "estacion_nombre": "Residencias Patrimoniales / Canchas",
       "lat": 0.4024,
       "lon": -78.173,
-      "capturas_semanales": 22,
+      "capturas_semanales": 15,
       "linea_base": 88,
-      "reduccion_pct": 75.0,
+      "reduccion_pct": 83.0,
       "fase": "Consolidación Ecosistémica"
     },
     {
@@ -314,57 +314,13 @@
       "estacion_nombre": "Las Multis / Concha Acústica",
       "lat": 0.4028,
       "lon": -78.175,
-      "capturas_semanales": 46,
+      "capturas_semanales": 32,
       "linea_base": 92,
-      "reduccion_pct": 50.0,
+      "reduccion_pct": 65.2,
       "fase": "Consolidación Ecosistémica"
     },
     {
       "semana": 10,
-      "estacion_id": "T-02",
-      "estacion_nombre": "Las Multis / Concha Acústica",
-      "lat": 0.4028,
-      "lon": -78.175,
-      "capturas_semanales": 42,
-      "linea_base": 92,
-      "reduccion_pct": 54.3,
-      "fase": "Consolidación Ecosistémica"
-    },
-    {
-      "semana": 11,
-      "estacion_id": "T-02",
-      "estacion_nombre": "Las Multis / Concha Acústica",
-      "lat": 0.4028,
-      "lon": -78.175,
-      "capturas_semanales": 35,
-      "linea_base": 92,
-      "reduccion_pct": 62.0,
-      "fase": "Consolidación Ecosistémica"
-    },
-    {
-      "semana": 12,
-      "estacion_id": "T-02",
-      "estacion_nombre": "Las Multis / Concha Acústica",
-      "lat": 0.4028,
-      "lon": -78.175,
-      "capturas_semanales": 35,
-      "linea_base": 92,
-      "reduccion_pct": 62.0,
-      "fase": "Consolidación Ecosistémica"
-    },
-    {
-      "semana": 13,
-      "estacion_id": "T-02",
-      "estacion_nombre": "Las Multis / Concha Acústica",
-      "lat": 0.4028,
-      "lon": -78.175,
-      "capturas_semanales": 30,
-      "linea_base": 92,
-      "reduccion_pct": 67.4,
-      "fase": "Consolidación Ecosistémica"
-    },
-    {
-      "semana": 14,
       "estacion_id": "T-02",
       "estacion_nombre": "Las Multis / Concha Acústica",
       "lat": 0.4028,
@@ -375,14 +331,58 @@
       "fase": "Consolidación Ecosistémica"
     },
     {
+      "semana": 11,
+      "estacion_id": "T-02",
+      "estacion_nombre": "Las Multis / Concha Acústica",
+      "lat": 0.4028,
+      "lon": -78.175,
+      "capturas_semanales": 22,
+      "linea_base": 92,
+      "reduccion_pct": 76.1,
+      "fase": "Consolidación Ecosistémica"
+    },
+    {
+      "semana": 12,
+      "estacion_id": "T-02",
+      "estacion_nombre": "Las Multis / Concha Acústica",
+      "lat": 0.4028,
+      "lon": -78.175,
+      "capturas_semanales": 22,
+      "linea_base": 92,
+      "reduccion_pct": 76.1,
+      "fase": "Consolidación Ecosistémica"
+    },
+    {
+      "semana": 13,
+      "estacion_id": "T-02",
+      "estacion_nombre": "Las Multis / Concha Acústica",
+      "lat": 0.4028,
+      "lon": -78.175,
+      "capturas_semanales": 18,
+      "linea_base": 92,
+      "reduccion_pct": 80.4,
+      "fase": "Consolidación Ecosistémica"
+    },
+    {
+      "semana": 14,
+      "estacion_id": "T-02",
+      "estacion_nombre": "Las Multis / Concha Acústica",
+      "lat": 0.4028,
+      "lon": -78.175,
+      "capturas_semanales": 18,
+      "linea_base": 92,
+      "reduccion_pct": 80.4,
+      "fase": "Consolidación Ecosistémica"
+    },
+    {
       "semana": 15,
       "estacion_id": "T-02",
       "estacion_nombre": "Las Multis / Concha Acústica",
       "lat": 0.4028,
       "lon": -78.175,
-      "capturas_semanales": 25,
+      "capturas_semanales": 16,
       "linea_base": 92,
-      "reduccion_pct": 72.8,
+      "reduccion_pct": 82.6,
       "fase": "Consolidación Ecosistémica"
     },
     {
@@ -391,9 +391,9 @@
       "estacion_nombre": "Las Multis / Concha Acústica",
       "lat": 0.4028,
       "lon": -78.175,
-      "capturas_semanales": 30,
+      "capturas_semanales": 20,
       "linea_base": 92,
-      "reduccion_pct": 67.4,
+      "reduccion_pct": 78.3,
       "fase": "Consolidación Ecosistémica"
     },
     {
@@ -490,9 +490,9 @@
       "estacion_nombre": "Biblioteca Patrimonial / Chimenea",
       "lat": 0.4052,
       "lon": -78.1742,
-      "capturas_semanales": 42,
+      "capturas_semanales": 30,
       "linea_base": 78,
-      "reduccion_pct": 46.2,
+      "reduccion_pct": 61.5,
       "fase": "Consolidación Ecosistémica"
     },
     {
@@ -501,9 +501,9 @@
       "estacion_nombre": "Biblioteca Patrimonial / Chimenea",
       "lat": 0.4052,
       "lon": -78.1742,
-      "capturas_semanales": 36,
+      "capturas_semanales": 24,
       "linea_base": 78,
-      "reduccion_pct": 53.8,
+      "reduccion_pct": 69.2,
       "fase": "Consolidación Ecosistémica"
     },
     {
@@ -512,9 +512,9 @@
       "estacion_nombre": "Biblioteca Patrimonial / Chimenea",
       "lat": 0.4052,
       "lon": -78.1742,
-      "capturas_semanales": 32,
+      "capturas_semanales": 20,
       "linea_base": 78,
-      "reduccion_pct": 59.0,
+      "reduccion_pct": 74.4,
       "fase": "Consolidación Ecosistémica"
     },
     {
@@ -523,9 +523,9 @@
       "estacion_nombre": "Biblioteca Patrimonial / Chimenea",
       "lat": 0.4052,
       "lon": -78.1742,
-      "capturas_semanales": 28,
+      "capturas_semanales": 18,
       "linea_base": 78,
-      "reduccion_pct": 64.1,
+      "reduccion_pct": 76.9,
       "fase": "Consolidación Ecosistémica"
     },
     {
@@ -534,9 +534,9 @@
       "estacion_nombre": "Biblioteca Patrimonial / Chimenea",
       "lat": 0.4052,
       "lon": -78.1742,
-      "capturas_semanales": 23,
+      "capturas_semanales": 14,
       "linea_base": 78,
-      "reduccion_pct": 70.5,
+      "reduccion_pct": 82.1,
       "fase": "Consolidación Ecosistémica"
     },
     {
@@ -545,9 +545,9 @@
       "estacion_nombre": "Biblioteca Patrimonial / Chimenea",
       "lat": 0.4052,
       "lon": -78.1742,
-      "capturas_semanales": 23,
+      "capturas_semanales": 14,
       "linea_base": 78,
-      "reduccion_pct": 70.5,
+      "reduccion_pct": 82.1,
       "fase": "Consolidación Ecosistémica"
     },
     {
@@ -556,9 +556,9 @@
       "estacion_nombre": "Biblioteca Patrimonial / Chimenea",
       "lat": 0.4052,
       "lon": -78.1742,
-      "capturas_semanales": 21,
+      "capturas_semanales": 14,
       "linea_base": 78,
-      "reduccion_pct": 73.1,
+      "reduccion_pct": 82.1,
       "fase": "Consolidación Ecosistémica"
     },
     {
@@ -567,9 +567,9 @@
       "estacion_nombre": "Biblioteca Patrimonial / Chimenea",
       "lat": 0.4052,
       "lon": -78.1742,
-      "capturas_semanales": 24,
+      "capturas_semanales": 16,
       "linea_base": 78,
-      "reduccion_pct": 69.2,
+      "reduccion_pct": 79.5,
       "fase": "Consolidación Ecosistémica"
     },
     {
@@ -666,9 +666,9 @@
       "estacion_nombre": "Laboratorios de Carrera",
       "lat": 0.4047,
       "lon": -78.1724,
-      "capturas_semanales": 40,
+      "capturas_semanales": 28,
       "linea_base": 82,
-      "reduccion_pct": 51.2,
+      "reduccion_pct": 65.9,
       "fase": "Consolidación Ecosistémica"
     },
     {
@@ -677,9 +677,9 @@
       "estacion_nombre": "Laboratorios de Carrera",
       "lat": 0.4047,
       "lon": -78.1724,
-      "capturas_semanales": 37,
+      "capturas_semanales": 24,
       "linea_base": 82,
-      "reduccion_pct": 54.9,
+      "reduccion_pct": 70.7,
       "fase": "Consolidación Ecosistémica"
     },
     {
@@ -688,46 +688,13 @@
       "estacion_nombre": "Laboratorios de Carrera",
       "lat": 0.4047,
       "lon": -78.1724,
-      "capturas_semanales": 34,
+      "capturas_semanales": 22,
       "linea_base": 82,
-      "reduccion_pct": 58.5,
+      "reduccion_pct": 73.2,
       "fase": "Consolidación Ecosistémica"
     },
     {
       "semana": 12,
-      "estacion_id": "T-04",
-      "estacion_nombre": "Laboratorios de Carrera",
-      "lat": 0.4047,
-      "lon": -78.1724,
-      "capturas_semanales": 33,
-      "linea_base": 82,
-      "reduccion_pct": 59.8,
-      "fase": "Consolidación Ecosistémica"
-    },
-    {
-      "semana": 13,
-      "estacion_id": "T-04",
-      "estacion_nombre": "Laboratorios de Carrera",
-      "lat": 0.4047,
-      "lon": -78.1724,
-      "capturas_semanales": 27,
-      "linea_base": 82,
-      "reduccion_pct": 67.1,
-      "fase": "Consolidación Ecosistémica"
-    },
-    {
-      "semana": 14,
-      "estacion_id": "T-04",
-      "estacion_nombre": "Laboratorios de Carrera",
-      "lat": 0.4047,
-      "lon": -78.1724,
-      "capturas_semanales": 25,
-      "linea_base": 82,
-      "reduccion_pct": 69.5,
-      "fase": "Consolidación Ecosistémica"
-    },
-    {
-      "semana": 15,
       "estacion_id": "T-04",
       "estacion_nombre": "Laboratorios de Carrera",
       "lat": 0.4047,
@@ -738,14 +705,47 @@
       "fase": "Consolidación Ecosistémica"
     },
     {
+      "semana": 13,
+      "estacion_id": "T-04",
+      "estacion_nombre": "Laboratorios de Carrera",
+      "lat": 0.4047,
+      "lon": -78.1724,
+      "capturas_semanales": 17,
+      "linea_base": 82,
+      "reduccion_pct": 79.3,
+      "fase": "Consolidación Ecosistémica"
+    },
+    {
+      "semana": 14,
+      "estacion_id": "T-04",
+      "estacion_nombre": "Laboratorios de Carrera",
+      "lat": 0.4047,
+      "lon": -78.1724,
+      "capturas_semanales": 16,
+      "linea_base": 82,
+      "reduccion_pct": 80.5,
+      "fase": "Consolidación Ecosistémica"
+    },
+    {
+      "semana": 15,
+      "estacion_id": "T-04",
+      "estacion_nombre": "Laboratorios de Carrera",
+      "lat": 0.4047,
+      "lon": -78.1724,
+      "capturas_semanales": 13,
+      "linea_base": 82,
+      "reduccion_pct": 84.1,
+      "fase": "Consolidación Ecosistémica"
+    },
+    {
       "semana": 16,
       "estacion_id": "T-04",
       "estacion_nombre": "Laboratorios de Carrera",
       "lat": 0.4047,
       "lon": -78.1724,
-      "capturas_semanales": 19,
+      "capturas_semanales": 13,
       "linea_base": 82,
-      "reduccion_pct": 76.8,
+      "reduccion_pct": 84.1,
       "fase": "Consolidación Ecosistémica"
     },
     {
@@ -842,9 +842,9 @@
       "estacion_nombre": "Edificio Senescyt (Fachada Sur)",
       "lat": 0.4067,
       "lon": -78.1702,
-      "capturas_semanales": 44,
+      "capturas_semanales": 31,
       "linea_base": 86,
-      "reduccion_pct": 48.8,
+      "reduccion_pct": 64.0,
       "fase": "Consolidación Ecosistémica"
     },
     {
@@ -853,9 +853,9 @@
       "estacion_nombre": "Edificio Senescyt (Fachada Sur)",
       "lat": 0.4067,
       "lon": -78.1702,
-      "capturas_semanales": 43,
+      "capturas_semanales": 29,
       "linea_base": 86,
-      "reduccion_pct": 50.0,
+      "reduccion_pct": 66.3,
       "fase": "Consolidación Ecosistémica"
     },
     {
@@ -864,9 +864,9 @@
       "estacion_nombre": "Edificio Senescyt (Fachada Sur)",
       "lat": 0.4067,
       "lon": -78.1702,
-      "capturas_semanales": 29,
+      "capturas_semanales": 17,
       "linea_base": 86,
-      "reduccion_pct": 66.3,
+      "reduccion_pct": 80.2,
       "fase": "Consolidación Ecosistémica"
     },
     {
@@ -875,9 +875,9 @@
       "estacion_nombre": "Edificio Senescyt (Fachada Sur)",
       "lat": 0.4067,
       "lon": -78.1702,
-      "capturas_semanales": 34,
+      "capturas_semanales": 22,
       "linea_base": 86,
-      "reduccion_pct": 60.5,
+      "reduccion_pct": 74.4,
       "fase": "Consolidación Ecosistémica"
     },
     {
@@ -886,9 +886,9 @@
       "estacion_nombre": "Edificio Senescyt (Fachada Sur)",
       "lat": 0.4067,
       "lon": -78.1702,
-      "capturas_semanales": 29,
+      "capturas_semanales": 19,
       "linea_base": 86,
-      "reduccion_pct": 66.3,
+      "reduccion_pct": 77.9,
       "fase": "Consolidación Ecosistémica"
     },
     {
@@ -897,9 +897,9 @@
       "estacion_nombre": "Edificio Senescyt (Fachada Sur)",
       "lat": 0.4067,
       "lon": -78.1702,
-      "capturas_semanales": 26,
+      "capturas_semanales": 17,
       "linea_base": 86,
-      "reduccion_pct": 69.8,
+      "reduccion_pct": 80.2,
       "fase": "Consolidación Ecosistémica"
     },
     {
@@ -908,9 +908,9 @@
       "estacion_nombre": "Edificio Senescyt (Fachada Sur)",
       "lat": 0.4067,
       "lon": -78.1702,
-      "capturas_semanales": 25,
+      "capturas_semanales": 16,
       "linea_base": 86,
-      "reduccion_pct": 70.9,
+      "reduccion_pct": 81.4,
       "fase": "Consolidación Ecosistémica"
     },
     {
@@ -919,9 +919,9 @@
       "estacion_nombre": "Edificio Senescyt (Fachada Sur)",
       "lat": 0.4067,
       "lon": -78.1702,
-      "capturas_semanales": 18,
+      "capturas_semanales": 12,
       "linea_base": 86,
-      "reduccion_pct": 79.1,
+      "reduccion_pct": 86.0,
       "fase": "Consolidación Ecosistémica"
     },
     {
@@ -1018,9 +1018,9 @@
       "estacion_nombre": "Residencias Los Bloques / Vida Com.",
       "lat": 0.407,
       "lon": -78.1714,
-      "capturas_semanales": 45,
+      "capturas_semanales": 32,
       "linea_base": 90,
-      "reduccion_pct": 50.0,
+      "reduccion_pct": 64.4,
       "fase": "Consolidación Ecosistémica"
     },
     {
@@ -1029,9 +1029,9 @@
       "estacion_nombre": "Residencias Los Bloques / Vida Com.",
       "lat": 0.407,
       "lon": -78.1714,
-      "capturas_semanales": 42,
+      "capturas_semanales": 28,
       "linea_base": 90,
-      "reduccion_pct": 53.3,
+      "reduccion_pct": 68.9,
       "fase": "Consolidación Ecosistémica"
     },
     {
@@ -1040,9 +1040,9 @@
       "estacion_nombre": "Residencias Los Bloques / Vida Com.",
       "lat": 0.407,
       "lon": -78.1714,
-      "capturas_semanales": 37,
+      "capturas_semanales": 24,
       "linea_base": 90,
-      "reduccion_pct": 58.9,
+      "reduccion_pct": 73.3,
       "fase": "Consolidación Ecosistémica"
     },
     {
@@ -1051,9 +1051,9 @@
       "estacion_nombre": "Residencias Los Bloques / Vida Com.",
       "lat": 0.407,
       "lon": -78.1714,
-      "capturas_semanales": 36,
+      "capturas_semanales": 23,
       "linea_base": 90,
-      "reduccion_pct": 60.0,
+      "reduccion_pct": 74.4,
       "fase": "Consolidación Ecosistémica"
     },
     {
@@ -1062,9 +1062,9 @@
       "estacion_nombre": "Residencias Los Bloques / Vida Com.",
       "lat": 0.407,
       "lon": -78.1714,
-      "capturas_semanales": 29,
+      "capturas_semanales": 18,
       "linea_base": 90,
-      "reduccion_pct": 67.8,
+      "reduccion_pct": 80.0,
       "fase": "Consolidación Ecosistémica"
     },
     {
@@ -1073,9 +1073,9 @@
       "estacion_nombre": "Residencias Los Bloques / Vida Com.",
       "lat": 0.407,
       "lon": -78.1714,
-      "capturas_semanales": 27,
+      "capturas_semanales": 17,
       "linea_base": 90,
-      "reduccion_pct": 70.0,
+      "reduccion_pct": 81.1,
       "fase": "Consolidación Ecosistémica"
     },
     {
@@ -1084,9 +1084,9 @@
       "estacion_nombre": "Residencias Los Bloques / Vida Com.",
       "lat": 0.407,
       "lon": -78.1714,
-      "capturas_semanales": 25,
+      "capturas_semanales": 16,
       "linea_base": 90,
-      "reduccion_pct": 72.2,
+      "reduccion_pct": 82.2,
       "fase": "Consolidación Ecosistémica"
     },
     {
@@ -1095,9 +1095,9 @@
       "estacion_nombre": "Residencias Los Bloques / Vida Com.",
       "lat": 0.407,
       "lon": -78.1714,
-      "capturas_semanales": 21,
+      "capturas_semanales": 13,
       "linea_base": 90,
-      "reduccion_pct": 76.7,
+      "reduccion_pct": 85.6,
       "fase": "Consolidación Ecosistémica"
     }
   ]
