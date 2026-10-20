@@ -1,0 +1,44 @@
+{
+    "metadata": {
+        "proyecto": "Algoritmo Verde YT",
+        "evento": "Yachay Open Science Week 2026",
+        "reto": "Reto 3 - Control de Arenillas",
+        "algoritmo": "Sequential Least Squares Programming (SLSQP)"
+    },
+    "parametros_sistema": {
+        "longitud_total_m": 900,
+        "costo_total_usd": 2250.0,
+        "total_plantulas": 1800,
+        "area_protegida_m2": 36000,
+        "efectividad_proyectada_pct": 82.4
+    },
+    "cercas_optimizadas": [
+        {
+            "id": "C-01",
+            "sector": "Residencias Las Multis y Patrimoniales",
+            "longitud_m": 350,
+            "plantas": 700,
+            "estrato_alto_molle": 175,
+            "estrato_medio_arrayan_romero": 350,
+            "estrato_bajo_hierbaluisa": 700
+        },
+        {
+            "id": "C-02",
+            "sector": "Ingenio Azucarero y Laboratorios",
+            "longitud_m": 250,
+            "plantas": 500,
+            "estrato_alto_molle": 125,
+            "estrato_medio_arrayan_romero": 250,
+            "estrato_bajo_hierbaluisa": 500
+        },
+        {
+            "id": "C-03",
+            "sector": "Edificio Senescyt y Los Bloques",
+            "longitud_m": 300,
+            "plantas": 600,
+            "estrato_alto_molle": 150,
+            "estrato_medio_arrayan_romero": 300,
+            "estrato_bajo_hierbaluisa": 600
+        }
+    ]
+}
