@@ -1,7 +1,7 @@
 """
 Generador del Visor Geoespacial Interactivo - Reto 3: Control de Arenillas
 Equipo: Algoritmo Verde YT | Yachay Open Science Week 2026
-Calibrado con Coordenadas GPS Oficiales de Google Maps
+Calibrado con Coordenadas GPS Oficiales de Google Maps y Capas Base Optimizadas
 """
 
 import folium
@@ -12,41 +12,65 @@ def generar_mapa():
     center_lat = 0.4048
     center_lon = -78.1725
     
-    # Crear el mapa base centrado en Yachay Tech
+    # Crear el mapa base centrado en Yachay Tech SIN capa por defecto (tiles=None evita capas fantasma)
     m = folium.Map(
         location=[center_lat, center_lon],
         zoom_start=16,
         max_zoom=20,
-        control_scale=True
+        control_scale=True,
+        tiles=None
     )
     
     # -------------------------------------------------------------
-    # CAPAS BASE
+    # CAPAS BASE (MAPAS BASE OFICIALES Y CALLEJEROS)
     # -------------------------------------------------------------
-    # 1. Google Híbrido (Satélite de máxima fidelidad + Vías)
+    # 1. Google Híbrido (Satélite + Vías)
     folium.TileLayer(
         tiles='https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}',
         attr='Google Maps Satellite Hybrid',
-        name='Google Satélite Híbrido (Recomendado)',
+        name='🛰️ Google Satélite Híbrido',
         overlay=False,
         control=True
     ).add_to(m)
 
-    # 2. Satélite Esri
+    # 2. Google Callejero (Mapa de Calles y Edificios)
+    folium.TileLayer(
+        tiles='https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',
+        attr='Google Maps Streets',
+        name='🗺️ Google Callejero (Vías y Bloques)',
+        overlay=False,
+        control=True
+    ).add_to(m)
+
+    # 3. CartoDB Voyager (Callejero detallado basado en OpenStreetMap)
+    folium.TileLayer(
+        tiles='https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',
+        attr='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+        subdomains='abcd',
+        name='🏙️ Mapa Callejero OSM (CartoDB Voyager)',
+        overlay=False,
+        control=True,
+        max_zoom=20
+    ).add_to(m)
+
+    # 4. Satélite Esri
     folium.TileLayer(
         tiles='https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
         attr='Esri World Imagery',
-        name='Satélite Esri (Alta Resolución)',
+        name='🌍 Satélite Esri (Alta Resolución)',
         overlay=False,
         control=True
     ).add_to(m)
     
-    # 3. OpenStreetMap
+    # 5. OpenStreetMap Oficial (con subdominios explícitos)
     folium.TileLayer(
-        tiles='OpenStreetMap',
-        name='Mapa Callejero (OSM)',
+        tiles='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        attr='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        subdomains='abc',
+        name='🌐 OpenStreetMap Estándar',
         overlay=False,
-        control=True
+        control=True,
+        max_zoom=19
     ).add_to(m)
 
     # -------------------------------------------------------------
@@ -175,7 +199,6 @@ def generar_mapa():
     # -------------------------------------------------------------
     # 3. CANALES HÍDRICOS (FOCOS LARVARIOS DE SIMULIIDAE)
     # -------------------------------------------------------------
-    # Canal de riego que baja por la franja oriental de la Vía a Yachay
     canal_coords = [
         [0.4085, -78.1690],
         [0.4072, -78.1705],
@@ -193,7 +216,6 @@ def generar_mapa():
         tooltip="Canal de Riego Principal (Foco Larvario)"
     ).add_to(fg_canales)
 
-    # Acequia secundaria patrimonial del Ingenio
     acequia_ingenio = [
         [0.4056, -78.1738],
         [0.4050, -78.1732],
@@ -336,7 +358,7 @@ def generar_mapa():
             tooltip=label
         ).add_to(fg_trampas)
 
-    # Agregar capas al mapa
+    # Agregar capas temáticas
     fg_zonas.add_to(m)
     fg_canales.add_to(m)
     fg_biocontrol.add_to(m)
@@ -400,7 +422,7 @@ def generar_mapa():
             </tr>
         </table>
         <div style="margin-top: 10px; font-size: 10px; color: #747d8c; text-align: center;">
-            *Haga clic en las capas para filtrar elementos
+            *Haga clic en las capas para alternar mapas base
         </div>
     </div>
     """
