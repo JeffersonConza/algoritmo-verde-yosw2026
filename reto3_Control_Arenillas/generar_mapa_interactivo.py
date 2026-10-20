@@ -466,8 +466,8 @@ def generar_mapa():
     fg_buffer.add_to(m)
     fg_trampas.add_to(m)
 
-    # Controles estándar de Folium
-    folium.LayerControl(position='topright', collapsed=False).add_to(m)
+    # Controles estándar de Folium (collapsed=True evita colisión visual con la barra superior)
+    folium.LayerControl(position='topright', collapsed=True).add_to(m)
 
     mini_tile = folium.TileLayer(
         tiles='https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',
@@ -859,10 +859,11 @@ def generar_mapa():
     </div>
 
     <!-- MODAL DE BIENVENIDA Y PROPÓSITO HUMANISTA -->
-    <div id="modal-bienvenida" style="display: none;">
+    <div id="modal-bienvenida" style="display: none;" onclick="if(event.target===this) toggleModalBienvenida(false)">
         <div class="modal-card">
-            <div class="modal-header">
-                <h2 style="margin: 0; font-size: 20px; font-weight: 700;">🌱 Algoritmo Verde: Un Campus para Vivir y Estudiar en Paz</h2>
+            <div class="modal-header" style="position: relative;">
+                <button onclick="toggleModalBienvenida(false)" style="position: absolute; top: 16px; right: 18px; background: rgba(255,255,255,0.2); border: none; color: white; font-size: 18px; font-weight: bold; width: 32px; height: 32px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.35)'" onmouseout="this.style.background='rgba(255,255,255,0.2)'" title="Cerrar modal (Esc)">✕</button>
+                <h2 style="margin: 0; font-size: 20px; font-weight: 700; padding-right: 35px;">🌱 Algoritmo Verde: Un Campus para Vivir y Estudiar en Paz</h2>
                 <div style="font-size: 12px; opacity: 0.95; margin-top: 4px;">
                     Propuesta Multidisciplinar · YOSW 2026 Ideatón (Reto 3 - Control de Arenillas)
                 </div>
@@ -1001,6 +1002,13 @@ def generar_mapa():
                 icon.innerHTML = '+';
             }}
         }}
+
+        // Cerrar modal con tecla Escape
+        document.addEventListener('keydown', function(e) {{
+            if (e.key === 'Escape') {{
+                toggleModalBienvenida(false);
+            }}
+        }});
 
         // Mostrar bienvenida automáticamente cuando la ventana haya cargado
         window.addEventListener('load', function() {{
