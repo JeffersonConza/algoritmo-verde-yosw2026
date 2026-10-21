@@ -1182,6 +1182,175 @@ def generar_mapa():
             "is_perimeter": False,
             "desc": "Tienda y bazar de víveres que comparte la planta baja con el bloque residencial."
         },
+        {
+            "id": "RECT-COMEDOR-PERCI",
+            "nombre": "Restaurante Comedor doña Perci",
+            "tipo": "Servicio de Alimentación / Gastronomía",
+            "zona": "Sector Reservorio Este",
+            "coords": [[0.40456, -78.1685081], [0.4046152, -78.1684733], [0.4046456, -78.1685216], [0.4045904, -78.1685564]],
+            "centroid": [0.4046028, -78.1685148],
+            "area": 46.2,
+            "color": "#e67e22", "fill": "#f39c12",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Comedor tradicional y punto de alimentación estudiantil en las inmediaciones del reservorio este."
+        },
+        {
+            "id": "RECT-SACHA-HOME",
+            "nombre": "Residencias Estudiantiles Sacha Home",
+            "tipo": "Alojamiento Estudiantil Privado Convenio",
+            "zona": "Sector Reservorio Este (Externo)",
+            "coords": [[0.4046659, -78.1684636], [0.4044948, -78.168285], [0.4045398, -78.1682419], [0.4047109, -78.1684205]],
+            "centroid": [0.4046028, -78.1683528],
+            "area": 191.0,
+            "color": "#16a085", "fill": "#1abc9c",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Complejo habitacional estudiantil privado colindante al límite este del campus universitario."
+        },
+        {
+            "id": "RECT-PATS-01",
+            "nombre": "Residencia Patrimonial Las Pats 1",
+            "tipo": "Residencia Estudiantil Patrimonial",
+            "zona": "Sector Las Pats",
+            "coords": [[0.40147, -78.1732153], [0.4013916, -78.1731671], [0.4015606, -78.1728926], [0.401639, -78.1729409]],
+            "centroid": [0.4015153, -78.173054],
+            "area": 367.8,
+            "color": "#27ae60", "fill": "#2ecc71",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Bloque residencial estudiantil patrimonial de arquitectura tradicional con 2 tabiques divisorios."
+        },
+        {
+            "id": "RECT-PATS-02",
+            "nombre": "Residencia Patrimonial Las Pats 2",
+            "tipo": "Residencia Estudiantil Patrimonial",
+            "zona": "Sector Las Pats",
+            "coords": [[0.4011861, -78.1734779], [0.4013688, -78.1732024], [0.4014493, -78.1732558], [0.4012666, -78.1735313]],
+            "centroid": [0.4013177, -78.1733669],
+            "area": 395.8,
+            "color": "#27ae60", "fill": "#2ecc71",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Bloque residencial estudiantil patrimonial de arquitectura tradicional con 2 tabiques divisorios."
+        },
+        {
+            "id": "RECT-PATS-03",
+            "nombre": "Residencia Patrimonial Las Pats 3",
+            "tipo": "Residencia Estudiantil Patrimonial",
+            "zona": "Sector Las Pats",
+            "coords": [[0.401227, -78.1735933], [0.4013045, -78.173549], [0.4015137, -78.173915], [0.4014362, -78.1739593]],
+            "centroid": [0.4013703, -78.1737541],
+            "area": 466.3,
+            "color": "#27ae60", "fill": "#2ecc71",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Bloque residencial estudiantil patrimonial con 3 divisiones interiores modulares."
+        },
+        {
+            "id": "RECT-PATS-04",
+            "nombre": "Residencia Patrimonial Las Pats 4",
+            "tipo": "Residencia Estudiantil Patrimonial",
+            "zona": "Sector Las Pats",
+            "coords": [[0.4017578, -78.1745351], [0.4014684, -78.1740073], [0.4015458, -78.1739649], [0.4018352, -78.1744927]],
+            "centroid": [0.4016518, -78.17425],
+            "area": 658.0,
+            "color": "#27ae60", "fill": "#2ecc71",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Bloque residencial estudiantil patrimonial con 5 tabiques divisorios transversales."
+        },
+        {
+            "id": "RECT-PATS-05",
+            "nombre": "Residencia Patrimonial Las Pats 5",
+            "tipo": "Residencia Estudiantil Patrimonial",
+            "zona": "Sector Las Pats",
+            "coords": [[0.4025027, -78.1742363], [0.4017966, -78.174643], [0.4017533, -78.1745678], [0.4024594, -78.1741611]],
+            "centroid": [0.402128, -78.1744021],
+            "area": 876.0,
+            "color": "#27ae60", "fill": "#2ecc71",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Bloque longitudinal patrimonial de 8 módulos con 7 tabiques divisorios transversales."
+        },
+        {
+            "id": "RECT-PATS-06",
+            "nombre": "Residencia Patrimonial Las Pats 6",
+            "tipo": "Residencia Estudiantil Patrimonial",
+            "zona": "Sector Las Pats",
+            "coords": [[0.4023284, -78.1737619], [0.4025212, -78.174114], [0.4024424, -78.1741571], [0.4022496, -78.173805]],
+            "centroid": [0.4023854, -78.1739595],
+            "area": 446.7,
+            "color": "#27ae60", "fill": "#2ecc71",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Bloque residencial estudiantil patrimonial con 3 tabiques divisorios transversales."
+        },
+        {
+            "id": "RECT-PATS-07",
+            "nombre": "Residencia Patrimonial Las Pats 7",
+            "tipo": "Residencia Estudiantil Patrimonial",
+            "zona": "Sector Las Pats",
+            "coords": [[0.4020997, -78.1733646], [0.4022975, -78.173715], [0.4022201, -78.1737587], [0.4020223, -78.1734083]],
+            "centroid": [0.4021599, -78.1735616],
+            "area": 443.1,
+            "color": "#27ae60", "fill": "#2ecc71",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Bloque residencial estudiantil patrimonial con 3 tabiques divisorios transversales."
+        },
+        {
+            "id": "RECT-PATS-08",
+            "nombre": "Residencia Patrimonial Las Pats 8",
+            "tipo": "Residencia Estudiantil Patrimonial",
+            "zona": "Sector Las Pats",
+            "coords": [[0.4025969, -78.1740908], [0.4031024, -78.1750656], [0.4030231, -78.1751067], [0.4025176, -78.1741319]],
+            "centroid": [0.40281, -78.1745988],
+            "area": 1215.0,
+            "color": "#27ae60", "fill": "#2ecc71",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Bloque longitudinal patrimonial superior de 11 módulos con 10 tabiques divisorios transversales."
+        },
+        {
+            "id": "RECT-PATS-LAB",
+            "nombre": "Laboratorio de Campo Las Pats",
+            "tipo": "Laboratorio / Investigación Científica",
+            "zona": "Sector Las Pats",
+            "coords": [[0.4017122, -78.1745652], [0.4016589, -78.1745934], [0.401565, -78.174416], [0.4016183, -78.1743878]],
+            "centroid": [0.4016386, -78.1744906],
+            "area": 150.0,
+            "color": "#2980b9", "fill": "#3498db",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Edificación no residencial destinada a ensayos biológicos y laboratorio de campo en Las Pats."
+        },
+        {
+            "id": "RECT-PATS-TICS",
+            "nombre": "Edificio TICs y Conectividad Las Pats",
+            "tipo": "Tecnología / Soporte y Telecomunicaciones",
+            "zona": "Sector Las Pats",
+            "coords": [[0.4030727, -78.1752435], [0.4029439, -78.1752928], [0.40291, -78.1752042], [0.4030388, -78.1751549]],
+            "centroid": [0.4029913, -78.1752238],
+            "area": 162.1,
+            "color": "#8e44ad", "fill": "#9b59b6",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Centro de distribución de datos, telecomunicaciones y soporte informático en Las Pats."
+        },
+        {
+            "id": "RECT-PATS-DOCENTES",
+            "nombre": "Villas Residenciales de Docentes",
+            "tipo": "Residencia de Docentes e Investigadores",
+            "zona": "Sector Las Pats",
+            "coords": [[0.4029138, -78.1752754], [0.4029413, -78.1753629], [0.4028382, -78.1753953], [0.4028107, -78.1753078]],
+            "centroid": [0.402876, -78.1753353],
+            "area": 122.8,
+            "color": "#34495e", "fill": "#5d6d7e",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Complejo habitacional asignado a personal docente e investigadores visitantes en Las Pats."
+        },
     ]
 
     for h in huellas_arquitectonicas:
@@ -1347,6 +1516,216 @@ def generar_mapa():
             "coords": [[0.4019849, -78.1750345], [0.4019449, -78.1749169]],
             "color": "#16a085",
             "desc": "Tabique transversal divisorio interior en el quiebre escalonado del Bloque Multifamiliar 2."
+        },
+        {
+            "nombre": "División Residencia Patrimonial Las Pats 1 (Línea 1)",
+            "coords": [[0.4015244, -78.1731259], [0.401449, -78.1730776]],
+            "color": "#27ae60",
+            "desc": "Tabique divisorio interior 1 en Residencia Patrimonial Las Pats 1."
+        },
+        {
+            "nombre": "División Residencia Patrimonial Las Pats 1 (Línea 2)",
+            "coords": [[0.4015838, -78.1730381], [0.4015043, -78.1729858]],
+            "color": "#27ae60",
+            "desc": "Tabique divisorio interior 2 en Residencia Patrimonial Las Pats 1."
+        },
+        {
+            "nombre": "División Residencia Patrimonial Las Pats 2 (Línea 1)",
+            "coords": [[0.401335, -78.173425], [0.4012639, -78.1733764]],
+            "color": "#27ae60",
+            "desc": "Tabique divisorio interior 1 en Residencia Patrimonial Las Pats 2."
+        },
+        {
+            "nombre": "División Residencia Patrimonial Las Pats 2 (Línea 2)",
+            "coords": [[0.4013953, -78.1733361], [0.4013202, -78.1732909]],
+            "color": "#27ae60",
+            "desc": "Tabique divisorio interior 2 en Residencia Patrimonial Las Pats 2."
+        },
+        {
+            "nombre": "División Residencia Patrimonial Las Pats 3 (Línea 1)",
+            "coords": [[0.401462, -78.1738283], [0.4013796, -78.1738618]],
+            "color": "#27ae60",
+            "desc": "Tabique divisorio interior 1 en Residencia Patrimonial Las Pats 3."
+        },
+        {
+            "nombre": "División Residencia Patrimonial Las Pats 3 (Línea 2)",
+            "coords": [[0.4014171, -78.1737321], [0.401335, -78.17378]],
+            "color": "#27ae60",
+            "desc": "Tabique divisorio interior 2 en Residencia Patrimonial Las Pats 3."
+        },
+        {
+            "nombre": "División Residencia Patrimonial Las Pats 3 (Línea 3)",
+            "coords": [[0.4013608, -78.1736526], [0.4012874, -78.1736952]],
+            "color": "#27ae60",
+            "desc": "Tabique divisorio interior 3 en Residencia Patrimonial Las Pats 3."
+        },
+        {
+            "nombre": "División Residencia Patrimonial Las Pats 4 (Módulo 1)",
+            "coords": [[0.4015206, -78.1741025], [0.401598, -78.1740601]],
+            "color": "#27ae60",
+            "desc": "Tabique transversal divisorio 1 en punto topográfico [0.4016008, -78.1740586]."
+        },
+        {
+            "nombre": "División Residencia Patrimonial Las Pats 4 (Módulo 2)",
+            "coords": [[0.4015675, -78.174188], [0.4016449, -78.1741456]],
+            "color": "#27ae60",
+            "desc": "Tabique transversal divisorio 2 en punto topográfico [0.4016451, -78.1741455]."
+        },
+        {
+            "nombre": "División Residencia Patrimonial Las Pats 4 (Módulo 3)",
+            "coords": [[0.4016123, -78.1742697], [0.4016897, -78.1742273]],
+            "color": "#27ae60",
+            "desc": "Tabique transversal divisorio 3 en punto topográfico [0.401691, -78.1742266]."
+        },
+        {
+            "nombre": "División Residencia Patrimonial Las Pats 4 (Módulo 4)",
+            "coords": [[0.4016626, -78.1743615], [0.40174, -78.1743191]],
+            "color": "#27ae60",
+            "desc": "Tabique transversal divisorio 4 en punto topográfico [0.4017393, -78.1743195]."
+        },
+        {
+            "nombre": "División Residencia Patrimonial Las Pats 4 (Módulo 5)",
+            "coords": [[0.4017108, -78.1744493], [0.4017881, -78.174407]],
+            "color": "#27ae60",
+            "desc": "Tabique transversal divisorio 5 en punto topográfico [0.4017886, -78.1744067]."
+        },
+        {
+            "nombre": "División Residencia Patrimonial Las Pats 5 (Módulo 1)",
+            "coords": [[0.4018832, -78.1745931], [0.4018399, -78.1745179]],
+            "color": "#27ae60",
+            "desc": "Tabique transversal divisorio 1 en punto topográfico [0.4018386, -78.1745156]."
+        },
+        {
+            "nombre": "División Residencia Patrimonial Las Pats 5 (Módulo 2)",
+            "coords": [[0.4019767, -78.1745393], [0.4019334, -78.1744641]],
+            "color": "#27ae60",
+            "desc": "Tabique transversal divisorio 2 en punto topográfico [0.4019324, -78.1744623]."
+        },
+        {
+            "nombre": "División Residencia Patrimonial Las Pats 5 (Módulo 3)",
+            "coords": [[0.4020605, -78.174491], [0.4020173, -78.1744158]],
+            "color": "#27ae60",
+            "desc": "Tabique transversal divisorio 3 en punto topográfico [0.4020149, -78.1744117]."
+        },
+        {
+            "nombre": "División Residencia Patrimonial Las Pats 5 (Módulo 4)",
+            "coords": [[0.4021501, -78.1744394], [0.4021068, -78.1743642]],
+            "color": "#27ae60",
+            "desc": "Tabique transversal divisorio 4 en punto topográfico [0.4021058, -78.1743624]."
+        },
+        {
+            "nombre": "División Residencia Patrimonial Las Pats 5 (Módulo 5)",
+            "coords": [[0.4022366, -78.1743895], [0.4021934, -78.1743144]],
+            "color": "#27ae60",
+            "desc": "Tabique transversal divisorio 5 en punto topográfico [0.4021913, -78.1743108]."
+        },
+        {
+            "nombre": "División Residencia Patrimonial Las Pats 5 (Módulo 6)",
+            "coords": [[0.4023263, -78.1743379], [0.402283, -78.1742627]],
+            "color": "#27ae60",
+            "desc": "Tabique transversal divisorio 6 en punto topográfico [0.4022821, -78.1742612]."
+        },
+        {
+            "nombre": "División Residencia Patrimonial Las Pats 5 (Módulo 7)",
+            "coords": [[0.4024105, -78.1742894], [0.4023672, -78.1742142]],
+            "color": "#27ae60",
+            "desc": "Tabique transversal divisorio 7 en punto topográfico [0.4023653, -78.1742109]."
+        },
+        {
+            "nombre": "División Residencia Patrimonial Las Pats 6 (Módulo 1)",
+            "coords": [[0.4024759, -78.1740312], [0.4023971, -78.1740743]],
+            "color": "#27ae60",
+            "desc": "Tabique transversal divisorio 1 en punto topográfico [0.4023974, -78.1740741]."
+        },
+        {
+            "nombre": "División Residencia Patrimonial Las Pats 6 (Módulo 2)",
+            "coords": [[0.4024283, -78.1739444], [0.4023495, -78.1739875]],
+            "color": "#27ae60",
+            "desc": "Tabique transversal divisorio 2 en punto topográfico [0.4023482, -78.1739882]."
+        },
+        {
+            "nombre": "División Residencia Patrimonial Las Pats 6 (Módulo 3)",
+            "coords": [[0.402381, -78.1738579], [0.4023022, -78.173901]],
+            "color": "#27ae60",
+            "desc": "Tabique transversal divisorio 3 en punto topográfico [0.4023002, -78.1739021]."
+        },
+        {
+            "nombre": "División Residencia Patrimonial Las Pats 7 (Módulo 1)",
+            "coords": [[0.4021519, -78.173457], [0.4020745, -78.1735007]],
+            "color": "#27ae60",
+            "desc": "Tabique transversal divisorio 1 en punto topográfico [0.4020732, -78.1735014]."
+        },
+        {
+            "nombre": "División Residencia Patrimonial Las Pats 7 (Módulo 2)",
+            "coords": [[0.4022001, -78.1735424], [0.4021227, -78.1735861]],
+            "color": "#27ae60",
+            "desc": "Tabique transversal divisorio 2 en punto topográfico [0.4021195, -78.1735879]."
+        },
+        {
+            "nombre": "División Residencia Patrimonial Las Pats 7 (Módulo 3)",
+            "coords": [[0.4022494, -78.1736297], [0.402172, -78.1736734]],
+            "color": "#27ae60",
+            "desc": "Tabique transversal divisorio 3 en punto topográfico [0.4021695, -78.1736748]."
+        },
+        {
+            "nombre": "División Residencia Patrimonial Las Pats 8 (Módulo 1)",
+            "coords": [[0.4030519, -78.1749682], [0.4029726, -78.1750093]],
+            "color": "#27ae60",
+            "desc": "Tabique transversal divisorio 1 en punto topográfico [0.4029728, -78.1750092]."
+        },
+        {
+            "nombre": "División Residencia Patrimonial Las Pats 8 (Módulo 2)",
+            "coords": [[0.4030107, -78.1748889], [0.4029315, -78.17493]],
+            "color": "#27ae60",
+            "desc": "Tabique transversal divisorio 2 en punto topográfico [0.4029345, -78.1749284]."
+        },
+        {
+            "nombre": "División Residencia Patrimonial Las Pats 8 (Módulo 3)",
+            "coords": [[0.4029686, -78.1748076], [0.4028893, -78.1748487]],
+            "color": "#27ae60",
+            "desc": "Tabique transversal divisorio 3 en punto topográfico [0.4028903, -78.1748482]."
+        },
+        {
+            "nombre": "División Residencia Patrimonial Las Pats 8 (Módulo 4)",
+            "coords": [[0.4029226, -78.1747189], [0.4028433, -78.17476]],
+            "color": "#27ae60",
+            "desc": "Tabique transversal divisorio 4 en punto topográfico [0.402842, -78.1747607]."
+        },
+        {
+            "nombre": "División Residencia Patrimonial Las Pats 8 (Módulo 5)",
+            "coords": [[0.4028764, -78.1746299], [0.4027972, -78.174671]],
+            "color": "#27ae60",
+            "desc": "Tabique transversal divisorio 5 en punto topográfico [0.4027961, -78.1746715]."
+        },
+        {
+            "nombre": "División Residencia Patrimonial Las Pats 8 (Módulo 6)",
+            "coords": [[0.4028257, -78.1745321], [0.4027464, -78.1745732]],
+            "color": "#27ae60",
+            "desc": "Tabique transversal divisorio 6 en punto topográfico [0.4027448, -78.174574]."
+        },
+        {
+            "nombre": "División Residencia Patrimonial Las Pats 8 (Módulo 7)",
+            "coords": [[0.4027797, -78.1744434], [0.4027005, -78.1744845]],
+            "color": "#27ae60",
+            "desc": "Tabique transversal divisorio 7 en punto topográfico [0.4026985, -78.1744855]."
+        },
+        {
+            "nombre": "División Residencia Patrimonial Las Pats 8 (Módulo 8)",
+            "coords": [[0.4027352, -78.1743575], [0.4026559, -78.1743986]],
+            "color": "#27ae60",
+            "desc": "Tabique transversal divisorio 8 en punto topográfico [0.4026539, -78.1743996]."
+        },
+        {
+            "nombre": "División Residencia Patrimonial Las Pats 8 (Módulo 9)",
+            "coords": [[0.4026889, -78.1742682], [0.4026096, -78.1743093]],
+            "color": "#27ae60",
+            "desc": "Tabique transversal divisorio 9 en punto topográfico [0.402608, -78.1743101]."
+        },
+        {
+            "nombre": "División Residencia Patrimonial Las Pats 8 (Módulo 10)",
+            "coords": [[0.4026424, -78.1741785], [0.4025631, -78.1742196]],
+            "color": "#27ae60",
+            "desc": "Tabique transversal divisorio 10 en punto topográfico [0.4025651, -78.1742186]."
         },
     ]
     for ld in lineas_divisorias:
