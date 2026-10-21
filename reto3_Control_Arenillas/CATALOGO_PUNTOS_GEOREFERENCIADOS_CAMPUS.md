@@ -50,7 +50,7 @@ Antiguo complejo histórico de la Hacienda San José, epicentro de la vida cultu
 | **I-15** | **Invernaderos Experimentales (1-4)** | Biotecnología / Agropecuaria| `0.404200` | `-78.173150` | **Muy Alto** (Humedad controlada)| ~60 investigadores |
 | **H-01** | **Laguna Artificial / Reservorio de Agua** | Recurso Hídrico / Biocontrol | `0.404121` | `-78.168316` | **Nulo / Protector** (Léntico / Odonatos)| ~2,006 m² espejo de agua |
 
-### 1.3. Zona 3: Sector Residencias "Las Pats" y "Multifamiliares" (Sur)
+### 1.3. Zona 3: Sector Residencias "Las T's", "Las Pats" y "Multifamiliares" (Sur)
 Principal polo habitacional y deportivo de la universidad (~400 a 550 residentes):
 
 | ID | Nombre del Hito / Residencia | Categoría de Uso | Latitud (WGS84) | Longitud (WGS84) | Nivel de Riesgo Basal | Población / Aforo |
@@ -455,12 +455,12 @@ Las edificaciones del campus fueron regularizadas rigurosamente bajo criterios d
 
 ---
 
-### 2.3. Zona 3: Sector Residencias "Las Pats" y "Multifamiliares" (Casas T's Patrimoniales)
+### 2.3. Zona 3: Sector Residencias "Las T's" (Casas T's Patrimoniales)
 
-Conjunto de 13 residencias estudiantiles patrimoniales (denominadas localmente como *"Las Pats"* o *Casas T's*), caracterizadas por su arquitectura tradicional de muros portantes de adobe reforzado, carpintería de madera y cubiertas a dos aguas con teja artesanal andina. Presentan un diseño bioclimático histórico con esquemas de subdivisión interior: pareadas dobles en las casas 1–4 (~386–404 m²), módulos habitacionales individuales en casas 5–10 y 13 (~258–275 m²), y bloques longitudinales cuádruples en casas 11–12 (~531–536 m²). Todas las huellas han sido regularizadas ortogonalmente con tolerancias submétricas respecto al levantamiento de campo.
+Conjunto de 13 residencias estudiantiles patrimoniales (denominadas localmente como *"Las T's"* o *Casas T's*), caracterizadas por su arquitectura tradicional de muros portantes de adobe reforzado, carpintería de madera y cubiertas a dos aguas con teja artesanal andina. Presentan un diseño bioclimático histórico con esquemas de subdivisión interior: pareadas dobles en las casas 1–4 (~386–404 m²), módulos habitacionales individuales en casas 5–10 y 13 (~258–275 m²), y bloques longitudinales cuádruples en casas 11–12 (~531–536 m²). Todas las huellas han sido regularizadas ortogonalmente con tolerancias submétricas respecto al levantamiento de campo.
 
-* **Casa Patrimonial Las Pats 1 (`RECT-PAT-01`):**
-  * *Tipo:* Residencia Estudiantil Patrimonial (Casa T) | *Zona:* Sector Residencias Las Pats
+* **Casa Patrimonial Las T's 1 (`RECT-T-01`):**
+  * *Tipo:* Residencia Estudiantil Patrimonial (Casa T) | *Zona:* Sector Residencias Las T's
   * *Superficie ortogonal regularizada:* ~386.5 m² | *Centroide:* `[0.4005171, -78.1745134]`
   * *Vértices de Huella Arquitectónica (WGS84):*
     1. `0.4004740, -78.1746762`
@@ -468,18 +468,18 @@ Conjunto de 13 residencias estudiantiles patrimoniales (denominadas localmente c
     3. `0.4005601, -78.1743506`
     4. `0.4003911, -78.1746252`
   * *Líneas / Puntos de División Medianera Interior:*
-    - **División Casa Patrimonial Las Pats 1:** `[0.4004985, -78.1744459]` ➔ `[0.4004445, -78.1745398]` (Línea de división medianera interior de Casa Patrimonial Las Pats 1.)
-    - **División Casa Patrimonial Las Pats 10:** `[0.4005530, -78.1753960]` ➔ `[0.4006426, -78.1754358]` (Tabique transversal divisorio interior en punto topográfico [0.4006437, -78.1754363].)
-    - **División Casa Patrimonial Las Pats 11 (Módulo 1):** `[0.4009843, -78.1750740]` ➔ `[0.4008879, -78.1750472]` (Tabique transversal divisorio interior 1/3 en punto topográfico [0.4008861, -78.1750467].)
-    - **División Casa Patrimonial Las Pats 11 (Módulo 2):** `[0.4009560, -78.1751760]` ➔ `[0.4008596, -78.1751492]` (Tabique transversal divisorio interior 2/3 en punto topográfico [0.4008529, -78.1751473].)
-    - **División Casa Patrimonial Las Pats 11 (Módulo 3):** `[0.4009283, -78.1752755]` ➔ `[0.4008319, -78.1752487]` (Tabique transversal divisorio interior 3/3 en punto topográfico [0.4008274, -78.1752475].)
-    - **División Casa Patrimonial Las Pats 12 (Módulo 1):** `[0.4007985, -78.1757194]` ➔ `[0.4007006, -78.1756910]` (Tabique transversal divisorio interior 1/3 en punto topográfico [0.4007043, -78.1756921].)
-    - **División Casa Patrimonial Las Pats 12 (Módulo 2):** `[0.4008287, -78.1756154]` ➔ `[0.4007308, -78.1755870]` (Tabique transversal divisorio interior 2/3 en punto topográfico [0.4007292, -78.1755865].)
-    - **División Casa Patrimonial Las Pats 12 (Módulo 3):** `[0.4008572, -78.1755170]` ➔ `[0.4007593, -78.1754886]` (Tabique transversal divisorio interior 3/3 en punto topográfico [0.400757, -78.1754879].)
-    - **División Casa Patrimonial Las Pats 13:** `[0.4008969, -78.1758890]` ➔ `[0.4007990, -78.1758622]` (Tabique transversal divisorio interior en punto topográfico [0.4008941, -78.1758882].)
+    - **División Casa Patrimonial Las T's 1:** `[0.4004985, -78.1744459]` ➔ `[0.4004445, -78.1745398]` (Línea de división medianera interior de Casa Patrimonial Las T's 1.)
+    - **División Casa Patrimonial Las T's 10:** `[0.4005530, -78.1753960]` ➔ `[0.4006426, -78.1754358]` (Tabique transversal divisorio interior en punto topográfico [0.4006437, -78.1754363].)
+    - **División Casa Patrimonial Las T's 11 (Módulo 1):** `[0.4009843, -78.1750740]` ➔ `[0.4008879, -78.1750472]` (Tabique transversal divisorio interior 1/3 en punto topográfico [0.4008861, -78.1750467].)
+    - **División Casa Patrimonial Las T's 11 (Módulo 2):** `[0.4009560, -78.1751760]` ➔ `[0.4008596, -78.1751492]` (Tabique transversal divisorio interior 2/3 en punto topográfico [0.4008529, -78.1751473].)
+    - **División Casa Patrimonial Las T's 11 (Módulo 3):** `[0.4009283, -78.1752755]` ➔ `[0.4008319, -78.1752487]` (Tabique transversal divisorio interior 3/3 en punto topográfico [0.4008274, -78.1752475].)
+    - **División Casa Patrimonial Las T's 12 (Módulo 1):** `[0.4007985, -78.1757194]` ➔ `[0.4007006, -78.1756910]` (Tabique transversal divisorio interior 1/3 en punto topográfico [0.4007043, -78.1756921].)
+    - **División Casa Patrimonial Las T's 12 (Módulo 2):** `[0.4008287, -78.1756154]` ➔ `[0.4007308, -78.1755870]` (Tabique transversal divisorio interior 2/3 en punto topográfico [0.4007292, -78.1755865].)
+    - **División Casa Patrimonial Las T's 12 (Módulo 3):** `[0.4008572, -78.1755170]` ➔ `[0.4007593, -78.1754886]` (Tabique transversal divisorio interior 3/3 en punto topográfico [0.400757, -78.1754879].)
+    - **División Casa Patrimonial Las T's 13:** `[0.4008969, -78.1758890]` ➔ `[0.4007990, -78.1758622]` (Tabique transversal divisorio interior en punto topográfico [0.4008941, -78.1758882].)
 
-* **Casa Patrimonial Las Pats 2 (`RECT-PAT-02`):**
-  * *Tipo:* Residencia Estudiantil Patrimonial (Casa T) | *Zona:* Sector Residencias Las Pats
+* **Casa Patrimonial Las T's 2 (`RECT-T-02`):**
+  * *Tipo:* Residencia Estudiantil Patrimonial (Casa T) | *Zona:* Sector Residencias Las T's
   * *Superficie ortogonal regularizada:* ~398.2 m² | *Centroide:* `[0.4003218, -78.1748310]`
   * *Vértices de Huella Arquitectónica (WGS84):*
     1. `0.4003661, -78.1746641`
@@ -487,10 +487,10 @@ Conjunto de 13 residencias estudiantiles patrimoniales (denominadas localmente c
     3. `0.4002775, -78.1749978`
     4. `0.4004495, -78.1747148`
   * *Líneas / Puntos de División Medianera Interior:*
-    - **División Casa Patrimonial Las Pats 2:** `[0.4003000, -78.1747604]` ➔ `[0.4002447, -78.1748556]` (Línea de división medianera interior de Casa Patrimonial Las Pats 2.)
+    - **División Casa Patrimonial Las T's 2:** `[0.4003000, -78.1747604]` ➔ `[0.4002447, -78.1748556]` (Línea de división medianera interior de Casa Patrimonial Las T's 2.)
 
-* **Casa Patrimonial Las Pats 3 (`RECT-PAT-03`):**
-  * *Tipo:* Residencia Estudiantil Patrimonial (Casa T) | *Zona:* Sector Residencias Las Pats
+* **Casa Patrimonial Las T's 3 (`RECT-T-03`):**
+  * *Tipo:* Residencia Estudiantil Patrimonial (Casa T) | *Zona:* Sector Residencias Las T's
   * *Superficie ortogonal regularizada:* ~393.4 m² | *Centroide:* `[0.4005975, -78.1746546]`
   * *Vértices de Huella Arquitectónica (WGS84):*
     1. `0.4005556, -78.1748175`
@@ -498,10 +498,10 @@ Conjunto de 13 residencias estudiantiles patrimoniales (denominadas localmente c
     3. `0.4006395, -78.1744917`
     4. `0.4004710, -78.1747654`
   * *Líneas / Puntos de División Medianera Interior:*
-    - **División Casa Patrimonial Las Pats 3:** `[0.4006698, -78.1746367]` ➔ `[0.4006158, -78.1747255]` (Línea de división medianera interior de Casa Patrimonial Las Pats 3.)
+    - **División Casa Patrimonial Las T's 3:** `[0.4006698, -78.1746367]` ➔ `[0.4006158, -78.1747255]` (Línea de división medianera interior de Casa Patrimonial Las T's 3.)
 
-* **Casa Patrimonial Las Pats 4 (`RECT-PAT-04`):**
-  * *Tipo:* Residencia Estudiantil Patrimonial (Casa T) | *Zona:* Sector Residencias Las Pats
+* **Casa Patrimonial Las T's 4 (`RECT-T-04`):**
+  * *Tipo:* Residencia Estudiantil Patrimonial (Casa T) | *Zona:* Sector Residencias Las T's
   * *Superficie ortogonal regularizada:* ~404.4 m² | *Centroide:* `[0.4004056, -78.1749711]`
   * *Vértices de Huella Arquitectónica (WGS84):*
     1. `0.4004492, -78.1748063`
@@ -509,10 +509,10 @@ Conjunto de 13 residencias estudiantiles patrimoniales (denominadas localmente c
     3. `0.4003619, -78.1751360`
     4. `0.4005346, -78.1748597`
   * *Líneas / Puntos de División Medianera Interior:*
-    - **División Casa Patrimonial Las Pats 4:** `[0.4004800, -78.1749512]` ➔ `[0.4004207, -78.1750387]` (Línea de división medianera interior de Casa Patrimonial Las Pats 4.)
+    - **División Casa Patrimonial Las T's 4:** `[0.4004800, -78.1749512]` ➔ `[0.4004207, -78.1750387]` (Línea de división medianera interior de Casa Patrimonial Las T's 4.)
 
-* **Casa Patrimonial Las Pats 5 (`RECT-PAT-05`):**
-  * *Tipo:* Residencia Estudiantil Patrimonial (Casa T) | *Zona:* Sector Residencias Las Pats
+* **Casa Patrimonial Las T's 5 (`RECT-T-05`):**
+  * *Tipo:* Residencia Estudiantil Patrimonial (Casa T) | *Zona:* Sector Residencias Las T's
   * *Superficie ortogonal regularizada:* ~269.5 m² | *Centroide:* `[0.4007280, -78.1747765]`
   * *Vértices de Huella Arquitectónica (WGS84):*
     1. `0.4007249, -78.1746561`
@@ -520,10 +520,10 @@ Conjunto de 13 residencias estudiantiles patrimoniales (denominadas localmente c
     3. `0.4007310, -78.1748970`
     4. `0.4008167, -78.1746950`
   * *Líneas / Puntos de División Medianera Interior:*
-    - **División Casa Patrimonial Las Pats 5:** `[0.4006813, -78.1747590]` ➔ `[0.4007730, -78.1747979]` (Tabique transversal divisorio interior en punto topográfico [0.4006775, -78.1747574].)
+    - **División Casa Patrimonial Las T's 5:** `[0.4006813, -78.1747590]` ➔ `[0.4007730, -78.1747979]` (Tabique transversal divisorio interior en punto topográfico [0.4006775, -78.1747574].)
 
-* **Casa Patrimonial Las Pats 6 (`RECT-PAT-06`):**
-  * *Tipo:* Residencia Estudiantil Patrimonial (Casa T) | *Zona:* Sector Residencias Las Pats
+* **Casa Patrimonial Las T's 6 (`RECT-T-06`):**
+  * *Tipo:* Residencia Estudiantil Patrimonial (Casa T) | *Zona:* Sector Residencias Las T's
   * *Superficie ortogonal regularizada:* ~271.4 m² | *Centroide:* `[0.4006182, -78.1750168]`
   * *Vértices de Huella Arquitectónica (WGS84):*
     1. `0.4006223, -78.1751363`
@@ -531,10 +531,10 @@ Conjunto de 13 residencias estudiantiles patrimoniales (denominadas localmente c
     3. `0.4006141, -78.1748974`
     4. `0.4005287, -78.1750960`
   * *Líneas / Puntos de División Medianera Interior:*
-    - **División Casa Patrimonial Las Pats 6:** `[0.4006643, -78.1750387]` ➔ `[0.4005707, -78.1749984]` (Tabique transversal divisorio interior en punto topográfico [0.4005722, -78.1749991].)
+    - **División Casa Patrimonial Las T's 6:** `[0.4006643, -78.1750387]` ➔ `[0.4005707, -78.1749984]` (Tabique transversal divisorio interior en punto topográfico [0.4005722, -78.1749991].)
 
-* **Casa Patrimonial Las Pats 7 (`RECT-PAT-07`):**
-  * *Tipo:* Residencia Estudiantil Patrimonial (Casa T) | *Zona:* Sector Residencias Las Pats
+* **Casa Patrimonial Las T's 7 (`RECT-T-07`):**
+  * *Tipo:* Residencia Estudiantil Patrimonial (Casa T) | *Zona:* Sector Residencias Las T's
   * *Superficie ortogonal regularizada:* ~268.8 m² | *Centroide:* `[0.4005131, -78.1752603]`
   * *Vértices de Huella Arquitectónica (WGS84):*
     1. `0.4005132, -78.1751382`
@@ -542,10 +542,10 @@ Conjunto de 13 residencias estudiantiles patrimoniales (denominadas localmente c
     3. `0.4005130, -78.1753824`
     4. `0.4006025, -78.1751772`
   * *Líneas / Puntos de División Medianera Interior:*
-    - **División Casa Patrimonial Las Pats 7:** `[0.4004717, -78.1752334]` ➔ `[0.4005610, -78.1752724]` (Tabique transversal divisorio interior en punto topográfico [0.4004703, -78.1752328].)
+    - **División Casa Patrimonial Las T's 7:** `[0.4004717, -78.1752334]` ➔ `[0.4005610, -78.1752724]` (Tabique transversal divisorio interior en punto topográfico [0.4004703, -78.1752328].)
 
-* **Casa Patrimonial Las Pats 8 (`RECT-PAT-08`):**
-  * *Tipo:* Residencia Estudiantil Patrimonial (Casa T) | *Zona:* Sector Residencias Las Pats
+* **Casa Patrimonial Las T's 8 (`RECT-T-08`):**
+  * *Tipo:* Residencia Estudiantil Patrimonial (Casa T) | *Zona:* Sector Residencias Las T's
   * *Superficie ortogonal regularizada:* ~272.7 m² | *Centroide:* `[0.4008123, -78.1749251]`
   * *Vértices de Huella Arquitectónica (WGS84):*
     1. `0.4008120, -78.1750482`
@@ -553,10 +553,10 @@ Conjunto de 13 residencias estudiantiles patrimoniales (denominadas localmente c
     3. `0.4008126, -78.1748021`
     4. `0.4007221, -78.1750088`
   * *Líneas / Puntos de División Medianera Interior:*
-    - **División Casa Patrimonial Las Pats 8:** `[0.4008564, -78.1749468]` ➔ `[0.4007665, -78.1749074]` (Tabique transversal divisorio interior en punto topográfico [0.4008586, -78.1749478].)
+    - **División Casa Patrimonial Las T's 8:** `[0.4008564, -78.1749468]` ➔ `[0.4007665, -78.1749074]` (Tabique transversal divisorio interior en punto topográfico [0.4008586, -78.1749478].)
 
-* **Casa Patrimonial Las Pats 9 (`RECT-PAT-09`):**
-  * *Tipo:* Residencia Estudiantil Patrimonial (Casa T) | *Zona:* Sector Residencias Las Pats
+* **Casa Patrimonial Las T's 9 (`RECT-T-09`):**
+  * *Tipo:* Residencia Estudiantil Patrimonial (Casa T) | *Zona:* Sector Residencias Las T's
   * *Superficie ortogonal regularizada:* ~258.7 m² | *Centroide:* `[0.4007038, -78.1751704]`
   * *Vértices de Huella Arquitectónica (WGS84):*
     1. `0.4007050, -78.1752905`
@@ -564,10 +564,10 @@ Conjunto de 13 residencias estudiantiles patrimoniales (denominadas localmente c
     3. `0.4007027, -78.1750504`
     4. `0.4006172, -78.1752536`
   * *Líneas / Puntos de División Medianera Interior:*
-    - **División Casa Patrimonial Las Pats 9:** `[0.4007488, -78.1751863]` ➔ `[0.4006610, -78.1751494]` (Tabique transversal divisorio interior en punto topográfico [0.4007509, -78.1751872].)
+    - **División Casa Patrimonial Las T's 9:** `[0.4007488, -78.1751863]` ➔ `[0.4006610, -78.1751494]` (Tabique transversal divisorio interior en punto topográfico [0.4007509, -78.1751872].)
 
-* **Casa Patrimonial Las Pats 10 (`RECT-PAT-10`):**
-  * *Tipo:* Residencia Estudiantil Patrimonial (Casa T) | *Zona:* Sector Residencias Las Pats
+* **Casa Patrimonial Las T's 10 (`RECT-T-10`):**
+  * *Tipo:* Residencia Estudiantil Patrimonial (Casa T) | *Zona:* Sector Residencias Las T's
   * *Superficie ortogonal regularizada:* ~266.4 m² | *Centroide:* `[0.4005981, -78.1754152]`
   * *Vértices de Huella Arquitectónica (WGS84):*
     1. `0.4005981, -78.1752945`
@@ -575,10 +575,10 @@ Conjunto de 13 residencias estudiantiles patrimoniales (denominadas localmente c
     3. `0.4005981, -78.1755358`
     4. `0.4006877, -78.1753343`
   * *Líneas / Puntos de División Medianera Interior:*
-    - **División Casa Patrimonial Las Pats 10:** `[0.4005530, -78.1753960]` ➔ `[0.4006426, -78.1754358]` (Tabique transversal divisorio interior en punto topográfico [0.4006437, -78.1754363].)
+    - **División Casa Patrimonial Las T's 10:** `[0.4005530, -78.1753960]` ➔ `[0.4006426, -78.1754358]` (Tabique transversal divisorio interior en punto topográfico [0.4006437, -78.1754363].)
 
-* **Casa Patrimonial Las Pats 11 (`RECT-PAT-11`):**
-  * *Tipo:* Residencia Estudiantil Patrimonial (Casa T - Módulo Cuádruple) | *Zona:* Sector Residencias Las Pats
+* **Casa Patrimonial Las T's 11 (`RECT-T-11`):**
+  * *Tipo:* Residencia Estudiantil Patrimonial (Casa T - Módulo Cuádruple) | *Zona:* Sector Residencias Las T's
   * *Superficie ortogonal regularizada:* ~531.4 m² | *Centroide:* `[0.4009106, -78.1751525]`
   * *Vértices de Huella Arquitectónica (WGS84):*
     1. `0.4009010, -78.1753736`
@@ -586,12 +586,12 @@ Conjunto de 13 residencias estudiantiles patrimoniales (denominadas localmente c
     3. `0.4009201, -78.1749314`
     4. `0.4008046, -78.1753468`
   * *Líneas / Puntos de División Medianera Interior:*
-    - **División Casa Patrimonial Las Pats 11 (Módulo 1):** `[0.4009843, -78.1750740]` ➔ `[0.4008879, -78.1750472]` (Tabique transversal divisorio interior 1/3 en punto topográfico [0.4008861, -78.1750467].)
-    - **División Casa Patrimonial Las Pats 11 (Módulo 2):** `[0.4009560, -78.1751760]` ➔ `[0.4008596, -78.1751492]` (Tabique transversal divisorio interior 2/3 en punto topográfico [0.4008529, -78.1751473].)
-    - **División Casa Patrimonial Las Pats 11 (Módulo 3):** `[0.4009283, -78.1752755]` ➔ `[0.4008319, -78.1752487]` (Tabique transversal divisorio interior 3/3 en punto topográfico [0.4008274, -78.1752475].)
+    - **División Casa Patrimonial Las T's 11 (Módulo 1):** `[0.4009843, -78.1750740]` ➔ `[0.4008879, -78.1750472]` (Tabique transversal divisorio interior 1/3 en punto topográfico [0.4008861, -78.1750467].)
+    - **División Casa Patrimonial Las T's 11 (Módulo 2):** `[0.4009560, -78.1751760]` ➔ `[0.4008596, -78.1751492]` (Tabique transversal divisorio interior 2/3 en punto topográfico [0.4008529, -78.1751473].)
+    - **División Casa Patrimonial Las T's 11 (Módulo 3):** `[0.4009283, -78.1752755]` ➔ `[0.4008319, -78.1752487]` (Tabique transversal divisorio interior 3/3 en punto topográfico [0.4008274, -78.1752475].)
 
-* **Casa Patrimonial Las Pats 12 (`RECT-PAT-12`):**
-  * *Tipo:* Residencia Estudiantil Patrimonial (Casa T - Módulo Cuádruple) | *Zona:* Sector Residencias Las Pats
+* **Casa Patrimonial Las T's 12 (`RECT-T-12`):**
+  * *Tipo:* Residencia Estudiantil Patrimonial (Casa T - Módulo Cuádruple) | *Zona:* Sector Residencias Las T's
   * *Superficie ortogonal regularizada:* ~536.4 m² | *Centroide:* `[0.4007803, -78.1755995]`
   * *Vértices de Huella Arquitectónica (WGS84):*
     1. `0.4007697, -78.1758188`
@@ -599,12 +599,12 @@ Conjunto de 13 residencias estudiantiles patrimoniales (denominadas localmente c
     3. `0.4007908, -78.1753801`
     4. `0.4006718, -78.1757904`
   * *Líneas / Puntos de División Medianera Interior:*
-    - **División Casa Patrimonial Las Pats 12 (Módulo 1):** `[0.4007985, -78.1757194]` ➔ `[0.4007006, -78.1756910]` (Tabique transversal divisorio interior 1/3 en punto topográfico [0.4007043, -78.1756921].)
-    - **División Casa Patrimonial Las Pats 12 (Módulo 2):** `[0.4008287, -78.1756154]` ➔ `[0.4007308, -78.1755870]` (Tabique transversal divisorio interior 2/3 en punto topográfico [0.4007292, -78.1755865].)
-    - **División Casa Patrimonial Las Pats 12 (Módulo 3):** `[0.4008572, -78.1755170]` ➔ `[0.4007593, -78.1754886]` (Tabique transversal divisorio interior 3/3 en punto topográfico [0.400757, -78.1754879].)
+    - **División Casa Patrimonial Las T's 12 (Módulo 1):** `[0.4007985, -78.1757194]` ➔ `[0.4007006, -78.1756910]` (Tabique transversal divisorio interior 1/3 en punto topográfico [0.4007043, -78.1756921].)
+    - **División Casa Patrimonial Las T's 12 (Módulo 2):** `[0.4008287, -78.1756154]` ➔ `[0.4007308, -78.1755870]` (Tabique transversal divisorio interior 2/3 en punto topográfico [0.4007292, -78.1755865].)
+    - **División Casa Patrimonial Las T's 12 (Módulo 3):** `[0.4008572, -78.1755170]` ➔ `[0.4007593, -78.1754886]` (Tabique transversal divisorio interior 3/3 en punto topográfico [0.400757, -78.1754879].)
 
-* **Casa Patrimonial Las Pats 13 (`RECT-PAT-13`):**
-  * *Tipo:* Residencia Estudiantil Patrimonial (Casa T) | *Zona:* Sector Residencias Las Pats
+* **Casa Patrimonial Las T's 13 (`RECT-T-13`):**
+  * *Tipo:* Residencia Estudiantil Patrimonial (Casa T) | *Zona:* Sector Residencias Las T's
   * *Superficie ortogonal regularizada:* ~275.0 m² | *Centroide:* `[0.4008493, -78.1758705]`
   * *Vértices de Huella Arquitectónica (WGS84):*
     1. `0.4009273, -78.1757779`
@@ -612,7 +612,7 @@ Conjunto de 13 residencias estudiantiles patrimoniales (denominadas localmente c
     3. `0.4007714, -78.1759632`
     4. `0.4008693, -78.1759900`
   * *Líneas / Puntos de División Medianera Interior:*
-    - **División Casa Patrimonial Las Pats 13:** `[0.4008969, -78.1758890]` ➔ `[0.4007990, -78.1758622]` (Tabique transversal divisorio interior en punto topográfico [0.4008941, -78.1758882].)
+    - **División Casa Patrimonial Las T's 13:** `[0.4008969, -78.1758890]` ➔ `[0.4007990, -78.1758622]` (Tabique transversal divisorio interior en punto topográfico [0.4008941, -78.1758882].)
 
 ---
 
@@ -1139,7 +1139,7 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
       "properties": {
         "id": "R-01",
         "nombre": "Residencias Las Multis",
-        "zona": "Las Pats y Multis",
+        "zona": "Las T's y Multis",
         "categoria": "Residencial Multifamiliar"
       },
       "geometry": {
@@ -1155,7 +1155,7 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
       "properties": {
         "id": "R-02",
         "nombre": "Residencias Las Pats",
-        "zona": "Las Pats y Multis",
+        "zona": "Las T's y Multis",
         "categoria": "Residencial Patrimonial"
       },
       "geometry": {
@@ -1171,7 +1171,7 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
       "properties": {
         "id": "R-03",
         "nombre": "Residencias Las T's",
-        "zona": "Las Pats y Multis",
+        "zona": "Las T's y Multis",
         "categoria": "Bloques Residenciales en T"
       },
       "geometry": {
@@ -1187,7 +1187,7 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
       "properties": {
         "id": "R-04",
         "nombre": "Residencias de Docentes",
-        "zona": "Las Pats y Multis",
+        "zona": "Las T's y Multis",
         "categoria": "Villas Residenciales Docentes"
       },
       "geometry": {
@@ -1203,7 +1203,7 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
       "properties": {
         "id": "R-05",
         "nombre": "Concha Ac\u00fastica Yachay Tech",
-        "zona": "Las Pats y Multis",
+        "zona": "Las T's y Multis",
         "categoria": "Cultural / Anfiteatro"
       },
       "geometry": {
@@ -1219,7 +1219,7 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
       "properties": {
         "id": "R-06",
         "nombre": "Canchas Deportivas (F\u00fatbol / M\u00faltiples)",
-        "zona": "Las Pats y Multis",
+        "zona": "Las T's y Multis",
         "categoria": "Deporte y Recreaci\u00f3n"
       },
       "geometry": {
@@ -1235,7 +1235,7 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
       "properties": {
         "id": "R-07",
         "nombre": "Parada (Arco de las Pats)",
-        "zona": "Las Pats y Multis",
+        "zona": "Las T's y Multis",
         "categoria": "Transporte Universitario"
       },
       "geometry": {
@@ -3043,9 +3043,9 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
     {
       "type": "Feature",
       "properties": {
-        "id": "RECT-PAT-01",
-        "nombre": "Casa Patrimonial Las Pats 1",
-        "zona": "Las Pats y Multis",
+        "id": "RECT-T-01",
+        "nombre": "Casa Patrimonial Las T's 1",
+        "zona": "Las T's y Multis",
         "categoria": "Residencia Estudiantil Patrimonial (Casa T)",
         "area_m2": 386.5,
         "centroide": [
@@ -3085,9 +3085,9 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
     {
       "type": "Feature",
       "properties": {
-        "id": "RECT-PAT-02",
-        "nombre": "Casa Patrimonial Las Pats 2",
-        "zona": "Las Pats y Multis",
+        "id": "RECT-T-02",
+        "nombre": "Casa Patrimonial Las T's 2",
+        "zona": "Las T's y Multis",
         "categoria": "Residencia Estudiantil Patrimonial (Casa T)",
         "area_m2": 398.2,
         "centroide": [
@@ -3127,9 +3127,9 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
     {
       "type": "Feature",
       "properties": {
-        "id": "RECT-PAT-03",
-        "nombre": "Casa Patrimonial Las Pats 3",
-        "zona": "Las Pats y Multis",
+        "id": "RECT-T-03",
+        "nombre": "Casa Patrimonial Las T's 3",
+        "zona": "Las T's y Multis",
         "categoria": "Residencia Estudiantil Patrimonial (Casa T)",
         "area_m2": 393.4,
         "centroide": [
@@ -3169,9 +3169,9 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
     {
       "type": "Feature",
       "properties": {
-        "id": "RECT-PAT-04",
-        "nombre": "Casa Patrimonial Las Pats 4",
-        "zona": "Las Pats y Multis",
+        "id": "RECT-T-04",
+        "nombre": "Casa Patrimonial Las T's 4",
+        "zona": "Las T's y Multis",
         "categoria": "Residencia Estudiantil Patrimonial (Casa T)",
         "area_m2": 404.4,
         "centroide": [
@@ -3211,9 +3211,9 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
     {
       "type": "Feature",
       "properties": {
-        "id": "RECT-PAT-05",
-        "nombre": "Casa Patrimonial Las Pats 5",
-        "zona": "Las Pats y Multis",
+        "id": "RECT-T-05",
+        "nombre": "Casa Patrimonial Las T's 5",
+        "zona": "Las T's y Multis",
         "categoria": "Residencia Estudiantil Patrimonial (Casa T)",
         "area_m2": 269.5,
         "centroide": [
@@ -3253,9 +3253,9 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
     {
       "type": "Feature",
       "properties": {
-        "id": "RECT-PAT-06",
-        "nombre": "Casa Patrimonial Las Pats 6",
-        "zona": "Las Pats y Multis",
+        "id": "RECT-T-06",
+        "nombre": "Casa Patrimonial Las T's 6",
+        "zona": "Las T's y Multis",
         "categoria": "Residencia Estudiantil Patrimonial (Casa T)",
         "area_m2": 271.4,
         "centroide": [
@@ -3295,9 +3295,9 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
     {
       "type": "Feature",
       "properties": {
-        "id": "RECT-PAT-07",
-        "nombre": "Casa Patrimonial Las Pats 7",
-        "zona": "Las Pats y Multis",
+        "id": "RECT-T-07",
+        "nombre": "Casa Patrimonial Las T's 7",
+        "zona": "Las T's y Multis",
         "categoria": "Residencia Estudiantil Patrimonial (Casa T)",
         "area_m2": 268.8,
         "centroide": [
@@ -3337,9 +3337,9 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
     {
       "type": "Feature",
       "properties": {
-        "id": "RECT-PAT-08",
-        "nombre": "Casa Patrimonial Las Pats 8",
-        "zona": "Las Pats y Multis",
+        "id": "RECT-T-08",
+        "nombre": "Casa Patrimonial Las T's 8",
+        "zona": "Las T's y Multis",
         "categoria": "Residencia Estudiantil Patrimonial (Casa T)",
         "area_m2": 272.7,
         "centroide": [
@@ -3379,9 +3379,9 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
     {
       "type": "Feature",
       "properties": {
-        "id": "RECT-PAT-09",
-        "nombre": "Casa Patrimonial Las Pats 9",
-        "zona": "Las Pats y Multis",
+        "id": "RECT-T-09",
+        "nombre": "Casa Patrimonial Las T's 9",
+        "zona": "Las T's y Multis",
         "categoria": "Residencia Estudiantil Patrimonial (Casa T)",
         "area_m2": 258.7,
         "centroide": [
@@ -3421,9 +3421,9 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
     {
       "type": "Feature",
       "properties": {
-        "id": "RECT-PAT-10",
-        "nombre": "Casa Patrimonial Las Pats 10",
-        "zona": "Las Pats y Multis",
+        "id": "RECT-T-10",
+        "nombre": "Casa Patrimonial Las T's 10",
+        "zona": "Las T's y Multis",
         "categoria": "Residencia Estudiantil Patrimonial (Casa T)",
         "area_m2": 266.4,
         "centroide": [
@@ -3463,9 +3463,9 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
     {
       "type": "Feature",
       "properties": {
-        "id": "RECT-PAT-11",
-        "nombre": "Casa Patrimonial Las Pats 11",
-        "zona": "Las Pats y Multis",
+        "id": "RECT-T-11",
+        "nombre": "Casa Patrimonial Las T's 11",
+        "zona": "Las T's y Multis",
         "categoria": "Residencia Estudiantil Patrimonial (Casa T - M\u00f3dulo Cu\u00e1druple)",
         "area_m2": 531.4,
         "centroide": [
@@ -3505,9 +3505,9 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
     {
       "type": "Feature",
       "properties": {
-        "id": "RECT-PAT-12",
-        "nombre": "Casa Patrimonial Las Pats 12",
-        "zona": "Las Pats y Multis",
+        "id": "RECT-T-12",
+        "nombre": "Casa Patrimonial Las T's 12",
+        "zona": "Las T's y Multis",
         "categoria": "Residencia Estudiantil Patrimonial (Casa T - M\u00f3dulo Cu\u00e1druple)",
         "area_m2": 536.4,
         "centroide": [
@@ -3547,9 +3547,9 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
     {
       "type": "Feature",
       "properties": {
-        "id": "RECT-PAT-13",
-        "nombre": "Casa Patrimonial Las Pats 13",
-        "zona": "Las Pats y Multis",
+        "id": "RECT-T-13",
+        "nombre": "Casa Patrimonial Las T's 13",
+        "zona": "Las T's y Multis",
         "categoria": "Residencia Estudiantil Patrimonial (Casa T)",
         "area_m2": 275.0,
         "centroide": [
@@ -3701,7 +3701,7 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
       "properties": {
         "id": "LINE-CANAL-SO",
         "nombre": "Canal de Agua Suroeste",
-        "zona": "Las Pats y Multis",
+        "zona": "Las T's y Multis",
         "descripcion": "Tramo lotiforme suroeste junto a Concha Ac\u00fastica y Multifamiliares (~124.5 m)"
       },
       "geometry": {
@@ -3871,11 +3871,11 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
     {
       "type": "Feature",
       "properties": {
-        "id": "LINE-DIV-PAT-01",
-        "nombre": "Divisi\u00f3n Casa Patrimonial Las Pats 1",
-        "zona": "Las Pats y Multis",
+        "id": "LINE-DIV-T-01",
+        "nombre": "Divisi\u00f3n Casa Patrimonial Las T's 1",
+        "zona": "Las T's y Multis",
         "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "L\u00ednea de divisi\u00f3n medianera interior de Casa Patrimonial Las Pats 1."
+        "descripcion": "L\u00ednea de divisi\u00f3n medianera interior de Casa Patrimonial Las T's 1."
       },
       "geometry": {
         "type": "LineString",
@@ -3894,11 +3894,11 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
     {
       "type": "Feature",
       "properties": {
-        "id": "LINE-DIV-PAT-02",
-        "nombre": "Divisi\u00f3n Casa Patrimonial Las Pats 2",
-        "zona": "Las Pats y Multis",
+        "id": "LINE-DIV-T-02",
+        "nombre": "Divisi\u00f3n Casa Patrimonial Las T's 2",
+        "zona": "Las T's y Multis",
         "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "L\u00ednea de divisi\u00f3n medianera interior de Casa Patrimonial Las Pats 2."
+        "descripcion": "L\u00ednea de divisi\u00f3n medianera interior de Casa Patrimonial Las T's 2."
       },
       "geometry": {
         "type": "LineString",
@@ -3917,11 +3917,11 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
     {
       "type": "Feature",
       "properties": {
-        "id": "LINE-DIV-PAT-03",
-        "nombre": "Divisi\u00f3n Casa Patrimonial Las Pats 3",
-        "zona": "Las Pats y Multis",
+        "id": "LINE-DIV-T-03",
+        "nombre": "Divisi\u00f3n Casa Patrimonial Las T's 3",
+        "zona": "Las T's y Multis",
         "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "L\u00ednea de divisi\u00f3n medianera interior de Casa Patrimonial Las Pats 3."
+        "descripcion": "L\u00ednea de divisi\u00f3n medianera interior de Casa Patrimonial Las T's 3."
       },
       "geometry": {
         "type": "LineString",
@@ -3940,11 +3940,11 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
     {
       "type": "Feature",
       "properties": {
-        "id": "LINE-DIV-PAT-04",
-        "nombre": "Divisi\u00f3n Casa Patrimonial Las Pats 4",
-        "zona": "Las Pats y Multis",
+        "id": "LINE-DIV-T-04",
+        "nombre": "Divisi\u00f3n Casa Patrimonial Las T's 4",
+        "zona": "Las T's y Multis",
         "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "L\u00ednea de divisi\u00f3n medianera interior de Casa Patrimonial Las Pats 4."
+        "descripcion": "L\u00ednea de divisi\u00f3n medianera interior de Casa Patrimonial Las T's 4."
       },
       "geometry": {
         "type": "LineString",
@@ -3963,9 +3963,9 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
     {
       "type": "Feature",
       "properties": {
-        "id": "LINE-DIV-PAT-05",
-        "nombre": "Divisi\u00f3n Casa Patrimonial Las Pats 5",
-        "zona": "Las Pats y Multis",
+        "id": "LINE-DIV-T-05",
+        "nombre": "Divisi\u00f3n Casa Patrimonial Las T's 5",
+        "zona": "Las T's y Multis",
         "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
         "descripcion": "Tabique transversal divisorio interior en punto topogr\u00e1fico [0.4006775, -78.1747574]."
       },
@@ -3986,9 +3986,9 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
     {
       "type": "Feature",
       "properties": {
-        "id": "LINE-DIV-PAT-06",
-        "nombre": "Divisi\u00f3n Casa Patrimonial Las Pats 6",
-        "zona": "Las Pats y Multis",
+        "id": "LINE-DIV-T-06",
+        "nombre": "Divisi\u00f3n Casa Patrimonial Las T's 6",
+        "zona": "Las T's y Multis",
         "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
         "descripcion": "Tabique transversal divisorio interior en punto topogr\u00e1fico [0.4005722, -78.1749991]."
       },
@@ -4009,9 +4009,9 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
     {
       "type": "Feature",
       "properties": {
-        "id": "LINE-DIV-PAT-07",
-        "nombre": "Divisi\u00f3n Casa Patrimonial Las Pats 7",
-        "zona": "Las Pats y Multis",
+        "id": "LINE-DIV-T-07",
+        "nombre": "Divisi\u00f3n Casa Patrimonial Las T's 7",
+        "zona": "Las T's y Multis",
         "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
         "descripcion": "Tabique transversal divisorio interior en punto topogr\u00e1fico [0.4004703, -78.1752328]."
       },
@@ -4032,9 +4032,9 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
     {
       "type": "Feature",
       "properties": {
-        "id": "LINE-DIV-PAT-08",
-        "nombre": "Divisi\u00f3n Casa Patrimonial Las Pats 8",
-        "zona": "Las Pats y Multis",
+        "id": "LINE-DIV-T-08",
+        "nombre": "Divisi\u00f3n Casa Patrimonial Las T's 8",
+        "zona": "Las T's y Multis",
         "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
         "descripcion": "Tabique transversal divisorio interior en punto topogr\u00e1fico [0.4008586, -78.1749478]."
       },
@@ -4055,9 +4055,9 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
     {
       "type": "Feature",
       "properties": {
-        "id": "LINE-DIV-PAT-09",
-        "nombre": "Divisi\u00f3n Casa Patrimonial Las Pats 9",
-        "zona": "Las Pats y Multis",
+        "id": "LINE-DIV-T-09",
+        "nombre": "Divisi\u00f3n Casa Patrimonial Las T's 9",
+        "zona": "Las T's y Multis",
         "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
         "descripcion": "Tabique transversal divisorio interior en punto topogr\u00e1fico [0.4007509, -78.1751872]."
       },
@@ -4078,9 +4078,9 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
     {
       "type": "Feature",
       "properties": {
-        "id": "LINE-DIV-PAT-10",
-        "nombre": "Divisi\u00f3n Casa Patrimonial Las Pats 10",
-        "zona": "Las Pats y Multis",
+        "id": "LINE-DIV-T-10",
+        "nombre": "Divisi\u00f3n Casa Patrimonial Las T's 10",
+        "zona": "Las T's y Multis",
         "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
         "descripcion": "Tabique transversal divisorio interior en punto topogr\u00e1fico [0.4006437, -78.1754363]."
       },
@@ -4101,9 +4101,9 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
     {
       "type": "Feature",
       "properties": {
-        "id": "LINE-DIV-PAT-11",
-        "nombre": "Divisi\u00f3n Casa Patrimonial Las Pats 11 (M\u00f3dulo 1)",
-        "zona": "Las Pats y Multis",
+        "id": "LINE-DIV-T-11",
+        "nombre": "Divisi\u00f3n Casa Patrimonial Las T's 11 (M\u00f3dulo 1)",
+        "zona": "Las T's y Multis",
         "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
         "descripcion": "Tabique transversal divisorio interior 1/3 en punto topogr\u00e1fico [0.4008861, -78.1750467]."
       },
@@ -4124,9 +4124,9 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
     {
       "type": "Feature",
       "properties": {
-        "id": "LINE-DIV-PAT-12",
-        "nombre": "Divisi\u00f3n Casa Patrimonial Las Pats 11 (M\u00f3dulo 2)",
-        "zona": "Las Pats y Multis",
+        "id": "LINE-DIV-T-12",
+        "nombre": "Divisi\u00f3n Casa Patrimonial Las T's 11 (M\u00f3dulo 2)",
+        "zona": "Las T's y Multis",
         "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
         "descripcion": "Tabique transversal divisorio interior 2/3 en punto topogr\u00e1fico [0.4008529, -78.1751473]."
       },
@@ -4147,9 +4147,9 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
     {
       "type": "Feature",
       "properties": {
-        "id": "LINE-DIV-PAT-13",
-        "nombre": "Divisi\u00f3n Casa Patrimonial Las Pats 11 (M\u00f3dulo 3)",
-        "zona": "Las Pats y Multis",
+        "id": "LINE-DIV-T-13",
+        "nombre": "Divisi\u00f3n Casa Patrimonial Las T's 11 (M\u00f3dulo 3)",
+        "zona": "Las T's y Multis",
         "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
         "descripcion": "Tabique transversal divisorio interior 3/3 en punto topogr\u00e1fico [0.4008274, -78.1752475]."
       },
@@ -4170,9 +4170,9 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
     {
       "type": "Feature",
       "properties": {
-        "id": "LINE-DIV-PAT-14",
-        "nombre": "Divisi\u00f3n Casa Patrimonial Las Pats 12 (M\u00f3dulo 1)",
-        "zona": "Las Pats y Multis",
+        "id": "LINE-DIV-T-14",
+        "nombre": "Divisi\u00f3n Casa Patrimonial Las T's 12 (M\u00f3dulo 1)",
+        "zona": "Las T's y Multis",
         "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
         "descripcion": "Tabique transversal divisorio interior 1/3 en punto topogr\u00e1fico [0.4007043, -78.1756921]."
       },
@@ -4193,9 +4193,9 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
     {
       "type": "Feature",
       "properties": {
-        "id": "LINE-DIV-PAT-15",
-        "nombre": "Divisi\u00f3n Casa Patrimonial Las Pats 12 (M\u00f3dulo 2)",
-        "zona": "Las Pats y Multis",
+        "id": "LINE-DIV-T-15",
+        "nombre": "Divisi\u00f3n Casa Patrimonial Las T's 12 (M\u00f3dulo 2)",
+        "zona": "Las T's y Multis",
         "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
         "descripcion": "Tabique transversal divisorio interior 2/3 en punto topogr\u00e1fico [0.4007292, -78.1755865]."
       },
@@ -4216,9 +4216,9 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
     {
       "type": "Feature",
       "properties": {
-        "id": "LINE-DIV-PAT-16",
-        "nombre": "Divisi\u00f3n Casa Patrimonial Las Pats 12 (M\u00f3dulo 3)",
-        "zona": "Las Pats y Multis",
+        "id": "LINE-DIV-T-16",
+        "nombre": "Divisi\u00f3n Casa Patrimonial Las T's 12 (M\u00f3dulo 3)",
+        "zona": "Las T's y Multis",
         "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
         "descripcion": "Tabique transversal divisorio interior 3/3 en punto topogr\u00e1fico [0.400757, -78.1754879]."
       },
@@ -4239,9 +4239,9 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
     {
       "type": "Feature",
       "properties": {
-        "id": "LINE-DIV-PAT-17",
-        "nombre": "Divisi\u00f3n Casa Patrimonial Las Pats 13",
-        "zona": "Las Pats y Multis",
+        "id": "LINE-DIV-T-17",
+        "nombre": "Divisi\u00f3n Casa Patrimonial Las T's 13",
+        "zona": "Las T's y Multis",
         "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
         "descripcion": "Tabique transversal divisorio interior en punto topogr\u00e1fico [0.4008941, -78.1758882]."
       },

@@ -1,4 +1,4 @@
-Residencia estudiantil Patrimoniales Casas T's "Las Pats":
+Residencia estudiantil Patrimoniales Casas T's "Las T's":
 0.4005578, -78.1743544
 0.4006430, -78.1744016
 0.4003925, -78.1746256
@@ -6,7 +6,7 @@ Residencia estudiantil Patrimoniales Casas T's "Las Pats":
 Punto de la Línea de División: 0.4004985, -78.1744459
 Punto de la Línea de División: 0.4004445, -78.1745398
 
-Residencia estudiantil Patrimoniales Casas T's "Las Pats": 
+Residencia estudiantil Patrimoniales Casas T's "Las T's": 
 0.4003630, -78.1746692
 0.4004495, -78.1747148
 0.4002762, -78.1749917
@@ -14,7 +14,7 @@ Residencia estudiantil Patrimoniales Casas T's "Las Pats":
 Punto de la Línea de División: 0.4003000, -78.1747604
 Punto de la Línea de División: 0.4002447, -78.1748556
 
-Residencia estudiantil Patrimoniales Casas T's "Las Pats": 
+Residencia estudiantil Patrimoniales Casas T's "Las T's": 
 0.4006410, -78.1744932
 0.4007241, -78.1745438
 0.4004710, -78.1747654
@@ -22,7 +22,7 @@ Residencia estudiantil Patrimoniales Casas T's "Las Pats":
 Punto de la Línea de División: 0.4006698, -78.1746367
 Punto de la Línea de División: 0.4006158, -78.1747255
 
-Residencia estudiantil Patrimoniales Casas T's "Las Pats": 
+Residencia estudiantil Patrimoniales Casas T's "Las T's": 
 0.4004492, -78.1748063
 0.4005337, -78.1748593
 0.4002765, -78.1750826
@@ -30,49 +30,49 @@ Residencia estudiantil Patrimoniales Casas T's "Las Pats":
 Punto de la Línea de División: 0.4004800, -78.1749512
 Punto de la Línea de División: 0.4004207, -78.1750387
 
-Residencia estudiantil Patrimoniales Casas T's "Las Pats": 
+Residencia estudiantil Patrimoniales Casas T's "Las T's": 
 0.4008167, -78.1746950
 0.4007245, -78.1746571
 0.4006396, -78.1748573
 0.4007268, -78.1748952
 Punto de la Línea de División: 0.4006775, -78.1747574
 
-Residencia estudiantil Patrimoniales Casas T's "Las Pats": 
+Residencia estudiantil Patrimoniales Casas T's "Las T's": 
 0.4007077, -78.1749377
 0.4006209, -78.1749012
 0.4005287, -78.1750960
 0.4006225, -78.1751359
 Punto de la Línea de División: 0.4005722, -78.1749991
 
-Residencia estudiantil Patrimoniales Casas T's "Las Pats": 
+Residencia estudiantil Patrimoniales Casas T's "Las T's": 
 0.4006021, -78.1751781
 0.4005132, -78.1751382
 0.4005149, -78.1753776
 0.4004237, -78.1753434
 Punto de la Línea de División: 0.4004703, -78.1752328
 
-Residencia estudiantil Patrimoniales Casas T's "Las Pats": 
+Residencia estudiantil Patrimoniales Casas T's "Las T's": 
 0.4009025, -78.1748415
 0.4008140, -78.1748066
 0.4007221, -78.1750088
 0.4008123, -78.1750474
 Punto de la Línea de División: 0.4008586, -78.1749478
 
-Residencia estudiantil Patrimoniales Casas T's "Las Pats": 
+Residencia estudiantil Patrimoniales Casas T's "Las T's": 
 0.4007007, -78.1750551
 0.4007050, -78.1752905
 0.4006178, -78.1752526
 0.4007905, -78.1750873
 Punto de la Línea de División: 0.4007509, -78.1751872
 
-Residencia estudiantil Patrimoniales Casas T's "Las Pats":
+Residencia estudiantil Patrimoniales Casas T's "Las T's":
 0.4005981, -78.1752945
 0.4006849, -78.1753334
 0.4005997, -78.1755322
 0.4005085, -78.1754960
 Punto de la Línea de División: 0.4006437, -78.1754363
 
-Residencia estudiantil Patrimoniales Casas T's "Las Pats":
+Residencia estudiantil Patrimoniales Casas T's "Las T's":
 0.4010165, -78.1749582
 0.4009223, -78.1749364
 .0.4008046, -78.1753468
@@ -81,7 +81,7 @@ Punto de la Línea de División: 0.4008861, -78.1750467
 Punto de la Línea de División: 0.4008529, -78.1751473
 Punto de la Línea de División: 0.4008274, -78.1752475
 
-Residencia estudiantil Patrimoniales Casas T's "Las Pats":
+Residencia estudiantil Patrimoniales Casas T's "Las T's":
 0.4008887, -78.1754085
 0.4007902, -78.1753823
 0.4006769, -78.1757900
@@ -90,7 +90,7 @@ Punto de la Línea de División: 0.4007043, -78.1756921
 Punto de la Línea de División: 0.4007292, -78.1755865
 Punto de la Línea de División: 0.4007570, -78.1754879
 
-Residencia estudiantil Patrimoniales Casas T's "Las Pats":
+Residencia estudiantil Patrimoniales Casas T's "Las T's":
 0.4009273, -78.1757779
 0.4008294, -78.1757511
 0.4007731, -78.1759610

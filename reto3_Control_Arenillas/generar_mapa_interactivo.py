@@ -845,10 +845,10 @@ def generar_mapa():
             "desc": "Perímetro patrimonial de la Hacienda San José (Sala Capitular y Caballerizas)."
         },
         {
-            "id": "RECT-PAT-01",
-            "nombre": "Casa Patrimonial Las Pats 1",
+            "id": "RECT-T-01",
+            "nombre": "Casa Patrimonial Las T's 1",
             "tipo": "Residencia Estudiantil Patrimonial (Casa T)",
-            "zona": "Las Pats y Multis",
+            "zona": "Las T's y Multis",
             "coords": [[0.400474, -78.1746762], [0.400643, -78.1744016], [0.4005601, -78.1743506], [0.4003911, -78.1746252]],
             "centroid": [0.4005171, -78.1745134],
             "area": 386.5,
@@ -858,10 +858,10 @@ def generar_mapa():
             "desc": "Casa patrimonial tipo T de dos módulos residenciales con línea divisoria medianera central. Teja tradicional y corredores exteriores."
         },
         {
-            "id": "RECT-PAT-02",
-            "nombre": "Casa Patrimonial Las Pats 2",
+            "id": "RECT-T-02",
+            "nombre": "Casa Patrimonial Las T's 2",
             "tipo": "Residencia Estudiantil Patrimonial (Casa T)",
-            "zona": "Las Pats y Multis",
+            "zona": "Las T's y Multis",
             "coords": [[0.4003661, -78.1746641], [0.4001941, -78.1749471], [0.4002775, -78.1749978], [0.4004495, -78.1747148]],
             "centroid": [0.4003218, -78.174831],
             "area": 398.2,
@@ -871,10 +871,10 @@ def generar_mapa():
             "desc": "Casa patrimonial tipo T de dos módulos residenciales con línea divisoria medianera central. Teja tradicional y corredores exteriores."
         },
         {
-            "id": "RECT-PAT-03",
-            "nombre": "Casa Patrimonial Las Pats 3",
+            "id": "RECT-T-03",
+            "nombre": "Casa Patrimonial Las T's 3",
             "tipo": "Residencia Estudiantil Patrimonial (Casa T)",
-            "zona": "Las Pats y Multis",
+            "zona": "Las T's y Multis",
             "coords": [[0.4005556, -78.1748175], [0.4007241, -78.1745438], [0.4006395, -78.1744917], [0.400471, -78.1747654]],
             "centroid": [0.4005975, -78.1746546],
             "area": 393.4,
@@ -884,10 +884,10 @@ def generar_mapa():
             "desc": "Casa patrimonial tipo T de dos módulos residenciales con línea divisoria medianera central. Teja tradicional y corredores exteriores."
         },
         {
-            "id": "RECT-PAT-04",
-            "nombre": "Casa Patrimonial Las Pats 4",
+            "id": "RECT-T-04",
+            "nombre": "Casa Patrimonial Las T's 4",
             "tipo": "Residencia Estudiantil Patrimonial (Casa T)",
-            "zona": "Las Pats y Multis",
+            "zona": "Las T's y Multis",
             "coords": [[0.4004492, -78.1748063], [0.4002765, -78.1750826], [0.4003619, -78.175136], [0.4005346, -78.1748597]],
             "centroid": [0.4004056, -78.1749711],
             "area": 404.4,
@@ -897,10 +897,10 @@ def generar_mapa():
             "desc": "Casa patrimonial tipo T de dos módulos residenciales con línea divisoria medianera central. Teja tradicional y corredores exteriores."
         },
         {
-            "id": "RECT-PAT-05",
-            "nombre": "Casa Patrimonial Las Pats 5",
+            "id": "RECT-T-05",
+            "nombre": "Casa Patrimonial Las T's 5",
             "tipo": "Residencia Estudiantil Patrimonial (Casa T)",
-            "zona": "Las Pats y Multis",
+            "zona": "Las T's y Multis",
             "coords": [[0.4007249, -78.1746561], [0.4006393, -78.1748581], [0.400731, -78.174897], [0.4008167, -78.174695]],
             "centroid": [0.400728, -78.1747765],
             "area": 269.5,
@@ -910,10 +910,10 @@ def generar_mapa():
             "desc": "Módulo residencial patrimonial tipo T (Casa T 5). Sistema constructivo histórico restaurado con tabique divisorio interior."
         },
         {
-            "id": "RECT-PAT-06",
-            "nombre": "Casa Patrimonial Las Pats 6",
+            "id": "RECT-T-06",
+            "nombre": "Casa Patrimonial Las T's 6",
             "tipo": "Residencia Estudiantil Patrimonial (Casa T)",
-            "zona": "Las Pats y Multis",
+            "zona": "Las T's y Multis",
             "coords": [[0.4006223, -78.1751363], [0.4007077, -78.1749377], [0.4006141, -78.1748974], [0.4005287, -78.175096]],
             "centroid": [0.4006182, -78.1750168],
             "area": 271.4,
@@ -923,10 +923,10 @@ def generar_mapa():
             "desc": "Módulo residencial patrimonial tipo T (Casa T 6). Sistema constructivo histórico restaurado con tabique divisorio interior."
         },
         {
-            "id": "RECT-PAT-07",
-            "nombre": "Casa Patrimonial Las Pats 7",
+            "id": "RECT-T-07",
+            "nombre": "Casa Patrimonial Las T's 7",
             "tipo": "Residencia Estudiantil Patrimonial (Casa T)",
-            "zona": "Las Pats y Multis",
+            "zona": "Las T's y Multis",
             "coords": [[0.4005132, -78.1751382], [0.4004237, -78.1753434], [0.400513, -78.1753824], [0.4006025, -78.1751772]],
             "centroid": [0.4005131, -78.1752603],
             "area": 268.8,
@@ -936,10 +936,10 @@ def generar_mapa():
             "desc": "Módulo residencial patrimonial tipo T (Casa T 7). Sistema constructivo histórico restaurado con tabique divisorio interior."
         },
         {
-            "id": "RECT-PAT-08",
-            "nombre": "Casa Patrimonial Las Pats 8",
+            "id": "RECT-T-08",
+            "nombre": "Casa Patrimonial Las T's 8",
             "tipo": "Residencia Estudiantil Patrimonial (Casa T)",
-            "zona": "Las Pats y Multis",
+            "zona": "Las T's y Multis",
             "coords": [[0.400812, -78.1750482], [0.4009025, -78.1748415], [0.4008126, -78.1748021], [0.4007221, -78.1750088]],
             "centroid": [0.4008123, -78.1749251],
             "area": 272.7,
@@ -949,10 +949,10 @@ def generar_mapa():
             "desc": "Módulo residencial patrimonial tipo T (Casa T 8). Sistema constructivo histórico restaurado con tabique divisorio interior."
         },
         {
-            "id": "RECT-PAT-09",
-            "nombre": "Casa Patrimonial Las Pats 9",
+            "id": "RECT-T-09",
+            "nombre": "Casa Patrimonial Las T's 9",
             "tipo": "Residencia Estudiantil Patrimonial (Casa T)",
-            "zona": "Las Pats y Multis",
+            "zona": "Las T's y Multis",
             "coords": [[0.400705, -78.1752905], [0.4007905, -78.1750873], [0.4007027, -78.1750504], [0.4006172, -78.1752536]],
             "centroid": [0.4007038, -78.1751704],
             "area": 258.7,
@@ -962,10 +962,10 @@ def generar_mapa():
             "desc": "Módulo residencial patrimonial tipo T (Casa T 9). Sistema constructivo histórico restaurado con tabique divisorio interior."
         },
         {
-            "id": "RECT-PAT-10",
-            "nombre": "Casa Patrimonial Las Pats 10",
+            "id": "RECT-T-10",
+            "nombre": "Casa Patrimonial Las T's 10",
             "tipo": "Residencia Estudiantil Patrimonial (Casa T)",
-            "zona": "Las Pats y Multis",
+            "zona": "Las T's y Multis",
             "coords": [[0.4005981, -78.1752945], [0.4005085, -78.175496], [0.4005981, -78.1755358], [0.4006877, -78.1753343]],
             "centroid": [0.4005981, -78.1754152],
             "area": 266.4,
@@ -975,10 +975,10 @@ def generar_mapa():
             "desc": "Módulo residencial patrimonial tipo T (Casa T 10). Sistema constructivo histórico restaurado con tabique divisorio interior."
         },
         {
-            "id": "RECT-PAT-11",
-            "nombre": "Casa Patrimonial Las Pats 11",
+            "id": "RECT-T-11",
+            "nombre": "Casa Patrimonial Las T's 11",
             "tipo": "Residencia Estudiantil Patrimonial (Casa T - Módulo Cuádruple)",
-            "zona": "Las Pats y Multis",
+            "zona": "Las T's y Multis",
             "coords": [[0.400901, -78.1753736], [0.4010165, -78.1749582], [0.4009201, -78.1749314], [0.4008046, -78.1753468]],
             "centroid": [0.4009106, -78.1751525],
             "area": 531.4,
@@ -988,10 +988,10 @@ def generar_mapa():
             "desc": "Bloque residencial longitudinal patrimonial (Casa T 11) de 4 departamentos/módulos con 3 tabiques divisorios transversales internos."
         },
         {
-            "id": "RECT-PAT-12",
-            "nombre": "Casa Patrimonial Las Pats 12",
+            "id": "RECT-T-12",
+            "nombre": "Casa Patrimonial Las T's 12",
             "tipo": "Residencia Estudiantil Patrimonial (Casa T - Módulo Cuádruple)",
-            "zona": "Las Pats y Multis",
+            "zona": "Las T's y Multis",
             "coords": [[0.4007697, -78.1758188], [0.4008887, -78.1754085], [0.4007908, -78.1753801], [0.4006718, -78.1757904]],
             "centroid": [0.4007803, -78.1755995],
             "area": 536.4,
@@ -1001,10 +1001,10 @@ def generar_mapa():
             "desc": "Bloque residencial longitudinal patrimonial (Casa T 12) de 4 departamentos/módulos con 3 tabiques divisorios transversales internos."
         },
         {
-            "id": "RECT-PAT-13",
-            "nombre": "Casa Patrimonial Las Pats 13",
+            "id": "RECT-T-13",
+            "nombre": "Casa Patrimonial Las T's 13",
             "tipo": "Residencia Estudiantil Patrimonial (Casa T)",
-            "zona": "Las Pats y Multis",
+            "zona": "Las T's y Multis",
             "coords": [[0.4009273, -78.1757779], [0.4008294, -78.1757511], [0.4007714, -78.1759632], [0.4008693, -78.17599]],
             "centroid": [0.4008493, -78.1758705],
             "area": 275.0,
@@ -1066,103 +1066,103 @@ def generar_mapa():
             "desc": "Tabique divisorio interior entre sala de lectura histórica y acervo patrimonial."
         },
         {
-            "nombre": "División Casa Patrimonial Las Pats 1",
+            "nombre": "División Casa Patrimonial Las T's 1",
             "coords": [[0.4004985, -78.1744459], [0.4004445, -78.1745398]],
             "color": "#27ae60",
-            "desc": "Línea de división medianera interior de Casa Patrimonial Las Pats 1."
+            "desc": "Línea de división medianera interior de Casa Patrimonial Las T's 1."
         },
         {
-            "nombre": "División Casa Patrimonial Las Pats 2",
+            "nombre": "División Casa Patrimonial Las T's 2",
             "coords": [[0.4003, -78.1747604], [0.4002447, -78.1748556]],
             "color": "#27ae60",
-            "desc": "Línea de división medianera interior de Casa Patrimonial Las Pats 2."
+            "desc": "Línea de división medianera interior de Casa Patrimonial Las T's 2."
         },
         {
-            "nombre": "División Casa Patrimonial Las Pats 3",
+            "nombre": "División Casa Patrimonial Las T's 3",
             "coords": [[0.4006698, -78.1746367], [0.4006158, -78.1747255]],
             "color": "#27ae60",
-            "desc": "Línea de división medianera interior de Casa Patrimonial Las Pats 3."
+            "desc": "Línea de división medianera interior de Casa Patrimonial Las T's 3."
         },
         {
-            "nombre": "División Casa Patrimonial Las Pats 4",
+            "nombre": "División Casa Patrimonial Las T's 4",
             "coords": [[0.40048, -78.1749512], [0.4004207, -78.1750387]],
             "color": "#27ae60",
-            "desc": "Línea de división medianera interior de Casa Patrimonial Las Pats 4."
+            "desc": "Línea de división medianera interior de Casa Patrimonial Las T's 4."
         },
         {
-            "nombre": "División Casa Patrimonial Las Pats 5",
+            "nombre": "División Casa Patrimonial Las T's 5",
             "coords": [[0.4006813, -78.174759], [0.400773, -78.1747979]],
             "color": "#27ae60",
             "desc": "Tabique transversal divisorio interior en punto topográfico [0.4006775, -78.1747574]."
         },
         {
-            "nombre": "División Casa Patrimonial Las Pats 6",
+            "nombre": "División Casa Patrimonial Las T's 6",
             "coords": [[0.4006643, -78.1750387], [0.4005707, -78.1749984]],
             "color": "#27ae60",
             "desc": "Tabique transversal divisorio interior en punto topográfico [0.4005722, -78.1749991]."
         },
         {
-            "nombre": "División Casa Patrimonial Las Pats 7",
+            "nombre": "División Casa Patrimonial Las T's 7",
             "coords": [[0.4004717, -78.1752334], [0.400561, -78.1752724]],
             "color": "#27ae60",
             "desc": "Tabique transversal divisorio interior en punto topográfico [0.4004703, -78.1752328]."
         },
         {
-            "nombre": "División Casa Patrimonial Las Pats 8",
+            "nombre": "División Casa Patrimonial Las T's 8",
             "coords": [[0.4008564, -78.1749468], [0.4007665, -78.1749074]],
             "color": "#27ae60",
             "desc": "Tabique transversal divisorio interior en punto topográfico [0.4008586, -78.1749478]."
         },
         {
-            "nombre": "División Casa Patrimonial Las Pats 9",
+            "nombre": "División Casa Patrimonial Las T's 9",
             "coords": [[0.4007488, -78.1751863], [0.400661, -78.1751494]],
             "color": "#27ae60",
             "desc": "Tabique transversal divisorio interior en punto topográfico [0.4007509, -78.1751872]."
         },
         {
-            "nombre": "División Casa Patrimonial Las Pats 10",
+            "nombre": "División Casa Patrimonial Las T's 10",
             "coords": [[0.400553, -78.175396], [0.4006426, -78.1754358]],
             "color": "#27ae60",
             "desc": "Tabique transversal divisorio interior en punto topográfico [0.4006437, -78.1754363]."
         },
         {
-            "nombre": "División Casa Patrimonial Las Pats 11 (Módulo 1)",
+            "nombre": "División Casa Patrimonial Las T's 11 (Módulo 1)",
             "coords": [[0.4009843, -78.175074], [0.4008879, -78.1750472]],
             "color": "#27ae60",
             "desc": "Tabique transversal divisorio interior 1/3 en punto topográfico [0.4008861, -78.1750467]."
         },
         {
-            "nombre": "División Casa Patrimonial Las Pats 11 (Módulo 2)",
+            "nombre": "División Casa Patrimonial Las T's 11 (Módulo 2)",
             "coords": [[0.400956, -78.175176], [0.4008596, -78.1751492]],
             "color": "#27ae60",
             "desc": "Tabique transversal divisorio interior 2/3 en punto topográfico [0.4008529, -78.1751473]."
         },
         {
-            "nombre": "División Casa Patrimonial Las Pats 11 (Módulo 3)",
+            "nombre": "División Casa Patrimonial Las T's 11 (Módulo 3)",
             "coords": [[0.4009283, -78.1752755], [0.4008319, -78.1752487]],
             "color": "#27ae60",
             "desc": "Tabique transversal divisorio interior 3/3 en punto topográfico [0.4008274, -78.1752475]."
         },
         {
-            "nombre": "División Casa Patrimonial Las Pats 12 (Módulo 1)",
+            "nombre": "División Casa Patrimonial Las T's 12 (Módulo 1)",
             "coords": [[0.4007985, -78.1757194], [0.4007006, -78.175691]],
             "color": "#27ae60",
             "desc": "Tabique transversal divisorio interior 1/3 en punto topográfico [0.4007043, -78.1756921]."
         },
         {
-            "nombre": "División Casa Patrimonial Las Pats 12 (Módulo 2)",
+            "nombre": "División Casa Patrimonial Las T's 12 (Módulo 2)",
             "coords": [[0.4008287, -78.1756154], [0.4007308, -78.175587]],
             "color": "#27ae60",
             "desc": "Tabique transversal divisorio interior 2/3 en punto topográfico [0.4007292, -78.1755865]."
         },
         {
-            "nombre": "División Casa Patrimonial Las Pats 12 (Módulo 3)",
+            "nombre": "División Casa Patrimonial Las T's 12 (Módulo 3)",
             "coords": [[0.4008572, -78.175517], [0.4007593, -78.1754886]],
             "color": "#27ae60",
             "desc": "Tabique transversal divisorio interior 3/3 en punto topográfico [0.400757, -78.1754879]."
         },
         {
-            "nombre": "División Casa Patrimonial Las Pats 13",
+            "nombre": "División Casa Patrimonial Las T's 13",
             "coords": [[0.4008969, -78.175889], [0.400799, -78.1758622]],
             "color": "#27ae60",
             "desc": "Tabique transversal divisorio interior en punto topográfico [0.4008941, -78.1758882]."
