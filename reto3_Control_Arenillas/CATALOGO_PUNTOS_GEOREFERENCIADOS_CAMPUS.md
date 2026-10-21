@@ -59,7 +59,7 @@ Principal polo habitacional y deportivo de la universidad (~400 a 550 residentes
 | **R-02** | **Residencias Estudiantiles "Las Pats"** | Residencial Patrimonial | `0.402297` | `-78.173836` | **Crítico** (Humedad y sombra) | ~140 residentes |
 | **R-03** | **Residencias Estudiantiles "Las T's"** | Bloques Residenciales en T | `0.402950` | `-78.174200` | **Muy Alto** (Jardines sur) | ~100 residentes |
 | **R-04** | **Residencias de Docentes** | Villas Residenciales Docentes| `0.402150` | `-78.174500` | **Alto** (Arboledas bajas) | ~40 docentes |
-| **R-05** | **Concha Acústica Yachay Tech** | Cultural / Recreacional | `0.402350` | `-78.175500` | **Muy Alto** (Anfiteatro abierto)| ~350 asistentes |
+| **R-05** | **Concha Acústica Yachay Tech** | Cultural / Recreacional | `0.4018349` | `-78.1755181` | **Muy Alto** (Anfiteatro abierto)| ~350 asistentes |
 | **R-06** | **Canchas Deportivas (Fútbol / Múltiples)**| Deporte / Actividad Física | `0.402500` | `-78.171800` | **Muy Alto** (Junto a acequia)| ~120 deportistas/tarde |
 | **R-07** | **Parada (Arco de las Pats)** | Transporte / Parada de Bus | `0.402550` | `-78.172800` | **Alto** (Espera intemperie) | Flujo continuo |
 
@@ -616,6 +616,140 @@ Conjunto de 13 residencias estudiantiles patrimoniales (denominadas localmente c
 
 ---
 
+### 2.4. Zona 3: Sector Residencias "Las Multis" (Multifamiliares, Equipamiento y Recreación)
+
+Conjunto arquitectónico habitacional de densidad media compuesto por 10 bloques residenciales multifamiliares (Bloques 1 y 2 con tipología escalonada pareada de ~936–1,004 m², y Bloques 3 al 10 con tipología rectangular modular de ~411–528 m²), complementado por equipamientos clave como el edificio administrativo/técnico (~147.0 m²), la cancha deportiva comunitaria (~464.5 m²), locales comerciales interiores integrados (tienda/bazar de ~22.6 m²) y el anfiteatro de la Concha Acústica.
+
+* **Bloque Multifamiliar Las Multis 1 (`RECT-MULTI-01`):**
+  * *Tipo:* Residencia Estudiantil Multifamiliar (Escalonada) | *Zona:* Sector Las Multis
+  * *Superficie aproximada:* ~936.1 m² | *Centroide:* `[0.4021405, -78.1747410]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4023260, -78.1749139`
+    2. `0.4022030, -78.1745572`
+    3. `0.4018942, -78.1746752`
+    4. `0.4019311, -78.1747802`
+    5. `0.4021091, -78.1747272`
+    6. `0.4021936, -78.1749595`
+  * *Línea de División Medianera:* `[0.4021158, -78.1747490]` ➔ `[0.4022560, -78.1747041]` (Línea de partición medianera interior del Bloque Multifamiliar 1.)
+
+* **Bloque Multifamiliar Las Multis 2 (`RECT-MULTI-02`):**
+  * *Tipo:* Residencia Estudiantil Multifamiliar (Escalonada) | *Zona:* Sector Las Multis
+  * *Superficie aproximada:* ~1004.3 m² | *Centroide:* `[0.4018943, -78.1749032]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4018500, -78.1746799`
+    2. `0.4017048, -78.1747389`
+    3. `0.4018278, -78.1750879`
+    4. `0.4021453, -78.1749800`
+    5. `0.4021031, -78.1748657`
+    6. `0.4019385, -78.1749190`
+  * *Línea de Partición Transversal:* `[0.4019849, -78.1750345]` ➔ `[0.4019449, -78.1749169]` (Tabique transversal divisorio interior en el quiebre escalonado del Bloque Multifamiliar 2.)
+
+* **Bloque Multifamiliar Las Multis 3 (`RECT-MULTI-03`):**
+  * *Tipo:* Residencia Estudiantil Multifamiliar | *Zona:* Sector Las Multis
+  * *Superficie aproximada:* ~527.7 m² | *Centroide:* `[0.4025221, -78.1747377]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4023441, -78.1747352`
+    2. `0.4023891, -78.1748526`
+    3. `0.4026945, -78.1747476`
+    4. `0.4026539, -78.1746189`
+
+* **Bloque Multifamiliar Las Multis 4 (`RECT-MULTI-04`):**
+  * *Tipo:* Residencia Estudiantil Multifamiliar | *Zona:* Sector Las Multis
+  * *Superficie aproximada:* ~526.9 m² | *Centroide:* `[0.4026518, -78.1749874]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4024762, -78.1749807`
+    2. `0.4027840, -78.1748720`
+    3. `0.4028293, -78.1749937`
+    4. `0.4025165, -78.1751030`
+
+* **Bloque Multifamiliar Las Multis 5 (`RECT-MULTI-05`):**
+  * *Tipo:* Residencia Estudiantil Multifamiliar | *Zona:* Sector Las Multis
+  * *Superficie aproximada:* ~425.6 m² | *Centroide:* `[0.4025888, -78.1753410]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4027056, -78.1752355`
+    2. `0.4027461, -78.1753495`
+    3. `0.4024638, -78.1754443`
+    4. `0.4024323, -78.1753364`
+
+* **Bloque Multifamiliar Las Multis 6 (`RECT-MULTI-06`):**
+  * *Tipo:* Residencia Estudiantil Multifamiliar | *Zona:* Sector Las Multis
+  * *Superficie aproximada:* ~416.1 m² | *Centroide:* `[0.4022720, -78.1754980]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4023572, -78.1753669`
+    2. `0.4024229, -78.1754702`
+    3. `0.4021778, -78.1756271`
+    4. `0.4021209, -78.1755339`
+
+* **Bloque Multifamiliar Las Multis 7 (`RECT-MULTI-07`):**
+  * *Tipo:* Residencia Estudiantil Multifamiliar | *Zona:* Sector Las Multis
+  * *Superficie aproximada:* ~458.3 m² | *Centroide:* `[0.4020048, -78.1757324]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4019338, -78.1758794`
+    2. `0.4018517, -78.1757889`
+    3. `0.4020759, -78.1755855`
+    4. `0.4021580, -78.1756760`
+
+* **Bloque Multifamiliar Las Multis 8 (`RECT-MULTI-08`):**
+  * *Tipo:* Residencia Estudiantil Multifamiliar | *Zona:* Sector Las Multis
+  * *Superficie aproximada:* ~422.0 m² | *Centroide:* `[0.4017455, -78.1759762]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4018174, -78.1758313`
+    2. `0.4015988, -78.1760321`
+    3. `0.4016753, -78.1761176`
+    4. `0.4018888, -78.1759271`
+
+* **Bloque Multifamiliar Las Multis 9 (`RECT-MULTI-09`):**
+  * *Tipo:* Residencia Estudiantil Multifamiliar | *Zona:* Sector Las Multis
+  * *Superficie aproximada:* ~437.7 m² | *Centroide:* `[0.4014933, -78.1762310]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4016364, -78.1761706`
+    2. `0.4015532, -78.1760800`
+    3. `0.4013471, -78.1763006`
+    4. `0.4014339, -78.1763778`
+
+* **Bloque Multifamiliar Las Multis 10 (`RECT-MULTI-10`):**
+  * *Tipo:* Residencia Estudiantil Multifamiliar | *Zona:* Sector Las Multis
+  * *Superficie aproximada:* ~411.0 m² | *Centroide:* `[0.4012463, -78.1764998]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4013873, -78.1764358`
+    2. `0.4013031, -78.1763543`
+    3. `0.4011053, -78.1765685`
+    4. `0.4011861, -78.1766446`
+
+* **Edificio Técnico y de Servicios Las Multis (`RECT-MULTI-NORES`):**
+  * *Tipo:* Edificio de Servicios / Soporte Técnico | *Zona:* Sector Las Multis
+  * *Superficie aproximada:* ~147.0 m² | *Centroide:* `[0.4015424, -78.1750039]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4016072, -78.1750480`
+    2. `0.4015167, -78.1750779`
+    3. `0.4014777, -78.1749597`
+    4. `0.4015682, -78.1749298`
+
+* **Cancha Deportiva Las Multis (`RECT-MULTI-CANCHA`):**
+  * *Tipo:* Instalación Deportiva y Recreativa | *Zona:* Sector Las Multis
+  * *Superficie aproximada:* ~464.5 m² | *Centroide:* `[0.4024195, -78.1745256]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4025336, -78.1744405`
+    2. `0.4025305, -78.1746075`
+    3. `0.4023046, -78.1746098`
+    4. `0.4023086, -78.1744442`
+
+* **Tienda / Minimarket Las Multis (`RECT-MULTI-TIENDA`):**
+  * *Tipo:* Comercio Interior en Residencia | *Zona:* Sector Las Multis
+  * *Superficie aproximada:* ~22.6 m² | *Centroide:* `[0.4015734, -78.1753152]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4015656, -78.1752884`
+    2. `0.4015418, -78.1753156`
+    3. `0.4015767, -78.1753438`
+    4. `0.4016069, -78.1753119`
+
+* **Concha Acústica Yachay Tech (`R-05` / `LANDMARK-CONCHA`):**
+  * *Tipo:* Anfiteatro y Escenario Cultural al Aire Libre | *Zona:* Sector Las Multis
+  * *Coordenadas de Referencia Topográfica Exacta (WGS84):* `0.4018349, -78.1755181`
+  * *Descripción:* Escenario y graderíos para eventos estudiantiles, asambleas y actividades culturales universitarias.
+
+---
+
 ## 3. Red de Bio-Monitoreo Telemétrico Continuo (6 Estaciones GPS)
 
 Red de muestreo pasivo y activo equipada con trampas de silueta oscura, cebadas con emanación controlada de $\text{CO}_2$ biológico y ácido L-láctico para cuantificar la densidad de hembras hematófagas en vuelo.
@@ -785,7 +919,7 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
 
 ---
 
-## 8. Snippet GeoJSON Oficial Completo (107 Entidades: Hitos, Huellas, Canales, Reservorio y Líneas Divisorias)
+## 8. Snippet GeoJSON Oficial Completo (122 Entidades: Hitos, Huellas, Canales, Reservorio y Líneas Divisorias)
 
 ```json
 {
@@ -1209,8 +1343,8 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -78.1755,
-          0.40235
+          -78.1755181,
+          0.4018349
         ]
       }
     },
@@ -4255,6 +4389,614 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
           [
             -78.1758622,
             0.400799
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-MULTI-01",
+        "nombre": "Bloque Multifamiliar Las Multis 1",
+        "zona": "Sector Las Multis",
+        "categoria": "Residencia Estudiantil Multifamiliar (Escalonada)",
+        "area_m2": 936.1,
+        "centroide": [
+          -78.174741,
+          0.4021405
+        ],
+        "descripcion": "Bloque residencial multifamiliar escalonado con tabique de divisi\u00f3n interior."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.1749139,
+              0.402326
+            ],
+            [
+              -78.1745572,
+              0.402203
+            ],
+            [
+              -78.1746752,
+              0.4018942
+            ],
+            [
+              -78.1747802,
+              0.4019311
+            ],
+            [
+              -78.1747272,
+              0.4021091
+            ],
+            [
+              -78.1749595,
+              0.4021936
+            ],
+            [
+              -78.1749139,
+              0.402326
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-MULTI-02",
+        "nombre": "Bloque Multifamiliar Las Multis 2",
+        "zona": "Sector Las Multis",
+        "categoria": "Residencia Estudiantil Multifamiliar (Escalonada)",
+        "area_m2": 1004.3,
+        "centroide": [
+          -78.1749032,
+          0.4018943
+        ],
+        "descripcion": "Bloque residencial multifamiliar escalonado con partici\u00f3n divisoria interna."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.1746799,
+              0.40185
+            ],
+            [
+              -78.1747389,
+              0.4017048
+            ],
+            [
+              -78.1750879,
+              0.4018278
+            ],
+            [
+              -78.17498,
+              0.4021453
+            ],
+            [
+              -78.1748657,
+              0.4021031
+            ],
+            [
+              -78.174919,
+              0.4019385
+            ],
+            [
+              -78.1746799,
+              0.40185
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-MULTI-03",
+        "nombre": "Bloque Multifamiliar Las Multis 3",
+        "zona": "Sector Las Multis",
+        "categoria": "Residencia Estudiantil Multifamiliar",
+        "area_m2": 527.7,
+        "centroide": [
+          -78.1747377,
+          0.4025221
+        ],
+        "descripcion": "Bloque residencial multifamiliar en el cuadrante noreste de Las Multis."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.1747352,
+              0.4023441
+            ],
+            [
+              -78.1748526,
+              0.4023891
+            ],
+            [
+              -78.1747476,
+              0.4026945
+            ],
+            [
+              -78.1746189,
+              0.4026539
+            ],
+            [
+              -78.1747352,
+              0.4023441
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-MULTI-04",
+        "nombre": "Bloque Multifamiliar Las Multis 4",
+        "zona": "Sector Las Multis",
+        "categoria": "Residencia Estudiantil Multifamiliar",
+        "area_m2": 526.9,
+        "centroide": [
+          -78.1749874,
+          0.4026518
+        ],
+        "descripcion": "Bloque residencial multifamiliar en el cuadrante norte de Las Multis."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.1749807,
+              0.4024762
+            ],
+            [
+              -78.174872,
+              0.402784
+            ],
+            [
+              -78.1749937,
+              0.4028293
+            ],
+            [
+              -78.175103,
+              0.4025165
+            ],
+            [
+              -78.1749807,
+              0.4024762
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-MULTI-05",
+        "nombre": "Bloque Multifamiliar Las Multis 5",
+        "zona": "Sector Las Multis",
+        "categoria": "Residencia Estudiantil Multifamiliar",
+        "area_m2": 425.6,
+        "centroide": [
+          -78.175341,
+          0.4025888
+        ],
+        "descripcion": "Bloque residencial multifamiliar central en Las Multis."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.1752355,
+              0.4027056
+            ],
+            [
+              -78.1753495,
+              0.4027461
+            ],
+            [
+              -78.1754443,
+              0.4024638
+            ],
+            [
+              -78.1753364,
+              0.4024323
+            ],
+            [
+              -78.1752355,
+              0.4027056
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-MULTI-06",
+        "nombre": "Bloque Multifamiliar Las Multis 6",
+        "zona": "Sector Las Multis",
+        "categoria": "Residencia Estudiantil Multifamiliar",
+        "area_m2": 416.1,
+        "centroide": [
+          -78.175498,
+          0.402272
+        ],
+        "descripcion": "Bloque residencial multifamiliar orientado al suroeste."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.1753669,
+              0.4023572
+            ],
+            [
+              -78.1754702,
+              0.4024229
+            ],
+            [
+              -78.1756271,
+              0.4021778
+            ],
+            [
+              -78.1755339,
+              0.4021209
+            ],
+            [
+              -78.1753669,
+              0.4023572
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-MULTI-07",
+        "nombre": "Bloque Multifamiliar Las Multis 7",
+        "zona": "Sector Las Multis",
+        "categoria": "Residencia Estudiantil Multifamiliar",
+        "area_m2": 458.3,
+        "centroide": [
+          -78.1757324,
+          0.4020048
+        ],
+        "descripcion": "Bloque residencial multifamiliar en el sector suroeste de Las Multis."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.1758794,
+              0.4019338
+            ],
+            [
+              -78.1757889,
+              0.4018517
+            ],
+            [
+              -78.1755855,
+              0.4020759
+            ],
+            [
+              -78.175676,
+              0.402158
+            ],
+            [
+              -78.1758794,
+              0.4019338
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-MULTI-08",
+        "nombre": "Bloque Multifamiliar Las Multis 8",
+        "zona": "Sector Las Multis",
+        "categoria": "Residencia Estudiantil Multifamiliar",
+        "area_m2": 422.0,
+        "centroide": [
+          -78.1759762,
+          0.4017455
+        ],
+        "descripcion": "Bloque residencial multifamiliar en el sector suroeste de Las Multis."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.1758313,
+              0.4018174
+            ],
+            [
+              -78.1760321,
+              0.4015988
+            ],
+            [
+              -78.1761176,
+              0.4016753
+            ],
+            [
+              -78.1759271,
+              0.4018888
+            ],
+            [
+              -78.1758313,
+              0.4018174
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-MULTI-09",
+        "nombre": "Bloque Multifamiliar Las Multis 9",
+        "zona": "Sector Las Multis",
+        "categoria": "Residencia Estudiantil Multifamiliar",
+        "area_m2": 437.7,
+        "centroide": [
+          -78.176231,
+          0.4014933
+        ],
+        "descripcion": "Bloque residencial multifamiliar en el extremo sur de Las Multis."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.1761706,
+              0.4016364
+            ],
+            [
+              -78.17608,
+              0.4015532
+            ],
+            [
+              -78.1763006,
+              0.4013471
+            ],
+            [
+              -78.1763778,
+              0.4014339
+            ],
+            [
+              -78.1761706,
+              0.4016364
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-MULTI-10",
+        "nombre": "Bloque Multifamiliar Las Multis 10",
+        "zona": "Sector Las Multis",
+        "categoria": "Residencia Estudiantil Multifamiliar",
+        "area_m2": 411.0,
+        "centroide": [
+          -78.1764998,
+          0.4012463
+        ],
+        "descripcion": "Bloque residencial multifamiliar en el extremo sur de Las Multis."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.1764358,
+              0.4013873
+            ],
+            [
+              -78.1763543,
+              0.4013031
+            ],
+            [
+              -78.1765685,
+              0.4011053
+            ],
+            [
+              -78.1766446,
+              0.4011861
+            ],
+            [
+              -78.1764358,
+              0.4013873
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-MULTI-NORES",
+        "nombre": "Edificio T\u00e9cnico y de Servicios Las Multis",
+        "zona": "Sector Las Multis",
+        "categoria": "Edificio de Servicios / Soporte T\u00e9cnico",
+        "area_m2": 147.0,
+        "centroide": [
+          -78.1750039,
+          0.4015424
+        ],
+        "descripcion": "Edificaci\u00f3n no residencial de apoyo t\u00e9cnico y log\u00edstico en Las Multis."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.175048,
+              0.4016072
+            ],
+            [
+              -78.1750779,
+              0.4015167
+            ],
+            [
+              -78.1749597,
+              0.4014777
+            ],
+            [
+              -78.1749298,
+              0.4015682
+            ],
+            [
+              -78.175048,
+              0.4016072
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-MULTI-CANCHA",
+        "nombre": "Cancha Deportiva Las Multis",
+        "zona": "Sector Las Multis",
+        "categoria": "Instalaci\u00f3n Deportiva y Recreativa",
+        "area_m2": 464.5,
+        "centroide": [
+          -78.1745256,
+          0.4024195
+        ],
+        "descripcion": "Cancha deportiva multifuncional de uso estudiantil en Las Multis."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.1744405,
+              0.4025336
+            ],
+            [
+              -78.1746075,
+              0.4025305
+            ],
+            [
+              -78.1746098,
+              0.4023046
+            ],
+            [
+              -78.1744442,
+              0.4023086
+            ],
+            [
+              -78.1744405,
+              0.4025336
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-MULTI-TIENDA",
+        "nombre": "Tienda / Minimarket Las Multis",
+        "zona": "Sector Las Multis",
+        "categoria": "Comercio Interior en Residencia",
+        "area_m2": 22.6,
+        "centroide": [
+          -78.1753152,
+          0.4015734
+        ],
+        "descripcion": "Tienda y bazar de v\u00edveres que comparte la planta baja con el bloque residencial."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.1752884,
+              0.4015656
+            ],
+            [
+              -78.1753156,
+              0.4015418
+            ],
+            [
+              -78.1753438,
+              0.4015767
+            ],
+            [
+              -78.1753119,
+              0.4016069
+            ],
+            [
+              -78.1752884,
+              0.4015656
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LINE-DIV-MULTI-01",
+        "nombre": "Divisi\u00f3n Bloque Multifamiliar 1",
+        "zona": "Sector Las Multis",
+        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
+        "descripcion": "L\u00ednea de partici\u00f3n medianera interior del Bloque Multifamiliar 1."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.174749,
+            0.4021158
+          ],
+          [
+            -78.1747041,
+            0.402256
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LINE-DIV-MULTI-02",
+        "nombre": "Divisi\u00f3n Bloque Multifamiliar 2",
+        "zona": "Sector Las Multis",
+        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
+        "descripcion": "Tabique transversal divisorio interior en el quiebre escalonado del Bloque Multifamiliar 2."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.1750345,
+            0.4019849
+          ],
+          [
+            -78.1749169,
+            0.4019449
           ]
         ]
       }

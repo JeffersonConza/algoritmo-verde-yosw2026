@@ -282,7 +282,7 @@ def generar_mapa():
          "🏘️ Bloques Residenciales en T", "Módulos habitacionales estudiantiles con distribución de planta en forma de T."),
         ([0.402150, -78.174500], "Residencias de Docentes", "briefcase", "cadetblue",
          "🏠 Villas Docentes", "Conjunto de viviendas asignadas al cuerpo docente e investigadores residentes."),
-        ([0.402350, -78.175500], "Concha Acústica Yachay Tech", "music", "darkgreen",
+        ([0.4018349, -78.1755181], "Concha Acústica Yachay Tech", "music", "darkgreen",
          "🎭 Cultura y Eventos al Aire Libre", "Anfiteatro universitario al aire libre recuperado para conciertos y arte sin picaduras."),
         ([0.402500, -78.171800], "Canchas Deportivas (Fútbol / Múltiples)", "futbol-o", "blue",
          "⚽ Deporte y Actividad Física", "Canchas reglamentarias de césped y vóley junto a la acequia sur protegida."),
@@ -1013,6 +1013,175 @@ def generar_mapa():
             "is_perimeter": False,
             "desc": "Módulo residencial patrimonial tipo T (Casa T 13, extremo oeste). Sistema constructivo histórico restaurado con tabique divisorio interior."
         },
+        {
+            "id": "RECT-MULTI-01",
+            "nombre": "Bloque Multifamiliar Las Multis 1",
+            "tipo": "Residencia Estudiantil Multifamiliar (Escalonada)",
+            "zona": "Sector Las Multis",
+            "coords": [[0.402326, -78.1749139], [0.402203, -78.1745572], [0.4018942, -78.1746752], [0.4019311, -78.1747802], [0.4021091, -78.1747272], [0.4021936, -78.1749595]],
+            "centroid": [0.4021405, -78.174741],
+            "area": 936.1,
+            "color": "#16a085", "fill": "#1abc9c",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Bloque residencial multifamiliar escalonado con tabique de división interior."
+        },
+        {
+            "id": "RECT-MULTI-02",
+            "nombre": "Bloque Multifamiliar Las Multis 2",
+            "tipo": "Residencia Estudiantil Multifamiliar (Escalonada)",
+            "zona": "Sector Las Multis",
+            "coords": [[0.40185, -78.1746799], [0.4017048, -78.1747389], [0.4018278, -78.1750879], [0.4021453, -78.17498], [0.4021031, -78.1748657], [0.4019385, -78.174919]],
+            "centroid": [0.4018943, -78.1749032],
+            "area": 1004.3,
+            "color": "#16a085", "fill": "#1abc9c",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Bloque residencial multifamiliar escalonado con partición divisoria interna."
+        },
+        {
+            "id": "RECT-MULTI-03",
+            "nombre": "Bloque Multifamiliar Las Multis 3",
+            "tipo": "Residencia Estudiantil Multifamiliar",
+            "zona": "Sector Las Multis",
+            "coords": [[0.4023441, -78.1747352], [0.4023891, -78.1748526], [0.4026945, -78.1747476], [0.4026539, -78.1746189]],
+            "centroid": [0.4025221, -78.1747377],
+            "area": 527.7,
+            "color": "#16a085", "fill": "#1abc9c",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Bloque residencial multifamiliar en el cuadrante noreste de Las Multis."
+        },
+        {
+            "id": "RECT-MULTI-04",
+            "nombre": "Bloque Multifamiliar Las Multis 4",
+            "tipo": "Residencia Estudiantil Multifamiliar",
+            "zona": "Sector Las Multis",
+            "coords": [[0.4024762, -78.1749807], [0.402784, -78.174872], [0.4028293, -78.1749937], [0.4025165, -78.175103]],
+            "centroid": [0.4026518, -78.1749874],
+            "area": 526.9,
+            "color": "#16a085", "fill": "#1abc9c",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Bloque residencial multifamiliar en el cuadrante norte de Las Multis."
+        },
+        {
+            "id": "RECT-MULTI-05",
+            "nombre": "Bloque Multifamiliar Las Multis 5",
+            "tipo": "Residencia Estudiantil Multifamiliar",
+            "zona": "Sector Las Multis",
+            "coords": [[0.4027056, -78.1752355], [0.4027461, -78.1753495], [0.4024638, -78.1754443], [0.4024323, -78.1753364]],
+            "centroid": [0.4025888, -78.175341],
+            "area": 425.6,
+            "color": "#16a085", "fill": "#1abc9c",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Bloque residencial multifamiliar central en Las Multis."
+        },
+        {
+            "id": "RECT-MULTI-06",
+            "nombre": "Bloque Multifamiliar Las Multis 6",
+            "tipo": "Residencia Estudiantil Multifamiliar",
+            "zona": "Sector Las Multis",
+            "coords": [[0.4023572, -78.1753669], [0.4024229, -78.1754702], [0.4021778, -78.1756271], [0.4021209, -78.1755339]],
+            "centroid": [0.402272, -78.175498],
+            "area": 416.1,
+            "color": "#16a085", "fill": "#1abc9c",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Bloque residencial multifamiliar orientado al suroeste."
+        },
+        {
+            "id": "RECT-MULTI-07",
+            "nombre": "Bloque Multifamiliar Las Multis 7",
+            "tipo": "Residencia Estudiantil Multifamiliar",
+            "zona": "Sector Las Multis",
+            "coords": [[0.4019338, -78.1758794], [0.4018517, -78.1757889], [0.4020759, -78.1755855], [0.402158, -78.175676]],
+            "centroid": [0.4020048, -78.1757324],
+            "area": 458.3,
+            "color": "#16a085", "fill": "#1abc9c",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Bloque residencial multifamiliar en el sector suroeste de Las Multis."
+        },
+        {
+            "id": "RECT-MULTI-08",
+            "nombre": "Bloque Multifamiliar Las Multis 8",
+            "tipo": "Residencia Estudiantil Multifamiliar",
+            "zona": "Sector Las Multis",
+            "coords": [[0.4018174, -78.1758313], [0.4015988, -78.1760321], [0.4016753, -78.1761176], [0.4018888, -78.1759271]],
+            "centroid": [0.4017455, -78.1759762],
+            "area": 422.0,
+            "color": "#16a085", "fill": "#1abc9c",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Bloque residencial multifamiliar en el sector suroeste de Las Multis."
+        },
+        {
+            "id": "RECT-MULTI-09",
+            "nombre": "Bloque Multifamiliar Las Multis 9",
+            "tipo": "Residencia Estudiantil Multifamiliar",
+            "zona": "Sector Las Multis",
+            "coords": [[0.4016364, -78.1761706], [0.4015532, -78.17608], [0.4013471, -78.1763006], [0.4014339, -78.1763778]],
+            "centroid": [0.4014933, -78.176231],
+            "area": 437.7,
+            "color": "#16a085", "fill": "#1abc9c",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Bloque residencial multifamiliar en el extremo sur de Las Multis."
+        },
+        {
+            "id": "RECT-MULTI-10",
+            "nombre": "Bloque Multifamiliar Las Multis 10",
+            "tipo": "Residencia Estudiantil Multifamiliar",
+            "zona": "Sector Las Multis",
+            "coords": [[0.4013873, -78.1764358], [0.4013031, -78.1763543], [0.4011053, -78.1765685], [0.4011861, -78.1766446]],
+            "centroid": [0.4012463, -78.1764998],
+            "area": 411.0,
+            "color": "#16a085", "fill": "#1abc9c",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Bloque residencial multifamiliar en el extremo sur de Las Multis."
+        },
+        {
+            "id": "RECT-MULTI-NORES",
+            "nombre": "Edificio Técnico y de Servicios Las Multis",
+            "tipo": "Edificio de Servicios / Soporte Técnico",
+            "zona": "Sector Las Multis",
+            "coords": [[0.4016072, -78.175048], [0.4015167, -78.1750779], [0.4014777, -78.1749597], [0.4015682, -78.1749298]],
+            "centroid": [0.4015424, -78.1750039],
+            "area": 147.0,
+            "color": "#7f8c8d", "fill": "#bdc3c7",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Edificación no residencial de apoyo técnico y logístico en Las Multis."
+        },
+        {
+            "id": "RECT-MULTI-CANCHA",
+            "nombre": "Cancha Deportiva Las Multis",
+            "tipo": "Instalación Deportiva y Recreativa",
+            "zona": "Sector Las Multis",
+            "coords": [[0.4025336, -78.1744405], [0.4025305, -78.1746075], [0.4023046, -78.1746098], [0.4023086, -78.1744442]],
+            "centroid": [0.4024195, -78.1745256],
+            "area": 464.5,
+            "color": "#27ae60", "fill": "#2ecc71",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Cancha deportiva multifuncional de uso estudiantil en Las Multis."
+        },
+        {
+            "id": "RECT-MULTI-TIENDA",
+            "nombre": "Tienda / Minimarket Las Multis",
+            "tipo": "Comercio Interior en Residencia",
+            "zona": "Sector Las Multis",
+            "coords": [[0.4015656, -78.1752884], [0.4015418, -78.1753156], [0.4015767, -78.1753438], [0.4016069, -78.1753119]],
+            "centroid": [0.4015734, -78.1753152],
+            "area": 22.6,
+            "color": "#d35400", "fill": "#e67e22",
+            "interior": True,
+            "is_perimeter": False,
+            "desc": "Tienda y bazar de víveres que comparte la planta baja con el bloque residencial."
+        },
     ]
 
     for h in huellas_arquitectonicas:
@@ -1166,6 +1335,18 @@ def generar_mapa():
             "coords": [[0.4008969, -78.175889], [0.400799, -78.1758622]],
             "color": "#27ae60",
             "desc": "Tabique transversal divisorio interior en punto topográfico [0.4008941, -78.1758882]."
+        },
+        {
+            "nombre": "División Bloque Multifamiliar 1",
+            "coords": [[0.4021158, -78.174749], [0.402256, -78.1747041]],
+            "color": "#16a085",
+            "desc": "Línea de partición medianera interior del Bloque Multifamiliar 1."
+        },
+        {
+            "nombre": "División Bloque Multifamiliar 2",
+            "coords": [[0.4019849, -78.1750345], [0.4019449, -78.1749169]],
+            "color": "#16a085",
+            "desc": "Tabique transversal divisorio interior en el quiebre escalonado del Bloque Multifamiliar 2."
         },
     ]
     for ld in lineas_divisorias:
