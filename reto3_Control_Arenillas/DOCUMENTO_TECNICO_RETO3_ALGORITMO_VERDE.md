@@ -273,5 +273,5 @@ El costo unitario optimizado de la cerca multiestrato con riego gravitacional es
    Módulo `api_telemetria.py` desplegable con documentación interactiva Swagger (`/docs`).
 4. **Código QR para Escaneo en Celular:**  
    Disponible en el archivo `reto3_Control_Arenillas/qr_algoritmo_verde.png`.
-5. **Catálogo Georreferenciado Oficial de Infraestructura y Red Hídrica (28 Hitos, 41 Huellas Arquitectónicas, 2 Líneas Divisorias, 6 Estaciones GPS y GeoJSON SIG de 71 Entidades):**  
+5. **Catálogo Georreferenciado Oficial de Infraestructura y Red Hídrica (29 Hitos, 42 Huellas/Cuerpos de Agua, 4 Canales/Líneas, 6 Estaciones GPS y GeoJSON SIG de 75 Entidades):**  
    Disponible en el archivo `reto3_Control_Arenillas/CATALOGO_PUNTOS_GEOREFERENCIADOS_CAMPUS.md`.

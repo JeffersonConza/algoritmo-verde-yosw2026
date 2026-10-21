@@ -908,8 +908,9 @@ def generar_mapa():
         ).add_to(fg_edificios)
 
     # -------------------------------------------------------------
-    # 5. CANALES HÍDRICOS (CONVIVENCIA ECOLÓGICA)
+    # 5. RECURSOS HÍDRICOS (CANALES LÓTICOS Y RESERVORIO LÉNTICO)
     # -------------------------------------------------------------
+    # 5.1. Canal de Riego Principal (Eje Central Norte-Sur)
     canal_coords = [
         [0.4085, -78.1690],
         [0.4072, -78.1705],
@@ -932,9 +933,10 @@ def generar_mapa():
                 </p>
             </div>
         """, max_width=270),
-        tooltip="💧 Canal de Riego: Hábitat Hídrico (Intervención Limpia)"
+        tooltip="💧 Canal de Riego Principal: Hábitat Hídrico (Intervención Limpia)"
     ).add_to(fg_canales)
 
+    # 5.2. Acequia Secundaria Ingenio
     acequia_ingenio = [
         [0.4056, -78.1738],
         [0.4050, -78.1732],
@@ -954,6 +956,81 @@ def generar_mapa():
             </div>
         """, max_width=260),
         tooltip="💧 Acequia Secundaria Ingenio"
+    ).add_to(fg_canales)
+
+    # 5.3. Canal de Agua Suroeste (Sector Concha Acústica / Multifamiliares)
+    canal_suroeste = [[0.4009199, -78.1764438], [0.4012991, -78.1753884]]
+    folium.PolyLine(
+        locations=canal_suroeste,
+        color="#00cec9",
+        weight=3.5,
+        dash_array='6, 6',
+        popup=folium.Popup("""
+            <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 250px;">
+                <h4 style="color: #00cec9; margin: 0 0 4px 0;">💧 Canal de Agua Suroeste</h4>
+                <span style="background: #e0f2fe; color: #0369a1; padding: 2px 6px; border-radius: 4px; font-size: 10px; font-weight: 600;">Sector Concha Acústica</span>
+                <p style="font-size: 11.5px; color: #34495e; margin: 6px 0 0 0;">
+                    Flujo hídrico lotiforme de ~124.5 m que discurre en el flanco sur de las Residencias. Blindado perimetralmente por la Cerca Viva 1.
+                </p>
+            </div>
+        """, max_width=270),
+        tooltip="💧 Canal de Agua Suroeste (~124.5 m)"
+    ).add_to(fg_canales)
+
+    # 5.4. Canal de Agua Este (Conducción hacia el Reservorio - Curva Suavizada con Spline)
+    canal_este_suave = [[0.4031239, -78.1710613], [0.4031345, -78.1710336], [0.4031415, -78.1710066], [0.4031453, -78.1709803], [0.4031461, -78.1709544], [0.4031443, -78.1709291], [0.4031404, -78.1709042], [0.4031346, -78.1708796], [0.4031274, -78.1708553], [0.4031191, -78.1708313], [0.40311, -78.1708074], [0.4031005, -78.1707835], [0.4030911, -78.1707597], [0.4030819, -78.1707358], [0.4030735, -78.1707118], [0.4030662, -78.1706876], [0.4030603, -78.1706631], [0.4030562, -78.1706384], [0.4030542, -78.1706132], [0.4030561, -78.1705883], [0.4030651, -78.1705655], [0.4030722, -78.1705446], [0.4030673, -78.170524], [0.403056, -78.1705028], [0.403046, -78.1704801], [0.4030425, -78.1704557], [0.4030443, -78.1704304], [0.4030493, -78.1704049], [0.403056, -78.17038], [0.4030641, -78.1703555], [0.4030732, -78.1703315], [0.4030829, -78.170308], [0.403093, -78.1702848], [0.4031031, -78.170262], [0.4031132, -78.1702393], [0.4031233, -78.1702167], [0.4031335, -78.170194], [0.4031439, -78.1701709], [0.4031545, -78.1701475], [0.4031655, -78.1701238], [0.4031774, -78.1701007], [0.4031908, -78.1700788], [0.4032061, -78.1700587], [0.4032229, -78.1700403], [0.4032413, -78.1700233], [0.4032608, -78.1700074], [0.4032813, -78.1699924], [0.4033024, -78.1699782], [0.403324, -78.1699643], [0.4033458, -78.1699506], [0.4033675, -78.1699367], [0.4033889, -78.1699226], [0.4034097, -78.1699078], [0.4034299, -78.1698923], [0.4034495, -78.1698762], [0.4034686, -78.1698595], [0.4034871, -78.1698422], [0.4035051, -78.1698244], [0.4035226, -78.1698061], [0.4035397, -78.1697874], [0.4035564, -78.1697683], [0.4035728, -78.1697489], [0.4035889, -78.1697291], [0.4036046, -78.1697091], [0.4036201, -78.1696889], [0.4036354, -78.1696684], [0.4036505, -78.1696477], [0.4036653, -78.1696269], [0.4036801, -78.1696059], [0.4036947, -78.1695849], [0.4037092, -78.1695638], [0.4037236, -78.1695427], [0.4037381, -78.1695215], [0.4037524, -78.1695004], [0.4037669, -78.1694794], [0.4037813, -78.1694584], [0.4037959, -78.1694376], [0.4038105, -78.1694169], [0.4038253, -78.1693964], [0.4038402, -78.169376], [0.4038553, -78.1693558], [0.4038707, -78.1693357], [0.4038864, -78.1693158], [0.4039023, -78.169296], [0.4039186, -78.1692763], [0.4039353, -78.1692567], [0.4039524, -78.1692372], [0.40397, -78.1692178], [0.403988, -78.1691986], [0.4040063, -78.1691793], [0.404024, -78.1691597], [0.4040401, -78.1691396], [0.4040539, -78.1691185], [0.4040645, -78.1690961], [0.4040711, -78.1690724], [0.404075, -78.1690475], [0.404078, -78.1690221], [0.4040821, -78.1689968], [0.4040891, -78.1689721], [0.4041008, -78.1689487]]
+    folium.PolyLine(
+        locations=canal_este_suave,
+        color="#0abde3",
+        weight=3.5,
+        dash_array='4, 4',
+        popup=folium.Popup("""
+            <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 260px;">
+                <h4 style="color: #0abde3; margin: 0 0 4px 0;">💧 Canal de Agua Este (Hacia Reservorio)</h4>
+                <span style="background: #e0f2fe; color: #0369a1; padding: 2px 6px; border-radius: 4px; font-size: 10px; font-weight: 600;">Conducción Hidráulica ~280.6 m</span>
+                <p style="font-size: 11.5px; color: #34495e; margin: 6px 0 0 0;">
+                    Canal sinuoso de 34 vértices topográficos modelado con interpolación spline continua. Transporta caudal gravitacional hacia el reservorio agroforestal.
+                </p>
+            </div>
+        """, max_width=280),
+        tooltip="💧 Canal de Agua Este: Conducción a Reservorio (~280.6 m)"
+    ).add_to(fg_canales)
+
+    # 5.5. Laguna Artificial de Agua o Reservorio (Cuerpo Léntico)
+    laguna_coords = [[0.4043551, -78.1682684], [0.4043551, -78.1681642], [0.4042595, -78.1681065], [0.4041402, -78.1681031], [0.4040329, -78.1681142], [0.4039035, -78.1681725], [0.4039088, -78.1682983], [0.4039638, -78.1685078], [0.4040483, -78.168541], [0.4040812, -78.1685544], [0.4040684, -78.1685806], [0.4040919, -78.1686181], [0.4041271, -78.1685953], [0.4041489, -78.1685705], [0.4041596, -78.1685403], [0.4042129, -78.1685363]]
+    folium.Polygon(
+        locations=laguna_coords,
+        color="#0984e3",
+        weight=2.5,
+        fill=True,
+        fill_color="#00cec9",
+        fill_opacity=0.62,
+        popup=folium.Popup("""
+            <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 270px; line-height: 1.4;">
+                <div style="color: #0984e3; font-weight: bold; font-size: 14px; margin-bottom: 3px;">🌊 Laguna Artificial / Reservorio de Agua</div>
+                <span style="background: #e0f2fe; color: #0369a1; padding: 2px 7px; border-radius: 4px; font-size: 10.5px; font-weight: 600;">Cuerpo Léntico · ~2,006.2 m² de Espejo de Agua</span>
+                <p style="margin: 8px 0 6px 0; font-size: 11.5px; color: #2c3e50;">
+                    <b>Ecosistema Libre de Arenillas:</b> Las hembras de <i>Simulium</i> spp. no ovipositan en aguas estancadas/lénticas. Este reservorio actúa como santuario y vivero natural de <b>libélulas y caballitos del diablo (Odonata)</b>, principales depredadores biológicos de los simúlidos en vuelo.
+                </p>
+                <div style="font-size: 10px; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 4px;">
+                    📍 Centroide GPS: 0.404121, -78.168316 | Polígono de 16 vértices
+                </div>
+            </div>
+        """, max_width=290),
+        tooltip="🌊 Laguna Artificial / Reservorio de Agua (~2,006 m² - Refugio de Odonatos)"
+    ).add_to(fg_canales)
+
+    # Marcador en el centro de la Laguna
+    folium.Marker(
+        location=[0.404122, -78.1683157],
+        icon=folium.Icon(icon='tint', prefix='fa', color='darkblue'),
+        popup=folium.Popup("""
+            <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 230px;">
+                <b style="color: #0984e3;">💧 Reservorio Central</b><br>
+                <span style="font-size: 11px; color: #57606f;">Espejo de agua artificial de ~2,006 m² para fomento de fauna depredadora nativa.</span>
+            </div>
+        """, max_width=250),
+        tooltip="💧 Centroide: Laguna y Reservorio de Agua"
     ).add_to(fg_canales)
 
     # -------------------------------------------------------------

@@ -14,7 +14,7 @@
 
 ## 1. Zonas Principales de la Universidad e Hitos de Vida en el Campus
 
-La infraestructura del campus de la Universidad Yachay Tech se articula en **tres zonas neurálgicas principales**, cada una con dinámicas académicas, residenciales y de exposición diferencial a la plaga de simúlidos:
+La infraestructura del campus de la Universidad Yachay Tech se articula en **tres zonas neurálgicas principales**, cada una con dinámicas académicas, residenciales, hídricas y de exposición diferencial a la plaga de simúlidos:
 
 ### 1.1. Zona 1: Sector Senescyt (Académica, Residencias Los Bloques y Salud)
 Polo académico norte y residencial estudiantil modular, con una población habitual de ~450 a 650 personas:
@@ -28,7 +28,7 @@ Polo académico norte y residencial estudiantil modular, con una población habi
 | **S-05** | **Minimarket Krispan** | Cafetería / Abastecimiento | `0.406501` | `-78.170395` | **Medio-Alto** (Interior Sen.) | ~150 clientes/día |
 | **S-06** | **Comedor Sol del Ecuador** | Restaurante Universitario | `0.407063` | `-78.169911` | **Medio-Alto** (Interior Sen.) | ~220 comensales/día |
 
-### 1.2. Zona 2: Sector Ingenio Azucarero (Patrimonial, Docencia y Plazas)
+### 1.2. Zona 2: Sector Ingenio Azucarero (Patrimonial, Docencia, Plazas y Recursos Hídricos)
 Antiguo complejo histórico de la Hacienda San José, epicentro de la vida cultural, científica y gastronómica (~400 a 600 usuarios diarios):
 
 | ID | Nombre del Hito / Espacio | Categoría de Uso | Latitud (WGS84) | Longitud (WGS84) | Nivel de Riesgo Basal | Población / Aforo |
@@ -48,6 +48,7 @@ Antiguo complejo histórico de la Hacienda San José, epicentro de la vida cultu
 | **I-13** | **Sitio de Fogata (Plaza Mikuna)** | Espacio de Encuentro | `0.404419` | `-78.173849` | **Alto** (Espacio abierto) | Fines de semestre |
 | **I-14** | **Laboratorios de Carrera (Ingenierías)** | Laboratorios Especiales | `0.403800` | `-78.172660` | **Muy Alto** (Frente a canal) | ~180 investigadores |
 | **I-15** | **Invernaderos Experimentales (1-4)** | Biotecnología / Agropecuaria| `0.404200` | `-78.173150` | **Muy Alto** (Humedad controlada)| ~60 investigadores |
+| **H-01** | **Laguna Artificial / Reservorio de Agua** | Recurso Hídrico / Biocontrol | `0.404121` | `-78.168316` | **Nulo / Protector** (Léntico / Odonatos)| ~2,006 m² espejo de agua |
 
 ### 1.3. Zona 3: Sector Residencias "Las Pats" y "Multifamiliares" (Sur)
 Principal polo habitacional y deportivo de la universidad (~400 a 550 residentes):
@@ -515,12 +516,12 @@ Las cercas vivas fueron calibradas mediante optimización espacial no lineal (al
 
 ---
 
-## 6. Trazado de la Red Hídrica y Acequias (Focos Lóticos de Proliferación)
+## 6. Trazado de Recursos Hídricos (Canales Lóticos y Reservorio Léntico)
 
-Canales abiertos de agua de corriente rápida y oxigenada donde se anclan las larvas y pupas de *Simulium* spp. mediante abanicos cefálicos y discos adhesivos.
+El sistema hidrológico del campus combina **canales de agua corriente rápida (lóticos)** donde se fijan las larvas de *Simulium* spp., y **cuerpos de agua lénticos (lagunas y reservorios)** que actúan como hábitats libres de la plaga y refugios de macroinvertebrados depredadores.
 
-### Canal de Riego Principal (Eje Transversal Norte-Sur)
-* **Pendiente Topográfica:** Desciende de 1,950 m a 1,885 m s.n.m. (flujo gravitacional continuo).
+### 6.1. Canal de Riego Principal (Eje Transversal Norte-Sur)
+* **Longitud y Pendiente:** Desciende de 1,950 m a 1,885 m s.n.m. en flujo continuo (~850 m de recorrido).
 * **Vértices de Recorrido:**
   1. `0.408500° N, -78.169000° W` — *Ingreso Norte al Campus desde cota alta.*
   2. `0.407200° N, -78.170500° W` — *Flujo lateral frente al Edificio Senescyt.*
@@ -529,11 +530,79 @@ Canales abiertos de agua de corriente rápida y oxigenada donde se anclan las la
   5. `0.403500° N, -78.172500° W` — *Cruce perimetral junto a Canchas Deportivas.*
   6. `0.401500° N, -78.172800° W` — *Salida sur hacia agricultura de San José de Urcuquí.*
 
-### Canal Secundario de Desvío Patrimonial (Ingenio Azucarero)
+### 6.2. Canal Secundario de Desvío Patrimonial (Ingenio Azucarero)
 * **Vértices de Recorrido:**
   1. `0.405600° N, -78.173800° W` — *Bifurcación detrás de la Chimenea Histórica.*
   2. `0.405000° N, -78.173200° W` — *Acequia patrimonial empedrada.*
   3. `0.404500° N, -78.172800° W` — *Reincorporación al canal principal.*
+
+### 6.3. Canal de Agua Suroeste (Sector Concha Acústica / Multifamiliares)
+* **Longitud Lineal:** **~124.5 metros**
+* **Vértices Topográficos:**
+  1. `0.4009199, -78.1764438` — *Extremo suroeste exterior.*
+  2. `0.4012991, -78.1753884` — *Conducción hacia el área de la Concha Acústica.*
+
+### 6.4. Canal de Agua Este (Conducción hacia el Reservorio)
+* **Longitud Lineal:** **~280.6 metros**
+* **Descripción:** Traza hidráulica sinuosa de 34 vértices topográficos modelada con curva spline continua. Conduce caudal gravitacional hacia la laguna artificial:
+* **Vértices Topográficos (34 Puntos):**
+  1. `0.4031240, -78.1710613`
+  2. `0.4031186, -78.1708376`
+  3. `0.4031018, -78.1707763`
+  4. `0.4030834, -78.1707354`
+  5. `0.4030630, -78.1706915`
+  6. `0.4030583, -78.1706194`
+  7. `0.4030512, -78.1705781`
+  8. `0.4030764, -78.1705517`
+  9. `0.4030700, -78.1705198`
+  10. `0.4030418, -78.1704859`
+  11. `0.4030428, -78.1704541`
+  12. `0.4030526, -78.1704125`
+  13. `0.4030626, -78.1703478`
+  14. `0.4030945, -78.1702814`
+  15. `0.4031364, -78.1702016`
+  16. `0.4031434, -78.1701560`
+  17. `0.4031649, -78.1701269`
+  18. `0.4031914, -78.1700806`
+  19. `0.4032437, -78.1700253`
+  20. `0.4032775, -78.1699897`
+  21. `0.4033355, -78.1699559`
+  22. `0.4033992, -78.1699193`
+  23. `0.4034358, -78.1698828`
+  24. `0.4034780, -78.1698503`
+  25. `0.4035283, -78.1698037`
+  26. `0.4035648, -78.1697641`
+  27. `0.4036433, -78.1696551`
+  28. `0.4037057, -78.1695582`
+  29. `0.4037570, -78.1694912`
+  30. `0.4038066, -78.1694345`
+  31. `0.4039819, -78.1692012`
+  32. `0.4040671, -78.1690939`
+  33. `0.4040768, -78.1690268`
+  34. `0.4041009, -78.1689487`
+
+### 6.5. Laguna Artificial de Agua o Reservorio
+* **Tipología Ecológica:** Cuerpo de agua léntico artificial (embalse de agua dulce).
+* **Superficie de Espejo de Agua:** **~2006.2 m²** (~0.20 hectáreas).
+* **Centroide Geográfico:** Latitud `0.4041220° N`, Longitud `-78.1683157° W`
+* **Dinámica frente a Simúlidos:** Las arenillas (*Simulium* spp.) no colonizan este reservorio porque sus larvas requieren aguas con corriente rápida y oxigenación lótica obligatoria. El reservorio actúa como un **santuario y vivero natural de libélulas y caballitos del diablo (*Odonata*)**, cuyos estadios inmaduros y adultos son depredadores activos de la plaga.
+* **Vértices Perimetrales (16 Vértices):**
+  1. `0.4043551, -78.1682684`
+  2. `0.4043551, -78.1681642`
+  3. `0.4042595, -78.1681065`
+  4. `0.4041402, -78.1681031`
+  5. `0.4040329, -78.1681142`
+  6. `0.4039035, -78.1681725`
+  7. `0.4039088, -78.1682983`
+  8. `0.4039638, -78.1685078`
+  9. `0.4040483, -78.1685410`
+  10. `0.4040812, -78.1685544`
+  11. `0.4040684, -78.1685806`
+  12. `0.4040919, -78.1686181`
+  13. `0.4041271, -78.1685953`
+  14. `0.4041489, -78.1685705`
+  15. `0.4041596, -78.1685403`
+  16. `0.4042129, -78.1685363`
 
 ---
 
@@ -555,12 +624,12 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
 
 ---
 
-## 8. Snippet GeoJSON Oficial Completo (71 Entidades: Hitos, Huellas y Locales)
+## 8. Snippet GeoJSON Oficial Completo (75 Entidades: Hitos, Huellas, Canales y Reservorio)
 
 ```json
 {
   "type": "FeatureCollection",
-  "name": "Infraestructura_Georreferenciada_YachayTech_Reto3",
+  "name": "Infraestructura_y_Recursos_Hidricos_YachayTech_Reto3",
   "crs": {
     "type": "name",
     "properties": {
@@ -1013,6 +1082,22 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
         "coordinates": [
           -78.1728,
           0.40255
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "H-01",
+        "nombre": "Laguna Artificial / Reservorio",
+        "zona": "Ingenio Azucarero",
+        "categoria": "Cuerpo de Agua L\u00e9ntico / Biocontrol"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.168316,
+          0.404121
         ]
       }
     },
@@ -2710,6 +2795,93 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
     {
       "type": "Feature",
       "properties": {
+        "id": "POLY-RESERVORIO",
+        "nombre": "Laguna Artificial / Reservorio de Agua",
+        "tipo": "Cuerpo de Agua L\u00e9ntico (Embalse)",
+        "zona": "Ingenio Azucarero",
+        "area_m2": 2006.2,
+        "interior": false,
+        "is_perimeter": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.1682684,
+              0.4043551
+            ],
+            [
+              -78.1681642,
+              0.4043551
+            ],
+            [
+              -78.1681065,
+              0.4042595
+            ],
+            [
+              -78.1681031,
+              0.4041402
+            ],
+            [
+              -78.1681142,
+              0.4040329
+            ],
+            [
+              -78.1681725,
+              0.4039035
+            ],
+            [
+              -78.1682983,
+              0.4039088
+            ],
+            [
+              -78.1685078,
+              0.4039638
+            ],
+            [
+              -78.168541,
+              0.4040483
+            ],
+            [
+              -78.1685544,
+              0.4040812
+            ],
+            [
+              -78.1685806,
+              0.4040684
+            ],
+            [
+              -78.1686181,
+              0.4040919
+            ],
+            [
+              -78.1685953,
+              0.4041271
+            ],
+            [
+              -78.1685705,
+              0.4041489
+            ],
+            [
+              -78.1685403,
+              0.4041596
+            ],
+            [
+              -78.1685363,
+              0.4042129
+            ],
+            [
+              -78.1682684,
+              0.4043551
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "id": "LINE-DIV-FG",
         "nombre": "Divisi\u00f3n Bloques F y G",
         "zona": "Senescyt",
@@ -2747,6 +2919,178 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
           [
             -78.1742367,
             0.4051054
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LINE-CANAL-SO",
+        "nombre": "Canal de Agua Suroeste",
+        "zona": "Las Pats y Multis",
+        "descripcion": "Tramo lotiforme suroeste junto a Concha Ac\u00fastica y Multifamiliares (~124.5 m)"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.1764438,
+            0.4009199
+          ],
+          [
+            -78.1753884,
+            0.4012991
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LINE-CANAL-ESTE",
+        "nombre": "Canal de Agua Este (Conducci\u00f3n hacia Reservorio)",
+        "zona": "Ingenio Azucarero",
+        "descripcion": "Canal topogr\u00e1fico sinuoso de 34 v\u00e9rtices que conduce agua al reservorio (~280.6 m)"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.1710613,
+            0.403124
+          ],
+          [
+            -78.1708376,
+            0.4031186
+          ],
+          [
+            -78.1707763,
+            0.4031018
+          ],
+          [
+            -78.1707354,
+            0.4030834
+          ],
+          [
+            -78.1706915,
+            0.403063
+          ],
+          [
+            -78.1706194,
+            0.4030583
+          ],
+          [
+            -78.1705781,
+            0.4030512
+          ],
+          [
+            -78.1705517,
+            0.4030764
+          ],
+          [
+            -78.1705198,
+            0.40307
+          ],
+          [
+            -78.1704859,
+            0.4030418
+          ],
+          [
+            -78.1704541,
+            0.4030428
+          ],
+          [
+            -78.1704125,
+            0.4030526
+          ],
+          [
+            -78.1703478,
+            0.4030626
+          ],
+          [
+            -78.1702814,
+            0.4030945
+          ],
+          [
+            -78.1702016,
+            0.4031364
+          ],
+          [
+            -78.170156,
+            0.4031434
+          ],
+          [
+            -78.1701269,
+            0.4031649
+          ],
+          [
+            -78.1700806,
+            0.4031914
+          ],
+          [
+            -78.1700253,
+            0.4032437
+          ],
+          [
+            -78.1699897,
+            0.4032775
+          ],
+          [
+            -78.1699559,
+            0.4033355
+          ],
+          [
+            -78.1699193,
+            0.4033992
+          ],
+          [
+            -78.1698828,
+            0.4034358
+          ],
+          [
+            -78.1698503,
+            0.403478
+          ],
+          [
+            -78.1698037,
+            0.4035283
+          ],
+          [
+            -78.1697641,
+            0.4035648
+          ],
+          [
+            -78.1696551,
+            0.4036433
+          ],
+          [
+            -78.1695582,
+            0.4037057
+          ],
+          [
+            -78.1694912,
+            0.403757
+          ],
+          [
+            -78.1694345,
+            0.4038066
+          ],
+          [
+            -78.1692012,
+            0.4039819
+          ],
+          [
+            -78.1690939,
+            0.4040671
+          ],
+          [
+            -78.1690268,
+            0.4040768
+          ],
+          [
+            -78.1689487,
+            0.4041009
           ]
         ]
       }
