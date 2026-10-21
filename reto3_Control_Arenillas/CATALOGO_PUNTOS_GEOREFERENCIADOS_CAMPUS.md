@@ -20,7 +20,7 @@ Este inventario comprende las edificaciones residenciales, académicas, de inves
 | :---: | :--- | :--- | :---: | :---: | :---: | :---: | :---: |
 | **H-01** | **Edificio Senescyt (Aulas / Decanatos)** | Académica / Administrativa | `0.406691` | `-78.170214` | Zona 3 (Norte) | **Crítico** (Acequia a 35m) | ~450 estudiantes y docentes |
 | **H-02** | **Residencias "Los Bloques"** | Residencial Estudiantil | `0.406950` | `-78.171150` | Zona 3 (Norte) | **Muy Alto** (Viento rasante) | ~180 residentes |
-| **H-03** | **Vida Comunitaria** | Bienestar / Comedor / Salud | `0.407400` | `-78.171500` | Zona 3 (Norte) | **Alto** (Área abierta) | ~200 usuarios/día |
+| **H-03** | **Vida Comunitaria (Bienestar)** | Bienestar / Comedor / Salud | `0.407400` | `-78.171500` | Zona 3 (Norte) | **Alto** (Área abierta) | ~200 usuarios/día |
 | **H-04** | **Minimarket Krispan** | Comercial / Abastecimiento | `0.406500` | `-78.170500` | Zona 3 (Norte) | **Medio-Alto** | ~150 clientes/día |
 | **H-05** | **Biblioteca Patrimonial "Yachay Tech"** | Académica / Patrimonial | `0.405072` | `-78.174159` | Zona 2 (Centro) | **Alto** (Arboleda húmeda) | ~300 lectores/día |
 | **H-06** | **Chimenea Histórica del Ingenio** | Hito Histórico / Cultural | `0.405320` | `-78.174000` | Zona 2 (Centro) | **Medio** (Zona de tránsito) | Espacio público |
@@ -34,9 +34,126 @@ Este inventario comprende las edificaciones residenciales, académicas, de inves
 
 ---
 
-## 2. Red de Bio-Monitoreo Telemétrico Continuo (6 Estaciones GPS)
+## 2. Polígonos de Huella Arquitectónica Real (Zona Norte: Los Bloques, Centro Médico y Edificio Senescyt)
 
-Red de muestreo pasivo y activo equipada con trampas de silueta oscura, cebadas con emanación controlada de $\text{CO}_2$ biológico y ácido L-láctico para cuantificar la densidad de hembras hematófagas en vuelo.
+A continuación se detalla la cartografía de detalle correspondiente a las huellas arquitectónicas reales en el sector norte (Zona 3). Los vértices han sido ordenados topológicamente para formar polígonos no auto-intersecantes (*simple polygons*) con cálculo de superficie aproximada y centroides:
+
+### 2.1. Complejo Residencial Estudiantil "Los Bloques" (Bloques A hasta I)
+
+* **Bloque A:**
+  * *Uso:* Residencia Estudiantil | *Superficie aproximada:* ~575 m² | *Centroide:* `[0.4068092, -78.1705598]`
+  * *Vértices (Lat, Lon):*
+    1. `0.4066463, -78.1705983`
+    2. `0.4068642, -78.1704038`
+    3. `0.4069739, -78.1705279`
+    4. `0.4067462, -78.1707139`
+
+* **Bloque B:**
+  * *Uso:* Residencia Estudiantil | *Superficie aproximada:* ~561 m² | *Centroide:* `[0.4069780, -78.1707285]`
+  * *Vértices ordenados (Lat, Lon):*
+    1. `0.4068220, -78.1707679`
+    2. `0.4069112, -78.1708846`
+    3. `0.4071388, -78.1706975`
+    4. `0.4070292, -78.1705711`
+
+* **Bloque C:**
+  * *Uso:* Residencia Estudiantil | *Superficie aproximada:* ~559 m² | *Centroide:* `[0.4071464, -78.1708965]`
+  * *Vértices ordenados (Lat, Lon):*
+    1. `0.4069889, -78.1709305`
+    2. `0.4070848, -78.1710539`
+    3. `0.4073098, -78.1708551`
+    4. `0.4071998, -78.1707441`
+
+* **Bloque D:**
+  * *Uso:* Residencia Estudiantil | *Superficie aproximada:* ~596 m² | *Centroide:* `[0.4072871, -78.1711741]`
+  * *Vértices (Lat, Lon):*
+    1. `0.4071311, -78.1711226`
+    2. `0.4072699, -78.1710060`
+    3. `0.4074375, -78.1712383`
+    4. `0.4073188, -78.1713402`
+
+* **Bloque E:**
+  * *Uso:* Residencia Estudiantil | *Superficie aproximada:* ~571 m² | *Centroide:* `[0.4074319, -78.1710534]`
+  * *Vértices ordenados (Lat, Lon):*
+    1. `0.4072779, -78.1709989`
+    2. `0.4074687, -78.1712182`
+    3. `0.4075837, -78.1711059`
+    4. `0.4073990, -78.1708906`
+
+* **Bloques F y G (Complejo Residencial Norte):**
+  * *Uso:* Residencias Estudiantiles Bloques F y G | *Superficie aproximada total:* ~1,361 m²
+  * *Centro Bloque F:* `0.4077272, -78.1713875`
+  * *Centro Bloque G:* `0.4078274, -78.1711498`
+  * *Polígono Perimetral Exterior (6 vértices):*
+    1. `0.4078955, -78.1714740`
+    2. `0.4079200, -78.1709744`
+    3. `0.4077735, -78.1709533`
+    4. `0.4077326, -78.1712876`
+    5. `0.4075736, -78.1712919`
+    6. `0.4075616, -78.1714552`
+  * *Línea Divisoria entre Bloques F y G:*
+    - Nodo 1: `0.4078891, -78.1713060`
+    - Nodo 2: `0.4077295, -78.1712963`
+
+* **Bloque H:**
+  * *Uso:* Residencia Estudiantil (Ala Este) | *Superficie aproximada:* ~632 m² | *Centroide:* `[0.4073607, -78.1704015]`
+  * *Vértices (Lat, Lon):*
+    1. `0.4075260, -78.1704759`
+    2. `0.4074167, -78.1705805`
+    3. `0.4071935, -78.1703274`
+    4. `0.4073088, -78.1702238`
+
+* **Bloque I:**
+  * *Uso:* Residencia Estudiantil (Ala Sur de Bloques) | *Superficie aproximada:* ~594 m² | *Centroide:* `[0.4071311, -78.1702485]`
+  * *Vértices (Lat, Lon):*
+    1. `0.4069564, -78.1703052`
+    2. `0.4070530, -78.1704112`
+    3. `0.4073031, -78.1701959`
+    4. `0.4072116, -78.1700833`
+
+### 2.2. Centro Médico Tipo A / Promoción de Vida Comunitaria (Bienestar Estudiantil)
+* *Uso:* Atención Médica y Soporte Estudiantil | *Superficie aproximada:* ~414 m² | *Centroide:* `[0.4076531, -78.1707239]`
+* *Vértices (Lat, Lon):*
+  1. `0.4075180, -78.1706569`
+  2. `0.4076196, -78.1705869`
+  3. `0.4077849, -78.1707746`
+  4. `0.4076870, -78.1708685`
+
+### 2.3. Complejo Académico y Administrativo Edificio Senescyt
+* *Uso:* Aulas, Laboratorios de Informática, Decanatos y Oficinas Rectorales | *Superficie aproximada:* ~3,475 m² | *Centroide:* `[0.4066329, -78.1700962]`
+* *Vértices Perimetrales (8 vértices):*
+  1. `0.4071147, -78.1699317`
+  2. `0.4069484, -78.1697289`
+  3. `0.4068317, -78.1698328`
+  4. `0.4068019, -78.1698043`
+  5. `0.4063912, -78.1701510`
+  6. `0.4062218, -78.1699562`
+  7. `0.4061159, -78.1700531`
+  8. `0.4064619, -78.1704732`
+
+* **Biblioteca Universitaria (dentro del Edificio Senescyt):**
+  * *Uso:* Sala de lectura y biblioteca ubicada en el ala sur del Edificio Senescyt (~546 m²; 94.3% solapamiento interno con el polígono Senescyt).
+  * *Vértices (Lat, Lon):*
+    1. `0.4061032, -78.1700471`
+    2. `0.4062215, -78.1699522`
+    3. `0.4063898, -78.1701540`
+    4. `0.4063425, -78.1701969`
+    5. `0.4063677, -78.1702261`
+    6. `0.4063140, -78.1702962`
+
+* **Minimarket Krispan (dentro del Edificio Senescyt):**
+  * *Uso:* Abastecimiento y cafetería en el ala oeste del Edificio Senescyt (~162 m²; 97.2% solapamiento interno con Senescyt).
+  * *Vértices (Lat, Lon):*
+    1. `0.4065786, -78.1703790`
+    2. `0.4065494, -78.1703109`
+    3. `0.4064042, -78.1704011`
+    4. `0.4064679, -78.1704722`
+
+---
+
+## 3. Red de Bio-Monitoreo Telemétrico Continuo (6 Estaciones GPS)
+
+Red de muestreo pasivo y activo equipada con trampas de silueta oscura, cebadas con emanación controlada de $\\text{CO}_2$ biológico y ácido L-láctico para cuantificar la densidad de hembras hematófagas en vuelo.
 
 | Código Estación | Nombre Operativo | Latitud (WGS84) | Longitud (WGS84) | Entorno Inmediato | Frecuencia de Lectura | Tasa Basal Previa | Tasa Proyectada (Semana 16) | Reducción Lograda |
 | :---: | :--- | :---: | :---: | :--- | :---: | :---: | :---: | :---: |
@@ -50,7 +167,7 @@ Red de muestreo pasivo y activo equipada con trampas de silueta oscura, cebadas 
 
 ---
 
-## 3. Bio-Estaciones Hídricas de Control Biológico (Inoculación y Odonatos)
+## 4. Bio-Estaciones Hídricas de Control Biológico (Inoculación y Odonatos)
 
 Puntos calibrados en las acequias y canales lotiformes para el fomento de ninfas nativas depredadoras de libélula (*Odonata*) y la micro-dosificación controlada del larvicida microbiano *Bacillus thuringiensis israelensis* (Bti).
 
@@ -62,7 +179,7 @@ Puntos calibrados en las acequias y canales lotiformes para el fomento de ninfas
 
 ---
 
-## 4. Trazado Georreferenciado de Cercas Vivas Multiestrato (980 m Lineales)
+## 5. Trazado Georreferenciado de Cercas Vivas Multiestrato (980 m Lineales)
 
 Las cercas vivas fueron calibradas mediante optimización espacial no lineal (algoritmo SLSQP) para interceptar el vuelo de las arenillas y cortar la brisa ascendente del cañón del río Ambi.
 
@@ -95,7 +212,7 @@ Las cercas vivas fueron calibradas mediante optimización espacial no lineal (al
 
 ---
 
-## 5. Trazado de la Red Hídrica y Acequias (Focos Lóticos de Proliferación)
+## 6. Trazado de la Red Hídrica y Acequias (Focos Lóticos de Proliferación)
 
 Canales abiertos de agua de corriente rápida y oxigenada donde se anclan las larvas y pupas de *Simulium* spp. mediante abanicos cefálicos y discos adhesivos.
 
@@ -117,7 +234,7 @@ Canales abiertos de agua de corriente rápida y oxigenada donde se anclan las la
 
 ---
 
-## 6. Polígonos de Delimitación de Zonas de Molestia y Picaduras
+## 7. Polígonos de Delimitación de Zonas de Molestia y Picaduras
 
 Polígonos espaciales utilizados para calcular las ponderaciones de población afectada ($w_1 = 0.35, w_2 = 0.25, w_3 = 0.30, w_4 = 0.10$):
 
@@ -135,29 +252,36 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
 
 ---
 
-## 7. Snippet GeoJSON para Importación Inmediata en SIG (QGIS / ArcGIS / Leaflet)
+## 8. Snippet GeoJSON Completo (Puntos e Huellas Poligonales) para SIG
 
-Para reutilizar estos puntos en cualquier software de Sistemas de Información Geográfica (SIG), se incluye la estructura formal GeoJSON:
+Estructura GeoJSON oficial con puntos de hitos, trampas y las huellas arquitectónicas reales para importar directamente en QGIS, ArcGIS o Leaflet:
 
 ```json
 {
   "type": "FeatureCollection",
-  "name": "Hitos_Campus_YachayTech_AlgoritmoVerde",
+  "name": "Hitos_y_Huellas_Campus_YachayTech",
   "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
   "features": [
-    { "type": "Feature", "properties": { "id": "H-01", "nombre": "Edificio Senescyt", "tipo": "Aulas / Rectorado", "riesgo": "Crítico" }, "geometry": { "type": "Point", "coordinates": [-78.170214, 0.406691] } },
-    { "type": "Feature", "properties": { "id": "H-02", "nombre": "Residencias Los Bloques", "tipo": "Residencial", "riesgo": "Muy Alto" }, "geometry": { "type": "Point", "coordinates": [-78.171150, 0.406950] } },
-    { "type": "Feature", "properties": { "id": "H-03", "nombre": "Vida Comunitaria", "tipo": "Bienestar", "riesgo": "Alto" }, "geometry": { "type": "Point", "coordinates": [-78.171500, 0.407400] } },
-    { "type": "Feature", "properties": { "id": "H-04", "nombre": "Minimarket Krispan", "tipo": "Comercial", "riesgo": "Medio-Alto" }, "geometry": { "type": "Point", "coordinates": [-78.170500, 0.406500] } },
-    { "type": "Feature", "properties": { "id": "H-05", "nombre": "Biblioteca Patrimonial", "tipo": "Académica", "riesgo": "Alto" }, "geometry": { "type": "Point", "coordinates": [-78.174159, 0.405072] } },
-    { "type": "Feature", "properties": { "id": "H-06", "nombre": "Chimenea Ingenio Azucarero", "tipo": "Histórica", "riesgo": "Medio" }, "geometry": { "type": "Point", "coordinates": [-78.174000, 0.405320] } },
-    { "type": "Feature", "properties": { "id": "H-07", "nombre": "Laboratorio de Química", "tipo": "Investigación", "riesgo": "Alto" }, "geometry": { "type": "Point", "coordinates": [-78.173900, 0.404900] } },
-    { "type": "Feature", "properties": { "id": "H-08", "nombre": "Laboratorios de Carrera", "tipo": "Investigación", "riesgo": "Muy Alto" }, "geometry": { "type": "Point", "coordinates": [-78.172450, 0.404780] } },
-    { "type": "Feature", "properties": { "id": "H-09", "nombre": "Residencias Patrimoniales", "tipo": "Residencial", "riesgo": "Crítico" }, "geometry": { "type": "Point", "coordinates": [-78.173836, 0.402297] } },
-    { "type": "Feature", "properties": { "id": "H-10", "nombre": "Residencias Las Multis", "tipo": "Residencial", "riesgo": "Crítico" }, "geometry": { "type": "Point", "coordinates": [-78.174800, 0.402750] } },
-    { "type": "Feature", "properties": { "id": "H-11", "nombre": "Concha Acústica", "tipo": "Cultural", "riesgo": "Muy Alto" }, "geometry": { "type": "Point", "coordinates": [-78.175500, 0.402350] } },
-    { "type": "Feature", "properties": { "id": "H-12", "nombre": "Canchas Deportivas", "tipo": "Deportes", "riesgo": "Muy Alto" }, "geometry": { "type": "Point", "coordinates": [-78.171800, 0.402500] } },
-    { "type": "Feature", "properties": { "id": "H-13", "nombre": "Parada (Arco de las Pats)", "tipo": "Transporte", "riesgo": "Alto" }, "geometry": { "type": "Point", "coordinates": [-78.172800, 0.402550] } }
+    { "type": "Feature", "properties": { "id": "H-01", "nombre": "Edificio Senescyt", "tipo": "Aulas / Rectorado" }, "geometry": { "type": "Point", "coordinates": [-78.170214, 0.406691] } },
+    { "type": "Feature", "properties": { "id": "H-02", "nombre": "Residencias Los Bloques", "tipo": "Residencial" }, "geometry": { "type": "Point", "coordinates": [-78.171150, 0.406950] } },
+    { "type": "Feature", "properties": { "id": "H-03", "nombre": "Vida Comunitaria (Bienestar)", "tipo": "Bienestar" }, "geometry": { "type": "Point", "coordinates": [-78.171500, 0.407400] } },
+    { "type": "Feature", "properties": { "id": "H-04", "nombre": "Minimarket Krispan", "tipo": "Comercial" }, "geometry": { "type": "Point", "coordinates": [-78.170500, 0.406500] } },
+    { "type": "Feature", "properties": { "id": "H-05", "nombre": "Biblioteca Patrimonial", "tipo": "Académica" }, "geometry": { "type": "Point", "coordinates": [-78.174159, 0.405072] } },
+    { "type": "Feature", "properties": { "id": "H-09", "nombre": "Residencias Patrimoniales", "tipo": "Residencial" }, "geometry": { "type": "Point", "coordinates": [-78.173836, 0.402297] } },
+    { "type": "Feature", "properties": { "id": "H-10", "nombre": "Residencias Las Multis", "tipo": "Residencial" }, "geometry": { "type": "Point", "coordinates": [-78.174800, 0.402750] } },
+    { "type": "Feature", "properties": { "id": "H-13", "nombre": "Parada (Arco de las Pats)", "tipo": "Transporte" }, "geometry": { "type": "Point", "coordinates": [-78.172800, 0.402550] } },
+    { "type": "Feature", "properties": { "id": "POLY-A", "nombre": "Huella Bloque A", "tipo": "Edificación Residencial" }, "geometry": { "type": "Polygon", "coordinates": [[[-78.1705983, 0.4066463], [-78.1704038, 0.4068642], [-78.1705279, 0.4069739], [-78.1707139, 0.4067462], [-78.1705983, 0.4066463]]] } },
+    { "type": "Feature", "properties": { "id": "POLY-B", "nombre": "Huella Bloque B", "tipo": "Edificación Residencial" }, "geometry": { "type": "Polygon", "coordinates": [[[-78.1707679, 0.4068220], [-78.1708846, 0.4069112], [-78.1706975, 0.4071388], [-78.1705711, 0.4070292], [-78.1707679, 0.4068220]]] } },
+    { "type": "Feature", "properties": { "id": "POLY-C", "nombre": "Huella Bloque C", "tipo": "Edificación Residencial" }, "geometry": { "type": "Polygon", "coordinates": [[[-78.1709305, 0.4069889], [-78.1710539, 0.4070848], [-78.1708551, 0.4073098], [-78.1707441, 0.4071998], [-78.1709305, 0.4069889]]] } },
+    { "type": "Feature", "properties": { "id": "POLY-D", "nombre": "Huella Bloque D", "tipo": "Edificación Residencial" }, "geometry": { "type": "Polygon", "coordinates": [[[-78.1711226, 0.4071311], [-78.1710060, 0.4072699], [-78.1712383, 0.4074375], [-78.1713402, 0.4073188], [-78.1711226, 0.4071311]]] } },
+    { "type": "Feature", "properties": { "id": "POLY-E", "nombre": "Huella Bloque E", "tipo": "Edificación Residencial" }, "geometry": { "type": "Polygon", "coordinates": [[[-78.1709989, 0.4072779], [-78.1712182, 0.4074687], [-78.1711059, 0.4075837], [-78.1708906, 0.4073990], [-78.1709989, 0.4072779]]] } },
+    { "type": "Feature", "properties": { "id": "POLY-FG", "nombre": "Huella Bloques F y G", "tipo": "Complejo Residencial" }, "geometry": { "type": "Polygon", "coordinates": [[[-78.1714740, 0.4078955], [-78.1709744, 0.4079200], [-78.1709533, 0.4077735], [-78.1712876, 0.4077326], [-78.1712919, 0.4075736], [-78.1714552, 0.4075616], [-78.1714740, 0.4078955]]] } },
+    { "type": "Feature", "properties": { "id": "POLY-MED", "nombre": "Centro Médico / Bienestar", "tipo": "Salud / Bienestar" }, "geometry": { "type": "Polygon", "coordinates": [[[-78.1706569, 0.4075180], [-78.1705869, 0.4076196], [-78.1707746, 0.4077849], [-78.1708685, 0.4076870], [-78.1706569, 0.4075180]]] } },
+    { "type": "Feature", "properties": { "id": "POLY-H", "nombre": "Huella Bloque H", "tipo": "Edificación Residencial" }, "geometry": { "type": "Polygon", "coordinates": [[[-78.1704759, 0.4075260], [-78.1705805, 0.4074167], [-78.1703274, 0.4071935], [-78.1702238, 0.4073088], [-78.1704759, 0.4075260]]] } },
+    { "type": "Feature", "properties": { "id": "POLY-I", "nombre": "Huella Bloque I", "tipo": "Edificación Residencial" }, "geometry": { "type": "Polygon", "coordinates": [[[-78.1703052, 0.4069564], [-78.1704112, 0.4070530], [-78.1701959, 0.4073031], [-78.1700833, 0.4072116], [-78.1703052, 0.4069564]]] } },
+    { "type": "Feature", "properties": { "id": "POLY-SENESCYT", "nombre": "Edificio Senescyt", "tipo": "Aulas / Rectorado" }, "geometry": { "type": "Polygon", "coordinates": [[[-78.1699317, 0.4071147], [-78.1697289, 0.4069484], [-78.1698328, 0.4068317], [-78.1698043, 0.4068019], [-78.1701510, 0.4063912], [-78.1699562, 0.4062218], [-78.1700531, 0.4061159], [-78.1704732, 0.4064619], [-78.1699317, 0.4071147]]] } },
+    { "type": "Feature", "properties": { "id": "POLY-BIB-SEN", "nombre": "Biblioteca (Edificio Senescyt)", "tipo": "Biblioteca" }, "geometry": { "type": "Polygon", "coordinates": [[[-78.1700471, 0.4061032], [-78.1699522, 0.4062215], [-78.1701540, 0.4063898], [-78.1701969, 0.4063425], [-78.1702261, 0.4063677], [-78.1702962, 0.4063140], [-78.1700471, 0.4061032]]] } },
+    { "type": "Feature", "properties": { "id": "POLY-KRISPAN", "nombre": "Minimarket Krispan", "tipo": "Servicios" }, "geometry": { "type": "Polygon", "coordinates": [[[-78.1703790, 0.4065786], [-78.1703109, 0.4065494], [-78.1704011, 0.4064042], [-78.1704722, 0.4064679], [-78.1703790, 0.4065786]]] } }
   ]
 }
 ```
