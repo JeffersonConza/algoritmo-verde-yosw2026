@@ -36,21 +36,25 @@ def generar_mapa():
     # -------------------------------------------------------------
     # 1. CAPAS BASE COMPATIBLES OFFLINE, FILE:/// Y MODO NOCHE
     # -------------------------------------------------------------
+    # 1. Capa Predeterminada: Google Satélite Híbrido (show=True)
     tile_hybrid = folium.TileLayer(
         tiles='https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}',
         attr='Google Maps Satellite',
         name='🛰️ Google Satélite Híbrido',
         overlay=False,
         control=True,
+        show=True,
         max_zoom=20
     ).add_to(m)
 
+    # Capas alternativas (show=False para que Satélite sea el predeterminado activo)
     tile_streets = folium.TileLayer(
         tiles='https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',
         attr='Google Maps Streets',
         name='🗺️ Google Callejero Oficial',
         overlay=False,
         control=True,
+        show=False,
         max_zoom=20
     ).add_to(m)
 
@@ -60,6 +64,7 @@ def generar_mapa():
         name='🏙️ Esri Callejero (Calles y Campus)',
         overlay=False,
         control=True,
+        show=False,
         max_zoom=19
     ).add_to(m)
 
@@ -70,6 +75,7 @@ def generar_mapa():
         name='🌐 OpenStreetMap (FOSSGIS Libre)',
         overlay=False,
         control=True,
+        show=False,
         max_zoom=19
     ).add_to(m)
 
@@ -79,6 +85,7 @@ def generar_mapa():
         name='🌍 Satélite Esri (Fotografía Aérea)',
         overlay=False,
         control=True,
+        show=False,
         max_zoom=19
     ).add_to(m)
 
@@ -88,6 +95,7 @@ def generar_mapa():
         name='⛰️ Relieve y Topografía (Esri Topo)',
         overlay=False,
         control=True,
+        show=False,
         max_zoom=19
     ).add_to(m)
 
@@ -98,6 +106,7 @@ def generar_mapa():
         name='🌌 Modo Noche (Esri Dark)',
         overlay=False,
         control=True,
+        show=False,
         max_zoom=19
     ).add_to(m)
 
@@ -1523,9 +1532,9 @@ def generar_mapa():
 
     <!-- BARRA SUPERIOR DE NAVEGACIÓN Y STORYTELLING -->
     <div id="story-nav-bar">
-        <!-- Logo / Marca -->
-        <div id="nav-brand" style="display: flex; align-items: center; gap: 7px; padding-right: 8px; border-right: 1px solid var(--border-color); cursor: pointer;" onclick="toggleModalBienvenida(true)" title="Algoritmo Verde YT">
-            <svg width="22" height="22" viewBox="0 0 100 100">
+        <!-- Logo / Marca: Abre modal del equipo -->
+        <div id="nav-brand" style="display: flex; align-items: center; gap: 7px; padding: 2px 10px 2px 4px; border-right: 1px solid var(--border-color); cursor: pointer; border-radius: 8px; transition: background 0.2s;" onclick="toggleModalEquipo(true)" title="Clic para ver Integrantes del Equipo y Detalles" onmouseover="this.style.background='rgba(16,172,132,0.12)'" onmouseout="this.style.background='transparent'">
+            <svg width="24" height="24" viewBox="0 0 100 100">
                 <rect width="100" height="100" rx="26" fill="url(#brandGrad)"/>
                 <defs>
                     <linearGradient id="brandGrad" x1="0%" y1="100%" x2="100%" y2="0%">
@@ -1540,7 +1549,10 @@ def generar_mapa():
                 <circle cx="64" cy="50" r="4.5" fill="#1e3799"/>
                 <circle cx="50" cy="22" r="5" fill="#f39c12"/>
             </svg>
-            <span style="font-weight: 800; font-size: 12.5px; color: var(--primary-color); letter-spacing: 0.3px;">Algoritmo Verde</span>
+            <div style="display: flex; flex-direction: column; line-height: 1.15;">
+                <span style="font-weight: 800; font-size: 13px; color: var(--text-color); letter-spacing: -0.3px;">Algoritmo Verde (YT)</span>
+                <span style="font-size: 9.5px; font-weight: 700; color: #10ac84;">👥 Conoce al Equipo &raquo;</span>
+            </div>
         </div>
 
         <button id="btn-info" class="nav-btn nav-btn-info" onclick="toggleModalBienvenida(true)" title="Conocer el propósito humano del proyecto">
@@ -1664,11 +1676,15 @@ def generar_mapa():
     </div>
 
     <!-- MODAL DE BIENVENIDA Y PROPÓSITO HUMANISTA -->
+    <!-- MODAL DE VISIÓN Y PROPÓSITO (CON BOTÓN DE CIERRE PROMINENTE Y FÁCIL) -->
     <div id="modal-bienvenida" class="modal-overlay" style="display: none;" onclick="if(event.target===this) toggleModalBienvenida(false)">
         <div class="modal-card">
-            <div class="modal-header">
-                <button onclick="toggleModalBienvenida(false)" style="position: absolute; top: 16px; right: 18px; background: rgba(255,255,255,0.2); border: none; color: white; font-size: 18px; font-weight: bold; width: 32px; height: 32px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.35)'" onmouseout="this.style.background='rgba(255,255,255,0.2)'" title="Cerrar modal (Esc)">✕</button>
-                <h2 style="margin: 0; font-size: 19px; font-weight: 700; padding-right: 35px;" data-i18n="modal_title">🌱 Algoritmo Verde: Un Campus para Vivir y Estudiar en Paz</h2>
+            <div class="modal-header" style="position: relative; padding-right: 120px;">
+                <!-- Botón de Cierre Superior Prominente y Accesible -->
+                <button onclick="toggleModalBienvenida(false)" style="position: absolute; top: 14px; right: 16px; background: #e74c3c; border: 2px solid #ffffff; color: #ffffff; font-size: 13px; font-weight: 800; padding: 6px 14px; border-radius: 20px; cursor: pointer; display: flex; align-items: center; gap: 5px; box-shadow: 0 4px 12px rgba(231,76,60,0.4); z-index: 20; transition: transform 0.15s, background 0.15s;" onmouseover="this.style.transform='scale(1.06)'; this.style.background='#c0392b'" onmouseout="this.style.transform='scale(1)'; this.style.background='#e74c3c'" title="Cerrar ventana (Esc)">
+                    <span style="font-size: 15px; font-weight: 900; line-height: 1;">✕</span> <span>Cerrar</span>
+                </button>
+                <h2 style="margin: 0; font-size: 19px; font-weight: 700;" data-i18n="modal_title">🌱 Algoritmo Verde: Un Campus para Vivir y Estudiar en Paz</h2>
                 <div style="font-size: 12px; opacity: 0.95; margin-top: 4px;" data-i18n="modal_sub">
                     Propuesta Multidisciplinar · YOSW 2026 Ideatón (Reto 3 - Control de Arenillas)
                 </div>
@@ -1694,9 +1710,145 @@ def generar_mapa():
                     <span data-i18n="modal_card3_desc">Los canales de riego que cruzan Yachay alimentan los cultivos de Urcuquí. Nuestro control biológico usa <b>ninfas de libélulas nativas</b> y micro-larvicidas biológicos (Bti) que preservan la calidad del agua para las comunidades vecinas.</span>
                 </div>
 
-                <div style="text-align: center; margin-top: 20px;">
-                    <button class="modal-btn-close" onclick="toggleModalBienvenida(false)" data-i18n="modal_btn_explore">
-                        ✨ ¡Explorar el Campus Protegido!
+                <!-- Botones Inferiores Fáciles de Cerrar -->
+                <div style="display: flex; gap: 12px; justify-content: center; margin-top: 22px; flex-wrap: wrap;">
+                    <button class="modal-btn-close" onclick="toggleModalBienvenida(false)" style="background: linear-gradient(135deg, #10ac84, #1dd1a1); color: white; border: none; padding: 11px 22px; border-radius: 25px; font-weight: 700; font-size: 13.5px; cursor: pointer; box-shadow: 0 4px 14px rgba(16,172,132,0.4); display: flex; align-items: center; gap: 6px;">
+                        <span>✨</span> <span data-i18n="modal_btn_explore">¡Explorar el Campus Protegido!</span>
+                    </button>
+                    <button onclick="toggleModalBienvenida(false)" style="background: #e2e8f0; color: #1e293b; border: 1px solid #cbd5e1; padding: 11px 20px; border-radius: 25px; font-weight: 700; font-size: 13.5px; cursor: pointer; display: flex; align-items: center; gap: 6px; transition: background 0.2s;" onmouseover="this.style.background='#cbd5e1'" onmouseout="this.style.background='#e2e8f0'">
+                        <span>✕</span> <span>Cerrar Ventana</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DE INTEGRANTES DEL EQUIPO Y DETALLES DEL PROYECTO -->
+    <div id="modal-equipo" class="modal-overlay" style="display: none;" onclick="if(event.target===this) toggleModalEquipo(false)">
+        <div class="modal-card" style="max-width: 640px;">
+            <div class="modal-header" style="background: linear-gradient(135deg, #1e3799, #10ac84); position: relative; padding: 20px 24px;">
+                <button onclick="toggleModalEquipo(false)" style="position: absolute; top: 14px; right: 16px; background: #e74c3c; border: 2px solid #ffffff; color: #ffffff; font-size: 13px; font-weight: 800; padding: 6px 14px; border-radius: 20px; cursor: pointer; display: flex; align-items: center; gap: 5px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); z-index: 20; transition: transform 0.15s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" title="Cerrar (Esc)">
+                    <span style="font-size: 15px; line-height: 1;">✕</span> <span>Cerrar</span>
+                </button>
+                <div style="display: flex; align-items: center; gap: 12px;">
+                    <div style="background: white; border-radius: 12px; padding: 6px; display: flex; align-items: center; justify-content: center; box-shadow: 0 3px 8px rgba(0,0,0,0.2);">
+                        <svg width="32" height="32" viewBox="0 0 100 100">
+                            <rect width="100" height="100" rx="26" fill="url(#brandGradModal)"/>
+                            <defs>
+                                <linearGradient id="brandGradModal" x1="0%" y1="100%" x2="100%" y2="0%">
+                                    <stop offset="0%" stop-color="#1e3799"/>
+                                    <stop offset="50%" stop-color="#10ac84"/>
+                                    <stop offset="100%" stop-color="#2ecc71"/>
+                                </linearGradient>
+                            </defs>
+                            <path d="M 50 18 C 36 28, 26 44, 26 62 C 26 76, 36 84, 50 84 C 64 84, 74 76, 74 62 C 74 44, 64 28, 50 18 Z" fill="#ffffff" opacity="0.95"/>
+                            <path d="M 50 30 L 50 74 M 50 46 L 64 38 M 50 56 L 66 48 M 50 46 L 36 38 M 50 56 L 34 48" stroke="#10ac84" stroke-width="3.5" stroke-linecap="round"/>
+                            <circle cx="50" cy="30" r="4.5" fill="#1e3799"/>
+                            <circle cx="64" cy="38" r="3.5" fill="#1e3799"/>
+                            <circle cx="66" cy="48" r="3.5" fill="#1e3799"/>
+                            <circle cx="36" cy="38" r="3.5" fill="#1e3799"/>
+                            <circle cx="34" cy="48" r="3.5" fill="#1e3799"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 style="margin: 0; font-size: 19px; font-weight: 800; color: white;">Equipo: Algoritmo Verde YT</h2>
+                        <div style="font-size: 12px; opacity: 0.95; color: #e0f2fe; margin-top: 2px;">
+                            Yachay Open Science Week 2026 · Reto 3 (Control Ecosistémico de Arenillas)
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-body" style="padding: 20px 24px; max-height: 72vh; overflow-y: auto;">
+                <!-- Breve Resumen Ejecutivo del Proyecto -->
+                <div style="background: var(--bg-card); border-left: 4px solid #10ac84; padding: 12px 16px; border-radius: 8px; margin-bottom: 16px;">
+                    <div style="font-size: 13px; color: var(--text-color); line-height: 1.45;">
+                        <b>🌱 Breves detalles del proyecto:</b> Estrategia de Manejo Integrado Ecosistémico estructurada en 3 pilares: (1) <b>Cercas vivas multiestrato repelentes</b> (980 m; Molle, Arrayán, Romero y Hierba Luisa); (2) <b>Biocontrol acuático</b> con odonatos nativos + microdosificación de <i>Bacillus thuringiensis israelensis</i> (Bti) en canales de riego; y (3) <b>Optimización matemática SLSQP</b> y bio-monitoreo telemétrico continuo.
+                    </div>
+                </div>
+
+                <!-- Métricas Clave de Eficacia -->
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 18px; text-align: center;">
+                    <div style="background: rgba(16,172,132,0.1); border: 1px solid rgba(16,172,132,0.3); border-radius: 8px; padding: 10px 6px;">
+                        <div style="font-size: 18px; font-weight: 800; color: #10ac84;">-82.8%</div>
+                        <div style="font-size: 10.5px; color: var(--text-muted); font-weight: 600;">Eficacia (p &lt; 0.001)</div>
+                    </div>
+                    <div style="background: rgba(41,128,185,0.1); border: 1px solid rgba(41,128,185,0.3); border-radius: 8px; padding: 10px 6px;">
+                        <div style="font-size: 18px; font-weight: 800; color: #2980b9;">39,200 m²</div>
+                        <div style="font-size: 10.5px; color: var(--text-muted); font-weight: 600;">Área de Confort</div>
+                    </div>
+                    <div style="background: rgba(230,126,34,0.1); border: 1px solid rgba(230,126,34,0.3); border-radius: 8px; padding: 10px 6px;">
+                        <div style="font-size: 18px; font-weight: 800; color: #d35400;">$1,470 USD</div>
+                        <div style="font-size: 10.5px; color: var(--text-muted); font-weight: 600;">Inversión ($1.50/m)</div>
+                    </div>
+                </div>
+
+                <!-- Integrantes del Equipo -->
+                <h3 style="margin: 0 0 10px 0; font-size: 14px; font-weight: 700; color: var(--text-color); display: flex; align-items: center; gap: 6px;">
+                    <span>👥</span> <span>Integrantes del Equipo y Roles</span>
+                </h3>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 10px; margin-bottom: 16px;">
+                    <!-- Jefferson Conza -->
+                    <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 10px; padding: 11px 13px; display: flex; gap: 10px; align-items: flex-start;">
+                        <div style="background: #1e3799; color: white; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 13px; flex-shrink: 0;">JC</div>
+                        <div style="line-height: 1.25;">
+                            <div style="font-weight: 700; font-size: 13px; color: var(--text-color);">Jefferson Conza</div>
+                            <div style="font-size: 11px; color: #10ac84; font-weight: 600;">Líder Técnico & Modelado Espacial</div>
+                            <div style="font-size: 10.5px; color: var(--text-muted); margin-top: 2px;">Matemáticas / Computación</div>
+                        </div>
+                    </div>
+
+                    <!-- Christopher Picuasi -->
+                    <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 10px; padding: 11px 13px; display: flex; gap: 10px; align-items: flex-start;">
+                        <div style="background: #10ac84; color: white; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 13px; flex-shrink: 0;">CP</div>
+                        <div style="line-height: 1.25;">
+                            <div style="font-weight: 700; font-size: 13px; color: var(--text-color);">Christopher Picuasi</div>
+                            <div style="font-size: 11px; color: #10ac84; font-weight: 600;">Desarrollo de Software & SIG</div>
+                            <div style="font-size: 10.5px; color: var(--text-muted); margin-top: 2px;">Computación (3.º sem.)</div>
+                        </div>
+                    </div>
+
+                    <!-- Francisco Ibujes -->
+                    <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 10px; padding: 11px 13px; display: flex; gap: 10px; align-items: flex-start;">
+                        <div style="background: #e67e22; color: white; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 13px; flex-shrink: 0;">FI</div>
+                        <div style="line-height: 1.25;">
+                            <div style="font-weight: 700; font-size: 13px; color: var(--text-color);">Francisco Ibujes</div>
+                            <div style="font-size: 11px; color: #e67e22; font-weight: 600;">Investigación Química & Bio-Repelencia</div>
+                            <div style="font-size: 10.5px; color: var(--text-muted); margin-top: 2px;">Química (2.º sem.)</div>
+                        </div>
+                    </div>
+
+                    <!-- Luis Collaguazo -->
+                    <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 10px; padding: 11px 13px; display: flex; gap: 10px; align-items: flex-start;">
+                        <div style="background: #9b59b6; color: white; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 13px; flex-shrink: 0;">LC</div>
+                        <div style="line-height: 1.25;">
+                            <div style="font-weight: 700; font-size: 13px; color: var(--text-color);">Luis Collaguazo</div>
+                            <div style="font-size: 11px; color: #9b59b6; font-weight: 600;">Investigación Biológica & Salud</div>
+                            <div style="font-size: 10.5px; color: var(--text-muted); margin-top: 2px;">Biomedicina (2.º sem.)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mentoría -->
+                <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 10px; padding: 11px 16px; margin-bottom: 18px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+                    <div>
+                        <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-muted); font-weight: 700;">Mentor Asignado:</span>
+                        <div style="font-size: 13px; font-weight: 700; color: var(--text-color);">Ing. José Luis Flores M.Sc.</div>
+                    </div>
+                    <div>
+                        <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-muted); font-weight: 700;">Institución:</span>
+                        <div style="font-size: 13px; font-weight: 700; color: #1e3799;">Universidad Yachay Tech</div>
+                    </div>
+                </div>
+
+                <!-- Botones Inferiores -->
+                <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+                    <button onclick="toggleModalEquipo(false); toggleModalBienvenida(true);" style="background: #10ac84; color: white; border: none; padding: 10px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 6px;">
+                        <span>ℹ️</span> <span>Ver Visión y Propósito</span>
+                    </button>
+                    <button onclick="toggleModalEquipo(false)" style="background: #e2e8f0; color: #1e293b; border: 1px solid #cbd5e1; padding: 10px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer;">
+                        ✕ Cerrar
                     </button>
                 </div>
             </div>
@@ -1808,6 +1960,11 @@ def generar_mapa():
         // 4. Modales
         function toggleModalBienvenida(show) {{
             var modal = document.getElementById('modal-bienvenida');
+            if (modal) modal.style.display = show ? 'flex' : 'none';
+        }}
+
+        function toggleModalEquipo(show) {{
+            var modal = document.getElementById('modal-equipo');
             if (modal) modal.style.display = show ? 'flex' : 'none';
         }}
 
@@ -2015,6 +2172,7 @@ def generar_mapa():
         document.addEventListener('keydown', function(e) {{
             if (e.key === 'Escape') {{
                 toggleModalBienvenida(false);
+                toggleModalEquipo(false);
                 toggleModalQR(false);
             }}
         }});
