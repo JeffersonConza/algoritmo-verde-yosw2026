@@ -716,6 +716,33 @@ Conjunto arquitectónico habitacional de densidad media compuesto por 10 bloques
     3. `0.4011053, -78.1765685`
     4. `0.4011861, -78.1766446`
 
+* **Bloque Multifamiliar Las Multis 11 (`RECT-MULTI-11`):**
+  * *Tipo:* Residencia Estudiantil Multifamiliar | *Zona:* Sector Las Multis
+  * *Superficie aproximada:* ~460.1 m² | *Centroide:* `[0.4015207, -78.1754351]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4013740, -78.1755110`
+    2. `0.4015610, -78.1752880`
+    3. `0.4016730, -78.1753720`
+    4. `0.4014600, -78.1755840`
+
+* **Bloque Multifamiliar Las Multis 12 (`RECT-MULTI-12`):**
+  * *Tipo:* Residencia Estudiantil Multifamiliar | *Zona:* Sector Las Multis
+  * *Superficie aproximada:* ~441.8 m² | *Centroide:* `[0.4013919, -78.1757845]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4013320, -78.1759330`
+    2. `0.4015400, -78.1757200`
+    3. `0.4014360, -78.1756390`
+    4. `0.4012490, -78.1758550`
+
+* **Bloque Multifamiliar Las Multis 13 (`RECT-MULTI-13`):**
+  * *Tipo:* Residencia Estudiantil Multifamiliar | *Zona:* Sector Las Multis
+  * *Superficie aproximada:* ~415.1 m² | *Centroide:* `[0.4012578, -78.1761296]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4013000, -78.1759890`
+    2. `0.4011200, -78.1761990`
+    3. `0.4011960, -78.1762760`
+    4. `0.4014030, -78.1760640`
+
 * **Edificio Técnico y de Servicios Las Multis (`RECT-MULTI-NORES`):**
   * *Tipo:* Edificio de Servicios / Soporte Técnico | *Zona:* Sector Las Multis
   * *Superficie aproximada:* ~147.0 m² | *Centroide:* `[0.4015424, -78.1750039]`
@@ -868,6 +895,18 @@ Conjunto patrimonial histórico del sector sur caracterizado por 8 bloques resid
     - **División Residencia Patrimonial Las Pats 8 (Módulo 8):** `[0.4027352, -78.1743575]` ➔ `[0.4026559, -78.1743986]` (Tabique transversal divisorio 8 en punto topográfico [0.4026539, -78.1743996].)
     - **División Residencia Patrimonial Las Pats 8 (Módulo 9):** `[0.4026889, -78.1742682]` ➔ `[0.4026096, -78.1743093]` (Tabique transversal divisorio 9 en punto topográfico [0.402608, -78.1743101].)
     - **División Residencia Patrimonial Las Pats 8 (Módulo 10):** `[0.4026424, -78.1741785]` ➔ `[0.4025631, -78.1742196]` (Tabique transversal divisorio 10 en punto topográfico [0.4025651, -78.1742186].)
+
+* **Residencia Patrimonial Las Pats 9 (`RECT-PATS-09`):**
+  * *Tipo:* Residencia Estudiantil Patrimonial | *Zona:* Sector Las Pats
+  * *Superficie aproximada:* ~393.1 m² | *Centroide:* `[0.4018124, -78.1733144]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4019310, -78.1731880`
+    2. `0.4019740, -78.1732820`
+    3. `0.4016860, -78.1734380`
+    4. `0.4016460, -78.1733570`
+  * *Tabiques y Líneas de División Interior (2):*
+    - **División Residencia Patrimonial Las Pats 9 (Módulo 1):** `[0.4017840, -78.1733830]` ➔ `[0.4017430, -78.1732995]` (Tabique transversal divisorio 1 en punto topográfico [0.4017840, -78.1733830].)
+    - **División Residencia Patrimonial Las Pats 9 (Módulo 2):** `[0.4018770, -78.1733300]` ➔ `[0.4018350, -78.1732449]` (Tabique transversal divisorio 2 en punto topográfico [0.4018770, -78.1733300].)
 
 * **Laboratorio de Campo Las Pats (`RECT-PATS-LAB`):**
   * *Tipo:* Laboratorio / Investigación Científica | *Zona:* Sector Las Pats
@@ -1098,7 +1137,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
 
 ---
 
-## 8. Snippet GeoJSON Oficial Completo (170 Entidades: Hitos, Huellas, Canales, Reservorio y Líneas Divisorias)
+## 8. Snippet GeoJSON Oficial Completo (176 Entidades: Hitos, Huellas, Canales, Reservorio y Líneas Divisorias)
 
 ```json
 {
@@ -1117,7 +1156,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
         "id": "S-01",
         "nombre": "Edificio Senescyt",
         "zona": "Senescyt",
-        "categoria": "Acad\u00e9mica / Rectorado"
+        "categoria": "Académica / Rectorado"
       },
       "geometry": {
         "type": "Point",
@@ -1147,7 +1186,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "S-03",
-        "nombre": "Centro M\u00e9dico / Bienestar Estudiantil",
+        "nombre": "Centro Médico / Bienestar Estudiantil",
         "zona": "Senescyt",
         "categoria": "Salud / Bienestar"
       },
@@ -1181,7 +1220,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
         "id": "S-05",
         "nombre": "Minimarket Krispan",
         "zona": "Senescyt",
-        "categoria": "Cafeter\u00eda / Abastecimiento"
+        "categoria": "Cafetería / Abastecimiento"
       },
       "geometry": {
         "type": "Point",
@@ -1229,7 +1268,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
         "id": "I-02",
         "nombre": "Torre del Ingenio Azucarero (Chimenea)",
         "zona": "Ingenio Azucarero",
-        "categoria": "Monumento Hist\u00f3rico"
+        "categoria": "Monumento Histórico"
       },
       "geometry": {
         "type": "Point",
@@ -1245,7 +1284,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
         "id": "I-03",
         "nombre": "Plaza del Ingenio",
         "zona": "Ingenio Azucarero",
-        "categoria": "Explanada C\u00edvica y Cultural"
+        "categoria": "Explanada Cívica y Cultural"
       },
       "geometry": {
         "type": "Point",
@@ -1291,7 +1330,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "I-06",
-        "nombre": "Sala de Defensas San Jos\u00e9",
+        "nombre": "Sala de Defensas San José",
         "zona": "Ingenio Azucarero",
         "categoria": "Sala de Grados y Tesis"
       },
@@ -1309,7 +1348,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
         "id": "I-07",
         "nombre": "Aulas B (Sur)",
         "zona": "Ingenio Azucarero",
-        "categoria": "Docencia / Aulas Te\u00f3ricas"
+        "categoria": "Docencia / Aulas Teóricas"
       },
       "geometry": {
         "type": "Point",
@@ -1325,7 +1364,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
         "id": "I-08",
         "nombre": "Aulas B (Norte)",
         "zona": "Ingenio Azucarero",
-        "categoria": "Docencia / Aulas Te\u00f3ricas"
+        "categoria": "Docencia / Aulas Teóricas"
       },
       "geometry": {
         "type": "Point",
@@ -1341,7 +1380,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
         "id": "I-09",
         "nombre": "Aulas I (Antiguo Ingenio)",
         "zona": "Ingenio Azucarero",
-        "categoria": "Talleres y Docencia T\u00e9cnica"
+        "categoria": "Talleres y Docencia Técnica"
       },
       "geometry": {
         "type": "Point",
@@ -1355,7 +1394,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "I-10",
-        "nombre": "Restaurante El Colibr\u00ed",
+        "nombre": "Restaurante El Colibrí",
         "zona": "Ingenio Azucarero",
         "categoria": "Comedor Universitario"
       },
@@ -1389,7 +1428,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
         "id": "I-12",
         "nombre": "Restaurant Containers (Plaza Mikuna)",
         "zona": "Ingenio Azucarero",
-        "categoria": "Patio Gastron\u00f3mico"
+        "categoria": "Patio Gastronómico"
       },
       "geometry": {
         "type": "Point",
@@ -1419,9 +1458,9 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "I-14",
-        "nombre": "Laboratorios de Carrera (Ingenier\u00edas)",
+        "nombre": "Laboratorios de Carrera (Ingenierías)",
         "zona": "Ingenio Azucarero",
-        "categoria": "Talleres y Tecnolog\u00eda"
+        "categoria": "Talleres y Tecnología"
       },
       "geometry": {
         "type": "Point",
@@ -1437,7 +1476,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
         "id": "I-15",
         "nombre": "Invernaderos Experimentales",
         "zona": "Ingenio Azucarero",
-        "categoria": "Investigaci\u00f3n Agropecuaria"
+        "categoria": "Investigación Agropecuaria"
       },
       "geometry": {
         "type": "Point",
@@ -1515,7 +1554,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "R-05",
-        "nombre": "Concha Ac\u00fastica Yachay Tech",
+        "nombre": "Concha Acústica Yachay Tech",
         "zona": "Las T's y Multis",
         "categoria": "Cultural / Anfiteatro"
       },
@@ -1531,9 +1570,9 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "R-06",
-        "nombre": "Canchas Deportivas (F\u00fatbol / M\u00faltiples)",
+        "nombre": "Canchas Deportivas (Fútbol / Múltiples)",
         "zona": "Las T's y Multis",
-        "categoria": "Deporte y Recreaci\u00f3n"
+        "categoria": "Deporte y Recreación"
       },
       "geometry": {
         "type": "Point",
@@ -1565,7 +1604,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
         "id": "H-01",
         "nombre": "Laguna Artificial / Reservorio",
         "zona": "Ingenio Azucarero",
-        "categoria": "Cuerpo de Agua L\u00e9ntico / Biocontrol"
+        "categoria": "Cuerpo de Agua Léntico / Biocontrol"
       },
       "geometry": {
         "type": "Point",
@@ -1930,7 +1969,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "RECT-MED",
-        "nombre": "Centro M\u00e9dico / Bienestar Estudiantil",
+        "nombre": "Centro Médico / Bienestar Estudiantil",
         "tipo": "Salud y Vida Comunitaria (Rectangular)",
         "zona": "Senescyt",
         "area_m2": 450.9,
@@ -1970,7 +2009,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "properties": {
         "id": "POLY-SENESCYT",
         "nombre": "Edificio Senescyt",
-        "tipo": "Aulas, Rectorado y Decanatos (Pol\u00edgono Matriz)",
+        "tipo": "Aulas, Rectorado y Decanatos (Polígono Matriz)",
         "zona": "Senescyt",
         "area_m2": 3474.8,
         "interior": false,
@@ -2076,7 +2115,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "properties": {
         "id": "INT-KRISPAN",
         "nombre": "Minimarket Krispan",
-        "tipo": "Comercial / Cafeter\u00eda (Local Interior en Edificio Senescyt)",
+        "tipo": "Comercial / Cafetería (Local Interior en Edificio Senescyt)",
         "zona": "Senescyt",
         "area_m2": 191.7,
         "interior": true,
@@ -2154,7 +2193,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "properties": {
         "id": "POLY-BIB-PAT",
         "nombre": "Biblioteca Patrimonial Principal",
-        "tipo": "Biblioteca y Patrimonio Hist\u00f3rico (13 V\u00e9rtices)",
+        "tipo": "Biblioteca y Patrimonio Histórico (13 Vértices)",
         "zona": "Ingenio Azucarero",
         "area_m2": 869.5,
         "interior": false,
@@ -2228,8 +2267,8 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "RECT-BANOS-BIB",
-        "nombre": "Ba\u00f1os Biblioteca Patrimonial",
-        "tipo": "Servicios Higi\u00e9nicos",
+        "nombre": "Baños Biblioteca Patrimonial",
+        "tipo": "Servicios Higiénicos",
         "zona": "Ingenio Azucarero",
         "area_m2": 35.8,
         "interior": false,
@@ -2345,8 +2384,8 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "RECT-AULAS-I-1",
-        "nombre": "Aulas I (M\u00f3dulo 1 - Antiguo Ingenio)",
-        "tipo": "Aulas T\u00e9cnicas y Talleres",
+        "nombre": "Aulas I (Módulo 1 - Antiguo Ingenio)",
+        "tipo": "Aulas Técnicas y Talleres",
         "zona": "Ingenio Azucarero",
         "area_m2": 379.3,
         "interior": false,
@@ -2384,8 +2423,8 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "RECT-AULAS-I-2",
-        "nombre": "Aulas I (M\u00f3dulo 2 - Antiguo Ingenio)",
-        "tipo": "Aulas T\u00e9cnicas y Talleres",
+        "nombre": "Aulas I (Módulo 2 - Antiguo Ingenio)",
+        "tipo": "Aulas Técnicas y Talleres",
         "zona": "Ingenio Azucarero",
         "area_m2": 143.0,
         "interior": false,
@@ -2423,8 +2462,8 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "RECT-BANOS-AULAS-I",
-        "nombre": "Ba\u00f1os Aulas I",
-        "tipo": "Servicios Higi\u00e9nicos Yuxtapuestos",
+        "nombre": "Baños Aulas I",
+        "tipo": "Servicios Higiénicos Yuxtapuestos",
         "zona": "Ingenio Azucarero",
         "area_m2": 119.2,
         "interior": false,
@@ -2463,7 +2502,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "properties": {
         "id": "RECT-SALA-DOCENTES",
         "nombre": "Sala de Docentes (Ingenio)",
-        "tipo": "\u00c1rea de Profesores",
+        "tipo": "Área de Profesores",
         "zona": "Ingenio Azucarero",
         "area_m2": 97.8,
         "interior": false,
@@ -2502,7 +2541,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "properties": {
         "id": "RECT-LABS-DOCENCIA",
         "nombre": "Laboratorios de Docencia",
-        "tipo": "Talleres y Docencia Pr\u00e1ctica",
+        "tipo": "Talleres y Docencia Práctica",
         "zona": "Ingenio Azucarero",
         "area_m2": 522.2,
         "interior": false,
@@ -2540,7 +2579,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "RECT-COLIBRI",
-        "nombre": "Restaurante El Colibr\u00ed",
+        "nombre": "Restaurante El Colibrí",
         "tipo": "Comedor Universitario",
         "zona": "Ingenio Azucarero",
         "area_m2": 50.5,
@@ -2619,7 +2658,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "properties": {
         "id": "RECT-CONTAINERS-1",
         "nombre": "Containers de Comida 1 (Plaza Mikuna)",
-        "tipo": "M\u00f3dulos Gastron\u00f3micos",
+        "tipo": "Módulos Gastronómicos",
         "zona": "Ingenio Azucarero",
         "area_m2": 40.5,
         "interior": false,
@@ -2658,7 +2697,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "properties": {
         "id": "RECT-CONTAINERS-2",
         "nombre": "Containers de Comida 2 (Plaza Mikuna)",
-        "tipo": "M\u00f3dulos Gastron\u00f3micos",
+        "tipo": "Módulos Gastronómicos",
         "zona": "Ingenio Azucarero",
         "area_m2": 21.7,
         "interior": false,
@@ -2697,7 +2736,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "properties": {
         "id": "RECT-INV-1",
         "nombre": "Invernadero Experimental 1",
-        "tipo": "Investigaci\u00f3n Agropecuaria",
+        "tipo": "Investigación Agropecuaria",
         "zona": "Ingenio Azucarero",
         "area_m2": 469.7,
         "interior": false,
@@ -2736,7 +2775,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "properties": {
         "id": "RECT-INV-2",
         "nombre": "Invernadero Experimental 2",
-        "tipo": "Investigaci\u00f3n Agropecuaria",
+        "tipo": "Investigación Agropecuaria",
         "zona": "Ingenio Azucarero",
         "area_m2": 222.2,
         "interior": false,
@@ -2775,7 +2814,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "properties": {
         "id": "RECT-INV-3",
         "nombre": "Invernadero Experimental 3",
-        "tipo": "Investigaci\u00f3n Agropecuaria",
+        "tipo": "Investigación Agropecuaria",
         "zona": "Ingenio Azucarero",
         "area_m2": 238.0,
         "interior": false,
@@ -2814,7 +2853,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "properties": {
         "id": "RECT-INV-4",
         "nombre": "Invernadero Experimental 4",
-        "tipo": "Investigaci\u00f3n Agropecuaria",
+        "tipo": "Investigación Agropecuaria",
         "zona": "Ingenio Azucarero",
         "area_m2": 215.3,
         "interior": false,
@@ -2852,8 +2891,8 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "RECT-LABS-CARRERA",
-        "nombre": "Laboratorios de Carrera (Ingenier\u00edas)",
-        "tipo": "Talleres y Naves Tecnol\u00f3gicas",
+        "nombre": "Laboratorios de Carrera (Ingenierías)",
+        "tipo": "Talleres y Naves Tecnológicas",
         "zona": "Ingenio Azucarero",
         "area_m2": 1232.9,
         "interior": false,
@@ -2891,8 +2930,8 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "RECT-BANOS-LABS",
-        "nombre": "Ba\u00f1os Laboratorios de Carrera",
-        "tipo": "Servicios Higi\u00e9nicos",
+        "nombre": "Baños Laboratorios de Carrera",
+        "tipo": "Servicios Higiénicos",
         "zona": "Ingenio Azucarero",
         "area_m2": 57.6,
         "interior": false,
@@ -3009,7 +3048,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "properties": {
         "id": "RECT-EDIF-SUR-CAB",
         "nombre": "Edificio Sur Caballerizas",
-        "tipo": "Edificaci\u00f3n Auxiliar",
+        "tipo": "Edificación Auxiliar",
         "zona": "Ingenio Azucarero",
         "area_m2": 155.3,
         "interior": false,
@@ -3047,7 +3086,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "RECT-DEFENSAS-SAN-JOSE",
-        "nombre": "Sala de Defensas San Jos\u00e9",
+        "nombre": "Sala de Defensas San José",
         "tipo": "Sala de Grado y Defensa de Tesis",
         "zona": "Ingenio Azucarero",
         "area_m2": 32.5,
@@ -3086,8 +3125,8 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "RECT-BANOS-SAN-JOSE",
-        "nombre": "Ba\u00f1os Sala de Defensas",
-        "tipo": "Servicios Higi\u00e9nicos",
+        "nombre": "Baños Sala de Defensas",
+        "tipo": "Servicios Higiénicos",
         "zona": "Ingenio Azucarero",
         "area_m2": 17.8,
         "interior": false,
@@ -3125,8 +3164,8 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "RECT-EDIF-ANEXO-DEF",
-        "nombre": "Edificio Anexo San Jos\u00e9",
-        "tipo": "Edificaci\u00f3n Administrativa",
+        "nombre": "Edificio Anexo San José",
+        "tipo": "Edificación Administrativa",
         "zona": "Ingenio Azucarero",
         "area_m2": 109.1,
         "interior": false,
@@ -3164,8 +3203,8 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "PERIM-INGENIO",
-        "nombre": "Pol\u00edgono Complejo Ingenio Azucarero",
-        "tipo": "Per\u00edmetro Complejo Hist\u00f3rico",
+        "nombre": "Polígono Complejo Ingenio Azucarero",
+        "tipo": "Perímetro Complejo Histórico",
         "zona": "Ingenio Azucarero",
         "area_m2": 5174.3,
         "interior": false,
@@ -3203,8 +3242,8 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "PERIM-CAPITULAR",
-        "nombre": "Pol\u00edgono Complejo Sala Capitular y Caballerizas",
-        "tipo": "Per\u00edmetro Hist\u00f3rico San Jos\u00e9",
+        "nombre": "Polígono Complejo Sala Capitular y Caballerizas",
+        "tipo": "Perímetro Histórico San José",
         "zona": "Ingenio Azucarero",
         "area_m2": 5070.5,
         "interior": false,
@@ -3271,7 +3310,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "properties": {
         "id": "POLY-RESERVORIO",
         "nombre": "Laguna Artificial / Reservorio de Agua",
-        "tipo": "Cuerpo de Agua L\u00e9ntico (Embalse)",
+        "tipo": "Cuerpo de Agua Léntico (Embalse)",
         "zona": "Ingenio Azucarero",
         "area_m2": 2006.2,
         "interior": false,
@@ -3365,7 +3404,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
           -78.1745134,
           0.4005171
         ],
-        "descripcion": "Alojamiento estudiantil patrimonial en Casa T (M\u00f3dulo 1). Teja tradicional y corredores exteriores."
+        "descripcion": "Alojamiento estudiantil patrimonial en Casa T (Módulo 1). Teja tradicional y corredores exteriores."
       },
       "geometry": {
         "type": "Polygon",
@@ -3407,7 +3446,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
           -78.174831,
           0.4003218
         ],
-        "descripcion": "Alojamiento estudiantil patrimonial en Casa T (M\u00f3dulo 2)."
+        "descripcion": "Alojamiento estudiantil patrimonial en Casa T (Módulo 2)."
       },
       "geometry": {
         "type": "Polygon",
@@ -3449,7 +3488,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
           -78.1746546,
           0.4005975
         ],
-        "descripcion": "Alojamiento estudiantil patrimonial en Casa T (M\u00f3dulo 3)."
+        "descripcion": "Alojamiento estudiantil patrimonial en Casa T (Módulo 3)."
       },
       "geometry": {
         "type": "Polygon",
@@ -3491,7 +3530,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
           -78.1749711,
           0.4004056
         ],
-        "descripcion": "Alojamiento estudiantil patrimonial en Casa T (M\u00f3dulo 4)."
+        "descripcion": "Alojamiento estudiantil patrimonial en Casa T (Módulo 4)."
       },
       "geometry": {
         "type": "Polygon",
@@ -3533,7 +3572,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
           -78.1747765,
           0.400728
         ],
-        "descripcion": "Alojamiento estudiantil patrimonial en Casa T (M\u00f3dulo 5)."
+        "descripcion": "Alojamiento estudiantil patrimonial en Casa T (Módulo 5)."
       },
       "geometry": {
         "type": "Polygon",
@@ -3575,7 +3614,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
           -78.1750168,
           0.4006182
         ],
-        "descripcion": "Alojamiento estudiantil patrimonial en Casa T (M\u00f3dulo 6)."
+        "descripcion": "Alojamiento estudiantil patrimonial en Casa T (Módulo 6)."
       },
       "geometry": {
         "type": "Polygon",
@@ -3617,7 +3656,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
           -78.1752603,
           0.4005131
         ],
-        "descripcion": "Alojamiento estudiantil patrimonial en Casa T (M\u00f3dulo 7)."
+        "descripcion": "Alojamiento estudiantil patrimonial en Casa T (Módulo 7)."
       },
       "geometry": {
         "type": "Polygon",
@@ -3659,7 +3698,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
           -78.1749251,
           0.4008123
         ],
-        "descripcion": "Alojamiento estudiantil patrimonial en Casa T (M\u00f3dulo 8)."
+        "descripcion": "Alojamiento estudiantil patrimonial en Casa T (Módulo 8)."
       },
       "geometry": {
         "type": "Polygon",
@@ -3701,7 +3740,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
           -78.1751704,
           0.4007038
         ],
-        "descripcion": "Alojamiento estudiantil patrimonial en Casa T (M\u00f3dulo 9)."
+        "descripcion": "Alojamiento estudiantil patrimonial en Casa T (Módulo 9)."
       },
       "geometry": {
         "type": "Polygon",
@@ -3743,7 +3782,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
           -78.1754152,
           0.4005981
         ],
-        "descripcion": "Alojamiento estudiantil patrimonial en Casa T (M\u00f3dulo 10)."
+        "descripcion": "Alojamiento estudiantil patrimonial en Casa T (Módulo 10)."
       },
       "geometry": {
         "type": "Polygon",
@@ -3779,7 +3818,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
         "id": "RECT-T-11",
         "nombre": "Casa Patrimonial Las T's 11",
         "zona": "Las T's y Multis",
-        "categoria": "Residencia Estudiantil Patrimonial (Casa T - M\u00f3dulo Cu\u00e1druple)",
+        "categoria": "Residencia Estudiantil Patrimonial (Casa T - Módulo Cuádruple)",
         "area_m2": 531.4,
         "centroide": [
           -78.1751525,
@@ -3821,7 +3860,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
         "id": "RECT-T-12",
         "nombre": "Casa Patrimonial Las T's 12",
         "zona": "Las T's y Multis",
-        "categoria": "Residencia Estudiantil Patrimonial (Casa T - M\u00f3dulo Cu\u00e1druple)",
+        "categoria": "Residencia Estudiantil Patrimonial (Casa T - Módulo Cuádruple)",
         "area_m2": 536.4,
         "centroide": [
           -78.1755995,
@@ -3869,7 +3908,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
           -78.1758705,
           0.4008493
         ],
-        "descripcion": "Alojamiento estudiantil patrimonial en Casa T (M\u00f3dulo 13, extremo oeste)."
+        "descripcion": "Alojamiento estudiantil patrimonial en Casa T (Módulo 13, extremo oeste)."
       },
       "geometry": {
         "type": "Polygon",
@@ -3905,8 +3944,8 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
         "id": "LINE-CANAL-PPAL",
         "nombre": "Canal de Riego Principal (Eje Central)",
         "zona": "Eje Transversal Norte-Sur",
-        "categoria": "Recurso H\u00eddrico L\u00f3tico",
-        "descripcion": "Canal maestro abierto de conducci\u00f3n de riego que atraviesa el campus de norte a sur."
+        "categoria": "Recurso Hídrico Lótico",
+        "descripcion": "Canal maestro abierto de conducción de riego que atraviesa el campus de norte a sur."
       },
       "geometry": {
         "type": "LineString",
@@ -3942,10 +3981,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-CANAL-SEC",
-        "nombre": "Canal Secundario de Desv\u00edo Patrimonial",
+        "nombre": "Canal Secundario de Desvío Patrimonial",
         "zona": "Ingenio Azucarero",
-        "categoria": "Recurso H\u00eddrico L\u00f3tico",
-        "descripcion": "Derivaci\u00f3n secundaria hacia el sector hist\u00f3rico del Ingenio Azucarero."
+        "categoria": "Recurso Hídrico Lótico",
+        "descripcion": "Derivación secundaria hacia el sector histórico del Ingenio Azucarero."
       },
       "geometry": {
         "type": "LineString",
@@ -3969,9 +4008,9 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-FG",
-        "nombre": "Divisi\u00f3n Bloques F y G",
+        "nombre": "División Bloques F y G",
         "zona": "Senescyt",
-        "descripcion": "Separaci\u00f3n modular y pasillo t\u00e9cnico entre el Bloque F y Bloque G"
+        "descripcion": "Separación modular y pasillo técnico entre el Bloque F y Bloque G"
       },
       "geometry": {
         "type": "LineString",
@@ -3991,9 +4030,9 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-BIB",
-        "nombre": "Divisi\u00f3n Ambientes Biblioteca Patrimonial",
+        "nombre": "División Ambientes Biblioteca Patrimonial",
         "zona": "Ingenio Azucarero",
-        "descripcion": "Tabique divisorio interior entre sala de lectura hist\u00f3rica y acervo patrimonial"
+        "descripcion": "Tabique divisorio interior entre sala de lectura histórica y acervo patrimonial"
       },
       "geometry": {
         "type": "LineString",
@@ -4015,7 +4054,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
         "id": "LINE-CANAL-SO",
         "nombre": "Canal de Agua Suroeste",
         "zona": "Las T's y Multis",
-        "descripcion": "Tramo lotiforme suroeste junto a Concha Ac\u00fastica y Multifamiliares (~124.5 m)"
+        "descripcion": "Tramo lotiforme suroeste junto a Concha Acústica y Multifamiliares (~124.5 m)"
       },
       "geometry": {
         "type": "LineString",
@@ -4035,9 +4074,9 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-CANAL-ESTE",
-        "nombre": "Canal de Agua Este (Conducci\u00f3n hacia Reservorio)",
+        "nombre": "Canal de Agua Este (Conducción hacia Reservorio)",
         "zona": "Ingenio Azucarero",
-        "descripcion": "Canal topogr\u00e1fico sinuoso de 34 v\u00e9rtices que conduce agua al reservorio (~280.6 m)"
+        "descripcion": "Canal topográfico sinuoso de 34 vértices que conduce agua al reservorio (~280.6 m)"
       },
       "geometry": {
         "type": "LineString",
@@ -4185,10 +4224,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-T-01",
-        "nombre": "Divisi\u00f3n Casa Patrimonial Las T's 1",
+        "nombre": "División Casa Patrimonial Las T's 1",
         "zona": "Las T's y Multis",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "L\u00ednea de divisi\u00f3n medianera interior de Casa Patrimonial Las T's 1."
+        "categoria": "División Arquitectónica Interior",
+        "descripcion": "Línea de división medianera interior de Casa Patrimonial Las T's 1."
       },
       "geometry": {
         "type": "LineString",
@@ -4208,10 +4247,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-T-02",
-        "nombre": "Divisi\u00f3n Casa Patrimonial Las T's 2",
+        "nombre": "División Casa Patrimonial Las T's 2",
         "zona": "Las T's y Multis",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "L\u00ednea de divisi\u00f3n medianera interior de Casa Patrimonial Las T's 2."
+        "categoria": "División Arquitectónica Interior",
+        "descripcion": "Línea de división medianera interior de Casa Patrimonial Las T's 2."
       },
       "geometry": {
         "type": "LineString",
@@ -4231,10 +4270,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-T-03",
-        "nombre": "Divisi\u00f3n Casa Patrimonial Las T's 3",
+        "nombre": "División Casa Patrimonial Las T's 3",
         "zona": "Las T's y Multis",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "L\u00ednea de divisi\u00f3n medianera interior de Casa Patrimonial Las T's 3."
+        "categoria": "División Arquitectónica Interior",
+        "descripcion": "Línea de división medianera interior de Casa Patrimonial Las T's 3."
       },
       "geometry": {
         "type": "LineString",
@@ -4254,10 +4293,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-T-04",
-        "nombre": "Divisi\u00f3n Casa Patrimonial Las T's 4",
+        "nombre": "División Casa Patrimonial Las T's 4",
         "zona": "Las T's y Multis",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "L\u00ednea de divisi\u00f3n medianera interior de Casa Patrimonial Las T's 4."
+        "categoria": "División Arquitectónica Interior",
+        "descripcion": "Línea de división medianera interior de Casa Patrimonial Las T's 4."
       },
       "geometry": {
         "type": "LineString",
@@ -4277,10 +4316,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-T-05",
-        "nombre": "Divisi\u00f3n Casa Patrimonial Las T's 5",
+        "nombre": "División Casa Patrimonial Las T's 5",
         "zona": "Las T's y Multis",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "Tabique transversal divisorio interior en punto topogr\u00e1fico [0.4006775, -78.1747574]."
+        "categoria": "División Arquitectónica Interior",
+        "descripcion": "Tabique transversal divisorio interior en punto topográfico [0.4006775, -78.1747574]."
       },
       "geometry": {
         "type": "LineString",
@@ -4300,10 +4339,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-T-06",
-        "nombre": "Divisi\u00f3n Casa Patrimonial Las T's 6",
+        "nombre": "División Casa Patrimonial Las T's 6",
         "zona": "Las T's y Multis",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "Tabique transversal divisorio interior en punto topogr\u00e1fico [0.4005722, -78.1749991]."
+        "categoria": "División Arquitectónica Interior",
+        "descripcion": "Tabique transversal divisorio interior en punto topográfico [0.4005722, -78.1749991]."
       },
       "geometry": {
         "type": "LineString",
@@ -4323,10 +4362,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-T-07",
-        "nombre": "Divisi\u00f3n Casa Patrimonial Las T's 7",
+        "nombre": "División Casa Patrimonial Las T's 7",
         "zona": "Las T's y Multis",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "Tabique transversal divisorio interior en punto topogr\u00e1fico [0.4004703, -78.1752328]."
+        "categoria": "División Arquitectónica Interior",
+        "descripcion": "Tabique transversal divisorio interior en punto topográfico [0.4004703, -78.1752328]."
       },
       "geometry": {
         "type": "LineString",
@@ -4346,10 +4385,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-T-08",
-        "nombre": "Divisi\u00f3n Casa Patrimonial Las T's 8",
+        "nombre": "División Casa Patrimonial Las T's 8",
         "zona": "Las T's y Multis",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "Tabique transversal divisorio interior en punto topogr\u00e1fico [0.4008586, -78.1749478]."
+        "categoria": "División Arquitectónica Interior",
+        "descripcion": "Tabique transversal divisorio interior en punto topográfico [0.4008586, -78.1749478]."
       },
       "geometry": {
         "type": "LineString",
@@ -4369,10 +4408,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-T-09",
-        "nombre": "Divisi\u00f3n Casa Patrimonial Las T's 9",
+        "nombre": "División Casa Patrimonial Las T's 9",
         "zona": "Las T's y Multis",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "Tabique transversal divisorio interior en punto topogr\u00e1fico [0.4007509, -78.1751872]."
+        "categoria": "División Arquitectónica Interior",
+        "descripcion": "Tabique transversal divisorio interior en punto topográfico [0.4007509, -78.1751872]."
       },
       "geometry": {
         "type": "LineString",
@@ -4392,10 +4431,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-T-10",
-        "nombre": "Divisi\u00f3n Casa Patrimonial Las T's 10",
+        "nombre": "División Casa Patrimonial Las T's 10",
         "zona": "Las T's y Multis",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "Tabique transversal divisorio interior en punto topogr\u00e1fico [0.4006437, -78.1754363]."
+        "categoria": "División Arquitectónica Interior",
+        "descripcion": "Tabique transversal divisorio interior en punto topográfico [0.4006437, -78.1754363]."
       },
       "geometry": {
         "type": "LineString",
@@ -4415,10 +4454,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-T-11",
-        "nombre": "Divisi\u00f3n Casa Patrimonial Las T's 11 (M\u00f3dulo 1)",
+        "nombre": "División Casa Patrimonial Las T's 11 (Módulo 1)",
         "zona": "Las T's y Multis",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "Tabique transversal divisorio interior 1/3 en punto topogr\u00e1fico [0.4008861, -78.1750467]."
+        "categoria": "División Arquitectónica Interior",
+        "descripcion": "Tabique transversal divisorio interior 1/3 en punto topográfico [0.4008861, -78.1750467]."
       },
       "geometry": {
         "type": "LineString",
@@ -4438,10 +4477,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-T-12",
-        "nombre": "Divisi\u00f3n Casa Patrimonial Las T's 11 (M\u00f3dulo 2)",
+        "nombre": "División Casa Patrimonial Las T's 11 (Módulo 2)",
         "zona": "Las T's y Multis",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "Tabique transversal divisorio interior 2/3 en punto topogr\u00e1fico [0.4008529, -78.1751473]."
+        "categoria": "División Arquitectónica Interior",
+        "descripcion": "Tabique transversal divisorio interior 2/3 en punto topográfico [0.4008529, -78.1751473]."
       },
       "geometry": {
         "type": "LineString",
@@ -4461,10 +4500,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-T-13",
-        "nombre": "Divisi\u00f3n Casa Patrimonial Las T's 11 (M\u00f3dulo 3)",
+        "nombre": "División Casa Patrimonial Las T's 11 (Módulo 3)",
         "zona": "Las T's y Multis",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "Tabique transversal divisorio interior 3/3 en punto topogr\u00e1fico [0.4008274, -78.1752475]."
+        "categoria": "División Arquitectónica Interior",
+        "descripcion": "Tabique transversal divisorio interior 3/3 en punto topográfico [0.4008274, -78.1752475]."
       },
       "geometry": {
         "type": "LineString",
@@ -4484,10 +4523,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-T-14",
-        "nombre": "Divisi\u00f3n Casa Patrimonial Las T's 12 (M\u00f3dulo 1)",
+        "nombre": "División Casa Patrimonial Las T's 12 (Módulo 1)",
         "zona": "Las T's y Multis",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "Tabique transversal divisorio interior 1/3 en punto topogr\u00e1fico [0.4007043, -78.1756921]."
+        "categoria": "División Arquitectónica Interior",
+        "descripcion": "Tabique transversal divisorio interior 1/3 en punto topográfico [0.4007043, -78.1756921]."
       },
       "geometry": {
         "type": "LineString",
@@ -4507,10 +4546,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-T-15",
-        "nombre": "Divisi\u00f3n Casa Patrimonial Las T's 12 (M\u00f3dulo 2)",
+        "nombre": "División Casa Patrimonial Las T's 12 (Módulo 2)",
         "zona": "Las T's y Multis",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "Tabique transversal divisorio interior 2/3 en punto topogr\u00e1fico [0.4007292, -78.1755865]."
+        "categoria": "División Arquitectónica Interior",
+        "descripcion": "Tabique transversal divisorio interior 2/3 en punto topográfico [0.4007292, -78.1755865]."
       },
       "geometry": {
         "type": "LineString",
@@ -4530,10 +4569,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-T-16",
-        "nombre": "Divisi\u00f3n Casa Patrimonial Las T's 12 (M\u00f3dulo 3)",
+        "nombre": "División Casa Patrimonial Las T's 12 (Módulo 3)",
         "zona": "Las T's y Multis",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "Tabique transversal divisorio interior 3/3 en punto topogr\u00e1fico [0.400757, -78.1754879]."
+        "categoria": "División Arquitectónica Interior",
+        "descripcion": "Tabique transversal divisorio interior 3/3 en punto topográfico [0.400757, -78.1754879]."
       },
       "geometry": {
         "type": "LineString",
@@ -4553,10 +4592,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-T-17",
-        "nombre": "Divisi\u00f3n Casa Patrimonial Las T's 13",
+        "nombre": "División Casa Patrimonial Las T's 13",
         "zona": "Las T's y Multis",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "Tabique transversal divisorio interior en punto topogr\u00e1fico [0.4008941, -78.1758882]."
+        "categoria": "División Arquitectónica Interior",
+        "descripcion": "Tabique transversal divisorio interior en punto topográfico [0.4008941, -78.1758882]."
       },
       "geometry": {
         "type": "LineString",
@@ -4584,7 +4623,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
           -78.174741,
           0.4021405
         ],
-        "descripcion": "Bloque residencial multifamiliar escalonado con tabique de divisi\u00f3n interior."
+        "descripcion": "Bloque residencial multifamiliar escalonado con tabique de división interior."
       },
       "geometry": {
         "type": "Polygon",
@@ -4634,7 +4673,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
           -78.1749032,
           0.4018943
         ],
-        "descripcion": "Bloque residencial multifamiliar escalonado con partici\u00f3n divisoria interna."
+        "descripcion": "Bloque residencial multifamiliar escalonado con partición divisoria interna."
       },
       "geometry": {
         "type": "Polygon",
@@ -5012,15 +5051,15 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "RECT-MULTI-NORES",
-        "nombre": "Edificio T\u00e9cnico y de Servicios Las Multis",
+        "nombre": "Edificio Técnico y de Servicios Las Multis",
         "zona": "Sector Las Multis",
-        "categoria": "Edificio de Servicios / Soporte T\u00e9cnico",
+        "categoria": "Edificio de Servicios / Soporte Técnico",
         "area_m2": 147.0,
         "centroide": [
           -78.1750039,
           0.4015424
         ],
-        "descripcion": "Edificaci\u00f3n no residencial de apoyo t\u00e9cnico y log\u00edstico en Las Multis."
+        "descripcion": "Edificación no residencial de apoyo técnico y logístico en Las Multis."
       },
       "geometry": {
         "type": "Polygon",
@@ -5056,7 +5095,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
         "id": "RECT-MULTI-CANCHA",
         "nombre": "Cancha Deportiva Las Multis",
         "zona": "Sector Las Multis",
-        "categoria": "Instalaci\u00f3n Deportiva y Recreativa",
+        "categoria": "Instalación Deportiva y Recreativa",
         "area_m2": 464.5,
         "centroide": [
           -78.1745256,
@@ -5104,7 +5143,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
           -78.1753152,
           0.4015734
         ],
-        "descripcion": "Tienda y bazar de v\u00edveres que comparte la planta baja con el bloque residencial."
+        "descripcion": "Tienda y bazar de víveres que comparte la planta baja con el bloque residencial."
       },
       "geometry": {
         "type": "Polygon",
@@ -5138,10 +5177,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-MULTI-01",
-        "nombre": "Divisi\u00f3n Bloque Multifamiliar 1",
+        "nombre": "División Bloque Multifamiliar 1",
         "zona": "Sector Las Multis",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "L\u00ednea de partici\u00f3n medianera interior del Bloque Multifamiliar 1."
+        "categoria": "División Arquitectónica Interior",
+        "descripcion": "Línea de partición medianera interior del Bloque Multifamiliar 1."
       },
       "geometry": {
         "type": "LineString",
@@ -5161,9 +5200,9 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-MULTI-02",
-        "nombre": "Divisi\u00f3n Bloque Multifamiliar 2",
+        "nombre": "División Bloque Multifamiliar 2",
         "zona": "Sector Las Multis",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
+        "categoria": "División Arquitectónica Interior",
         "descripcion": "Tabique transversal divisorio interior en el quiebre escalonado del Bloque Multifamiliar 2."
       },
       "geometry": {
@@ -5184,15 +5223,15 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "RECT-COMEDOR-PERCI",
-        "nombre": "Restaurante Comedor do\u00f1a Perci",
+        "nombre": "Restaurante Comedor doña Perci",
         "zona": "Sector Reservorio Este",
-        "categoria": "Servicio de Alimentaci\u00f3n / Gastronom\u00eda",
+        "categoria": "Servicio de Alimentación / Gastronomía",
         "area_m2": 46.2,
         "centroide": [
           -78.1685148,
           0.4046028
         ],
-        "descripcion": "Comedor tradicional y punto de alimentaci\u00f3n estudiantil en las inmediaciones del reservorio este."
+        "descripcion": "Comedor tradicional y punto de alimentación estudiantil en las inmediaciones del reservorio este."
       },
       "geometry": {
         "type": "Polygon",
@@ -5234,7 +5273,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
           -78.1683528,
           0.4046028
         ],
-        "descripcion": "Complejo habitacional estudiantil privado colindante al l\u00edmite este del campus universitario."
+        "descripcion": "Complejo habitacional estudiantil privado colindante al límite este del campus universitario."
       },
       "geometry": {
         "type": "Polygon",
@@ -5444,7 +5483,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
           -78.1744021,
           0.402128
         ],
-        "descripcion": "Bloque longitudinal patrimonial de 8 m\u00f3dulos con 7 tabiques divisorios transversales."
+        "descripcion": "Bloque longitudinal patrimonial de 8 módulos con 7 tabiques divisorios transversales."
       },
       "geometry": {
         "type": "Polygon",
@@ -5570,7 +5609,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
           -78.1745988,
           0.40281
         ],
-        "descripcion": "Bloque longitudinal patrimonial superior de 11 m\u00f3dulos con 10 tabiques divisorios transversales."
+        "descripcion": "Bloque longitudinal patrimonial superior de 11 módulos con 10 tabiques divisorios transversales."
       },
       "geometry": {
         "type": "Polygon",
@@ -5606,13 +5645,13 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
         "id": "RECT-PATS-LAB",
         "nombre": "Laboratorio de Campo Las Pats",
         "zona": "Sector Las Pats",
-        "categoria": "Laboratorio / Investigaci\u00f3n Cient\u00edfica",
+        "categoria": "Laboratorio / Investigación Científica",
         "area_m2": 150.0,
         "centroide": [
           -78.1744906,
           0.4016386
         ],
-        "descripcion": "Edificaci\u00f3n no residencial destinada a ensayos biol\u00f3gicos y laboratorio de campo en Las Pats."
+        "descripcion": "Edificación no residencial destinada a ensayos biológicos y laboratorio de campo en Las Pats."
       },
       "geometry": {
         "type": "Polygon",
@@ -5648,13 +5687,13 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
         "id": "RECT-PATS-TICS",
         "nombre": "Edificio TICs y Conectividad Las Pats",
         "zona": "Sector Las Pats",
-        "categoria": "Tecnolog\u00eda / Soporte y Telecomunicaciones",
+        "categoria": "Tecnología / Soporte y Telecomunicaciones",
         "area_m2": 162.1,
         "centroide": [
           -78.1752238,
           0.4029913
         ],
-        "descripcion": "Centro de distribuci\u00f3n de datos, telecomunicaciones y soporte inform\u00e1tico en Las Pats."
+        "descripcion": "Centro de distribución de datos, telecomunicaciones y soporte informático en Las Pats."
       },
       "geometry": {
         "type": "Polygon",
@@ -5730,9 +5769,9 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-PATS-01",
-        "nombre": "Divisi\u00f3n Residencia Patrimonial Las Pats 1 (L\u00ednea 1)",
+        "nombre": "División Residencia Patrimonial Las Pats 1 (Línea 1)",
         "zona": "Sector Las Pats",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
+        "categoria": "División Arquitectónica Interior",
         "descripcion": "Tabique divisorio interior 1 en Residencia Patrimonial Las Pats 1."
       },
       "geometry": {
@@ -5753,9 +5792,9 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-PATS-02",
-        "nombre": "Divisi\u00f3n Residencia Patrimonial Las Pats 1 (L\u00ednea 2)",
+        "nombre": "División Residencia Patrimonial Las Pats 1 (Línea 2)",
         "zona": "Sector Las Pats",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
+        "categoria": "División Arquitectónica Interior",
         "descripcion": "Tabique divisorio interior 2 en Residencia Patrimonial Las Pats 1."
       },
       "geometry": {
@@ -5776,9 +5815,9 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-PATS-03",
-        "nombre": "Divisi\u00f3n Residencia Patrimonial Las Pats 2 (L\u00ednea 1)",
+        "nombre": "División Residencia Patrimonial Las Pats 2 (Línea 1)",
         "zona": "Sector Las Pats",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
+        "categoria": "División Arquitectónica Interior",
         "descripcion": "Tabique divisorio interior 1 en Residencia Patrimonial Las Pats 2."
       },
       "geometry": {
@@ -5799,9 +5838,9 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-PATS-04",
-        "nombre": "Divisi\u00f3n Residencia Patrimonial Las Pats 2 (L\u00ednea 2)",
+        "nombre": "División Residencia Patrimonial Las Pats 2 (Línea 2)",
         "zona": "Sector Las Pats",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
+        "categoria": "División Arquitectónica Interior",
         "descripcion": "Tabique divisorio interior 2 en Residencia Patrimonial Las Pats 2."
       },
       "geometry": {
@@ -5822,9 +5861,9 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-PATS-05",
-        "nombre": "Divisi\u00f3n Residencia Patrimonial Las Pats 3 (L\u00ednea 1)",
+        "nombre": "División Residencia Patrimonial Las Pats 3 (Línea 1)",
         "zona": "Sector Las Pats",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
+        "categoria": "División Arquitectónica Interior",
         "descripcion": "Tabique divisorio interior 1 en Residencia Patrimonial Las Pats 3."
       },
       "geometry": {
@@ -5845,9 +5884,9 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-PATS-06",
-        "nombre": "Divisi\u00f3n Residencia Patrimonial Las Pats 3 (L\u00ednea 2)",
+        "nombre": "División Residencia Patrimonial Las Pats 3 (Línea 2)",
         "zona": "Sector Las Pats",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
+        "categoria": "División Arquitectónica Interior",
         "descripcion": "Tabique divisorio interior 2 en Residencia Patrimonial Las Pats 3."
       },
       "geometry": {
@@ -5868,9 +5907,9 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-PATS-07",
-        "nombre": "Divisi\u00f3n Residencia Patrimonial Las Pats 3 (L\u00ednea 3)",
+        "nombre": "División Residencia Patrimonial Las Pats 3 (Línea 3)",
         "zona": "Sector Las Pats",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
+        "categoria": "División Arquitectónica Interior",
         "descripcion": "Tabique divisorio interior 3 en Residencia Patrimonial Las Pats 3."
       },
       "geometry": {
@@ -5891,10 +5930,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-PATS-08",
-        "nombre": "Divisi\u00f3n Residencia Patrimonial Las Pats 4 (M\u00f3dulo 1)",
+        "nombre": "División Residencia Patrimonial Las Pats 4 (Módulo 1)",
         "zona": "Sector Las Pats",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "Tabique transversal divisorio 1 en punto topogr\u00e1fico [0.4016008, -78.1740586]."
+        "categoria": "División Arquitectónica Interior",
+        "descripcion": "Tabique transversal divisorio 1 en punto topográfico [0.4016008, -78.1740586]."
       },
       "geometry": {
         "type": "LineString",
@@ -5914,10 +5953,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-PATS-09",
-        "nombre": "Divisi\u00f3n Residencia Patrimonial Las Pats 4 (M\u00f3dulo 2)",
+        "nombre": "División Residencia Patrimonial Las Pats 4 (Módulo 2)",
         "zona": "Sector Las Pats",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "Tabique transversal divisorio 2 en punto topogr\u00e1fico [0.4016451, -78.1741455]."
+        "categoria": "División Arquitectónica Interior",
+        "descripcion": "Tabique transversal divisorio 2 en punto topográfico [0.4016451, -78.1741455]."
       },
       "geometry": {
         "type": "LineString",
@@ -5937,10 +5976,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-PATS-10",
-        "nombre": "Divisi\u00f3n Residencia Patrimonial Las Pats 4 (M\u00f3dulo 3)",
+        "nombre": "División Residencia Patrimonial Las Pats 4 (Módulo 3)",
         "zona": "Sector Las Pats",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "Tabique transversal divisorio 3 en punto topogr\u00e1fico [0.401691, -78.1742266]."
+        "categoria": "División Arquitectónica Interior",
+        "descripcion": "Tabique transversal divisorio 3 en punto topográfico [0.401691, -78.1742266]."
       },
       "geometry": {
         "type": "LineString",
@@ -5960,10 +5999,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-PATS-11",
-        "nombre": "Divisi\u00f3n Residencia Patrimonial Las Pats 4 (M\u00f3dulo 4)",
+        "nombre": "División Residencia Patrimonial Las Pats 4 (Módulo 4)",
         "zona": "Sector Las Pats",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "Tabique transversal divisorio 4 en punto topogr\u00e1fico [0.4017393, -78.1743195]."
+        "categoria": "División Arquitectónica Interior",
+        "descripcion": "Tabique transversal divisorio 4 en punto topográfico [0.4017393, -78.1743195]."
       },
       "geometry": {
         "type": "LineString",
@@ -5983,10 +6022,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-PATS-12",
-        "nombre": "Divisi\u00f3n Residencia Patrimonial Las Pats 4 (M\u00f3dulo 5)",
+        "nombre": "División Residencia Patrimonial Las Pats 4 (Módulo 5)",
         "zona": "Sector Las Pats",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "Tabique transversal divisorio 5 en punto topogr\u00e1fico [0.4017886, -78.1744067]."
+        "categoria": "División Arquitectónica Interior",
+        "descripcion": "Tabique transversal divisorio 5 en punto topográfico [0.4017886, -78.1744067]."
       },
       "geometry": {
         "type": "LineString",
@@ -6006,10 +6045,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-PATS-13",
-        "nombre": "Divisi\u00f3n Residencia Patrimonial Las Pats 5 (M\u00f3dulo 1)",
+        "nombre": "División Residencia Patrimonial Las Pats 5 (Módulo 1)",
         "zona": "Sector Las Pats",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "Tabique transversal divisorio 1 en punto topogr\u00e1fico [0.4018386, -78.1745156]."
+        "categoria": "División Arquitectónica Interior",
+        "descripcion": "Tabique transversal divisorio 1 en punto topográfico [0.4018386, -78.1745156]."
       },
       "geometry": {
         "type": "LineString",
@@ -6029,10 +6068,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-PATS-14",
-        "nombre": "Divisi\u00f3n Residencia Patrimonial Las Pats 5 (M\u00f3dulo 2)",
+        "nombre": "División Residencia Patrimonial Las Pats 5 (Módulo 2)",
         "zona": "Sector Las Pats",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "Tabique transversal divisorio 2 en punto topogr\u00e1fico [0.4019324, -78.1744623]."
+        "categoria": "División Arquitectónica Interior",
+        "descripcion": "Tabique transversal divisorio 2 en punto topográfico [0.4019324, -78.1744623]."
       },
       "geometry": {
         "type": "LineString",
@@ -6052,10 +6091,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-PATS-15",
-        "nombre": "Divisi\u00f3n Residencia Patrimonial Las Pats 5 (M\u00f3dulo 3)",
+        "nombre": "División Residencia Patrimonial Las Pats 5 (Módulo 3)",
         "zona": "Sector Las Pats",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "Tabique transversal divisorio 3 en punto topogr\u00e1fico [0.4020149, -78.1744117]."
+        "categoria": "División Arquitectónica Interior",
+        "descripcion": "Tabique transversal divisorio 3 en punto topográfico [0.4020149, -78.1744117]."
       },
       "geometry": {
         "type": "LineString",
@@ -6075,10 +6114,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-PATS-16",
-        "nombre": "Divisi\u00f3n Residencia Patrimonial Las Pats 5 (M\u00f3dulo 4)",
+        "nombre": "División Residencia Patrimonial Las Pats 5 (Módulo 4)",
         "zona": "Sector Las Pats",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "Tabique transversal divisorio 4 en punto topogr\u00e1fico [0.4021058, -78.1743624]."
+        "categoria": "División Arquitectónica Interior",
+        "descripcion": "Tabique transversal divisorio 4 en punto topográfico [0.4021058, -78.1743624]."
       },
       "geometry": {
         "type": "LineString",
@@ -6098,10 +6137,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-PATS-17",
-        "nombre": "Divisi\u00f3n Residencia Patrimonial Las Pats 5 (M\u00f3dulo 5)",
+        "nombre": "División Residencia Patrimonial Las Pats 5 (Módulo 5)",
         "zona": "Sector Las Pats",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "Tabique transversal divisorio 5 en punto topogr\u00e1fico [0.4021913, -78.1743108]."
+        "categoria": "División Arquitectónica Interior",
+        "descripcion": "Tabique transversal divisorio 5 en punto topográfico [0.4021913, -78.1743108]."
       },
       "geometry": {
         "type": "LineString",
@@ -6121,10 +6160,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-PATS-18",
-        "nombre": "Divisi\u00f3n Residencia Patrimonial Las Pats 5 (M\u00f3dulo 6)",
+        "nombre": "División Residencia Patrimonial Las Pats 5 (Módulo 6)",
         "zona": "Sector Las Pats",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "Tabique transversal divisorio 6 en punto topogr\u00e1fico [0.4022821, -78.1742612]."
+        "categoria": "División Arquitectónica Interior",
+        "descripcion": "Tabique transversal divisorio 6 en punto topográfico [0.4022821, -78.1742612]."
       },
       "geometry": {
         "type": "LineString",
@@ -6144,10 +6183,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-PATS-19",
-        "nombre": "Divisi\u00f3n Residencia Patrimonial Las Pats 5 (M\u00f3dulo 7)",
+        "nombre": "División Residencia Patrimonial Las Pats 5 (Módulo 7)",
         "zona": "Sector Las Pats",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "Tabique transversal divisorio 7 en punto topogr\u00e1fico [0.4023653, -78.1742109]."
+        "categoria": "División Arquitectónica Interior",
+        "descripcion": "Tabique transversal divisorio 7 en punto topográfico [0.4023653, -78.1742109]."
       },
       "geometry": {
         "type": "LineString",
@@ -6167,10 +6206,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-PATS-20",
-        "nombre": "Divisi\u00f3n Residencia Patrimonial Las Pats 6 (M\u00f3dulo 1)",
+        "nombre": "División Residencia Patrimonial Las Pats 6 (Módulo 1)",
         "zona": "Sector Las Pats",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "Tabique transversal divisorio 1 en punto topogr\u00e1fico [0.4023974, -78.1740741]."
+        "categoria": "División Arquitectónica Interior",
+        "descripcion": "Tabique transversal divisorio 1 en punto topográfico [0.4023974, -78.1740741]."
       },
       "geometry": {
         "type": "LineString",
@@ -6190,10 +6229,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-PATS-21",
-        "nombre": "Divisi\u00f3n Residencia Patrimonial Las Pats 6 (M\u00f3dulo 2)",
+        "nombre": "División Residencia Patrimonial Las Pats 6 (Módulo 2)",
         "zona": "Sector Las Pats",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "Tabique transversal divisorio 2 en punto topogr\u00e1fico [0.4023482, -78.1739882]."
+        "categoria": "División Arquitectónica Interior",
+        "descripcion": "Tabique transversal divisorio 2 en punto topográfico [0.4023482, -78.1739882]."
       },
       "geometry": {
         "type": "LineString",
@@ -6213,10 +6252,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-PATS-22",
-        "nombre": "Divisi\u00f3n Residencia Patrimonial Las Pats 6 (M\u00f3dulo 3)",
+        "nombre": "División Residencia Patrimonial Las Pats 6 (Módulo 3)",
         "zona": "Sector Las Pats",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "Tabique transversal divisorio 3 en punto topogr\u00e1fico [0.4023002, -78.1739021]."
+        "categoria": "División Arquitectónica Interior",
+        "descripcion": "Tabique transversal divisorio 3 en punto topográfico [0.4023002, -78.1739021]."
       },
       "geometry": {
         "type": "LineString",
@@ -6236,10 +6275,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-PATS-23",
-        "nombre": "Divisi\u00f3n Residencia Patrimonial Las Pats 7 (M\u00f3dulo 1)",
+        "nombre": "División Residencia Patrimonial Las Pats 7 (Módulo 1)",
         "zona": "Sector Las Pats",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "Tabique transversal divisorio 1 en punto topogr\u00e1fico [0.4020732, -78.1735014]."
+        "categoria": "División Arquitectónica Interior",
+        "descripcion": "Tabique transversal divisorio 1 en punto topográfico [0.4020732, -78.1735014]."
       },
       "geometry": {
         "type": "LineString",
@@ -6259,10 +6298,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-PATS-24",
-        "nombre": "Divisi\u00f3n Residencia Patrimonial Las Pats 7 (M\u00f3dulo 2)",
+        "nombre": "División Residencia Patrimonial Las Pats 7 (Módulo 2)",
         "zona": "Sector Las Pats",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "Tabique transversal divisorio 2 en punto topogr\u00e1fico [0.4021195, -78.1735879]."
+        "categoria": "División Arquitectónica Interior",
+        "descripcion": "Tabique transversal divisorio 2 en punto topográfico [0.4021195, -78.1735879]."
       },
       "geometry": {
         "type": "LineString",
@@ -6282,10 +6321,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-PATS-25",
-        "nombre": "Divisi\u00f3n Residencia Patrimonial Las Pats 7 (M\u00f3dulo 3)",
+        "nombre": "División Residencia Patrimonial Las Pats 7 (Módulo 3)",
         "zona": "Sector Las Pats",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "Tabique transversal divisorio 3 en punto topogr\u00e1fico [0.4021695, -78.1736748]."
+        "categoria": "División Arquitectónica Interior",
+        "descripcion": "Tabique transversal divisorio 3 en punto topográfico [0.4021695, -78.1736748]."
       },
       "geometry": {
         "type": "LineString",
@@ -6305,10 +6344,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-PATS-26",
-        "nombre": "Divisi\u00f3n Residencia Patrimonial Las Pats 8 (M\u00f3dulo 1)",
+        "nombre": "División Residencia Patrimonial Las Pats 8 (Módulo 1)",
         "zona": "Sector Las Pats",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "Tabique transversal divisorio 1 en punto topogr\u00e1fico [0.4029728, -78.1750092]."
+        "categoria": "División Arquitectónica Interior",
+        "descripcion": "Tabique transversal divisorio 1 en punto topográfico [0.4029728, -78.1750092]."
       },
       "geometry": {
         "type": "LineString",
@@ -6328,10 +6367,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-PATS-27",
-        "nombre": "Divisi\u00f3n Residencia Patrimonial Las Pats 8 (M\u00f3dulo 2)",
+        "nombre": "División Residencia Patrimonial Las Pats 8 (Módulo 2)",
         "zona": "Sector Las Pats",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "Tabique transversal divisorio 2 en punto topogr\u00e1fico [0.4029345, -78.1749284]."
+        "categoria": "División Arquitectónica Interior",
+        "descripcion": "Tabique transversal divisorio 2 en punto topográfico [0.4029345, -78.1749284]."
       },
       "geometry": {
         "type": "LineString",
@@ -6351,10 +6390,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-PATS-28",
-        "nombre": "Divisi\u00f3n Residencia Patrimonial Las Pats 8 (M\u00f3dulo 3)",
+        "nombre": "División Residencia Patrimonial Las Pats 8 (Módulo 3)",
         "zona": "Sector Las Pats",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "Tabique transversal divisorio 3 en punto topogr\u00e1fico [0.4028903, -78.1748482]."
+        "categoria": "División Arquitectónica Interior",
+        "descripcion": "Tabique transversal divisorio 3 en punto topográfico [0.4028903, -78.1748482]."
       },
       "geometry": {
         "type": "LineString",
@@ -6374,10 +6413,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-PATS-29",
-        "nombre": "Divisi\u00f3n Residencia Patrimonial Las Pats 8 (M\u00f3dulo 4)",
+        "nombre": "División Residencia Patrimonial Las Pats 8 (Módulo 4)",
         "zona": "Sector Las Pats",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "Tabique transversal divisorio 4 en punto topogr\u00e1fico [0.402842, -78.1747607]."
+        "categoria": "División Arquitectónica Interior",
+        "descripcion": "Tabique transversal divisorio 4 en punto topográfico [0.402842, -78.1747607]."
       },
       "geometry": {
         "type": "LineString",
@@ -6397,10 +6436,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-PATS-30",
-        "nombre": "Divisi\u00f3n Residencia Patrimonial Las Pats 8 (M\u00f3dulo 5)",
+        "nombre": "División Residencia Patrimonial Las Pats 8 (Módulo 5)",
         "zona": "Sector Las Pats",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "Tabique transversal divisorio 5 en punto topogr\u00e1fico [0.4027961, -78.1746715]."
+        "categoria": "División Arquitectónica Interior",
+        "descripcion": "Tabique transversal divisorio 5 en punto topográfico [0.4027961, -78.1746715]."
       },
       "geometry": {
         "type": "LineString",
@@ -6420,10 +6459,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-PATS-31",
-        "nombre": "Divisi\u00f3n Residencia Patrimonial Las Pats 8 (M\u00f3dulo 6)",
+        "nombre": "División Residencia Patrimonial Las Pats 8 (Módulo 6)",
         "zona": "Sector Las Pats",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "Tabique transversal divisorio 6 en punto topogr\u00e1fico [0.4027448, -78.174574]."
+        "categoria": "División Arquitectónica Interior",
+        "descripcion": "Tabique transversal divisorio 6 en punto topográfico [0.4027448, -78.174574]."
       },
       "geometry": {
         "type": "LineString",
@@ -6443,10 +6482,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-PATS-32",
-        "nombre": "Divisi\u00f3n Residencia Patrimonial Las Pats 8 (M\u00f3dulo 7)",
+        "nombre": "División Residencia Patrimonial Las Pats 8 (Módulo 7)",
         "zona": "Sector Las Pats",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "Tabique transversal divisorio 7 en punto topogr\u00e1fico [0.4026985, -78.1744855]."
+        "categoria": "División Arquitectónica Interior",
+        "descripcion": "Tabique transversal divisorio 7 en punto topográfico [0.4026985, -78.1744855]."
       },
       "geometry": {
         "type": "LineString",
@@ -6466,10 +6505,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-PATS-33",
-        "nombre": "Divisi\u00f3n Residencia Patrimonial Las Pats 8 (M\u00f3dulo 8)",
+        "nombre": "División Residencia Patrimonial Las Pats 8 (Módulo 8)",
         "zona": "Sector Las Pats",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "Tabique transversal divisorio 8 en punto topogr\u00e1fico [0.4026539, -78.1743996]."
+        "categoria": "División Arquitectónica Interior",
+        "descripcion": "Tabique transversal divisorio 8 en punto topográfico [0.4026539, -78.1743996]."
       },
       "geometry": {
         "type": "LineString",
@@ -6489,10 +6528,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-PATS-34",
-        "nombre": "Divisi\u00f3n Residencia Patrimonial Las Pats 8 (M\u00f3dulo 9)",
+        "nombre": "División Residencia Patrimonial Las Pats 8 (Módulo 9)",
         "zona": "Sector Las Pats",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "Tabique transversal divisorio 9 en punto topogr\u00e1fico [0.402608, -78.1743101]."
+        "categoria": "División Arquitectónica Interior",
+        "descripcion": "Tabique transversal divisorio 9 en punto topográfico [0.402608, -78.1743101]."
       },
       "geometry": {
         "type": "LineString",
@@ -6512,10 +6551,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "LINE-DIV-PATS-35",
-        "nombre": "Divisi\u00f3n Residencia Patrimonial Las Pats 8 (M\u00f3dulo 10)",
+        "nombre": "División Residencia Patrimonial Las Pats 8 (Módulo 10)",
         "zona": "Sector Las Pats",
-        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
-        "descripcion": "Tabique transversal divisorio 10 en punto topogr\u00e1fico [0.4025651, -78.1742186]."
+        "categoria": "División Arquitectónica Interior",
+        "descripcion": "Tabique transversal divisorio 10 en punto topográfico [0.4025651, -78.1742186]."
       },
       "geometry": {
         "type": "LineString",
@@ -6527,6 +6566,220 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
           [
             -78.1742196,
             0.4025631
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-MULTI-11",
+        "nombre": "Bloque Multifamiliar Las Multis 11",
+        "zona": "Sector Las Multis",
+        "categoria": "Residencia Estudiantil Multifamiliar",
+        "area_m2": 460.1,
+        "centroide": [
+          -78.1754351,
+          0.4015207
+        ],
+        "descripcion": "Bloque residencial multifamiliar estudiantil en el flanco este de Las Multis, próximo al canal sur."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.175511,
+              0.401374
+            ],
+            [
+              -78.175288,
+              0.401561
+            ],
+            [
+              -78.175372,
+              0.401673
+            ],
+            [
+              -78.175584,
+              0.40146
+            ],
+            [
+              -78.175511,
+              0.401374
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-MULTI-12",
+        "nombre": "Bloque Multifamiliar Las Multis 12",
+        "zona": "Sector Las Multis",
+        "categoria": "Residencia Estudiantil Multifamiliar",
+        "area_m2": 441.8,
+        "centroide": [
+          -78.1757845,
+          0.4013919
+        ],
+        "descripcion": "Bloque residencial multifamiliar estudiantil en el sector central-sur de Las Multis."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.175933,
+              0.401332
+            ],
+            [
+              -78.17572,
+              0.40154
+            ],
+            [
+              -78.175639,
+              0.401436
+            ],
+            [
+              -78.175855,
+              0.401249
+            ],
+            [
+              -78.175933,
+              0.401332
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-MULTI-13",
+        "nombre": "Bloque Multifamiliar Las Multis 13",
+        "zona": "Sector Las Multis",
+        "categoria": "Residencia Estudiantil Multifamiliar",
+        "area_m2": 415.1,
+        "centroide": [
+          -78.1761296,
+          0.4012578
+        ],
+        "descripcion": "Bloque residencial multifamiliar estudiantil en el flanco suroeste de Las Multis."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.175989,
+              0.4013
+            ],
+            [
+              -78.176199,
+              0.40112
+            ],
+            [
+              -78.176276,
+              0.401196
+            ],
+            [
+              -78.176064,
+              0.401403
+            ],
+            [
+              -78.175989,
+              0.4013
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-PATS-09",
+        "nombre": "Residencia Patrimonial Las Pats 9",
+        "zona": "Sector Las Pats",
+        "categoria": "Residencia Estudiantil Patrimonial",
+        "area_m2": 393.1,
+        "centroide": [
+          -78.1733144,
+          0.4018124
+        ],
+        "descripcion": "Bloque residencial estudiantil patrimonial de 3 módulos habitacionales con 2 tabiques divisorios transversales."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.173188,
+              0.401931
+            ],
+            [
+              -78.173282,
+              0.401974
+            ],
+            [
+              -78.173438,
+              0.401686
+            ],
+            [
+              -78.173357,
+              0.401646
+            ],
+            [
+              -78.173188,
+              0.401931
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LINE-DIV-PATS-36",
+        "nombre": "División Residencia Patrimonial Las Pats 9 (Módulo 1)",
+        "zona": "Sector Las Pats",
+        "categoria": "División Arquitectónica Interior",
+        "descripcion": "Tabique transversal divisorio 1 en punto topográfico [0.401784, -78.173383]."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.173383,
+            0.401784
+          ],
+          [
+            -78.1732995,
+            0.401743
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LINE-DIV-PATS-37",
+        "nombre": "División Residencia Patrimonial Las Pats 9 (Módulo 2)",
+        "zona": "Sector Las Pats",
+        "categoria": "División Arquitectónica Interior",
+        "descripcion": "Tabique transversal divisorio 2 en punto topográfico [0.401877, -78.173330]."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.17333,
+            0.401877
+          ],
+          [
+            -78.1732449,
+            0.401835
           ]
         ]
       }

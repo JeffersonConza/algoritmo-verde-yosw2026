@@ -1271,6 +1271,45 @@ def generar_mapa():
             "desc": "Bloque residencial multifamiliar en el extremo sur de Las Multis."
         },
         {
+            "id": "RECT-MULTI-11",
+            "nombre": "Bloque Multifamiliar Las Multis 11",
+            "tipo": "Residencia Estudiantil Multifamiliar",
+            "zona": "Sector Las Multis",
+            "coords": [[0.401374, -78.175511], [0.401561, -78.175288], [0.401673, -78.175372], [0.401460, -78.175584]],
+            "centroid": [0.4015207, -78.1754351],
+            "area": 460.1,
+            "color": "#16a085", "fill": "#1abc9c",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Bloque residencial multifamiliar estudiantil en el flanco este de Las Multis, próximo al canal sur."
+        },
+        {
+            "id": "RECT-MULTI-12",
+            "nombre": "Bloque Multifamiliar Las Multis 12",
+            "tipo": "Residencia Estudiantil Multifamiliar",
+            "zona": "Sector Las Multis",
+            "coords": [[0.401332, -78.175933], [0.401540, -78.175720], [0.401436, -78.175639], [0.401249, -78.175855]],
+            "centroid": [0.4013919, -78.1757845],
+            "area": 441.8,
+            "color": "#16a085", "fill": "#1abc9c",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Bloque residencial multifamiliar estudiantil en el sector central-sur de Las Multis."
+        },
+        {
+            "id": "RECT-MULTI-13",
+            "nombre": "Bloque Multifamiliar Las Multis 13",
+            "tipo": "Residencia Estudiantil Multifamiliar",
+            "zona": "Sector Las Multis",
+            "coords": [[0.401300, -78.175989], [0.401120, -78.176199], [0.401196, -78.176276], [0.401403, -78.176064]],
+            "centroid": [0.4012578, -78.1761296],
+            "area": 415.1,
+            "color": "#16a085", "fill": "#1abc9c",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Bloque residencial multifamiliar estudiantil en el flanco suroeste de Las Multis."
+        },
+        {
             "id": "RECT-MULTI-NORES",
             "nombre": "Edificio Técnico y de Servicios Las Multis",
             "tipo": "Edificio de Servicios / Soporte Técnico",
@@ -1438,6 +1477,19 @@ def generar_mapa():
             "interior": False,
             "is_perimeter": False,
             "desc": "Bloque longitudinal patrimonial superior de 11 módulos con 10 tabiques divisorios transversales."
+        },
+        {
+            "id": "RECT-PATS-09",
+            "nombre": "Residencia Patrimonial Las Pats 9",
+            "tipo": "Residencia Estudiantil Patrimonial",
+            "zona": "Sector Las Pats",
+            "coords": [[0.401931, -78.173188], [0.401974, -78.173282], [0.401686, -78.173438], [0.401646, -78.173357]],
+            "centroid": [0.4018124, -78.1733144],
+            "area": 393.1,
+            "color": "#27ae60", "fill": "#2ecc71",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Bloque residencial estudiantil patrimonial de 3 módulos habitacionales con 2 tabiques divisorios transversales."
         },
         {
             "id": "RECT-PATS-LAB",
@@ -1853,6 +1905,18 @@ def generar_mapa():
             "coords": [[0.4026424, -78.1741785], [0.4025631, -78.1742196]],
             "color": "#27ae60",
             "desc": "Tabique transversal divisorio 10 en punto topográfico [0.4025651, -78.1742186]."
+        },
+        {
+            "nombre": "División Residencia Patrimonial Las Pats 9 (Módulo 1)",
+            "coords": [[0.401784, -78.173383], [0.4017430, -78.1732995]],
+            "color": "#27ae60",
+            "desc": "Tabique transversal divisorio 1 en punto topográfico [0.401784, -78.173383]."
+        },
+        {
+            "nombre": "División Residencia Patrimonial Las Pats 9 (Módulo 2)",
+            "coords": [[0.401877, -78.173330], [0.4018350, -78.1732449]],
+            "color": "#27ae60",
+            "desc": "Tabique transversal divisorio 2 en punto topográfico [0.401877, -78.173330]."
         },
     ]
     for ld in lineas_divisorias:
