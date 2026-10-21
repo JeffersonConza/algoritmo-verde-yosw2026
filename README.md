@@ -36,6 +36,11 @@ El proyecto aborda la problemática de insectos picadores (*Simuliidae* / moscas
 ## 📂 Estructura del Repositorio
 
 ```text
+├── index.html                                       # Redirección y cargador para GitHub Pages
+├── .nojekyll                                        # Desactiva motor Jekyll en GitHub Pages
+├── .github/
+│   └── workflows/
+│       └── deploy_pages.yml                         # Pipeline CI/CD GitHub Pages
 ├── 01_Equipo_y_Estrategia/
 │   ├── Directrices_Mentor_Jose_Luis_Flores.md       # Acuerdos y directrices del mentor
 │   ├── Integrantes_Algoritmo_Verde_YT.md            # Datos institucionales del equipo
@@ -43,26 +48,40 @@ El proyecto aborda la problemática de insectos picadores (*Simuliidae* / moscas
 ├── 02_Correos_y_Comunicaciones/                     # Trazabilidad de correos y WhatsApp
 ├── 03_Documentos_Congreso/                          # Guías, reglamentos y programa oficial YOSW
 ├── reto3_Control_Arenillas/                         # Insumos y entregables del Reto 3
-│   ├── mapa_interactivo_control_arenillas.html     # Prototipo: Visor satelital interactivo
+│   ├── DOCUMENTO_TECNICO_RETO3_ALGORITMO_VERDE.md  # Documento técnico maestro (APA 7.ª ed.)
+│   ├── DECLARACION_USO_IA_ALGORITMO_VERDE.md        # Declaración obligatoria de IA (Sec. 13)
+│   ├── CATALOGO_PUNTOS_GEOREFERENCIADOS_CAMPUS.md  # Catálogo oficial de coordenadas y GeoJSON
+│   ├── mapa_interactivo_control_arenillas.html     # Prototipo: Visor satelital interactivo bilingüe
 │   ├── generar_mapa_interactivo.py                 # Script generador en Folium / Python
+│   ├── modelo_optimizacion_matematica.py           # Modelo matemático SLSQP y simulación estocástica
+│   ├── api_telemetria.py                           # API REST de telemetría en FastAPI
 │   ├── exportar_figuras_tecnicas.py                # Script generador de figuras APA (300 DPI)
-│   ├── Figura1_Diagnostico_Espacial_Yachay.png     # Figura 1: Diagnóstico espacial
-│   ├── Figura2_Diseno_Tecnico_Intervencion.png     # Figura 2: Diseño técnico
-│   ├── Plantilla Documento Tecnico Reto3...docx    # Documento técnico oficial
-│   └── Declaracion_Uso_IA.docx                     # Declaración obligatoria de IA
+│   ├── Figura1_Diagnostico_Espacial_Yachay.png     # Figura 1: Diagnóstico espacial (300 DPI)
+│   ├── Figura2_Diseno_Tecnico_Intervencion.png     # Figura 2: Diseño técnico (300 DPI)
+│   ├── Figura3_Corte_Transversal_Cercas_3Estratos.png # Figura 3: Corte transversal botánico (300 DPI)
+│   ├── Figura4_Curva_Reduccion_BioMonitoreo.png    # Figura 4: Curva reducción telemetría (300 DPI)
+│   ├── logo_algoritmo_verde.svg                    # Identidad de marca (Modo Claro)
+│   ├── logo_algoritmo_verde_dark.svg               # Identidad de marca (Modo Oscuro)
+│   ├── qr_algoritmo_verde.png                      # Código QR de alta resolución para móviles
+│   ├── Plantilla Documento Tecnico Reto3...docx    # Plantilla Word oficial para entrega
+│   └── Declaracion_Uso_IA.docx                     # Formato Word oficial de declaración IA
 ├── .gitignore
 └── README.md
 ```
 
 ---
 
-## 🚀 Prototipo Interactivo
+## 🚀 Prototipo Interactivo y Despliegue en Línea
 
-El visor geoespacial interactivo se encuentra en:
+El visor geoespacial interactivo cuenta con despliegue continuo en **GitHub Pages**:
+🌐 **Enlace Web Oficial:** [https://jeffersonconza.github.io/algoritmo-verde-yosw2026/](https://jeffersonconza.github.io/algoritmo-verde-yosw2026/)
+
+Para visualizarlo de forma local sin conexión:
 ```bash
-reto3_Control_Arenillas/mapa_interactivo_control_arenillas.html
+# Abrir directamente en el navegador
+xdg-open reto3_Control_Arenillas/mapa_interactivo_control_arenillas.html
 ```
-Para visualizarlo, ábrelo en cualquier navegador web moderno (`Chrome`, `Edge`, `Firefox`). Incluye selector de capas satelitales, polígonos de zonas críticas, trazado del canal larvario, buffers de protección repelente, ubicación de trampas ecológicas y panel de métricas en tiempo real.
+Incluye selector de capas satelitales (Google Satellite, Google Streets, Esri Topo y Esri Dark Mode), polígonos de zonas críticas, trazado del canal larvario, buffers de protección fitoquímica (40 m), red de 6 estaciones de bio-monitoreo telemétrico, selector bilingüe Español/Inglés y código QR integrado.
 
 ---
 
