@@ -571,6 +571,30 @@ def generar_mapa():
             background: #1e293b !important;
             color: #f1f2f6 !important;
         }}
+        body[data-theme="dark"] .leaflet-popup-content-wrapper {{
+            background: #1e293b !important;
+            color: #f1f2f6 !important;
+            border-color: #334155 !important;
+        }}
+        body[data-theme="dark"] .leaflet-popup-tip {{
+            background: #1e293b !important;
+        }}
+        body[data-theme="dark"] .leaflet-popup-content p,
+        body[data-theme="dark"] .leaflet-popup-content span,
+        body[data-theme="dark"] .leaflet-popup-content b,
+        body[data-theme="dark"] .leaflet-popup-content div {{
+            color: #f1f2f6 !important;
+        }}
+        body[data-theme="dark"] .leaflet-popup-content div[style*="background: #fff"],
+        body[data-theme="dark"] .leaflet-popup-content div[style*="background:#fff"],
+        body[data-theme="dark"] .leaflet-popup-content div[style*="background: #fffdfa"],
+        body[data-theme="dark"] .leaflet-popup-content div[style*="background: #fbfdff"],
+        body[data-theme="dark"] .leaflet-popup-content div[style*="background: #fffcfc"],
+        body[data-theme="dark"] .leaflet-popup-content div[style*="background: #e8f8f5"],
+        body[data-theme="dark"] .leaflet-popup-content div[style*="background: #eef2f7"] {{
+            background: #0f172a !important;
+            border-color: #334155 !important;
+        }}
 
         /* Tipografía y accesibilidad general */
         .leaflet-popup-content-wrapper {{
@@ -829,12 +853,23 @@ def generar_mapa():
         @media (max-width: 860px) {{
             #story-nav-bar {{
                 top: 8px;
-                padding: 5px 10px;
-                gap: 4px;
+                padding: 5px 8px;
+                gap: 5px;
+                overflow-x: auto;
+                white-space: nowrap;
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+                max-width: 95vw;
+                -webkit-overflow-scrolling: touch;
+                scrollbar-width: none;
+            }}
+            #story-nav-bar::-webkit-scrollbar {{
+                display: none;
             }}
             .nav-btn {{
-                padding: 4px 8px;
-                font-size: 10px;
+                padding: 5px 10px;
+                font-size: 11px;
+                flex-shrink: 0;
             }}
             #dashboard-flotante {{
                 width: 280px;
