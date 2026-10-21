@@ -219,7 +219,7 @@ def generar_mapa():
          "🎭 Cultura y Esparcimiento", "Espacio emblemático al aire libre recuperado para conciertos, debates y actividades culturales sin picaduras."),
         ([0.402500, -78.171800], "Canchas Deportivas", "futbol-o", "cadetblue",
          "⚽ Salud y Deporte", "Área para fútbol y básquetbol. Los deportistas disfrutan de aire limpio sin necesidad de aplicarse repelentes pegajosos."),
-        ([0.402550, -78.172800], "Parada Fasta (Arco Pats)", "bus", "gray",
+        ([0.402550, -78.172800], "Parada (Arco de las Pats)", "bus", "gray",
          "🚌 Transporte Seguro", "Punto neurálgico de espera de buses. Espera cómoda bajo sombra vegetal."),
         
         # Zona 2: Investigación, Estudio y Patrimonio

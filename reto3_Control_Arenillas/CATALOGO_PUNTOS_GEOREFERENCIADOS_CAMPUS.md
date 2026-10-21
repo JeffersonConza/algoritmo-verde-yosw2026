@@ -18,7 +18,7 @@ Este inventario comprende las edificaciones residenciales, académicas, de inves
 
 | ID | Nombre del Hito / Edificación | Categoría de Uso | Latitud (WGS84) | Longitud (WGS84) | Sector / Zona Crítica | Nivel de Riesgo Basal | Población / Aforo Expuesto |
 | :---: | :--- | :--- | :---: | :---: | :---: | :---: | :---: |
-| **H-01** | **Edificio Senescyt (Aulas / Decanato)** | Académica / Administrativa | `0.406691` | `-78.170214` | Zona 3 (Norte) | **Crítico** (Acequia a 35m) | ~450 estudiantes y docentes |
+| **H-01** | **Edificio Senescyt (Aulas / Decanatos)** | Académica / Administrativa | `0.406691` | `-78.170214` | Zona 3 (Norte) | **Crítico** (Acequia a 35m) | ~450 estudiantes y docentes |
 | **H-02** | **Residencias "Los Bloques"** | Residencial Estudiantil | `0.406950` | `-78.171150` | Zona 3 (Norte) | **Muy Alto** (Viento rasante) | ~180 residentes |
 | **H-03** | **Vida Comunitaria** | Bienestar / Comedor / Salud | `0.407400` | `-78.171500` | Zona 3 (Norte) | **Alto** (Área abierta) | ~200 usuarios/día |
 | **H-04** | **Minimarket Krispan** | Comercial / Abastecimiento | `0.406500` | `-78.170500` | Zona 3 (Norte) | **Medio-Alto** | ~150 clientes/día |
@@ -27,10 +27,10 @@ Este inventario comprende las edificaciones residenciales, académicas, de inves
 | **H-07** | **Laboratorio de Química** | Investigación / Docencia | `0.404900` | `-78.173900` | Zona 2 (Centro) | **Alto** (Cruce de acequias) | ~80 investigadores/estudiantes |
 | **H-08** | **Laboratorios de Carrera (Ingenierías)** | Talleres / Aulas Especiales | `0.404780` | `-78.172450` | Zona 2 (Centro) | **Muy Alto** (Frente a canal) | ~180 estudiantes |
 | **H-09** | **Residencias Patrimoniales ("Las Pats")** | Residencial Estudiantil | `0.402297` | `-78.173836` | Zona 1 (Sur) | **Crítico** (Humedad y sombra) | ~140 residentes |
-| **H-10** | **Residencias "Las Multis"** | Residencial Multifamiliar | `0.402750` | `-78.174800` | Zona 1 (Sur) | **Crítico** (Exposición perimetral)| ~220 residentes |
+| **H-10** | **Residencias "Las Multis"** | Residencial Estudiantil | `0.402750` | `-78.174800` | Zona 1 (Sur) | **Crítico** (Exposición perimetral)| ~220 residentes |
 | **H-11** | **Concha Acústica Yachay Tech** | Cultural / Recreacional | `0.402350` | `-78.175500` | Zona 1 (Sur) | **Muy Alto** (Jardines abiertos)| ~350 asistentes a eventos |
 | **H-12** | **Canchas Deportivas (Fútbol / Múltiples)**| Deporte / Actividad Física | `0.402500` | `-78.171800` | Zona 1 (Sur) | **Muy Alto** (Cercanía a canal) | ~120 deportistas/tarde |
-| **H-13** | **Parada Fasta (Arco de las Pats)** | Transporte / Parada de Bus | `0.402550` | `-78.172800` | Zona 1 (Sur) | **Alto** (Espera a la intemperie)| Flujo peatonal continuo |
+| **H-13** | **Parada (Arco de las Pats)** | Transporte / Parada de Bus | `0.402550` | `-78.172800` | Zona 1 (Sur) | **Alto** (Espera a la intemperie)| Flujo peatonal continuo |
 
 ---
 
@@ -157,7 +157,7 @@ Para reutilizar estos puntos en cualquier software de Sistemas de Información G
     { "type": "Feature", "properties": { "id": "H-10", "nombre": "Residencias Las Multis", "tipo": "Residencial", "riesgo": "Crítico" }, "geometry": { "type": "Point", "coordinates": [-78.174800, 0.402750] } },
     { "type": "Feature", "properties": { "id": "H-11", "nombre": "Concha Acústica", "tipo": "Cultural", "riesgo": "Muy Alto" }, "geometry": { "type": "Point", "coordinates": [-78.175500, 0.402350] } },
     { "type": "Feature", "properties": { "id": "H-12", "nombre": "Canchas Deportivas", "tipo": "Deportes", "riesgo": "Muy Alto" }, "geometry": { "type": "Point", "coordinates": [-78.171800, 0.402500] } },
-    { "type": "Feature", "properties": { "id": "H-13", "nombre": "Parada Fasta (Arco Pats)", "tipo": "Transporte", "riesgo": "Alto" }, "geometry": { "type": "Point", "coordinates": [-78.172800, 0.402550] } }
+    { "type": "Feature", "properties": { "id": "H-13", "nombre": "Parada (Arco de las Pats)", "tipo": "Transporte", "riesgo": "Alto" }, "geometry": { "type": "Point", "coordinates": [-78.172800, 0.402550] } }
   ]
 }
 ```
