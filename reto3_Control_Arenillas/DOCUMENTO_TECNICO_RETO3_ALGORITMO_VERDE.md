@@ -114,8 +114,29 @@ Nuestra estrategia integra:
 
 ## 4. Diseño Técnico de la Solución (RF-02, RNF-02)
 
-### 4.1. Arquitectura de Cercas Vivas en Tres Estratos
-Siguiendo las directrices del mentor, la cerca viva se estructura en tres estratos verticales continuos para formar una cortina aerodinámica y fitoquímica impenetrable:
+### 4.1. Distribución Espacial e Implantación en el Campus (RF-02)
+A partir del modelo de optimización espacial (algoritmo SLSQP) y la cartografía georreferenciada de Yachay Tech, se establecieron **980 metros lineales totales** de intervención repartidos estratégicamente para cubrir los tres frentes críticos de riesgo y blindar a la comunidad universitaria:
+
+```
+[FIGURA 2: PLANO GENERAL DE INTERVENCIÓN TÉCNICA EN EL CAMPUS YACHAY TECH]
+Archivo de imagen: reto3_Control_Arenillas/Figura2_Diseno_Tecnico_Intervencion.png (300 DPI, Formato APA)
+```
+
+* **Cerca 1 (Sector Residencial Sur — Las Multis y Patrimoniales):**
+  * *Longitud:* **380 m lineales** | Plántulas: 190 molles, 380 arrayanes/romeros, 760 hierba luisas.
+  * *Ubicación:* Perímetro sur de las residencias, entre el canal de desvío y los jardines de la Concha Acústica.
+* **Cerca 2 (Sector Central — Ingenio Azucarero y Laboratorios):**
+  * *Longitud:* **280 m lineales** | Plántulas: 140 molles, 280 arrayanes/lavandas, 560 hierba luisas.
+  * *Ubicación:* Amortiguamiento entre la acequia patrimonial y las caminerías peatonales de laboratorios.
+* **Cerca 3 (Sector Norte — Edificio Senescyt y Los Bloques):**
+  * *Longitud:* **320 m lineales** | Plántulas: 160 molles, 320 arrayanes/romeros, 640 hierba luisas.
+  * *Ubicación:* Talud este paralelo al canal de riego Senescyt frente a las ventanas de aulas.
+
+**Sistema de Riego Gravitacional:**  
+El sistema no demanda motobombas eléctricas ni consumo de energía externa. Se aprovecha el gradiente topográfico natural del campus captando un micro-caudal derivado desde las acequias hacia líneas de **manguera de polietileno de 16 mm con goteros autocompensantes integrados** (descarga: 2.0 L/h espaciados a 50 cm), operando por gravedad pura ($0.4\text{ a }0.8\text{ bar}$).
+
+### 4.2. Arquitectura de Cercas Vivas en Tres Estratos (RNF-02)
+Siguiendo las directrices del mentor Ing. José Luis Flores M.Sc., la cerca viva se estructura en tres estratos verticales continuos para formar una cortina aerodinámica y fitoquímica impenetrable:
 
 ```
 [FIGURA 3: CORTE TRANSVERSAL ARQUITECTÓNICO Y AGRONÓMICO DE CERCAS EN 3 ESTRATOS]
@@ -139,27 +160,6 @@ Archivo de imagen: reto3_Control_Arenillas/Figura3_Corte_Transversal_Cercas_3Est
    * *Función agronómica y física:* Sellado basal a ras de suelo y protección de taludes contra erosión hídrica en los bordes de acequias.
    * *Fitoquímica repelente:* Producción masiva de **citronelal (32%)**, **geraniol (28%)** y **citral (neral y geranial, 22%)**, los repelentes botánicos de mayor eficacia reportada en la literatura contra mosquitos y jejenes (Wany et al., 2013).
    * *Densidad de siembra:* 2 macollas por metro lineal (doble hilera frontal).
-
-```
-[FIGURA 2: PLANO GENERAL DE INTERVENCIÓN TÉCNICA EN EL CAMPUS YACHAY TECH]
-Archivo de imagen: reto3_Control_Arenillas/Figura2_Diseno_Tecnico_Intervencion.png (300 DPI, Formato APA)
-```
-
-### 4.2. Especificaciones de Implantación Espacial y Riego
-A partir del modelo de optimización espacial (algoritmo SLSQP), se establecieron **980 metros lineales totales** de intervención repartidos estratégicamente para cubrir los tres frentes de riesgo:
-
-* **Cerca 1 (Sector Residencial Sur — Las Multis y Patrimoniales):**
-  * *Longitud:* **380 m lineales** | Plántulas: 190 molles, 380 arrayanes/romeros, 760 hierba luisas.
-  * *Ubicación:* Perímetro sur de las residencias, entre el canal de desvío y los jardines de la Concha Acústica.
-* **Cerca 2 (Sector Central — Ingenio Azucarero y Laboratorios):**
-  * *Longitud:* **280 m lineales** | Plántulas: 140 molles, 280 arrayanes/lavandas, 560 hierba luisas.
-  * *Ubicación:* Amortiguamiento entre la acequia patrimonial y las caminerías peatonales de laboratorios.
-* **Cerca 3 (Sector Norte — Edificio Senescyt y Los Bloques):**
-  * *Longitud:* **320 m lineales** | Plántulas: 160 molles, 320 arrayanes/romeros, 640 hierba luisas.
-  * *Ubicación:* Talud este paralelo al canal de riego Senescyt frente a las ventanas de aulas.
-
-**Sistema de Riego Gravitacional:**  
-El sistema no demanda motobombas eléctricas ni consumo de energía externa. Se aprovecha el gradiente topográfico natural del campus captando un micro-caudal derivado desde las acequias hacia líneas de **manguera de polietileno de 16 mm con goteros autocompensantes integrados** (descarga: 2.0 L/h espaciados a 50 cm), operando por gravedad pura ($0.4\text{ a }0.8\text{ bar}$).
 
 ---
 
