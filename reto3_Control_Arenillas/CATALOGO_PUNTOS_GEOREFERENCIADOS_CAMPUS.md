@@ -948,36 +948,37 @@ Puntos calibrados en las acequias y canales lotiformes para el fomento de ninfas
 
 ---
 
-## 5. Trazado Georreferenciado de Cercas Vivas Multiestrato (980 m Lineales)
+## 5. Trazado Georreferenciado de Cercas Vivas Multiestrato (980 m Lineales) con Protocolo Hipoalergénico
 
-Las cercas vivas fueron calibradas mediante optimización espacial no lineal (algoritmo SLSQP) para interceptar el vuelo de las arenillas y cortar la brisa ascendente del cañón del río Ambi.
+Las cercas vivas multiestrato fueron calibradas mediante optimización espacial no lineal (algoritmo SLSQP) y georreferenciadas con GPS submétrico para interceptar el vuelo de las arenillas y cortar la brisa del cañón del río Ambi, protegiendo las **80 edificaciones universitarias**. El diseño incorpora una **Zonificación Botánica Hipoalergénica**: en los perímetros residenciales (<5 m de dormitorios), se prohíbe el uso de especies alcanforadas y se sustituye el romero por **Cedrón (*Aloysia citrodora*)** y **Huacatay (*Tagetes minuta*)** para proteger a personas con atopia, asma o alergias a Lamiaceae.
 
-### Cerca Viva 1: Sector Residencial Sur (Las Multis y Patrimoniales)
+### Cerca Viva 1: Sector Residencial Sur (Las Multis, Las T's y Las Pats)
 * **Longitud Lineal:** **380 metros**
-* **Composición Vegetal:** 190 árboles de *Schinus molle* (Molle), 380 arbustos de *Myrcianthes hallii* (Arrayán) / *Rosmarinus officinalis* (Romero), 760 macollas de *Cymbopogon citratus* (Hierba Luisa). Total: **1,330 plántulas**.
+* **Composición Vegetal Adaptativa:** 190 árboles de *Schinus molle* (Molle), 380 arbustos de *Myrcianthes hallii* (Arrayán andino) combinados con *Aloysia citrodora* (Cedrón hipoalergénico), 760 macollas de *Cymbopogon citratus* (Hierba Luisa). Total: **1,330 plántulas**.
+* **Criterio de Salud:** 100% libre de romero en el frente de balcones y dormitorios; fragancia cítrica suave no sensibilizante.
 * **Radio de Buffer Fitoquímico:** 40 metros (~15,200 m² de cobertura).
 * **Coordenadas de Vértices:**
-  1. *Extremo Oeste (Concha Acústica):* `0.403100° N`, `-78.175000° W`
-  2. *Vértice Intermedio (Las Multis):* `0.403000° N`, `-78.173800° W`
-  3. *Extremo Este (Canchas / Arco Pats):* `0.402400° N`, `-78.173000° W`
+  1. *Extremo Oeste (Concha Acústica / Las Multis):* `0.403100° N`, `-78.175000° W`
+  2. *Vértice Intermedio (Las T's y Las Multis):* `0.403000° N`, `-78.173800° W`
+  3. *Extremo Este (Canchas / Las Pats):* `0.402400° N`, `-78.173000° W`
 
-### Cerca Viva 2: Sector Central (Ingenio Azucarero y Laboratorios)
+### Cerca Viva 2: Sector Central (Ingenio Azucarero, Laboratorios e Invernaderos)
 * **Longitud Lineal:** **280 metros**
-* **Composición Vegetal:** 140 árboles de *Schinus molle*, 280 arbustos de *Myrcianthes hallii* / Lavanda, 560 macollas de *Cymbopogon citratus*. Total: **980 plántulas**.
+* **Composición Vegetal:** 140 árboles de *Schinus molle*, 280 arbustos de *Myrcianthes hallii* y *Tagetes minuta* (Huacatay andino), 560 macollas de *Cymbopogon citratus*. Total: **980 plántulas**.
 * **Radio de Buffer Fitoquímico:** 40 metros (~11,200 m² de cobertura).
 * **Coordenadas de Vértices:**
-  1. *Extremo Noroeste (Chimenea / Jardín Patrimonial):* `0.405500° N`, `-78.173400° W`
-  2. *Vértice Intermedio (Frente a Química):* `0.404800° N`, `-78.172800° W`
+  1. *Extremo Noroeste (Chimenea / Biblioteca Patrimonial):* `0.405500° N`, `-78.173400° W`
+  2. *Vértice Intermedio (Frente a Laboratorios de Docencia):* `0.404800° N`, `-78.172800° W`
   3. *Extremo Sureste (Acceso a Laboratorios de Carrera):* `0.404000° N`, `-78.172600° W`
 
 ### Cerca Viva 3: Sector Académico Norte (Edificio Senescyt y Los Bloques)
 * **Longitud Lineal:** **320 metros**
-* **Composición Vegetal:** 160 árboles de *Schinus molle*, 320 arbustos de *Myrcianthes hallii* / Romero, 640 macollas de *Cymbopogon citratus*. Total: **1,120 plántulas**.
+* **Composición Vegetal:** 160 árboles de *Schinus molle*, 320 arbustos de *Myrcianthes hallii* (con Cedrón frente a dormitorios de Los Bloques y Romero confinado al talud abierto del canal), 640 macollas de *Cymbopogon citratus*. Total: **1,120 plántulas**.
 * **Radio de Buffer Fitoquímico:** 40 metros (~12,800 m² de cobertura).
 * **Coordenadas de Vértices:**
-  1. *Extremo Norte (Atrás de Bloques / Vida Comunitaria):* `0.407200° N`, `-78.171800° W`
-  2. *Vértice Intermedio (Paralelo a Canal Senescyt):* `0.406600° N`, `-78.171000° W`
-  3. *Extremo Sur (Frente a Edificio Senescyt / Aulas):* `0.406000° N`, `-78.170200° W`
+  1. *Extremo Norte (Atrás de Bloques F-G / Vida Comunitaria):* `0.407200° N`, `-78.171800° W`
+  2. *Vértice Intermedio (Paralelo a Canal Maestro Senescyt):* `0.406600° N`, `-78.171000° W`
+  3. *Extremo Sur (Frente a Fachada Aulas Senescyt):* `0.406000° N`, `-78.170200° W`
 
 ---
 

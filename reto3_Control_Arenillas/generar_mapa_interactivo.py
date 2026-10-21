@@ -1960,12 +1960,12 @@ def generar_mapa():
                     🌿 Cerca Viva 1 · Sector Residencial (380m)
                 </div>
                 <div style="padding: 10px; border: 1px solid #10ac84; border-top: none; border-radius: 0 0 6px 6px; font-size: 12px;">
-                    <b>🌱 Arquitectura en 3 Estratos:</b><br>
-                    • <b>Alto (3.5-5m):</b> <i>Schinus molle</i> (Molle andino) - Sombra fresca y rompevientos con pineno.<br>
-                    • <b>Medio (1.2-2m):</b> <i>Myrcianthes hallii</i> (Arrayán) & Romero - Aroma relajante y bloqueo de vuelo.<br>
+                    <b>🌱 Arquitectura en 3 Estratos Hipoalergénica:</b><br>
+                    • <b>Alto (3.5-5m):</b> <i>Schinus molle</i> (Molle andino) - Cortina rompeviento y sombra.<br>
+                    • <b>Medio (1.2-2m · Buffer Hipoalergénico):</b> <i>Myrcianthes hallii</i> (Arrayán nativo) combinado con <i>Aloysia citrodora</i> (Cedrón) y <i>Tagetes minuta</i> (Huacatay). <b>100% libre de Romero a <5m de dormitorios</b> para proteger a residentes con alergias respiratorias o asma.<br>
                     • <b>Bajo (0.4-0.8m):</b> <i>Cymbopogon citratus</i> (Hierba luisa) - Perfume cítrico y barrera basal de citronelal.<br>
                     <div style="margin-top: 6px; padding: 5px; background: #e8f8f5; border-radius: 4px; color: #0e6251;">
-                        <b>✨ Impacto Estudiantil:</b> Transforma los accesos a residencias en paseos aromáticos seguros.
+                        <b>🛡️ Inclusión Médica:</b> Blindaje fitoquímico seguro para Las Multis, Las T's y Las Pats con cero irritación bronquial.
                     </div>
                 </div>
             </div>
@@ -2018,10 +2018,10 @@ def generar_mapa():
                 <div style="padding: 10px; border: 1px solid #10ac84; border-top: none; border-radius: 0 0 6px 6px; font-size: 12px;">
                     <b>🌱 Arquitectura en 3 Estratos:</b><br>
                     • <b>Alto:</b> <i>Schinus molle</i>.<br>
-                    • <b>Medio:</b> <i>Myrcianthes hallii</i> (Arrayán) & Romero.<br>
+                    • <b>Medio:</b> <i>Myrcianthes hallii</i> (Arrayán) con Cedrón en dormitorios y Romero confinado al talud abierto del canal.<br>
                     • <b>Bajo:</b> <i>Cymbopogon citratus</i>.<br>
                     <div style="margin-top: 6px; padding: 5px; background: #e8f8f5; border-radius: 4px; color: #0e6251;">
-                        <b>✨ Impacto Académico:</b> Ventilación natural en las aulas y descanso profundo en las habitaciones de Los Bloques.
+                        <b>✨ Impacto Académico:</b> Ventilación natural en aulas Senescyt y descanso protegido sin alérgenos en Los Bloques.
                     </div>
                 </div>
             </div>
@@ -2658,8 +2658,8 @@ def generar_mapa():
                 </div>
 
                 <div class="card-pilar" style="border-left-color: #3498db;">
-                    <b style="color: #2980b9; font-size: 13.5px;" data-i18n="modal_card2_title">🌿 Naturaleza que Protege (3 Estratos Vegetales)</b><br>
-                    <span data-i18n="modal_card2_desc">980 metros de barreras vivas con especies andinas: <b>Molle</b> (sombra y rompeviento), <b>Arrayán y Romero</b> (bloqueo físico y fragancia relajante) y <b>Hierba Luisa</b> (repelente cítrico basal). Aromaterapia natural que disminuye el estrés académico.</span>
+                    <b style="color: #2980b9; font-size: 13.5px;" data-i18n="modal_card2_title">🌿 Naturaleza que Protege e Inclusión Hipoalergénica</b><br>
+                    <span data-i18n="modal_card2_desc">980 metros de barreras vivas blindando 80 edificaciones. Diseño con <b>zonificación hipoalergénica</b>: en proximidad inmediata a dormitorios (Las Multis, Las T's, Las Pats y Los Bloques) el romero es sustituido por <b>Cedrón (Aloysia citrodora)</b> y <b>Huacatay (Tagetes minuta)</b> para resguardar a residentes con asma, rinitis o alergias a Lamiaceae.</span>
                 </div>
 
                 <div class="card-pilar" style="border-left-color: #0abde3;">
