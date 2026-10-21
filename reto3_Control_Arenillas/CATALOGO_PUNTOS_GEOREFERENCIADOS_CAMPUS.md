@@ -27,6 +27,9 @@ Polo académico norte y residencial estudiantil modular, con una población habi
 | **S-04** | **Biblioteca (Edificio Senescyt)** | Biblioteca / Estudio | `0.406259` | `-78.170117` | **Medio-Alto** (Interior Sen.) | ~120 lectores/día |
 | **S-05** | **Minimarket Krispan** | Cafetería / Abastecimiento | `0.406501` | `-78.170395` | **Medio-Alto** (Interior Sen.) | ~150 clientes/día |
 | **S-06** | **Comedor Sol del Ecuador** | Restaurante Universitario | `0.407063` | `-78.169911` | **Medio-Alto** (Interior Sen.) | ~220 comensales/día |
+| **B-01** | **Depósito de Basura Principal (Senescyt)** | Gestión Residuos Sólidos | `0.407422` | `-78.169763` | **Medio** (Estación contenedores) | Servicio campus norte |
+| **LINE-PARK-01** | **Parqueadero Lineal Senescyt (Calzada Este)** | Infraestructura / Parqueo | `0.406380` | `-78.169734` | **Medio** (Franja en batería este) | ~25 vehículos |
+| **LINE-PARK-02** | **Parqueadero Lineal Senescyt (Calzada Sur)** | Infraestructura / Parqueo | `0.406172` | `-78.170373` | **Medio** (Calzada de acceso sur) | ~20 vehículos |
 
 ### 1.2. Zona 2: Sector Ingenio Azucarero (Patrimonial, Docencia, Plazas y Recursos Hídricos)
 Antiguo complejo histórico de la Hacienda San José, epicentro de la vida cultural, científica y gastronómica (~400 a 600 usuarios diarios):
@@ -49,6 +52,16 @@ Antiguo complejo histórico de la Hacienda San José, epicentro de la vida cultu
 | **I-14** | **Laboratorios de Carrera (Ingenierías)** | Laboratorios Especiales | `0.403800` | `-78.172660` | **Muy Alto** (Frente a canal) | ~180 investigadores |
 | **I-15** | **Invernaderos Experimentales (1-4)** | Biotecnología / Agropecuaria| `0.404200` | `-78.173150` | **Muy Alto** (Humedad controlada)| ~60 investigadores |
 | **H-01** | **Laguna Artificial / Reservorio de Agua** | Recurso Hídrico / Biocontrol | `0.404121` | `-78.168316` | **Nulo / Protector** (Léntico / Odonatos)| ~2,006 m² espejo de agua |
+| **I-16** | **Pileta Histórica (Claustro Sala Capitular)** | Patrimonial / Fuente Hidráulica | `0.404377` | `-78.175446` | **Medio-Alto** (Patio claustral) | Hito patrimonial |
+| **I-17** | **Pileta de Jardines (Sala Capitular)** | Patrimonial / Fuente Ornamental | `0.404346` | `-78.175689` | **Alto** (Jardines San José) | Espacio paisajístico |
+| **I-18** | **Molino de Agua (Patrimonial)** | Patrimonio Industrial Hidráulico | `0.405305` | `-78.174875` | **Alto** (Acequia histórica) | Monumento hidráulico |
+| **P-01** | **Parqueadero San José 1 (Norte)** | Infraestructura / Parqueo | `0.404388` | `-78.175985` | **Medio-Alto** (Junto a Sala Defensas) | ~15 vehículos |
+| **P-02** | **Parqueadero San José 2 (Central)** | Infraestructura / Parqueo | `0.404449` | `-78.176274` | **Medio-Alto** (Oeste Edificio 20) | ~20 vehículos |
+| **P-06** | **Parqueadero San José 3 (Oeste)** | Infraestructura / Parqueo | `0.404247` | `-78.177079` | **Medio** (Acceso occidental) | ~18 vehículos |
+| **B-03** | **Depósito de Basura Principal (San José)** | Gestión Residuos Sólidos | `0.405747` | `-78.174285` | **Alto** (Contenedores centrales) | Servicio San José |
+| **B-04** | **Depósito de Basura (Tachos Aulas B)** | Gestión Ambiental / Tachos | `0.404748` | `-78.174325` | **Alto** (Flujo estudiantil) | Aulas B |
+| **B-05** | **Depósito de Basura (Tachos Plaza del Estudiante)** | Gestión Ambiental / Tachos | `0.404930` | `-78.174154` | **Alto** (Plaza peatonal) | Plaza Estudiante |
+| **B-06** | **Depósito de Basura (Tachos Plaza Mikuna)** | Gestión Ambiental / Tachos | `0.404318` | `-78.173819` | **Muy Alto** (Patio gastronómico) | Plaza Mikuna |
 
 ### 1.3. Zona 3: Sector Residencias "Las T's", "Las Pats" y "Multifamiliares" (Sur)
 Principal polo habitacional y deportivo de la universidad (~400 a 550 residentes):
@@ -62,6 +75,11 @@ Principal polo habitacional y deportivo de la universidad (~400 a 550 residentes
 | **R-05** | **Concha Acústica Yachay Tech** | Cultural / Recreacional | `0.4018349` | `-78.1755181` | **Muy Alto** (Anfiteatro abierto)| ~350 asistentes |
 | **R-06** | **Canchas Deportivas (Fútbol / Múltiples)**| Deporte / Actividad Física | `0.402500` | `-78.171800` | **Muy Alto** (Junto a acequia)| ~120 deportistas/tarde |
 | **R-07** | **Parada (Arco de las Pats)** | Transporte / Parada de Bus | `0.402550` | `-78.172800` | **Alto** (Espera intemperie) | Flujo continuo |
+| **R-08** | **Plaza de las Multis** | Espacio Comunitario / Convivencia | `0.402151` | `-78.175186` | **Crítico** (Espacio abierto residencial) | ~200 residentes |
+| **P-03** | **Parqueadero Residencias 'Las Multis'** | Infraestructura / Parqueo | `0.401669` | `-78.174945` | **Alto** (Acceso sur Multifamiliares) | ~30 vehículos |
+| **P-04** | **Parqueadero Complejo Deportivo** | Infraestructura / Parqueo | `0.403445` | `-78.172986` | **Alto** (Acceso a canchas) | ~40 vehículos |
+| **P-05** | **Parqueadero Sector 'Las Pats'** | Infraestructura / Parqueo | `0.402021` | `-78.173364` | **Alto** (Arco de Las Pats) | ~25 vehículos |
+| **B-02** | **Depósito de Basura Principal (Las Pats)** | Gestión Residuos Sólidos | `0.402211` | `-78.173391` | **Alto** (Estación contenedores) | Servicio Las Pats |
 
 ---
 
@@ -427,6 +445,119 @@ Las edificaciones del campus fueron regularizadas rigurosamente bajo criterios d
     2. `0.4044852, -78.1758681`
     3. `0.4044887, -78.1757777`
     4. `0.4043909, -78.1757739`
+
+* **Claustro y Galerías Sala Capitular (`RECT-CAPITULAR-CLAUSTRO`):**
+  * *Tipo:* Patrimonio / Claustro Colonial | *Zona:* Sector San José - Sala Capitular
+  * *Superficie aproximada:* ~906.9 m² | *Centroide:* `[0.4043897, -78.1754970]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4042400, -78.1753320`
+    2. `0.4042090, -78.1755901`
+    3. `0.4045625, -78.1756358`
+    4. `0.4045770, -78.1755203`
+    5. `0.4045318, -78.1755120`
+    6. `0.4045469, -78.1753618`
+    7. `0.4044483, -78.1753527`
+    8. `0.4044267, -78.1754982`
+    9. `0.4043353, -78.1754868`
+    10. `0.4043488, -78.1753400`
+
+* **Edificio 20 San José (`RECT-EDIF-20`):**
+  * *Tipo:* Infraestructura y Servicios San José | *Zona:* Sector San José
+  * *Superficie aproximada:* ~73.0 m² | *Centroide:* `[0.4043038, -78.1761532]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4042613, -78.1760999`
+    2. `0.4043093, -78.1760885`
+    3. `0.4043447, -78.1762074`
+    4. `0.4043012, -78.1762201`
+
+* **Edificio 37 San José (`RECT-EDIF-37`):**
+  * *Tipo:* Edificio de Servicios / Infraestructura | *Zona:* Sector San José
+  * *Superficie aproximada:* ~56.4 m² | *Centroide:* `[0.4042029, -78.1764334]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4041496, -78.1764243`
+    2. `0.4041608, -78.1764702`
+    3. `0.4042586, -78.1764399`
+    4. `0.4042447, -78.1763982`
+
+* **Edificio 38 San José (`RECT-EDIF-38`):**
+  * *Tipo:* Edificio Administrativo y Operativo | *Zona:* Sector San José
+  * *Superficie aproximada:* ~155.8 m² | *Centroide:* `[0.4042631, -78.1766201]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4042133, -78.1766858`
+    2. `0.4043447, -78.1766434`
+    3. `0.4043082, -78.1765557`
+    4. `0.4041868, -78.1765928`
+
+* **Edificio 39 San José (`RECT-EDIF-39`):**
+  * *Tipo:* Edificio de Servicios y Logística | *Zona:* Sector San José
+  * *Superficie aproximada:* ~62.0 m² | *Centroide:* `[0.4039536, -78.1765325]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4039882, -78.1765791`
+    2. `0.4039477, -78.1765935`
+    3. `0.4039160, -78.1764865`
+    4. `0.4039650, -78.1764762`
+
+* **Edificio 40 San José (`RECT-EDIF-40`):**
+  * *Tipo:* Edificio Polivalente San José | *Zona:* Sector San José
+  * *Superficie aproximada:* ~269.6 m² | *Centroide:* `[0.4040631, -78.1766592]`
+  * *Vértices de Huella Arquitectónica (WGS84 - Secuencia Cíclica Horaria Validada):*
+    1. `0.4041703, -78.1766887`
+    2. `0.4039848, -78.1767412`
+    3. `0.4039592, -78.1766289`
+    4. `0.4041368, -78.1765769`
+
+* **Edificio 41 San José (`RECT-EDIF-41`):**
+  * *Tipo:* Complejo Edilicio Mayor San José | *Zona:* Sector San José
+  * *Superficie aproximada:* ~610.8 m² | *Centroide:* `[0.4042101, -78.1769226]`
+  * *Vértices de Huella Arquitectónica (WGS84 - 12 vértices escalonados):*
+    1. `0.4040502, -78.1767746`
+    2. `0.4041060, -78.1769483`
+    3. `0.4043600, -78.1768553`
+    4. `0.4043438, -78.1767909`
+    5. `0.4043960, -78.1767768`
+    6. `0.4044437, -78.1769028`
+    7. `0.4043034, -78.1769555`
+    8. `0.4043142, -78.1770012`
+    9. `0.4042808, -78.1770136`
+    10. `0.4042754, -78.1769887`
+    11. `0.4040825, -78.1770627`
+    12. `0.4039961, -78.1767858`
+
+* **Restaurante 'Pato Goloso' (`RECT-REST-PATO-GOLOSO`):**
+  * *Tipo:* Gastronomía y Alimentación / Restaurante | *Zona:* Sector Gastronómico San José
+  * *Superficie aproximada:* ~27.4 m² | *Centroide:* `[0.4043142, -78.1766288]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4042956, -78.1766561`
+    2. `0.4042847, -78.1766126`
+    3. `0.4043312, -78.1766012`
+    4. `0.4043449, -78.1766448`
+
+* **Restaurante 'Comedor Analí' (`RECT-REST-COMEDOR-ANALI`):**
+  * *Tipo:* Gastronomía y Alimentación / Restaurante | *Zona:* Sector Gastronómico San José
+  * *Superficie aproximada:* ~38.3 m² | *Centroide:* `[0.4042585, -78.1766439]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4042956, -78.1766561`
+    2. `0.4042847, -78.1766126`
+    3. `0.4042187, -78.1766300`
+    4. `0.4042381, -78.1766775`
+
+* **Batería Sanitaria 1 (`RECT-BANOS-SANJOSE-1`):**
+  * *Tipo:* Servicios Sanitarios e Higiene | *Zona:* Sector San José
+  * *Superficie aproximada:* ~15.5 m² | *Centroide:* `[0.4042169, -78.1766586]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4042187, -78.1766300`
+    2. `0.4042381, -78.1766775`
+    3. `0.4042107, -78.1766849`
+    4. `0.4041982, -78.1766381`
+
+* **Batería Sanitaria 2 (`RECT-BANOS-SANJOSE-2`):**
+  * *Tipo:* Servicios Sanitarios e Higiene | *Zona:* Sector San José
+  * *Superficie aproximada:* ~51.0 m² | *Centroide:* `[0.4039928, -78.1766499]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4039777, -78.1766905`
+    2. `0.4040335, -78.1766732`
+    3. `0.4040111, -78.1766096`
+    4. `0.4039497, -78.1766284`
 
 #### E. Polígonos Perimetrales de Conjunto (Delimitación Arquitectónica Mayor)
 
@@ -959,6 +1090,162 @@ Edificaciones ubicadas en el perímetro este del campus, contiguas a la Laguna A
 
 ---
 
+### 2.7. Zona 3: Sector Complejo Deportivo Sur (Canchas Reglamentarias)
+Complejo de recreación y acondicionamiento físico de alto rendimiento contiguo a la arboleda sur y acequia:
+
+* **Cancha de Volley Playa de Arena (`RECT-CANCHA-VOLLEY`):**
+  * *Tipo:* Deporte y Recreación / Cancha de Arena | *Zona:* Complejo Deportivo Sur
+  * *Superficie aproximada:* ~396.4 m² | *Centroide:* `[0.4024635, -78.1729286]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4025862, -78.1729901`
+    2. `0.4025842, -78.1728617`
+    3. `0.4023519, -78.1728599`
+    4. `0.4023383, -78.1730000`
+
+* **Cancha de Basketball 1 (`RECT-CANCHA-BASKET-1`):**
+  * *Tipo:* Deporte y Recreación / Cancha de Baloncesto | *Zona:* Complejo Deportivo Sur
+  * *Superficie aproximada:* ~601.0 m² | *Centroide:* `[0.4024272, -78.1727035]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4022856, -78.1726202`
+    2. `0.4022829, -78.1727907`
+    3. `0.4025733, -78.1727860`
+    4. `0.4025671, -78.1726154`
+
+* **Cancha de Basketball 2 (`RECT-CANCHA-BASKET-2`):**
+  * *Tipo:* Deporte y Recreación / Cancha de Baloncesto | *Zona:* Complejo Deportivo Sur
+  * *Superficie aproximada:* ~509.2 m² | *Centroide:* `[0.4025282, -78.1723728]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4023890, -78.1722987`
+    2. `0.4023921, -78.1724493`
+    3. `0.4026673, -78.1724463`
+    4. `0.4026652, -78.1722971`
+
+* **Cancha de Basketball 3 (`RECT-CANCHA-BASKET-3`):**
+  * *Tipo:* Deporte y Recreación / Cancha de Baloncesto | *Zona:* Complejo Deportivo Sur
+  * *Superficie aproximada:* ~503.3 m² | *Centroide:* `[0.4026541, -78.1721370]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4027909, -78.1720615`
+    2. `0.4027915, -78.1722099`
+    3. `0.4025168, -78.1722132`
+    4. `0.4025181, -78.1720631`
+
+* **Cancha de Fútbol Sintética 1 Cercada (`RECT-CANCHA-FUTBOL-1`):**
+  * *Tipo:* Deporte y Recreación / Fútbol Sintético | *Zona:* Complejo Deportivo Sur
+  * *Superficie aproximada:* ~1267.9 m² | *Centroide:* `[0.4018716, -78.1724884]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4020925, -78.1723680`
+    2. `0.4020823, -78.1726080`
+    3. `0.4016563, -78.1726078`
+    4. `0.4016526, -78.1723724`
+
+* **Cancha de Fútbol Sintética 2 Cercada (`RECT-CANCHA-FUTBOL-2`):**
+  * *Tipo:* Deporte y Recreación / Fútbol Sintético | *Zona:* Complejo Deportivo Sur
+  * *Superficie aproximada:* ~1187.7 m² | *Centroide:* `[0.4020243, -78.1721833]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4022311, -78.1723034`
+    2. `0.4022241, -78.1720623`
+    3. `0.4018188, -78.1720683`
+    4. `0.4018162, -78.1722974`
+
+* **Cancha de Fútbol Sintética 3 Cercada (`RECT-CANCHA-FUTBOL-3`):**
+  * *Tipo:* Deporte y Recreación / Fútbol Sintético | *Zona:* Complejo Deportivo Sur
+  * *Superficie aproximada:* ~672.4 m² | *Centroide:* `[0.4021117, -78.1718797]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4019572, -78.1719701`
+    2. `0.4019608, -78.1717912`
+    3. `0.4022614, -78.1717886`
+    4. `0.4022675, -78.1719671`
+
+### 2.8. Zona 3: Sector Residencias de Docentes (Villas e Infraestructura)
+Complejo habitacional del profesorado e investigadores residentes en el cuadrante suroccidental del campus:
+
+* **Residencia de Docentes 1 - Villa Principal (`RECT-DOCENTES-01`):**
+  * *Tipo:* Residencia de Docentes e Investigadores | *Zona:* Sector Residencias Docentes
+  * *Superficie aproximada:* ~644.7 m² | *Centroide:* `[0.4032036, -78.1756063]`
+  * *Vértices de Huella Arquitectónica (WGS84 - 8 vértices):*
+    1. `0.4029676, -78.1757291`
+    2. `0.4034530, -78.1755942`
+    3. `0.4034220, -78.1755080`
+    4. `0.4033462, -78.1755277`
+    5. `0.4033268, -78.1754533`
+    6. `0.4032590, -78.1754745`
+    7. `0.4032845, -78.1755445`
+    8. `0.4029358, -78.1756384`
+
+* **Residencia de Docentes 2 (`RECT-DOCENTES-02`):**
+  * *Tipo:* Residencia de Docentes e Investigadores | *Zona:* Sector Residencias Docentes
+  * *Superficie aproximada:* ~224.3 m² | *Centroide:* `[0.4035841, -78.1755092]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4035058, -78.1755799`
+    2. `0.4036898, -78.1755311`
+    3. `0.4036588, -78.1754380`
+    4. `0.4034804, -78.1754873`
+
+* **Residencia de Docentes 3 (`RECT-DOCENTES-03`):**
+  * *Tipo:* Residencia de Docentes e Investigadores | *Zona:* Sector Residencias Docentes
+  * *Superficie aproximada:* ~174.2 m² | *Centroide:* `[0.4038010, -78.1754586]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4037476, -78.1755252`
+    2. `0.4038818, -78.1754903`
+    3. `0.4038545, -78.1753928`
+    4. `0.4037207, -78.1754253`
+
+* **Residencia de Docentes 4 (`RECT-DOCENTES-04`):**
+  * *Tipo:* Residencia de Docentes e Investigadores | *Zona:* Sector Residencias Docentes
+  * *Superficie aproximada:* ~170.9 m² | *Centroide:* `[0.4038333, -78.1756325]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4037532, -78.1755999`
+    2. `0.4037713, -78.1756952`
+    3. `0.4039161, -78.1756618`
+    4. `0.4038948, -78.1755718`
+
+* **Residencia de Docentes 5 (`RECT-DOCENTES-05`):**
+  * *Tipo:* Residencia de Docentes e Investigadores | *Zona:* Sector Residencias Docentes
+  * *Superficie aproximada:* ~122.9 m² | *Centroide:* `[0.4036507, -78.1756697]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4035823, -78.1756406`
+    2. `0.4036044, -78.1757234`
+    3. `0.4037156, -78.1756998`
+    4. `0.4037014, -78.1756168`
+
+* **Edificio Comunitario / No Residencial (`RECT-DOCENTES-NORES`):**
+  * *Tipo:* Equipamiento Comunitario y Servicios | *Zona:* Sector Residencias Docentes
+  * *Superficie aproximada:* ~214.0 m² | *Centroide:* `[0.4033757, -78.1758457]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4032430, -78.1759032`
+    2. `0.4035214, -78.1758478`
+    3. `0.4035170, -78.1757907`
+    4. `0.4032331, -78.1758394`
+
+* **Residencia de Docentes 6 (`RECT-DOCENTES-06`):**
+  * *Tipo:* Residencia de Docentes e Investigadores | *Zona:* Sector Residencias Docentes
+  * *Superficie aproximada:* ~211.1 m² | *Centroide:* `[0.4039540, -78.1758057]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4038788, -78.1758758`
+    2. `0.4040562, -78.1758250`
+    3. `0.4040271, -78.1757353`
+    4. `0.4038528, -78.1757867`
+
+* **Residencia de Docentes 7 (`RECT-DOCENTES-07`):**
+  * *Tipo:* Residencia de Docentes e Investigadores | *Zona:* Sector Residencias Docentes
+  * *Superficie aproximada:* ~315.2 m² | *Centroide:* `[0.4038478, -78.1760199]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4039908, -78.1759389`
+    2. `0.4040064, -78.1760190`
+    3. `0.4037069, -78.1761011`
+    4. `0.4036886, -78.1760203`
+
+* **Residencia de Docentes 8 Bifamiliar (`RECT-DOCENTES-08`):**
+  * *Tipo:* Residencia de Docentes e Investigadores | *Zona:* Sector Residencias Docentes
+  * *Superficie aproximada:* ~151.6 m² | *Centroide:* `[0.4035454, -78.1761070]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4034709, -78.1761635`
+    2. `0.4036379, -78.1761189`
+    3. `0.4036226, -78.1760510`
+    4. `0.4034521, -78.1760944`
+  * *Tabiques y Líneas de División Interior (1):*
+    - **División Residencia de Docentes 8 (Medianera):** `[0.4035530, -78.1761398]` ➔ `[0.4035359, -78.1760731]` (Tabique transversal medianero interior que independiza las dos unidades habitacionales en punto topográfico [0.4035530, -78.1761398].)
+
 ## 3. Red de Bio-Monitoreo Telemétrico Continuo (6 Estaciones GPS)
 
 Red de muestreo pasivo y activo equipada con trampas de silueta oscura, cebadas con emanación controlada de $\text{CO}_2$ biológico y ácido L-láctico para cuantificar la densidad de hembras hematófagas en vuelo.
@@ -1137,7 +1424,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
 
 ---
 
-## 8. Snippet GeoJSON Oficial Completo (176 Entidades: Hitos, Huellas, Canales, Reservorio y Líneas Divisorias)
+## 8. Snippet GeoJSON Oficial Completo (222 Entidades: Hitos, Huellas, Canales, Reservorio y Líneas Divisorias)
 
 ```json
 {
@@ -6780,6 +7067,1456 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
           [
             -78.1732449,
             0.401835
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "R-08",
+        "nombre": "Plaza de las Multis",
+        "zona": "Sector Residencias Sur",
+        "categoria": "Espacio Comunitario / Recreación"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.1751864,
+          0.4021506
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "I-16",
+        "nombre": "Pileta Histórica (Claustro Sala Capitular)",
+        "zona": "Sector San José - Sala Capitular",
+        "categoria": "Patrimonial / Fuente Hidráulica"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.1754463,
+          0.4043772
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "I-17",
+        "nombre": "Pileta de Jardines (Sala Capitular)",
+        "zona": "Sector San José - Sala Capitular",
+        "categoria": "Patrimonial / Fuente Ornamental"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.1756891,
+          0.4043464
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "I-18",
+        "nombre": "Molino de Agua (Patrimonial)",
+        "zona": "Sector Ingenio Azucarero",
+        "categoria": "Patrimonio Industrial Hidráulico"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.174875,
+          0.4053046
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "P-01",
+        "nombre": "Parqueadero San José 1 (Norte)",
+        "zona": "Sector San José",
+        "categoria": "Infraestructura / Parqueadero"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.1759853,
+          0.4043885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "P-02",
+        "nombre": "Parqueadero San José 2 (Central)",
+        "zona": "Sector San José",
+        "categoria": "Infraestructura / Parqueadero"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.1762745,
+          0.4044492
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "P-03",
+        "nombre": "Parqueadero Residencias 'Las Multis'",
+        "zona": "Sector Residencias Sur",
+        "categoria": "Infraestructura / Parqueadero"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.1749447,
+          0.4016694
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "P-04",
+        "nombre": "Parqueadero Complejo Deportivo",
+        "zona": "Complejo Deportivo Sur",
+        "categoria": "Infraestructura / Parqueadero"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.1729857,
+          0.4034454
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "P-05",
+        "nombre": "Parqueadero Sector 'Las Pats'",
+        "zona": "Sector Las Pats",
+        "categoria": "Infraestructura / Parqueadero"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.1733637,
+          0.4020212
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "P-06",
+        "nombre": "Parqueadero San José 3 (Oeste)",
+        "zona": "Sector San José",
+        "categoria": "Infraestructura / Parqueadero"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.1770788,
+          0.4042475
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B-01",
+        "nombre": "Depósito de Basura Principal (Senescyt)",
+        "zona": "Zona Senescyt",
+        "categoria": "Gestión Ambiental / Residuos Sólidos"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.1697626,
+          0.407422
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B-02",
+        "nombre": "Depósito de Basura Principal (Las Pats)",
+        "zona": "Sector Las Pats",
+        "categoria": "Gestión Ambiental / Residuos Sólidos"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.1733913,
+          0.4022108
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B-03",
+        "nombre": "Depósito de Basura Principal (San José)",
+        "zona": "Sector San José",
+        "categoria": "Gestión Ambiental / Residuos Sólidos"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.1742848,
+          0.405747
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B-04",
+        "nombre": "Depósito de Basura (Tachos Aulas B)",
+        "zona": "Sector Ingenio Azucarero",
+        "categoria": "Gestión Ambiental / Tachos Menores"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.1743254,
+          0.4047478
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B-05",
+        "nombre": "Depósito de Basura (Tachos Plaza del Estudiante)",
+        "zona": "Sector Ingenio Azucarero",
+        "categoria": "Gestión Ambiental / Tachos Menores"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.1741545,
+          0.4049303
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B-06",
+        "nombre": "Depósito de Basura (Tachos Plaza Mikuna)",
+        "zona": "Sector Plaza Mikuna",
+        "categoria": "Gestión Ambiental / Tachos Menores"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.173819,
+          0.404318
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LINE-DIV-DOCENTES-08",
+        "nombre": "División Residencia de Docentes 8 (Medianera)",
+        "zona": "Sector Residencias Docentes",
+        "categoria": "División Arquitectónica Interior",
+        "descripcion": "Tabique transversal medianero interior que independiza las dos unidades de la Residencia de Docentes 8."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.1761398,
+            0.403553
+          ],
+          [
+            -78.1760731,
+            0.4035359
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LINE-PARK-01",
+        "nombre": "Parqueadero Lineal Senescyt (Calzada Este)",
+        "zona": "Zona Senescyt",
+        "categoria": "Infraestructura Vial / Parqueadero Lineal",
+        "descripcion": "Franja lineal de parqueo vehicular en batería sobre la calzada este del Edificio Senescyt."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.1698884,
+            0.4062069
+          ],
+          [
+            -78.1695806,
+            0.4065531
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LINE-PARK-02",
+        "nombre": "Parqueadero Lineal Senescyt (Calzada Sur)",
+        "zona": "Zona Senescyt",
+        "categoria": "Infraestructura Vial / Parqueadero Lineal",
+        "descripcion": "Franja lineal de parqueo vehicular sobre la calzada sur de acceso al Edificio Senescyt."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.1702622,
+            0.4060763
+          ],
+          [
+            -78.1704835,
+            0.4062677
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-CAPITULAR-CLAUSTRO",
+        "nombre": "Claustro y Galerías Sala Capitular",
+        "tipo": "Patrimonio / Claustro Colonial",
+        "zona": "Sector San José - Sala Capitular",
+        "area_m2": 906.9,
+        "interior": false,
+        "is_perimeter": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.175332,
+              0.40424
+            ],
+            [
+              -78.17559009943265,
+              0.40420902103464523
+            ],
+            [
+              -78.17563580351128,
+              0.4045625167016313
+            ],
+            [
+              -78.17552026853677,
+              0.40457700555425363
+            ],
+            [
+              -78.17551204248113,
+              0.4045318176805893
+            ],
+            [
+              -78.17536179998498,
+              0.4045468941577039
+            ],
+            [
+              -78.17535273674106,
+              0.40444834700931
+            ],
+            [
+              -78.17549822469832,
+              0.4044267281680122
+            ],
+            [
+              -78.1754867983086,
+              0.4043353137421178
+            ],
+            [
+              -78.17534002693716,
+              0.40434880702301934
+            ],
+            [
+              -78.175332,
+              0.40424
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-EDIF-20",
+        "nombre": "Edificio 20 (San José)",
+        "tipo": "Infraestructura y Servicios San José",
+        "zona": "Sector San José",
+        "area_m2": 73.0,
+        "interior": false,
+        "is_perimeter": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.1760998960864,
+              0.4042613018403834
+            ],
+            [
+              -78.17608846041709,
+              0.4043092936161369
+            ],
+            [
+              -78.17620740414793,
+              0.40434474337116183
+            ],
+            [
+              -78.17622010330457,
+              0.40430115536149835
+            ],
+            [
+              -78.1760998960864,
+              0.4042613018403834
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-CANCHA-VOLLEY",
+        "nombre": "Cancha de Volley Playa (Arena)",
+        "tipo": "Deporte y Recreación / Cancha de Arena",
+        "zona": "Complejo Deportivo Sur",
+        "area_m2": 396.4,
+        "interior": false,
+        "is_perimeter": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.17299007290745,
+              0.4025861600605359
+            ],
+            [
+              -78.17286166687853,
+              0.4025842300089088
+            ],
+            [
+              -78.17285994863846,
+              0.40235194000536745
+            ],
+            [
+              -78.17299975708694,
+              0.40233825911290455
+            ],
+            [
+              -78.17299007290745,
+              0.4025861600605359
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-CANCHA-BASKET-1",
+        "nombre": "Cancha de Basketball 1",
+        "tipo": "Deporte y Recreación / Cancha de Baloncesto",
+        "zona": "Complejo Deportivo Sur",
+        "area_m2": 601.0,
+        "interior": false,
+        "is_perimeter": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.17262017830531,
+              0.40228557017200245
+            ],
+            [
+              -78.17279072890534,
+              0.4022828888612006
+            ],
+            [
+              -78.17278597294019,
+              0.40257329585712437
+            ],
+            [
+              -78.17261542483678,
+              0.40256714258832177
+            ],
+            [
+              -78.17262017830531,
+              0.40228557017200245
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-CANCHA-BASKET-2",
+        "nombre": "Cancha de Basketball 2",
+        "tipo": "Deporte y Recreación / Cancha de Baloncesto",
+        "zona": "Complejo Deportivo Sur",
+        "area_m2": 509.2,
+        "interior": false,
+        "is_perimeter": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.17229870730031,
+              0.4023890144287728
+            ],
+            [
+              -78.1724493204527,
+              0.4023920568119697
+            ],
+            [
+              -78.17244629640133,
+              0.40266729410813257
+            ],
+            [
+              -78.17229713258551,
+              0.4026652204280081
+            ],
+            [
+              -78.17229870730031,
+              0.4023890144287728
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-CANCHA-BASKET-3",
+        "nombre": "Cancha de Basketball 3",
+        "tipo": "Deporte y Recreación / Cancha de Baloncesto",
+        "zona": "Complejo Deportivo Sur",
+        "area_m2": 503.3,
+        "interior": false,
+        "is_perimeter": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.17206146245567,
+              0.4027909097980843
+            ],
+            [
+              -78.17220993324644,
+              0.40279148333782916
+            ],
+            [
+              -78.17221321915268,
+              0.4025168444205669
+            ],
+            [
+              -78.17206312374493,
+              0.4025181243070779
+            ],
+            [
+              -78.17206146245567,
+              0.4027909097980843
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-CANCHA-FUTBOL-1",
+        "nombre": "Cancha de Fútbol Sintética 1 (Cercada)",
+        "tipo": "Deporte y Recreación / Fútbol Sintético",
+        "zona": "Complejo Deportivo Sur",
+        "area_m2": 1267.9,
+        "interior": false,
+        "is_perimeter": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.17236796565483,
+              0.40209252598424083
+            ],
+            [
+              -78.17260800363452,
+              0.40208233822360445
+            ],
+            [
+              -78.17260779323227,
+              0.40165628949352405
+            ],
+            [
+              -78.17237240586813,
+              0.4016526038666191
+            ],
+            [
+              -78.17236796565483,
+              0.40209252598424083
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-CANCHA-FUTBOL-2",
+        "nombre": "Cancha de Fútbol Sintética 2 (Cercada)",
+        "tipo": "Deporte y Recreación / Fútbol Sintético",
+        "zona": "Complejo Deportivo Sur",
+        "area_m2": 1187.7,
+        "interior": false,
+        "is_perimeter": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.17230336934185,
+              0.40223108513129635
+            ],
+            [
+              -78.172062332801,
+              0.40222409652123897
+            ],
+            [
+              -78.1720683136697,
+              0.40181875311686155
+            ],
+            [
+              -78.17229743361754,
+              0.401816173567501
+            ],
+            [
+              -78.17230336934185,
+              0.40223108513129635
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-CANCHA-FUTBOL-3",
+        "nombre": "Cancha de Fútbol Sintética 3 (Cercada)",
+        "tipo": "Deporte y Recreación / Fútbol Sintético",
+        "zona": "Complejo Deportivo Sur",
+        "area_m2": 672.4,
+        "interior": false,
+        "is_perimeter": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.17197007418827,
+              0.40195721709224796
+            ],
+            [
+              -78.17179118686657,
+              0.40196081391685234
+            ],
+            [
+              -78.17178857753838,
+              0.40226137989635063
+            ],
+            [
+              -78.1719670839912,
+              0.40226750026629277
+            ],
+            [
+              -78.17197007418827,
+              0.40195721709224796
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-DOCENTES-01",
+        "nombre": "Residencia de Docentes 1 (Villa Principal)",
+        "tipo": "Residencia de Docentes e Investigadores",
+        "zona": "Sector Residencias Docentes",
+        "area_m2": 644.7,
+        "interior": false,
+        "is_perimeter": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.1757290860798,
+              0.4029675544664514
+            ],
+            [
+              -78.1755941846592,
+              0.403452951226866
+            ],
+            [
+              -78.17550799582311,
+              0.4034219996664258
+            ],
+            [
+              -78.1755276638781,
+              0.403346240240605
+            ],
+            [
+              -78.17545328677666,
+              0.403326756837941
+            ],
+            [
+              -78.1754745150326,
+              0.4032590031300809
+            ],
+            [
+              -78.17554451818032,
+              0.4032845330165297
+            ],
+            [
+              -78.17563840721435,
+              0.40293582357967284
+            ],
+            [
+              -78.1757290860798,
+              0.4029675544664514
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-DOCENTES-02",
+        "nombre": "Residencia de Docentes 2",
+        "tipo": "Residencia de Docentes e Investigadores",
+        "zona": "Sector Residencias Docentes",
+        "area_m2": 224.3,
+        "interior": false,
+        "is_perimeter": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.17557991761626,
+              0.4035058418082375
+            ],
+            [
+              -78.17553113679166,
+              0.40368979868839344
+            ],
+            [
+              -78.17543803362949,
+              0.4036587904803255
+            ],
+            [
+              -78.17548726709248,
+              0.40348043378653464
+            ],
+            [
+              -78.17557991761626,
+              0.4035058418082375
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-DOCENTES-03",
+        "nombre": "Residencia de Docentes 3",
+        "tipo": "Residencia de Docentes e Investigadores",
+        "zona": "Sector Residencias Docentes",
+        "area_m2": 174.2,
+        "interior": false,
+        "is_perimeter": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.1755252375428,
+              0.4037476411895457
+            ],
+            [
+              -78.17549032201262,
+              0.4038818212547698
+            ],
+            [
+              -78.17539282014432,
+              0.4038545128083486
+            ],
+            [
+              -78.17542534823382,
+              0.40372073591745794
+            ],
+            [
+              -78.1755252375428,
+              0.4037476411895457
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-DOCENTES-04",
+        "nombre": "Residencia de Docentes 4",
+        "tipo": "Residencia de Docentes e Investigadores",
+        "zona": "Sector Residencias Docentes",
+        "area_m2": 170.9,
+        "interior": false,
+        "is_perimeter": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.1755999134971,
+              0.4037532394194796
+            ],
+            [
+              -78.1756951934876,
+              0.40377127893214637
+            ],
+            [
+              -78.17566177330714,
+              0.40391611473941935
+            ],
+            [
+              -78.17557179127812,
+              0.4038948400052535
+            ],
+            [
+              -78.1755999134971,
+              0.4037532394194796
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-DOCENTES-05",
+        "nombre": "Residencia de Docentes 5",
+        "tipo": "Residencia de Docentes e Investigadores",
+        "zona": "Sector Residencias Docentes",
+        "area_m2": 122.9,
+        "interior": false,
+        "is_perimeter": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.17564059729222,
+              0.40358234289246236
+            ],
+            [
+              -78.17572338828448,
+              0.40360440058953484
+            ],
+            [
+              -78.1756997583329,
+              0.4037156117408911
+            ],
+            [
+              -78.17561677651535,
+              0.40370142023332534
+            ],
+            [
+              -78.17564059729222,
+              0.40358234289246236
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-DOCENTES-NORES",
+        "nombre": "Edificio Comunitario / No Residencial (Docentes)",
+        "tipo": "Equipamiento Comunitario y Servicios",
+        "zona": "Sector Residencias Docentes",
+        "area_m2": 214.0,
+        "interior": false,
+        "is_perimeter": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.1759031942055,
+              0.40324304597535526
+            ],
+            [
+              -78.17584776761707,
+              0.4035214193391899
+            ],
+            [
+              -78.17579067461945,
+              0.40351696828514927
+            ],
+            [
+              -78.17583935576278,
+              0.40323308002676506
+            ],
+            [
+              -78.1759031942055,
+              0.40324304597535526
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-DOCENTES-06",
+        "nombre": "Residencia de Docentes 6",
+        "tipo": "Residencia de Docentes e Investigadores",
+        "zona": "Sector Residencias Docentes",
+        "area_m2": 211.1,
+        "interior": false,
+        "is_perimeter": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.17587575557651,
+              0.40387879399406623
+            ],
+            [
+              -78.1758250209943,
+              0.40405620634993067
+            ],
+            [
+              -78.17573525220743,
+              0.40402705150552726
+            ],
+            [
+              -78.17578665461019,
+              0.4038527651904324
+            ],
+            [
+              -78.17587575557651,
+              0.40387879399406623
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-DOCENTES-07",
+        "nombre": "Residencia de Docentes 7",
+        "tipo": "Residencia de Docentes e Investigadores",
+        "zona": "Sector Residencias Docentes",
+        "area_m2": 315.2,
+        "interior": false,
+        "is_perimeter": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.17593886434996,
+              0.40399083308609157
+            ],
+            [
+              -78.17601900690731,
+              0.40400638670525724
+            ],
+            [
+              -78.17610106077338,
+              0.403706932409291
+            ],
+            [
+              -78.17602027664064,
+              0.40368862851209686
+            ],
+            [
+              -78.17593886434996,
+              0.40399083308609157
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-DOCENTES-08",
+        "nombre": "Residencia de Docentes 8 (Bifamiliar)",
+        "tipo": "Residencia de Docentes e Investigadores",
+        "zona": "Sector Residencias Docentes",
+        "area_m2": 151.6,
+        "interior": false,
+        "is_perimeter": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.17616348286064,
+              0.4034709211178097
+            ],
+            [
+              -78.17611892659224,
+              0.4036378625066064
+            ],
+            [
+              -78.17605104552078,
+              0.40362256650572353
+            ],
+            [
+              -78.17609436336367,
+              0.4034521176605463
+            ],
+            [
+              -78.17616348286064,
+              0.4034709211178097
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-EDIF-37",
+        "nombre": "Edificio 37 (San José)",
+        "tipo": "Edificio de Servicios / Infraestructura",
+        "zona": "Sector San José",
+        "area_m2": 56.4,
+        "interior": false,
+        "is_perimeter": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.17642430304325,
+              0.40414961480802286
+            ],
+            [
+              -78.17647015012106,
+              0.4041608427496954
+            ],
+            [
+              -78.17643986325076,
+              0.40425861309438166
+            ],
+            [
+              -78.17639817261436,
+              0.4042446931826492
+            ],
+            [
+              -78.17642430304325,
+              0.40414961480802286
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-EDIF-38",
+        "nombre": "Edificio 38 (San José)",
+        "tipo": "Edificio Administrativo y Operativo",
+        "zona": "Sector San José",
+        "area_m2": 155.8,
+        "interior": false,
+        "is_perimeter": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.17668579084234,
+              0.404213301532898
+            ],
+            [
+              -78.17664338480479,
+              0.40434474337116183
+            ],
+            [
+              -78.1765556598624,
+              0.40430820746524393
+            ],
+            [
+              -78.17659284889407,
+              0.4041867832892328
+            ],
+            [
+              -78.17668579084234,
+              0.404213301532898
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-EDIF-39",
+        "nombre": "Edificio 39 (San José)",
+        "tipo": "Edificio de Servicios y Logística",
+        "zona": "Sector San José",
+        "area_m2": 62.0,
+        "interior": false,
+        "is_perimeter": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.17657909628454,
+              0.4039881695303205
+            ],
+            [
+              -78.17659349605131,
+              0.40394774317195414
+            ],
+            [
+              -78.17648654219273,
+              0.4039159568316363
+            ],
+            [
+              -78.17647615665793,
+              0.4039650048518703
+            ],
+            [
+              -78.17657909628454,
+              0.4039881695303205
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-EDIF-40",
+        "nombre": "Edificio 40 (San José)",
+        "tipo": "Edificio Polivalente San José",
+        "zona": "Sector San José",
+        "area_m2": 269.6,
+        "interior": false,
+        "is_perimeter": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.17668871013962,
+              0.40417029791370934
+            ],
+            [
+              -78.17674116491273,
+              0.40398480040210594
+            ],
+            [
+              -78.17662885123883,
+              0.4039591650499329
+            ],
+            [
+              -78.17657692050491,
+              0.4041368223423578
+            ],
+            [
+              -78.17668871013962,
+              0.40417029791370934
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-EDIF-41",
+        "nombre": "Edificio 41 (San José)",
+        "tipo": "Complejo Edilicio Mayor San José",
+        "zona": "Sector San José",
+        "area_m2": 610.8,
+        "interior": false,
+        "is_perimeter": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.1767745594875,
+              0.404050227323438
+            ],
+            [
+              -78.17694830796492,
+              0.4041059504735446
+            ],
+            [
+              -78.1768552994728,
+              0.4043600323994754
+            ],
+            [
+              -78.17679090716022,
+              0.40434376633858476
+            ],
+            [
+              -78.17677676581192,
+              0.40439599086775
+            ],
+            [
+              -78.17690276029923,
+              0.40444369217875803
+            ],
+            [
+              -78.17695548261383,
+              0.4043033964471817
+            ],
+            [
+              -78.177001158758,
+              0.4043141870791176
+            ],
+            [
+              -78.17701357549211,
+              0.404280774987399
+            ],
+            [
+              -78.17698872299397,
+              0.40427539839671817
+            ],
+            [
+              -78.17706267168654,
+              0.40408248039094047
+            ],
+            [
+              -78.17678581728795,
+              0.4039960670941696
+            ],
+            [
+              -78.1767745594875,
+              0.404050227323438
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-REST-PATO-GOLOSO",
+        "nombre": "Restaurante 'Pato Goloso'",
+        "tipo": "Gastronomía y Alimentación / Restaurante",
+        "zona": "Sector Gastronómico San José",
+        "area_m2": 27.4,
+        "interior": false,
+        "is_perimeter": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.17665611628786,
+              0.4042956013511884
+            ],
+            [
+              -78.17661256146175,
+              0.4042846843054159
+            ],
+            [
+              -78.17660118513263,
+              0.404331228715073
+            ],
+            [
+              -78.17664481704243,
+              0.4043448855288352
+            ],
+            [
+              -78.17665611628786,
+              0.4042956013511884
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-REST-COMEDOR-ANALI",
+        "nombre": "Restaurante 'Comedor Analí'",
+        "tipo": "Gastronomía y Alimentación / Restaurante",
+        "zona": "Sector Gastronómico San José",
+        "area_m2": 38.3,
+        "interior": false,
+        "is_perimeter": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.17665611628786,
+              0.4042956013511884
+            ],
+            [
+              -78.17661256146175,
+              0.4042846843054159
+            ],
+            [
+              -78.17663000363017,
+              0.4042187098924085
+            ],
+            [
+              -78.176677545081,
+              0.40423812982681984
+            ],
+            [
+              -78.17665611628786,
+              0.4042956013511884
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-BANOS-SANJOSE-1",
+        "nombre": "Batería Sanitaria 1 (Sector Analí / Pato Goloso)",
+        "tipo": "Servicios Sanitarios e Higiene",
+        "zona": "Sector San José",
+        "area_m2": 15.5,
+        "interior": false,
+        "is_perimeter": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.17663000363017,
+              0.4042187098924085
+            ],
+            [
+              -78.176677545081,
+              0.40423812982681984
+            ],
+            [
+              -78.17668492325618,
+              0.4042106691286265
+            ],
+            [
+              -78.17663813939762,
+              0.4041981534608102
+            ],
+            [
+              -78.17663000363017,
+              0.4042187098924085
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-BANOS-SANJOSE-2",
+        "nombre": "Batería Sanitaria 2 (Sector Sur San José)",
+        "tipo": "Servicios Sanitarios e Higiene",
+        "zona": "Sector San José",
+        "area_m2": 51.0,
+        "interior": false,
+        "is_perimeter": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.17669053334565,
+              0.40397770829273366
+            ],
+            [
+              -78.17667322278062,
+              0.4040335081217475
+            ],
+            [
+              -78.17660955551632,
+              0.4040111203343552
+            ],
+            [
+              -78.17662843796816,
+              0.40394965649017067
+            ],
+            [
+              -78.17669053334565,
+              0.40397770829273366
+            ]
           ]
         ]
       }

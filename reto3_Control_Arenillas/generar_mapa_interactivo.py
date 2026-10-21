@@ -414,7 +414,39 @@ def generar_mapa():
         ([0.402500, -78.171800], "Canchas Deportivas (Fútbol / Múltiples)", "futbol-o", "blue",
          "⚽ Deporte y Actividad Física", "Canchas reglamentarias de césped y vóley junto a la acequia sur protegida."),
         ([0.402550, -78.172800], "Parada (Arco de las Pats)", "bus", "gray",
-         "🚌 Transporte Universitario", "Punto principal de arribo y espera de buses universitarios hacia Ibarra y Urcuquí.")
+         "🚌 Transporte Universitario", "Punto principal de arribo y espera de buses universitarios hacia Ibarra y Urcuquí."),
+        ([0.4021506, -78.1751864], "Plaza de las Multis", "sun-o", "green",
+         "🤝 Espacio Comunitario y Recreación", "Plazoleta central y área de convivencia al aire libre entre los bloques multifamiliares."),
+        ([0.4043772, -78.1754463], "Pileta Histórica (Claustro Sala Capitular)", "tint", "blue",
+         "⛲ Fuente y Patrimonio Hidráulico", "Pileta ornamental central de piedra en el patio claustral de la Sala Capitular San José."),
+        ([0.4043464, -78.1756891], "Pileta de Jardines (Sala Capitular)", "tint", "cadetblue",
+         "⛲ Fuente Ornamental de Jardín", "Pileta de agua y ambientación paisajística en jardines exteriores de Sala Capitular."),
+        ([0.4053046, -78.1748750], "Molino de Agua (Patrimonial)", "cog", "purple",
+         "⚙️ Patrimonio Industrial Hidráulico", "Molino hidráulico histórico impulsado por la red de acequias de la Hacienda San José."),
+        ([0.4043885, -78.1759853], "Parqueadero San José 1 (Norte)", "car", "gray",
+         "🚗 Estacionamiento Vehicular", "Área de parqueo norte junto a la Sala de Defensas y Sala Capitular."),
+        ([0.4044492, -78.1762745], "Parqueadero San José 2 (Central)", "car", "gray",
+         "🚗 Estacionamiento Vehicular", "Área de parqueo central para usuarios, docentes y personal en sector San José."),
+        ([0.4016694, -78.1749447], "Parqueadero Residencias 'Las Multis'", "car", "gray",
+         "🚗 Estacionamiento Residencial", "Zona de aparcamiento para residentes y visitantes de Las Multis."),
+        ([0.4034454, -78.1729857], "Parqueadero Complejo Deportivo", "car", "gray",
+         "🚗 Estacionamiento Deportivo", "Parqueadero de acceso a canchas de fútbol, básquetbol y vóley de playa."),
+        ([0.4020212, -78.1733637], "Parqueadero Sector 'Las Pats'", "car", "gray",
+         "🚗 Estacionamiento Residencial", "Área de estacionamiento para las Residencias Patrimoniales Las Pats."),
+        ([0.4042475, -78.1770788], "Parqueadero San José 3 (Oeste)", "car", "gray",
+         "🚗 Estacionamiento Vehicular", "Parqueadero exterior occidental junto al Edificio 41 y servicios generales."),
+        ([0.4074220, -78.1697626], "Depósito de Basura Principal (Senescyt)", "trash", "black",
+         "🗑️ Gestión de Residuos Sólidos", "Estación principal de contenedores para reciclaje y desechos en Senescyt."),
+        ([0.4022108, -78.1733913], "Depósito de Basura Principal (Las Pats)", "trash", "black",
+         "🗑️ Gestión de Residuos Sólidos", "Estación de contenedores de residuos para el sector patrimonial Las Pats."),
+        ([0.4057470, -78.1742848], "Depósito de Basura Principal (San José)", "trash", "black",
+         "🗑️ Gestión de Residuos Sólidos", "Estación central de acopio de basura del sector Ingenio / San José."),
+        ([0.4047478, -78.1743254], "Depósito de Basura (Tachos Aulas B)", "trash", "gray",
+         "🗑️ Tachos de Residuos Menores", "Punto ecológico de tachos pequeños para estudiantes en Aulas B."),
+        ([0.4049303, -78.1741545], "Depósito de Basura (Tachos Plaza del Estudiante)", "trash", "gray",
+         "🗑️ Tachos de Residuos Menores", "Tachos de clasificación de residuos en Plaza del Estudiante."),
+        ([0.4043180, -78.1738190], "Depósito de Basura (Tachos Plaza Mikuna)", "trash", "gray",
+         "🗑️ Tachos de Residuos Menores", "Punto ecológico de tachos de basura en patio gastronómico Plaza Mikuna.")
     ]
 
     for coord, nombre, icono, color, categoria, descripcion_humana in hitos_humanos:
@@ -1530,6 +1562,495 @@ def generar_mapa():
             "is_perimeter": False,
             "desc": "Complejo habitacional asignado a personal docente e investigadores visitantes en Las Pats."
         },
+        # =============================================================
+        # SECTOR SALA CAPITULAR, SAN JOSÉ Y SERVICIOS
+        # =============================================================
+        {
+            "id": "RECT-CAPITULAR-CLAUSTRO",
+            "nombre": "Claustro y Galerías Sala Capitular",
+            "tipo": "Patrimonio / Claustro Colonial",
+            "zona": "Sector San José - Sala Capitular",
+            "coords": [
+                [0.404240, -78.175332],
+                [0.40420902103464523, -78.17559009943265],
+                [0.4045625167016313, -78.17563580351128],
+                [0.40457700555425363, -78.17552026853677],
+                [0.4045318176805893, -78.17551204248113],
+                [0.4045468941577039, -78.17536179998498],
+                [0.40444834700931, -78.17535273674106],
+                [0.4044267281680122, -78.17549822469832],
+                [0.4043353137421178, -78.1754867983086],
+                [0.40434880702301934, -78.17534002693716]
+            ],
+            "centroid": [0.4043897, -78.175497],
+            "area": 906.9,
+            "color": "#6c5ce7", "fill": "#a29bfe",
+            "interior": False, "is_perimeter": False,
+            "desc": "Edificio claustral y galerías perimetrales en U en el sector patrimonial Sala Capitular."
+        },
+        {
+            "id": "RECT-EDIF-20",
+            "nombre": "Edificio 20 (San José)",
+            "tipo": "Infraestructura y Servicios San José",
+            "zona": "Sector San José",
+            "coords": [
+                [0.4042613018403834, -78.1760998960864],
+                [0.4043092936161369, -78.17608846041709],
+                [0.40434474337116183, -78.17620740414793],
+                [0.40430115536149835, -78.17622010330457]
+            ],
+            "centroid": [0.4043038, -78.1761532],
+            "area": 73.0,
+            "color": "#4a69bd", "fill": "#6a89cc",
+            "interior": False, "is_perimeter": False,
+            "desc": "Edificio modular de soporte técnico y oficinas de servicios en el sector San José."
+        },
+        # =============================================================
+        # COMPLEJO DEPORTIVO SUR (CANCHAS REGLAMENTARIAS)
+        # =============================================================
+        {
+            "id": "RECT-CANCHA-VOLLEY",
+            "nombre": "Cancha de Volley Playa (Arena)",
+            "tipo": "Deporte y Recreación / Cancha de Arena",
+            "zona": "Complejo Deportivo Sur",
+            "coords": [
+                [0.4025861600605359, -78.17299007290745],
+                [0.4025842300089088, -78.17286166687853],
+                [0.40235194000536745, -78.17285994863846],
+                [0.40233825911290455, -78.17299975708694]
+            ],
+            "centroid": [0.4024635, -78.1729286],
+            "area": 396.4,
+            "color": "#e67e22", "fill": "#f39c12",
+            "interior": False, "is_perimeter": False,
+            "desc": "Cancha reglamentaria con superficie de arena para voleibol de playa y acondicionamiento físico."
+        },
+        {
+            "id": "RECT-CANCHA-BASKET-1",
+            "nombre": "Cancha de Basketball 1",
+            "tipo": "Deporte y Recreación / Cancha de Baloncesto",
+            "zona": "Complejo Deportivo Sur",
+            "coords": [
+                [0.40228557017200245, -78.17262017830531],
+                [0.4022828888612006, -78.17279072890534],
+                [0.40257329585712437, -78.17278597294019],
+                [0.40256714258832177, -78.17261542483678]
+            ],
+            "centroid": [0.4024272, -78.1727035],
+            "area": 601.0,
+            "color": "#d35400", "fill": "#e67e22",
+            "interior": False, "is_perimeter": False,
+            "desc": "Cancha polideportiva pavimentada para básquetbol y actividades formativas (Cancha 1)."
+        },
+        {
+            "id": "RECT-CANCHA-BASKET-2",
+            "nombre": "Cancha de Basketball 2",
+            "tipo": "Deporte y Recreación / Cancha de Baloncesto",
+            "zona": "Complejo Deportivo Sur",
+            "coords": [
+                [0.4023890144287728, -78.17229870730031],
+                [0.4023920568119697, -78.1724493204527],
+                [0.40266729410813257, -78.17244629640133],
+                [0.4026652204280081, -78.17229713258551]
+            ],
+            "centroid": [0.4025282, -78.1723728],
+            "area": 509.2,
+            "color": "#d35400", "fill": "#e67e22",
+            "interior": False, "is_perimeter": False,
+            "desc": "Cancha polideportiva pavimentada para básquetbol central (Cancha 2)."
+        },
+        {
+            "id": "RECT-CANCHA-BASKET-3",
+            "nombre": "Cancha de Basketball 3",
+            "tipo": "Deporte y Recreación / Cancha de Baloncesto",
+            "zona": "Complejo Deportivo Sur",
+            "coords": [
+                [0.4027909097980843, -78.17206146245567],
+                [0.40279148333782916, -78.17220993324644],
+                [0.4025168444205669, -78.17221321915268],
+                [0.4025181243070779, -78.17206312374493]
+            ],
+            "centroid": [0.4026541, -78.172137],
+            "area": 503.3,
+            "color": "#d35400", "fill": "#e67e22",
+            "interior": False, "is_perimeter": False,
+            "desc": "Cancha polideportiva pavimentada para básquetbol norte (Cancha 3)."
+        },
+        {
+            "id": "RECT-CANCHA-FUTBOL-1",
+            "nombre": "Cancha de Fútbol Sintética 1 (Cercada)",
+            "tipo": "Deporte y Recreación / Fútbol Sintético",
+            "zona": "Complejo Deportivo Sur",
+            "coords": [
+                [0.40209252598424083, -78.17236796565483],
+                [0.40208233822360445, -78.17260800363452],
+                [0.40165628949352405, -78.17260779323227],
+                [0.4016526038666191, -78.17237240586813]
+            ],
+            "centroid": [0.4018716, -78.1724884],
+            "area": 1267.9,
+            "color": "#27ae60", "fill": "#2ecc71",
+            "interior": False, "is_perimeter": False,
+            "desc": "Cancha reglamentaria de césped sintético cercada con malla perimetral lateral para fútbol (Cancha 1)."
+        },
+        {
+            "id": "RECT-CANCHA-FUTBOL-2",
+            "nombre": "Cancha de Fútbol Sintética 2 (Cercada)",
+            "tipo": "Deporte y Recreación / Fútbol Sintético",
+            "zona": "Complejo Deportivo Sur",
+            "coords": [
+                [0.40223108513129635, -78.17230336934185],
+                [0.40222409652123897, -78.172062332801],
+                [0.40181875311686155, -78.1720683136697],
+                [0.401816173567501, -78.17229743361754]
+            ],
+            "centroid": [0.4020243, -78.1721833],
+            "area": 1187.7,
+            "color": "#27ae60", "fill": "#2ecc71",
+            "interior": False, "is_perimeter": False,
+            "desc": "Cancha reglamentaria de césped sintético cercada con malla de tela lateral para fútbol (Cancha 2)."
+        },
+        {
+            "id": "RECT-CANCHA-FUTBOL-3",
+            "nombre": "Cancha de Fútbol Sintética 3 (Cercada)",
+            "tipo": "Deporte y Recreación / Fútbol Sintético",
+            "zona": "Complejo Deportivo Sur",
+            "coords": [
+                [0.40195721709224796, -78.17197007418827],
+                [0.40196081391685234, -78.17179118686657],
+                [0.40226137989635063, -78.17178857753838],
+                [0.40226750026629277, -78.1719670839912]
+            ],
+            "centroid": [0.4021117, -78.1718797],
+            "area": 672.4,
+            "color": "#27ae60", "fill": "#2ecc71",
+            "interior": False, "is_perimeter": False,
+            "desc": "Cancha de fútbol con césped sintético y cerramiento perimetral este (Cancha 3)."
+        },
+        # =============================================================
+        # SECTOR RESIDENCIAS DE DOCENTES
+        # =============================================================
+        {
+            "id": "RECT-DOCENTES-01",
+            "nombre": "Residencia de Docentes 1 (Villa Principal)",
+            "tipo": "Residencia de Docentes e Investigadores",
+            "zona": "Sector Residencias Docentes",
+            "coords": [
+                [0.4029675544664514, -78.1757290860798],
+                [0.403452951226866, -78.1755941846592],
+                [0.4034219996664258, -78.17550799582311],
+                [0.403346240240605, -78.1755276638781],
+                [0.403326756837941, -78.17545328677666],
+                [0.4032590031300809, -78.1754745150326],
+                [0.4032845330165297, -78.17554451818032],
+                [0.40293582357967284, -78.17563840721435]
+            ],
+            "centroid": [0.4032036, -78.1756063],
+            "area": 644.7,
+            "color": "#2980b9", "fill": "#3498db",
+            "interior": False, "is_perimeter": False,
+            "desc": "Villa docente longitudinal de 8 vértices en el ala suroriental del barrio residencial de profesores."
+        },
+        {
+            "id": "RECT-DOCENTES-02",
+            "nombre": "Residencia de Docentes 2",
+            "tipo": "Residencia de Docentes e Investigadores",
+            "zona": "Sector Residencias Docentes",
+            "coords": [
+                [0.4035058418082375, -78.17557991761626],
+                [0.40368979868839344, -78.17553113679166],
+                [0.4036587904803255, -78.17543803362949],
+                [0.40348043378653464, -78.17548726709248]
+            ],
+            "centroid": [0.4035841, -78.1755092],
+            "area": 224.3,
+            "color": "#2980b9", "fill": "#3498db",
+            "interior": False, "is_perimeter": False,
+            "desc": "Vivienda unifamiliar docente ubicada en el sendero interior del barrio de profesores."
+        },
+        {
+            "id": "RECT-DOCENTES-03",
+            "nombre": "Residencia de Docentes 3",
+            "tipo": "Residencia de Docentes e Investigadores",
+            "zona": "Sector Residencias Docentes",
+            "coords": [
+                [0.4037476411895457, -78.1755252375428],
+                [0.4038818212547698, -78.17549032201262],
+                [0.4038545128083486, -78.17539282014432],
+                [0.40372073591745794, -78.17542534823382]
+            ],
+            "centroid": [0.403801, -78.1754586],
+            "area": 174.2,
+            "color": "#2980b9", "fill": "#3498db",
+            "interior": False, "is_perimeter": False,
+            "desc": "Vivienda docente en el sector nororiental de villas universitarias."
+        },
+        {
+            "id": "RECT-DOCENTES-04",
+            "nombre": "Residencia de Docentes 4",
+            "tipo": "Residencia de Docentes e Investigadores",
+            "zona": "Sector Residencias Docentes",
+            "coords": [
+                [0.4037532394194796, -78.1755999134971],
+                [0.40377127893214637, -78.1756951934876],
+                [0.40391611473941935, -78.17566177330714],
+                [0.4038948400052535, -78.17557179127812]
+            ],
+            "centroid": [0.4038333, -78.1756325],
+            "area": 170.9,
+            "color": "#2980b9", "fill": "#3498db",
+            "interior": False, "is_perimeter": False,
+            "desc": "Villa docente norte contigua al jardín botánico protegido."
+        },
+        {
+            "id": "RECT-DOCENTES-05",
+            "nombre": "Residencia de Docentes 5",
+            "tipo": "Residencia de Docentes e Investigadores",
+            "zona": "Sector Residencias Docentes",
+            "coords": [
+                [0.40358234289246236, -78.17564059729222],
+                [0.40360440058953484, -78.17572338828448],
+                [0.4037156117408911, -78.1756997583329],
+                [0.40370142023332534, -78.17561677651535]
+            ],
+            "centroid": [0.4036507, -78.1756697],
+            "area": 122.9,
+            "color": "#2980b9", "fill": "#3498db",
+            "interior": False, "is_perimeter": False,
+            "desc": "Villa docente compacta en el corredor peatonal central de profesores."
+        },
+        {
+            "id": "RECT-DOCENTES-NORES",
+            "nombre": "Edificio Comunitario / No Residencial (Docentes)",
+            "tipo": "Equipamiento Comunitario y Servicios",
+            "zona": "Sector Residencias Docentes",
+            "coords": [
+                [0.40324304597535526, -78.1759031942055],
+                [0.4035214193391899, -78.17584776761707],
+                [0.40351696828514927, -78.17579067461945],
+                [0.40323308002676506, -78.17583935576278]
+            ],
+            "centroid": [0.4033757, -78.1758457],
+            "area": 214.0,
+            "color": "#16a085", "fill": "#1abc9c",
+            "interior": False, "is_perimeter": False,
+            "desc": "Edificio no residencial de administración comunitaria, bodegas y salas de reunión para docentes."
+        },
+        {
+            "id": "RECT-DOCENTES-06",
+            "nombre": "Residencia de Docentes 6",
+            "tipo": "Residencia de Docentes e Investigadores",
+            "zona": "Sector Residencias Docentes",
+            "coords": [
+                [0.40387879399406623, -78.17587575557651],
+                [0.40405620634993067, -78.1758250209943],
+                [0.40402705150552726, -78.17573525220743],
+                [0.4038527651904324, -78.17578665461019]
+            ],
+            "centroid": [0.403954, -78.1758057],
+            "area": 211.1,
+            "color": "#2980b9", "fill": "#3498db",
+            "interior": False, "is_perimeter": False,
+            "desc": "Villa docente noroccidental con vista a la arboleda patrimonial."
+        },
+        {
+            "id": "RECT-DOCENTES-07",
+            "nombre": "Residencia de Docentes 7",
+            "tipo": "Residencia de Docentes e Investigadores",
+            "zona": "Sector Residencias Docentes",
+            "coords": [
+                [0.40399083308609157, -78.17593886434996],
+                [0.40400638670525724, -78.17601900690731],
+                [0.403706932409291, -78.17610106077338],
+                [0.40368862851209686, -78.17602027664064]
+            ],
+            "centroid": [0.4038478, -78.1760199],
+            "area": 315.2,
+            "color": "#2980b9", "fill": "#3498db",
+            "interior": False, "is_perimeter": False,
+            "desc": "Villa docente amplia situada en el límite oeste de las residencias de profesores."
+        },
+        {
+            "id": "RECT-DOCENTES-08",
+            "nombre": "Residencia de Docentes 8 (Bifamiliar)",
+            "tipo": "Residencia de Docentes e Investigadores",
+            "zona": "Sector Residencias Docentes",
+            "coords": [
+                [0.4034709211178097, -78.17616348286064],
+                [0.4036378625066064, -78.17611892659224],
+                [0.40362256650572353, -78.17605104552078],
+                [0.4034521176605463, -78.17609436336367]
+            ],
+            "centroid": [0.4035454, -78.176107],
+            "area": 151.6,
+            "color": "#2980b9", "fill": "#3498db",
+            "interior": False, "is_perimeter": False,
+            "desc": "Residencia docente bifamiliar dotada de tabique transversal divisorio interior."
+        },
+        # =============================================================
+        # EDIFICIOS VARIOS, GASTRONOMÍA Y SERVICIOS SAN JOSÉ
+        # =============================================================
+        {
+            "id": "RECT-EDIF-37",
+            "nombre": "Edificio 37 (San José)",
+            "tipo": "Edificio de Servicios / Infraestructura",
+            "zona": "Sector San José",
+            "coords": [
+                [0.40414961480802286, -78.17642430304325],
+                [0.4041608427496954, -78.17647015012106],
+                [0.40425861309438166, -78.17643986325076],
+                [0.4042446931826492, -78.17639817261436]
+            ],
+            "centroid": [0.4042029, -78.1764334],
+            "area": 56.4,
+            "color": "#34495e", "fill": "#7f8c8d",
+            "interior": False, "is_perimeter": False,
+            "desc": "Módulo de soporte técnico y almacén de mantenimiento en el sector San José."
+        },
+        {
+            "id": "RECT-EDIF-38",
+            "nombre": "Edificio 38 (San José)",
+            "tipo": "Edificio Administrativo y Operativo",
+            "zona": "Sector San José",
+            "coords": [
+                [0.404213301532898, -78.17668579084234],
+                [0.40434474337116183, -78.17664338480479],
+                [0.40430820746524393, -78.1765556598624],
+                [0.4041867832892328, -78.17659284889407]
+            ],
+            "centroid": [0.4042631, -78.1766201],
+            "area": 155.8,
+            "color": "#34495e", "fill": "#7f8c8d",
+            "interior": False, "is_perimeter": False,
+            "desc": "Edificio administrativo y oficinas operativas en el patio gastronómico de San José."
+        },
+        {
+            "id": "RECT-EDIF-39",
+            "nombre": "Edificio 39 (San José)",
+            "tipo": "Edificio de Servicios y Logística",
+            "zona": "Sector San José",
+            "coords": [
+                [0.4039881695303205, -78.17657909628454],
+                [0.40394774317195414, -78.17659349605131],
+                [0.4039159568316363, -78.17648654219273],
+                [0.4039650048518703, -78.17647615665793]
+            ],
+            "centroid": [0.4039536, -78.1765325],
+            "area": 62.0,
+            "color": "#34495e", "fill": "#7f8c8d",
+            "interior": False, "is_perimeter": False,
+            "desc": "Edificio auxiliar de bodega y almacenamiento técnico en San José sur."
+        },
+        {
+            "id": "RECT-EDIF-40",
+            "nombre": "Edificio 40 (San José)",
+            "tipo": "Edificio Polivalente San José",
+            "zona": "Sector San José",
+            "coords": [
+                [0.40417029791370934, -78.17668871013962],
+                [0.40398480040210594, -78.17674116491273],
+                [0.4039591650499329, -78.17662885123883],
+                [0.4041368223423578, -78.17657692050491]
+            ],
+            "centroid": [0.4040631, -78.1766592],
+            "area": 269.6,
+            "color": "#34495e", "fill": "#7f8c8d",
+            "interior": False, "is_perimeter": False,
+            "desc": "Instalación polivalente de talleres y logística general en San José."
+        },
+        {
+            "id": "RECT-EDIF-41",
+            "nombre": "Edificio 41 (San José)",
+            "tipo": "Complejo Edilicio Mayor San José",
+            "zona": "Sector San José",
+            "coords": [
+                [0.404050227323438, -78.1767745594875],
+                [0.4041059504735446, -78.17694830796492],
+                [0.4043600323994754, -78.1768552994728],
+                [0.40434376633858476, -78.17679090716022],
+                [0.40439599086775, -78.17677676581192],
+                [0.40444369217875803, -78.17690276029923],
+                [0.4043033964471817, -78.17695548261383],
+                [0.4043141870791176, -78.177001158758],
+                [0.404280774987399, -78.17701357549211],
+                [0.40427539839671817, -78.17698872299397],
+                [0.40408248039094047, -78.17706267168654],
+                [0.4039960670941696, -78.17678581728795]
+            ],
+            "centroid": [0.4042101, -78.1769226],
+            "area": 610.8,
+            "color": "#2c3e50", "fill": "#57606f",
+            "interior": False, "is_perimeter": False,
+            "desc": "Complejo arquitectónico escalonado de 12 vértices para laboratorios y talleres San José."
+        },
+        {
+            "id": "RECT-REST-PATO-GOLOSO",
+            "nombre": "Restaurante 'Pato Goloso'",
+            "tipo": "Gastronomía y Alimentación / Restaurante",
+            "zona": "Sector Gastronómico San José",
+            "coords": [
+                [0.4042956013511884, -78.17665611628786],
+                [0.4042846843054159, -78.17661256146175],
+                [0.404331228715073, -78.17660118513263],
+                [0.4043448855288352, -78.17664481704243]
+            ],
+            "centroid": [0.4043142, -78.1766288],
+            "area": 27.4,
+            "color": "#d35400", "fill": "#e67e22",
+            "interior": False, "is_perimeter": False,
+            "desc": "Restaurante y cafetería universitaria tradicional 'Pato Goloso' en el patio gastronómico San José."
+        },
+        {
+            "id": "RECT-REST-COMEDOR-ANALI",
+            "nombre": "Restaurante 'Comedor Analí'",
+            "tipo": "Gastronomía y Alimentación / Restaurante",
+            "zona": "Sector Gastronómico San José",
+            "coords": [
+                [0.4042956013511884, -78.17665611628786],
+                [0.4042846843054159, -78.17661256146175],
+                [0.4042187098924085, -78.17663000363017],
+                [0.40423812982681984, -78.176677545081]
+            ],
+            "centroid": [0.4042585, -78.1766439],
+            "area": 38.3,
+            "color": "#d35400", "fill": "#e67e22",
+            "interior": False, "is_perimeter": False,
+            "desc": "Comedor estudiantil y docente 'Analí' con servicio de almuerzos y mesas protegidas."
+        },
+        {
+            "id": "RECT-BANOS-SANJOSE-1",
+            "nombre": "Batería Sanitaria 1 (Sector Analí / Pato Goloso)",
+            "tipo": "Servicios Sanitarios e Higiene",
+            "zona": "Sector San José",
+            "coords": [
+                [0.4042187098924085, -78.17663000363017],
+                [0.40423812982681984, -78.176677545081],
+                [0.4042106691286265, -78.17668492325618],
+                [0.4041981534608102, -78.17663813939762]
+            ],
+            "centroid": [0.4042169, -78.1766586],
+            "area": 15.5,
+            "color": "#7f8c8d", "fill": "#95a5a6",
+            "interior": False, "is_perimeter": False,
+            "desc": "Módulo de baños públicos y lavamanos junto al Comedor Analí y Pato Goloso."
+        },
+        {
+            "id": "RECT-BANOS-SANJOSE-2",
+            "nombre": "Batería Sanitaria 2 (Sector Sur San José)",
+            "tipo": "Servicios Sanitarios e Higiene",
+            "zona": "Sector San José",
+            "coords": [
+                [0.40397770829273366, -78.17669053334565],
+                [0.4040335081217475, -78.17667322278062],
+                [0.4040111203343552, -78.17660955551632],
+                [0.40394965649017067, -78.17662843796816]
+            ],
+            "centroid": [0.4039928, -78.1766499],
+            "area": 51.0,
+            "color": "#7f8c8d", "fill": "#95a5a6",
+            "interior": False, "is_perimeter": False,
+            "desc": "Batería sanitaria de servicio público en el sector sur de talleres y oficinas San José."
+        }
     ]
 
     for h in huellas_arquitectonicas:
@@ -1918,14 +2439,34 @@ def generar_mapa():
             "color": "#27ae60",
             "desc": "Tabique transversal divisorio 2 en punto topográfico [0.401877, -78.173330]."
         },
+        {
+            "nombre": "División Residencia de Docentes 8 (Medianera)",
+            "coords": [[0.4035530, -78.1761398], [0.4035359, -78.1760731]],
+            "color": "#1b4f72",
+            "desc": "Tabique transversal medianero interior que independiza las dos unidades de la Residencia de Docentes 8."
+        },
+        {
+            "nombre": "Parqueadero Lineal Senescyt (Calzada Este)",
+            "coords": [[0.4062069, -78.1698884], [0.4065531, -78.1695806]],
+            "color": "#7f8c8d",
+            "desc": "Franja lineal de parqueo vehicular en batería sobre la calzada este del Edificio Senescyt."
+        },
+        {
+            "nombre": "Parqueadero Lineal Senescyt (Calzada Sur)",
+            "coords": [[0.4060763, -78.1702622], [0.4062677, -78.1704835]],
+            "color": "#7f8c8d",
+            "desc": "Franja lineal de parqueo vehicular sobre la calzada sur de acceso al Edificio Senescyt."
+        }
     ]
     for ld in lineas_divisorias:
+        is_parking = "Parqueadero" in ld["nombre"]
+        icon_prefix = "🚗" if is_parking else "📏"
         folium.PolyLine(
             locations=ld["coords"],
             color=ld["color"],
-            weight=3,
-            dash_array="4, 4",
-            tooltip=f"📏 {ld['nombre']}",
+            weight=4 if is_parking else 3,
+            dash_array=None if is_parking else "4, 4",
+            tooltip=f"{icon_prefix} {ld['nombre']}",
             popup=folium.Popup(f"<b>{ld['nombre']}</b><br>{ld['desc']}", max_width=220)
         ).add_to(fg_edificios)
 
