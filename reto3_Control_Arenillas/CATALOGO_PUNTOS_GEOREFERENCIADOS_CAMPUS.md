@@ -455,6 +455,167 @@ Las edificaciones del campus fueron regularizadas rigurosamente bajo criterios d
 
 ---
 
+### 2.3. Zona 3: Sector Residencias "Las Pats" y "Multifamiliares" (Casas T's Patrimoniales)
+
+Conjunto de 13 residencias estudiantiles patrimoniales (denominadas localmente como *"Las Pats"* o *Casas T's*), caracterizadas por su arquitectura tradicional de muros portantes de adobe reforzado, carpintería de madera y cubiertas a dos aguas con teja artesanal andina. Presentan un diseño bioclimático histórico con esquemas de subdivisión interior: pareadas dobles en las casas 1–4 (~386–404 m²), módulos habitacionales individuales en casas 5–10 y 13 (~258–275 m²), y bloques longitudinales cuádruples en casas 11–12 (~531–536 m²). Todas las huellas han sido regularizadas ortogonalmente con tolerancias submétricas respecto al levantamiento de campo.
+
+* **Casa Patrimonial Las Pats 1 (`RECT-PAT-01`):**
+  * *Tipo:* Residencia Estudiantil Patrimonial (Casa T) | *Zona:* Sector Residencias Las Pats
+  * *Superficie ortogonal regularizada:* ~386.5 m² | *Centroide:* `[0.4005171, -78.1745134]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4004740, -78.1746762`
+    2. `0.4006430, -78.1744016`
+    3. `0.4005601, -78.1743506`
+    4. `0.4003911, -78.1746252`
+  * *Líneas / Puntos de División Medianera Interior:*
+    - **División Casa Patrimonial Las Pats 1:** `[0.4004985, -78.1744459]` ➔ `[0.4004445, -78.1745398]` (Línea de división medianera interior de Casa Patrimonial Las Pats 1.)
+    - **División Casa Patrimonial Las Pats 10:** `[0.4005530, -78.1753960]` ➔ `[0.4006426, -78.1754358]` (Tabique transversal divisorio interior en punto topográfico [0.4006437, -78.1754363].)
+    - **División Casa Patrimonial Las Pats 11 (Módulo 1):** `[0.4009843, -78.1750740]` ➔ `[0.4008879, -78.1750472]` (Tabique transversal divisorio interior 1/3 en punto topográfico [0.4008861, -78.1750467].)
+    - **División Casa Patrimonial Las Pats 11 (Módulo 2):** `[0.4009560, -78.1751760]` ➔ `[0.4008596, -78.1751492]` (Tabique transversal divisorio interior 2/3 en punto topográfico [0.4008529, -78.1751473].)
+    - **División Casa Patrimonial Las Pats 11 (Módulo 3):** `[0.4009283, -78.1752755]` ➔ `[0.4008319, -78.1752487]` (Tabique transversal divisorio interior 3/3 en punto topográfico [0.4008274, -78.1752475].)
+    - **División Casa Patrimonial Las Pats 12 (Módulo 1):** `[0.4007985, -78.1757194]` ➔ `[0.4007006, -78.1756910]` (Tabique transversal divisorio interior 1/3 en punto topográfico [0.4007043, -78.1756921].)
+    - **División Casa Patrimonial Las Pats 12 (Módulo 2):** `[0.4008287, -78.1756154]` ➔ `[0.4007308, -78.1755870]` (Tabique transversal divisorio interior 2/3 en punto topográfico [0.4007292, -78.1755865].)
+    - **División Casa Patrimonial Las Pats 12 (Módulo 3):** `[0.4008572, -78.1755170]` ➔ `[0.4007593, -78.1754886]` (Tabique transversal divisorio interior 3/3 en punto topográfico [0.400757, -78.1754879].)
+    - **División Casa Patrimonial Las Pats 13:** `[0.4008969, -78.1758890]` ➔ `[0.4007990, -78.1758622]` (Tabique transversal divisorio interior en punto topográfico [0.4008941, -78.1758882].)
+
+* **Casa Patrimonial Las Pats 2 (`RECT-PAT-02`):**
+  * *Tipo:* Residencia Estudiantil Patrimonial (Casa T) | *Zona:* Sector Residencias Las Pats
+  * *Superficie ortogonal regularizada:* ~398.2 m² | *Centroide:* `[0.4003218, -78.1748310]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4003661, -78.1746641`
+    2. `0.4001941, -78.1749471`
+    3. `0.4002775, -78.1749978`
+    4. `0.4004495, -78.1747148`
+  * *Líneas / Puntos de División Medianera Interior:*
+    - **División Casa Patrimonial Las Pats 2:** `[0.4003000, -78.1747604]` ➔ `[0.4002447, -78.1748556]` (Línea de división medianera interior de Casa Patrimonial Las Pats 2.)
+
+* **Casa Patrimonial Las Pats 3 (`RECT-PAT-03`):**
+  * *Tipo:* Residencia Estudiantil Patrimonial (Casa T) | *Zona:* Sector Residencias Las Pats
+  * *Superficie ortogonal regularizada:* ~393.4 m² | *Centroide:* `[0.4005975, -78.1746546]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4005556, -78.1748175`
+    2. `0.4007241, -78.1745438`
+    3. `0.4006395, -78.1744917`
+    4. `0.4004710, -78.1747654`
+  * *Líneas / Puntos de División Medianera Interior:*
+    - **División Casa Patrimonial Las Pats 3:** `[0.4006698, -78.1746367]` ➔ `[0.4006158, -78.1747255]` (Línea de división medianera interior de Casa Patrimonial Las Pats 3.)
+
+* **Casa Patrimonial Las Pats 4 (`RECT-PAT-04`):**
+  * *Tipo:* Residencia Estudiantil Patrimonial (Casa T) | *Zona:* Sector Residencias Las Pats
+  * *Superficie ortogonal regularizada:* ~404.4 m² | *Centroide:* `[0.4004056, -78.1749711]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4004492, -78.1748063`
+    2. `0.4002765, -78.1750826`
+    3. `0.4003619, -78.1751360`
+    4. `0.4005346, -78.1748597`
+  * *Líneas / Puntos de División Medianera Interior:*
+    - **División Casa Patrimonial Las Pats 4:** `[0.4004800, -78.1749512]` ➔ `[0.4004207, -78.1750387]` (Línea de división medianera interior de Casa Patrimonial Las Pats 4.)
+
+* **Casa Patrimonial Las Pats 5 (`RECT-PAT-05`):**
+  * *Tipo:* Residencia Estudiantil Patrimonial (Casa T) | *Zona:* Sector Residencias Las Pats
+  * *Superficie ortogonal regularizada:* ~269.5 m² | *Centroide:* `[0.4007280, -78.1747765]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4007249, -78.1746561`
+    2. `0.4006393, -78.1748581`
+    3. `0.4007310, -78.1748970`
+    4. `0.4008167, -78.1746950`
+  * *Líneas / Puntos de División Medianera Interior:*
+    - **División Casa Patrimonial Las Pats 5:** `[0.4006813, -78.1747590]` ➔ `[0.4007730, -78.1747979]` (Tabique transversal divisorio interior en punto topográfico [0.4006775, -78.1747574].)
+
+* **Casa Patrimonial Las Pats 6 (`RECT-PAT-06`):**
+  * *Tipo:* Residencia Estudiantil Patrimonial (Casa T) | *Zona:* Sector Residencias Las Pats
+  * *Superficie ortogonal regularizada:* ~271.4 m² | *Centroide:* `[0.4006182, -78.1750168]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4006223, -78.1751363`
+    2. `0.4007077, -78.1749377`
+    3. `0.4006141, -78.1748974`
+    4. `0.4005287, -78.1750960`
+  * *Líneas / Puntos de División Medianera Interior:*
+    - **División Casa Patrimonial Las Pats 6:** `[0.4006643, -78.1750387]` ➔ `[0.4005707, -78.1749984]` (Tabique transversal divisorio interior en punto topográfico [0.4005722, -78.1749991].)
+
+* **Casa Patrimonial Las Pats 7 (`RECT-PAT-07`):**
+  * *Tipo:* Residencia Estudiantil Patrimonial (Casa T) | *Zona:* Sector Residencias Las Pats
+  * *Superficie ortogonal regularizada:* ~268.8 m² | *Centroide:* `[0.4005131, -78.1752603]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4005132, -78.1751382`
+    2. `0.4004237, -78.1753434`
+    3. `0.4005130, -78.1753824`
+    4. `0.4006025, -78.1751772`
+  * *Líneas / Puntos de División Medianera Interior:*
+    - **División Casa Patrimonial Las Pats 7:** `[0.4004717, -78.1752334]` ➔ `[0.4005610, -78.1752724]` (Tabique transversal divisorio interior en punto topográfico [0.4004703, -78.1752328].)
+
+* **Casa Patrimonial Las Pats 8 (`RECT-PAT-08`):**
+  * *Tipo:* Residencia Estudiantil Patrimonial (Casa T) | *Zona:* Sector Residencias Las Pats
+  * *Superficie ortogonal regularizada:* ~272.7 m² | *Centroide:* `[0.4008123, -78.1749251]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4008120, -78.1750482`
+    2. `0.4009025, -78.1748415`
+    3. `0.4008126, -78.1748021`
+    4. `0.4007221, -78.1750088`
+  * *Líneas / Puntos de División Medianera Interior:*
+    - **División Casa Patrimonial Las Pats 8:** `[0.4008564, -78.1749468]` ➔ `[0.4007665, -78.1749074]` (Tabique transversal divisorio interior en punto topográfico [0.4008586, -78.1749478].)
+
+* **Casa Patrimonial Las Pats 9 (`RECT-PAT-09`):**
+  * *Tipo:* Residencia Estudiantil Patrimonial (Casa T) | *Zona:* Sector Residencias Las Pats
+  * *Superficie ortogonal regularizada:* ~258.7 m² | *Centroide:* `[0.4007038, -78.1751704]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4007050, -78.1752905`
+    2. `0.4007905, -78.1750873`
+    3. `0.4007027, -78.1750504`
+    4. `0.4006172, -78.1752536`
+  * *Líneas / Puntos de División Medianera Interior:*
+    - **División Casa Patrimonial Las Pats 9:** `[0.4007488, -78.1751863]` ➔ `[0.4006610, -78.1751494]` (Tabique transversal divisorio interior en punto topográfico [0.4007509, -78.1751872].)
+
+* **Casa Patrimonial Las Pats 10 (`RECT-PAT-10`):**
+  * *Tipo:* Residencia Estudiantil Patrimonial (Casa T) | *Zona:* Sector Residencias Las Pats
+  * *Superficie ortogonal regularizada:* ~266.4 m² | *Centroide:* `[0.4005981, -78.1754152]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4005981, -78.1752945`
+    2. `0.4005085, -78.1754960`
+    3. `0.4005981, -78.1755358`
+    4. `0.4006877, -78.1753343`
+  * *Líneas / Puntos de División Medianera Interior:*
+    - **División Casa Patrimonial Las Pats 10:** `[0.4005530, -78.1753960]` ➔ `[0.4006426, -78.1754358]` (Tabique transversal divisorio interior en punto topográfico [0.4006437, -78.1754363].)
+
+* **Casa Patrimonial Las Pats 11 (`RECT-PAT-11`):**
+  * *Tipo:* Residencia Estudiantil Patrimonial (Casa T - Módulo Cuádruple) | *Zona:* Sector Residencias Las Pats
+  * *Superficie ortogonal regularizada:* ~531.4 m² | *Centroide:* `[0.4009106, -78.1751525]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4009010, -78.1753736`
+    2. `0.4010165, -78.1749582`
+    3. `0.4009201, -78.1749314`
+    4. `0.4008046, -78.1753468`
+  * *Líneas / Puntos de División Medianera Interior:*
+    - **División Casa Patrimonial Las Pats 11 (Módulo 1):** `[0.4009843, -78.1750740]` ➔ `[0.4008879, -78.1750472]` (Tabique transversal divisorio interior 1/3 en punto topográfico [0.4008861, -78.1750467].)
+    - **División Casa Patrimonial Las Pats 11 (Módulo 2):** `[0.4009560, -78.1751760]` ➔ `[0.4008596, -78.1751492]` (Tabique transversal divisorio interior 2/3 en punto topográfico [0.4008529, -78.1751473].)
+    - **División Casa Patrimonial Las Pats 11 (Módulo 3):** `[0.4009283, -78.1752755]` ➔ `[0.4008319, -78.1752487]` (Tabique transversal divisorio interior 3/3 en punto topográfico [0.4008274, -78.1752475].)
+
+* **Casa Patrimonial Las Pats 12 (`RECT-PAT-12`):**
+  * *Tipo:* Residencia Estudiantil Patrimonial (Casa T - Módulo Cuádruple) | *Zona:* Sector Residencias Las Pats
+  * *Superficie ortogonal regularizada:* ~536.4 m² | *Centroide:* `[0.4007803, -78.1755995]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4007697, -78.1758188`
+    2. `0.4008887, -78.1754085`
+    3. `0.4007908, -78.1753801`
+    4. `0.4006718, -78.1757904`
+  * *Líneas / Puntos de División Medianera Interior:*
+    - **División Casa Patrimonial Las Pats 12 (Módulo 1):** `[0.4007985, -78.1757194]` ➔ `[0.4007006, -78.1756910]` (Tabique transversal divisorio interior 1/3 en punto topográfico [0.4007043, -78.1756921].)
+    - **División Casa Patrimonial Las Pats 12 (Módulo 2):** `[0.4008287, -78.1756154]` ➔ `[0.4007308, -78.1755870]` (Tabique transversal divisorio interior 2/3 en punto topográfico [0.4007292, -78.1755865].)
+    - **División Casa Patrimonial Las Pats 12 (Módulo 3):** `[0.4008572, -78.1755170]` ➔ `[0.4007593, -78.1754886]` (Tabique transversal divisorio interior 3/3 en punto topográfico [0.400757, -78.1754879].)
+
+* **Casa Patrimonial Las Pats 13 (`RECT-PAT-13`):**
+  * *Tipo:* Residencia Estudiantil Patrimonial (Casa T) | *Zona:* Sector Residencias Las Pats
+  * *Superficie ortogonal regularizada:* ~275.0 m² | *Centroide:* `[0.4008493, -78.1758705]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4009273, -78.1757779`
+    2. `0.4008294, -78.1757511`
+    3. `0.4007714, -78.1759632`
+    4. `0.4008693, -78.1759900`
+  * *Líneas / Puntos de División Medianera Interior:*
+    - **División Casa Patrimonial Las Pats 13:** `[0.4008969, -78.1758890]` ➔ `[0.4007990, -78.1758622]` (Tabique transversal divisorio interior en punto topográfico [0.4008941, -78.1758882].)
+
+---
+
 ## 3. Red de Bio-Monitoreo Telemétrico Continuo (6 Estaciones GPS)
 
 Red de muestreo pasivo y activo equipada con trampas de silueta oscura, cebadas con emanación controlada de $\text{CO}_2$ biológico y ácido L-láctico para cuantificar la densidad de hembras hematófagas en vuelo.
@@ -624,7 +785,7 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
 
 ---
 
-## 8. Snippet GeoJSON Oficial Completo (75 Entidades: Hitos, Huellas, Canales y Reservorio)
+## 8. Snippet GeoJSON Oficial Completo (107 Entidades: Hitos, Huellas, Canales, Reservorio y Líneas Divisorias)
 
 ```json
 {
@@ -2882,6 +3043,618 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
     {
       "type": "Feature",
       "properties": {
+        "id": "RECT-PAT-01",
+        "nombre": "Casa Patrimonial Las Pats 1",
+        "zona": "Las Pats y Multis",
+        "categoria": "Residencia Estudiantil Patrimonial (Casa T)",
+        "area_m2": 386.5,
+        "centroide": [
+          -78.1745134,
+          0.4005171
+        ],
+        "descripcion": "Alojamiento estudiantil patrimonial en Casa T (M\u00f3dulo 1). Teja tradicional y corredores exteriores."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.1746762,
+              0.400474
+            ],
+            [
+              -78.1744016,
+              0.400643
+            ],
+            [
+              -78.1743506,
+              0.4005601
+            ],
+            [
+              -78.1746252,
+              0.4003911
+            ],
+            [
+              -78.1746762,
+              0.400474
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-PAT-02",
+        "nombre": "Casa Patrimonial Las Pats 2",
+        "zona": "Las Pats y Multis",
+        "categoria": "Residencia Estudiantil Patrimonial (Casa T)",
+        "area_m2": 398.2,
+        "centroide": [
+          -78.174831,
+          0.4003218
+        ],
+        "descripcion": "Alojamiento estudiantil patrimonial en Casa T (M\u00f3dulo 2)."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.1746641,
+              0.4003661
+            ],
+            [
+              -78.1749471,
+              0.4001941
+            ],
+            [
+              -78.1749978,
+              0.4002775
+            ],
+            [
+              -78.1747148,
+              0.4004495
+            ],
+            [
+              -78.1746641,
+              0.4003661
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-PAT-03",
+        "nombre": "Casa Patrimonial Las Pats 3",
+        "zona": "Las Pats y Multis",
+        "categoria": "Residencia Estudiantil Patrimonial (Casa T)",
+        "area_m2": 393.4,
+        "centroide": [
+          -78.1746546,
+          0.4005975
+        ],
+        "descripcion": "Alojamiento estudiantil patrimonial en Casa T (M\u00f3dulo 3)."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.1748175,
+              0.4005556
+            ],
+            [
+              -78.1745438,
+              0.4007241
+            ],
+            [
+              -78.1744917,
+              0.4006395
+            ],
+            [
+              -78.1747654,
+              0.400471
+            ],
+            [
+              -78.1748175,
+              0.4005556
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-PAT-04",
+        "nombre": "Casa Patrimonial Las Pats 4",
+        "zona": "Las Pats y Multis",
+        "categoria": "Residencia Estudiantil Patrimonial (Casa T)",
+        "area_m2": 404.4,
+        "centroide": [
+          -78.1749711,
+          0.4004056
+        ],
+        "descripcion": "Alojamiento estudiantil patrimonial en Casa T (M\u00f3dulo 4)."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.1748063,
+              0.4004492
+            ],
+            [
+              -78.1750826,
+              0.4002765
+            ],
+            [
+              -78.175136,
+              0.4003619
+            ],
+            [
+              -78.1748597,
+              0.4005346
+            ],
+            [
+              -78.1748063,
+              0.4004492
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-PAT-05",
+        "nombre": "Casa Patrimonial Las Pats 5",
+        "zona": "Las Pats y Multis",
+        "categoria": "Residencia Estudiantil Patrimonial (Casa T)",
+        "area_m2": 269.5,
+        "centroide": [
+          -78.1747765,
+          0.400728
+        ],
+        "descripcion": "Alojamiento estudiantil patrimonial en Casa T (M\u00f3dulo 5)."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.1746561,
+              0.4007249
+            ],
+            [
+              -78.1748581,
+              0.4006393
+            ],
+            [
+              -78.174897,
+              0.400731
+            ],
+            [
+              -78.174695,
+              0.4008167
+            ],
+            [
+              -78.1746561,
+              0.4007249
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-PAT-06",
+        "nombre": "Casa Patrimonial Las Pats 6",
+        "zona": "Las Pats y Multis",
+        "categoria": "Residencia Estudiantil Patrimonial (Casa T)",
+        "area_m2": 271.4,
+        "centroide": [
+          -78.1750168,
+          0.4006182
+        ],
+        "descripcion": "Alojamiento estudiantil patrimonial en Casa T (M\u00f3dulo 6)."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.1751363,
+              0.4006223
+            ],
+            [
+              -78.1749377,
+              0.4007077
+            ],
+            [
+              -78.1748974,
+              0.4006141
+            ],
+            [
+              -78.175096,
+              0.4005287
+            ],
+            [
+              -78.1751363,
+              0.4006223
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-PAT-07",
+        "nombre": "Casa Patrimonial Las Pats 7",
+        "zona": "Las Pats y Multis",
+        "categoria": "Residencia Estudiantil Patrimonial (Casa T)",
+        "area_m2": 268.8,
+        "centroide": [
+          -78.1752603,
+          0.4005131
+        ],
+        "descripcion": "Alojamiento estudiantil patrimonial en Casa T (M\u00f3dulo 7)."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.1751382,
+              0.4005132
+            ],
+            [
+              -78.1753434,
+              0.4004237
+            ],
+            [
+              -78.1753824,
+              0.400513
+            ],
+            [
+              -78.1751772,
+              0.4006025
+            ],
+            [
+              -78.1751382,
+              0.4005132
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-PAT-08",
+        "nombre": "Casa Patrimonial Las Pats 8",
+        "zona": "Las Pats y Multis",
+        "categoria": "Residencia Estudiantil Patrimonial (Casa T)",
+        "area_m2": 272.7,
+        "centroide": [
+          -78.1749251,
+          0.4008123
+        ],
+        "descripcion": "Alojamiento estudiantil patrimonial en Casa T (M\u00f3dulo 8)."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.1750482,
+              0.400812
+            ],
+            [
+              -78.1748415,
+              0.4009025
+            ],
+            [
+              -78.1748021,
+              0.4008126
+            ],
+            [
+              -78.1750088,
+              0.4007221
+            ],
+            [
+              -78.1750482,
+              0.400812
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-PAT-09",
+        "nombre": "Casa Patrimonial Las Pats 9",
+        "zona": "Las Pats y Multis",
+        "categoria": "Residencia Estudiantil Patrimonial (Casa T)",
+        "area_m2": 258.7,
+        "centroide": [
+          -78.1751704,
+          0.4007038
+        ],
+        "descripcion": "Alojamiento estudiantil patrimonial en Casa T (M\u00f3dulo 9)."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.1752905,
+              0.400705
+            ],
+            [
+              -78.1750873,
+              0.4007905
+            ],
+            [
+              -78.1750504,
+              0.4007027
+            ],
+            [
+              -78.1752536,
+              0.4006172
+            ],
+            [
+              -78.1752905,
+              0.400705
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-PAT-10",
+        "nombre": "Casa Patrimonial Las Pats 10",
+        "zona": "Las Pats y Multis",
+        "categoria": "Residencia Estudiantil Patrimonial (Casa T)",
+        "area_m2": 266.4,
+        "centroide": [
+          -78.1754152,
+          0.4005981
+        ],
+        "descripcion": "Alojamiento estudiantil patrimonial en Casa T (M\u00f3dulo 10)."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.1752945,
+              0.4005981
+            ],
+            [
+              -78.175496,
+              0.4005085
+            ],
+            [
+              -78.1755358,
+              0.4005981
+            ],
+            [
+              -78.1753343,
+              0.4006877
+            ],
+            [
+              -78.1752945,
+              0.4005981
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-PAT-11",
+        "nombre": "Casa Patrimonial Las Pats 11",
+        "zona": "Las Pats y Multis",
+        "categoria": "Residencia Estudiantil Patrimonial (Casa T - M\u00f3dulo Cu\u00e1druple)",
+        "area_m2": 531.4,
+        "centroide": [
+          -78.1751525,
+          0.4009106
+        ],
+        "descripcion": "Bloque residencial longitudinal de 4 departamentos con 3 tabiques divisorios internos."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.1753736,
+              0.400901
+            ],
+            [
+              -78.1749582,
+              0.4010165
+            ],
+            [
+              -78.1749314,
+              0.4009201
+            ],
+            [
+              -78.1753468,
+              0.4008046
+            ],
+            [
+              -78.1753736,
+              0.400901
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-PAT-12",
+        "nombre": "Casa Patrimonial Las Pats 12",
+        "zona": "Las Pats y Multis",
+        "categoria": "Residencia Estudiantil Patrimonial (Casa T - M\u00f3dulo Cu\u00e1druple)",
+        "area_m2": 536.4,
+        "centroide": [
+          -78.1755995,
+          0.4007803
+        ],
+        "descripcion": "Bloque residencial longitudinal de 4 departamentos con 3 tabiques divisorios internos."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.1758188,
+              0.4007697
+            ],
+            [
+              -78.1754085,
+              0.4008887
+            ],
+            [
+              -78.1753801,
+              0.4007908
+            ],
+            [
+              -78.1757904,
+              0.4006718
+            ],
+            [
+              -78.1758188,
+              0.4007697
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-PAT-13",
+        "nombre": "Casa Patrimonial Las Pats 13",
+        "zona": "Las Pats y Multis",
+        "categoria": "Residencia Estudiantil Patrimonial (Casa T)",
+        "area_m2": 275.0,
+        "centroide": [
+          -78.1758705,
+          0.4008493
+        ],
+        "descripcion": "Alojamiento estudiantil patrimonial en Casa T (M\u00f3dulo 13, extremo oeste)."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.1757779,
+              0.4009273
+            ],
+            [
+              -78.1757511,
+              0.4008294
+            ],
+            [
+              -78.1759632,
+              0.4007714
+            ],
+            [
+              -78.17599,
+              0.4008693
+            ],
+            [
+              -78.1757779,
+              0.4009273
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LINE-CANAL-PPAL",
+        "nombre": "Canal de Riego Principal (Eje Central)",
+        "zona": "Eje Transversal Norte-Sur",
+        "categoria": "Recurso H\u00eddrico L\u00f3tico",
+        "descripcion": "Canal maestro abierto de conducci\u00f3n de riego que atraviesa el campus de norte a sur."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.169,
+            0.4085
+          ],
+          [
+            -78.1705,
+            0.4072
+          ],
+          [
+            -78.1715,
+            0.4058
+          ],
+          [
+            -78.172,
+            0.4048
+          ],
+          [
+            -78.1725,
+            0.4035
+          ],
+          [
+            -78.1728,
+            0.4015
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LINE-CANAL-SEC",
+        "nombre": "Canal Secundario de Desv\u00edo Patrimonial",
+        "zona": "Ingenio Azucarero",
+        "categoria": "Recurso H\u00eddrico L\u00f3tico",
+        "descripcion": "Derivaci\u00f3n secundaria hacia el sector hist\u00f3rico del Ingenio Azucarero."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.1715,
+            0.4058
+          ],
+          [
+            -78.1728,
+            0.4054
+          ],
+          [
+            -78.1738,
+            0.4051
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "id": "LINE-DIV-FG",
         "nombre": "Divisi\u00f3n Bloques F y G",
         "zona": "Senescyt",
@@ -3091,6 +3864,397 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
           [
             -78.1689487,
             0.4041009
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LINE-DIV-PAT-01",
+        "nombre": "Divisi\u00f3n Casa Patrimonial Las Pats 1",
+        "zona": "Las Pats y Multis",
+        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
+        "descripcion": "L\u00ednea de divisi\u00f3n medianera interior de Casa Patrimonial Las Pats 1."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.1744459,
+            0.4004985
+          ],
+          [
+            -78.1745398,
+            0.4004445
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LINE-DIV-PAT-02",
+        "nombre": "Divisi\u00f3n Casa Patrimonial Las Pats 2",
+        "zona": "Las Pats y Multis",
+        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
+        "descripcion": "L\u00ednea de divisi\u00f3n medianera interior de Casa Patrimonial Las Pats 2."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.1747604,
+            0.4003
+          ],
+          [
+            -78.1748556,
+            0.4002447
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LINE-DIV-PAT-03",
+        "nombre": "Divisi\u00f3n Casa Patrimonial Las Pats 3",
+        "zona": "Las Pats y Multis",
+        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
+        "descripcion": "L\u00ednea de divisi\u00f3n medianera interior de Casa Patrimonial Las Pats 3."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.1746367,
+            0.4006698
+          ],
+          [
+            -78.1747255,
+            0.4006158
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LINE-DIV-PAT-04",
+        "nombre": "Divisi\u00f3n Casa Patrimonial Las Pats 4",
+        "zona": "Las Pats y Multis",
+        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
+        "descripcion": "L\u00ednea de divisi\u00f3n medianera interior de Casa Patrimonial Las Pats 4."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.1749512,
+            0.40048
+          ],
+          [
+            -78.1750387,
+            0.4004207
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LINE-DIV-PAT-05",
+        "nombre": "Divisi\u00f3n Casa Patrimonial Las Pats 5",
+        "zona": "Las Pats y Multis",
+        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
+        "descripcion": "Tabique transversal divisorio interior en punto topogr\u00e1fico [0.4006775, -78.1747574]."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.174759,
+            0.4006813
+          ],
+          [
+            -78.1747979,
+            0.400773
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LINE-DIV-PAT-06",
+        "nombre": "Divisi\u00f3n Casa Patrimonial Las Pats 6",
+        "zona": "Las Pats y Multis",
+        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
+        "descripcion": "Tabique transversal divisorio interior en punto topogr\u00e1fico [0.4005722, -78.1749991]."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.1750387,
+            0.4006643
+          ],
+          [
+            -78.1749984,
+            0.4005707
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LINE-DIV-PAT-07",
+        "nombre": "Divisi\u00f3n Casa Patrimonial Las Pats 7",
+        "zona": "Las Pats y Multis",
+        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
+        "descripcion": "Tabique transversal divisorio interior en punto topogr\u00e1fico [0.4004703, -78.1752328]."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.1752334,
+            0.4004717
+          ],
+          [
+            -78.1752724,
+            0.400561
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LINE-DIV-PAT-08",
+        "nombre": "Divisi\u00f3n Casa Patrimonial Las Pats 8",
+        "zona": "Las Pats y Multis",
+        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
+        "descripcion": "Tabique transversal divisorio interior en punto topogr\u00e1fico [0.4008586, -78.1749478]."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.1749468,
+            0.4008564
+          ],
+          [
+            -78.1749074,
+            0.4007665
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LINE-DIV-PAT-09",
+        "nombre": "Divisi\u00f3n Casa Patrimonial Las Pats 9",
+        "zona": "Las Pats y Multis",
+        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
+        "descripcion": "Tabique transversal divisorio interior en punto topogr\u00e1fico [0.4007509, -78.1751872]."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.1751863,
+            0.4007488
+          ],
+          [
+            -78.1751494,
+            0.400661
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LINE-DIV-PAT-10",
+        "nombre": "Divisi\u00f3n Casa Patrimonial Las Pats 10",
+        "zona": "Las Pats y Multis",
+        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
+        "descripcion": "Tabique transversal divisorio interior en punto topogr\u00e1fico [0.4006437, -78.1754363]."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.175396,
+            0.400553
+          ],
+          [
+            -78.1754358,
+            0.4006426
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LINE-DIV-PAT-11",
+        "nombre": "Divisi\u00f3n Casa Patrimonial Las Pats 11 (M\u00f3dulo 1)",
+        "zona": "Las Pats y Multis",
+        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
+        "descripcion": "Tabique transversal divisorio interior 1/3 en punto topogr\u00e1fico [0.4008861, -78.1750467]."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.175074,
+            0.4009843
+          ],
+          [
+            -78.1750472,
+            0.4008879
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LINE-DIV-PAT-12",
+        "nombre": "Divisi\u00f3n Casa Patrimonial Las Pats 11 (M\u00f3dulo 2)",
+        "zona": "Las Pats y Multis",
+        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
+        "descripcion": "Tabique transversal divisorio interior 2/3 en punto topogr\u00e1fico [0.4008529, -78.1751473]."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.175176,
+            0.400956
+          ],
+          [
+            -78.1751492,
+            0.4008596
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LINE-DIV-PAT-13",
+        "nombre": "Divisi\u00f3n Casa Patrimonial Las Pats 11 (M\u00f3dulo 3)",
+        "zona": "Las Pats y Multis",
+        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
+        "descripcion": "Tabique transversal divisorio interior 3/3 en punto topogr\u00e1fico [0.4008274, -78.1752475]."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.1752755,
+            0.4009283
+          ],
+          [
+            -78.1752487,
+            0.4008319
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LINE-DIV-PAT-14",
+        "nombre": "Divisi\u00f3n Casa Patrimonial Las Pats 12 (M\u00f3dulo 1)",
+        "zona": "Las Pats y Multis",
+        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
+        "descripcion": "Tabique transversal divisorio interior 1/3 en punto topogr\u00e1fico [0.4007043, -78.1756921]."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.1757194,
+            0.4007985
+          ],
+          [
+            -78.175691,
+            0.4007006
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LINE-DIV-PAT-15",
+        "nombre": "Divisi\u00f3n Casa Patrimonial Las Pats 12 (M\u00f3dulo 2)",
+        "zona": "Las Pats y Multis",
+        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
+        "descripcion": "Tabique transversal divisorio interior 2/3 en punto topogr\u00e1fico [0.4007292, -78.1755865]."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.1756154,
+            0.4008287
+          ],
+          [
+            -78.175587,
+            0.4007308
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LINE-DIV-PAT-16",
+        "nombre": "Divisi\u00f3n Casa Patrimonial Las Pats 12 (M\u00f3dulo 3)",
+        "zona": "Las Pats y Multis",
+        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
+        "descripcion": "Tabique transversal divisorio interior 3/3 en punto topogr\u00e1fico [0.400757, -78.1754879]."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.175517,
+            0.4008572
+          ],
+          [
+            -78.1754886,
+            0.4007593
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LINE-DIV-PAT-17",
+        "nombre": "Divisi\u00f3n Casa Patrimonial Las Pats 13",
+        "zona": "Las Pats y Multis",
+        "categoria": "Divisi\u00f3n Arquitect\u00f3nica Interior",
+        "descripcion": "Tabique transversal divisorio interior en punto topogr\u00e1fico [0.4008941, -78.1758882]."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.175889,
+            0.4008969
+          ],
+          [
+            -78.1758622,
+            0.400799
           ]
         ]
       }

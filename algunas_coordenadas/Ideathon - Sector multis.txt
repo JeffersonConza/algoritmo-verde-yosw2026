@@ -1,0 +1,86 @@
+Residencia estudiantil Multifamiliares "Las Multis"
+0.4023260, -78.1749139
+0.4022030, -78.1745572
+0.4018942, -78.1746752
+0.4019311, -78.1747802
+0.4021091, -78.1747272
+0.4021936, -78.1749595
+Línea de división: 0.4021158, -78.1747490 - 0.4022560, -78.1747041
+
+Residencia estudiantil Multifamiliares "Las Multis"
+0.4018500, -78.1746799
+0.4017048, -78.1747389
+0.4018278, -78.1750879
+0.4021453, -78.1749800
+0.4021031, -78.1748657
+0.4019385, -78.1749190
+Línea de división: 0.4019861, -78.1750380
+
+Residencia estudiantil Multifamiliares "Las Multis"
+0.4023441, -78.1747352
+.0.4023891, -78.1748526
+0.4026945, -78.1747476
+0.4026539, -78.1746189
+
+Residencia estudiantil Multifamiliares "Las Multis"
+0.4024762, -78.1749807
+0.4027840, -78.1748720
+0.4028293, -78.1749937
+0.4025165, -78.1751030
+
+Residencia estudiantil Multifamiliares "Las Multis"
+0.4027056, -78.1752355
+0.4027461, -78.1753495
+0.4024638, -78.1754443
+0.4024323, -78.1753364
+
+Residencia estudiantil Multifamiliares "Las Multis"
+0.4023572, -78.1753669
+0.4024229, -78.1754702
+0.4021778, -78.1756271
+0.4021209, -78.1755339
+
+Residencia estudiantil Multifamiliares "Las Multis"
+0.4020759, -78.1755855
+0.4021517, -78.1756817
+0.4018540, -78.1757914
+0.4019291, -78.1758742
+
+Residencia estudiantil Multifamiliares "Las Multis"
+0.4018174, -78.1758313
+0.4015988, -78.1760321
+0.4016753, -78.1761176
+0.4018888, -78.1759271
+
+Residencia estudiantil Multifamiliares "Las Multis"
+0.4016364, -78.1761706
+0.4015532, -78.1760800
+0.4013471, -78.1763006
+0.4014339, -78.1763778
+
+Residencia estudiantil Multifamiliares "Las Multis"
+0.4013873, -78.1764358
+0.4013031, -78.1763543
+0.4011053, -78.1765685
+0.4011861, -78.1766446
+
+Concha Acústica dentro del sector "Las Multis" 
+0.4018349, -78.1755181
+
+Edificio no residencial (no tengo idea de qué sea) dentro del sector "Las Multis"
+0.4015646, -78.1749310
+0.4016072, -78.1750480
+0.4014808, -78.1749592
+0.4015167, -78.1750779
+
+Cancha deportiva dentro del sector "Las Multis"
+0.4025336, -78.1744405
+0.4025305, -78.1746075
+0.4023046, -78.1746098
+0.4023086, -78.1744442
+
+Tienda (comparte la misma área del edificio de Residencia estudiantil )
+0.4015656, -78.1752884
+0.4015418, -78.1753156
+0.4015767, -78.1753438
+0.4016069, -78.1753119
