@@ -490,6 +490,9 @@ def generar_mapa():
     # Controles estándar de Folium (collapsed=True evita colisión visual con la barra superior)
     folium.LayerControl(position='topright', collapsed=True).add_to(m)
 
+    # Inyectar Favicon vectorial oficial en el <head>
+    m.get_root().header.add_child(folium.Element('<link rel="icon" type="image/svg+xml" href="favicon.svg">'))
+
     mini_tile = folium.TileLayer(
         tiles='https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',
         attr='Esri'
@@ -547,6 +550,26 @@ def generar_mapa():
             --btn-bg: #1e293b;
             --btn-text: #f1f2f6;
             --btn-hover: #334155;
+        }}
+
+        /* Adaptación de controles Leaflet en Modo Oscuro */
+        body[data-theme="dark"] .leaflet-bar a {{
+            background-color: #1e293b !important;
+            color: #f1f2f6 !important;
+            border-bottom: 1px solid #334155 !important;
+        }}
+        body[data-theme="dark"] .leaflet-bar a:hover {{
+            background-color: #334155 !important;
+            color: #2ed573 !important;
+        }}
+        body[data-theme="dark"] .leaflet-control-layers {{
+            background: #1e293b !important;
+            color: #f1f2f6 !important;
+            border: 1px solid #334155 !important;
+        }}
+        body[data-theme="dark"] .leaflet-control-layers-expanded {{
+            background: #1e293b !important;
+            color: #f1f2f6 !important;
         }}
 
         /* Tipografía y accesibilidad general */
@@ -1028,7 +1051,7 @@ def generar_mapa():
                     https://jeffersonconza.github.io/algoritmo-verde-yosw2026/
                 </div>
                 <div style="margin-top: 16px; display: flex; gap: 10px; justify-content: center;">
-                    <a href="qr_algoritmo_verde.png" download="QR_Algoritmo_Verde_YT.png" class="modal-btn-close" style="text-decoration: none; display: inline-flex; align-items: center; gap: 6px; font-size: 12px; padding: 8px 18px;">
+                    <a href="data:image/png;base64,{qr_b64}" download="QR_Algoritmo_Verde_YT.png" class="modal-btn-close" style="text-decoration: none; display: inline-flex; align-items: center; gap: 6px; font-size: 12px; padding: 8px 18px;">
                         ⬇️ <span data-i18n="qr_download">Descargar PNG para Diapositivas</span>
                     </a>
                 </div>
@@ -1306,7 +1329,10 @@ def generar_mapa():
             var elements = document.querySelectorAll('[data-i18n]');
             elements.forEach(function(el) {{
                 var key = el.getAttribute('data-i18n');
-                if (dict[key]) {{
+                if (key === 'nav_theme') {{
+                    var isDark = document.body.getAttribute('data-theme') === 'dark';
+                    el.innerHTML = isDark ? (lang === 'es' ? 'Claro' : 'Light') : (lang === 'es' ? 'Oscuro' : 'Dark');
+                }} else if (dict[key]) {{
                     el.innerHTML = dict[key];
                 }}
             }});
