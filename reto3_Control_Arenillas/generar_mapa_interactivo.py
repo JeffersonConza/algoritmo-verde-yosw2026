@@ -213,40 +213,52 @@ def generar_mapa():
         # =============================================================
         # ZONA 1: SENESCYT
         # =============================================================
-        ([0.406691, -78.170214], "Edificio Senescyt (Yachay Tech)", "graduation-cap", "red",
+        ([0.406633, -78.170096], "Edificio Senescyt (Yachay Tech)", "graduation-cap", "red",
          "🎓 Aulas y Aprendizaje", "Complejo principal de aulas magnas, decanatos y oficinas rectorales. Ventilación natural protegida."),
         ([0.407655, -78.170721], "Centro Médico / Bienestar Estudiantil", "medkit", "red",
          "🏥 Salud y Bienestar Estudiantil", "Centro Médico Tipo A y Promoción de Vida Comunitaria. Atención primaria médica y psicológica."),
         ([0.406950, -78.171150], "Residencias Estudiantiles 'Los Bloques'", "bed", "darkred",
          "🛌 Alojamiento Estudiantil (Bloques A-I)", "Complejo habitacional de 9 bloques modulares (A a I) blindado por la Cerca Viva 3."),
-        ([0.406255, -78.170115], "Biblioteca (Edificio Senescyt)", "book", "blue",
+        ([0.406259, -78.170117], "Biblioteca (Edificio Senescyt)", "book", "blue",
          "📚 Biblioteca y Sala de Estudio", "Sala de lectura y consulta individual situada en el ala sur del Edificio Senescyt."),
-        ([0.406496, -78.170392], "Minimarket Krispan", "shopping-cart", "orange",
+        ([0.406501, -78.170395], "Minimarket Krispan", "shopping-cart", "orange",
          "☕ Cafetería y Abastecimiento", "Local interior de alimentos, café y artículos de primera necesidad en el ala oeste de Senescyt."),
+        ([0.407063, -78.169911], "Comedor Sol del Ecuador", "cutlery", "orange",
+         "🍲 Restaurante Universitario", "Comedor estudiantil ubicado en el extremo norte interior del Edificio Senescyt."),
 
         # =============================================================
         # ZONA 2: INGENIO AZUCARERO
         # =============================================================
-        ([0.405072, -78.174159], "Biblioteca Patrimonial Principal", "book", "blue",
+        ([0.405060, -78.174257], "Biblioteca Patrimonial Principal", "book", "blue",
          "📚 Patrimonio y Estudio Central", "Emblemática biblioteca histórica de la Hacienda San José con jardines y salas de lectura."),
-        ([0.405320, -78.174000], "Torre del Ingenio Azucarero", "history", "purple",
+        ([0.405220, -78.174354], "Torre del Ingenio Azucarero", "history", "purple",
          "🏛️ Monumento Histórico", "Chimenea y torre histórica de la Hacienda San José. Símbolo patrimonial de Urcuquí y del campus."),
-        ([0.404950, -78.173800], "Aulas B", "pencil", "cadetblue",
-         "✏️ Aulas de Docencia B", "Bloque de aulas patrimoniales restauradas para clases teóricas y seminarios de carrera."),
-        ([0.405200, -78.173600], "Aulas I (Antiguo Ingenio)", "university", "cadetblue",
-         "🏛️ Aulas y Talleres I", "Nave patrimonial adaptada para laboratorios, docencia técnica y talleres de ingeniería."),
-        ([0.405380, -78.173250], "Plaza Mikuna", "cutlery", "darkgreen",
-         "🍽️ Gastronomía y Encuentro", "Área gastronómica central con comedor y mesas al aire libre libre de jejenes y picaduras."),
-        ([0.405350, -78.173300], "Restaurant Colibrí", "coffee", "orange",
-         "🍲 Comedor Universitario", "Restaurante de comida tradicional ecuatoriana y menú estudiantil."),
-        ([0.405450, -78.173150], "Restaurant Containers", "cutlery", "darkred",
-         "🍔 Patio Gastronómico Containers", "Módulos de restaurantes y comida rápida en contenedores ecológicos adaptados."),
-        ([0.405050, -78.173500], "Plaza del Estudiante", "users", "green",
+        ([0.405324, -78.174470], "Plaza del Ingenio", "sun-o", "purple",
+         "🎭 Explanada Cívica y Cultural", "Gran explanada patrimonial frente a la Chimenea y la Biblioteca Patrimonial."),
+        ([0.404933, -78.174292], "Plaza del Estudiante", "users", "green",
          "🤝 Convivencia y Descanso", "Plazoleta peatonal arbolada entre Aulas B y Aulas I."),
-        ([0.405250, -78.174100], "Plaza del Ingenio", "sun-o", "purple",
-         "🎭 Explanada Cívica y Cultural", "Gran explanada frente a la Chimenea y la Biblioteca Patrimonial."),
-        ([0.404780, -78.172450], "Laboratorios de Carrera", "cogs", "darkpurple",
+        ([0.404415, -78.175230], "Sala Capitular", "landmark", "darkpurple",
+         "🏛️ Sala Capitular Patrimonial", "Monumento histórico y sala ceremonial de la Hacienda San José."),
+        ([0.404402, -78.175821], "Sala de Defensas San José", "mortar-board", "darkblue",
+         "🎓 Sala de Grados y Tesis", "Espacio solemne para sustentación de tesis y actos de titulación universitaria."),
+        ([0.404270, -78.174298], "Aulas B (Sur)", "pencil", "cadetblue",
+         "✏️ Aulas de Docencia B", "Bloque de aulas teóricas y seminarios junto a la arboleda patrimonial."),
+        ([0.405354, -78.174306], "Aulas B (Norte)", "pencil", "cadetblue",
+         "✏️ Aulas de Docencia B Norte", "Bloque de aulas B norte, adyacente a la Plaza del Ingenio."),
+        ([0.405224, -78.174622], "Aulas I (Antiguo Ingenio)", "university", "cadetblue",
+         "🏛️ Aulas y Talleres I", "Nave patrimonial adaptada para laboratorios, docencia técnica y talleres de ingeniería."),
+        ([0.404328, -78.173777], "Restaurant El Colibrí", "coffee", "orange",
+         "🍲 Comedor Universitario", "Restaurante de comida tradicional ecuatoriana y menú estudiantil en Plaza Mikuna."),
+        ([0.404211, -78.173869], "Mesas y Sitio de Estar (Plaza Mikuna)", "cutlery", "darkgreen",
+         "🍽️ Comedor Cubierto al Aire Libre", "Área de mesas bajo cubierta para consumo de alimentos sin picaduras."),
+        ([0.404550, -78.173820], "Restaurant Containers (Plaza Mikuna)", "cutlery", "darkred",
+         "🍔 Patio Gastronómico Containers", "Módulos de restaurantes en contenedores ecológicos adaptados."),
+        ([0.404419, -78.173849], "Sitio de Fogata (Plaza Mikuna)", "fire", "red",
+         "🔥 Espacio Comunitario de Fogata", "Punto tradicional de reunión y fogatas de fin de semestre."),
+        ([0.403800, -78.172660], "Laboratorios de Carrera (Ingenierías)", "cogs", "darkpurple",
          "💻 Investigación y Tecnología", "Talleres experimentales de ingeniería junto al canal hídrico central."),
+        ([0.404200, -78.173150], "Invernaderos Experimentales", "leaf", "darkgreen",
+         "🌱 Investigación Agropecuaria", "Conjunto de cuatro invernaderos de ensayo fitoquímico y botánico."),
         ([0.404900, -78.173900], "Laboratorio de Química", "flask", "darkpurple",
          "🔬 Biotecnología y Química", "Laboratorios para caracterización fitoquímica de terpenos protectores."),
 
@@ -290,95 +302,554 @@ def generar_mapa():
     # 4.1 HUELLAS ARQUITECTÓNICAS RECTANGULARES (ZONA NORTE)
     # -------------------------------------------------------------
     huellas_arquitectonicas = [
-        # Bloques Residenciales Estudiantiles (Geometría Rectangular Regularizada)
         {
+            "id": "RECT-A",
             "nombre": "Bloque A",
             "tipo": "Residencia Estudiantil (Rectangular)",
-            "coords": [[0.4069739, -78.1705279], [0.4068642, -78.1704038], [0.4066441, -78.1705984], [0.4067538, -78.1707225]],
-            "color": "#16a085", "fill": "#1abc9c", "interior": False
+            "zona": "Senescyt",
+            "coords": [[0.4067538, -78.1707225], [0.4069739, -78.1705279], [0.4068642, -78.1704038], [0.4066441, -78.1705984]],
+            "centroid": [0.406809, -78.1705632],
+            "area": 599.6,
+            "color": "#16a085", "fill": "#1abc9c",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Bloque residencial modular estudiantil en zona norte."
         },
         {
+            "id": "RECT-B",
             "nombre": "Bloque B",
             "tipo": "Residencia Estudiantil (Rectangular)",
-            "coords": [[0.4069112, -78.1708846], [0.4071388, -78.1706975], [0.4070326, -78.1705683], [0.4068050, -78.1707554]],
-            "color": "#16a085", "fill": "#1abc9c", "interior": False
+            "zona": "Senescyt",
+            "coords": [[0.4069112, -78.1708846], [0.4071388, -78.1706975], [0.4070326, -78.1705683], [0.406805, -78.1707554]],
+            "centroid": [0.4069719, -78.1707264],
+            "area": 607.1,
+            "color": "#16a085", "fill": "#1abc9c",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Bloque residencial modular estudiantil en zona norte."
         },
         {
+            "id": "RECT-C",
             "nombre": "Bloque C",
             "tipo": "Residencia Estudiantil (Rectangular)",
-            "coords": [[0.4070848, -78.1710539], [0.4073098, -78.1708551], [0.4072065, -78.1707382], [0.4069815, -78.1709370]],
-            "color": "#16a085", "fill": "#1abc9c", "interior": False
+            "zona": "Senescyt",
+            "coords": [[0.4072065, -78.1707382], [0.4069815, -78.170937], [0.4070848, -78.1710539], [0.4073098, -78.1708551]],
+            "centroid": [0.4071457, -78.170896],
+            "area": 577.1,
+            "color": "#16a085", "fill": "#1abc9c",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Bloque residencial modular estudiantil en zona norte."
         },
         {
+            "id": "RECT-D",
             "nombre": "Bloque D",
             "tipo": "Residencia Estudiantil (Rectangular)",
-            "coords": [[0.4072699, -78.1710060], [0.4071311, -78.1711226], [0.4073159, -78.1713426], [0.4074547, -78.1712260]],
-            "color": "#16a085", "fill": "#1abc9c", "interior": False
+            "zona": "Senescyt",
+            "coords": [[0.4071311, -78.1711226], [0.4073159, -78.1713426], [0.4074547, -78.171226], [0.4072699, -78.171006]],
+            "centroid": [0.4072929, -78.1711743],
+            "area": 641.7,
+            "color": "#16a085", "fill": "#1abc9c",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Bloque residencial modular estudiantil en zona norte."
         },
         {
+            "id": "RECT-E",
             "nombre": "Bloque E",
             "tipo": "Residencia Estudiantil (Rectangular)",
-            "coords": [[0.4072764, -78.1709972], [0.4074687, -78.1712182], [0.4075913, -78.1711116], [0.4073990, -78.1708906]],
-            "color": "#16a085", "fill": "#1abc9c", "interior": False
+            "zona": "Senescyt",
+            "coords": [[0.4072764, -78.1709972], [0.4074687, -78.1712182], [0.4075913, -78.1711116], [0.407399, -78.1708906]],
+            "centroid": [0.4074338, -78.1710544],
+            "area": 586.5,
+            "color": "#16a085", "fill": "#1abc9c",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Bloque residencial modular estudiantil en zona norte."
         },
         {
+            "id": "RECT-F",
             "nombre": "Bloque F",
             "tipo": "Residencia Estudiantil (Rectangular Independiente)",
-            "coords": [[0.4075616, -78.1714552], [0.4078955, -78.1714740], [0.4079049, -78.1713069], [0.4075710, -78.1712881]],
-            "color": "#27ae60", "fill": "#2ecc71", "interior": False
+            "zona": "Senescyt",
+            "coords": [[0.4075616, -78.1714552], [0.4078955, -78.171474], [0.4079049, -78.1713069], [0.407571, -78.1712881]],
+            "centroid": [0.4077333, -78.1713811],
+            "area": 689.6,
+            "color": "#27ae60", "fill": "#2ecc71",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Bloque F independiente (ala occidental del complejo F/G)."
         },
         {
+            "id": "RECT-G",
             "nombre": "Bloque G",
             "tipo": "Residencia Estudiantil (Rectangular Independiente)",
-            "coords": [[0.4077735, -78.1709533], [0.4077295, -78.1712963], [0.4078877, -78.1713166], [0.4079317, -78.1709736]],
-            "color": "#27ae60", "fill": "#2ecc71", "interior": False
+            "zona": "Senescyt",
+            "coords": [[0.4078877, -78.1713166], [0.4079317, -78.1709736], [0.4077735, -78.1709533], [0.4077295, -78.1712963]],
+            "centroid": [0.4078306, -78.1711349],
+            "area": 679.6,
+            "color": "#27ae60", "fill": "#2ecc71",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Bloque G independiente (ala oriental del complejo F/G)."
         },
         {
+            "id": "RECT-H",
             "nombre": "Bloque H",
             "tipo": "Residencia Estudiantil (Rectangular)",
-            "coords": [[0.4071925, -78.1703263], [0.4074167, -78.1705805], [0.4075330, -78.1704780], [0.4073088, -78.1702238]],
-            "color": "#16a085", "fill": "#1abc9c", "interior": False
+            "zona": "Senescyt",
+            "coords": [[0.4071925, -78.1703263], [0.4074167, -78.1705805], [0.407533, -78.170478], [0.4073088, -78.1702238]],
+            "centroid": [0.4073627, -78.1704022],
+            "area": 647.5,
+            "color": "#16a085", "fill": "#1abc9c",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Bloque residencial modular estudiantil en zona este."
         },
         {
+            "id": "RECT-I",
             "nombre": "Bloque I",
             "tipo": "Residencia Estudiantil (Rectangular)",
-            "coords": [[0.4072116, -78.1700833], [0.4069564, -78.1703052], [0.4070515, -78.1704146], [0.4073067, -78.1701927]],
-            "color": "#16a085", "fill": "#1abc9c", "interior": False
+            "zona": "Senescyt",
+            "coords": [[0.4070515, -78.1704146], [0.4073067, -78.1701927], [0.4072116, -78.1700833], [0.4069564, -78.1703052]],
+            "centroid": [0.4071315, -78.170249],
+            "area": 604.0,
+            "color": "#16a085", "fill": "#1abc9c",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Bloque residencial modular estudiantil en zona este."
         },
         {
+            "id": "RECT-MED",
             "nombre": "Centro Médico / Bienestar Estudiantil",
             "tipo": "Salud y Vida Comunitaria (Rectangular)",
-            "coords": [[0.4075180, -78.1706569], [0.4076870, -78.1708685], [0.4077926, -78.1707842], [0.4076236, -78.1705726]],
-            "color": "#e74c3c", "fill": "#ff7675", "interior": False
+            "zona": "Senescyt",
+            "coords": [[0.407518, -78.1706569], [0.407687, -78.1708685], [0.4077926, -78.1707842], [0.4076236, -78.1705726]],
+            "centroid": [0.4076553, -78.1707206],
+            "area": 450.9,
+            "color": "#e74c3c", "fill": "#ff7675",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Centro Médico Tipo A y Promoción de Vida Comunitaria."
         },
-        
-        # Edificio Complejo Senescyt (8 vértices arquitectónicos)
         {
+            "id": "POLY-SENESCYT",
             "nombre": "Edificio Senescyt",
             "tipo": "Aulas, Rectorado y Decanatos (Polígono Matriz)",
-            "coords": [[0.4071147, -78.1699317], [0.4069484, -78.1697289], [0.4068317, -78.1698328], [0.4068019, -78.1698043], [0.4063912, -78.1701510], [0.4062218, -78.1699562], [0.4061159, -78.1700531], [0.4064619, -78.1704732]],
-            "color": "#c0392b", "fill": "#e74c3c", "interior": False
+            "zona": "Senescyt",
+            "coords": [[0.4071147, -78.1699317], [0.4069484, -78.1697289], [0.4068317, -78.1698328], [0.4068019, -78.1698043], [0.4063912, -78.170151], [0.4062218, -78.1699562], [0.4061159, -78.1700531], [0.4064619, -78.1704732]],
+            "centroid": [0.4066329, -78.1700962],
+            "area": 3474.8,
+            "color": "#c0392b", "fill": "#e74c3c",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Polígono matriz poliédrico de 8 vértices que alberga aulas y oficinas centrales."
         },
-        
-        # Locales Interiores (Estrictamente contenidos dentro del Edificio Senescyt)
         {
+            "id": "INT-BIB",
             "nombre": "Biblioteca Universitaria",
             "tipo": "Sala de Estudio (Local Interior en Edificio Senescyt)",
-            "coords": [[0.4062218, -78.1699562], [0.4061159, -78.1700531], [0.4063150, -78.1702949], [0.4063677, -78.1702261], [0.4063425, -78.1701969], [0.4063898, -78.1701540], [0.4062959, -78.1700414]],
-            "color": "#1d6fa5", "fill": "#3498db", "interior": True
+            "zona": "Senescyt",
+            "coords": [[0.4062218, -78.1699562], [0.4061159, -78.1700531], [0.406315, -78.1702949], [0.4063677, -78.1702261], [0.4063425, -78.1701969], [0.4063898, -78.170154], [0.4062959, -78.1700414]],
+            "centroid": [0.4062594, -78.1701174],
+            "area": 514.6,
+            "color": "#1d6fa5", "fill": "#3498db",
+            "interior": True,
+            "is_perimeter": False,
+            "desc": "Biblioteca interior situada en el ala sur del Edificio Senescyt."
         },
         {
+            "id": "INT-KRISPAN",
             "nombre": "Minimarket Krispan",
             "tipo": "Comercial / Cafetería (Local Interior en Edificio Senescyt)",
-            "coords": [[0.4065778, -78.1703771], [0.4065494, -78.1703109], [0.4064042, -78.1704011], [0.4064659, -78.1704699]],
-            "color": "#d35400", "fill": "#e67e22", "interior": True
-        }
+            "zona": "Senescyt",
+            "coords": [[0.4065494, -78.1703109], [0.4064042, -78.1704011], [0.4064522, -78.1704784], [0.4065974, -78.1703882]],
+            "centroid": [0.4065008, -78.1703946],
+            "area": 191.7,
+            "color": "#d35400", "fill": "#e67e22",
+            "interior": True,
+            "is_perimeter": False,
+            "desc": "Minimarket y cafetería interior en el ala oeste de Senescyt."
+        },
+        {
+            "id": "INT-COMEDOR",
+            "nombre": "Comedor Sol del Ecuador",
+            "tipo": "Restaurante Universitario (Local Interior en Edificio Senescyt)",
+            "zona": "Senescyt",
+            "coords": [[0.4071116, -78.1699224], [0.4070583, -78.1698613], [0.4070134, -78.1699005], [0.4070667, -78.1699616]],
+            "centroid": [0.4070625, -78.1699114],
+            "area": 59.6,
+            "color": "#d35400", "fill": "#f39c12",
+            "interior": True,
+            "is_perimeter": False,
+            "desc": "Comedor universitario en el extremo noreste interior de Senescyt."
+        },
+        {
+            "id": "POLY-BIB-PAT",
+            "nombre": "Biblioteca Patrimonial Principal",
+            "tipo": "Biblioteca y Patrimonio Histórico (13 Vértices)",
+            "zona": "Ingenio Azucarero",
+            "coords": [[0.404974, -78.1745032], [0.4050648, -78.1745478], [0.4052466, -78.1741918], [0.4049036, -78.1740328], [0.4048781, -78.1740757], [0.4048509, -78.174063], [0.4048342, -78.1740918], [0.4048677, -78.1741103], [0.4048446, -78.1741485], [0.4049049, -78.174179], [0.4049301, -78.1741401], [0.4051064, -78.1742397], [0.4049746, -78.1745002]],
+            "centroid": [0.4050602, -78.1742572],
+            "area": 869.5,
+            "color": "#2980b9", "fill": "#3498db",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Biblioteca patrimonial histórica de la Hacienda San José."
+        },
+        {
+            "id": "RECT-BANOS-BIB",
+            "nombre": "Baños Biblioteca Patrimonial",
+            "tipo": "Servicios Higiénicos",
+            "zona": "Ingenio Azucarero",
+            "coords": [[0.404742, -78.174346], [0.4048017, -78.1743738], [0.4048203, -78.1743338], [0.4047606, -78.174306]],
+            "centroid": [0.4047812, -78.1743399],
+            "area": 35.8,
+            "color": "#7f8c8d", "fill": "#bdc3c7",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Batería sanitaria exterior de la Biblioteca Patrimonial."
+        },
+        {
+            "id": "RECT-AULAS-B-SUR",
+            "nombre": "Aulas B (Sur Biblioteca)",
+            "tipo": "Docencia y Seminarios",
+            "zona": "Ingenio Azucarero",
+            "coords": [[0.4044119, -78.1743079], [0.404172, -78.1741934], [0.4041269, -78.1742878], [0.4043668, -78.1744023]],
+            "centroid": [0.4042694, -78.1742978],
+            "area": 342.6,
+            "color": "#1f618d", "fill": "#5dade2",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Bloque de aulas al sur de la Biblioteca Patrimonial."
+        },
+        {
+            "id": "RECT-AULAS-B-NORTE",
+            "nombre": "Aulas B (Norte)",
+            "tipo": "Docencia y Seminarios",
+            "zona": "Ingenio Azucarero",
+            "coords": [[0.4055181, -78.1743369], [0.4052311, -78.1741944], [0.4051907, -78.1742757], [0.4054777, -78.1744182]],
+            "centroid": [0.4053544, -78.1743063],
+            "area": 358.5,
+            "color": "#1f618d", "fill": "#5dade2",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Bloque de aulas B norte, adyacente a la Plaza del Ingenio."
+        },
+        {
+            "id": "RECT-AULAS-I-1",
+            "nombre": "Aulas I (Módulo 1 - Antiguo Ingenio)",
+            "tipo": "Aulas Técnicas y Talleres",
+            "zona": "Ingenio Azucarero",
+            "coords": [[0.4051256, -78.1745126], [0.4050769, -78.1746142], [0.4053233, -78.1747322], [0.405372, -78.1746306]],
+            "centroid": [0.4052244, -78.1746224],
+            "area": 379.3,
+            "color": "#6c3483", "fill": "#bb8fce",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Módulo patrimonial restaurado para clases técnicas."
+        },
+        {
+            "id": "RECT-AULAS-I-2",
+            "nombre": "Aulas I (Módulo 2 - Antiguo Ingenio)",
+            "tipo": "Aulas Técnicas y Talleres",
+            "zona": "Ingenio Azucarero",
+            "coords": [[0.4054504, -78.1746678], [0.4055414, -78.1744942], [0.405489, -78.1744667], [0.405398, -78.1746403]],
+            "centroid": [0.4054697, -78.1745673],
+            "area": 143.0,
+            "color": "#6c3483", "fill": "#bb8fce",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Módulo norte de Aulas I."
+        },
+        {
+            "id": "RECT-BANOS-AULAS-I",
+            "nombre": "Baños Aulas I",
+            "tipo": "Servicios Higiénicos Yuxtapuestos",
+            "zona": "Ingenio Azucarero",
+            "coords": [[0.405327, -78.1747475], [0.4054, -78.174776], [0.4054449, -78.1746611], [0.4053719, -78.1746326]],
+            "centroid": [0.405386, -78.1747043],
+            "area": 119.2,
+            "color": "#7f8c8d", "fill": "#bdc3c7",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Batería de baños yuxtapuesta a las naves de Aulas I."
+        },
+        {
+            "id": "RECT-SALA-DOCENTES",
+            "nombre": "Sala de Docentes (Ingenio)",
+            "tipo": "Área de Profesores",
+            "zona": "Ingenio Azucarero",
+            "coords": [[0.4055409, -78.1744952], [0.405607, -78.1743896], [0.405553, -78.1743558], [0.4054869, -78.1744614]],
+            "centroid": [0.4055469, -78.1744255],
+            "area": 97.8,
+            "color": "#16a085", "fill": "#48c9b0",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Espacio de trabajo y descanso para cuerpo docente."
+        },
+        {
+            "id": "RECT-LABS-DOCENCIA",
+            "nombre": "Laboratorios de Docencia",
+            "tipo": "Talleres y Docencia Práctica",
+            "zona": "Ingenio Azucarero",
+            "coords": [[0.4054855, -78.1748217], [0.4056858, -78.1744248], [0.4056007, -78.1743819], [0.4054004, -78.1747788]],
+            "centroid": [0.4055431, -78.1746018],
+            "area": 522.2,
+            "color": "#2c3e50", "fill": "#566573",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Naves de docencia práctica y laboratorios formativos."
+        },
+        {
+            "id": "RECT-COLIBRI",
+            "nombre": "Restaurante El Colibrí",
+            "tipo": "Comedor Universitario",
+            "zona": "Ingenio Azucarero",
+            "coords": [[0.4042855, -78.1737925], [0.4043474, -78.1738179], [0.4043707, -78.1737612], [0.4043088, -78.1737358]],
+            "centroid": [0.4043281, -78.1737769],
+            "area": 50.5,
+            "color": "#d35400", "fill": "#e67e22",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Restaurante y comedor estudiantil tradicional en Plaza Mikuna."
+        },
+        {
+            "id": "RECT-MESAS-MIKUNA",
+            "nombre": "Mesas y Sitio de Estar (Plaza Mikuna)",
+            "tipo": "Comedor Cubierto al Aire Libre",
+            "zona": "Ingenio Azucarero",
+            "coords": [[0.4042451, -78.1738246], [0.404176, -78.1738246], [0.404176, -78.1739135], [0.4042451, -78.1739135]],
+            "centroid": [0.4042106, -78.173869],
+            "area": 75.7,
+            "color": "#27ae60", "fill": "#58d68d",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Área de mesas bajo cubierta para consumo de alimentos y estancia."
+        },
+        {
+            "id": "RECT-CONTAINERS-1",
+            "nombre": "Containers de Comida 1 (Plaza Mikuna)",
+            "tipo": "Módulos Gastronómicos",
+            "zona": "Ingenio Azucarero",
+            "coords": [[0.4046048, -78.1737629], [0.4045036, -78.1737985], [0.4045138, -78.1738274], [0.404615, -78.1737918]],
+            "centroid": [0.4045593, -78.1737952],
+            "area": 40.5,
+            "color": "#b03a2e", "fill": "#ec7063",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Módulo norte de contenedores gastronómicos en Plaza Mikuna."
+        },
+        {
+            "id": "RECT-CONTAINERS-2",
+            "nombre": "Containers de Comida 2 (Plaza Mikuna)",
+            "tipo": "Módulos Gastronómicos",
+            "zona": "Ingenio Azucarero",
+            "coords": [[0.4045006, -78.1738863], [0.4045461, -78.1739152], [0.4045636, -78.1738877], [0.4045181, -78.1738588]],
+            "centroid": [0.4045321, -78.173887],
+            "area": 21.7,
+            "color": "#b03a2e", "fill": "#ec7063",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Módulo sur de contenedores gastronómicos en Plaza Mikuna."
+        },
+        {
+            "id": "RECT-INV-1",
+            "nombre": "Invernadero Experimental 1",
+            "tipo": "Investigación Agropecuaria",
+            "zona": "Ingenio Azucarero",
+            "coords": [[0.4041395, -78.1729552], [0.4044119, -78.1730552], [0.4044572, -78.1729319], [0.4041848, -78.1728319]],
+            "centroid": [0.4042983, -78.1729436],
+            "area": 469.7,
+            "color": "#196f3d", "fill": "#52be80",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Nave de cultivo protegido e investigación en bio-repelencia."
+        },
+        {
+            "id": "RECT-INV-2",
+            "nombre": "Invernadero Experimental 2",
+            "tipo": "Investigación Agropecuaria",
+            "zona": "Ingenio Azucarero",
+            "coords": [[0.4043837, -78.1731279], [0.4041097, -78.1730253], [0.4040881, -78.173083], [0.4043621, -78.1731856]],
+            "centroid": [0.4042359, -78.1731054],
+            "area": 222.2,
+            "color": "#196f3d", "fill": "#52be80",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Invernadero experimental para ensayo de especies botánicas."
+        },
+        {
+            "id": "RECT-INV-3",
+            "nombre": "Invernadero Experimental 3",
+            "tipo": "Investigación Agropecuaria",
+            "zona": "Ingenio Azucarero",
+            "coords": [[0.4040372, -78.1732037], [0.4043145, -78.1733036], [0.4043367, -78.1732419], [0.4040594, -78.173142]],
+            "centroid": [0.4041869, -78.1732228],
+            "area": 238.0,
+            "color": "#196f3d", "fill": "#52be80",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Invernadero botánico experimental."
+        },
+        {
+            "id": "RECT-INV-4",
+            "nombre": "Invernadero Experimental 4",
+            "tipo": "Investigación Agropecuaria",
+            "zona": "Ingenio Azucarero",
+            "coords": [[0.4039885, -78.1733332], [0.4042629, -78.173434], [0.4042835, -78.1733779], [0.4040091, -78.1732771]],
+            "centroid": [0.404136, -78.1733556],
+            "area": 215.3,
+            "color": "#196f3d", "fill": "#52be80",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Invernadero botánico experimental junto al eje agroforestal."
+        },
+        {
+            "id": "RECT-LABS-CARRERA",
+            "nombre": "Laboratorios de Carrera (Ingenierías)",
+            "tipo": "Talleres y Naves Tecnológicas",
+            "zona": "Ingenio Azucarero",
+            "coords": [[0.4038491, -78.1728994], [0.4039735, -78.1724875], [0.4037509, -78.1724203], [0.4036265, -78.1728322]],
+            "centroid": [0.4038, -78.1726599],
+            "area": 1232.9,
+            "color": "#4a235a", "fill": "#a569bd",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Naves de ingeniería y laboratorios experimentales de carrera."
+        },
+        {
+            "id": "RECT-BANOS-LABS",
+            "nombre": "Baños Laboratorios de Carrera",
+            "tipo": "Servicios Higiénicos",
+            "zona": "Ingenio Azucarero",
+            "coords": [[0.4038265, -78.1728016], [0.4037989, -78.1728845], [0.4038497, -78.1729014], [0.4038773, -78.1728185]],
+            "centroid": [0.4038381, -78.1728515],
+            "area": 57.6,
+            "color": "#7f8c8d", "fill": "#bdc3c7",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Batería sanitaria adyacente a los Laboratorios de Carrera."
+        },
+        {
+            "id": "RECT-CAPITULAR",
+            "nombre": "Sala Capitular",
+            "tipo": "Monumento y Sala Patrimonial",
+            "zona": "Ingenio Azucarero",
+            "coords": [[0.4044278, -78.1753652], [0.4044453, -78.1752043], [0.4043741, -78.1751966], [0.4043566, -78.1753575]],
+            "centroid": [0.404401, -78.1752809],
+            "area": 142.8,
+            "color": "#7d6608", "fill": "#f4d03f",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Sala Capitular histórica de la Hacienda San José."
+        },
+        {
+            "id": "RECT-CABALLERIZAS",
+            "nombre": "Aulas Caballerizas",
+            "tipo": "Aulas Patrimoniales Adaptadas",
+            "zona": "Ingenio Azucarero",
+            "coords": [[0.4045321, -78.1756988], [0.4045271, -78.1760378], [0.4045776, -78.1760385], [0.4045826, -78.1756995]],
+            "centroid": [0.4045548, -78.1758687],
+            "area": 210.8,
+            "color": "#7d6608", "fill": "#f5b041",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Antiguas caballerizas de la hacienda convertidas en aulas universitarias."
+        },
+        {
+            "id": "RECT-EDIF-SUR-CAB",
+            "nombre": "Edificio Sur Caballerizas",
+            "tipo": "Edificación Auxiliar",
+            "zona": "Ingenio Azucarero",
+            "coords": [[0.4042508, -78.1757655], [0.4042153, -78.1756006], [0.4041423, -78.1756163], [0.4041778, -78.1757812]],
+            "centroid": [0.4041965, -78.1756909],
+            "area": 155.3,
+            "color": "#7d6608", "fill": "#f5b041",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Edificación auxiliar sur del complejo de caballerizas."
+        },
+        {
+            "id": "RECT-DEFENSAS-SAN-JOSE",
+            "nombre": "Sala de Defensas San José",
+            "tipo": "Sala de Grado y Defensa de Tesis",
+            "zona": "Ingenio Azucarero",
+            "coords": [[0.4043876, -78.1758678], [0.4044402, -78.1757886], [0.404417, -78.1757733], [0.4043644, -78.1758524]],
+            "centroid": [0.4044023, -78.1758205],
+            "area": 32.5,
+            "color": "#1b4f72", "fill": "#5499c7",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Sala ceremonial para defensa de tesis de grado e investidura."
+        },
+        {
+            "id": "RECT-BANOS-SAN-JOSE",
+            "nombre": "Baños Sala de Defensas",
+            "tipo": "Servicios Higiénicos",
+            "zona": "Ingenio Azucarero",
+            "coords": [[0.4044248, -78.175814], [0.4044254, -78.1757722], [0.4043909, -78.1757717], [0.4043903, -78.1758135]],
+            "centroid": [0.4044079, -78.1757929],
+            "area": 17.8,
+            "color": "#7f8c8d", "fill": "#bdc3c7",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Servicios higiénicos adjuntos a la Sala San José."
+        },
+        {
+            "id": "RECT-EDIF-ANEXO-DEF",
+            "nombre": "Edificio Anexo San José",
+            "tipo": "Edificación Administrativa",
+            "zona": "Ingenio Azucarero",
+            "coords": [[0.4043874, -78.1758643], [0.4044852, -78.1758681], [0.4044887, -78.1757777], [0.4043909, -78.1757739]],
+            "centroid": [0.4044381, -78.175821],
+            "area": 109.1,
+            "color": "#1b4f72", "fill": "#5499c7",
+            "interior": False,
+            "is_perimeter": False,
+            "desc": "Bloque anexo administrativo de la Sala de Defensas."
+        },
+        {
+            "id": "PERIM-INGENIO",
+            "nombre": "Polígono Complejo Ingenio Azucarero",
+            "tipo": "Perímetro Complejo Histórico",
+            "zona": "Ingenio Azucarero",
+            "coords": [[0.405489, -78.1748234], [0.4056908, -78.1744328], [0.4048442, -78.1740107], [0.4046374, -78.1744077]],
+            "centroid": [0.4051641, -78.1744181],
+            "area": 5174.3,
+            "color": "#8e44ad", "fill": "#bb8fce",
+            "interior": False,
+            "is_perimeter": True,
+            "desc": "Delimitación general del casco histórico del Antiguo Ingenio Azucarero."
+        },
+        {
+            "id": "PERIM-CAPITULAR",
+            "nombre": "Polígono Complejo Sala Capitular y Caballerizas",
+            "tipo": "Perímetro Histórico San José",
+            "zona": "Ingenio Azucarero",
+            "coords": [[0.4046333, -78.1752063], [0.4043752, -78.1751848], [0.4043574, -78.1752489], [0.4043236, -78.1752475], [0.4043115, -78.1752995], [0.4042143, -78.1753032], [0.4042049, -78.1755577], [0.4041271, -78.1755469], [0.4043722, -78.1764415], [0.4045777, -78.1763744], [0.4045733, -78.1756365]],
+            "centroid": [0.4044094, -78.1757593],
+            "area": 5070.5,
+            "color": "#b7950b", "fill": "#f9e79f",
+            "interior": False,
+            "is_perimeter": True,
+            "desc": "Perímetro patrimonial de la Hacienda San José (Sala Capitular y Caballerizas)."
+        },
     ]
 
     for h in huellas_arquitectonicas:
-        dash = "3, 3" if h.get("interior") else None
-        weight = 2.5 if h.get("interior") else 2
-        opacity = 0.55 if h.get("interior") else 0.38
+        if h.get("is_perimeter"):
+            dash = "6, 6"
+            weight = 2
+            opacity = 0.12
+        elif h.get("interior"):
+            dash = "3, 3"
+            weight = 2.5
+            opacity = 0.55
+        else:
+            dash = None
+            weight = 2
+            opacity = 0.38
         folium.Polygon(
             locations=h["coords"],
             color=h["color"],
@@ -389,14 +860,42 @@ def generar_mapa():
             fill_opacity=opacity,
             tooltip=f"🏛️ {h['nombre']} ({h['tipo']})",
             popup=folium.Popup(f"""
-                <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 240px; line-height: 1.4;">
+                <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 250px; line-height: 1.4;">
                     <div style="color: {h['color']}; font-weight: bold; font-size: 13px; margin-bottom: 2px;">{h['nombre']}</div>
                     <span style="background: #eef2f7; color: #2c3e50; padding: 2px 6px; border-radius: 4px; font-size: 10px; font-weight: 600;">{h['tipo']}</span>
                     <p style="margin: 6px 0 4px 0; font-size: 11px; color: #34495e;">
-                        {'📍 Local interior situado dentro del perímetro del Edificio Senescyt.' if h.get('interior') else '📐 Huella arquitectónica regularizada de forma rectangular.'}
+                        {h.get('desc', '')}
                     </p>
+                    <div style="font-size: 10px; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 3px;">
+                        Superficie aprox: <b>{h.get('area', 'N/D')} m²</b> | Zona: <b>{h.get('zona', '')}</b>
+                    </div>
                 </div>
-            """, max_width=260)
+            """, max_width=270)
+        ).add_to(fg_edificios)
+
+    # Líneas divisorias arquitectónicas interiores
+    lineas_divisorias = [
+        {
+            "nombre": "División Bloques F y G",
+            "coords": [[0.4078891, -78.1713060], [0.4077295, -78.1712963]],
+            "color": "#1e8449",
+            "desc": "Separación modular y pasillo técnico entre el Bloque F y Bloque G."
+        },
+        {
+            "nombre": "División de Ambientes Biblioteca Patrimonial",
+            "coords": [[0.4052026, -78.1742789], [0.4051054, -78.1742367]],
+            "color": "#1b4f72",
+            "desc": "Tabique divisorio interior entre sala de lectura histórica y acervo patrimonial."
+        }
+    ]
+    for ld in lineas_divisorias:
+        folium.PolyLine(
+            locations=ld["coords"],
+            color=ld["color"],
+            weight=3,
+            dash_array="4, 4",
+            tooltip=f"📏 {ld['nombre']}",
+            popup=folium.Popup(f"<b>{ld['nombre']}</b><br>{ld['desc']}", max_width=220)
         ).add_to(fg_edificios)
 
     # -------------------------------------------------------------
