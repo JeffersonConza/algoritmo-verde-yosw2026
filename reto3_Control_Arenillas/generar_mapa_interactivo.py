@@ -207,40 +207,66 @@ def generar_mapa():
     ).add_to(fg_zonas)
 
     # -------------------------------------------------------------
-    # 4. ESPACIOS HUMANOS REALES DEL CAMPUS (HITOS GOOGLE MAPS)
+    # 4. ESPACIOS HUMANOS REALES DEL CAMPUS (TRES ZONAS PRINCIPALES)
     # -------------------------------------------------------------
     hitos_humanos = [
-        # Zona 1: Vida Residencial y Recreativa
-        ([0.402297, -78.173836], "Residencias Patrimoniales", "home", "green",
-         "🏡 Hogar Estudiantil", "Alojamiento universitario patrimonial. Con el buffer verde, los estudiantes descansan sin zumbidos ni picaduras nocturnas."),
-        ([0.402750, -78.174800], "Las Multis (Residencias)", "home", "green",
-         "🏡 Residencias Las Multis", "Alta concentración juvenil. La barrera vegetal disminuye en 85% la presencia de arenillas en balcones y entradas."),
-        ([0.402350, -78.175500], "Concha Acústica Yachay Tech", "music", "darkgreen",
-         "🎭 Cultura y Esparcimiento", "Espacio emblemático al aire libre recuperado para conciertos, debates y actividades culturales sin picaduras."),
-        ([0.402500, -78.171800], "Canchas Deportivas", "futbol-o", "cadetblue",
-         "⚽ Salud y Deporte", "Área para fútbol y básquetbol. Los deportistas disfrutan de aire limpio sin necesidad de aplicarse repelentes pegajosos."),
-        ([0.402550, -78.172800], "Parada (Arco de las Pats)", "bus", "gray",
-         "🚌 Transporte Seguro", "Punto neurálgico de espera de buses. Espera cómoda bajo sombra vegetal."),
-        
-        # Zona 2: Investigación, Estudio y Patrimonio
-        ([0.405072, -78.174159], "Biblioteca Patrimonial 'Yachay Tech'", "book", "blue",
-         "📚 Sabiduría y Concentración", "Templo del estudio e investigación. Lectura tranquila en jardines y terrazas sin la distracción de insectos picadores."),
-        ([0.405320, -78.174000], "Chimenea Ingenio Azucarero", "history", "purple",
-         "🏛️ Patrimonio Histórico", "Símbolo de la memoria de Urcuquí. Integrado paisajísticamente con árboles de molle y flores melíferas."),
-        ([0.404900, -78.173900], "Laboratorio de Química", "flask", "darkpurple",
-         "🔬 Ciencia e Innovación", "Espacio donde la biotecnología se aplica para caracterizar los monoterpenos protectores."),
-        ([0.404780, -78.172450], "Laboratorios de Carrera", "cogs", "darkpurple",
-         "💻 Práctica Tecnológica", "Tránsito seguro entre naves de laboratorios y áreas experimentales."),
-
-        # Zona 3: Aulas, Bienestar y Convivencia
+        # =============================================================
+        # ZONA 1: SENESCYT
+        # =============================================================
         ([0.406691, -78.170214], "Edificio Senescyt (Yachay Tech)", "graduation-cap", "red",
-         "🎓 Aulas y Aprendizaje", "Salas de clase con ventilación natural abierta, sin calor sofocante ni ingreso de plagas."),
-        ([0.406950, -78.171150], "Residencias 'Los Bloques'", "bed", "darkred",
-         "🛌 Descanso Juvenil", "Habitaciones tranquilas y seguras para el descanso y estudio individual."),
-        ([0.407400, -78.171500], "Vida Comunitaria", "heart", "orange",
-         "🤝 Bienestar y Convivencia", "Centro de apoyo emocional y social universitario en un entorno natural y armónico."),
-        ([0.406500, -78.170500], "Minimarket Krispan", "shopping-cart", "orange",
-         "☕ Encuentro y Servicios", "Punto de café y descanso estudiantil al aire libre en un ambiente fresco y perfumado.")
+         "🎓 Aulas y Aprendizaje", "Complejo principal de aulas magnas, decanatos y oficinas rectorales. Ventilación natural protegida."),
+        ([0.407655, -78.170721], "Centro Médico / Bienestar Estudiantil", "medkit", "red",
+         "🏥 Salud y Bienestar Estudiantil", "Centro Médico Tipo A y Promoción de Vida Comunitaria. Atención primaria médica y psicológica."),
+        ([0.406950, -78.171150], "Residencias Estudiantiles 'Los Bloques'", "bed", "darkred",
+         "🛌 Alojamiento Estudiantil (Bloques A-I)", "Complejo habitacional de 9 bloques modulares (A a I) blindado por la Cerca Viva 3."),
+        ([0.406255, -78.170115], "Biblioteca (Edificio Senescyt)", "book", "blue",
+         "📚 Biblioteca y Sala de Estudio", "Sala de lectura y consulta individual situada en el ala sur del Edificio Senescyt."),
+        ([0.406496, -78.170392], "Minimarket Krispan", "shopping-cart", "orange",
+         "☕ Cafetería y Abastecimiento", "Local interior de alimentos, café y artículos de primera necesidad en el ala oeste de Senescyt."),
+
+        # =============================================================
+        # ZONA 2: INGENIO AZUCARERO
+        # =============================================================
+        ([0.405072, -78.174159], "Biblioteca Patrimonial Principal", "book", "blue",
+         "📚 Patrimonio y Estudio Central", "Emblemática biblioteca histórica de la Hacienda San José con jardines y salas de lectura."),
+        ([0.405320, -78.174000], "Torre del Ingenio Azucarero", "history", "purple",
+         "🏛️ Monumento Histórico", "Chimenea y torre histórica de la Hacienda San José. Símbolo patrimonial de Urcuquí y del campus."),
+        ([0.404950, -78.173800], "Aulas B", "pencil", "cadetblue",
+         "✏️ Aulas de Docencia B", "Bloque de aulas patrimoniales restauradas para clases teóricas y seminarios de carrera."),
+        ([0.405200, -78.173600], "Aulas I (Antiguo Ingenio)", "university", "cadetblue",
+         "🏛️ Aulas y Talleres I", "Nave patrimonial adaptada para laboratorios, docencia técnica y talleres de ingeniería."),
+        ([0.405380, -78.173250], "Plaza Mikuna", "cutlery", "darkgreen",
+         "🍽️ Gastronomía y Encuentro", "Área gastronómica central con comedor y mesas al aire libre libre de jejenes y picaduras."),
+        ([0.405350, -78.173300], "Restaurant Colibrí", "coffee", "orange",
+         "🍲 Comedor Universitario", "Restaurante de comida tradicional ecuatoriana y menú estudiantil."),
+        ([0.405450, -78.173150], "Restaurant Containers", "cutlery", "darkred",
+         "🍔 Patio Gastronómico Containers", "Módulos de restaurantes y comida rápida en contenedores ecológicos adaptados."),
+        ([0.405050, -78.173500], "Plaza del Estudiante", "users", "green",
+         "🤝 Convivencia y Descanso", "Plazoleta peatonal arbolada entre Aulas B y Aulas I."),
+        ([0.405250, -78.174100], "Plaza del Ingenio", "sun-o", "purple",
+         "🎭 Explanada Cívica y Cultural", "Gran explanada frente a la Chimenea y la Biblioteca Patrimonial."),
+        ([0.404780, -78.172450], "Laboratorios de Carrera", "cogs", "darkpurple",
+         "💻 Investigación y Tecnología", "Talleres experimentales de ingeniería junto al canal hídrico central."),
+        ([0.404900, -78.173900], "Laboratorio de Química", "flask", "darkpurple",
+         "🔬 Biotecnología y Química", "Laboratorios para caracterización fitoquímica de terpenos protectores."),
+
+        # =============================================================
+        # ZONA 3: RESIDENCIAS 'LAS PATS' Y 'MULTIFAMILIARES'
+        # =============================================================
+        ([0.402750, -78.174800], "Residencias Estudiantiles 'Las Multis'", "building", "green",
+         "🏢 Residencias Multifamiliares", "Edificios de departamentos estudiantiles protegidos en un 85% por la Cerca Viva 1."),
+        ([0.402297, -78.173836], "Residencias Estudiantiles 'Las Pats'", "home", "green",
+         "🏡 Residencias Patrimoniales", "Alojamiento histórico de teja colonial y corredores exteriores en ambiente fresco."),
+        ([0.402950, -78.174200], "Residencias Estudiantiles 'Las T\'s'", "home", "darkgreen",
+         "🏘️ Bloques Residenciales en T", "Módulos habitacionales estudiantiles con distribución de planta en forma de T."),
+        ([0.402150, -78.174500], "Residencias de Docentes", "briefcase", "cadetblue",
+         "🏠 Villas Docentes", "Conjunto de viviendas asignadas al cuerpo docente e investigadores residentes."),
+        ([0.402350, -78.175500], "Concha Acústica Yachay Tech", "music", "darkgreen",
+         "🎭 Cultura y Eventos al Aire Libre", "Anfiteatro universitario al aire libre recuperado para conciertos y arte sin picaduras."),
+        ([0.402500, -78.171800], "Canchas Deportivas (Fútbol / Múltiples)", "futbol-o", "blue",
+         "⚽ Deporte y Actividad Física", "Canchas reglamentarias de césped y vóley junto a la acequia sur protegida."),
+        ([0.402550, -78.172800], "Parada (Arco de las Pats)", "bus", "gray",
+         "🚌 Transporte Universitario", "Punto principal de arribo y espera de buses universitarios hacia Ibarra y Urcuquí.")
     ]
 
     for coord, nombre, icono, color, categoria, descripcion_humana in hitos_humanos:
@@ -1028,14 +1054,14 @@ def generar_mapa():
             ⚠️ <span data-i18n="nav_diagnosis">Ver Diagnóstico</span>
         </button>
         <span style="color: var(--border-color); margin: 0 2px;">|</span>
-        <button class="nav-btn" onclick="irAZona('residencias')" title="Enfocar Residencias Las Multis y Patrimoniales">
-            🏡 <span data-i18n="nav_residencias">Residencias</span>
+        <button class="nav-btn" onclick="irAZona('senescyt')" title="Enfocar Sector Senescyt (Aulas, Bloques, Centro Médico)">
+            🏛️ <span data-i18n="nav_senescyt">1. Senescyt</span>
         </button>
-        <button class="nav-btn" onclick="irAZona('ingenio')" title="Enfocar Biblioteca y Laboratorios">
-            📚 <span data-i18n="nav_biblioteca">Biblioteca / Aulas</span>
+        <button class="nav-btn" onclick="irAZona('ingenio')" title="Enfocar Sector Ingenio Azucarero (Aulas B/I, Biblioteca, Mikuna)">
+            🏭 <span data-i18n="nav_ingenio">2. Ingenio Azucarero</span>
         </button>
-        <button class="nav-btn" onclick="irAZona('senescyt')" title="Enfocar Senescyt y Los Bloques">
-            🎓 <span data-i18n="nav_senescyt">Senescyt / Bloques</span>
+        <button class="nav-btn" onclick="irAZona('residencias')" title="Enfocar Sector Las Pats y Multis (T's, Docentes, Deportes)">
+            🏡 <span data-i18n="nav_residencias">3. Las Pats y Multis</span>
         </button>
         <button class="nav-btn" onclick="irAZona('general')" title="Restablecer vista completa del campus">
             🔭 <span data-i18n="nav_campus">Vista Campus</span>
@@ -1355,9 +1381,9 @@ def generar_mapa():
                 nav_vision: "Visión y Propósito",
                 nav_solution: "Solución Verde (Activa)",
                 nav_diagnosis: "Ver Diagnóstico",
-                nav_residencias: "Residencias",
-                nav_biblioteca: "Biblioteca / Aulas",
-                nav_senescyt: "Senescyt / Bloques",
+                nav_senescyt: "1. Senescyt",
+                nav_ingenio: "2. Ingenio Azucarero",
+                nav_residencias: "3. Las Pats y Multis",
                 nav_campus: "Vista Campus",
                 nav_qr: "Código QR",
                 nav_theme: document.body.getAttribute('data-theme') === 'dark' ? "Claro" : "Oscuro",
@@ -1410,9 +1436,9 @@ def generar_mapa():
                 nav_vision: "Vision & Purpose",
                 nav_solution: "Green Solution (Active)",
                 nav_diagnosis: "View Diagnosis",
-                nav_residencias: "Student Housing",
-                nav_biblioteca: "Library & Labs",
-                nav_senescyt: "Classrooms & Blocks",
+                nav_senescyt: "1. Senescyt",
+                nav_ingenio: "2. Sugar Mill",
+                nav_residencias: "3. Pats & Multis",
                 nav_campus: "Campus Overview",
                 nav_qr: "QR Code",
                 nav_theme: document.body.getAttribute('data-theme') === 'dark' ? "Light" : "Dark",
