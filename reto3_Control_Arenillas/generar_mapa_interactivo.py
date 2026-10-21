@@ -261,109 +261,117 @@ def generar_mapa():
         ).add_to(fg_edificios)
 
     # -------------------------------------------------------------
-    # 4.1 HUELLAS ARQUITECTÓNICAS (POLÍGONOS REALES ZONA NORTE)
+    # 4.1 HUELLAS ARQUITECTÓNICAS RECTANGULARES (ZONA NORTE)
     # -------------------------------------------------------------
     huellas_arquitectonicas = [
+        # Bloques Residenciales Estudiantiles (Geometría Rectangular Regularizada)
         {
             "nombre": "Bloque A",
-            "tipo": "Residencia Estudiantil",
-            "coords": [[0.4066463, -78.1705983], [0.4068642, -78.1704038], [0.4069739, -78.1705279], [0.4067462, -78.1707139]],
-            "color": "#16a085", "fill": "#1abc9c"
+            "tipo": "Residencia Estudiantil (Rectangular)",
+            "coords": [[0.4069739, -78.1705279], [0.4068642, -78.1704038], [0.4066441, -78.1705984], [0.4067538, -78.1707225]],
+            "color": "#16a085", "fill": "#1abc9c", "interior": False
         },
         {
             "nombre": "Bloque B",
-            "tipo": "Residencia Estudiantil",
-            "coords": [[0.4068220, -78.1707679], [0.4069112, -78.1708846], [0.4071388, -78.1706975], [0.4070292, -78.1705711]],
-            "color": "#16a085", "fill": "#1abc9c"
+            "tipo": "Residencia Estudiantil (Rectangular)",
+            "coords": [[0.4069112, -78.1708846], [0.4071388, -78.1706975], [0.4070326, -78.1705683], [0.4068050, -78.1707554]],
+            "color": "#16a085", "fill": "#1abc9c", "interior": False
         },
         {
             "nombre": "Bloque C",
-            "tipo": "Residencia Estudiantil",
-            "coords": [[0.4069889, -78.1709305], [0.4070848, -78.1710539], [0.4073098, -78.1708551], [0.4071998, -78.1707441]],
-            "color": "#16a085", "fill": "#1abc9c"
+            "tipo": "Residencia Estudiantil (Rectangular)",
+            "coords": [[0.4070848, -78.1710539], [0.4073098, -78.1708551], [0.4072065, -78.1707382], [0.4069815, -78.1709370]],
+            "color": "#16a085", "fill": "#1abc9c", "interior": False
         },
         {
             "nombre": "Bloque D",
-            "tipo": "Residencia Estudiantil",
-            "coords": [[0.4071311, -78.1711226], [0.4072699, -78.1710060], [0.4074375, -78.1712383], [0.4073188, -78.1713402]],
-            "color": "#16a085", "fill": "#1abc9c"
+            "tipo": "Residencia Estudiantil (Rectangular)",
+            "coords": [[0.4072699, -78.1710060], [0.4071311, -78.1711226], [0.4073159, -78.1713426], [0.4074547, -78.1712260]],
+            "color": "#16a085", "fill": "#1abc9c", "interior": False
         },
         {
             "nombre": "Bloque E",
-            "tipo": "Residencia Estudiantil",
-            "coords": [[0.4072779, -78.1709989], [0.4074687, -78.1712182], [0.4075837, -78.1711059], [0.4073990, -78.1708906]],
-            "color": "#16a085", "fill": "#1abc9c"
+            "tipo": "Residencia Estudiantil (Rectangular)",
+            "coords": [[0.4072764, -78.1709972], [0.4074687, -78.1712182], [0.4075913, -78.1711116], [0.4073990, -78.1708906]],
+            "color": "#16a085", "fill": "#1abc9c", "interior": False
         },
         {
-            "nombre": "Bloques F y G (Complejo Norte)",
-            "tipo": "Residencias Estudiantiles F y G",
-            "coords": [[0.4078955, -78.1714740], [0.4079200, -78.1709744], [0.4077735, -78.1709533], [0.4077326, -78.1712876], [0.4075736, -78.1712919], [0.4075616, -78.1714552]],
-            "color": "#27ae60", "fill": "#2ecc71"
+            "nombre": "Bloque F",
+            "tipo": "Residencia Estudiantil (Rectangular Independiente)",
+            "coords": [[0.4075616, -78.1714552], [0.4078955, -78.1714740], [0.4079049, -78.1713069], [0.4075710, -78.1712881]],
+            "color": "#27ae60", "fill": "#2ecc71", "interior": False
         },
         {
-            "nombre": "Centro Médico / Bienestar Estudiantil",
-            "tipo": "Salud y Vida Comunitaria",
-            "coords": [[0.4075180, -78.1706569], [0.4076196, -78.1705869], [0.4077849, -78.1707746], [0.4076870, -78.1708685]],
-            "color": "#e74c3c", "fill": "#ff7675"
+            "nombre": "Bloque G",
+            "tipo": "Residencia Estudiantil (Rectangular Independiente)",
+            "coords": [[0.4077735, -78.1709533], [0.4077295, -78.1712963], [0.4078877, -78.1713166], [0.4079317, -78.1709736]],
+            "color": "#27ae60", "fill": "#2ecc71", "interior": False
         },
         {
             "nombre": "Bloque H",
-            "tipo": "Residencia Estudiantil",
-            "coords": [[0.4075260, -78.1704759], [0.4074167, -78.1705805], [0.4071935, -78.1703274], [0.4073088, -78.1702238]],
-            "color": "#16a085", "fill": "#1abc9c"
+            "tipo": "Residencia Estudiantil (Rectangular)",
+            "coords": [[0.4071925, -78.1703263], [0.4074167, -78.1705805], [0.4075330, -78.1704780], [0.4073088, -78.1702238]],
+            "color": "#16a085", "fill": "#1abc9c", "interior": False
         },
         {
             "nombre": "Bloque I",
-            "tipo": "Residencia Estudiantil",
-            "coords": [[0.4069564, -78.1703052], [0.4070530, -78.1704112], [0.4073031, -78.1701959], [0.4072116, -78.1700833]],
-            "color": "#16a085", "fill": "#1abc9c"
+            "tipo": "Residencia Estudiantil (Rectangular)",
+            "coords": [[0.4072116, -78.1700833], [0.4069564, -78.1703052], [0.4070515, -78.1704146], [0.4073067, -78.1701927]],
+            "color": "#16a085", "fill": "#1abc9c", "interior": False
         },
+        {
+            "nombre": "Centro Médico / Bienestar Estudiantil",
+            "tipo": "Salud y Vida Comunitaria (Rectangular)",
+            "coords": [[0.4075180, -78.1706569], [0.4076870, -78.1708685], [0.4077926, -78.1707842], [0.4076236, -78.1705726]],
+            "color": "#e74c3c", "fill": "#ff7675", "interior": False
+        },
+        
+        # Edificio Complejo Senescyt (8 vértices arquitectónicos)
         {
             "nombre": "Edificio Senescyt",
-            "tipo": "Aulas, Rectorado y Decanatos",
+            "tipo": "Aulas, Rectorado y Decanatos (Polígono Matriz)",
             "coords": [[0.4071147, -78.1699317], [0.4069484, -78.1697289], [0.4068317, -78.1698328], [0.4068019, -78.1698043], [0.4063912, -78.1701510], [0.4062218, -78.1699562], [0.4061159, -78.1700531], [0.4064619, -78.1704732]],
-            "color": "#c0392b", "fill": "#e74c3c"
+            "color": "#c0392b", "fill": "#e74c3c", "interior": False
         },
+        
+        # Locales Interiores (Estrictamente contenidos dentro del Edificio Senescyt)
         {
-            "nombre": "Biblioteca (Edificio Senescyt)",
-            "tipo": "Biblioteca y Sala de Estudio",
-            "coords": [[0.4061032, -78.1700471], [0.4062215, -78.1699522], [0.4063898, -78.1701540], [0.4063425, -78.1701969], [0.4063677, -78.1702261], [0.4063140, -78.1702962]],
-            "color": "#2980b9", "fill": "#74b9ff"
+            "nombre": "Biblioteca Universitaria",
+            "tipo": "Sala de Estudio (Local Interior en Edificio Senescyt)",
+            "coords": [[0.4062218, -78.1699562], [0.4061159, -78.1700531], [0.4063150, -78.1702949], [0.4063677, -78.1702261], [0.4063425, -78.1701969], [0.4063898, -78.1701540], [0.4062959, -78.1700414]],
+            "color": "#1d6fa5", "fill": "#3498db", "interior": True
         },
         {
             "nombre": "Minimarket Krispan",
-            "tipo": "Servicios y Alimentación",
-            "coords": [[0.4065786, -78.1703790], [0.4065494, -78.1703109], [0.4064042, -78.1704011], [0.4064679, -78.1704722]],
-            "color": "#d35400", "fill": "#fab1a0"
+            "tipo": "Comercial / Cafetería (Local Interior en Edificio Senescyt)",
+            "coords": [[0.4065778, -78.1703771], [0.4065494, -78.1703109], [0.4064042, -78.1704011], [0.4064659, -78.1704699]],
+            "color": "#d35400", "fill": "#e67e22", "interior": True
         }
     ]
 
     for h in huellas_arquitectonicas:
+        dash = "3, 3" if h.get("interior") else None
+        weight = 2.5 if h.get("interior") else 2
+        opacity = 0.55 if h.get("interior") else 0.38
         folium.Polygon(
             locations=h["coords"],
             color=h["color"],
-            weight=2,
+            weight=weight,
+            dash_array=dash,
             fill=True,
             fill_color=h["fill"],
-            fill_opacity=0.38,
+            fill_opacity=opacity,
             tooltip=f"🏛️ {h['nombre']} ({h['tipo']})",
             popup=folium.Popup(f"""
-                <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 230px; line-height: 1.4;">
+                <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 240px; line-height: 1.4;">
                     <div style="color: {h['color']}; font-weight: bold; font-size: 13px; margin-bottom: 2px;">{h['nombre']}</div>
                     <span style="background: #eef2f7; color: #2c3e50; padding: 2px 6px; border-radius: 4px; font-size: 10px; font-weight: 600;">{h['tipo']}</span>
-                    <p style="margin: 6px 0 4px 0; font-size: 11px; color: #34495e;">Huella arquitectónica real delimitada con polígono GPS de alta precisión.</p>
+                    <p style="margin: 6px 0 4px 0; font-size: 11px; color: #34495e;">
+                        {'📍 Local interior situado dentro del perímetro del Edificio Senescyt.' if h.get('interior') else '📐 Huella arquitectónica regularizada de forma rectangular.'}
+                    </p>
                 </div>
-            """, max_width=250)
+            """, max_width=260)
         ).add_to(fg_edificios)
-
-    # Línea divisoria entre Bloques F y G
-    folium.PolyLine(
-        locations=[[0.4078891, -78.1713060], [0.4077295, -78.1712963]],
-        color="#ffffff",
-        weight=2.5,
-        dash_array="4, 4",
-        tooltip="División Bloque F y Bloque G"
-    ).add_to(fg_edificios)
 
     # -------------------------------------------------------------
     # 5. CANALES HÍDRICOS (CONVIVENCIA ECOLÓGICA)

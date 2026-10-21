@@ -34,120 +34,132 @@ Este inventario comprende las edificaciones residenciales, académicas, de inves
 
 ---
 
-## 2. Polígonos de Huella Arquitectónica Real (Zona Norte: Los Bloques, Centro Médico y Edificio Senescyt)
+## 2. Polígonos de Huella Arquitectónica Regularizada (Zona Norte)
 
-A continuación se detalla la cartografía de detalle correspondiente a las huellas arquitectónicas reales en el sector norte (Zona 3). Los vértices han sido ordenados topológicamente para formar polígonos no auto-intersecantes (*simple polygons*) con cálculo de superficie aproximada y centroides:
+Las edificaciones residenciales y de servicios comunitarios del campus presentan diseño arquitectónico modular de **planta rectangular regularizada** (a excepción del Edificio Senescyt, cuya morfología es poliédrica no rectangular de 8 vértices). 
 
-### 2.1. Complejo Residencial Estudiantil "Los Bloques" (Bloques A hasta I)
+A partir de las mediciones GPS de campo, se aplicó un ajuste geométrico de mínimos rectángulos orientados (*Oriented Bounding Boxes - OBB*) para garantizar ortogonalidad estricta (ángulos rectos a 90°), separando los Bloques F y G en edificios independientes y delimitando los locales interiores contenidos dentro del Edificio Senescyt:
 
-* **Bloque A:**
-  * *Uso:* Residencia Estudiantil | *Superficie aproximada:* ~575 m² | *Centroide:* `[0.4068092, -78.1705598]`
+### 2.1. Bloques Residenciales Estudiantiles (A, B, C, D, E, F, G, H, I)
+
+* **Bloque A (Rectangular):**
+  * *Uso:* Residencia Estudiantil | *Dimensiones:* ~18.4 m × 32.6 m | *Superficie:* ~600 m² | *Centroide:* `[0.4068090, -78.1705631]`
   * *Vértices (Lat, Lon):*
-    1. `0.4066463, -78.1705983`
+    1. `0.4069739, -78.1705279`
     2. `0.4068642, -78.1704038`
-    3. `0.4069739, -78.1705279`
-    4. `0.4067462, -78.1707139`
+    3. `0.4066441, -78.1705984`
+    4. `0.4067538, -78.1707225`
 
-* **Bloque B:**
-  * *Uso:* Residencia Estudiantil | *Superficie aproximada:* ~561 m² | *Centroide:* `[0.4069780, -78.1707285]`
-  * *Vértices ordenados (Lat, Lon):*
-    1. `0.4068220, -78.1707679`
-    2. `0.4069112, -78.1708846`
-    3. `0.4071388, -78.1706975`
-    4. `0.4070292, -78.1705711`
-
-* **Bloque C:**
-  * *Uso:* Residencia Estudiantil | *Superficie aproximada:* ~559 m² | *Centroide:* `[0.4071464, -78.1708965]`
-  * *Vértices ordenados (Lat, Lon):*
-    1. `0.4069889, -78.1709305`
-    2. `0.4070848, -78.1710539`
-    3. `0.4073098, -78.1708551`
-    4. `0.4071998, -78.1707441`
-
-* **Bloque D:**
-  * *Uso:* Residencia Estudiantil | *Superficie aproximada:* ~596 m² | *Centroide:* `[0.4072871, -78.1711741]`
+* **Bloque B (Rectangular):**
+  * *Uso:* Residencia Estudiantil | *Dimensiones:* ~18.6 m × 32.7 m | *Superficie:* ~607 m² | *Centroide:* `[0.4069719, -78.1707265]`
   * *Vértices (Lat, Lon):*
-    1. `0.4071311, -78.1711226`
-    2. `0.4072699, -78.1710060`
-    3. `0.4074375, -78.1712383`
-    4. `0.4073188, -78.1713402`
+    1. `0.4069112, -78.1708846`
+    2. `0.4071388, -78.1706975`
+    3. `0.4070326, -78.1705683`
+    4. `0.4068050, -78.1707554`
 
-* **Bloque E:**
-  * *Uso:* Residencia Estudiantil | *Superficie aproximada:* ~571 m² | *Centroide:* `[0.4074319, -78.1710534]`
-  * *Vértices ordenados (Lat, Lon):*
-    1. `0.4072779, -78.1709989`
+* **Bloque C (Rectangular):**
+  * *Uso:* Residencia Estudiantil | *Dimensiones:* ~17.3 m × 33.3 m | *Superficie:* ~577 m² | *Centroide:* `[0.4071456, -78.1708960]`
+  * *Vértices (Lat, Lon):*
+    1. `0.4070848, -78.1710539`
+    2. `0.4073098, -78.1708551`
+    3. `0.4072065, -78.1707382`
+    4. `0.4069815, -78.1709370`
+
+* **Bloque D (Rectangular):**
+  * *Uso:* Residencia Estudiantil | *Dimensiones:* ~20.1 m × 31.9 m | *Superficie:* ~642 m² | *Centroide:* `[0.4072929, -78.1711743]`
+  * *Vértices (Lat, Lon):*
+    1. `0.4072699, -78.1710060`
+    2. `0.4071311, -78.1711226`
+    3. `0.4073159, -78.1713426`
+    4. `0.4074547, -78.1712260`
+
+* **Bloque E (Rectangular):**
+  * *Uso:* Residencia Estudiantil | *Dimensiones:* ~18.0 m × 32.5 m | *Superficie:* ~586 m² | *Centroide:* `[0.4074338, -78.1710544]`
+  * *Vértices (Lat, Lon):*
+    1. `0.4072764, -78.1709972`
     2. `0.4074687, -78.1712182`
-    3. `0.4075837, -78.1711059`
+    3. `0.4075913, -78.1711116`
     4. `0.4073990, -78.1708906`
 
-* **Bloques F y G (Complejo Residencial Norte):**
-  * *Uso:* Residencias Estudiantiles Bloques F y G | *Superficie aproximada total:* ~1,361 m²
-  * *Centro Bloque F:* `0.4077272, -78.1713875`
-  * *Centro Bloque G:* `0.4078274, -78.1711498`
-  * *Polígono Perimetral Exterior (6 vértices):*
-    1. `0.4078955, -78.1714740`
-    2. `0.4079200, -78.1709744`
-    3. `0.4077735, -78.1709533`
-    4. `0.4077326, -78.1712876`
-    5. `0.4075736, -78.1712919`
-    6. `0.4075616, -78.1714552`
-  * *Línea Divisoria entre Bloques F y G:*
-    - Nodo 1: `0.4078891, -78.1713060`
-    - Nodo 2: `0.4077295, -78.1712963`
-
-* **Bloque H:**
-  * *Uso:* Residencia Estudiantil (Ala Este) | *Superficie aproximada:* ~632 m² | *Centroide:* `[0.4073607, -78.1704015]`
+* **Bloque F (Rectangular Independiente - Ala Occidental):**
+  * *Uso:* Residencia Estudiantil Bloque F | *Superficie:* ~690 m² | *Centroide:* `[0.4077333, -78.1713810]`
   * *Vértices (Lat, Lon):*
-    1. `0.4075260, -78.1704759`
+    1. `0.4075616, -78.1714552`
+    2. `0.4078955, -78.1714740`
+    3. `0.4079049, -78.1713069`
+    4. `0.4075710, -78.1712881`
+
+* **Bloque G (Rectangular Independiente - Ala Oriental):**
+  * *Uso:* Residencia Estudiantil Bloque G | *Superficie:* ~680 m² | *Centroide:* `[0.4078306, -78.1711349]`
+  * *Vértices (Lat, Lon):*
+    1. `0.4077735, -78.1709533`
+    2. `0.4077295, -78.1712963`
+    3. `0.4078877, -78.1713166`
+    4. `0.4079317, -78.1709736`
+
+* **Bloque H (Rectangular):**
+  * *Uso:* Residencia Estudiantil (Ala Este) | *Superficie:* ~647 m² | *Centroide:* `[0.4073628, -78.1704021]`
+  * *Vértices (Lat, Lon):*
+    1. `0.4071925, -78.1703263`
     2. `0.4074167, -78.1705805`
-    3. `0.4071935, -78.1703274`
+    3. `0.4075330, -78.1704780`
     4. `0.4073088, -78.1702238`
 
-* **Bloque I:**
-  * *Uso:* Residencia Estudiantil (Ala Sur de Bloques) | *Superficie aproximada:* ~594 m² | *Centroide:* `[0.4071311, -78.1702485]`
+* **Bloque I (Rectangular):**
+  * *Uso:* Residencia Estudiantil (Ala Sur de Bloques) | *Superficie:* ~604 m² | *Centroide:* `[0.4071316, -78.1702490]`
   * *Vértices (Lat, Lon):*
-    1. `0.4069564, -78.1703052`
-    2. `0.4070530, -78.1704112`
-    3. `0.4073031, -78.1701959`
-    4. `0.4072116, -78.1700833`
+    1. `0.4072116, -78.1700833`
+    2. `0.4069564, -78.1703052`
+    3. `0.4070515, -78.1704146`
+    4. `0.4073067, -78.1701927`
 
-### 2.2. Centro Médico Tipo A / Promoción de Vida Comunitaria (Bienestar Estudiantil)
-* *Uso:* Atención Médica y Soporte Estudiantil | *Superficie aproximada:* ~414 m² | *Centroide:* `[0.4076531, -78.1707239]`
-* *Vértices (Lat, Lon):*
-  1. `0.4075180, -78.1706569`
-  2. `0.4076196, -78.1705869`
-  3. `0.4077849, -78.1707746`
-  4. `0.4076870, -78.1708685`
-
-### 2.3. Complejo Académico y Administrativo Edificio Senescyt
-* *Uso:* Aulas, Laboratorios de Informática, Decanatos y Oficinas Rectorales | *Superficie aproximada:* ~3,475 m² | *Centroide:* `[0.4066329, -78.1700962]`
-* *Vértices Perimetrales (8 vértices):*
-  1. `0.4071147, -78.1699317`
-  2. `0.4069484, -78.1697289`
-  3. `0.4068317, -78.1698328`
-  4. `0.4068019, -78.1698043`
-  5. `0.4063912, -78.1701510`
-  6. `0.4062218, -78.1699562`
-  7. `0.4061159, -78.1700531`
-  8. `0.4064619, -78.1704732`
-
-* **Biblioteca Universitaria (dentro del Edificio Senescyt):**
-  * *Uso:* Sala de lectura y biblioteca ubicada en el ala sur del Edificio Senescyt (~546 m²; 94.3% solapamiento interno con el polígono Senescyt).
+* **Centro Médico Tipo A / Vida Comunitaria (Rectangular):**
+  * *Uso:* Salud y Bienestar Estudiantil | *Superficie:* ~451 m² | *Centroide:* `[0.4076553, -78.1707205]`
   * *Vértices (Lat, Lon):*
-    1. `0.4061032, -78.1700471`
-    2. `0.4062215, -78.1699522`
-    3. `0.4063898, -78.1701540`
-    4. `0.4063425, -78.1701969`
-    5. `0.4063677, -78.1702261`
-    6. `0.4063140, -78.1702962`
+    1. `0.4075180, -78.1706569`
+    2. `0.4076870, -78.1708685`
+    3. `0.4077926, -78.1707842`
+    4. `0.4076236, -78.1705726`
 
-* **Minimarket Krispan (dentro del Edificio Senescyt):**
-  * *Uso:* Abastecimiento y cafetería en el ala oeste del Edificio Senescyt (~162 m²; 97.2% solapamiento interno con Senescyt).
-  * *Vértices (Lat, Lon):*
-    1. `0.4065786, -78.1703790`
+---
+
+### 2.2. Complejo Edificio Senescyt y Locales Interiores Contenidos
+
+El **Edificio Senescyt** es la principal estructura académica del sector norte, caracterizado por su volumetría escalonada y forma poliédrica no rectangular. Los locales de servicio académico y comercial se encuentran **estrictamente contenidos dentro de su perímetro**:
+
+* **Edificio Senescyt (Polígono Matriz - 8 vértices):**
+  * *Uso:* Aulas Magnas, Laboratorios de Informática, Decanatos y Rectorado | *Superficie:* ~3,475 m² | *Centroide:* `[0.4066329, -78.1700962]`
+  * *Vértices Perimetrales:*
+    1. `0.4071147, -78.1699317`
+    2. `0.4069484, -78.1697289`
+    3. `0.4068317, -78.1698328`
+    4. `0.4068019, -78.1698043`
+    5. `0.4063912, -78.1701510`
+    6. `0.4062218, -78.1699562`
+    7. `0.4061159, -78.1700531`
+    8. `0.4064619, -78.1704732`
+
+* **Biblioteca Universitaria (Local Interior en Edificio Senescyt):**
+  * *Uso:* Biblioteca y sala de lectura situada en el ala sur del Edificio Senescyt (estrictamente interior).
+  * *Superficie interna:* ~514 m² | *Centroide:* `[0.4062547, -78.1701150]`
+  * *Vértices Interiores (Lat, Lon):*
+    1. `0.4062218, -78.1699562`
+    2. `0.4061159, -78.1700531`
+    3. `0.4063150, -78.1702949`
+    4. `0.4063677, -78.1702261`
+    5. `0.4063425, -78.1701969`
+    6. `0.4063898, -78.1701540`
+    7. `0.4062959, -78.1700414`
+
+* **Minimarket Krispan (Local Interior en Edificio Senescyt):**
+  * *Uso:* Cafetería y tienda de conveniencia en el ala oeste del Edificio Senescyt (estrictamente interior).
+  * *Superficie interna:* ~158 m² | *Centroide:* `[0.4064965, -78.1703919]`
+  * *Vértices Interiores (Lat, Lon):*
+    1. `0.4065778, -78.1703771`
     2. `0.4065494, -78.1703109`
     3. `0.4064042, -78.1704011`
-    4. `0.4064679, -78.1704722`
+    4. `0.4064659, -78.1704699`
 
 ---
 
@@ -252,9 +264,9 @@ Polígonos espaciales utilizados para calcular las ponderaciones de población a
 
 ---
 
-## 8. Snippet GeoJSON Completo (Puntos e Huellas Poligonales) para SIG
+## 8. Snippet GeoJSON Oficial (Hitos, Huellas Rectangulares y Locales Interiores)
 
-Estructura GeoJSON oficial con puntos de hitos, trampas y las huellas arquitectónicas reales para importar directamente en QGIS, ArcGIS o Leaflet:
+Estructura GeoJSON estándar (RFC 7946) con geometría de puntos para hitos universitarios y polígonos ortogonales para huellas arquitectónicas:
 
 ```json
 {
@@ -270,18 +282,19 @@ Estructura GeoJSON oficial con puntos de hitos, trampas y las huellas arquitect�
     { "type": "Feature", "properties": { "id": "H-09", "nombre": "Residencias Patrimoniales", "tipo": "Residencial" }, "geometry": { "type": "Point", "coordinates": [-78.173836, 0.402297] } },
     { "type": "Feature", "properties": { "id": "H-10", "nombre": "Residencias Las Multis", "tipo": "Residencial" }, "geometry": { "type": "Point", "coordinates": [-78.174800, 0.402750] } },
     { "type": "Feature", "properties": { "id": "H-13", "nombre": "Parada (Arco de las Pats)", "tipo": "Transporte" }, "geometry": { "type": "Point", "coordinates": [-78.172800, 0.402550] } },
-    { "type": "Feature", "properties": { "id": "POLY-A", "nombre": "Huella Bloque A", "tipo": "Edificación Residencial" }, "geometry": { "type": "Polygon", "coordinates": [[[-78.1705983, 0.4066463], [-78.1704038, 0.4068642], [-78.1705279, 0.4069739], [-78.1707139, 0.4067462], [-78.1705983, 0.4066463]]] } },
-    { "type": "Feature", "properties": { "id": "POLY-B", "nombre": "Huella Bloque B", "tipo": "Edificación Residencial" }, "geometry": { "type": "Polygon", "coordinates": [[[-78.1707679, 0.4068220], [-78.1708846, 0.4069112], [-78.1706975, 0.4071388], [-78.1705711, 0.4070292], [-78.1707679, 0.4068220]]] } },
-    { "type": "Feature", "properties": { "id": "POLY-C", "nombre": "Huella Bloque C", "tipo": "Edificación Residencial" }, "geometry": { "type": "Polygon", "coordinates": [[[-78.1709305, 0.4069889], [-78.1710539, 0.4070848], [-78.1708551, 0.4073098], [-78.1707441, 0.4071998], [-78.1709305, 0.4069889]]] } },
-    { "type": "Feature", "properties": { "id": "POLY-D", "nombre": "Huella Bloque D", "tipo": "Edificación Residencial" }, "geometry": { "type": "Polygon", "coordinates": [[[-78.1711226, 0.4071311], [-78.1710060, 0.4072699], [-78.1712383, 0.4074375], [-78.1713402, 0.4073188], [-78.1711226, 0.4071311]]] } },
-    { "type": "Feature", "properties": { "id": "POLY-E", "nombre": "Huella Bloque E", "tipo": "Edificación Residencial" }, "geometry": { "type": "Polygon", "coordinates": [[[-78.1709989, 0.4072779], [-78.1712182, 0.4074687], [-78.1711059, 0.4075837], [-78.1708906, 0.4073990], [-78.1709989, 0.4072779]]] } },
-    { "type": "Feature", "properties": { "id": "POLY-FG", "nombre": "Huella Bloques F y G", "tipo": "Complejo Residencial" }, "geometry": { "type": "Polygon", "coordinates": [[[-78.1714740, 0.4078955], [-78.1709744, 0.4079200], [-78.1709533, 0.4077735], [-78.1712876, 0.4077326], [-78.1712919, 0.4075736], [-78.1714552, 0.4075616], [-78.1714740, 0.4078955]]] } },
-    { "type": "Feature", "properties": { "id": "POLY-MED", "nombre": "Centro Médico / Bienestar", "tipo": "Salud / Bienestar" }, "geometry": { "type": "Polygon", "coordinates": [[[-78.1706569, 0.4075180], [-78.1705869, 0.4076196], [-78.1707746, 0.4077849], [-78.1708685, 0.4076870], [-78.1706569, 0.4075180]]] } },
-    { "type": "Feature", "properties": { "id": "POLY-H", "nombre": "Huella Bloque H", "tipo": "Edificación Residencial" }, "geometry": { "type": "Polygon", "coordinates": [[[-78.1704759, 0.4075260], [-78.1705805, 0.4074167], [-78.1703274, 0.4071935], [-78.1702238, 0.4073088], [-78.1704759, 0.4075260]]] } },
-    { "type": "Feature", "properties": { "id": "POLY-I", "nombre": "Huella Bloque I", "tipo": "Edificación Residencial" }, "geometry": { "type": "Polygon", "coordinates": [[[-78.1703052, 0.4069564], [-78.1704112, 0.4070530], [-78.1701959, 0.4073031], [-78.1700833, 0.4072116], [-78.1703052, 0.4069564]]] } },
-    { "type": "Feature", "properties": { "id": "POLY-SENESCYT", "nombre": "Edificio Senescyt", "tipo": "Aulas / Rectorado" }, "geometry": { "type": "Polygon", "coordinates": [[[-78.1699317, 0.4071147], [-78.1697289, 0.4069484], [-78.1698328, 0.4068317], [-78.1698043, 0.4068019], [-78.1701510, 0.4063912], [-78.1699562, 0.4062218], [-78.1700531, 0.4061159], [-78.1704732, 0.4064619], [-78.1699317, 0.4071147]]] } },
-    { "type": "Feature", "properties": { "id": "POLY-BIB-SEN", "nombre": "Biblioteca (Edificio Senescyt)", "tipo": "Biblioteca" }, "geometry": { "type": "Polygon", "coordinates": [[[-78.1700471, 0.4061032], [-78.1699522, 0.4062215], [-78.1701540, 0.4063898], [-78.1701969, 0.4063425], [-78.1702261, 0.4063677], [-78.1702962, 0.4063140], [-78.1700471, 0.4061032]]] } },
-    { "type": "Feature", "properties": { "id": "POLY-KRISPAN", "nombre": "Minimarket Krispan", "tipo": "Servicios" }, "geometry": { "type": "Polygon", "coordinates": [[[-78.1703790, 0.4065786], [-78.1703109, 0.4065494], [-78.1704011, 0.4064042], [-78.1704722, 0.4064679], [-78.1703790, 0.4065786]]] } }
+    { "type": "Feature", "properties": { "id": "RECT-A", "nombre": "Bloque A (Rectangular)", "tipo": "Residencial" }, "geometry": { "type": "Polygon", "coordinates": [[[-78.1705279, 0.4069739], [-78.1704038, 0.4068642], [-78.1705984, 0.4066441], [-78.1707225, 0.4067538], [-78.1705279, 0.4069739]]] } },
+    { "type": "Feature", "properties": { "id": "RECT-B", "nombre": "Bloque B (Rectangular)", "tipo": "Residencial" }, "geometry": { "type": "Polygon", "coordinates": [[[-78.1708846, 0.4069112], [-78.1706975, 0.4071388], [-78.1705683, 0.4070326], [-78.1707554, 0.4068050], [-78.1708846, 0.4069112]]] } },
+    { "type": "Feature", "properties": { "id": "RECT-C", "nombre": "Bloque C (Rectangular)", "tipo": "Residencial" }, "geometry": { "type": "Polygon", "coordinates": [[[-78.1710539, 0.4070848], [-78.1708551, 0.4073098], [-78.1707382, 0.4072065], [-78.1709370, 0.4069815], [-78.1710539, 0.4070848]]] } },
+    { "type": "Feature", "properties": { "id": "RECT-D", "nombre": "Bloque D (Rectangular)", "tipo": "Residencial" }, "geometry": { "type": "Polygon", "coordinates": [[[-78.1710060, 0.4072699], [-78.1711226, 0.4071311], [-78.1713426, 0.4073159], [-78.1712260, 0.4074547], [-78.1710060, 0.4072699]]] } },
+    { "type": "Feature", "properties": { "id": "RECT-E", "nombre": "Bloque E (Rectangular)", "tipo": "Residencial" }, "geometry": { "type": "Polygon", "coordinates": [[[-78.1709972, 0.4072764], [-78.1712182, 0.4074687], [-78.1711116, 0.4075913], [-78.1708906, 0.4073990], [-78.1709972, 0.4072764]]] } },
+    { "type": "Feature", "properties": { "id": "RECT-F", "nombre": "Bloque F (Rectangular)", "tipo": "Residencial" }, "geometry": { "type": "Polygon", "coordinates": [[[-78.1714552, 0.4075616], [-78.1714740, 0.4078955], [-78.1713069, 0.4079049], [-78.1712881, 0.4075710], [-78.1714552, 0.4075616]]] } },
+    { "type": "Feature", "properties": { "id": "RECT-G", "nombre": "Bloque G (Rectangular)", "tipo": "Residencial" }, "geometry": { "type": "Polygon", "coordinates": [[[-78.1709533, 0.4077735], [-78.1712963, 0.4077295], [-78.1713166, 0.4078877], [-78.1709736, 0.4079317], [-78.1709533, 0.4077735]]] } },
+    { "type": "Feature", "properties": { "id": "RECT-H", "nombre": "Bloque H (Rectangular)", "tipo": "Residencial" }, "geometry": { "type": "Polygon", "coordinates": [[[-78.1703263, 0.4071925], [-78.1705805, 0.4074167], [-78.1704780, 0.4075330], [-78.1702238, 0.4073088], [-78.1703263, 0.4071925]]] } },
+    { "type": "Feature", "properties": { "id": "RECT-I", "nombre": "Bloque I (Rectangular)", "tipo": "Residencial" }, "geometry": { "type": "Polygon", "coordinates": [[[-78.1700833, 0.4072116], [-78.1703052, 0.4069564], [-78.1704146, 0.4070515], [-78.1701927, 0.4073067], [-78.1700833, 0.4072116]]] } },
+    { "type": "Feature", "properties": { "id": "RECT-MED", "nombre": "Centro Médico / Bienestar", "tipo": "Salud / Bienestar" }, "geometry": { "type": "Polygon", "coordinates": [[[-78.1706569, 0.4075180], [-78.1708685, 0.4076870], [-78.1707842, 0.4077926], [-78.1705726, 0.4076236], [-78.1706569, 0.4075180]]] } },
+    { "type": "Feature", "properties": { "id": "POLY-SENESCYT", "nombre": "Edificio Senescyt", "tipo": "Aulas / Rectorado (Poliédrico)" }, "geometry": { "type": "Polygon", "coordinates": [[[-78.1699317, 0.4071147], [-78.1697289, 0.4069484], [-78.1698328, 0.4068317], [-78.1698043, 0.4068019], [-78.1701510, 0.4063912], [-78.1699562, 0.4062218], [-78.1700531, 0.4061159], [-78.1704732, 0.4064619], [-78.1699317, 0.4071147]]] } },
+    { "type": "Feature", "properties": { "id": "INT-BIB", "nombre": "Biblioteca (Interior Senescyt)", "tipo": "Biblioteca / Estudio" }, "geometry": { "type": "Polygon", "coordinates": [[[-78.1699562, 0.4062218], [-78.1700531, 0.4061159], [-78.1702949, 0.4063150], [-78.1702261, 0.4063677], [-78.1701969, 0.4063425], [-78.1701540, 0.4063898], [-78.1700414, 0.4062959], [-78.1699562, 0.4062218]]] } },
+    { "type": "Feature", "properties": { "id": "INT-KRISPAN", "nombre": "Minimarket Krispan (Interior Senescyt)", "tipo": "Comercial / Cafetería" }, "geometry": { "type": "Polygon", "coordinates": [[[-78.1703771, 0.4065778], [-78.1703109, 0.4065494], [-78.1704011, 0.4064042], [-78.1704699, 0.4064659], [-78.1703771, 0.4065778]]] } }
   ]
 }
 ```
