@@ -1072,21 +1072,29 @@ El sistema hidrológico del campus combina **canales de agua corriente rápida (
 
 ---
 
-## 7. Polígonos de Delimitación de Zonas de Molestia y Picaduras
+## 7. Modelado Epidemiológico: Mapa de Calor Continuo y Epicentros de Picaduras (Simulium spp.)
 
-Polígonos espaciales utilizados para calcular las ponderaciones de población afectada ($w_1 = 0.35, w_2 = 0.25, w_3 = 0.30, w_4 = 0.10$):
+En lugar de polígonos geométricos con bordes rectos artificiales, la distribución espacial de las arenillas hematófagas (*Simulium* spp.) se modela como un **campo continuo de densidad epidemiológica (Mapa de Calor / Kernel Density Estimation)**. Este gradiente biológico difuso se calibra a partir de los focos lóticos de emergencia larvaria (canales y acequias) y la atracción hacia los cuatro epicentros de emisión humana ($\text{CO}_2$, gradientes térmicos y microbiota cutánea):
 
-* **Zona 1: Sector Residencias Las Pats y Multis (Polígono Naranja - Sur):**
-  - Vértices: `[0.4032, -78.1755]`, `[0.4034, -78.1742]`, `[0.4025, -78.1725]`, `[0.4014, -78.1730]`, `[0.4010, -78.1750]`, `[0.4018, -78.1762]`
-  - Área aproximada: ~28,500 m² | Habitantes: ~320 personas.
+* **Epicentro 1: Sector Residencial Sur (Las Multis, Las T's y Las Pats):**
+  - Coordenadas de núcleo: `0.4022000, -78.1745000` | Ponderación demográfica: $w_1 = 0.35$
+  - Población expuesta: ~550 personas (estudiantes, investigadores y docentes).
+  - Foco hídrico: Canal Suroeste (~124.5 m) y acequias de drenaje.
 
-* **Zona 2: Sector Ingenio Azucarero (Polígono Azul - Centro):**
-  - Vértices: `[0.4058, -78.1748]`, `[0.4057, -78.1735]`, `[0.4045, -78.1720]`, `[0.4038, -78.1730]`, `[0.4043, -78.1755]`
-  - Área aproximada: ~19,200 m² | Usuarios: ~250 personas.
+* **Epicentro 2: Sector Central (Casco Histórico Ingenio Azucarero y San José):**
+  - Coordenadas de núcleo: `0.4048000, -78.1738000` | Ponderación demográfica: $w_2 = 0.25$
+  - Población expuesta: ~250 personas (aulas B e I, laboratorios, biblioteca y caminerías).
+  - Foco hídrico: Acequia Secundaria Ingenio y arboledas sombreadas de reposo adulto.
 
-* **Zona 3: Sector Senescyt y Los Bloques (Polígono Rojo - Norte):**
-  - Vértices: `[0.4076, -78.1720]`, `[0.4076, -78.1698]`, `[0.4060, -78.1695]`, `[0.4058, -78.1712]`, `[0.4068, -78.1718]`
-  - Área aproximada: ~22,800 m² | Usuarios: ~450 personas.
+* **Epicentro 3: Sector Académico Norte (Edificio Senescyt y Residencias Los Bloques):**
+  - Coordenadas de núcleo: `0.4068000, -78.1708000` | Ponderación demográfica: $w_3 = 0.30$
+  - Población expuesta: ~450 personas (aulas magnas, decanatos y Bloques A-I).
+  - Foco hídrico: Canal de Riego Principal (a $<35\text{ m}$ de ventanas este).
+
+* **Epicentro 4: Sector Recursos Hídricos Este (Reservorio Agroforestal y Periferia):**
+  - Coordenadas de núcleo: `0.4041214, -78.1683157` | Ponderación demográfica: $w_4 = 0.10$
+  - Población expuesta: ~120 usuarios (Comedor doña Perci, residencias externas Sacha Home).
+  - Foco hídrico: Canal Este (34 vértices) y Laguna Artificial (~2,006 m²).
 
 ---
 

@@ -74,7 +74,7 @@ Por directriz explícita del mentor Ing. José Luis Flores M.Sc., se investigó 
 A partir de la cartografía georreferenciada de Yachay Tech (170 entidades GIS validadas) y la inspección de puntos críticos, se delimitaron y calibraron los sectores neurálgicos del campus que albergan las **80 edificaciones universitarias y de soporte**:
 
 ```
-[FIGURA 1: DIAGNÓSTICO ESPACIAL Y PUNTOS CRÍTICOS DEL CAMPUS YACHAY TECH]
+[FIGURA 1: DIAGNÓSTICO EPIDEMIOLÓGICO: MAPA DE CALOR DE PICADURAS Y FOCOS LARVARIOS EN EL CAMPUS YACHAY TECH]
 Archivo de imagen: reto3_Control_Arenillas/Figura1_Diagnostico_Espacial_Yachay.png (300 DPI, Formato APA)
 ```
 

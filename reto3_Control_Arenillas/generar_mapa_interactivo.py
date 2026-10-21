@@ -7,6 +7,7 @@ Calibrado con Coordenadas GPS Oficiales de Google Maps y Capas Base Optimizadas
 
 import os
 import base64
+import random
 import folium
 from folium import plugins
 
@@ -113,7 +114,7 @@ def generar_mapa():
     # -------------------------------------------------------------
     # 2. FEATURE GROUPS (CAPAS TEMÁTICAS HUMANIZADAS)
     # -------------------------------------------------------------
-    fg_zonas = folium.FeatureGroup(name="⚠️ Diagnóstico: Zonas de Molestia y Picaduras", show=False)
+    fg_zonas = folium.FeatureGroup(name="🔥 Diagnóstico: Mapa de Calor de Picaduras y Riesgo (Simulium spp.)", show=False)
     fg_edificios = folium.FeatureGroup(name="🏛️ Vida en el Campus (Residencias, Aulas, Cultura)", show=True)
     fg_canales = folium.FeatureGroup(name="💧 Red Hídrica y Acequias (Focos Lóticos)", show=True)
     fg_biocontrol = folium.FeatureGroup(name="🦗 Biocontrol Acuático (Libélulas Nativas + Bti)", show=True)
@@ -122,98 +123,224 @@ def generar_mapa():
     fg_trampas = folium.FeatureGroup(name="🎯 Bio-Monitoreo Continuo de Bienestar (6 Puntos)", show=True)
 
     # -------------------------------------------------------------
-    # 3. POLÍGONOS DE ZONAS CRÍTICAS (CON ENFOQUE HUMANO)
+    # COORDENADAS TOPOGRÁFICAS DE LOS CANALES LÓTICOS (FOCOS LARVARIOS)
     # -------------------------------------------------------------
-    poly_z1 = [
-        [0.4032, -78.1755],
-        [0.4034, -78.1742],
-        [0.4025, -78.1725],
-        [0.4014, -78.1730],
-        [0.4010, -78.1750],
-        [0.4018, -78.1762]
+    canal_coords = [
+        [0.4085, -78.1690],
+        [0.4072, -78.1705],
+        [0.4058, -78.1715],
+        [0.4048, -78.1720],
+        [0.4035, -78.1725],
+        [0.4015, -78.1728]
     ]
-    folium.Polygon(
-        locations=poly_z1,
-        color="#e67e22",
-        weight=2,
-        dash_array="6, 6",
-        fill=True,
-        fill_color="#f39c12",
-        fill_opacity=0.20,
-        popup=folium.Popup("""
-            <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 270px; line-height: 1.4;">
-                <div style="background: #e67e22; color: white; padding: 6px 10px; border-radius: 6px 6px 0 0; font-weight: bold; font-size: 13px;">
-                    ⚠️ Diagnóstico: Zona 1 - Hogar Estudiantil
-                </div>
-                <div style="padding: 10px; border: 1px solid #e67e22; border-top: none; border-radius: 0 0 6px 6px; background: #fffdfa;">
-                    <b>👥 Comunidad Afectada:</b> ~320 estudiantes en Residencias Patrimoniales y Las Multis.<br>
-                    <b>💔 Impacto Humano:</b> Picaduras dolorosas en horas de descanso y recreación en la Concha Acústica; interrupción del sueño y dermatitis.<br>
-                    <b>🌿 Solución Verde:</b> Cerca Viva 1 (380m) de protección perimetral + aromaterapia con arrayán y molle.
-                </div>
-            </div>
-        """, max_width=290),
-        tooltip="Zona 1: Multifamiliares y Pats (Diagnóstico de Afectación)"
+    acequia_ingenio = [
+        [0.4056, -78.1738],
+        [0.4050, -78.1732],
+        [0.4045, -78.1728]
+    ]
+    canal_suroeste = [
+        [0.4009199, -78.1764438],
+        [0.4012991, -78.1753884]
+    ]
+    canal_este_topografico_34pts = [
+        [0.4031240, -78.1710613],
+        [0.4031186, -78.1708376],
+        [0.4031018, -78.1707763],
+        [0.4030834, -78.1707354],
+        [0.4030630, -78.1706915],
+        [0.4030583, -78.1706194],
+        [0.4030512, -78.1705781],
+        [0.4030764, -78.1705517],
+        [0.4030700, -78.1705198],
+        [0.4030418, -78.1704859],
+        [0.4030428, -78.1704541],
+        [0.4030526, -78.1704125],
+        [0.4030626, -78.1703478],
+        [0.4030945, -78.1702814],
+        [0.4031364, -78.1702016],
+        [0.4031434, -78.1701560],
+        [0.4031649, -78.1701269],
+        [0.4031914, -78.1700806],
+        [0.4032437, -78.1700253],
+        [0.4032775, -78.1699897],
+        [0.4033355, -78.1699559],
+        [0.4033992, -78.1699193],
+        [0.4034358, -78.1698828],
+        [0.4034780, -78.1698503],
+        [0.4035283, -78.1698037],
+        [0.4035648, -78.1697641],
+        [0.4036433, -78.1696551],
+        [0.4037057, -78.1695582],
+        [0.4037570, -78.1694912],
+        [0.4038066, -78.1694345],
+        [0.4039819, -78.1692012],
+        [0.4040671, -78.1690939],
+        [0.4040768, -78.1690268],
+        [0.4041009, -78.1689487]
+    ]
+
+    # -------------------------------------------------------------
+    # 3. MAPA DE CALOR: DENSIDAD EPIDEMIOLÓGICA DE PICADURAS Y RIESGO
+    # -------------------------------------------------------------
+    # Se sustituyen los polígonos geométricos con bordes rectos artificiales por un
+    # modelado continuo orgánico (HeatMap) calibrado con los focos lóticos y
+    # la atracción hematófaga por densidad humana (CO2, gradientes térmicos y microbiota cutánea).
+    rng = random.Random(42)
+    heat_data = []
+
+    # 1. Puntos a lo largo del Canal Principal (Eje Norte-Sur)
+    for i in range(len(canal_coords) - 1):
+        p1, p2 = canal_coords[i], canal_coords[i+1]
+        n_steps = 14
+        for s in range(n_steps + 1):
+            alpha = s / n_steps
+            lat = p1[0] + alpha * (p2[0] - p1[0])
+            lon = p1[1] + alpha * (p2[1] - p1[1])
+            heat_data.append([lat, lon, 1.0])
+            for _ in range(2):
+                heat_data.append([lat + rng.gauss(0, 0.00014), lon + rng.gauss(0, 0.00014), 0.82])
+
+    # 2. Puntos a lo largo de la Acequia Secundaria Ingenio
+    for i in range(len(acequia_ingenio) - 1):
+        p1, p2 = acequia_ingenio[i], acequia_ingenio[i+1]
+        for s in range(10):
+            alpha = s / 9
+            lat = p1[0] + alpha * (p2[0] - p1[0])
+            lon = p1[1] + alpha * (p2[1] - p1[1])
+            heat_data.append([lat, lon, 0.95])
+            heat_data.append([lat + rng.gauss(0, 0.00012), lon + rng.gauss(0, 0.00012), 0.78])
+
+    # 3. Puntos a lo largo del Canal Suroeste (Concha Acústica / Multifamiliares)
+    for s in range(12):
+        alpha = s / 11
+        lat = canal_suroeste[0][0] + alpha * (canal_suroeste[1][0] - canal_suroeste[0][0])
+        lon = canal_suroeste[0][1] + alpha * (canal_suroeste[1][1] - canal_suroeste[0][1])
+        heat_data.append([lat, lon, 0.95])
+        heat_data.append([lat + rng.gauss(0, 0.00012), lon + rng.gauss(0, 0.00012), 0.80])
+
+    # 4. Puntos a lo largo del Canal Este Topográfico (34 Vértices)
+    for pt in canal_este_topografico_34pts:
+        heat_data.append([pt[0], pt[1], 0.92])
+        heat_data.append([pt[0] + rng.gauss(0, 0.00010), pt[1] + rng.gauss(0, 0.00010), 0.75])
+
+    # 5. Epicentros de atracción humana (CO2 y emisión térmica)
+    # Sector Sur: Las Multis, Las T's, Las Pats, Concha Acústica (~550 hab.)
+    for _ in range(120):
+        lat = rng.gauss(0.4022, 0.00075)
+        lon = rng.gauss(-78.1745, 0.00095)
+        w = rng.uniform(0.75, 1.0)
+        heat_data.append([lat, lon, w])
+
+    # Sector Central: Casco Histórico Ingenio Azucarero, Aulas B/I, Biblioteca (~250 hab.)
+    for _ in range(90):
+        lat = rng.gauss(0.4048, 0.00060)
+        lon = rng.gauss(-78.1738, 0.00075)
+        w = rng.uniform(0.70, 0.95)
+        heat_data.append([lat, lon, w])
+
+    # Sector Norte: Edificio Senescyt, Krispan, Residencias Los Bloques (~450 hab.)
+    for _ in range(105):
+        lat = rng.gauss(0.4068, 0.00060)
+        lon = rng.gauss(-78.1708, 0.00070)
+        w = rng.uniform(0.78, 1.0)
+        heat_data.append([lat, lon, w])
+
+    # Sector Este: Reservorio Agroforestal y Periferia (~120 hab.)
+    for _ in range(45):
+        lat = rng.gauss(0.4041, 0.00045)
+        lon = rng.gauss(-78.1685, 0.00055)
+        w = rng.uniform(0.60, 0.85)
+        heat_data.append([lat, lon, w])
+
+    # Capa HeatMap con gradiente térmico continuo de alta visibilidad
+    gradient_calor = {
+        0.15: '#2ecc71',  # Verde esmeralda: Baja presión / dispersión periférica
+        0.35: '#f1c40f',  # Amarillo ámbar: Presión de picaduras moderada
+        0.60: '#e67e22',  # Naranja: Alta molestia en caminerías y aulas
+        0.85: '#e74c3c',  # Rojo carmesí: Foco lótico crítico y dormitorios contiguos
+        1.00: '#8e44ad'   # Púrpura profundo: Máxima densidad larvaria y telmófaga
+    }
+    plugins.HeatMap(
+        heat_data,
+        name="🔥 Mapa de Calor Epidemiológico (Simulium spp.)",
+        min_opacity=0.35,
+        max_zoom=18,
+        radius=28,
+        blur=20,
+        gradient=gradient_calor
     ).add_to(fg_zonas)
 
-    poly_z2 = [
-        [0.4058, -78.1748],
-        [0.4057, -78.1735],
-        [0.4045, -78.1720],
-        [0.4038, -78.1730],
-        [0.4043, -78.1755]
+    # Marcadores de Epicentros Epidemiológicos (Badges Interactivos con Diagnóstico Completo)
+    epicentros_diagnostico = [
+        {
+            "nombre": "Epicentro Sur: Hogar Estudiantil y Docente",
+            "sector": "Las Multis, Las T's y Las Pats",
+            "coords": [0.4022, -78.1745],
+            "poblacion": "~550 estudiantes, investigadores y docentes residentes",
+            "foco": "Canal Suroeste (~124.5 m) y acequia sur de desagüe",
+            "impacto": "Ataque diurno en horas de descanso y recreación en la Concha Acústica; interrupción del sueño, pápulas eritematosas y prurito prolongado.",
+            "solucion": "Cerca Viva 1 (380 m) con protocolo 100% libre de romero en dormitorios (sustituido por cedrón y huacatay) + aromaterapia basal.",
+            "color": "#e74c3c"
+        },
+        {
+            "nombre": "Epicentro Central: Corazón Académico y Patrimonial",
+            "sector": "Ingenio Azucarero, Aulas B/I y Biblioteca Patrimonial",
+            "coords": [0.4048, -78.1738],
+            "poblacion": "~250 estudiantes, docentes y visitantes diarios",
+            "foco": "Acequia Secundaria Ingenio y arboledas históricas sombreadas",
+            "impacto": "Microclima de sombra y bajo viento ideal para reposo de hembras adultas; distracción en lectura exterior y picaduras en caminerías.",
+            "solucion": "Cerca Viva 2 (280 m) como cortina rompevientos con molle y lavanda melífera.",
+            "color": "#e67e22"
+        },
+        {
+            "nombre": "Epicentro Norte: Aulas Magnas y Residencias",
+            "sector": "Edificio Senescyt y Residencias Los Bloques A-I",
+            "coords": [0.4068, -78.1708],
+            "poblacion": "~450 estudiantes y personal administrativo",
+            "foco": "Canal de Riego Principal (a menos de 35 m de las ventanas este)",
+            "impacto": "Imposibilidad de ventilación natural en clases durante horas de la tarde; estrés en exámenes y consultas frecuentes al Centro Médico por dermatitis.",
+            "solucion": "Cerca Viva 3 (320 m) con estrato alto rompevientos y reducción proyectada del 82.8% de penetración.",
+            "color": "#c0392b"
+        },
+        {
+            "nombre": "Epicentro Este: Recursos Hídricos y Conducción",
+            "sector": "Reservorio Agroforestal, Comedor doña Perci y Sacha Home",
+            "coords": [0.4041, -78.1685],
+            "poblacion": "~120 usuarios y comensales diarios",
+            "foco": "Canal Sinuoso Este (34 vértices) y Laguna Artificial (~2,006 m²)",
+            "impacto": "Zona de transición lótica a léntica con alta emergencia ninfal y vuelo de dispersión hacia alojamientos externos y comedores periféricos.",
+            "solucion": "Santuario de odonatos (libélulas nativas) en reservorio y bio-dosificación con Bti en el canal de alimentación.",
+            "color": "#8e44ad"
+        }
     ]
-    folium.Polygon(
-        locations=poly_z2,
-        color="#3498db",
-        weight=2,
-        dash_array="6, 6",
-        fill=True,
-        fill_color="#3498db",
-        fill_opacity=0.20,
-        popup=folium.Popup("""
-            <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 270px; line-height: 1.4;">
-                <div style="background: #2980b9; color: white; padding: 6px 10px; border-radius: 6px 6px 0 0; font-weight: bold; font-size: 13px;">
-                    ⚠️ Diagnóstico: Zona 2 - Corazón Académico
-                </div>
-                <div style="padding: 10px; border: 1px solid #2980b9; border-top: none; border-radius: 0 0 6px 6px; background: #fbfdff;">
-                    <b>👥 Comunidad Afectada:</b> Estudiantes, docentes e investigadores en Biblioteca y Laboratorios.<br>
-                    <b>💔 Impacto Humano:</b> Pérdida de concentración por ataque diurno constante de jejenes en caminerías patrimoniales.<br>
-                    <b>🌿 Solución Verde:</b> Cerca Viva 2 (280m) que aísla las acequias y crea senderos perfumados con lavanda y hierba luisa.
-                </div>
-            </div>
-        """, max_width=290),
-        tooltip="Zona 2: Ingenio Azucarero (Diagnóstico de Afectación)"
-    ).add_to(fg_zonas)
 
-    poly_z3 = [
-        [0.4076, -78.1720],
-        [0.4076, -78.1698],
-        [0.4060, -78.1695],
-        [0.4058, -78.1712],
-        [0.4068, -78.1718]
-    ]
-    folium.Polygon(
-        locations=poly_z3,
-        color="#e74c3c",
-        weight=2,
-        dash_array="6, 6",
-        fill=True,
-        fill_color="#e74c3c",
-        fill_opacity=0.20,
-        popup=folium.Popup("""
-            <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 270px; line-height: 1.4;">
-                <div style="background: #c0392b; color: white; padding: 6px 10px; border-radius: 6px 6px 0 0; font-weight: bold; font-size: 13px;">
-                    ⚠️ Diagnóstico: Zona 3 - Aulas y Comunidad
+    for epi in epicentros_diagnostico:
+        folium.CircleMarker(
+            location=epi["coords"],
+            radius=11,
+            color=epi["color"],
+            weight=2.5,
+            fill=True,
+            fill_color=epi["color"],
+            fill_opacity=0.80,
+            tooltip=f"🔥 {epi['nombre']} ({epi['sector']})",
+            popup=folium.Popup(f"""
+                <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 280px; line-height: 1.42;">
+                    <div style="background: {epi['color']}; color: white; padding: 7px 11px; border-radius: 6px 6px 0 0; font-weight: bold; font-size: 13px;">
+                        🔥 {epi['nombre']}
+                    </div>
+                    <div style="padding: 10px 12px; border: 1px solid {epi['color']}; border-top: none; border-radius: 0 0 6px 6px; background: #fffdfd; font-size: 12px; color: #2c3e50;">
+                        <span style="background: #fde8e8; color: #c0392b; padding: 2px 7px; border-radius: 4px; font-weight: 700; font-size: 10.5px;">EPICENTRO EPIDEMIOLÓGICO</span>
+                        <p style="margin: 7px 0 4px 0;"><b>👥 Comunidad Afectada:</b> {epi['poblacion']}.</p>
+                        <p style="margin: 4px 0;"><b>💧 Foco Hidrológico:</b> {epi['foco']}.</p>
+                        <p style="margin: 4px 0; color: #7f1d1d;"><b>💔 Impacto Diario:</b> {epi['impacto']}</p>
+                        <div style="margin-top: 8px; padding: 6px 8px; background: #ecfdf5; border-left: 3px solid #10ac84; border-radius: 4px; color: #065f46; font-size: 11.5px;">
+                            <b>🌿 Solución Algoritmo Verde:</b> {epi['solucion']}
+                        </div>
+                    </div>
                 </div>
-                <div style="padding: 10px; border: 1px solid #c0392b; border-top: none; border-radius: 0 0 6px 6px; background: #fffcfc;">
-                    <b>👥 Comunidad Afectada:</b> ~450 estudiantes y personal docente en Edificio Senescyt y Los Bloques.<br>
-                    <b>💔 Impacto Humano:</b> Imposibilidad de abrir ventanas en clases por invasión de arenillas; estrés en exámenes y áreas de estudio.<br>
-                    <b>🌿 Solución Verde:</b> Cerca Viva 3 (320m) con estrato alto rompevientos y reducción del 82% del ingreso de insectos.
-                </div>
-            </div>
-        """, max_width=290),
-        tooltip="Zona 3: Bloques y Senescyt (Diagnóstico de Afectación)"
-    ).add_to(fg_zonas)
+            """, max_width=300)
+        ).add_to(fg_zonas)
 
     # -------------------------------------------------------------
     # 4. ESPACIOS HUMANOS REALES DEL CAMPUS (TRES ZONAS PRINCIPALES)
@@ -1742,14 +1869,6 @@ def generar_mapa():
     # 5. RECURSOS HÍDRICOS (CANALES LÓTICOS Y RESERVORIO LÉNTICO)
     # -------------------------------------------------------------
     # 5.1. Canal de Riego Principal (Eje Central Norte-Sur)
-    canal_coords = [
-        [0.4085, -78.1690],
-        [0.4072, -78.1705],
-        [0.4058, -78.1715],
-        [0.4048, -78.1720],
-        [0.4035, -78.1725],
-        [0.4015, -78.1728]
-    ]
     folium.PolyLine(
         locations=canal_coords,
         color="#0abde3",
@@ -1768,11 +1887,6 @@ def generar_mapa():
     ).add_to(fg_canales)
 
     # 5.2. Acequia Secundaria Ingenio
-    acequia_ingenio = [
-        [0.4056, -78.1738],
-        [0.4050, -78.1732],
-        [0.4045, -78.1728]
-    ]
     folium.PolyLine(
         locations=acequia_ingenio,
         color="#0abde3",
@@ -1790,7 +1904,6 @@ def generar_mapa():
     ).add_to(fg_canales)
 
     # 5.3. Canal de Agua Suroeste (Sector Concha Acústica / Multifamiliares)
-    canal_suroeste = [[0.4009199, -78.1764438], [0.4012991, -78.1753884]]
     folium.PolyLine(
         locations=canal_suroeste,
         color="#00cec9",
@@ -1809,43 +1922,6 @@ def generar_mapa():
     ).add_to(fg_canales)
 
     # 5.4. Canal de Agua Este (Conducción hacia el Reservorio - 34 Vértices Topográficos Relevados)
-    canal_este_topografico_34pts = [
-        [0.4031240, -78.1710613],
-        [0.4031186, -78.1708376],
-        [0.4031018, -78.1707763],
-        [0.4030834, -78.1707354],
-        [0.4030630, -78.1706915],
-        [0.4030583, -78.1706194],
-        [0.4030512, -78.1705781],
-        [0.4030764, -78.1705517],
-        [0.4030700, -78.1705198],
-        [0.4030418, -78.1704859],
-        [0.4030428, -78.1704541],
-        [0.4030526, -78.1704125],
-        [0.4030626, -78.1703478],
-        [0.4030945, -78.1702814],
-        [0.4031364, -78.1702016],
-        [0.4031434, -78.1701560],
-        [0.4031649, -78.1701269],
-        [0.4031914, -78.1700806],
-        [0.4032437, -78.1700253],
-        [0.4032775, -78.1699897],
-        [0.4033355, -78.1699559],
-        [0.4033992, -78.1699193],
-        [0.4034358, -78.1698828],
-        [0.4034780, -78.1698503],
-        [0.4035283, -78.1698037],
-        [0.4035648, -78.1697641],
-        [0.4036433, -78.1696551],
-        [0.4037057, -78.1695582],
-        [0.4037570, -78.1694912],
-        [0.4038066, -78.1694345],
-        [0.4039819, -78.1692012],
-        [0.4040671, -78.1690939],
-        [0.4040768, -78.1690268],
-        [0.4041009, -78.1689487]
-    ]
-
     # Suavizado de curva mediante interpolación spline cúbica (120 puntos)
     try:
         from scipy.interpolate import splprep, splev
@@ -2518,8 +2594,8 @@ def generar_mapa():
         <button id="btn-solucion" class="nav-btn nav-btn-highlight" onclick="activarModoSolucion()" title="Ver la solución ecológica activa">
             🌿 <span data-i18n="nav_solution">Solución Verde (Activa)</span>
         </button>
-        <button id="btn-diagnostico" class="nav-btn" onclick="activarModoDiagnostico()" title="Ver zonas críticas y canales originales">
-            ⚠️ <span data-i18n="nav_diagnosis">Ver Diagnóstico</span>
+        <button id="btn-diagnostico" class="nav-btn" onclick="activarModoDiagnostico()" title="Ver mapa de calor continuo y focos epidemiológicos de picaduras">
+            🔥 <span data-i18n="nav_diagnosis">Ver Mapa de Calor</span>
         </button>
         <span style="color: var(--border-color); margin: 0 2px;">|</span>
         <button class="nav-btn" onclick="irAZona('senescyt')" title="Enfocar Sector Senescyt (Aulas, Bloques, Centro Médico)">
@@ -2556,6 +2632,10 @@ def generar_mapa():
             <span id="leyenda-icon-toggle">−</span>
         </div>
         <div id="leyenda-body" class="leyenda-content">
+            <div class="leyenda-item">
+                <span class="leyenda-badge" style="background: linear-gradient(to right, #2ecc71, #f1c40f, #e67e22, #e74c3c, #8e44ad); border-radius: 2px;"></span>
+                <span data-i18n="leyenda_heat"><b>Mapa de Calor:</b> Presión hematófaga (Simulium spp.)</span>
+            </div>
             <div class="leyenda-item">
                 <span class="leyenda-badge" style="background: rgba(46, 204, 113, 0.4); border: 1px solid #27ae60;"></span>
                 <span data-i18n="leyenda_safe"><b>Zona Segura:</b> Aromaterapia natural y aire limpio</span>
@@ -2993,7 +3073,7 @@ def generar_mapa():
             es: {{
                 nav_vision: "Visión y Propósito",
                 nav_solution: "Solución Verde (Activa)",
-                nav_diagnosis: "Ver Diagnóstico",
+                nav_diagnosis: "Ver Mapa de Calor",
                 nav_senescyt: "1. Senescyt",
                 nav_ingenio: "2. Ingenio Azucarero",
                 nav_residencias: "3. Las Pats y Multis",
@@ -3002,6 +3082,7 @@ def generar_mapa():
                 nav_theme: document.body.getAttribute('data-theme') === 'dark' ? "Claro" : "Oscuro",
                 
                 leyenda_title: "📋 Simbología Humanista",
+                leyenda_heat: "<b>Mapa de Calor:</b> Presión hematófaga (Simulium spp.)",
                 leyenda_safe: "<b>Zona Segura:</b> Aromaterapia natural y aire limpio",
                 leyenda_fences: "<b>Cercas Vivas:</b> 3 estratos (Molle, Arrayán, H. Luisa)",
                 leyenda_canals: "<b>Canales Hídricos:</b> Biocontrol con Libélulas + Bti",
@@ -3048,7 +3129,7 @@ def generar_mapa():
             en: {{
                 nav_vision: "Vision & Purpose",
                 nav_solution: "Green Solution (Active)",
-                nav_diagnosis: "View Diagnosis",
+                nav_diagnosis: "View Heatmap",
                 nav_senescyt: "1. Senescyt",
                 nav_ingenio: "2. Sugar Mill",
                 nav_residencias: "3. Pats & Multis",
@@ -3057,6 +3138,7 @@ def generar_mapa():
                 nav_theme: document.body.getAttribute('data-theme') === 'dark' ? "Light" : "Dark",
                 
                 leyenda_title: "📋 Human-Centered Legend",
+                leyenda_heat: "<b>Heatmap:</b> Biting pressure (Simulium spp.)",
                 leyenda_safe: "<b>Safe Zone:</b> Natural aromatherapy & clean air",
                 leyenda_fences: "<b>Living Fences:</b> 3 strata (Molle, Arrayan, Lemongrass)",
                 leyenda_canals: "<b>Waterways:</b> Biocontrol with Dragonflies + Bti",
