@@ -5234,7 +5234,7 @@ def generar_mapa():
 
                 <div class="card-pilar" style="border-left-color: #3498db;">
                     <b style="color: #2980b9; font-size: 13.5px;" data-i18n="modal_card2_title">🌿 Naturaleza que Protege e Inclusión Hipoalergénica</b><br>
-                    <span data-i18n="modal_card2_desc">980 metros de barreras vivas blindando 111 edificaciones. Diseño con <b>zonificación hipoalergénica</b>: en proximidad inmediata a dormitorios (Las Multis, Las T's, Las Pats y Los Bloques) el romero es sustituido por <b>Cedrón (Aloysia citrodora)</b> y <b>Huacatay (Tagetes minuta)</b> para resguardar a residentes con asma, rinitis o alergias a Lamiaceae.</span>
+                    <span data-i18n="modal_card2_desc">980 metros de barreras vivas blindando 120 edificaciones. Diseño con <b>zonificación hipoalergénica</b>: en proximidad inmediata a dormitorios (Las Multis, Las T's, Las Pats y Los Bloques) el romero es sustituido por <b>Cedrón (Aloysia citrodora)</b> y <b>Huacatay (Tagetes minuta)</b> para resguardar a residentes con asma, rinitis o alergias a Lamiaceae.</span>
                 </div>
 
                 <div class="card-pilar" style="border-left-color: #0abde3;">
@@ -5615,7 +5615,7 @@ def generar_mapa():
                 modal_card1_title: "👥 Las Personas Primero (Salud y Confort)",
                 modal_card1_desc: "Protegemos a más de 800 residentes, docentes y trabajadores. Eliminamos el uso de pesticidas tóxicos protegiendo el aire que respiran los estudiantes en Las Multis, Los Bloques y aulas.",
                 modal_card2_title: "🌿 Naturaleza que Protege e Inclusión Hipoalergénica",
-                modal_card2_desc: "980 metros de barreras vivas blindando 111 edificaciones con zonificación hipoalergénica: en proximidad a dormitorios (Las Multis, Las T's, Las Pats y Los Bloques) el romero se sustituye por Cedrón y Huacatay para proteger a residentes alérgicos o asmáticos.",
+                modal_card2_desc: "980 metros de barreras vivas blindando 120 edificaciones con zonificación hipoalergénica: en proximidad a dormitorios (Las Multis, Las T's, Las Pats y Los Bloques) el romero se sustituye por Cedrón y Huacatay para proteger a residentes alérgicos o asmáticos.",
                 modal_card3_title: "💧 Agua Limpia y Biocontrol Respetuoso",
                 modal_card3_desc: "Los canales de riego que cruzan Yachay alimentan los cultivos de Urcuquí. Nuestro control biológico usa <b>ninfas de libélulas nativas</b> y micro-larvicidas biológicos (Bti) que preservan la calidad del agua para las comunidades vecinas.",
                 modal_btn_explore: "✨ ¡Explorar el Campus Protegido!",
@@ -5671,7 +5671,7 @@ def generar_mapa():
                 modal_card1_title: "👥 People First (Health & Comfort)",
                 modal_card1_desc: "We protect over 800 residents, professors, and staff. We eliminate toxic pesticides, safeguarding the air students breathe in student housing and lecture halls.",
                 modal_card2_title: "🌿 Nature that Protects & Hypoallergenic Inclusion",
-                modal_card2_desc: "980 meters of living barriers shielding 111 buildings with hypoallergenic zoning: near dormitories (Multis, T's, Pats, Blocks), rosemary is replaced by Lemon Verbena and Huacatay to protect residents with asthma or allergies.",
+                modal_card2_desc: "980 meters of living barriers shielding 120 buildings with hypoallergenic zoning: near dormitories (Multis, T's, Pats, Blocks), rosemary is replaced by Lemon Verbena and Huacatay to protect residents with asthma or allergies.",
                 modal_card3_title: "💧 Clean Water & Respectful Biocontrol",
                 modal_card3_desc: "The irrigation canals crossing Yachay nourish the agriculture of Urcuqui. Our biocontrol employs <b>native dragonfly nymphs</b> and microbial bio-larvicides (Bti) that preserve water quality for neighboring communities.",
                 modal_btn_explore: "✨ Explore the Protected Campus!",
