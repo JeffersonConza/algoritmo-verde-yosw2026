@@ -1821,6 +1821,16 @@ def generar_mapa():
         heat_data.append([pt[0], pt[1], 0.92])
         heat_data.append([pt[0] + rng.gauss(0, 0.00010), pt[1] + rng.gauss(0, 0.00010), 0.75])
 
+    # Puntos a lo largo del Canal Jardines Sala Capitular (Foco de picaduras en Parada de Bus)
+    canal_capitular_heat = [
+        [0.4046421, -78.1751245],
+        [0.4048221, -78.1751372],
+        [0.4050082, -78.1751801]
+    ]
+    for pt in canal_capitular_heat:
+        heat_data.append([pt[0], pt[1], 0.95])
+        heat_data.append([pt[0] + rng.gauss(0, 0.00008), pt[1] + rng.gauss(0, 0.00008), 0.85])
+
     # 5. Epicentros de atracción humana (CO2 y emisión térmica)
     # Sector Sur: Las Multis, Las T's, Las Pats, Concha Acústica (~550 hab.)
     for _ in range(120):
@@ -1959,6 +1969,8 @@ def generar_mapa():
          "☕ Cafetería y Abastecimiento (Primer Piso)", "Local interior de alimentos, café y artículos de primera necesidad en el primer piso (ala oeste) de Senescyt."),
         ([0.407063, -78.169911], "Comedor Sol del Ecuador", "cutlery", "orange",
          "🍲 Restaurante Universitario (Primer Piso)", "Comedor en primer piso (ala norte) de Senescyt. Almuerzo: USD 3.50 (afluencia moderada de docentes, personal administrativo y estudiantes)."),
+        ([0.4065590, -78.1701841], "Hall Principal Edificio Senescyt", "users", "darkblue",
+         "🏛️ Hall Principal (Planta Baja)", "Vestíbulo cívico y de distribución principal en el primer piso del Edificio Senescyt. Conecta biblioteca, aulas y áreas de convivencia."),
 
         # =============================================================
         # ZONA 2: INGENIO AZUCARERO
@@ -1995,6 +2007,8 @@ def generar_mapa():
          "🌱 Investigación Agropecuaria", "Conjunto de cuatro invernaderos de ensayo fitoquímico y botánico."),
         ([0.404900, -78.173900], "Laboratorio de Química", "flask", "darkpurple",
          "🔬 Biotecnología y Química", "Laboratorios para caracterización fitoquímica de terpenos protectores."),
+        ([0.4058643, -78.1706952], "Plaza Edificio ITT", "square-o", "cadetblue",
+         "🏛️ Plaza Cívica Edificio ITT", "Explanada central peatonal articulada entre los dos bloques de aulas y laboratorios del ITT."),
 
         # =============================================================
         # ZONA 3: RESIDENCIAS 'LAS PATS' Y 'MULTIFAMILIARES'
@@ -3650,6 +3664,194 @@ def generar_mapa():
             "color": "#7f8c8d", "fill": "#95a5a6",
             "interior": False, "is_perimeter": False,
             "desc": "Batería sanitaria de servicio público en el sector sur de talleres y oficinas San José."
+        },
+        {
+            "id": "RECT-REST-INGENIO",
+            "nombre": "Restaurante Patrimonial Plaza Ingenio",
+            "tipo": "Gastronomía y Alimentación / Restaurante Patrimonial",
+            "zona": "Ingenio",
+            "coords": [
+                [0.40497164971995137, -78.17449059422302],
+                [0.4049389695943836, -78.17455568309286],
+                [0.40476277701161273, -78.17446256966684],
+                [0.4047912653573043, -78.17440493895086]
+            ],
+            "centroid": [0.404868, -78.1744794],
+            "area": 168.3,
+            "color": "#d35400", "fill": "#e67e22",
+            "interior": False, "is_perimeter": False,
+            "desc": "Establecimiento gastronómico tradicional ubicado en el flanco de la Plaza del Ingenio Azucarero."
+        },
+        {
+            "id": "POLY-ABANDON-TECHO",
+            "nombre": "Edificación Abandonada (Sin Techo)",
+            "tipo": "Estructura Abandonada / Sin Cobertura",
+            "zona": "Periferia Este",
+            "coords": [
+                [0.4055451275729653, -78.16916152255357],
+                [0.40558123378924427, -78.16920179161598],
+                [0.4056159597151692, -78.16916702300554],
+                [0.4055825733687857, -78.16912945471526]
+            ],
+            "centroid": [0.405581, -78.1691651],
+            "area": 31.6,
+            "color": "#7f8c8d", "fill": "#95a5a6",
+            "interior": False, "is_perimeter": False,
+            "desc": "Estructura muraria antigua en ruinas y desprovista de cubierta de techo en la periferia este del campus."
+        },
+        {
+            "id": "POLY-BARRIADA",
+            "nombre": "Asentamiento Perimetral Barriada",
+            "tipo": "Asentamiento Residencial Periférico",
+            "zona": "Periferia Este",
+            "coords": [
+                [0.403416800675225, -78.16975950913621],
+                [0.4033017886549784, -78.16987596542849],
+                [0.40318353501394316, -78.16996936841555],
+                [0.4031364550298862, -78.16992066140911],
+                [0.4031239251155644, -78.1697504579221],
+                [0.4031141663469189, -78.1696423080254],
+                [0.40311687517375067, -78.16944922544191],
+                [0.4031696420512379, -78.16944064273751],
+                [0.40320304039785515, -78.16942229016715],
+                [0.4034510338335197, -78.16932705956306],
+                [0.403479290504302, -78.16939685733432],
+                [0.4034087632991755, -78.16942535276313],
+                [0.40344100688154433, -78.16948265262258],
+                [0.40341423304313534, -78.16950516538711],
+                [0.4034987173863257, -78.16965614342064]
+            ],
+            "centroid": [0.4032816, -78.1696338],
+            "area": 1956.0,
+            "color": "#b9770e", "fill": "#f5b041",
+            "interior": False, "is_perimeter": True,
+            "desc": "Sector habitacional y viviendas del asentamiento barrial en la periferia este del campus."
+        },
+        {
+            "id": "POLY-EDIF-ITT-1",
+            "nombre": "Edificio ITT (No en Uso) - Bloque Norte",
+            "tipo": "Infraestructura Educativa Inconclusa / No en Uso",
+            "zona": "Eje Tecnológico",
+            "coords": [
+                [0.40568742119572077, -78.17043643393573],
+                [0.40577778324982705, -78.17053811999169],
+                [0.40586489852537144, -78.1704741928856],
+                [0.40609968508828403, -78.17076873212748],
+                [0.4063098792007305, -78.17060367389932],
+                [0.4059471837862516, -78.17020232873084]
+            ],
+            "centroid": [0.4060091, -78.1704836],
+            "area": 1835.8,
+            "color": "#7f8c8d", "fill": "#bdc3c7",
+            "interior": False, "is_perimeter": False,
+            "desc": "Bloque norte del Instituto Tecnológico Territorial (ITT), edificación de gran escala actualmente desocupada y no en uso."
+        },
+        {
+            "id": "POLY-EDIF-ITT-2",
+            "nombre": "Edificio ITT (No en Uso) - Bloque Sur",
+            "tipo": "Infraestructura Educativa Inconclusa / No en Uso",
+            "zona": "Eje Tecnológico",
+            "coords": [
+                [0.40564432486800545, -78.17065867740455],
+                [0.4058919916215835, -78.17095544242314],
+                [0.40569193733932163, -78.17111620230816],
+                [0.4053582225741319, -78.17071015491132],
+                [0.40564693557948556, -78.17046058095627],
+                [0.4057528083127586, -78.17055970662256]
+            ],
+            "centroid": [0.4056269, -78.1707963],
+            "area": 1909.7,
+            "color": "#7f8c8d", "fill": "#bdc3c7",
+            "interior": False, "is_perimeter": False,
+            "desc": "Bloque sur del Instituto Tecnológico Territorial (ITT), edificación de gran volumen actualmente desocupada y no en uso."
+        },
+        {
+            "id": "POLY-ABANDON-01",
+            "nombre": "Edificio Abandonado (Sector Intermedio Este)",
+            "tipo": "Estructura Abandonada / Obra Inconclusa",
+            "zona": "Sector Intermedio",
+            "coords": [
+                [0.40365346426669096, -78.17125960309245],
+                [0.4040465980124745, -78.17150253007814],
+                [0.40407184687028974, -78.17148316413493],
+                [0.40422491818431067, -78.17157319198544],
+                [0.40427010643396466, -78.1713867979584],
+                [0.4041895600147244, -78.17131776560983],
+                [0.4041882815323957, -78.17129234893221],
+                [0.4041402707897744, -78.1712430836846],
+                [0.4037233844233991, -78.17104780748441]
+            ],
+            "centroid": [0.4039664, -78.1713058],
+            "area": 1868.4,
+            "color": "#7f8c8d", "fill": "#bdc3c7",
+            "interior": False, "is_perimeter": False,
+            "desc": "Estructura inconclusa y deshabitada en el sector intermedio este del campus Yachay Tech."
+        },
+        {
+            "id": "POLY-ABANDON-02",
+            "nombre": "Edificio Abandonado (Sector Intermedio Oeste)",
+            "tipo": "Estructura Abandonada / Obra Inconclusa",
+            "zona": "Sector Intermedio",
+            "coords": [
+                [0.4035130158607125, -78.17176742545003],
+                [0.40382321809887034, -78.17185335921086],
+                [0.40378204630646614, -78.1719856399383],
+                [0.40346753223031806, -78.1718985761575],
+                [0.4034062852079537, -78.17212640804205],
+                [0.40402779033033714, -78.1722987939844],
+                [0.40421829192713976, -78.17173257684784],
+                [0.40358177314045884, -78.17155460198654]
+            ],
+            "centroid": [0.4038277, -78.1719331],
+            "area": 4274.0,
+            "color": "#7f8c8d", "fill": "#bdc3c7",
+            "interior": False, "is_perimeter": False,
+            "desc": "Macromanzana de hormigón armado inconclusa en el sector intermedio; no alberga población activa."
+        },
+        {
+            "id": "POLY-ABANDON-AUDITORIO",
+            "nombre": "Edificio Abandonado (Proyecto Auditorio)",
+            "tipo": "Estructura Abandonada / Obra Inconclusa",
+            "zona": "Sector Central",
+            "coords": [
+                [0.40473562332417545, -78.17251673234806],
+                [0.4050808675267319, -78.17261476322064],
+                [0.40524213053362224, -78.1721051767315],
+                [0.40493515885630726, -78.17187461532733]
+            ],
+            "centroid": [0.4049924, -78.1722743],
+            "area": 2676.3,
+            "color": "#7f8c8d", "fill": "#bdc3c7",
+            "interior": False, "is_perimeter": False,
+            "desc": "Estructura que originalmente iba a albergar el Gran Auditorio Universitario, actualmente desocupada y en obra gris."
+        },
+        {
+            "id": "POLY-ABANDON-SUR",
+            "nombre": "Edificio Abandonado (Sector Sur)",
+            "tipo": "Estructura Abandonada / Obra Inconclusa",
+            "zona": "Sector Sur",
+            "coords": [
+                [0.40198661472022046, -78.17018494333783],
+                [0.40197939986354697, -78.17015896664411],
+                [0.4018014059681932, -78.17014905901726],
+                [0.4016457134467513, -78.17039303735463],
+                [0.40139340789967926, -78.17091625315602],
+                [0.40150833806372377, -78.17098671074227],
+                [0.4015331078693194, -78.17095079335678],
+                [0.40155968867380226, -78.17098383852725],
+                [0.4018828040275859, -78.17049047158272],
+                [0.4018368499539993, -78.17046120356976],
+                [0.40190674515631897, -78.17035997422332],
+                [0.4019967199907882, -78.17032866383832],
+                [0.40201035768468407, -78.17041042529293],
+                [0.4024179041088888, -78.17039486933922],
+                [0.40242027729676116, -78.17019680936544]
+            ],
+            "centroid": [0.4018584, -78.1704689],
+            "area": 3521.5,
+            "color": "#7f8c8d", "fill": "#bdc3c7",
+            "interior": False, "is_perimeter": False,
+            "desc": "Edificación de gran perímetro en obra gris desocupada en el cuadrante sureste del campus."
         }
     ]
 
@@ -4192,6 +4394,32 @@ def generar_mapa():
             </div>
         """, max_width=250),
         tooltip="💧 Centroide: Laguna y Reservorio de Agua"
+    ).add_to(fg_canales)
+
+    # 5.7. Canal de Agua Jardines Sala Capitular / Ingenio
+    canal_capitular = [
+        [0.4046421, -78.1751245],
+        [0.4048221, -78.1751372],
+        [0.4050082, -78.1751801]
+    ]
+    folium.PolyLine(
+        locations=canal_capitular,
+        color="#0984e3",
+        weight=3.5,
+        dash_array='5, 5',
+        popup=folium.Popup("""
+            <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 250px;">
+                <h4 style="color: #0984e3; margin: 0 0 5px 0;">💧 Canal Jardines Sala Capitular</h4>
+                <p style="font-size: 12px; color: #34495e; margin: 0;">
+                    Acequia lótica descubierta que fluye por los jardines del sector patrimonial. Su cercanía a la <b>Parada de la Sala Capitular</b> explica la elevada tasa de picaduras observada en usuarios en espera.<br>
+                    <b>Intervención Verde:</b> Tratamiento biológico selectivo con Bti e interceptación de vuelo mediante la barrera vegetal.
+                </p>
+                <div style="font-size: 10px; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 3px; margin-top: 5px;">
+                    Longitud: <b>41.1 m</b> | Sector Sala Capitular / Ingenio
+                </div>
+            </div>
+        """, max_width=270),
+        tooltip="💧 Canal de Agua Jardines Sala Capitular (Cercano a Parada de Bus)"
     ).add_to(fg_canales)
 
     # 5.6. Fuentes de Agua Ornamentales e Infraestructura Hidráulica

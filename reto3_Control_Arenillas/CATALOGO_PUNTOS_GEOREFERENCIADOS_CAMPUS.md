@@ -30,6 +30,7 @@ Polo académico norte y residencial estudiantil modular, con una población habi
 | **B-01** | **Depósito de Basura Principal (Senescyt)** | Gestión Residuos Sólidos | `0.407422` | `-78.169763` | **Medio** (Estación contenedores) | Servicio campus norte |
 | **LINE-PARK-01** | **Parqueadero Lineal Senescyt (Calzada Este)** | Infraestructura / Parqueo | `0.406380` | `-78.169734` | **Medio** (Franja en batería este) | ~25 vehículos |
 | **LINE-PARK-02** | **Parqueadero Lineal Senescyt (Calzada Sur)** | Infraestructura / Parqueo | `0.406172` | `-78.170373` | **Medio** (Calzada de acceso sur) | ~20 vehículos |
+| **S-07** | **Hall del Edificio Senescyt (Planta Baja)** | Convivencia / Tránsito Estudiantil | `0.406559` | `-78.170184` | **Crítico** (Vestíbulo principal a nivel de suelo, alto flujo) | ~200 personas/hora pico |
 
 ### 1.2. Zona 2: Sector Ingenio Azucarero (Patrimonial, Docencia, Plazas y Recursos Hídricos)
 Antiguo complejo histórico de la Hacienda San José, epicentro de la vida cultural, científica y gastronómica (~400 a 600 usuarios diarios):
@@ -62,6 +63,7 @@ Antiguo complejo histórico de la Hacienda San José, epicentro de la vida cultu
 | **B-04** | **Depósito de Basura (Tachos Aulas B)** | Gestión Ambiental / Tachos | `0.404748` | `-78.174325` | **Alto** (Flujo estudiantil) | Aulas B |
 | **B-05** | **Depósito de Basura (Tachos Plaza del Estudiante)** | Gestión Ambiental / Tachos | `0.404930` | `-78.174154` | **Alto** (Plaza peatonal) | Plaza Estudiante |
 | **B-06** | **Depósito de Basura (Tachos Plaza Mikuna)** | Gestión Ambiental / Tachos | `0.404318` | `-78.173819` | **Muy Alto** (Patio gastronómico) | Plaza Mikuna |
+| **I-19** | **Plaza Edificio ITT** | Espacio Público / Cívico | `0.405864` | `-78.170695` | **Medio** (Plaza cívica entre bloques ITT) | Tránsito peatonal |
 
 ### 1.3. Zona 3: Sector Residencias "Las T's", "Las Pats" y "Multifamiliares" (Sur)
 Principal polo habitacional y deportivo de la universidad (~400 a 550 residentes):
@@ -347,6 +349,15 @@ Las edificaciones del campus fueron regularizadas rigurosamente bajo criterios d
     2. `0.4045461, -78.1739152`
     3. `0.4045636, -78.1738877`
     4. `0.4045181, -78.1738588`
+
+* **Restaurante Patrimonial Plaza Ingenio (`RECT-REST-INGENIO`):**
+  * *Tipo:* Gastronomía y Alimentación / Restaurante Patrimonial | *Zona:* Plaza del Ingenio Azucarero
+  * *Superficie aproximada:* ~168.3 m² | *Centroide:* `[0.4048680, -78.1744794]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4049716, -78.1744906`
+    2. `0.4049390, -78.1745557`
+    3. `0.4047628, -78.1744626`
+    4. `0.4047913, -78.1744049`
 
 #### C. Invernaderos Experimentales y Laboratorios de Carrera (Eje Tecnológico)
 
@@ -1068,7 +1079,7 @@ Conjunto patrimonial histórico del sector sur caracterizado por 8 bloques resid
     3. `0.4028382, -78.1753953`
     4. `0.4028107, -78.1753078`
 
-### 2.6. Zona 2 / Periferia Este: Sector Reservorio (Gastronomía y Alojamientos Privados)
+### 2.6. Zona 2 / Periferia Este: Sector Reservorio y Asentamientos Periféricos
 
 Edificaciones ubicadas en el perímetro este del campus, contiguas a la Laguna Artificial / Reservorio Agroforestal:
 
@@ -1092,6 +1103,35 @@ Edificaciones ubicadas en el perímetro este del campus, contiguas a la Laguna A
     4. `0.4047109, -78.1684205`
 
 ---
+
+* **Asentamiento Perimetral Barriada (`POLY-BARRIADA`):**
+  * *Tipo:* Asentamiento Residencial Periférico / Viviendas | *Zona:* Periferia Este
+  * *Superficie aproximada:* ~1,956.0 m² | *Centroide:* `[0.4032816, -78.1696338]`
+  * *Vértices Oficiales (WGS84):*
+    1. `0.4034168, -78.1697595`
+    2. `0.4033018, -78.1698760`
+    3. `0.4031835, -78.1699694`
+    4. `0.4031365, -78.1699207`
+    5. `0.4031239, -78.1697505`
+    6. `0.4031142, -78.1696423`
+    7. `0.4031169, -78.1694492`
+    8. `0.4031696, -78.1694406`
+    9. `0.4032030, -78.1694223`
+    10. `0.4034510, -78.1693271`
+    11. `0.4034793, -78.1693969`
+    12. `0.4034088, -78.1694254`
+    13. `0.4034410, -78.1694827`
+    14. `0.4034142, -78.1695052`
+    15. `0.4034987, -78.1696561`
+
+* **Edificación Abandonada sin Techo (`POLY-ABANDON-TECHO`):**
+  * *Tipo:* Estructura Muraria Antigua en Ruinas / Desprovista de Cubierta | *Zona:* Periferia Este
+  * *Superficie aproximada:* ~31.6 m² | *Centroide:* `[0.4055810, -78.1691651]`
+  * *Vértices Oficiales (WGS84):*
+    1. `0.4055451, -78.1691615`
+    2. `0.4055812, -78.1692018`
+    3. `0.4056160, -78.1691670`
+    4. `0.4055826, -78.1691295`
 
 ### 2.7. Zona 3: Sector Complejo Deportivo Sur (Canchas Reglamentarias)
 Complejo de recreación y acondicionamiento físico de alto rendimiento contiguo a la arboleda sur y acequia:
@@ -1249,6 +1289,88 @@ Complejo habitacional del profesorado e investigadores residentes en el cuadrant
   * *Tabiques y Líneas de División Interior (1):*
     - **División Residencia de Docentes 8 (Medianera):** `[0.4035530, -78.1761398]` ➔ `[0.4035359, -78.1760731]` (Tabique transversal medianero interior que independiza las dos unidades habitacionales en punto topográfico [0.4035530, -78.1761398].)
 
+### 2.9. Zona Intermedia, Eje Tecnológico y Edificaciones Inconclusas / Abandonadas ("Elefantes Blancos")
+
+Estructuras de gran escala proyectadas originalmente en el plan maestro de la Ciudad del Conocimiento que quedaron inconclusas o desocupadas. Al carecer de habitantes continuos, su emisión antropogénica de $\text{CO}_2$ es nula; sin embargo, sus sombras estructurales sirven de microclima de reposo diurno frente al viento para adultos de *Simulium*:
+
+#### A. Edificio ITT (No en Uso) - Bloque Norte (`POLY-EDIF-ITT-1`)
+* **Uso:** Infraestructura Educativa Inconclusa / No en Uso.
+* **Superficie aproximada:** ~1,835.8 m² | *Centroide:* `[0.4060091, -78.1704836]`
+* **Vértices Oficiales (WGS84):**
+    1. `0.4056874, -78.1704364`
+    2. `0.4057778, -78.1705381`
+    3. `0.4058649, -78.1704742`
+    4. `0.4060997, -78.1707687`
+    5. `0.4063099, -78.1706037`
+    6. `0.4059472, -78.1702023`
+
+#### B. Edificio ITT (No en Uso) - Bloque Sur (`POLY-EDIF-ITT-2`)
+* **Uso:** Infraestructura Educativa Inconclusa / No en Uso.
+* **Superficie aproximada:** ~1,909.7 m² | *Centroide:* `[0.4056269, -78.1707963]`
+* **Vértices Oficiales (WGS84):**
+    1. `0.4056443, -78.1706587`
+    2. `0.4058920, -78.1709554`
+    3. `0.4056919, -78.1711162`
+    4. `0.4053582, -78.1707102`
+    5. `0.4056469, -78.1704606`
+    6. `0.4057528, -78.1705597`
+
+#### C. Edificio Abandonado - Sector Intermedio Este (`POLY-ABANDON-01`)
+* **Uso:** Estructura Abandonada / Obra Inconclusa en Hormigón Armado.
+* **Superficie aproximada:** ~1,868.4 m² | *Centroide:* `[0.4039664, -78.1713058]`
+* **Vértices Oficiales (WGS84):**
+    1. `0.4036535, -78.1712596`
+    2. `0.4040466, -78.1715025`
+    3. `0.4040718, -78.1714832`
+    4. `0.4042249, -78.1715732`
+    5. `0.4042701, -78.1713868`
+    6. `0.4041896, -78.1713178`
+    7. `0.4041883, -78.1712923`
+    8. `0.4041403, -78.1712431`
+    9. `0.4037234, -78.1710478`
+
+#### D. Edificio Abandonado - Sector Intermedio Oeste (`POLY-ABANDON-02`)
+* **Uso:** Estructura Abandonada / Obra Inconclusa en Hormigón Armado.
+* **Superficie aproximada:** ~4,274.0 m² | *Centroide:* `[0.4038277, -78.1719331]`
+* **Vértices Oficiales (WGS84):**
+    1. `0.4035130, -78.1717674`
+    2. `0.4038232, -78.1718534`
+    3. `0.4037820, -78.1719856`
+    4. `0.4034675, -78.1718986`
+    5. `0.4034063, -78.1721264`
+    6. `0.4040278, -78.1722988`
+    7. `0.4042183, -78.1717326`
+    8. `0.4035818, -78.1715546`
+
+#### E. Edificio Abandonado - Proyecto Auditorio (`POLY-ABANDON-AUDITORIO`)
+* **Uso:** Estructura Abandonada (Ex-Proyecto Auditorio Universitario).
+* **Superficie aproximada:** ~2,676.3 m² | *Centroide:* `[0.4049924, -78.1722743]`
+* **Vértices Oficiales (WGS84):**
+    1. `0.4047356, -78.1725167`
+    2. `0.4050809, -78.1726148`
+    3. `0.4052421, -78.1721052`
+    4. `0.4049352, -78.1718746`
+
+#### F. Edificio Abandonado - Sector Sur (`POLY-ABANDON-SUR`)
+* **Uso:** Estructura Abandonada / Macromanzana Desocupada en Obra Gris.
+* **Superficie aproximada:** ~3,521.5 m² | *Centroide:* `[0.4018584, -78.1704689]`
+* **Vértices Oficiales (WGS84):**
+    1. `0.4019866, -78.1701849`
+    2. `0.4019794, -78.1701590`
+    3. `0.4018014, -78.1701491`
+    4. `0.4016457, -78.1703930`
+    5. `0.4013934, -78.1709163`
+    6. `0.4015083, -78.1709867`
+    7. `0.4015331, -78.1709508`
+    8. `0.4015597, -78.1709838`
+    9. `0.4018828, -78.1704905`
+    10. `0.4018368, -78.1704612`
+    11. `0.4019067, -78.1703600`
+    12. `0.4019967, -78.1703287`
+    13. `0.4020104, -78.1704104`
+    14. `0.4024179, -78.1703949`
+    15. `0.4024203, -78.1701968`
+
 ## 3. Red de Bio-Monitoreo Telemétrico Continuo (6 Estaciones GPS)
 
 Red de muestreo pasivo y activo equipada con trampas de silueta oscura, cebadas con emanación controlada de $\text{CO}_2$ biológico y ácido L-láctico para cuantificar la densidad de hembras hematófagas en vuelo.
@@ -1279,7 +1401,7 @@ Puntos calibrados en las acequias y canales lotiformes para el fomento de ninfas
 
 ## 5. Trazado Georreferenciado de Cercas Vivas Multiestrato (980 m Lineales) con Protocolo Hipoalergénico
 
-Las cercas vivas multiestrato fueron calibradas mediante optimización espacial no lineal (algoritmo SLSQP) y georreferenciadas con GPS submétrico para interceptar el vuelo de las arenillas y cortar la brisa del cañón del río Ambi, protegiendo las **111 edificaciones catalogadas**. El diseño incorpora una **Zonificación Botánica Hipoalergénica**: en los perímetros residenciales (<5 m de dormitorios), se prohíbe el uso de especies alcanforadas y se sustituye el romero por **Cedrón (*Aloysia citrodora*)** y **Huacatay (*Tagetes minuta*)** para proteger a personas con atopia, asma o alergias a Lamiaceae.
+Las cercas vivas multiestrato fueron calibradas mediante optimización espacial no lineal (algoritmo SLSQP) y georreferenciadas con GPS submétrico para interceptar el vuelo de las arenillas y cortar la brisa del cañón del río Ambi, protegiendo las **120 edificaciones e infraestructuras catalogadas**. El diseño incorpora una **Zonificación Botánica Hipoalergénica**: en los perímetros residenciales (<5 m de dormitorios), se prohíbe el uso de especies alcanforadas y se sustituye el romero por **Cedrón (*Aloysia citrodora*)** y **Huacatay (*Tagetes minuta*)** para proteger a personas con atopia, asma o alergias a Lamiaceae.
 
 ### Cerca Viva 1: Sector Residencial Sur (Las Multis, Las T's y Las Pats)
 * **Longitud Lineal:** **380 metros**
@@ -1327,6 +1449,7 @@ El sistema hidrológico del campus combina **canales de agua corriente rápida (
 | **I-16** | **Pileta Histórica (Claustro)** | Fuente Ornamental | Permanece seca la mayor parte del año | `0.404377` | `-78.175446` | **0% Riesgo Vectorial** (Estructura seca) | Mantenimiento patrimonial |
 | **I-17** | **Pileta de Jardines (San José)** | Fuente Ornamental | Permanece seca habitualmente | `0.404346` | `-78.175689` | **0% Riesgo Vectorial** (Estructura seca) | Embellecimiento paisajístico |
 | **I-18** | **Molino de Agua (Patrimonial)** | Patrimonio Hidráulico | Accionamiento mecánico por acequia | `0.405305` | `-78.174875` | **Monumento Histórico** (Paso hídrico) | Conservación patrimonial |
+| **LINE-CANAL-CAPITULAR** | **Canal Jardines Sala Capitular** | Conducción Lótica | Flujo continuo descubierto (~41.1 m) | `0.404642` a `0.405008` | `-78.175125` a `-78.175180` | **Foco Crítico Local** (Cercano a Parada de Bus Sala Capitular) | Micro-dosificación Bti + Barrera aromática |
 
 ### 6.1. Canal de Riego Principal (Eje Transversal Norte-Sur)
 * **Longitud y Pendiente:** Desciende de 1,950 m a 1,885 m s.n.m. en flujo continuo (~850 m de recorrido).
@@ -1432,6 +1555,15 @@ El sistema hidrológico del campus combina **canales de agua corriente rápida (
 
 ---
 
+### 6.9. Canal de Agua Jardines Sala Capitular / Ingenio (`LINE-CANAL-CAPITULAR`)
+* **Tipo Hidráulico:** Conducción lótica descubierta secundaria.
+* **Longitud Lineal:** ~41.1 metros | Flujo continuo hacia los jardines del Ingenio.
+* **Vértices Oficiales (WGS84):**
+    1. `0.4046421, -78.1751245`
+    2. `0.4048221, -78.1751372`
+    3. `0.4050082, -78.1751801`
+* **Importancia Epidemiológica:** Este canal descubierto discurre inmediatamente adyacente a la **Parada de Buses de la Sala Capitular**. Los usuarios en reposo estático esperando el transporte universitario actúan como atractor de kairomonas ($\text{CO}_2$ y temperatura corporal), lo cual, combinado con la vegetación sombreada y el agua lótica a escasos metros, genera la mayor concentración subjetiva y objetiva de picaduras reportada en este sector.
+
 ## 7. Delimitación de Zonas Principales del Campus y Modelado Epidemiológico
 
 ### 7.1. Delimitación de Distritos Universitarios mediante Envolventes Orgánicas Suaves (Algoritmo de Chaikin)
@@ -1487,7 +1619,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
 
 ---
 
-## 8. Snippet GeoJSON Oficial Completo (223 Entidades: Hitos, Huellas, Canales, Reservorio y Líneas Divisorias)
+## 8. Snippet GeoJSON Oficial Completo (235 Entidades: Hitos, Huellas, Canales, Reservorio y Líneas Divisorias)
 
 ```json
 {
@@ -8595,6 +8727,590 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
             [
               -78.17669053334565,
               0.40397770829273366
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "S-07",
+        "nombre": "Hall del Edificio Senescyt (Planta Baja)",
+        "zona": "Zona 1 - Senescyt",
+        "tipo": "Convivencia / Tránsito Estudiantil",
+        "nivel_riesgo_basal": "Crítico (Vestíbulo principal a nivel de suelo, alto flujo)",
+        "poblacion_aforo": "~200 personas/hora pico",
+        "descripcion": "Vestíbulo cívico y núcleo de distribución principal en la planta baja del Edificio Senescyt, articulando el acceso a biblioteca, Krispan y aulas."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.1701841,
+          0.406559
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "I-19",
+        "nombre": "Plaza Edificio ITT",
+        "zona": "Zona 2 - Eje Tecnológico",
+        "tipo": "Espacio Público / Cívico",
+        "nivel_riesgo_basal": "Medio (Plaza cívica entre bloques ITT)",
+        "poblacion_aforo": "Tránsito peatonal",
+        "descripcion": "Explanada central peatonal articulada entre los dos bloques del Instituto Tecnológico Territorial (ITT)."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.1706952,
+          0.4058643
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LINE-CANAL-CAPITULAR",
+        "nombre": "Canal de Agua Jardines Sala Capitular / Ingenio",
+        "tipo": "Canal de Riego Lótico Secundario (Descubierto)",
+        "zona": "Zona 2 - Sector Sala Capitular",
+        "longitud_m": 41.1,
+        "descripcion": "Acequia lótica descubierta que fluye por los jardines patrimoniales contiguos a la Sala Capitular. Su cercanía a la Parada de la Sala Capitular genera alta densidad de picaduras en usuarios en espera."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.1751245,
+            0.4046421
+          ],
+          [
+            -78.1751372,
+            0.4048221
+          ],
+          [
+            -78.1751801,
+            0.4050082
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "RECT-REST-INGENIO",
+        "nombre": "Restaurante Patrimonial Plaza Ingenio",
+        "tipo": "Gastronomía y Alimentación / Restaurante Patrimonial",
+        "zona": "Zona 2 - Sector Ingenio",
+        "superficie_m2": 168.3,
+        "centroide": [
+          0.404868,
+          -78.1744794
+        ],
+        "descripcion": "Establecimiento gastronómico tradicional ubicado en el flanco de la Plaza del Ingenio Azucarero."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.1744906,
+              0.4049716
+            ],
+            [
+              -78.1745557,
+              0.404939
+            ],
+            [
+              -78.1744626,
+              0.4047628
+            ],
+            [
+              -78.1744049,
+              0.4047913
+            ],
+            [
+              -78.1744906,
+              0.4049716
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "POLY-ABANDON-TECHO",
+        "nombre": "Edificación Abandonada (Sin Techo)",
+        "tipo": "Estructura Abandonada / Sin Cobertura",
+        "zona": "Zona 2 / Periferia Este",
+        "superficie_m2": 31.6,
+        "centroide": [
+          0.405581,
+          -78.1691651
+        ],
+        "descripcion": "Estructura muraria antigua en ruinas y desprovista de cubierta de techo en la periferia este del campus."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.1691615,
+              0.4055451
+            ],
+            [
+              -78.1692018,
+              0.4055812
+            ],
+            [
+              -78.169167,
+              0.405616
+            ],
+            [
+              -78.1691295,
+              0.4055826
+            ],
+            [
+              -78.1691615,
+              0.4055451
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "POLY-BARRIADA",
+        "nombre": "Asentamiento Perimetral Barriada",
+        "tipo": "Asentamiento Residencial Periférico",
+        "zona": "Periferia Este",
+        "superficie_m2": 1956.0,
+        "centroide": [
+          0.4032816,
+          -78.1696338
+        ],
+        "descripcion": "Perímetro del asentamiento barrial contiguo al cuadrante este del campus Yachay Tech."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.1697595,
+              0.4034168
+            ],
+            [
+              -78.169876,
+              0.4033018
+            ],
+            [
+              -78.1699694,
+              0.4031835
+            ],
+            [
+              -78.1699207,
+              0.4031365
+            ],
+            [
+              -78.1697505,
+              0.4031239
+            ],
+            [
+              -78.1696423,
+              0.4031142
+            ],
+            [
+              -78.1694492,
+              0.4031169
+            ],
+            [
+              -78.1694406,
+              0.4031696
+            ],
+            [
+              -78.1694223,
+              0.403203
+            ],
+            [
+              -78.1693271,
+              0.403451
+            ],
+            [
+              -78.1693969,
+              0.4034793
+            ],
+            [
+              -78.1694254,
+              0.4034088
+            ],
+            [
+              -78.1694827,
+              0.403441
+            ],
+            [
+              -78.1695052,
+              0.4034142
+            ],
+            [
+              -78.1696561,
+              0.4034987
+            ],
+            [
+              -78.1697595,
+              0.4034168
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "POLY-EDIF-ITT-1",
+        "nombre": "Edificio ITT (No en Uso) - Bloque Norte",
+        "tipo": "Infraestructura Educativa Inconclusa / No en Uso",
+        "zona": "Eje Tecnológico",
+        "superficie_m2": 1835.8,
+        "centroide": [
+          0.4060091,
+          -78.1704836
+        ],
+        "descripcion": "Bloque norte del Instituto Tecnológico Territorial (ITT), edificación de gran escala actualmente desocupada y no en uso."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.1704364,
+              0.4056874
+            ],
+            [
+              -78.1705381,
+              0.4057778
+            ],
+            [
+              -78.1704742,
+              0.4058649
+            ],
+            [
+              -78.1707687,
+              0.4060997
+            ],
+            [
+              -78.1706037,
+              0.4063099
+            ],
+            [
+              -78.1702023,
+              0.4059472
+            ],
+            [
+              -78.1704364,
+              0.4056874
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "POLY-EDIF-ITT-2",
+        "nombre": "Edificio ITT (No en Uso) - Bloque Sur",
+        "tipo": "Infraestructura Educativa Inconclusa / No en Uso",
+        "zona": "Eje Tecnológico",
+        "superficie_m2": 1909.7,
+        "centroide": [
+          0.4056269,
+          -78.1707963
+        ],
+        "descripcion": "Bloque sur del Instituto Tecnológico Territorial (ITT), edificación de gran volumen actualmente desocupada y no en uso."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.1706587,
+              0.4056443
+            ],
+            [
+              -78.1709554,
+              0.405892
+            ],
+            [
+              -78.1711162,
+              0.4056919
+            ],
+            [
+              -78.1707102,
+              0.4053582
+            ],
+            [
+              -78.1704606,
+              0.4056469
+            ],
+            [
+              -78.1705597,
+              0.4057528
+            ],
+            [
+              -78.1706587,
+              0.4056443
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "POLY-ABANDON-01",
+        "nombre": "Edificio Abandonado (Sector Intermedio Este)",
+        "tipo": "Estructura Abandonada / Obra Inconclusa",
+        "zona": "Sector Intermedio",
+        "superficie_m2": 1868.4,
+        "centroide": [
+          0.4039664,
+          -78.1713058
+        ],
+        "descripcion": "Estructura inconclusa y deshabitada en el sector intermedio este del campus Yachay Tech."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.1712596,
+              0.4036535
+            ],
+            [
+              -78.1715025,
+              0.4040466
+            ],
+            [
+              -78.1714832,
+              0.4040718
+            ],
+            [
+              -78.1715732,
+              0.4042249
+            ],
+            [
+              -78.1713868,
+              0.4042701
+            ],
+            [
+              -78.1713178,
+              0.4041896
+            ],
+            [
+              -78.1712923,
+              0.4041883
+            ],
+            [
+              -78.1712431,
+              0.4041403
+            ],
+            [
+              -78.1710478,
+              0.4037234
+            ],
+            [
+              -78.1712596,
+              0.4036535
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "POLY-ABANDON-02",
+        "nombre": "Edificio Abandonado (Sector Intermedio Oeste)",
+        "tipo": "Estructura Abandonada / Obra Inconclusa",
+        "zona": "Sector Intermedio",
+        "superficie_m2": 4274.0,
+        "centroide": [
+          0.4038277,
+          -78.1719331
+        ],
+        "descripcion": "Macromanzana de hormigón armado inconclusa en el sector intermedio; no alberga población activa."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.1717674,
+              0.403513
+            ],
+            [
+              -78.1718534,
+              0.4038232
+            ],
+            [
+              -78.1719856,
+              0.403782
+            ],
+            [
+              -78.1718986,
+              0.4034675
+            ],
+            [
+              -78.1721264,
+              0.4034063
+            ],
+            [
+              -78.1722988,
+              0.4040278
+            ],
+            [
+              -78.1717326,
+              0.4042183
+            ],
+            [
+              -78.1715546,
+              0.4035818
+            ],
+            [
+              -78.1717674,
+              0.403513
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "POLY-ABANDON-AUDITORIO",
+        "nombre": "Edificio Abandonado (Proyecto Auditorio)",
+        "tipo": "Estructura Abandonada / Obra Inconclusa",
+        "zona": "Sector Central",
+        "superficie_m2": 2676.3,
+        "centroide": [
+          0.4049924,
+          -78.1722743
+        ],
+        "descripcion": "Estructura que originalmente iba a albergar el Gran Auditorio Universitario, actualmente desocupada y en obra gris."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.1725167,
+              0.4047356
+            ],
+            [
+              -78.1726148,
+              0.4050809
+            ],
+            [
+              -78.1721052,
+              0.4052421
+            ],
+            [
+              -78.1718746,
+              0.4049352
+            ],
+            [
+              -78.1725167,
+              0.4047356
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "POLY-ABANDON-SUR",
+        "nombre": "Edificio Abandonado (Sector Sur)",
+        "tipo": "Estructura Abandonada / Obra Inconclusa",
+        "zona": "Sector Sur",
+        "superficie_m2": 3521.5,
+        "centroide": [
+          0.4018584,
+          -78.1704689
+        ],
+        "descripcion": "Edificación de gran perímetro en obra gris desocupada en el cuadrante sureste del campus."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.1701849,
+              0.4019866
+            ],
+            [
+              -78.170159,
+              0.4019794
+            ],
+            [
+              -78.1701491,
+              0.4018014
+            ],
+            [
+              -78.170393,
+              0.4016457
+            ],
+            [
+              -78.1709163,
+              0.4013934
+            ],
+            [
+              -78.1709867,
+              0.4015083
+            ],
+            [
+              -78.1709508,
+              0.4015331
+            ],
+            [
+              -78.1709838,
+              0.4015597
+            ],
+            [
+              -78.1704905,
+              0.4018828
+            ],
+            [
+              -78.1704612,
+              0.4018368
+            ],
+            [
+              -78.17036,
+              0.4019067
+            ],
+            [
+              -78.1703287,
+              0.4019967
+            ],
+            [
+              -78.1704104,
+              0.4020104
+            ],
+            [
+              -78.1703949,
+              0.4024179
+            ],
+            [
+              -78.1701968,
+              0.4024203
+            ],
+            [
+              -78.1701849,
+              0.4019866
             ]
           ]
         ]
