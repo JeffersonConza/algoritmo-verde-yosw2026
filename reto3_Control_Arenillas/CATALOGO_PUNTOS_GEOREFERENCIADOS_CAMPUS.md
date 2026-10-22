@@ -26,7 +26,7 @@ Polo académico norte y residencial estudiantil modular, con una población habi
 | **S-03** | **Centro Médico Tipo A / Bienestar Estudiantil** | Salud / Bienestar | `0.407655` | `-78.170721` | **Alto** (Área abierta) | ~200 usuarios/día |
 | **S-04** | **Biblioteca (Edificio Senescyt)** | Biblioteca / Estudio | `0.406259` | `-78.170117` | **Medio-Alto** (Interior Sen.) | ~120 lectores/día |
 | **S-05** | **Minimarket Krispan** | Cafetería / Abastecimiento | `0.406501` | `-78.170395` | **Medio-Alto** (Interior Sen.) | ~150 clientes/día |
-| **S-06** | **Comedor Sol del Ecuador** | Restaurante Universitario | `0.407063` | `-78.169911` | **Medio-Alto** (Interior Sen.) | ~220 comensales/día |
+| **S-06** | **Comedor Sol del Ecuador** | Restaurante Universitario | `0.407063` | `-78.169911` | **Medio-Alto** (Interior Sen.) | ~110 comensales/día (Almuerzo USD 3.50; docentes y personal) |
 | **B-01** | **Depósito de Basura Principal (Senescyt)** | Gestión Residuos Sólidos | `0.407422` | `-78.169763` | **Medio** (Estación contenedores) | Servicio campus norte |
 | **LINE-PARK-01** | **Parqueadero Lineal Senescyt (Calzada Este)** | Infraestructura / Parqueo | `0.406380` | `-78.169734` | **Medio** (Franja en batería este) | ~25 vehículos |
 | **LINE-PARK-02** | **Parqueadero Lineal Senescyt (Calzada Sur)** | Infraestructura / Parqueo | `0.406172` | `-78.170373` | **Medio** (Calzada de acceso sur) | ~20 vehículos |
@@ -45,7 +45,7 @@ Antiguo complejo histórico de la Hacienda San José, epicentro de la vida cultu
 | **I-07** | **Aulas B (Sur Biblioteca)** | Docencia / Aulas Teóricas | `0.404270` | `-78.174298` | **Alto** (Proximidad acequia) | ~160 estudiantes/turno |
 | **I-08** | **Aulas B (Norte Plaza Ingenio)** | Docencia / Aulas Teóricas | `0.405354` | `-78.174306` | **Alto** (Flujo de vientos) | ~160 estudiantes/turno |
 | **I-09** | **Aulas I (Antiguo Ingenio)** | Talleres / Aulas Técnicas | `0.405224` | `-78.174622` | **Alto** (Paso hídrico) | ~140 estudiantes |
-| **I-10** | **Restaurante "El Colibrí"** | Comedor Universitario | `0.404328` | `-78.173777` | **Muy Alto** (Terraza abierta) | ~120 clientes |
+| **I-10** | **Restaurante "El Colibrí"** | Comedor Universitario | `0.404328` | `-78.173777` | **Muy Alto** (Terraza abierta) | ~260 comensales/día (Almuerzo económico USD 2.50; foco crítico de concurrencia estudiantil) |
 | **I-11** | **Mesas y Sitio de Estar (Plaza Mikuna)** | Comedor Cubierto | `0.404211` | `-78.173869` | **Crítico** (Comida exterior) | ~150 comensales/hora |
 | **I-12** | **Containers de Comida (Plaza Mikuna)** | Patio Gastronómico | `0.404550` | `-78.173820` | **Muy Alto** (Exposición jardín)| ~100 clientes |
 | **I-13** | **Sitio de Fogata (Plaza Mikuna)** | Espacio de Encuentro | `0.404419` | `-78.173849` | **Alto** (Espacio abierto) | Fines de semestre |
@@ -1073,6 +1073,7 @@ Edificaciones ubicadas en el perímetro este del campus, contiguas a la Laguna A
 * **Restaurante Comedor doña Perci (`RECT-COMEDOR-PERCI`):**
   * *Tipo:* Servicio de Alimentación / Gastronomía | *Zona:* Sector Reservorio Este
   * *Superficie aproximada:* ~46.2 m² | *Centroide:* `[0.4046028, -78.1685148]`
+  * *Dinámica de Afluencia:* Concurrencia reducida y esporádica (~20 a 30 comensales/día) por su ubicación periférica respecto al casco académico-residencial, lo cual minimiza la perturbación humana y favorece la consolidación de odonatos depredadores en el reservorio contiguo.
   * *Vértices de Huella Arquitectónica (WGS84):*
     1. `0.4045600, -78.1685081`
     2. `0.4046152, -78.1684733`
@@ -1276,7 +1277,7 @@ Puntos calibrados en las acequias y canales lotiformes para el fomento de ninfas
 
 ## 5. Trazado Georreferenciado de Cercas Vivas Multiestrato (980 m Lineales) con Protocolo Hipoalergénico
 
-Las cercas vivas multiestrato fueron calibradas mediante optimización espacial no lineal (algoritmo SLSQP) y georreferenciadas con GPS submétrico para interceptar el vuelo de las arenillas y cortar la brisa del cañón del río Ambi, protegiendo las **80 edificaciones universitarias**. El diseño incorpora una **Zonificación Botánica Hipoalergénica**: en los perímetros residenciales (<5 m de dormitorios), se prohíbe el uso de especies alcanforadas y se sustituye el romero por **Cedrón (*Aloysia citrodora*)** y **Huacatay (*Tagetes minuta*)** para proteger a personas con atopia, asma o alergias a Lamiaceae.
+Las cercas vivas multiestrato fueron calibradas mediante optimización espacial no lineal (algoritmo SLSQP) y georreferenciadas con GPS submétrico para interceptar el vuelo de las arenillas y cortar la brisa del cañón del río Ambi, protegiendo las **111 edificaciones catalogadas**. El diseño incorpora una **Zonificación Botánica Hipoalergénica**: en los perímetros residenciales (<5 m de dormitorios), se prohíbe el uso de especies alcanforadas y se sustituye el romero por **Cedrón (*Aloysia citrodora*)** y **Huacatay (*Tagetes minuta*)** para proteger a personas con atopia, asma o alergias a Lamiaceae.
 
 ### Cerca Viva 1: Sector Residencial Sur (Las Multis, Las T's y Las Pats)
 * **Longitud Lineal:** **380 metros**

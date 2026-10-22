@@ -1884,10 +1884,10 @@ def generar_mapa():
             "nombre": "Epicentro Central: Corazón Académico y Patrimonial",
             "sector": "Ingenio Azucarero, Aulas B/I y Biblioteca Patrimonial",
             "coords": [0.4048, -78.1738],
-            "poblacion": "~250 estudiantes, docentes y visitantes diarios",
+            "poblacion": "~250 estudiantes, docentes y comensales en horas pico",
             "foco": "Acequia Secundaria Ingenio y arboledas históricas sombreadas",
-            "impacto": "Microclima de sombra y bajo viento ideal para reposo de hembras adultas; distracción en lectura exterior y picaduras en caminerías.",
-            "solucion": "Cerca Viva 2 (280 m) como cortina rompevientos con molle y lavanda melífera.",
+            "impacto": "La alta demanda del Restaurante El Colibrí (almuerzo económico de USD 2.50 frente a USD 3.50 de Senescyt) satura las mesas abiertas de Plaza Mikuna al mediodía, generando un foco concentrado de atracción térmica y picaduras.",
+            "solucion": "Cerca Viva 2 (280 m) como cortina rompevientos con molle y lavanda melífera protegiendo las mesas de comida.",
             "color": "#e67e22"
         },
         {
@@ -1904,9 +1904,9 @@ def generar_mapa():
             "nombre": "Epicentro Este: Recursos Hídricos y Conducción",
             "sector": "Reservorio Agroforestal, Comedor doña Perci y Sacha Home",
             "coords": [0.4041, -78.1685],
-            "poblacion": "~120 usuarios y comensales diarios",
+            "poblacion": "~30 a 50 usuarios diarios (baja afluencia en Comedor doña Perci)",
             "foco": "Canal Sinuoso Este (34 vértices) y Laguna Artificial (~2,006 m²)",
-            "impacto": "Zona de transición lótica a léntica con alta emergencia ninfal y vuelo de dispersión hacia alojamientos externos y comedores periféricos.",
+            "impacto": "Flujo peatonal reducido hacia Comedor doña Perci por su ubicación periférica; zona ideal de baja perturbación para consolidación de depredadores acuáticos.",
             "solucion": "Santuario de odonatos (libélulas nativas) en reservorio y bio-dosificación con Bti en el canal de alimentación.",
             "color": "#8e44ad"
         }
@@ -1958,7 +1958,7 @@ def generar_mapa():
         ([0.406501, -78.170395], "Minimarket Krispan", "shopping-cart", "orange",
          "☕ Cafetería y Abastecimiento", "Local interior de alimentos, café y artículos de primera necesidad en el ala oeste de Senescyt."),
         ([0.407063, -78.169911], "Comedor Sol del Ecuador", "cutlery", "orange",
-         "🍲 Restaurante Universitario", "Comedor estudiantil ubicado en el extremo norte interior del Edificio Senescyt."),
+         "🍲 Restaurante Universitario (Senescyt)", "Comedor en ala norte de Senescyt. Almuerzo: USD 3.50 (afluencia moderada de docentes, personal administrativo y estudiantes)."),
 
         # =============================================================
         # ZONA 2: INGENIO AZUCARERO
@@ -1982,7 +1982,7 @@ def generar_mapa():
         ([0.405224, -78.174622], "Aulas I (Antiguo Ingenio)", "university", "cadetblue",
          "🏛️ Aulas y Talleres I", "Nave patrimonial adaptada para laboratorios, docencia técnica y talleres de ingeniería."),
         ([0.404328, -78.173777], "Restaurant El Colibrí", "coffee", "orange",
-         "🍲 Comedor Universitario", "Restaurante de comida tradicional ecuatoriana y menú estudiantil en Plaza Mikuna."),
+         "🍲 Comedor Universitario (Alta Demanda)", "Restaurante tradicional en Plaza Mikuna. Almuerzo económico: USD 2.50 (alta afluencia estudiantil en horas pico, foco de atracción humana)."),
         ([0.404211, -78.173869], "Mesas y Sitio de Estar (Plaza Mikuna)", "cutlery", "darkgreen",
          "🍽️ Comedor Cubierto al Aire Libre", "Área de mesas bajo cubierta para consumo de alimentos sin picaduras."),
         ([0.404550, -78.173820], "Restaurant Containers (Plaza Mikuna)", "cutlery", "darkred",
@@ -2248,7 +2248,7 @@ def generar_mapa():
             "color": "#d35400", "fill": "#f39c12",
             "interior": True,
             "is_perimeter": False,
-            "desc": "Comedor universitario en el extremo noreste interior de Senescyt."
+            "desc": "Comedor universitario en el interior de Senescyt. Almuerzo: USD 3.50 (afluencia moderada de docentes, personal administrativo y estudiantes)."
         },
         {
             "id": "POLY-BIB-PAT",
@@ -2378,7 +2378,7 @@ def generar_mapa():
             "color": "#d35400", "fill": "#e67e22",
             "interior": False,
             "is_perimeter": False,
-            "desc": "Restaurante y comedor estudiantil tradicional en Plaza Mikuna."
+            "desc": "Restaurante universitario tradicional en Plaza Mikuna. Almuerzo económico: USD 2.50 (alta afluencia estudiantil en horas pico, foco de atracción humana)."
         },
         {
             "id": "RECT-MESAS-MIKUNA",
@@ -2989,7 +2989,7 @@ def generar_mapa():
             "color": "#e67e22", "fill": "#f39c12",
             "interior": False,
             "is_perimeter": False,
-            "desc": "Comedor tradicional y punto de alimentación estudiantil en las inmediaciones del reservorio este."
+            "desc": "Comedor tradicional en inmediaciones del reservorio este. Afluencia reducida/esporádica (~20-30 clientes/día) por su ubicación periférica."
         },
         {
             "id": "RECT-SACHA-HOME",
@@ -4944,7 +4944,7 @@ def generar_mapa():
 
                 <div class="card-pilar" style="border-left-color: #3498db;">
                     <b style="color: #2980b9; font-size: 13.5px;" data-i18n="modal_card2_title">🌿 Naturaleza que Protege e Inclusión Hipoalergénica</b><br>
-                    <span data-i18n="modal_card2_desc">980 metros de barreras vivas blindando 80 edificaciones. Diseño con <b>zonificación hipoalergénica</b>: en proximidad inmediata a dormitorios (Las Multis, Las T's, Las Pats y Los Bloques) el romero es sustituido por <b>Cedrón (Aloysia citrodora)</b> y <b>Huacatay (Tagetes minuta)</b> para resguardar a residentes con asma, rinitis o alergias a Lamiaceae.</span>
+                    <span data-i18n="modal_card2_desc">980 metros de barreras vivas blindando 111 edificaciones. Diseño con <b>zonificación hipoalergénica</b>: en proximidad inmediata a dormitorios (Las Multis, Las T's, Las Pats y Los Bloques) el romero es sustituido por <b>Cedrón (Aloysia citrodora)</b> y <b>Huacatay (Tagetes minuta)</b> para resguardar a residentes con asma, rinitis o alergias a Lamiaceae.</span>
                 </div>
 
                 <div class="card-pilar" style="border-left-color: #0abde3;">
