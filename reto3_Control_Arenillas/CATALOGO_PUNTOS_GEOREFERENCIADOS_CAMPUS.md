@@ -1102,8 +1102,6 @@ Edificaciones ubicadas en el perímetro este del campus, contiguas a la Laguna A
     3. `0.4045398, -78.1682419`
     4. `0.4047109, -78.1684205`
 
----
-
 * **Asentamiento Perimetral Barriada (`POLY-BARRIADA`):**
   * *Tipo:* Asentamiento Residencial Periférico / Viviendas | *Zona:* Periferia Este
   * *Superficie aproximada:* ~1,956.0 m² | *Centroide:* `[0.4032816, -78.1696338]`
@@ -1132,6 +1130,8 @@ Edificaciones ubicadas en el perímetro este del campus, contiguas a la Laguna A
     2. `0.4055812, -78.1692018`
     3. `0.4056160, -78.1691670`
     4. `0.4055826, -78.1691295`
+
+---
 
 ### 2.7. Zona 3: Sector Complejo Deportivo Sur (Canchas Reglamentarias)
 Complejo de recreación y acondicionamiento físico de alto rendimiento contiguo a la arboleda sur y acequia:
@@ -1370,6 +1370,8 @@ Estructuras de gran escala proyectadas originalmente en el plan maestro de la Ci
     13. `0.4020104, -78.1704104`
     14. `0.4024179, -78.1703949`
     15. `0.4024203, -78.1701968`
+
+---
 
 ## 3. Red de Bio-Monitoreo Telemétrico Continuo (6 Estaciones GPS)
 
