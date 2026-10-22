@@ -116,6 +116,7 @@ def generar_mapa():
     # -------------------------------------------------------------
     fg_distritos = folium.FeatureGroup(name="🏛️ Zonas Principales: Envolventes Orgánicas Suaves", show=True)
     fg_zonas = folium.FeatureGroup(name="🔥 Diagnóstico: Mapa de Calor de Picaduras y Riesgo (Simulium spp.)", show=False)
+    fg_perimetros = folium.FeatureGroup(name="📐 Perímetros de Conjunto Histórico y Delimitaciones", show=False)
     fg_edificios = folium.FeatureGroup(name="🏛️ Vida en el Campus (Residencias, Aulas, Cultura)", show=True)
     fg_canales = folium.FeatureGroup(name="💧 Fuentes de Agua y Red Hídrica (Lóticas y Lénticas)", show=True)
     fg_biocontrol = folium.FeatureGroup(name="🦗 Biocontrol Acuático (Libélulas Nativas + Bti)", show=True)
@@ -3857,39 +3858,62 @@ def generar_mapa():
 
     for h in huellas_arquitectonicas:
         if h.get("is_perimeter"):
-            dash = "6, 6"
-            weight = 2
-            opacity = 0.12
-        elif h.get("interior"):
-            dash = "3, 3"
-            weight = 2.5
-            opacity = 0.55
-        else:
-            dash = None
-            weight = 2
-            opacity = 0.38
-        folium.Polygon(
-            locations=h["coords"],
-            color=h["color"],
-            weight=weight,
-            dash_array=dash,
-            fill=True,
-            fill_color=h["fill"],
-            fill_opacity=opacity,
-            tooltip=f"🏛️ {h['nombre']} ({h['tipo']})",
-            popup=folium.Popup(f"""
-                <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 250px; line-height: 1.4;">
-                    <div style="color: {h['color']}; font-weight: bold; font-size: 13px; margin-bottom: 2px;">{h['nombre']}</div>
-                    <span style="background: #eef2f7; color: #2c3e50; padding: 2px 6px; border-radius: 4px; font-size: 10px; font-weight: 600;">{h['tipo']}</span>
-                    <p style="margin: 6px 0 4px 0; font-size: 11px; color: #34495e;">
-                        {h.get('desc', '')}
-                    </p>
-                    <div style="font-size: 10px; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 3px;">
-                        Superficie aprox: <b>{h.get('area', 'N/D')} m²</b> | Zona: <b>{h.get('zona', '')}</b>
+            # Perímetros de conjunto histórico y delimitaciones mayores:
+            # Se asignan a fg_perimetros (desactivada por defecto) con fill=False (solo trazo discontinuo),
+            # de modo que el interior sea 100% transparente al ratón y permita seleccionar libremente
+            # cualquier edificio individual contenido (Biblioteca Patrimonial, Sala Capitular, Aulas, etc.).
+            folium.Polygon(
+                locations=h["coords"],
+                color=h["color"],
+                weight=2.5,
+                dash_array="8, 8",
+                fill=False,
+                tooltip=f"📐 {h['nombre']} ({h['tipo']})",
+                popup=folium.Popup(f"""
+                    <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 260px; line-height: 1.4;">
+                        <div style="color: {h['color']}; font-weight: bold; font-size: 13.5px; margin-bottom: 2px;">📐 {h['nombre']}</div>
+                        <span style="background: #fdf2e9; color: #d35400; padding: 2px 6px; border-radius: 4px; font-size: 10px; font-weight: 600;">{h['tipo']}</span>
+                        <p style="margin: 6px 0 4px 0; font-size: 11.5px; color: #34495e;">
+                            {h.get('desc', '')}
+                        </p>
+                        <div style="font-size: 10.5px; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 4px;">
+                            Área total del conjunto: <b>{h.get('area', 'N/D')} m²</b> | Zona: <b>{h.get('zona', '')}</b><br>
+                            <i>💡 Nota: Haz clic en los edificios interiores para ver sus detalles individuales.</i>
+                        </div>
                     </div>
-                </div>
-            """, max_width=270)
-        ).add_to(fg_edificios)
+                """, max_width=280)
+            ).add_to(fg_perimetros)
+        else:
+            if h.get("interior"):
+                dash = "3, 3"
+                weight = 2.5
+                opacity = 0.55
+            else:
+                dash = None
+                weight = 2
+                opacity = 0.38
+            folium.Polygon(
+                locations=h["coords"],
+                color=h["color"],
+                weight=weight,
+                dash_array=dash,
+                fill=True,
+                fill_color=h["fill"],
+                fill_opacity=opacity,
+                tooltip=f"🏛️ {h['nombre']} ({h['tipo']})",
+                popup=folium.Popup(f"""
+                    <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 250px; line-height: 1.4;">
+                        <div style="color: {h['color']}; font-weight: bold; font-size: 13px; margin-bottom: 2px;">{h['nombre']}</div>
+                        <span style="background: #eef2f7; color: #2c3e50; padding: 2px 6px; border-radius: 4px; font-size: 10px; font-weight: 600;">{h['tipo']}</span>
+                        <p style="margin: 6px 0 4px 0; font-size: 11px; color: #34495e;">
+                            {h.get('desc', '')}
+                        </p>
+                        <div style="font-size: 10px; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 3px;">
+                            Superficie aprox: <b>{h.get('area', 'N/D')} m²</b> | Zona: <b>{h.get('zona', '')}</b>
+                        </div>
+                    </div>
+                """, max_width=270)
+            ).add_to(fg_edificios)
 
     # Líneas divisorias arquitectónicas interiores
     lineas_divisorias = [
@@ -4656,6 +4680,7 @@ def generar_mapa():
     fg_zonas.add_to(m)
     fg_canales.add_to(m)
     fg_biocontrol.add_to(m)
+    fg_perimetros.add_to(m)
     fg_edificios.add_to(m)
     fg_cercas.add_to(m)
     fg_buffer.add_to(m)
