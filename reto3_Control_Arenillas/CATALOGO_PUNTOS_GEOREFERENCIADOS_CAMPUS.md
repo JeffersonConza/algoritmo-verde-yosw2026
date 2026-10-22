@@ -14,7 +14,7 @@
 
 ## 1. Zonas Principales de la Universidad e Hitos de Vida en el Campus
 
-La infraestructura del campus de la Universidad Yachay Tech se articula en **tres zonas neurálgicas principales**, cada una con dinámicas académicas, residenciales, hídricas y de exposición diferencial a la plaga de simúlidos:
+La infraestructura del campus de la Universidad Yachay Tech se articula en **cuatro sectores y distritos principales** (Polo Académico Norte, Casco Histórico Central, Gran Distrito Residencial y Deportivo Sur, y Eje Hídrico Agroforestal Este), cada uno con dinámicas académicas, residenciales, hídricas y de exposición diferencial a la plaga de simúlidos:
 
 ### 1.1. Zona 1: Sector Senescyt (Académica, Residencias Los Bloques y Salud)
 Polo académico norte y residencial estudiantil modular, con una población habitual de ~450 a 650 personas:
@@ -85,7 +85,7 @@ Principal polo habitacional y deportivo de la universidad (~400 a 550 residentes
 
 ## 2. Catálogo Oficial de Huellas Arquitectónicas Georreferenciadas
 
-Las edificaciones del campus fueron regularizadas rigurosamente bajo criterios de arquitectura ortogonal (ángulos rectos a 90° mediante bounding boxes de orientación mínima sobre coordenadas topográficas reales), excepto las estructuras poliédricas patrimoniales de geometría compleja (Edificio Senescyt con 8 vértices y Biblioteca Patrimonial con 13 vértices).
+Las edificaciones del campus fueron regularizadas rigurosamente bajo criterios de arquitectura ortogonal (ángulos rectos a 90° sobre coordenadas topográficas reales), excepto las estructuras poliédricas singulares de geometría compleja (Edificio Senescyt con 8 vértices, Biblioteca Patrimonial con 13 vértices, Claustro Sala Capitular con 10 vértices, Edificio 41 con 12 vértices y Villa Docente 1 con 8 vértices).
 
 ### 2.1. Zona 1: Sector Senescyt y Residencias Los Bloques
 
