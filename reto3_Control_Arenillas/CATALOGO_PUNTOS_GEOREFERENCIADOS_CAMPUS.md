@@ -1398,7 +1398,36 @@ El sistema hidrológico del campus combina **canales de agua corriente rápida (
 
 ---
 
-## 7. Modelado Epidemiológico: Mapa de Calor Continuo y Epicentros de Picaduras (Simulium spp.)
+## 7. Delimitación de Zonas Principales del Campus y Modelado Epidemiológico
+
+### 7.1. Delimitación de Distritos Universitarios mediante Envolventes Orgánicas Suaves (Algoritmo de Chaikin)
+Para superar las limitaciones visuales de los polígonos con bordes rectos artificiales, las cuatro zonas clave del campus se delimitan mediante **envolventes orgánicas continuas** generadas a partir de la distribución real de las edificaciones y suavizadas con el **algoritmo de corte de esquinas de Chaikin** (3 iteraciones). Esta técnica produce contornos curvos aerodinámicos, biofílicos y no invasivos con opacidad translúcida del 12%:
+
+* **Distrito 1: Polo Académico Norte y Residencias Los Bloques (`DIST-NORTE`):**
+  - *Superficie delimitada:* ~47,212 m² | *Centroide Operativo:* `[0.4070045, -78.1705335]`
+  - *Identidad visual:* Borde azul zafiro institucional (`#1e3799`), relleno translúcido (`#3498db`).
+  - *Población y Aforo:* ~650 estudiantes, docentes y personal administrativo.
+  - *Infraestructura contenida:* Edificio Senescyt (Aulas Magnas, Decanatos, Rectorado), Centro Médico Tipo A, Residencias Los Bloques (A-I), Biblioteca Senescyt, Minimarket Krispan, Comedor Sol del Ecuador y parqueaderos este/sur.
+
+* **Distrito 2: Casco Histórico, Patrimonio Cultural y San José (`DIST-CENTRAL`):**
+  - *Superficie delimitada:* ~75,665 m² | *Centroide Operativo:* `[0.4045911, -78.1744364]`
+  - *Identidad visual:* Borde púrpura patrimonial (`#6c5ce7`), relleno lavanda translúcido (`#a29bfe`).
+  - *Población y Aforo:* ~400 a 600 usuarios diarios (estudiantes, investigadores y visitantes).
+  - *Infraestructura contenida:* Biblioteca Patrimonial, Torre del Ingenio, Aulas B (Norte y Sur), Aulas I, Invernaderos Experimentales 1–4, Laboratorios de Carrera, Claustro Sala Capitular, Sala de Defensas, Edificios 20, 37–41, Restaurantes "El Colibrí", "Pato Goloso", "Comedor Analí" y Plaza Mikuna.
+
+* **Distrito 3: Gran Distrito Residencial Sur, Deportes y Cultura (`DIST-SUR`):**
+  - *Superficie delimitada:* ~138,326 m² | *Centroide Operativo:* `[0.4019818, -78.1744314]`
+  - *Identidad visual:* Borde verde esmeralda biofílico (`#009432`), relleno verde primavera translúcido (`#2ecc71`).
+  - *Población y Aforo:* ~550 estudiantes, deportistas y docentes residentes continuos.
+  - *Infraestructura contenida:* 13 Bloques Multifamiliares ("Las Multis"), Plaza de las Multis, 9 Bloques Patrimoniales ("Las Pats"), 13 Casas Patrimoniales en T ("Las T's"), Complejo Deportivo Sur (7 canchas reglamentarias: volley playa, 3 basketball, 3 fútbol sintético), 9 Residencias de Docentes (villas 1-8 + edificio comunitario) y Concha Acústica.
+
+* **Distrito 4: Eje Hídrico Agroforestal y Periferia Este (`DIST-ESTE`):**
+  - *Superficie delimitada:* ~13,478 m² | *Centroide Operativo:* `[0.4041715, -78.1685566]`
+  - *Identidad visual:* Borde azul cian hídrico (`#00a8ff`), relleno celeste translúcido (`#74b9ff`).
+  - *Población y Aforo:* ~120 comensales y residentes periurbanos diarios.
+  - *Infraestructura contenida:* Laguna Artificial / Reservorio Agroforestal (~2,006 m²), Canal de Conducción Este (34 vértices), Comedor doña Perci y Residencias Privadas Sacha Home.
+
+### 7.2. Modelado Epidemiológico: Mapa de Calor Continuo y Epicentros de Picaduras (Simulium spp.)
 
 En lugar de polígonos geométricos con bordes rectos artificiales, la distribución espacial de las arenillas hematófagas (*Simulium* spp.) se modela como un **campo continuo de densidad epidemiológica (Mapa de Calor / Kernel Density Estimation)**. Este gradiente biológico difuso se calibra a partir de los focos lóticos de emergencia larvaria (canales y acequias) y la atracción hacia los cuatro epicentros de emisión humana ($\text{CO}_2$, gradientes térmicos y microbiota cutánea):
 

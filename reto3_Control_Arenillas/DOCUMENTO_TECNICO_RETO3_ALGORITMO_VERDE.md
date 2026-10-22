@@ -71,7 +71,7 @@ Por directriz explícita del mentor Ing. José Luis Flores M.Sc., se investigó 
 - **Pérdida de funcionalidad universitaria:** La actividad hematófaga es exclusivamente diurna, con picos acentuados en horas de la mañana (07:30 - 10:00) y de la tarde (16:00 - 18:30). Estos horarios coinciden con los traslados a pie de estudiantes entre dormitorios y aulas, impidiendo actividades recreativas en la Concha Acústica y forzando el cierre de ventanas en salones de clase del Edificio Senescyt.
 
 ### 2.3. Delimitación Espacial y Calibración GPS Oficial (111 Edificaciones Catalogadas)
-A partir de la cartografía georreferenciada de Yachay Tech (222 entidades GIS validadas) y la inspección de puntos críticos, se delimitaron y calibraron los sectores neurálgicos del campus que albergan las **111 edificaciones universitarias, deportivas y de soporte**:
+A partir de la cartografía georreferenciada de Yachay Tech (222 entidades GIS validadas) y la inspección de puntos críticos, se delimitaron y calibraron los sectores neurálgicos del campus que albergan las **111 edificaciones universitarias, deportivas y de soporte** mediante **envolventes orgánicas continuas** (algoritmo de Chaikin) que reemplazan los polígonos rígidos convencionales:
 
 ```
 [FIGURA 1: DIAGNÓSTICO EPIDEMIOLÓGICO: MAPA DE CALOR DE PICADURAS Y FOCOS LARVARIOS EN EL CAMPUS YACHAY TECH]
