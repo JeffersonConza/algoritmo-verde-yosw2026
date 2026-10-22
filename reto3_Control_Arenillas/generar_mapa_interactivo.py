@@ -1954,11 +1954,11 @@ def generar_mapa():
         ([0.406950, -78.171150], "Residencias Estudiantiles 'Los Bloques'", "bed", "darkred",
          "🛌 Alojamiento Estudiantil (Bloques A-I)", "Complejo habitacional de 9 bloques modulares (A a I) blindado por la Cerca Viva 3."),
         ([0.406259, -78.170117], "Biblioteca (Edificio Senescyt)", "book", "blue",
-         "📚 Biblioteca y Sala de Estudio", "Sala de lectura y consulta individual situada en el ala sur del Edificio Senescyt."),
+         "📚 Biblioteca y Sala de Estudio (Primer Piso)", "Sala de lectura y consulta individual situada en el primer piso (ala sur) del Edificio Senescyt."),
         ([0.406501, -78.170395], "Minimarket Krispan", "shopping-cart", "orange",
-         "☕ Cafetería y Abastecimiento", "Local interior de alimentos, café y artículos de primera necesidad en el ala oeste de Senescyt."),
+         "☕ Cafetería y Abastecimiento (Primer Piso)", "Local interior de alimentos, café y artículos de primera necesidad en el primer piso (ala oeste) de Senescyt."),
         ([0.407063, -78.169911], "Comedor Sol del Ecuador", "cutlery", "orange",
-         "🍲 Restaurante Universitario (Senescyt)", "Comedor en ala norte de Senescyt. Almuerzo: USD 3.50 (afluencia moderada de docentes, personal administrativo y estudiantes)."),
+         "🍲 Restaurante Universitario (Primer Piso)", "Comedor en primer piso (ala norte) de Senescyt. Almuerzo: USD 3.50 (afluencia moderada de docentes, personal administrativo y estudiantes)."),
 
         # =============================================================
         # ZONA 2: INGENIO AZUCARERO
@@ -2211,12 +2211,12 @@ def generar_mapa():
             "color": "#c0392b", "fill": "#e74c3c",
             "interior": False,
             "is_perimeter": False,
-            "desc": "Estructura principal de 4 pisos que alberga aulas teóricas, oficinas de profesores, decanatos, hall principal, biblioteca universitaria y servicios interiores (Krispan y Comedor Sol del Ecuador)."
+            "desc": "Estructura principal de 4 pisos. En el primer piso concentra el Hall principal, biblioteca universitaria, minimarket Krispan, Comedor Sol del Ecuador y aulas de docencia; los pisos superiores albergan oficinas de profesores, decanatos y aulas adicionales."
         },
         {
             "id": "INT-BIB",
             "nombre": "Biblioteca Universitaria",
-            "tipo": "Sala de Estudio (Local Interior en Edificio Senescyt)",
+            "tipo": "Sala de Estudio (Primer Piso - Edificio Senescyt)",
             "zona": "Senescyt",
             "coords": [[0.4062218, -78.1699562], [0.4061159, -78.1700531], [0.406315, -78.1702949], [0.4063677, -78.1702261], [0.4063425, -78.1701969], [0.4063898, -78.170154], [0.4062959, -78.1700414]],
             "centroid": [0.4062594, -78.1701174],
@@ -2224,12 +2224,12 @@ def generar_mapa():
             "color": "#1d6fa5", "fill": "#3498db",
             "interior": True,
             "is_perimeter": False,
-            "desc": "Biblioteca interior situada en el ala sur del Edificio Senescyt."
+            "desc": "Biblioteca interior situada en el primer piso (ala sur) del Edificio Senescyt."
         },
         {
             "id": "INT-KRISPAN",
             "nombre": "Minimarket Krispan",
-            "tipo": "Comercial / Cafetería (Local Interior en Edificio Senescyt)",
+            "tipo": "Comercial / Cafetería (Primer Piso - Edificio Senescyt)",
             "zona": "Senescyt",
             "coords": [[0.4065494, -78.1703109], [0.4064042, -78.1704011], [0.4064522, -78.1704784], [0.4065974, -78.1703882]],
             "centroid": [0.4065008, -78.1703946],
@@ -2237,12 +2237,12 @@ def generar_mapa():
             "color": "#d35400", "fill": "#e67e22",
             "interior": True,
             "is_perimeter": False,
-            "desc": "Minimarket y cafetería interior en el ala oeste de Senescyt."
+            "desc": "Minimarket y cafetería interior situada en el primer piso (ala oeste) de Senescyt."
         },
         {
             "id": "INT-COMEDOR",
             "nombre": "Comedor Sol del Ecuador",
-            "tipo": "Restaurante Universitario (Local Interior en Edificio Senescyt)",
+            "tipo": "Restaurante Universitario (Primer Piso - Edificio Senescyt)",
             "zona": "Senescyt",
             "coords": [[0.4071116, -78.1699224], [0.4070583, -78.1698613], [0.4070134, -78.1699005], [0.4070667, -78.1699616]],
             "centroid": [0.4070625, -78.1699114],
@@ -2250,7 +2250,7 @@ def generar_mapa():
             "color": "#d35400", "fill": "#f39c12",
             "interior": True,
             "is_perimeter": False,
-            "desc": "Comedor universitario en el interior de Senescyt. Almuerzo: USD 3.50 (afluencia moderada de docentes, personal administrativo y estudiantes)."
+            "desc": "Comedor universitario en el primer piso (ala norte interior) de Senescyt. Almuerzo: USD 3.50 (afluencia moderada de docentes, personal administrativo y estudiantes)."
         },
         {
             "id": "POLY-BIB-PAT",

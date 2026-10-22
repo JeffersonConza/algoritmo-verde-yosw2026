@@ -21,12 +21,12 @@ Polo académico norte y residencial estudiantil modular, con una población habi
 
 | ID | Nombre del Hito / Edificación | Categoría de Uso | Latitud (WGS84) | Longitud (WGS84) | Nivel de Riesgo Basal | Población / Aforo |
 | :---: | :--- | :--- | :---: | :---: | :---: | :---: |
-| **S-01** | **Edificio Senescyt (Aulas / Decanatos / Oficinas)** | Académica / Administrativa (4 Pisos) | `0.406633` | `-78.170096` | **Crítico** (Acequia a 35m) | ~450 personas (4 pisos: aulas, oficinas, hall, biblioteca, Krispan) |
+| **S-01** | **Edificio Senescyt (Aulas / Decanatos / Oficinas)** | Académica / Administrativa (4 Pisos) | `0.406633` | `-78.170096` | **Crítico** (Acequia a 35m) | ~450 personas (Primer piso: hall, biblioteca, Krispan, comedor y aulas; Pisos 2-4: oficinas y decanatos) |
 | **S-02** | **Residencias Estudiantiles "Los Bloques"** | Residencial (Bloques A-I) | `0.406950` | `-78.171150` | **Muy Alto** (Viento rasante) | ~180 residentes |
 | **S-03** | **Centro Médico Tipo A / Bienestar Estudiantil** | Salud / Bienestar | `0.407655` | `-78.170721` | **Alto** (Área abierta) | ~200 usuarios/día |
-| **S-04** | **Biblioteca (Edificio Senescyt)** | Biblioteca / Estudio | `0.406259` | `-78.170117` | **Medio-Alto** (Interior Sen.) | ~120 lectores/día |
-| **S-05** | **Minimarket Krispan** | Cafetería / Abastecimiento | `0.406501` | `-78.170395` | **Medio-Alto** (Interior Sen.) | ~150 clientes/día |
-| **S-06** | **Comedor Sol del Ecuador** | Restaurante Universitario | `0.407063` | `-78.169911` | **Medio-Alto** (Interior Sen.) | ~110 comensales/día (Almuerzo USD 3.50; docentes y personal) |
+| **S-04** | **Biblioteca (Edificio Senescyt)** | Biblioteca / Estudio (Primer Piso) | `0.406259` | `-78.170117` | **Medio-Alto** (Primer piso Sen.) | ~120 lectores/día |
+| **S-05** | **Minimarket Krispan** | Cafetería / Abastecimiento (Primer Piso) | `0.406501` | `-78.170395` | **Medio-Alto** (Primer piso Sen.) | ~150 clientes/día |
+| **S-06** | **Comedor Sol del Ecuador** | Restaurante Universitario (Primer Piso) | `0.407063` | `-78.169911` | **Medio-Alto** (Primer piso Sen.) | ~110 comensales/día (Almuerzo USD 3.50; docentes y personal) |
 | **B-01** | **Depósito de Basura Principal (Senescyt)** | Gestión Residuos Sólidos | `0.407422` | `-78.169763` | **Medio** (Estación contenedores) | Servicio campus norte |
 | **LINE-PARK-01** | **Parqueadero Lineal Senescyt (Calzada Este)** | Infraestructura / Parqueo | `0.406380` | `-78.169734` | **Medio** (Franja en batería este) | ~25 vehículos |
 | **LINE-PARK-02** | **Parqueadero Lineal Senescyt (Calzada Sur)** | Infraestructura / Parqueo | `0.406172` | `-78.170373` | **Medio** (Calzada de acceso sur) | ~20 vehículos |
@@ -179,7 +179,8 @@ Las edificaciones del campus fueron regularizadas rigurosamente bajo criterios d
     4. `0.4076236, -78.1705726`
 
 #### C. Complejo Edificio Senescyt y Locales Interiores Contenidos
-* **Edificio Senescyt (Polígono Matriz - Morfología Poliédrica de 8 Vértices):**
+* **Edificio Senescyt (Polígono Matriz - 4 Pisos - Morfología Poliédrica de 8 Vértices):**
+  * *Distribución Vertical:* Estructura de 4 plantas. En el **primer piso** se concentran los espacios de mayor flujo social y peatonal: Hall central de acceso y eventos, Biblioteca Universitaria (ala sur), Minimarket Krispan (ala oeste), Comedor Sol del Ecuador (ala norte) y aulas teóricas de docencia. Los **pisos superiores (2, 3 y 4)** albergan oficinas de profesores e investigadores, decanatos de escuelas y aulas adicionales.
   * *Superficie:* ~3474.8 m² | *Centroide:* `[0.4066329, -78.1700962]`
   * *Vértices Perimetrales:*
     1. `0.4071147, -78.1699317`
@@ -191,8 +192,8 @@ Las edificaciones del campus fueron regularizadas rigurosamente bajo criterios d
     7. `0.4061159, -78.1700531`
     8. `0.4064619, -78.1704732`
 
-* **Biblioteca Universitaria (Sala de Estudio (Local Interior en Edificio Senescyt)):**
-  * *Ubicación:* Local interior estrictamente contenido dentro del perímetro del Edificio Senescyt.
+* **Biblioteca Universitaria (Sala de Estudio (Primer Piso - Edificio Senescyt)):**
+  * *Ubicación:* Local interior en el primer piso (ala sur) estrictamente contenido dentro del perímetro del Edificio Senescyt.
   * *Superficie interna:* ~514.6 m² | *Centroide:* `[0.4062594, -78.1701174]`
   * *Vértices Interiores (Lat, Lon):*
     1. `0.4062218, -78.1699562`
@@ -203,8 +204,8 @@ Las edificaciones del campus fueron regularizadas rigurosamente bajo criterios d
     6. `0.4063898, -78.1701540`
     7. `0.4062959, -78.1700414`
 
-* **Minimarket Krispan (Comercial / Cafetería (Local Interior en Edificio Senescyt)):**
-  * *Ubicación:* Local interior estrictamente contenido dentro del perímetro del Edificio Senescyt.
+* **Minimarket Krispan (Comercial / Cafetería (Primer Piso - Edificio Senescyt)):**
+  * *Ubicación:* Local interior en el primer piso (ala oeste) estrictamente contenido dentro del perímetro del Edificio Senescyt.
   * *Superficie interna:* ~191.7 m² | *Centroide:* `[0.4065008, -78.1703946]`
   * *Vértices Interiores (Lat, Lon):*
     1. `0.4065494, -78.1703109`
@@ -212,8 +213,8 @@ Las edificaciones del campus fueron regularizadas rigurosamente bajo criterios d
     3. `0.4064522, -78.1704784`
     4. `0.4065974, -78.1703882`
 
-* **Comedor Sol del Ecuador (Restaurante Universitario (Local Interior en Edificio Senescyt)):**
-  * *Ubicación:* Local interior estrictamente contenido dentro del perímetro del Edificio Senescyt.
+* **Comedor Sol del Ecuador (Restaurante Universitario (Primer Piso - Edificio Senescyt)):**
+  * *Ubicación:* Local interior en el primer piso (extremo norte interior) estrictamente contenido dentro del perímetro del Edificio Senescyt.
   * *Superficie interna:* ~59.6 m² | *Centroide:* `[0.4070625, -78.1699114]`
   * *Vértices Interiores (Lat, Lon):*
     1. `0.4071116, -78.1699224`
