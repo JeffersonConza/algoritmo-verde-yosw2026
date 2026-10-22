@@ -21,7 +21,7 @@ Polo académico norte y residencial estudiantil modular, con una población habi
 
 | ID | Nombre del Hito / Edificación | Categoría de Uso | Latitud (WGS84) | Longitud (WGS84) | Nivel de Riesgo Basal | Población / Aforo |
 | :---: | :--- | :--- | :---: | :---: | :---: | :---: |
-| **S-01** | **Edificio Senescyt (Aulas / Decanatos)** | Académica / Rectorado | `0.406633` | `-78.170096` | **Crítico** (Acequia a 35m) | ~450 estudiantes y docentes |
+| **S-01** | **Edificio Senescyt (Aulas / Decanatos / Oficinas)** | Académica / Administrativa (4 Pisos) | `0.406633` | `-78.170096` | **Crítico** (Acequia a 35m) | ~450 personas (4 pisos: aulas, oficinas, hall, biblioteca, Krispan) |
 | **S-02** | **Residencias Estudiantiles "Los Bloques"** | Residencial (Bloques A-I) | `0.406950` | `-78.171150` | **Muy Alto** (Viento rasante) | ~180 residentes |
 | **S-03** | **Centro Médico Tipo A / Bienestar Estudiantil** | Salud / Bienestar | `0.407655` | `-78.170721` | **Alto** (Área abierta) | ~200 usuarios/día |
 | **S-04** | **Biblioteca (Edificio Senescyt)** | Biblioteca / Estudio | `0.406259` | `-78.170117` | **Medio-Alto** (Interior Sen.) | ~120 lectores/día |
@@ -52,8 +52,8 @@ Antiguo complejo histórico de la Hacienda San José, epicentro de la vida cultu
 | **I-14** | **Laboratorios de Carrera (Ingenierías)** | Laboratorios Especiales | `0.403800` | `-78.172660` | **Muy Alto** (Frente a canal) | ~180 investigadores |
 | **I-15** | **Invernaderos Experimentales (1-4)** | Biotecnología / Agropecuaria| `0.404200` | `-78.173150` | **Muy Alto** (Humedad controlada)| ~60 investigadores |
 | **H-01** | **Laguna Artificial / Reservorio de Agua** | Recurso Hídrico / Biocontrol | `0.404121` | `-78.168316` | **Nulo / Protector** (Léntico / Odonatos)| ~2,006 m² espejo de agua |
-| **I-16** | **Pileta Histórica (Claustro Sala Capitular)** | Patrimonial / Fuente Hidráulica | `0.404377` | `-78.175446` | **Medio-Alto** (Patio claustral) | Hito patrimonial |
-| **I-17** | **Pileta de Jardines (Sala Capitular)** | Patrimonial / Fuente Ornamental | `0.404346` | `-78.175689` | **Alto** (Jardines San José) | Espacio paisajístico |
+| **I-16** | **Pileta Histórica (Claustro Sala Capitular)** | Patrimonial / Fuente Ornamental (Seca) | `0.404377` | `-78.175446` | **Nulo / Inocuo** (Permanece seca) | Hito patrimonial (0% larvas) |
+| **I-17** | **Pileta de Jardines (Sala Capitular)** | Patrimonial / Fuente Ornamental (Seca) | `0.404346` | `-78.175689` | **Nulo / Inocuo** (Permanece seca) | Espacio paisajístico (0% larvas) |
 | **I-18** | **Molino de Agua (Patrimonial)** | Patrimonio Industrial Hidráulico | `0.405305` | `-78.174875` | **Alto** (Acequia histórica) | Monumento hidráulico |
 | **P-01** | **Parqueadero San José 1 (Norte)** | Infraestructura / Parqueo | `0.404388` | `-78.175985` | **Medio-Alto** (Junto a Sala Defensas) | ~15 vehículos |
 | **P-02** | **Parqueadero San José 2 (Central)** | Infraestructura / Parqueo | `0.404449` | `-78.176274` | **Medio-Alto** (Oeste Edificio 20) | ~20 vehículos |
@@ -68,9 +68,9 @@ Principal polo habitacional y deportivo de la universidad (~400 a 550 residentes
 
 | ID | Nombre del Hito / Residencia | Categoría de Uso | Latitud (WGS84) | Longitud (WGS84) | Nivel de Riesgo Basal | Población / Aforo |
 | :---: | :--- | :--- | :---: | :---: | :---: | :---: |
-| **R-01** | **Residencias Estudiantiles "Las Multis"** | Residencial Multifamiliar | `0.402750` | `-78.174800` | **Crítico** (Balcones expuestos)| ~220 residentes |
-| **R-02** | **Residencias Estudiantiles "Las Pats"** | Residencial Patrimonial | `0.402297` | `-78.173836` | **Crítico** (Humedad y sombra) | ~140 residentes |
-| **R-03** | **Residencias Estudiantiles "Las T's"** | Bloques Residenciales en T | `0.402950` | `-78.174200` | **Muy Alto** (Jardines sur) | ~100 residentes |
+| **R-01** | **Residencias Estudiantiles "Las Multis"** | Residencial Multifamiliar (3 Pisos) | `0.402750` | `-78.174800` | **Crítico** (Máxima densidad humana) | ~500 residentes (13 bloques de 3 pisos, ~5 deptos/piso, 2-6 pers/depto) |
+| **R-02** | **Residencias Estudiantiles "Las Pats"** | Residencial Patrimonial (1 y 2 Pisos) | `0.402297` | `-78.173836` | **Crítico** (Humedad y sombra) | ~80 residentes (casas de 1 piso ~6 pers; 2 pisos ~8 pers) |
+| **R-03** | **Residencias Estudiantiles "Las T's"** | Bloques Modulares en T (Desocupadas) | `0.402950` | `-78.174200` | **Bajo** (Sin residentes activos) | 0 residentes activos (Estructuras actualmente desocupadas) |
 | **R-04** | **Residencias de Docentes** | Villas Residenciales Docentes| `0.402150` | `-78.174500` | **Alto** (Arboledas bajas) | ~40 docentes |
 | **R-05** | **Concha Acústica Yachay Tech** | Cultural / Recreacional | `0.4018349` | `-78.1755181` | **Muy Alto** (Anfiteatro abierto)| ~350 asistentes |
 | **R-06** | **Canchas Deportivas (Fútbol / Múltiples)**| Deporte / Actividad Física | `0.402500` | `-78.171800` | **Muy Alto** (Junto a acequia)| ~120 deportistas/tarde |
@@ -1323,8 +1323,8 @@ El sistema hidrológico del campus combina **canales de agua corriente rápida (
 | **LINE-CANAL-SW** | **Canal de Agua Suroeste** | Conducción Lótica | Flujo continuo perimetral (~124.5 m) | `0.400920` a `0.401299` | `-78.176444` a `-78.175388` | **Foco Lotiforme Sur** (Junto a Multis) | Cerca 1 (Arrayán/Cedrón) |
 | **LINE-CANAL-ESTE** | **Canal de Agua Este (34 pts)** | Conducción Lótica | Flujo sinuoso hacia reservorio (~280.6 m)| `0.403124` a `0.404101` | `-78.171061` a `-78.168949` | **Foco de Transición** (Transporte ninfal) | Dosificación biológica |
 | **H-01 / POLY-LAGUNA** | **Laguna Artificial / Reservorio** | Cuerpo Léntico | Agua estancada en reposo (~2,006.2 m²) | `0.404121` | `-78.168316` | **Inocuo / Protector** (0% reproducción de arenillas) | Vivero de libélulas (*Odonata*) |
-| **I-16** | **Pileta Histórica (Claustro)** | Fuente Ornamental | Agua confinada claustral (piedra) | `0.404377` | `-78.175446` | **Inocuo para Simulium** (Sin corriente) | Recambio periódico preventivo |
-| **I-17** | **Pileta de Jardines (San José)** | Fuente Ornamental | Agua confinada exterior (jardín) | `0.404346` | `-78.175689` | **Inocuo para Simulium** (Sin corriente) | Control de culícidos por flujo |
+| **I-16** | **Pileta Histórica (Claustro)** | Fuente Ornamental | Permanece seca la mayor parte del año | `0.404377` | `-78.175446` | **0% Riesgo Vectorial** (Estructura seca) | Mantenimiento patrimonial |
+| **I-17** | **Pileta de Jardines (San José)** | Fuente Ornamental | Permanece seca habitualmente | `0.404346` | `-78.175689` | **0% Riesgo Vectorial** (Estructura seca) | Embellecimiento paisajístico |
 | **I-18** | **Molino de Agua (Patrimonial)** | Patrimonio Hidráulico | Accionamiento mecánico por acequia | `0.405305` | `-78.174875` | **Monumento Histórico** (Paso hídrico) | Conservación patrimonial |
 
 ### 6.1. Canal de Riego Principal (Eje Transversal Norte-Sur)
@@ -1414,14 +1414,14 @@ El sistema hidrológico del campus combina **canales de agua corriente rápida (
 ### 6.6. Pileta Histórica (Claustro Sala Capitular - `I-16`)
 * **Coordenadas GPS (WGS84):** `0.4043772, -78.1754463`
 * **Tipo:** Fuente Ornamental / Patrimonio Hidráulico Claustral
-* **Régimen Hidráulico:** Cuerpo léntico confinado de piedra en patio central.
-* **Diagnóstico Entomológico:** Inocuo para la reproducción de *Simulium* spp. (carece de flujo lótico). Requiere mantenimiento periódico para evitar la acumulación de larvas de mosquitos comunes (*Culex*).
+* **Estado Físico y Régimen:** Permanece seca la mayor parte del año (estructura ornamental de piedra labrada).
+* **Diagnóstico Entomológico:** 0% riesgo de cría larvaria de *Simulium* spp. ni culícidos debido a la ausencia permanente de lámina de agua.
 
 ### 6.7. Pileta de Jardines (Sala Capitular - `I-17`)
 * **Coordenadas GPS (WGS84):** `0.4043464, -78.1756891`
 * **Tipo:** Fuente Ornamental de Jardines Exteriores
-* **Régimen Hidráulico:** Cuerpo de agua en reposo paisajístico.
-* **Diagnóstico Entomológico:** Sin riesgo para arenillas. Embellecimiento visual y microclima fresco.
+* **Estado Físico y Régimen:** Permanece seca habitualmente.
+* **Diagnóstico Entomológico:** Sin riesgo para arenillas ni mosquitos. Embellecimiento paisajístico seco.
 
 ### 6.8. Molino de Agua Patrimonial (`I-18`)
 * **Coordenadas GPS (WGS84):** `0.4053046, -78.1748750`

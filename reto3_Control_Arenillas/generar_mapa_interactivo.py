@@ -1947,8 +1947,8 @@ def generar_mapa():
         # =============================================================
         # ZONA 1: SENESCYT
         # =============================================================
-        ([0.406633, -78.170096], "Edificio Senescyt (Yachay Tech)", "graduation-cap", "red",
-         "🎓 Aulas y Aprendizaje", "Complejo principal de aulas magnas, decanatos y oficinas rectorales. Ventilación natural protegida."),
+        ([0.406633, -78.170096], "Edificio Senescyt (Yachay Tech)", "university", "darkblue",
+         "🏛️ Edificio Académico de 4 Pisos", "Estructura de 4 pisos que alberga aulas magnas, oficinas de profesores, decanatos, hall principal, biblioteca y minimarket Krispan."),
         ([0.407655, -78.170721], "Centro Médico / Bienestar Estudiantil", "medkit", "red",
          "🏥 Salud y Bienestar Estudiantil", "Centro Médico Tipo A y Promoción de Vida Comunitaria. Atención primaria médica y psicológica."),
         ([0.406950, -78.171150], "Residencias Estudiantiles 'Los Bloques'", "bed", "darkred",
@@ -2000,11 +2000,11 @@ def generar_mapa():
         # ZONA 3: RESIDENCIAS 'LAS PATS' Y 'MULTIFAMILIARES'
         # =============================================================
         ([0.402750, -78.174800], "Residencias Estudiantiles 'Las Multis'", "building", "green",
-         "🏢 Residencias Multifamiliares", "Edificios de departamentos estudiantiles protegidos en un 85% por la Cerca Viva 1."),
+         "🏢 Complejo Multifamiliar (3 Pisos)", "13 edificios de 3 pisos con ~5 departamentos por piso (2 a 6 personas por depto; ~30-90 residentes/bloque). Máxima densidad estudiantil del campus."),
         ([0.402297, -78.173836], "Residencias Estudiantiles 'Las Pats'", "home", "green",
-         "🏡 Residencias Patrimoniales", "Alojamiento histórico de teja colonial y corredores exteriores en ambiente fresco."),
-        ([0.402950, -78.174200], "Residencias Estudiantiles 'Las T\'s'", "home", "darkgreen",
-         "🏘️ Bloques Residenciales en T", "Módulos habitacionales estudiantiles con distribución de planta en forma de T."),
+         "🏡 Residencias Patrimoniales", "Edificios de 1 piso (~6 personas) y de 2 pisos (~8 personas conviviendo) en arquitectura tradicional de teja."),
+        ([0.402950, -78.174200], "Residencias Estudiantiles 'Las T\'s'", "home", "gray",
+         "🏘️ Módulos en T (Actualmente Desocupados)", "13 estructuras modulares pareadas en T. Actualmente desocupadas (sin residentes activos); baja emisión antropogénica."),
         ([0.402150, -78.174500], "Residencias de Docentes", "briefcase", "cadetblue",
          "🏠 Villas Docentes", "Conjunto de viviendas asignadas al cuerpo docente e investigadores residentes."),
         ([0.4018349, -78.1755181], "Concha Acústica Yachay Tech", "music", "darkgreen",
@@ -2016,9 +2016,9 @@ def generar_mapa():
         ([0.4021506, -78.1751864], "Plaza de las Multis", "sun-o", "green",
          "🤝 Espacio Comunitario y Recreación", "Plazoleta central y área de convivencia al aire libre entre los bloques multifamiliares."),
         ([0.4043772, -78.1754463], "Pileta Histórica (Claustro Sala Capitular)", "tint", "blue",
-         "⛲ Fuente Ornamental / Patrimonio Hidráulico", "Pileta central de piedra en claustro de Sala Capitular. Régimen Léntico (agua en reposo, inocuo para Simulium)."),
+         "⛲ Fuente Ornamental Claustral (Seca)", "Pileta central de piedra en claustro de Sala Capitular. Permanece seca la mayor parte del año; 0% riesgo de cría larvaria de vectores."),
         ([0.4043464, -78.1756891], "Pileta de Jardines (Sala Capitular)", "tint", "cadetblue",
-         "⛲ Fuente Ornamental de Jardín", "Pileta ornamental en jardines San José. Régimen Léntico (agua en reposo, inocuo para Simulium)."),
+         "⛲ Fuente Ornamental de Jardín (Seca)", "Pileta ornamental en jardines exteriores San José. Permanece seca habitualmente; nulo riesgo de proliferación entomológica."),
         ([0.4053046, -78.1748750], "Molino de Agua (Patrimonial)", "cog", "purple",
          "⚙️ Patrimonio Industrial Hidráulico", "Molino hidráulico histórico impulsado por la red de acequias de la Hacienda San José."),
         ([0.4043885, -78.1759853], "Parqueadero San José 1 (Norte)", "car", "gray",
@@ -2203,7 +2203,7 @@ def generar_mapa():
         {
             "id": "POLY-SENESCYT",
             "nombre": "Edificio Senescyt",
-            "tipo": "Aulas, Rectorado y Decanatos (Polígono Matriz)",
+            "tipo": "Edificio Académico y Administrativo de 4 Pisos (8 Vértices)",
             "zona": "Senescyt",
             "coords": [[0.4071147, -78.1699317], [0.4069484, -78.1697289], [0.4068317, -78.1698328], [0.4068019, -78.1698043], [0.4063912, -78.170151], [0.4062218, -78.1699562], [0.4061159, -78.1700531], [0.4064619, -78.1704732]],
             "centroid": [0.4066329, -78.1700962],
@@ -2211,7 +2211,7 @@ def generar_mapa():
             "color": "#c0392b", "fill": "#e74c3c",
             "interior": False,
             "is_perimeter": False,
-            "desc": "Polígono matriz poliédrico de 8 vértices que alberga aulas y oficinas centrales."
+            "desc": "Estructura principal de 4 pisos que alberga aulas teóricas, oficinas de profesores, decanatos, hall principal, biblioteca universitaria y servicios interiores (Krispan y Comedor Sol del Ecuador)."
         },
         {
             "id": "INT-BIB",
@@ -4204,15 +4204,15 @@ def generar_mapa():
                 <div style="color: #0984e3; font-weight: bold; font-size: 13.5px; margin-bottom: 2px;">⛲ Pileta Histórica (Claustro Sala Capitular)</div>
                 <span style="background: #e0f2fe; color: #0369a1; padding: 2px 6px; border-radius: 4px; font-size: 10px; font-weight: 600;">Fuente Ornamental / Patrimonio Hidráulico</span>
                 <p style="margin: 6px 0 4px 0; font-size: 11.5px; color: #34495e;">
-                    <b>Régimen Hidráulico:</b> Fuente de agua en reposo claustral (piedra labrada).<br>
-                    <b>Riesgo Entomológico:</b> Inocuo para <i>Simulium</i> (las arenillas requieren corriente lótica rápida). Mantenimiento preventivo contra culícidos.
+                    <b>Estado Físico:</b> Permanece seca la mayor parte del año.<br>
+                    <b>Riesgo Entomológico:</b> Nulo para <i>Simulium</i> (no genera hábitat larvario al carecer de agua corriente y permanecer seca).
                 </p>
                 <div style="font-size: 10px; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 3px;">
                     📍 GPS: 0.404377, -78.175446 | Patio Central Sala Capitular
                 </div>
             </div>
         """, max_width=280),
-        tooltip="⛲ Pileta Histórica: Fuente Ornamental Claustral"
+        tooltip="⛲ Pileta Histórica: Fuente Ornamental Claustral (Seca)"
     ).add_to(fg_canales)
 
     # Pileta de Jardines (Sala Capitular)
@@ -4224,15 +4224,15 @@ def generar_mapa():
                 <div style="color: #0984e3; font-weight: bold; font-size: 13.5px; margin-bottom: 2px;">⛲ Pileta de Jardines (Sala Capitular)</div>
                 <span style="background: #e0f2fe; color: #0369a1; padding: 2px 6px; border-radius: 4px; font-size: 10px; font-weight: 600;">Fuente Ornamental Exterior</span>
                 <p style="margin: 6px 0 4px 0; font-size: 11.5px; color: #34495e;">
-                    <b>Régimen Hidráulico:</b> Cuerpo de agua ornamental exterior en jardines San José.<br>
-                    <b>Riesgo Entomológico:</b> Inocuo para <i>Simulium</i> (agua en reposo). Aporte estético y microclima fresco.
+                    <b>Estado Físico:</b> Permanece seca habitualmente.<br>
+                    <b>Riesgo Entomológico:</b> Nulo para vectores (estructura ornamental seca sin estancamiento).
                 </p>
                 <div style="font-size: 10px; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 3px;">
                     📍 GPS: 0.404346, -78.175689 | Jardines Exteriores San José
                 </div>
             </div>
         """, max_width=280),
-        tooltip="⛲ Pileta de Jardines: Fuente Ornamental Exterior"
+        tooltip="⛲ Pileta de Jardines: Fuente Ornamental Exterior (Seca)"
     ).add_to(fg_canales)
 
     # Molino de Agua (Patrimonial)
