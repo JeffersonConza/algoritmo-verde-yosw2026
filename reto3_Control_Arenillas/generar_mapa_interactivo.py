@@ -3506,21 +3506,38 @@ def generar_mapa():
         # EDIFICIOS VARIOS, GASTRONOMÍA Y SERVICIOS SAN JOSÉ
         # =============================================================
         {
-            "id": "RECT-EDIF-37",
-            "nombre": "Edificio 37 (San José)",
-            "tipo": "Edificio de Servicios / Infraestructura",
+            "id": "RECT-SALA-ESTAR",
+            "nombre": "Sala de Estar (San José)",
+            "tipo": "Área Social y Descanso (Cubierta / Ventanal Polarizado)",
             "zona": "Sector San José",
             "coords": [
-                [0.40414961480802286, -78.17642430304325],
-                [0.4041608427496954, -78.17647015012106],
-                [0.40425861309438166, -78.17643986325076],
-                [0.4042446931826492, -78.17639817261436]
+                [0.40423891136109147, -78.17639429127263],
+                [0.4042568967600418, -78.17643816181554],
+                [0.4041600862575909, -78.17646787279462],
+                [0.4041503670363246, -78.17641990720087]
             ],
-            "centroid": [0.4042029, -78.1764334],
-            "area": 56.4,
-            "color": "#34495e", "fill": "#7f8c8d",
+            "centroid": [0.4042014, -78.1764305],
+            "area": 57.1,
+            "color": "#2c3e50", "fill": "#34495e",
             "interior": False, "is_perimeter": False,
-            "desc": "Módulo de soporte técnico y almacén de mantenimiento en el sector San José."
+            "desc": "Espacio cubierto para estancia y descanso estudiantil y docente, dotado de cubierta de techo y cerramiento perimetral de ventanales polarizados."
+        },
+        {
+            "id": "INT-BANOS-ESTAR",
+            "nombre": "Baños Sala de Estar (San José)",
+            "tipo": "Servicios Sanitarios e Higiene (Módulo Interior)",
+            "zona": "Sector San José",
+            "coords": [
+                [0.4042568967600418, -78.17643816181554],
+                [0.4042514185740652, -78.17641695162406],
+                [0.40421909904079517, -78.17642265098506],
+                [0.4042358186948357, -78.17644524108512]
+            ],
+            "centroid": [0.4042401, -78.1764302],
+            "area": 8.1,
+            "color": "#16a085", "fill": "#1abc9c",
+            "interior": True, "is_perimeter": False,
+            "desc": "Módulo sanitario integrado en el sector norte de la Sala de Estar en el complejo San José."
         },
         {
             "id": "RECT-EDIF-38",
@@ -5259,7 +5276,7 @@ def generar_mapa():
 
                 <div class="card-pilar" style="border-left-color: #3498db;">
                     <b style="color: #2980b9; font-size: 13.5px;" data-i18n="modal_card2_title">🌿 Naturaleza que Protege e Inclusión Hipoalergénica</b><br>
-                    <span data-i18n="modal_card2_desc">980 metros de barreras vivas blindando 120 edificaciones. Diseño con <b>zonificación hipoalergénica</b>: en proximidad inmediata a dormitorios (Las Multis, Las T's, Las Pats y Los Bloques) el romero es sustituido por <b>Cedrón (Aloysia citrodora)</b> y <b>Huacatay (Tagetes minuta)</b> para resguardar a residentes con asma, rinitis o alergias a Lamiaceae.</span>
+                    <span data-i18n="modal_card2_desc">980 metros de barreras vivas blindando 121 edificaciones. Diseño con <b>zonificación hipoalergénica</b>: en proximidad inmediata a dormitorios (Las Multis, Las T's, Las Pats y Los Bloques) el romero es sustituido por <b>Cedrón (Aloysia citrodora)</b> y <b>Huacatay (Tagetes minuta)</b> para resguardar a residentes con asma, rinitis o alergias a Lamiaceae.</span>
                 </div>
 
                 <div class="card-pilar" style="border-left-color: #0abde3;">
@@ -5640,7 +5657,7 @@ def generar_mapa():
                 modal_card1_title: "👥 Las Personas Primero (Salud y Confort)",
                 modal_card1_desc: "Protegemos a más de 800 residentes, docentes y trabajadores. Eliminamos el uso de pesticidas tóxicos protegiendo el aire que respiran los estudiantes en Las Multis, Los Bloques y aulas.",
                 modal_card2_title: "🌿 Naturaleza que Protege e Inclusión Hipoalergénica",
-                modal_card2_desc: "980 metros de barreras vivas blindando 120 edificaciones con zonificación hipoalergénica: en proximidad a dormitorios (Las Multis, Las T's, Las Pats y Los Bloques) el romero se sustituye por Cedrón y Huacatay para proteger a residentes alérgicos o asmáticos.",
+                modal_card2_desc: "980 metros de barreras vivas blindando 121 edificaciones con zonificación hipoalergénica: en proximidad a dormitorios (Las Multis, Las T's, Las Pats y Los Bloques) el romero se sustituye por Cedrón y Huacatay para proteger a residentes alérgicos o asmáticos.",
                 modal_card3_title: "💧 Agua Limpia y Biocontrol Respetuoso",
                 modal_card3_desc: "Los canales de riego que cruzan Yachay alimentan los cultivos de Urcuquí. Nuestro control biológico usa <b>ninfas de libélulas nativas</b> y micro-larvicidas biológicos (Bti) que preservan la calidad del agua para las comunidades vecinas.",
                 modal_btn_explore: "✨ ¡Explorar el Campus Protegido!",
@@ -5696,7 +5713,7 @@ def generar_mapa():
                 modal_card1_title: "👥 People First (Health & Comfort)",
                 modal_card1_desc: "We protect over 800 residents, professors, and staff. We eliminate toxic pesticides, safeguarding the air students breathe in student housing and lecture halls.",
                 modal_card2_title: "🌿 Nature that Protects & Hypoallergenic Inclusion",
-                modal_card2_desc: "980 meters of living barriers shielding 120 buildings with hypoallergenic zoning: near dormitories (Multis, T's, Pats, Blocks), rosemary is replaced by Lemon Verbena and Huacatay to protect residents with asthma or allergies.",
+                modal_card2_desc: "980 meters of living barriers shielding 121 buildings with hypoallergenic zoning: near dormitories (Multis, T's, Pats, Blocks), rosemary is replaced by Lemon Verbena and Huacatay to protect residents with asthma or allergies.",
                 modal_card3_title: "💧 Clean Water & Respectful Biocontrol",
                 modal_card3_desc: "The irrigation canals crossing Yachay nourish the agriculture of Urcuqui. Our biocontrol employs <b>native dragonfly nymphs</b> and microbial bio-larvicides (Bti) that preserve water quality for neighboring communities.",
                 modal_btn_explore: "✨ Explore the Protected Campus!",

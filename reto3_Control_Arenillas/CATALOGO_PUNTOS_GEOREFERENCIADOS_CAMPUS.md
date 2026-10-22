@@ -483,14 +483,25 @@ Las edificaciones del campus fueron regularizadas rigurosamente bajo criterios d
     3. `0.4043447, -78.1762074`
     4. `0.4043012, -78.1762201`
 
-* **Edificio 37 San José (`RECT-EDIF-37`):**
-  * *Tipo:* Edificio de Servicios / Infraestructura | *Zona:* Sector San José
-  * *Superficie aproximada:* ~56.4 m² | *Centroide:* `[0.4042029, -78.1764334]`
+* **Sala de Estar San José (Edificio 37) (`RECT-SALA-ESTAR`):**
+  * *Tipo:* Área Social y Descanso (Cubierta / Ventanal Polarizado) | *Zona:* Sector San José
+  * *Superficie aproximada:* ~57.1 m² | *Centroide:* `[0.4042014, -78.1764305]`
+  * *Descripción Arquitectónica:* Espacio cubierto para estancia y descanso estudiantil y docente, dotado de cubierta de techo y cerramiento perimetral de ventanales polarizados.
   * *Vértices de Huella Arquitectónica (WGS84):*
-    1. `0.4041496, -78.1764243`
-    2. `0.4041608, -78.1764702`
-    3. `0.4042586, -78.1764399`
-    4. `0.4042447, -78.1763982`
+    1. `0.4042389, -78.1763943`
+    2. `0.4042569, -78.1764382`
+    3. `0.4041601, -78.1764679`
+    4. `0.4041504, -78.1764199`
+
+* **Baños Sala de Estar San José (`INT-BANOS-ESTAR`):**
+  * *Tipo:* Servicios Sanitarios e Higiene (Módulo Interior) | *Zona:* Sector San José
+  * *Superficie aproximada:* ~8.1 m² | *Centroide:* `[0.4042401, -78.1764302]`
+  * *Descripción Arquitectónica:* Módulo sanitario interior integrado en el extremo norte de la Sala de Estar.
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4042569, -78.1764382`
+    2. `0.4042514, -78.1764170`
+    3. `0.4042191, -78.1764227`
+    4. `0.4042358, -78.1764452`
 
 * **Edificio 38 San José (`RECT-EDIF-38`):**
   * *Tipo:* Edificio Administrativo y Operativo | *Zona:* Sector San José
@@ -1403,7 +1414,7 @@ Puntos calibrados en las acequias y canales lotiformes para el fomento de ninfas
 
 ## 5. Trazado Georreferenciado de Cercas Vivas Multiestrato (980 m Lineales) con Protocolo Hipoalergénico
 
-Las cercas vivas multiestrato fueron calibradas mediante optimización espacial no lineal (algoritmo SLSQP) y georreferenciadas con GPS submétrico para interceptar el vuelo de las arenillas y cortar la brisa del cañón del río Ambi, protegiendo las **120 edificaciones e infraestructuras catalogadas**. El diseño incorpora una **Zonificación Botánica Hipoalergénica**: en los perímetros residenciales (<5 m de dormitorios), se prohíbe el uso de especies alcanforadas y se sustituye el romero por **Cedrón (*Aloysia citrodora*)** y **Huacatay (*Tagetes minuta*)** para proteger a personas con atopia, asma o alergias a Lamiaceae.
+Las cercas vivas multiestrato fueron calibradas mediante optimización espacial no lineal (algoritmo SLSQP) y georreferenciadas con GPS submétrico para interceptar el vuelo de las arenillas y cortar la brisa del cañón del río Ambi, protegiendo las **121 edificaciones e infraestructuras catalogadas**. El diseño incorpora una **Zonificación Botánica Hipoalergénica**: en los perímetros residenciales (<5 m de dormitorios), se prohíbe el uso de especies alcanforadas y se sustituye el romero por **Cedrón (*Aloysia citrodora*)** y **Huacatay (*Tagetes minuta*)** para proteger a personas con atopia, asma o alergias a Lamiaceae.
 
 ### Cerca Viva 1: Sector Residencial Sur (Las Multis, Las T's y Las Pats)
 * **Longitud Lineal:** **380 metros**
@@ -1621,7 +1632,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
 
 ---
 
-## 8. Snippet GeoJSON Oficial Completo (235 Entidades: Hitos, Huellas, Canales, Reservorio y Líneas Divisorias)
+## 8. Snippet GeoJSON Oficial Completo (236 Entidades: Hitos, Huellas, Canales, Reservorio y Líneas Divisorias)
 
 ```json
 {
@@ -8354,37 +8365,40 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
     {
       "type": "Feature",
       "properties": {
-        "id": "RECT-EDIF-37",
-        "nombre": "Edificio 37 (San José)",
-        "tipo": "Edificio de Servicios / Infraestructura",
+        "id": "RECT-SALA-ESTAR",
+        "nombre": "Sala de Estar (San José)",
+        "tipo": "Área Social y Descanso (Cubierta / Ventanal Polarizado)",
         "zona": "Sector San José",
-        "area_m2": 56.4,
-        "interior": false,
-        "is_perimeter": false
+        "superficie_m2": 57.1,
+        "centroide": [
+          0.4042014,
+          -78.1764305
+        ],
+        "descripcion": "Espacio cubierto para estancia y descanso estudiantil y docente, dotado de cubierta de techo y cerramiento perimetral de ventanales polarizados."
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
             [
-              -78.17642430304325,
-              0.40414961480802286
+              -78.1763943,
+              0.4042389
             ],
             [
-              -78.17647015012106,
-              0.4041608427496954
+              -78.1764382,
+              0.4042569
             ],
             [
-              -78.17643986325076,
-              0.40425861309438166
+              -78.1764679,
+              0.4041601
             ],
             [
-              -78.17639817261436,
-              0.4042446931826492
+              -78.1764199,
+              0.4041504
             ],
             [
-              -78.17642430304325,
-              0.40414961480802286
+              -78.1763943,
+              0.4042389
             ]
           ]
         ]
@@ -9313,6 +9327,48 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
             [
               -78.1701849,
               0.4019866
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "INT-BANOS-ESTAR",
+        "nombre": "Baños Sala de Estar (San José)",
+        "tipo": "Servicios Sanitarios e Higiene (Módulo Interior)",
+        "zona": "Sector San José",
+        "superficie_m2": 8.1,
+        "centroide": [
+          0.4042401,
+          -78.1764302
+        ],
+        "descripcion": "Módulo sanitario integrado en el sector norte de la Sala de Estar en el complejo San José."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.1764382,
+              0.4042569
+            ],
+            [
+              -78.176417,
+              0.4042514
+            ],
+            [
+              -78.1764227,
+              0.4042191
+            ],
+            [
+              -78.1764452,
+              0.4042358
+            ],
+            [
+              -78.1764382,
+              0.4042569
             ]
           ]
         ]
