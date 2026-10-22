@@ -80,6 +80,7 @@ Principal polo habitacional y deportivo de la universidad (~400 a 550 residentes
 | **P-04** | **Parqueadero Complejo Deportivo** | Infraestructura / Parqueo | `0.403445` | `-78.172986` | **Alto** (Acceso a canchas) | ~40 vehículos |
 | **P-05** | **Parqueadero Sector 'Las Pats'** | Infraestructura / Parqueo | `0.402021` | `-78.173364` | **Alto** (Arco de Las Pats) | ~25 vehículos |
 | **B-02** | **Depósito de Basura Principal (Las Pats)** | Gestión Residuos Sólidos | `0.402211` | `-78.173391` | **Alto** (Estación contenedores) | Servicio Las Pats |
+| **B-07** | **Depósito de Basura (Sector Residencias Docentes / Multis)** | Gestión Residuos Sólidos | `0.403651` | `-78.175117` | **Alto** (Estación contenedores) | Servicio Docentes y Multis |
 
 ---
 
@@ -523,8 +524,8 @@ Las edificaciones del campus fueron regularizadas rigurosamente bajo criterios d
     11. `0.4040825, -78.1770627`
     12. `0.4039961, -78.1767858`
 
-* **Restaurante 'Pato Goloso' (`RECT-REST-PATO-GOLOSO`):**
-  * *Tipo:* Gastronomía y Alimentación / Restaurante | *Zona:* Sector Gastronómico San José
+* **Restaurante 'Pato Goloso' (Concurrido en las noches) (`RECT-REST-PATO-GOLOSO`):**
+  * *Tipo:* Gastronomía y Alimentación / Restaurante (Horario Nocturno) | *Zona:* Sector Gastronómico San José
   * *Superficie aproximada:* ~27.4 m² | *Centroide:* `[0.4043142, -78.1766288]`
   * *Vértices de Huella Arquitectónica (WGS84):*
     1. `0.4042956, -78.1766561`
@@ -1309,9 +1310,22 @@ Las cercas vivas multiestrato fueron calibradas mediante optimización espacial 
 
 ---
 
-## 6. Trazado de Recursos Hídricos (Canales Lóticos y Reservorio Léntico)
+## 6. Trazado Integral de Fuentes de Agua y Recursos Hídricos (Canales Lóticos, Cuerpos Lénticos y Piletas)
 
-El sistema hidrológico del campus combina **canales de agua corriente rápida (lóticos)** donde se fijan las larvas de *Simulium* spp., y **cuerpos de agua lénticos (lagunas y reservorios)** que actúan como hábitats libres de la plaga y refugios de macroinvertebrados depredadores.
+El sistema hidrológico del campus combina **canales de agua corriente rápida (lóticos)** donde se fijan las larvas reófilas de *Simulium* spp., **cuerpos de agua lénticos (lagunas y reservorios)** que actúan como hábitats libres de la plaga y refugios de libélulas depredadoras, y **fuentes ornamentales patrimoniales (piletas)**.
+
+### 6.0. Tabla Maestra de Fuentes de Agua del Campus Yachay Tech
+
+| ID | Nombre de la Fuente | Tipo Hidráulico | Régimen de Flujo | Latitud (WGS84) | Longitud (WGS84) | Rol Entomológico (Simulium spp.) | Estrategia de Manejo |
+| :---: | :--- | :--- | :--- | :---: | :---: | :--- | :--- |
+| **LINE-CANAL-PPAL** | **Canal de Riego Principal** | Conducción Lótica | Flujo continuo rápido (0.3–1.2 m/s) | `0.408500` a `0.401500` | `-78.169000` a `-78.172800` | **Criadero Primario Crítico** (Fijación ninfal) | Bti líquido selectivo + Cerca 3 |
+| **LINE-ACEQUIA-ING** | **Acequia Secundaria Ingenio** | Conducción Lótica | Flujo moderado empedrado | `0.405600` a `0.404500` | `-78.173800` a `-78.172800` | **Criadero Secundario** (Sombra y bajo viento) | Bti selectivo + Cerca 2 |
+| **LINE-CANAL-SW** | **Canal de Agua Suroeste** | Conducción Lótica | Flujo continuo perimetral (~124.5 m) | `0.400920` a `0.401299` | `-78.176444` a `-78.175388` | **Foco Lotiforme Sur** (Junto a Multis) | Cerca 1 (Arrayán/Cedrón) |
+| **LINE-CANAL-ESTE** | **Canal de Agua Este (34 pts)** | Conducción Lótica | Flujo sinuoso hacia reservorio (~280.6 m)| `0.403124` a `0.404101` | `-78.171061` a `-78.168949` | **Foco de Transición** (Transporte ninfal) | Dosificación biológica |
+| **H-01 / POLY-LAGUNA** | **Laguna Artificial / Reservorio** | Cuerpo Léntico | Agua estancada en reposo (~2,006.2 m²) | `0.404121` | `-78.168316` | **Inocuo / Protector** (0% reproducción de arenillas) | Vivero de libélulas (*Odonata*) |
+| **I-16** | **Pileta Histórica (Claustro)** | Fuente Ornamental | Agua confinada claustral (piedra) | `0.404377` | `-78.175446` | **Inocuo para Simulium** (Sin corriente) | Recambio periódico preventivo |
+| **I-17** | **Pileta de Jardines (San José)** | Fuente Ornamental | Agua confinada exterior (jardín) | `0.404346` | `-78.175689` | **Inocuo para Simulium** (Sin corriente) | Control de culícidos por flujo |
+| **I-18** | **Molino de Agua (Patrimonial)** | Patrimonio Hidráulico | Accionamiento mecánico por acequia | `0.405305` | `-78.174875` | **Monumento Histórico** (Paso hídrico) | Conservación patrimonial |
 
 ### 6.1. Canal de Riego Principal (Eje Transversal Norte-Sur)
 * **Longitud y Pendiente:** Desciende de 1,950 m a 1,885 m s.n.m. en flujo continuo (~850 m de recorrido).
@@ -1397,6 +1411,24 @@ El sistema hidrológico del campus combina **canales de agua corriente rápida (
   15. `0.4041596, -78.1685403`
   16. `0.4042129, -78.1685363`
 
+### 6.6. Pileta Histórica (Claustro Sala Capitular - `I-16`)
+* **Coordenadas GPS (WGS84):** `0.4043772, -78.1754463`
+* **Tipo:** Fuente Ornamental / Patrimonio Hidráulico Claustral
+* **Régimen Hidráulico:** Cuerpo léntico confinado de piedra en patio central.
+* **Diagnóstico Entomológico:** Inocuo para la reproducción de *Simulium* spp. (carece de flujo lótico). Requiere mantenimiento periódico para evitar la acumulación de larvas de mosquitos comunes (*Culex*).
+
+### 6.7. Pileta de Jardines (Sala Capitular - `I-17`)
+* **Coordenadas GPS (WGS84):** `0.4043464, -78.1756891`
+* **Tipo:** Fuente Ornamental de Jardines Exteriores
+* **Régimen Hidráulico:** Cuerpo de agua en reposo paisajístico.
+* **Diagnóstico Entomológico:** Sin riesgo para arenillas. Embellecimiento visual y microclima fresco.
+
+### 6.8. Molino de Agua Patrimonial (`I-18`)
+* **Coordenadas GPS (WGS84):** `0.4053046, -78.1748750`
+* **Tipo:** Monumento Industrial Hidráulico
+* **Régimen Hidráulico:** Rueda y canaleta histórica accionada por la red de acequias de la antigua Hacienda San José.
+* **Significancia:** Evidencia histórica del uso ancestral de la fuerza hidráulica gravitacional en el territorio de Yachay Tech.
+
 ---
 
 ## 7. Delimitación de Zonas Principales del Campus y Modelado Epidemiológico
@@ -1454,7 +1486,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
 
 ---
 
-## 8. Snippet GeoJSON Oficial Completo (222 Entidades: Hitos, Huellas, Canales, Reservorio y Líneas Divisorias)
+## 8. Snippet GeoJSON Oficial Completo (223 Entidades: Hitos, Huellas, Canales, Reservorio y Líneas Divisorias)
 
 ```json
 {
@@ -7354,6 +7386,22 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
         "coordinates": [
           -78.173819,
           0.404318
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B-07",
+        "nombre": "Depósito de Basura (Sector Residencias Docentes / Multis)",
+        "zona": "Sector Residencias Docentes y Multis Sur",
+        "categoria": "Gestión Ambiental / Residuos Sólidos"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.1751166,
+          0.4036513
         ]
       }
     },

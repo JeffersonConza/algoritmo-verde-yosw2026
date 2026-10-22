@@ -117,7 +117,7 @@ def generar_mapa():
     fg_distritos = folium.FeatureGroup(name="🏛️ Zonas Principales: Envolventes Orgánicas Suaves", show=True)
     fg_zonas = folium.FeatureGroup(name="🔥 Diagnóstico: Mapa de Calor de Picaduras y Riesgo (Simulium spp.)", show=False)
     fg_edificios = folium.FeatureGroup(name="🏛️ Vida en el Campus (Residencias, Aulas, Cultura)", show=True)
-    fg_canales = folium.FeatureGroup(name="💧 Red Hídrica y Acequias (Focos Lóticos)", show=True)
+    fg_canales = folium.FeatureGroup(name="💧 Fuentes de Agua y Red Hídrica (Lóticas y Lénticas)", show=True)
     fg_biocontrol = folium.FeatureGroup(name="🦗 Biocontrol Acuático (Libélulas Nativas + Bti)", show=True)
     fg_cercas = folium.FeatureGroup(name="🌿 Cercas Vivas en 3 Estratos (Algoritmo Verde)", show=True)
     fg_buffer = folium.FeatureGroup(name="🛡️ Espacios Protegidos y Aromaterapia (Buffer 40m)", show=True)
@@ -2016,9 +2016,9 @@ def generar_mapa():
         ([0.4021506, -78.1751864], "Plaza de las Multis", "sun-o", "green",
          "🤝 Espacio Comunitario y Recreación", "Plazoleta central y área de convivencia al aire libre entre los bloques multifamiliares."),
         ([0.4043772, -78.1754463], "Pileta Histórica (Claustro Sala Capitular)", "tint", "blue",
-         "⛲ Fuente y Patrimonio Hidráulico", "Pileta ornamental central de piedra en el patio claustral de la Sala Capitular San José."),
+         "⛲ Fuente Ornamental / Patrimonio Hidráulico", "Pileta central de piedra en claustro de Sala Capitular. Régimen Léntico (agua en reposo, inocuo para Simulium)."),
         ([0.4043464, -78.1756891], "Pileta de Jardines (Sala Capitular)", "tint", "cadetblue",
-         "⛲ Fuente Ornamental de Jardín", "Pileta de agua y ambientación paisajística en jardines exteriores de Sala Capitular."),
+         "⛲ Fuente Ornamental de Jardín", "Pileta ornamental en jardines San José. Régimen Léntico (agua en reposo, inocuo para Simulium)."),
         ([0.4053046, -78.1748750], "Molino de Agua (Patrimonial)", "cog", "purple",
          "⚙️ Patrimonio Industrial Hidráulico", "Molino hidráulico histórico impulsado por la red de acequias de la Hacienda San José."),
         ([0.4043885, -78.1759853], "Parqueadero San José 1 (Norte)", "car", "gray",
@@ -2039,6 +2039,8 @@ def generar_mapa():
          "🗑️ Gestión de Residuos Sólidos", "Estación de contenedores de residuos para el sector patrimonial Las Pats."),
         ([0.4057470, -78.1742848], "Depósito de Basura Principal (San José)", "trash", "black",
          "🗑️ Gestión de Residuos Sólidos", "Estación central de acopio de basura del sector Ingenio / San José."),
+        ([0.4036513, -78.1751166], "Depósito de Basura (Sector Residencias Docentes / Multis)", "trash", "black",
+         "🗑️ Gestión de Residuos Sólidos", "Estación de acopio y contenedores para el sector sur de Residencias de Docentes y Las Multis."),
         ([0.4047478, -78.1743254], "Depósito de Basura (Tachos Aulas B)", "trash", "gray",
          "🗑️ Tachos de Residuos Menores", "Punto ecológico de tachos pequeños para estudiantes en Aulas B."),
         ([0.4049303, -78.1741545], "Depósito de Basura (Tachos Plaza del Estudiante)", "trash", "gray",
@@ -3583,8 +3585,8 @@ def generar_mapa():
         },
         {
             "id": "RECT-REST-PATO-GOLOSO",
-            "nombre": "Restaurante 'Pato Goloso'",
-            "tipo": "Gastronomía y Alimentación / Restaurante",
+            "nombre": "Restaurante 'Pato Goloso' (Concurrido en las noches)",
+            "tipo": "Gastronomía y Alimentación / Restaurante (Nocturno)",
             "zona": "Sector Gastronómico San José",
             "coords": [
                 [0.4042956013511884, -78.17665611628786],
@@ -3596,7 +3598,7 @@ def generar_mapa():
             "area": 27.4,
             "color": "#d35400", "fill": "#e67e22",
             "interior": False, "is_perimeter": False,
-            "desc": "Restaurante y cafetería universitaria tradicional 'Pato Goloso' en el patio gastronómico San José."
+            "desc": "Restaurante y cafetería universitaria tradicional 'Pato Goloso' en el patio gastronómico San José. Alta concurrencia en horario nocturno."
         },
         {
             "id": "RECT-REST-COMEDOR-ANALI",
@@ -4190,6 +4192,66 @@ def generar_mapa():
             </div>
         """, max_width=250),
         tooltip="💧 Centroide: Laguna y Reservorio de Agua"
+    ).add_to(fg_canales)
+
+    # 5.6. Fuentes de Agua Ornamentales e Infraestructura Hidráulica
+    # Pileta Histórica (Claustro Sala Capitular)
+    folium.Marker(
+        location=[0.4043772, -78.1754463],
+        icon=folium.Icon(icon='tint', prefix='fa', color='blue'),
+        popup=folium.Popup("""
+            <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 260px; line-height: 1.4;">
+                <div style="color: #0984e3; font-weight: bold; font-size: 13.5px; margin-bottom: 2px;">⛲ Pileta Histórica (Claustro Sala Capitular)</div>
+                <span style="background: #e0f2fe; color: #0369a1; padding: 2px 6px; border-radius: 4px; font-size: 10px; font-weight: 600;">Fuente Ornamental / Patrimonio Hidráulico</span>
+                <p style="margin: 6px 0 4px 0; font-size: 11.5px; color: #34495e;">
+                    <b>Régimen Hidráulico:</b> Fuente de agua en reposo claustral (piedra labrada).<br>
+                    <b>Riesgo Entomológico:</b> Inocuo para <i>Simulium</i> (las arenillas requieren corriente lótica rápida). Mantenimiento preventivo contra culícidos.
+                </p>
+                <div style="font-size: 10px; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 3px;">
+                    📍 GPS: 0.404377, -78.175446 | Patio Central Sala Capitular
+                </div>
+            </div>
+        """, max_width=280),
+        tooltip="⛲ Pileta Histórica: Fuente Ornamental Claustral"
+    ).add_to(fg_canales)
+
+    # Pileta de Jardines (Sala Capitular)
+    folium.Marker(
+        location=[0.4043464, -78.1756891],
+        icon=folium.Icon(icon='tint', prefix='fa', color='cadetblue'),
+        popup=folium.Popup("""
+            <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 260px; line-height: 1.4;">
+                <div style="color: #0984e3; font-weight: bold; font-size: 13.5px; margin-bottom: 2px;">⛲ Pileta de Jardines (Sala Capitular)</div>
+                <span style="background: #e0f2fe; color: #0369a1; padding: 2px 6px; border-radius: 4px; font-size: 10px; font-weight: 600;">Fuente Ornamental Exterior</span>
+                <p style="margin: 6px 0 4px 0; font-size: 11.5px; color: #34495e;">
+                    <b>Régimen Hidráulico:</b> Cuerpo de agua ornamental exterior en jardines San José.<br>
+                    <b>Riesgo Entomológico:</b> Inocuo para <i>Simulium</i> (agua en reposo). Aporte estético y microclima fresco.
+                </p>
+                <div style="font-size: 10px; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 3px;">
+                    📍 GPS: 0.404346, -78.175689 | Jardines Exteriores San José
+                </div>
+            </div>
+        """, max_width=280),
+        tooltip="⛲ Pileta de Jardines: Fuente Ornamental Exterior"
+    ).add_to(fg_canales)
+
+    # Molino de Agua (Patrimonial)
+    folium.Marker(
+        location=[0.4053046, -78.1748750],
+        icon=folium.Icon(icon='cog', prefix='fa', color='purple'),
+        popup=folium.Popup("""
+            <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 260px; line-height: 1.4;">
+                <div style="color: #8e44ad; font-weight: bold; font-size: 13.5px; margin-bottom: 2px;">⚙️ Molino de Agua (Patrimonial)</div>
+                <span style="background: #f3e5f5; color: #7b1fa2; padding: 2px 6px; border-radius: 4px; font-size: 10px; font-weight: 600;">Patrimonio Industrial Hidráulico</span>
+                <p style="margin: 6px 0 4px 0; font-size: 11.5px; color: #34495e;">
+                    <b>Régimen Hidráulico:</b> Rueda y canaleta histórica impulsada por la fuerza de las acequias de la Hacienda San José para mover el molino del Ingenio.
+                </p>
+                <div style="font-size: 10px; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 3px;">
+                    📍 GPS: 0.405305, -78.174875 | Sector Aulas I
+                </div>
+            </div>
+        """, max_width=280),
+        tooltip="⚙️ Molino de Agua: Patrimonio Hidráulico del Ingenio"
     ).add_to(fg_canales)
 
     # -------------------------------------------------------------
