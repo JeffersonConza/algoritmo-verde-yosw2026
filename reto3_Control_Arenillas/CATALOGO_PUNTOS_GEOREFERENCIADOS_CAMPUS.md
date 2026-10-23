@@ -1408,7 +1408,7 @@ Puntos calibrados en las acequias y canales lotiformes para el fomento de ninfas
 
 | Código | Denominación | Latitud (WGS84) | Longitud (WGS84) | Tramo del Canal | Estrategia Biológica Aplicada |
 | :---: | :--- | :---: | :---: | :--- | :--- |
-| **BIO-N** | **Bio-Estación Hídrica Norte** | `0.407200` | `-78.170500` | Canal Principal (Junto a Senescyt) | Aplicación primaria de Bti en cabecera de flujo rápido. |
+| **BIO-N** | **Bio-Estación Hídrica Norte** | `0.407200` | `-78.170500` | Drenajes y Acequias Norte (Senescyt) | Aplicación primaria de Bti en cabecera de drenaje y talud norte. |
 | **BIO-C** | **Bio-Estación Hídrica Central**| `0.404800` | `-78.172000` | Remanso frente a Laboratorios | Siembra y refugio rocoso para ninfas de libélula (*Odonata*). |
 | **BIO-S** | **Bio-Estación Hídrica Sur** | `0.402800` | `-78.172600` | Desvío hacia Canchas y Residencias | Refuerzo de Bti antes de derivar hacia los campos de Urcuquí. |
 
@@ -1443,7 +1443,7 @@ Las cercas vivas multiestrato fueron calibradas mediante optimización espacial 
 * **Radio de Buffer Fitoquímico:** 40 metros (~12,800 m² de cobertura).
 * **Coordenadas de Vértices:**
   1. *Extremo Norte (Atrás de Bloques F-G / Vida Comunitaria):* `0.407200° N`, `-78.171800° W`
-  2. *Vértice Intermedio (Paralelo a Canal Maestro Senescyt):* `0.406600° N`, `-78.171000° W`
+  2. *Vértice Intermedio (Paralelo al eje perimetral Senescyt):* `0.406600° N`, `-78.171000° W`
   3. *Extremo Sur (Frente a Fachada Aulas Senescyt):* `0.406000° N`, `-78.170200° W`
 
 ---
@@ -1470,7 +1470,7 @@ El sistema hidrológico del campus combina **canales de agua corriente rápida (
 * **Vértices de Recorrido:**
   1. `0.405600° N, -78.173800° W` — *Bifurcación detrás de la Chimenea Histórica.*
   2. `0.405000° N, -78.173200° W` — *Acequia patrimonial empedrada.*
-  3. `0.404500° N, -78.172800° W` — *Reincorporación al canal principal.*
+  3. `0.404500° N, -78.172800° W` — *Conexión con el drenaje perimetral del Ingenio.*
 
 ### 6.3. Canal de Agua Suroeste (Sector Concha Acústica / Multifamiliares)
 * **Longitud Lineal:** **~124.5 metros**

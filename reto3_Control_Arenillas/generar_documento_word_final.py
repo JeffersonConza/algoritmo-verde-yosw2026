@@ -197,7 +197,7 @@ def main():
                 format_cell(t_seg.rows[0].cells[col_idx], h_text, bold=True, font_size=8.5, color=RGBColor(255, 255, 255), fill_hex="103662", align=WD_ALIGN_PARAGRAPH.CENTER)
 
             seg_data = [
-                ("CV-01", "Cerca Sur Las Multis - Canal Maestro", "Sector Sur (Las Multis)", "120 m", "Molle + Arrayán/Cedrón + Hierba Luisa"),
+                ("CV-01", "Cerca Sur Las Multis - Canal Suroeste", "Sector Sur (Las Multis)", "120 m", "Molle + Arrayán/Cedrón + Hierba Luisa"),
                 ("CV-02", "Cerca Oeste Las Multis - Concha Acústica", "Sector Sur (Las Multis)", "90 m", "Molle + Arrayán/Cedrón + Hierba Luisa"),
                 ("CV-03", "Cerca Sur Las Pats - Límite Acequia", "Sector Sur (Las Pats)", "80 m", "Molle + Arrayán/Huacatay + Hierba Luisa"),
                 ("CV-04", "Cerca Este Las Pats - Vía Acceso", "Sector Sur (Las Pats)", "90 m", "Molle + Arrayán/Huacatay + Hierba Luisa"),
@@ -205,7 +205,7 @@ def main():
                 ("CV-06", "Cerca Central Plaza Mikuna - Aulas", "Sector Central (Plaza Mikuna)", "95 m", "Molle + Arrayán + Hierba Luisa"),
                 ("CV-07", "Cerca San José - Sala Capitular y Parada", "Sector Central (San José)", "100 m", "Molle + Arrayán/Cedrón + Hierba Luisa"),
                 ("CV-08", "Cerca Norte Senescyt - Talud Este", "Sector Académico Norte", "110 m", "Molle + Arrayán/Romero + Hierba Luisa"),
-                ("CV-09", "Cerca Norte Residencias Bloques - Canal", "Sector Académico Norte", "110 m", "Molle + Arrayán/Cedrón + Hierba Luisa"),
+                ("CV-09", "Cerca Norte Residencias Bloques - Drenajes", "Sector Académico Norte", "110 m", "Molle + Arrayán/Cedrón + Hierba Luisa"),
                 ("CV-10", "Cerca Este Reservorio - Sendero", "Sector Periferia Este", "70 m", "Molle + Arrayán + Hierba Luisa"),
                 ("CV-11", "Cerca Complejo Deportivo - Sur Canchas", "Sector Sur (Deportivo)", "60 m", "Molle + Arrayán + Hierba Luisa"),
                 ("CV-12", "Cerca Villas Docentes - Borde Acequia", "Sector Sur (Docentes)", "60 m", "Molle + Arrayán/Cedrón + Hierba Luisa"),
