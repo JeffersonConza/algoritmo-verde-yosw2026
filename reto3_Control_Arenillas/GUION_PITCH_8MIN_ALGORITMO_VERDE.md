@@ -13,7 +13,7 @@
 | :--- | :--- | :--- | :---: |
 | **Christopher Picuasi** | Computación (3.º sem.) | **Apertura:** El problema en el campus, afectación real y objetivos. | 1:00 min |
 | **Luis Collaguazo** | Biomedicina (3.º sem.) | **Fundamentación Biológica:** Complejo vectorial (*Simulium* / *Culicoides*) y bio-repelencia tri-estrato. | 2:00 min |
-| **Jefferson Conza** | Matemáticas (9.º sem.) | **Ingeniería Espacial & GIS:** Optimización SLSQP (980 m), demo en vivo del mapa interactivo (264 entidades). | 2:30 min |
+| **Jefferson Conza** | Matemáticas (9.º sem.) | **Ingeniería Espacial & GIS:** Optimización SLSQP (980 m), demo en vivo del mapa interactivo (286 entidades). | 2:30 min |
 | **Francisco Almeda** | Química (2.º sem.) | **Viabilidad Económica & Riego:** Presupuesto de $1,470 USD, autosuficiencia y comparativa de costos. | 1:30 min |
 | **Todo el Equipo** | Multidisciplinario | **Cierre y Defensa:** Conclusión contundente y respuesta a preguntas del jurado. | 1:00 min |
 
@@ -57,7 +57,7 @@ flowchart LR
   > *"¿Cómo sabemos exactamente dónde y cuánto sembrar sin despilfarrar recursos? Como matemático, formulé un modelo de **Optimización Espacial Multiobjetivo (algoritmo SLSQP)** que pondera la densidad humana, la dirección del viento andino y la cercanía a los focos de agua de los canales.*  
   > *El modelo demostró que no necesitamos cercar todo el cantón: el cerramiento óptimo requiere exactamente **12 segmentos estratégicos que suman 980 metros lineales**.*  
   > *(Cambio al visor GIS):*  
-  > *Aquí observan nuestra plataforma geoespacial interactiva desarrollada en Python y Folium. Mapeamos y validamos **264 entidades GIS** cubriendo las **124 edificaciones del campus**: desde el complejo residencial sur (Las Multis, Las T's y Las Pats) hasta el Casco Histórico de San José y el Edificio Senescyt al norte.*  
+  > *Aquí observan nuestra plataforma geoespacial interactiva desarrollada en Python y Folium. Mapeamos y validamos **286 entidades GIS** cubriendo las **124 edificaciones del campus**, **12 áreas verdes y jardines patrimoniales** y **16 ejes viales y caminerías**: desde el complejo residencial sur (Las Multis, Las T's y Las Pats) hasta el Casco Histórico de San José y el Edificio Senescyt al norte.*  
   > *Diseñamos el visor de forma que los polígonos históricos del Ingenio y Sala Capitular no interfieran con la selección individual de cada edificio, permitiendo a la Dirección de Mantenimiento consultar las coordenadas exactas de cada segmento de barrera, las acequias activas y las 6 estaciones telemétricas de monitoreo con un solo clic."*
 
 ---

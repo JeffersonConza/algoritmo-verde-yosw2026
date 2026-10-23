@@ -1751,11 +1751,11 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
   - Población expuesta: ~120 usuarios (Comedor doña Perci, habitaciones privadas externas Sacha Home).
   - Foco hídrico: Canal Este (34 vértices) y Laguna Artificial (~2,006 m²).
 
-### 7.3. Red Vial y Corredores de Movilidad del Campus Yachay Tech (6 Ejes Georreferenciados)
+### 7.3. Red Vial, Caminerías y Senderos de Movilidad del Campus Yachay Tech (16 Ejes Georreferenciados)
 
-La articulación vial entre las 4 zonas principales suma **4,214.5 m lineales (~4.21 km)** distribuidos en **6 corredores y circuitos viales**:
+La articulación vial y peatonal entre las 4 zonas principales suma **6,642.4 m lineales (~6.64 km)** distribuidos en **16 corredores viales, caminerías internas y senderos ecológicos** (6 ejes troncales/colectores de `4,214.5 m` y 10 vías internas/caminerías peatonales de `2,427.9 m` identificadas mediante levantamiento visual sobre las capturas del campus):
 
-| ID | Nombre Oficial del Corredor Vial | Tipo / Superficie | Vértices | Longitud (m) | Hitos, Paradas y Estacionamientos Conectados |
+| ID | Nombre Oficial del Corredor Vial / Caminería | Tipo / Superficie | Vértices | Longitud (m) | Hitos, Paradas, Jardines y Estacionamientos Conectados |
 | :---: | :--- | :--- | :---: | :---: | :--- |
 | **LINE-VIA-01** | **Vía a Yachay (Eje Troncal Norte-Sur · Ingenio – Las Pats)** | Vía Troncal Principal | 33 | `671.8 m` | Chimenea, Torre del Ingenio, Biblioteca 24/7, Aulas B, Plaza Mikuna, Parada `BUS-03`, Parqueos en vía `P-08` a `P-11` y Basura `B-03`. |
 | **LINE-VIA-02** | **Vía a Yachay / Proyecto Yachay (Transversal San José – Sala Capitular – Las Pats)** | Vía Colectora Patrimonial | 11 | `466.6 m` | Edificio 41, Comedores Analí y Pato Goloso, Sala Capitular, Parada `BUS-02`, Parqueos `P-01`, `P-02`, `P-06` y empalme Arco Las Pats (`BUS-03`). |
@@ -1763,10 +1763,41 @@ La articulación vial entre las 4 zonas principales suma **4,214.5 m lineales (~
 | **LINE-VIA-04** | **Circuito Vial del Polo Académico Norte (Anillo Senescyt y Los Bloques)** | Anillo Adoquinado y Perimetral | 11 | `897.0 m` | Edificio Senescyt, Bloques A–I, Centro Médico, Container, Parada `BUS-01`, Basura `B-01`, Parqueos en vía `P-12` a `P-15` y Parqueos `P-16` a `P-19`. |
 | **LINE-VIA-05** | **Corredor Diagonal Inter-Zonal (Las Pats – Canchas – Invernaderos – ITT – Senescyt)** | Corredor Interno Universitario | 13 | `660.7 m` | Arco de Las Pats, Complejo Deportivo (`P-04`), Laboratorios de Carrera, Invernaderos 1–4, Complejo ITT (`I-19`) y Senescyt Sur. |
 | **LINE-VIA-06** | **Vía a Hoja Blanca y Conector Reservorio Este – Senescyt** | Vía Periférica y Agroforestal | 17 | `855.0 m` | Acceso Las Pats (`P-05`, `B-02`), Gimnasio al Aire Libre, Barriada, Esclusa Este (`I-23`), Reservorio (`H-01`), Comedor doña Perci y Sacha Home. |
+| **LINE-VIA-07** | **Anillo Occidental de Servicio y Avenida Diagonal Los Bloques – ITT** | Vía Interna de Servicio y Diagonal | 5 | `442.8 m` | Lazo occidental de servicio de Bloques F y D (OSM Ways `360908702`/`360908705`) y avenida diagonal entre Bloques A–E e ITT (`863664231`). |
+| **LINE-VIA-08** | **Caminerías Peatonales Internas de Residencias Los Bloques (A–I) y Centro Médico** | Red Peatonal Adoquinada | 7 | `165.6 m` | Senderos peatonales que cruzan el Jardín Central de Los Bloques (`POLY-VERDE-01`) entre Bloques A–I y el Centro Médico Tipo A. |
+| **LINE-VIA-09** | **Sendero Peatonal y Ciclovía Sinuosa (Los Bloques – Paleohumedal – Ingenio Azucarero)** | Sendero Ecológico / Caminería Blanca | 6 | `268.4 m` | Camino blanco sinuoso desde el suroeste de Los Bloques, bordeando el Paleohumedal (`I-22` y `POLY-VERDE-03`), hasta `Vía a Yachay` e Ingenio (`B-03`). |
+| **LINE-VIA-10** | **Vía de Acceso Sur a Invernaderos Experimentales, Lab. Idiomas y Plaza Mikuna** | Vía Interna Agrícola y Docencia | 4 | `172.9 m` | Conecta `Vía a Yachay` (sur de Plaza Mikuna y Lab. Idiomas) con el frente sur de los 4 Invernaderos Experimentales y Laboratorios de Carrera (`P-05`). |
+| **LINE-VIA-11** | **Caminerías Cruciformes de Plaza del Estudiante, Biblioteca Patrimonial y Aulas B** | Caminería Peatonal Patrimonial | 7 | `174.2 m` | Andadores en cruz y diagonal que dividen los 4 cuadrantes verdes (`POLY-VERDE-06`) entre Biblioteca Patrimonial, Lab. Química (`I-10`) y Aulas B Sur. |
+| **LINE-VIA-12** | **Vía Periférica Oriental (Senescyt Este – Parcelas Experimentales – Reservorio Este)** | Camino Afirmado Agroforestal | 4 | `336.6 m` | Desciende desde Senescyt Este pasando junto a la Edificación Sin Techo (`POLY-ABANDON-TECHO`) y las parcelas experimentales hacia el Reservorio Este. |
+| **LINE-VIA-13** | **Red de Caminerías Adoquinadas del Complejo Deportivo Sur y Las Pats** | Caminería Peatonal Deportiva | 6 | `205.0 m` | Trazado adoquinado en zigzag que enlaza Las Pats con las Canchas de Volley, Básquetbol 1–3, Fútbol Sintético 1–3 y Gimnasio al Aire Libre. |
+| **LINE-VIA-14** | **Caminerías Curvas Internas de Las Multis y Acceso Peatonal Concha Acústica** | Circuito Peatonal Orgánico | 7 | `281.7 m` | Senderos curvos por los jardines escalonados de Las Multis (`RECT-MULTI-01..13`, `POLY-VERDE-11`) hasta la Concha Acústica (`I-09`). |
+| **LINE-VIA-15** | **Alameda Peatonal Central de Residencias Patrimoniales Las T's (Bloques 1–13)** | Sendero Peatonal Residencial | 5 | `164.6 m` | Eje peatonal este-oeste entre los módulos patrimoniales Las T's (`RECT-T-01..13`), resguardado por la Cerca Viva 1 hipoalergénica. |
+| **LINE-VIA-16** | **Caminería Patrimonial de Sala Capitular, Caballerizas, Villas Docentes y San José** | Corredor Peatonal Histórico | 6 | `216.1 m` | Conecta el Claustro de Sala Capitular y sus 3 piletas con Caballerizas, el barrio de Villas de Docentes (`RECT-DOCENTES-01..08`) y San José. |
 
 ---
 
-## 8. Snippet GeoJSON Oficial Completo (264 Entidades: Hitos, Huellas, Red Vial, Canales, Reservorio y Líneas Divisorias)
+### 7.4. Áreas Verdes, Jardines Patrimoniales y Parques del Campus Yachay Tech (12 Polígonos Georreferenciados)
+
+El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² (~5.97 ha)** distribuidos en **12 polígonos de jardines patrimoniales, parterres académicos, parques residenciales y corredores ecológicos**:
+
+| ID | Nombre Oficial del Área Verde / Jardín / Parque | Categoría Paisajística y Ecosistémica | Zona | Centroide (WGS84) | Superficie (m²) |
+| :---: | :--- | :--- | :---: | :---: | :---: |
+| **POLY-VERDE-01** | **Jardín Central y Patios Verdes de Residencias Los Bloques (A–I)** | Jardín Residencial Universitario y Palmeras | Zona 1 | `0.4074000, -78.1707517` | `1,964.1 m²` |
+| **POLY-VERDE-02** | **Parterres y Jardines Orientales del Edificio Senescyt** | Jardineras Académicas y Estancia Exterior | Zona 1 | `0.4064850, -78.1697867` | `1,822.2 m²` |
+| **POLY-VERDE-03** | **Corredor Ecológico y Pradera del Paleohumedal (Los Bloques – Ingenio)** | Pradera de Amortiguamiento y Humedal Estacional | Zonas 1–2 | `0.4062833, -78.1729683` | `35,217.9 m²` |
+| **POLY-VERDE-04** | **Jardín Patrimonial de la Plaza del Ingenio y Chimenea Histórica** | Jardín Histórico Patrimonial con Palmeras | Zona 2 | `0.4053200, -78.1744575` | `445.5 m²` |
+| **POLY-VERDE-05** | **Parque y Arboleda Patrimonial Oeste del Ingenio (Trapiches y Molino)** | Arboleda Patrimonial y Explanada de Maquinaria | Zona 2 | `0.4051380, -78.1749180` | `1,643.8 m²` |
+| **POLY-VERDE-06** | **Jardines Cuadrangulares de Plaza del Estudiante y Aulas B (4 Cuadrantes)** | Explanada Verde Universitaria en Cruz | Zona 2 | `0.4045680, -78.1742480` | `1,833.4 m²` |
+| **POLY-VERDE-07** | **Parque Central Yachay y Pradera Agroecológica de Invernaderos / Plaza Mikuna** | Parque Universitario y Área Verde Experimental | Zonas 2–3 | `0.4046420, -78.1732840` | `6,608.5 m²` |
+| **POLY-VERDE-08** | **Parcelas Agroecológicas Experimentales y Cinturón Ripario del Reservorio Este** | Agroforestería Experimental y Refugio de Odonatos | Zona 4 | `0.4046050, -78.1688575` | `2,565.1 m²` |
+| **POLY-VERDE-09** | **Parque y Arboleda del Complejo Deportivo Sur (Canchas y Gimnasio)** | Parque Deportivo y Recreación al Aire Libre | Zona 3 | `0.4020000, -78.1728160` | `2,435.6 m²` |
+| **POLY-VERDE-10** | **Jardines Comunitarios Internos de Residencias Patrimoniales Las Pats** | Patio Verde Residencial Patrimonial | Zona 3 | `0.4018320, -78.1738500` | `3,679.7 m²` |
+| **POLY-VERDE-11** | **Parque Escalonado de Las Multis, Alameda de Las T's y Pradera Concha Acústica** | Parque Residencial y Explanada Cultural | Zona 3 | `0.4009950, -78.1765500` | `872.4 m²` |
+| **POLY-VERDE-12** | **Jardines Claustrales de Sala Capitular, Caballerizas y Barrio Docente** | Jardín Histórico, Botánico y Residencial Docente | Zonas 2–3 | `0.4040675, -78.1755750` | `592.9 m²` |
+
+---
+
+## 8. Snippet GeoJSON Oficial Completo (286 Entidades: Hitos, Huellas, Áreas Verdes, Red Vial, Canales, Reservorio y Líneas Divisorias)
 
 ```json
 {
@@ -10490,6 +10521,862 @@ La articulación vial entre las 4 zonas principales suma **4,214.5 m lineales (~
           [
             -78.1700414,
             0.4059124
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LINE-VIA-07",
+        "nombre": "Anillo Occidental de Servicio y Avenida Diagonal Los Bloques – ITT",
+        "categoria": "Red Vial / Vía Interna de Servicio y Diagonal Peatonal-Vehicular",
+        "longitud_m": 442.8
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.1716587,
+            0.4080157
+          ],
+          [
+            -78.1725745,
+            0.4080119
+          ],
+          [
+            -78.1725099,
+            0.4071614
+          ],
+          [
+            -78.1716068,
+            0.4072668
+          ],
+          [
+            -78.1706111,
+            0.4064241
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LINE-VIA-08",
+        "nombre": "Caminerías Peatonales Internas de Residencias Los Bloques (A–I) y Centro Médico",
+        "categoria": "Red Vial / Red Peatonal Adoquinada Residencial",
+        "longitud_m": 165.6
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.17122,
+            0.40768
+          ],
+          [
+            -78.17082,
+            0.40751
+          ],
+          [
+            -78.17068,
+            0.40736
+          ],
+          [
+            -78.17052,
+            0.40712
+          ],
+          [
+            -78.17034,
+            0.40688
+          ],
+          [
+            -78.17012,
+            0.40702
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LINE-VIA-09",
+        "nombre": "Sendero Peatonal y Ciclovía Sinuosa (Los Bloques – Paleohumedal – Ingenio Azucarero)",
+        "categoria": "Red Vial / Sendero Ecológico Peatonal / Caminería Blanca",
+        "longitud_m": 268.4
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.1725099,
+            0.4071614
+          ],
+          [
+            -78.17282,
+            0.40692
+          ],
+          [
+            -78.17318,
+            0.40648
+          ],
+          [
+            -78.17375,
+            0.40615
+          ],
+          [
+            -78.17415,
+            0.40592
+          ],
+          [
+            -78.1743332,
+            0.4056429
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LINE-VIA-10",
+        "nombre": "Vía de Acceso Sur a Invernaderos Experimentales, Lab. Idiomas y Plaza Mikuna",
+        "categoria": "Red Vial / Vía Interna de Servicio Agrícola y Docencia",
+        "longitud_m": 172.9
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.1739948,
+            0.404037
+          ],
+          [
+            -78.17342,
+            0.40395
+          ],
+          [
+            -78.17292,
+            0.40408
+          ],
+          [
+            -78.1724761,
+            0.4041898
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LINE-VIA-11",
+        "nombre": "Caminerías Cruciformes de Plaza del Estudiante, Biblioteca Patrimonial y Aulas B",
+        "categoria": "Red Vial / Caminería Peatonal Patrimonial (4 Cuadrantes)",
+        "longitud_m": 174.2
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.17412,
+            0.40481
+          ],
+          [
+            -78.17426,
+            0.40456
+          ],
+          [
+            -78.1739953,
+            0.4043184
+          ],
+          [
+            -78.17426,
+            0.40456
+          ],
+          [
+            -78.17431,
+            0.40443
+          ],
+          [
+            -78.17448,
+            0.40468
+          ],
+          [
+            -78.17438,
+            0.40475
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LINE-VIA-12",
+        "nombre": "Vía Periférica Oriental (Senescyt Este – Parcelas Experimentales – Reservorio Este)",
+        "categoria": "Red Vial / Camino Afirmado Agroforestal Oriental",
+        "longitud_m": 336.6
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.169388,
+            0.4067406
+          ],
+          [
+            -78.16845,
+            0.40595
+          ],
+          [
+            -78.16912,
+            0.40564
+          ],
+          [
+            -78.1685938,
+            0.4047174
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LINE-VIA-13",
+        "nombre": "Red de Caminerías Adoquinadas del Complejo Deportivo Sur y Las Pats",
+        "categoria": "Red Vial / Caminería Peatonal Deportiva y Residencial",
+        "longitud_m": 205.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.1736018,
+            0.4026043
+          ],
+          [
+            -78.17325,
+            0.40225
+          ],
+          [
+            -78.17282,
+            0.40215
+          ],
+          [
+            -78.17262,
+            0.40222
+          ],
+          [
+            -78.17232,
+            0.40232
+          ],
+          [
+            -78.17195,
+            0.40238
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LINE-VIA-14",
+        "nombre": "Caminerías Curvas Internas de Las Multis y Acceso Peatonal Concha Acústica",
+        "categoria": "Red Vial / Circuito Peatonal Orgánico Multifamiliar",
+        "longitud_m": 281.7
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.17515,
+            0.40262
+          ],
+          [
+            -78.17534,
+            0.4024
+          ],
+          [
+            -78.17556,
+            0.40244
+          ],
+          [
+            -78.17575,
+            0.40218
+          ],
+          [
+            -78.17625,
+            0.40175
+          ],
+          [
+            -78.17672,
+            0.40125
+          ],
+          [
+            -78.1769687,
+            0.4010013
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LINE-VIA-15",
+        "nombre": "Alameda Peatonal Central de Residencias Patrimoniales Las T's (Bloques 1–13)",
+        "categoria": "Red Vial / Sendero Peatonal Residencial Sur",
+        "longitud_m": 164.6
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.17462,
+            0.40092
+          ],
+          [
+            -78.17492,
+            0.40105
+          ],
+          [
+            -78.17542,
+            0.40095
+          ],
+          [
+            -78.17582,
+            0.40096
+          ],
+          [
+            -78.17605,
+            0.40088
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LINE-VIA-16",
+        "nombre": "Caminería Patrimonial de Sala Capitular, Caballerizas, Villas Docentes y San José",
+        "categoria": "Red Vial / Corredor Peatonal Histórico y Docente",
+        "longitud_m": 216.1
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.17538,
+            0.40415
+          ],
+          [
+            -78.17565,
+            0.4041
+          ],
+          [
+            -78.17625,
+            0.40412
+          ],
+          [
+            -78.1759,
+            0.40405
+          ],
+          [
+            -78.17589,
+            0.40373
+          ],
+          [
+            -78.17578,
+            0.40356
+          ],
+          [
+            -78.17562,
+            0.40346
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "POLY-VERDE-01",
+        "nombre": "Jardín Central y Patios Verdes de Residencias Los Bloques (A–I)",
+        "zona": "Zona 1 · Polo Norte",
+        "categoria": "Área Verde / Jardín Residencial Universitario y Palmeras",
+        "area_m2": 1964.1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.17122,
+              0.40768
+            ],
+            [
+              -78.17092,
+              0.40768
+            ],
+            [
+              -78.17062,
+              0.40748
+            ],
+            [
+              -78.17045,
+              0.40718
+            ],
+            [
+              -78.17048,
+              0.40702
+            ],
+            [
+              -78.17082,
+              0.40736
+            ],
+            [
+              -78.17122,
+              0.40768
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "POLY-VERDE-02",
+        "nombre": "Parterres y Jardines Orientales del Edificio Senescyt",
+        "zona": "Zona 1 · Polo Norte",
+        "categoria": "Área Verde / Jardineras Académicas y Estancia Exterior",
+        "area_m2": 1822.2
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.16968,
+              0.40691
+            ],
+            [
+              -78.16944,
+              0.40673
+            ],
+            [
+              -78.16999,
+              0.40602
+            ],
+            [
+              -78.17001,
+              0.40608
+            ],
+            [
+              -78.16988,
+              0.40638
+            ],
+            [
+              -78.16972,
+              0.40679
+            ],
+            [
+              -78.16968,
+              0.40691
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "POLY-VERDE-03",
+        "nombre": "Corredor Ecológico y Pradera del Paleohumedal (Los Bloques – Ingenio)",
+        "zona": "Inter-Zonal 1–2",
+        "categoria": "Área Verde / Pradera de Amortiguamiento y Humedal Estacional",
+        "area_m2": 35217.9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.17252,
+              0.40712
+            ],
+            [
+              -78.17172,
+              0.40688
+            ],
+            [
+              -78.17195,
+              0.40575
+            ],
+            [
+              -78.17355,
+              0.40548
+            ],
+            [
+              -78.17422,
+              0.40582
+            ],
+            [
+              -78.17385,
+              0.40665
+            ],
+            [
+              -78.17252,
+              0.40712
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "POLY-VERDE-04",
+        "nombre": "Jardín Patrimonial de la Plaza del Ingenio y Chimenea Histórica",
+        "zona": "Zona 2 · Casco Histórico",
+        "categoria": "Área Verde / Jardín Histórico Patrimonial con Palmeras",
+        "area_m2": 445.5
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.17456,
+              0.40542
+            ],
+            [
+              -78.17444,
+              0.40546
+            ],
+            [
+              -78.17435,
+              0.40525
+            ],
+            [
+              -78.17448,
+              0.40515
+            ],
+            [
+              -78.17456,
+              0.40542
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "POLY-VERDE-05",
+        "nombre": "Parque y Arboleda Patrimonial Oeste del Ingenio (Trapiches y Molino)",
+        "zona": "Zona 2 · Casco Histórico",
+        "categoria": "Área Verde / Arboleda Patrimonial y Explanada de Maquinaria",
+        "area_m2": 1643.8
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.17508,
+              0.40529
+            ],
+            [
+              -78.17479,
+              0.40534
+            ],
+            [
+              -78.17466,
+              0.40506
+            ],
+            [
+              -78.17492,
+              0.40491
+            ],
+            [
+              -78.17514,
+              0.40509
+            ],
+            [
+              -78.17508,
+              0.40529
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "POLY-VERDE-06",
+        "nombre": "Jardines Cuadrangulares de Plaza del Estudiante y Aulas B (4 Cuadrantes)",
+        "zona": "Zona 2 · Casco Histórico",
+        "categoria": "Área Verde / Explanada Verde Universitaria en Cruz",
+        "area_m2": 1833.4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.17441,
+              0.40473
+            ],
+            [
+              -78.17403,
+              0.40479
+            ],
+            [
+              -78.17401,
+              0.40434
+            ],
+            [
+              -78.17431,
+              0.40442
+            ],
+            [
+              -78.17448,
+              0.40456
+            ],
+            [
+              -78.17441,
+              0.40473
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "POLY-VERDE-07",
+        "nombre": "Parque Central Yachay y Pradera Agroecológica de Invernaderos / Plaza Mikuna",
+        "zona": "Zonas 2–3 · Eje Central",
+        "categoria": "Área Verde / Parque Universitario y Área Verde Experimental",
+        "area_m2": 6608.5
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.17362,
+              0.40498
+            ],
+            [
+              -78.17272,
+              0.40506
+            ],
+            [
+              -78.17288,
+              0.4045
+            ],
+            [
+              -78.17348,
+              0.40432
+            ],
+            [
+              -78.17372,
+              0.40435
+            ],
+            [
+              -78.17362,
+              0.40498
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "POLY-VERDE-08",
+        "nombre": "Parcelas Agroecológicas Experimentales y Cinturón Ripario del Reservorio Este",
+        "zona": "Zona 4 · Eje Hídrico Este",
+        "categoria": "Área Verde / Agroforestería Experimental y Refugio de Odonatos",
+        "area_m2": 2565.1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.16905,
+              0.40488
+            ],
+            [
+              -78.16862,
+              0.40478
+            ],
+            [
+              -78.16864,
+              0.40438
+            ],
+            [
+              -78.16912,
+              0.40438
+            ],
+            [
+              -78.16905,
+              0.40488
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "POLY-VERDE-09",
+        "nombre": "Parque y Arboleda del Complejo Deportivo Sur (Canchas y Gimnasio)",
+        "zona": "Zona 3 · Distrito Sur",
+        "categoria": "Área Verde / Parque Deportivo y Recreación al Aire Libre",
+        "area_m2": 2435.6
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.17308,
+              0.40225
+            ],
+            [
+              -78.17282,
+              0.40231
+            ],
+            [
+              -78.17265,
+              0.40212
+            ],
+            [
+              -78.17265,
+              0.40166
+            ],
+            [
+              -78.17288,
+              0.40166
+            ],
+            [
+              -78.17308,
+              0.40225
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "POLY-VERDE-10",
+        "nombre": "Jardines Comunitarios Internos de Residencias Patrimoniales Las Pats",
+        "zona": "Zona 3 · Distrito Sur",
+        "categoria": "Área Verde / Patio Verde Residencial Patrimonial",
+        "area_m2": 3679.7
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.17408,
+              0.40222
+            ],
+            [
+              -78.17362,
+              0.40202
+            ],
+            [
+              -78.17348,
+              0.40155
+            ],
+            [
+              -78.17392,
+              0.40155
+            ],
+            [
+              -78.17415,
+              0.40182
+            ],
+            [
+              -78.17408,
+              0.40222
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "POLY-VERDE-11",
+        "nombre": "Parque Escalonado de Las Multis, Alameda de Las T's y Pradera Concha Acústica",
+        "zona": "Zona 3 · Distrito Sur",
+        "categoria": "Área Verde / Parque Residencial y Explanada Cultural",
+        "area_m2": 872.4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.17665,
+              0.40108
+            ],
+            [
+              -78.17692,
+              0.40102
+            ],
+            [
+              -78.17635,
+              0.40086
+            ],
+            [
+              -78.17628,
+              0.40102
+            ],
+            [
+              -78.17665,
+              0.40108
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "POLY-VERDE-12",
+        "nombre": "Jardines Claustrales de Sala Capitular, Caballerizas y Barrio Docente",
+        "zona": "Zonas 2–3 · Sector San José",
+        "categoria": "Área Verde / Jardín Histórico, Botánico y Residencial Docente",
+        "area_m2": 592.9
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.17538,
+              0.40418
+            ],
+            [
+              -78.17582,
+              0.40411
+            ],
+            [
+              -78.17565,
+              0.40406
+            ],
+            [
+              -78.17545,
+              0.40392
+            ],
+            [
+              -78.17538,
+              0.40418
+            ]
           ]
         ]
       }
