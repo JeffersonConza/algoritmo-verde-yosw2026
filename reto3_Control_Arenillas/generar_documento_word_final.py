@@ -98,13 +98,13 @@ def main():
             # Texto Español (189 palabras)
             r_es = p.add_run(
                 "En la Universidad Yachay Tech (valle de Urcuquí), la proliferación diurna del complejo de arenillas hematófagas "
-                "(Simulium spp., Culicoides spp. y Lutzomyia spp.) genera severas molestias y riesgo sanitario en 122 edificaciones "
+                "(Simulium spp., Culicoides spp. y Lutzomyia spp.) genera severas molestias y riesgo sanitario en 124 edificaciones "
                 "del campus. Para mitigar esta plaga sin recurrir a insecticidas sintéticos que contaminen las acequias de riego del cantón, "
                 "el equipo Algoritmo Verde formuló una estrategia de Manejo Integrado Ecosistémico estructurada en tres ejes sinérgicos: "
                 "(1) Barrera viva vegetal tri-estrato de 980 metros lineales (Schinus molle en estrato arbóreo, Myrcianthes hallii en estrato arbustivo, "
                 "y Cymbopogon citratus junto con Aloysia citrodora en estrato herbáceo hipoalergénico); (2) Manejo biológico de bajo impacto mediante "
                 "conservación de ninfas autóctonas de odonatos en el reservorio léntico y micro-dosificación selectiva de Bacillus thuringiensis israelensis (Bti); "
-                "y (3) Optimización matemática espacial (SLSQP) alimentada por un catálogo SIG de 240 entidades georreferenciadas. "
+                "y (3) Optimización matemática espacial (SLSQP) alimentada por un catálogo SIG de 257 entidades georreferenciadas. "
                 "El modelo alcanza una reducción estimada del 82.8% en la tasa de picaduras con una inversión inicial sumamente eficiente de "
                 "$1,470.00 USD ($1.50/m lineal), integrando riego por goteo por gravedad, compostaje propio y monitoreo telemétrico accesible vía web.\n\n"
                 "Palabras clave: Simuliidae, Culicoides, Manejo Integrado Ecosistémico, Cercas vivas tri-estrato, Optimización SLSQP, Yachay Tech.\n\n"
@@ -121,12 +121,12 @@ def main():
             # Texto Inglés (186 words)
             r_en = p.add_run(
                 "At Yachay Tech University (Urcuquí Valley, Ecuador), the proliferation of biting midges and blackflies "
-                "(Simulium spp., Culicoides spp., and Lutzomyia spp.) severely affects outdoor habitability across 122 campus structures. "
+                "(Simulium spp., Culicoides spp., and Lutzomyia spp.) severely affects outdoor habitability across 124 campus structures. "
                 "To resolve this challenge without synthetic chemical pesticides that threaten regional irrigation networks, Algoritmo Verde "
                 "engineered an Ecosystem-based Integrated Pest Management framework centered on three components: (1) A 980-meter hypoallergenic "
                 "3-strata botanical barrier (Schinus molle, Myrcianthes hallii, and Cymbopogon citratus paired with Aloysia citrodora); "
                 "(2) Biological conservation leveraging native odonate nymphs in the campus reservoir alongside targeted Bacillus thuringiensis israelensis (Bti) "
-                "micro-applications; and (3) Non-linear mathematical spatial optimization (SLSQP algorithm) informed by a 240-entity GIS database. "
+                "micro-applications; and (3) Non-linear mathematical spatial optimization (SLSQP algorithm) informed by a 257-entity GIS database. "
                 "The system achieves an estimated 82.8% biting reduction at an extraordinarily cost-effective budget of $1,470.00 USD ($1.50 per linear meter). "
                 "This solution guarantees environmental safety, long-term bioclimatic resilience, and participatory campus stewardship.\n\n"
                 "Keywords: Simuliidae, Culicoides, Ecosystem Management, 3-Strata Living Fences, SLSQP Optimization, GIS Campus Map."
@@ -182,7 +182,7 @@ def main():
                 "(Ojo et al., 2021). En las zonas contiguas a dormitorios de Las Multis y Residencias Patrimoniales, se sustituye el romero por "
                 "Aloysia citrodora (Cedrón) o Tagetes minuta (Huacatay) para garantizar tolerancia inmunológica y evitar hiperreactividad bronquial o alergias cutáneas.\n\n"
                 "4.2. Especificaciones de los 12 Segmentos Optimizados (980 Metros Lineales)\n"
-                "Mediante optimización matemática no lineal (algoritmo SLSQP) restringido por proximidad a las 122 edificaciones catalogadas y "
+                "Mediante optimización matemática no lineal (algoritmo SLSQP) restringido por proximidad a las 124 edificaciones catalogadas y "
                 "líneas de agua activa, se determinó el despliegue óptimo de 12 segmentos de cerramiento vivo:\n"
             ).font.size = Pt(9.5)
 
@@ -301,8 +301,8 @@ def main():
         if "[Escriban aquí sus conclusiones]" in p.text:
             p.text = (
                 "1. Problema Resuelto: Se diseñó una solución biológica, no invasiva y de alta ingeniería para mitigar el ataque del complejo vectorial "
-                "de arenillas (Simulium spp., Culicoides spp., Lutzomyia spp.) en el campus de Yachay Tech, protegiendo 122 edificaciones sin verter agroquímicos a los canales de riego.\n"
-                "2. Rigor Científico y Tecnológico: La integración del catálogo SIG de 240 entidades georreferenciadas con la optimización espacial SLSQP permitió dimensionar "
+                "de arenillas (Simulium spp., Culicoides spp., Lutzomyia spp.) en el campus de Yachay Tech, protegiendo 124 edificaciones sin verter agroquímicos a los canales de riego.\n"
+                "2. Rigor Científico y Tecnológico: La integración del catálogo SIG de 257 entidades georreferenciadas con la optimización espacial SLSQP permitió dimensionar "
                 "una barrera viva tri-estrato de 980 metros lineales que maximiza la protección humana (82.8% de mitigación estimada) por un presupuesto realista de $1,470.00 USD.\n"
                 "3. Limitaciones Reconocidas: La barrera arbórea y arbustiva requiere de 6 a 12 meses para su consolidación estructural completa; sin embargo, el estrato basal herbáceo "
                 "de Hierba Luisa y Cedrón provee repelencia fitoquímica funcional a partir de la tercera semana de siembra.\n"
@@ -333,7 +333,7 @@ def main():
     if t_ia:
         ia_data = [
             ("Modelos de Lenguaje (Claude / ChatGPT)", "Revisión ortográfica, traducción técnica al inglés y formateo de referencias bibliográficas en estilo APA 7.ª edición.", "Sección 1 (Resumen bilingüe), Sección 9 (Referencias)"),
-            ("Entornos de Computación Científica (Python / SciPy / Folium)", "Optimización matemática multiobjetivo de trayectorias (algoritmo SLSQP) y renderizado del mapa geoespacial interactivo de 240 entidades.", "Sección 2.3 (SIG), Sección 4 (Diseño de segmentos), Sección 6 (Eficacia)"),
+            ("Entornos de Computación Científica (Python / SciPy / Folium)", "Optimización matemática multiobjetivo de trayectorias (algoritmo SLSQP) y renderizado del mapa geoespacial interactivo de 257 entidades.", "Sección 2.3 (SIG), Sección 4 (Diseño de segmentos), Sección 6 (Eficacia)"),
             ("Herramientas de Análisis Fitoquímico Asistido", "Búsqueda y contrastación de metabolitos volátiles de plantas andinas en bases de datos biomédicas.", "Sección 2.2 y 3.1"),
             ("Generador Cartográfico GeoJSON", "Validación topológica y coordenadas GPS del campus Yachay Tech.", "Sección 2.3 y Anexo B")
         ]
@@ -348,7 +348,7 @@ def main():
             p.text = (
                 "Declaración de Distinción de Autoría (Sección 13 de los Términos del Reto):\n"
                 "• Aporte Humano Intelectual Directo (100% Original del Equipo): El planteamiento conceptual de la barrera tri-estrato andina, "
-                "la toma de coordenadas GPS en campo en los 122 edificios del campus, la selección de especies botánicas nativas no invasivas e hipoalergénicas, "
+                "la toma de coordenadas GPS en campo en los 124 edificios del campus, la selección de especies botánicas nativas no invasivas e hipoalergénicas, "
                 "el diagnóstico del complejo de vectores (Simulium / Culicoides) y la formulación del modelo de costos de $1,470 USD corresponden exclusivamente a la autoría de los cuatro integrantes del equipo.\n"
                 "• Soporte Asistido por Herramientas Computacionales e IA: Se emplearon librerías de optimización numérica (SciPy SLSQP) y modelos de lenguaje "
                 "únicamente como asistentes de depuración de código en Python, estructuración gramatical del resumen en inglés y verificación de consistencia de estilo APA. "
@@ -365,7 +365,7 @@ def main():
             p.text = (
                 "Material Adicional de Soporte y Evidencia de Campo:\n\n"
                 "1. Visor Geoespacial Interactivo Web (Folium / Leaflet):\n"
-                "Plataforma cartográfica interactiva con 240 entidades GIS (122 edificios catalogados, 66 tramos de canales/acequias, "
+                "Plataforma cartográfica interactiva con 257 entidades GIS (124 edificios catalogados, 67 tramos de canales/acequias, "
                 "12 segmentos de barreras vivas y 6 estaciones de bio-monitoreo GPS). Capa de polígonos patrimoniales no bloqueante para facilitar la navegación:\n"
                 "Enlace de acceso libre: https://jeffersonconza.github.io/algoritmo-verde-yosw2026/\n"
                 "Repositorio de código y datos abiertos: https://github.com/JeffersonConza/algoritmo-verde-yosw2026\n\n"

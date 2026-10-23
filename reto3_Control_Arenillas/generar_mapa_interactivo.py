@@ -1823,6 +1823,22 @@ def generar_mapa():
         heat_data.append([pt[0], pt[1], 0.90])
         heat_data.append([pt[0] + rng.gauss(0, 0.00008), pt[1] + rng.gauss(0, 0.00008), 0.80])
 
+    # Puntos a lo largo del Canal Conector hacia Esclusa Este (15 vértices)
+    canal_esclusa_heat = [
+        [0.4046761, -78.1680199], [0.4045333, -78.1681836], [0.4043868, -78.1682822],
+        [0.4041962, -78.1686307], [0.4041061, -78.1687743], [0.4040429, -78.1689091],
+        [0.4040262, -78.1689233], [0.4040011, -78.1689108], [0.4039983, -78.1689206],
+        [0.4040178, -78.1689304], [0.4040123, -78.1689487], [0.4039886, -78.1689348],
+        [0.4039831, -78.1689614], [0.4039943, -78.1689726], [0.4039970, -78.1689739]
+    ]
+    for pt in canal_esclusa_heat:
+        heat_data.append([pt[0], pt[1], 0.88])
+        heat_data.append([pt[0] + rng.gauss(0, 0.00008), pt[1] + rng.gauss(0, 0.00008), 0.72])
+
+    # Sospecha Hídrica / Antiguo Lago (Foco de humedad y refugio vegetal adulto)
+    heat_data.append([0.4058428, -78.1733964, 0.90])
+    heat_data.append([0.4058428 + rng.gauss(0, 0.00008), -78.1733964 + rng.gauss(0, 0.00008), 0.75])
+
     # 5. Epicentros de atracción humana (CO2 y emisión térmica)
     # Sector Sur: Las Multis, Las T's, Las Pats, Concha Acústica (~550 hab.)
     for _ in range(120):
@@ -2058,7 +2074,35 @@ def generar_mapa():
         ([0.4041680, -78.1767040], "Tachos de Basura (San José / Restaurantes)", "trash", "gray",
          "🗑️ Tachos de Residuos Menores", "Punto de recolección de residuos orgánicos entre baterías sanitarias y comedores Analí y Pato Goloso."),
         ([0.4044473, -78.1750098], "Pozo Histórico en Desuso (Sala Capitular Este)", "exclamation-triangle", "red",
-         "⚠️ Foco Entomológico (Pozo en Mal Estado)", "Estructura de pozo en mal estado con retención de agua y humedad sombría; punto prioritario de inspección y control biológico de Culicoides spp.")
+         "⚠️ Foco Entomológico (Pozo en Mal Estado)", "Estructura de pozo en mal estado con retención de agua y humedad sombría; punto prioritario de inspección y control biológico de Culicoides spp."),
+        ([0.4058428, -78.1733964], "Antiguo Humedal / Posible Fuente Hídrica Subterránea", "tint", "darkblue",
+         "💧 Sospecha Hídrica / Paleohumedal", "Sector de antiguo lago con presencia persistente de vegetación densa tras labores de poda/fumigación. Evidencia de posible nivel freático alto, paleohumedal o fuente hídrica subterránea; foco prioritario de inspección larvaria y refugio de adultos de Simulium spp."),
+        ([0.4039612, -78.1689813], "Esclusa y Compuerta Hidráulica Este", "filter", "blue",
+         "⚙️ Infraestructura Hídrica / Esclusa", "Compuerta y esclusa de regulación hídrica conectada al canal de conducción este. Punto neurálgico para dosificación biológica y regulación de flujo laminar contra cría de tábanos y arenillas."),
+        ([0.4039391, -78.1767816], "Parqueadero San José 4 (Extremo Oeste)", "car", "gray",
+         "🚗 Estacionamiento Vehicular", "Área de parqueo exterior en el extremo occidental de San José / Concha Acústica."),
+        ([0.4045529, -78.1739939], "Sitio de Parqueo en Vía (Biblioteca Sur)", "car", "lightgray",
+         "🚗 Parqueo en Vía", "Espacio de aparcamiento lateral sobre calzada en el eje vehicular de Biblioteca y Aulas B."),
+        ([0.4050925, -78.1740554], "Sitio de Parqueo en Vía (Biblioteca Central)", "car", "lightgray",
+         "🚗 Parqueo en Vía", "Espacio de aparcamiento lateral sobre calzada frente a Biblioteca Patrimonial."),
+        ([0.4052694, -78.1741467], "Sitio de Parqueo en Vía (Torre del Ingenio)", "car", "lightgray",
+         "🚗 Parqueo en Vía", "Espacio de aparcamiento lateral sobre calzada junto a la Torre del Ingenio."),
+        ([0.4054657, -78.1742427], "Sitio de Parqueo en Vía (Chimenea Norte)", "car", "lightgray",
+         "🚗 Parqueo en Vía", "Espacio de aparcamiento lateral sobre calzada en el acceso norte al casco histórico."),
+        ([0.4075754, -78.1703796], "Sitio de Parqueo en Vía (Senescyt Norte 1)", "car", "lightgray",
+         "🚗 Parqueo en Vía", "Espacio de aparcamiento lateral sobre vía de acceso norte a Senescyt y Centro Médico."),
+        ([0.4074696, -78.1702623], "Sitio de Parqueo en Vía (Senescyt Norte 2)", "car", "lightgray",
+         "🚗 Parqueo en Vía", "Espacio de aparcamiento lateral sobre vía norte hacia Edificio Senescyt."),
+        ([0.4073308, -78.1701017], "Sitio de Parqueo en Vía (Senescyt Acceso Principal)", "car", "lightgray",
+         "🚗 Parqueo en Vía", "Espacio de aparcamiento sobre vía principal frente al acceso a Senescyt."),
+        ([0.4069505, -78.1696585], "Sitio de Parqueo en Vía (Senescyt Este / Comedor)", "car", "lightgray",
+         "🚗 Parqueo en Vía", "Espacio de aparcamiento lateral sobre vía este junto al Comedor Sol del Ecuador."),
+        ([0.4071972, -78.1699859], "Parada de Buses (Edificio Senescyt)", "bus", "purple",
+         "🚌 Movilidad y Transporte Universitario", "Parada principal de transporte público y buses universitarios en el acceso oriental del Edificio Senescyt."),
+        ([0.4040003, -78.1750936], "Parada de Buses (Sala Capitular)", "bus", "purple",
+         "🚌 Movilidad y Transporte Universitario", "Parada de transporte público y buses universitarios en el sector patrimonial San José - Sala Capitular."),
+        ([0.4027118, -78.1737212], "Parada de Buses (Frente al Arco de Las Pats)", "bus", "purple",
+         "🚌 Movilidad y Transporte Universitario", "Parada de transporte público y buses universitarios frente al arco patrimonial de acceso a Residencias Las Pats.")
     ]
 
     for coord, nombre, icono, color, categoria, descripcion_humana in hitos_humanos:
@@ -3892,6 +3936,42 @@ def generar_mapa():
             "color": "#7f8c8d", "fill": "#bdc3c7",
             "interior": False, "is_perimeter": False,
             "desc": "Edificación de gran perímetro en obra gris desocupada en el cuadrante sureste del campus."
+        },
+        {
+            "id": "POLY-GIMNASIO-AIRE-LIBRE",
+            "nombre": "Área de Gimnasia al Aire Libre",
+            "tipo": "Instalación Deportiva y Calistenia",
+            "zona": "Complejo Deportivo Sur",
+            "coords": [
+                [0.4021387444371405, -78.17252282884651],
+                [0.402149242762423, -78.1723480258741],
+                [0.4022851637956411, -78.17234637947526],
+                [0.402285096053807, -78.17238344901638],
+                [0.4022178859242461, -78.17251937191773],
+                [0.4021387493835701, -78.17252422790877]
+            ],
+            "centroid": [0.4022032, -78.1724260],
+            "area": 244.9,
+            "color": "#16a085", "fill": "#1abc9c",
+            "interior": False, "is_perimeter": False,
+            "desc": "Espacio deportivo y circuito biosaludable de calistenia al aire libre, contiguo a las canchas deportivas y residencias estudiantiles del sector sur."
+        },
+        {
+            "id": "POLY-CONTAINER-DESUSO",
+            "nombre": "Container Modular (En Desuso Mantenido)",
+            "tipo": "Infraestructura Logística y Almacén",
+            "zona": "Senescyt",
+            "coords": [
+                [0.4077409361522614, -78.1702754359314],
+                [0.4077590220797426, -78.17025461179638],
+                [0.4078325724502306, -78.17034346961663],
+                [0.407814481699854, -78.17036009172537]
+            ],
+            "centroid": [0.4077862, -78.1703076],
+            "area": 36.3,
+            "color": "#7f8c8d", "fill": "#95a5a6",
+            "interior": False, "is_perimeter": False,
+            "desc": "Estructura modular tipo contenedor en desuso operativo pero con mantenimiento exterior, ubicada al norte del Edificio Senescyt."
         }
     ]
 
@@ -4492,6 +4572,41 @@ def generar_mapa():
             </div>
         """, max_width=270),
         tooltip="💧 Canal de Agua Sector San José (Contiguo a Edificio 20 y Sala de Estar)"
+    ).add_to(fg_canales)
+
+    # 5.9. Canal de Agua Conector hacia Esclusa Este (15 Vértices Topográficos)
+    canal_esclusa_este = [
+        [0.4046761, -78.1680199],
+        [0.4045333, -78.1681836],
+        [0.4043868, -78.1682822],
+        [0.4041962, -78.1686307],
+        [0.4041061, -78.1687743],
+        [0.4040429, -78.1689091],
+        [0.4040262, -78.1689233],
+        [0.4040011, -78.1689108],
+        [0.4039983, -78.1689206],
+        [0.4040178, -78.1689304],
+        [0.4040123, -78.1689487],
+        [0.4039886, -78.1689348],
+        [0.4039831, -78.1689614],
+        [0.4039943, -78.1689726],
+        [0.4039970, -78.1689739]
+    ]
+    folium.PolyLine(
+        locations=canal_esclusa_este,
+        color="#0abde3",
+        weight=3.5,
+        dash_array='4, 4',
+        popup=folium.Popup("""
+            <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 260px;">
+                <h4 style="color: #0abde3; margin: 0 0 4px 0;">💧 Canal Conector hacia Esclusa Este</h4>
+                <p style="margin: 0; font-size: 11.5px; color: #555;">
+                    Longitud: <b>~142.8 m</b> | 15 vértices topográficos.<br>
+                    Ramal hídrico de conducción conectado a la esclusa de regulación este. Tramo activo monitoreado para biocontrol con Bti y hábitat de libélulas.
+                </p>
+            </div>
+        """, max_width=270),
+        tooltip="💧 Canal Conector hacia Esclusa Este (~142.8 m)"
     ).add_to(fg_canales)
 
     # 5.6. Fuentes de Agua Ornamentales e Infraestructura Hidráulica
@@ -5423,7 +5538,7 @@ def generar_mapa():
 
                 <div class="card-pilar" style="border-left-color: #3498db;">
                     <b style="color: #2980b9; font-size: 13.5px;" data-i18n="modal_card2_title">🌿 Naturaleza que Protege e Inclusión Hipoalergénica</b><br>
-                    <span data-i18n="modal_card2_desc">980 metros de barreras vivas blindando 122 edificaciones. Diseño con <b>zonificación hipoalergénica</b>: en proximidad inmediata a dormitorios (Las Multis, Las T's, Las Pats y Los Bloques) el romero es sustituido por <b>Cedrón (Aloysia citrodora)</b> y <b>Huacatay (Tagetes minuta)</b> para resguardar a residentes con asma, rinitis o alergias a Lamiaceae.</span>
+                    <span data-i18n="modal_card2_desc">980 metros de barreras vivas blindando 124 edificaciones e infraestructuras. Diseño con <b>zonificación hipoalergénica</b>: en proximidad inmediata a dormitorios (Las Multis, Las T's, Las Pats y Los Bloques) el romero es sustituido por <b>Cedrón (Aloysia citrodora)</b> y <b>Huacatay (Tagetes minuta)</b> para resguardar a residentes con asma, rinitis o alergias a Lamiaceae.</span>
                 </div>
 
                 <div class="card-pilar" style="border-left-color: #0abde3;">
@@ -5802,7 +5917,7 @@ def generar_mapa():
                 modal_card1_title: "👥 Las Personas Primero (Salud y Confort)",
                 modal_card1_desc: "Protegemos a más de 800 residentes, docentes y trabajadores. Eliminamos el uso de pesticidas tóxicos protegiendo el aire que respiran los estudiantes en Las Multis, Los Bloques y aulas.",
                 modal_card2_title: "🌿 Naturaleza que Protege e Inclusión Hipoalergénica",
-                modal_card2_desc: "980 metros de barreras vivas blindando 122 edificaciones con zonificación hipoalergénica: en proximidad a dormitorios (Las Multis, Las T's, Las Pats y Los Bloques) el romero se sustituye por Cedrón y Huacatay para proteger a residentes alérgicos o asmáticos.",
+                modal_card2_desc: "980 metros de barreras vivas blindando 124 edificaciones con zonificación hipoalergénica: en proximidad a dormitorios (Las Multis, Las T's, Las Pats y Los Bloques) el romero se sustituye por Cedrón y Huacatay para proteger a residentes alérgicos o asmáticos.",
                 modal_card3_title: "💧 Agua Limpia y Biocontrol Respetuoso",
                 modal_card3_desc: "Los canales de riego que cruzan Yachay alimentan los cultivos de Urcuquí. Nuestro control biológico usa <b>ninfas de libélulas nativas</b> y micro-larvicidas biológicos (Bti) que preservan la calidad del agua para las comunidades vecinas.",
                 modal_btn_explore: "✨ ¡Explorar el Campus Protegido!",
@@ -5858,7 +5973,7 @@ def generar_mapa():
                 modal_card1_title: "👥 People First (Health & Comfort)",
                 modal_card1_desc: "We protect over 800 residents, professors, and staff. We eliminate toxic pesticides, safeguarding the air students breathe in student housing and lecture halls.",
                 modal_card2_title: "🌿 Nature that Protects & Hypoallergenic Inclusion",
-                modal_card2_desc: "980 meters of living barriers shielding 122 buildings with hypoallergenic zoning: near dormitories (Multis, T's, Pats, Blocks), rosemary is replaced by Lemon Verbena and Huacatay to protect residents with asthma or allergies.",
+                modal_card2_desc: "980 meters of living barriers shielding 124 buildings with hypoallergenic zoning: near dormitories (Multis, T's, Pats, Blocks), rosemary is replaced by Lemon Verbena and Huacatay to protect residents with asthma or allergies.",
                 modal_card3_title: "💧 Clean Water & Respectful Biocontrol",
                 modal_card3_desc: "The irrigation canals crossing Yachay nourish the agriculture of Urcuqui. Our biocontrol employs <b>native dragonfly nymphs</b> and microbial bio-larvicides (Bti) that preserve water quality for neighboring communities.",
                 modal_btn_explore: "✨ Explore the Protected Campus!",

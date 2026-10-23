@@ -13,7 +13,7 @@
 | :--- | :--- | :--- | :---: |
 | **Christopher Picuasi** | Computación (3.º sem.) | **Apertura:** El problema en el campus, afectación real y objetivos. | 1:00 min |
 | **Luis Collaguazo** | Biomedicina (3.º sem.) | **Fundamentación Biológica:** Complejo vectorial (*Simulium* / *Culicoides*) y bio-repelencia tri-estrato. | 2:00 min |
-| **Jefferson Conza** | Matemáticas (9.º sem.) | **Ingeniería Espacial & GIS:** Optimización SLSQP (980 m), demo en vivo del mapa interactivo (240 entidades). | 2:30 min |
+| **Jefferson Conza** | Matemáticas (9.º sem.) | **Ingeniería Espacial & GIS:** Optimización SLSQP (980 m), demo en vivo del mapa interactivo (257 entidades). | 2:30 min |
 | **Francisco Almeda** | Química (2.º sem.) | **Viabilidad Económica & Riego:** Presupuesto de $1,470 USD, autosuficiencia y comparativa de costos. | 1:30 min |
 | **Todo el Equipo** | Multidisciplinario | **Cierre y Defensa:** Conclusión contundente y respuesta a preguntas del jurado. | 1:00 min |
 
@@ -33,7 +33,7 @@ flowchart LR
 * **Orador:** Christopher Picuasi.
 * **Apoyo Visual:** Diapositiva con título del proyecto, logos de YOSW y la foto real de campo tomada en la parada de la Sala Capitular (`IMG-20261022-WA0009.jpg`).
 * **Guion sugerido:**
-  > *"Buenas tardes, miembros del jurado calificador y comunidad de Yachay Tech. Somos **Algoritmo Verde YT**. Todos los que vivimos y estudiamos aquí conocemos esta escena: esperar el bus en la Sala Capitular, caminar hacia Los Bloques o intentar estudiar en las áreas verdes del campus y ser acorralados por nubes de picaduras. No es una molestia menor: afecta a 122 edificaciones y a más de 800 personas diariamente, provocando dermatitis, interrupción académica y pérdida de habitabilidad. Hoy les presentamos una solución que no depende de químicos tóxicos ni promesas costosas, sino de ciencia andina, bio-repelencia y optimización matemática."*
+  > *"Buenas tardes, miembros del jurado calificador y comunidad de Yachay Tech. Somos **Algoritmo Verde YT**. Todos los que vivimos y estudiamos aquí conocemos esta escena: esperar el bus en la Sala Capitular, caminar hacia Los Bloques o intentar estudiar en las áreas verdes del campus y ser acorralados por nubes de picaduras. No es una molestia menor: afecta a 124 edificaciones y a más de 800 personas diariamente, provocando dermatitis, interrupción académica y pérdida de habitabilidad. Hoy les presentamos una solución que no depende de químicos tóxicos ni promesas costosas, sino de ciencia andina, bio-repelencia y optimización matemática."*
 
 ---
 
@@ -57,7 +57,7 @@ flowchart LR
   > *"¿Cómo sabemos exactamente dónde y cuánto sembrar sin despilfarrar recursos? Como matemático, formulé un modelo de **Optimización Espacial Multiobjetivo (algoritmo SLSQP)** que pondera la densidad humana, la dirección del viento andino y la cercanía a los focos de agua de los canales.*  
   > *El modelo demostró que no necesitamos cercar todo el cantón: el cerramiento óptimo requiere exactamente **12 segmentos estratégicos que suman 980 metros lineales**.*  
   > *(Cambio al visor GIS):*  
-  > *Aquí observan nuestra plataforma geoespacial interactiva desarrollada en Python y Folium. Mapeamos y validamos **240 entidades GIS** cubriendo las **122 edificaciones del campus**: desde el complejo residencial sur (Las Multis, Las T's y Las Pats) hasta el Casco Histórico de San José y el Edificio Senescyt al norte.*  
+  > *Aquí observan nuestra plataforma geoespacial interactiva desarrollada en Python y Folium. Mapeamos y validamos **257 entidades GIS** cubriendo las **124 edificaciones del campus**: desde el complejo residencial sur (Las Multis, Las T's y Las Pats) hasta el Casco Histórico de San José y el Edificio Senescyt al norte.*  
   > *Diseñamos el visor de forma que los polígonos históricos del Ingenio y Sala Capitular no interfieran con la selección individual de cada edificio, permitiendo a la Dirección de Mantenimiento consultar las coordenadas exactas de cada segmento de barrera, las acequias activas y las 6 estaciones telemétricas de monitoreo con un solo clic."*
 
 ---
@@ -91,7 +91,7 @@ flowchart LR
 | :--- | :--- | :--- |
 | **1. "¿Por qué no fumigan con insecticidas que matan a las moscas al instante?"** | **Luis / Francisco** | *"Porque en un valle abierto con viento andino, la nube de químicos se dispersa hacia las ventanas de los dormitorios. Peor aún: el agua de los canales desemboca en las huertas agrícolas de Urcuquí. Fumigar violaría normativas ambientales y causaría resistencia larvaria en 4 a 6 semanas. Nuestra barrera vegetal es un escudo fitoquímico permanente 24/7 sin toxicidad."* |
 | **2. "¿Las plantas no tardan años en crecer? ¿Qué hacen mientras tanto?"** | **Luis / Jefferson** | *"Diseñamos un sistema tri-estrato justamente por esa razón. Aunque el Molle tarda meses en alcanzar 3 metros, el estrato basal de Hierba Luisa (*Cymbopogon citratus*) y Cedrón alcanza madurez vegetativa en solo 3 a 4 semanas, emitiendo altas concentraciones de citral a nivel de suelo que desorientan a las arenillas desde el primer mes."* |
-| **3. "¿Cómo justifican matemáticamente que 980 metros bastan para cubrir un campus tan grande?"** | **Jefferson** | *"No se trata de encerrar todo el predio, sino de aplicar optimización espacial SLSQP sobre las 122 edificaciones y los 66 canales activos. Las arenillas tienen un radio de aproximación rasante; al colocar las barreras en los 12 vectores críticos de intersección lótico-habitacional, interceptamos el flujo convectivo de $\text{CO}_2$ humano y cortamos la línea de vuelo directa."* |
+| **3. "¿Cómo justifican matemáticamente que 980 metros bastan para cubrir un campus tan grande?"** | **Jefferson** | *"No se trata de encerrar todo el predio, sino de aplicar optimización espacial SLSQP sobre las 124 edificaciones y los 67 canales activos. Las arenillas tienen un radio de aproximación rasante; al colocar las barreras en los 12 vectores críticos de intersección lótico-habitacional, interceptamos el flujo convectivo de $\text{CO}_2$ humano y cortamos la línea de vuelo directa."* |
 | **4. "¿Qué pasa si las plantas se secan en época de sequía?"** | **Francisco** | *"Tanto el Molle como el Arrayán son especies autóctonas andinas altamente resistentes al estrés hídrico. Además, el presupuesto incluye una línea de microrriego por goteo con goteros autocompensantes conectada por gravedad a la red hídrica y reservorio agroforestal existentes, asegurando humedad radicular constante sin costo de bombeo."* |
 | **5. "¿Consideraron el riesgo de que personas sean alérgicas a las plantas de la cerca?"** | **Christopher / Luis** | *"Sí, es una innovación central de nuestro diseño. Identificamos que el romero común puede inducir rinitis alérgica en espacios cerrados; por ello, en los perímetros de dormitorios (Las Multis y Residencias Patrimoniales), sustituimos el romero por Cedrón (*Aloysia citrodora*) y Huacatay (*Tagetes minuta*), garantizando una barrera hipoalergénica y segura para toda la comunidad."* |
 

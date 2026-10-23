@@ -28,8 +28,13 @@ Polo académico norte y residencial estudiantil modular, con una población habi
 | **S-05** | **Minimarket Krispan** | Cafetería / Abastecimiento (Primer Piso) | `0.406501` | `-78.170395` | **Medio-Alto** (Primer piso Sen.) | ~150 clientes/día |
 | **S-06** | **Comedor Sol del Ecuador** | Restaurante Universitario (Primer Piso) | `0.407063` | `-78.169911` | **Medio-Alto** (Primer piso Sen.) | ~110 comensales/día (Almuerzo USD 3.50; docentes y personal) |
 | **B-01** | **Depósito de Basura Principal (Senescyt)** | Gestión Residuos Sólidos | `0.407422` | `-78.169763` | **Medio** (Estación contenedores) | Servicio campus norte |
+| **BUS-01** | **Parada de Buses (Edificio Senescyt)** | Movilidad y Transporte | `0.407197` | `-78.169986` | **Alto** (Espera a la intemperie) | ~200 usuarios/día |
 | **LINE-PARK-01** | **Parqueadero Lineal Senescyt (Calzada Este)** | Infraestructura / Parqueo | `0.406380` | `-78.169734` | **Medio** (Franja en batería este) | ~25 vehículos |
 | **LINE-PARK-02** | **Parqueadero Lineal Senescyt (Calzada Sur)** | Infraestructura / Parqueo | `0.406172` | `-78.170373` | **Medio** (Calzada de acceso sur) | ~20 vehículos |
+| **P-12** | **Sitio de Parqueo en Vía (Senescyt Norte 1)** | Infraestructura / Parqueo en Vía | `0.407575` | `-78.170380` | **Medio** (Calzada acceso norte) | ~5 vehículos |
+| **P-13** | **Sitio de Parqueo en Vía (Senescyt Norte 2)** | Infraestructura / Parqueo en Vía | `0.407470` | `-78.170262` | **Medio** (Calzada acceso norte) | ~5 vehículos |
+| **P-14** | **Sitio de Parqueo en Vía (Senescyt Acceso Principal)** | Infraestructura / Parqueo en Vía | `0.407331` | `-78.170102` | **Medio** (Calzada principal) | ~8 vehículos |
+| **P-15** | **Sitio de Parqueo en Vía (Senescyt Este / Comedor)** | Infraestructura / Parqueo en Vía | `0.406951` | `-78.169658` | **Medio** (Calzada este) | ~6 vehículos |
 | **S-07** | **Hall del Edificio Senescyt (Planta Baja)** | Convivencia / Tránsito Estudiantil | `0.406559` | `-78.170184` | **Crítico** (Vestíbulo principal a nivel de suelo, alto flujo) | ~200 personas/hora pico |
 
 ### 1.2. Zona 2: Sector Ingenio Azucarero (Patrimonial, Docencia, Plazas y Recursos Hídricos)
@@ -57,9 +62,17 @@ Antiguo complejo histórico de la Hacienda San José, epicentro de la vida cultu
 | **I-17** | **Pileta de Jardines (Sala Capitular)** | Patrimonial / Fuente Ornamental (Seca) | `0.404346` | `-78.175689` | **Nulo / Inocuo** (Permanece seca) | Espacio paisajístico (0% larvas) |
 | **I-21** | **Pileta de Agua (Sector Sala Capitular)** | Patrimonial / Fuente Ornamental (Seca) | `0.404298` | `-78.175198` | **Nulo / Inocuo** (Monitoreada / Seca) | Fuente exterior sin estancamiento |
 | **I-18** | **Molino de Agua (Patrimonial, Fuera de Uso)** | Patrimonio Industrial Hidráulico | `0.405305` | `-78.174875` | **Inocuo / Sin flujo** (No en uso) | Monumento histórico inactivo |
+| **I-22** | **Antiguo Humedal / Posible Fuente Hídrica Subterránea** | Sospecha Hídrica / Paleohumedal | `0.405843` | `-78.173396` | **Crítico** (Foco permanente de humedad y vegetación) | Foco potencial de larvas y refugio |
+| **I-23** | **Esclusa y Compuerta Hidráulica Este** | Infraestructura Hídrica / Esclusa | `0.403961` | `-78.168981` | **Alto** (Paso hídrico lótico regulado) | Punto clave de dosificación biológica |
+| **BUS-02** | **Parada de Buses (Sala Capitular)** | Movilidad y Transporte | `0.404000` | `-78.175094` | **Crítico** (Espera a la intemperie junto a canal) | ~300 usuarios/día |
 | **P-01** | **Parqueadero San José 1 (Norte)** | Infraestructura / Parqueo | `0.404388` | `-78.175985` | **Medio-Alto** (Junto a Sala Defensas) | ~15 vehículos |
 | **P-02** | **Parqueadero San José 2 (Central)** | Infraestructura / Parqueo | `0.404449` | `-78.176274` | **Medio-Alto** (Oeste Edificio 20) | ~20 vehículos |
 | **P-06** | **Parqueadero San José 3 (Oeste)** | Infraestructura / Parqueo | `0.404247` | `-78.177079` | **Medio** (Acceso occidental) | ~18 vehículos |
+| **P-07** | **Parqueadero San José 4 (Extremo Oeste)** | Infraestructura / Parqueo | `0.403939` | `-78.176782` | **Medio** (Acceso oeste Concha Acústica) | ~15 vehículos |
+| **P-08** | **Sitio de Parqueo en Vía (Biblioteca Sur)** | Infraestructura / Parqueo en Vía | `0.404553` | `-78.173994` | **Medio** (Calzada Aulas B) | ~5 vehículos |
+| **P-09** | **Sitio de Parqueo en Vía (Biblioteca Central)** | Infraestructura / Parqueo en Vía | `0.405093` | `-78.174055` | **Medio** (Calzada Biblioteca) | ~5 vehículos |
+| **P-10** | **Sitio de Parqueo en Vía (Torre del Ingenio)** | Infraestructura / Parqueo en Vía | `0.405269` | `-78.174147` | **Medio** (Calzada Torre) | ~5 vehículos |
+| **P-11** | **Sitio de Parqueo en Vía (Chimenea Norte)** | Infraestructura / Parqueo en Vía | `0.405466` | `-78.174243` | **Medio** (Calzada acceso norte) | ~5 vehículos |
 | **B-03** | **Depósito de Basura Principal (San José)** | Gestión Residuos Sólidos | `0.405747` | `-78.174285` | **Alto** (Contenedores centrales) | Servicio San José |
 | **B-04** | **Depósito de Basura (Tachos Aulas B)** | Gestión Ambiental / Tachos | `0.404748` | `-78.174325` | **Alto** (Flujo estudiantil) | Aulas B |
 | **B-05** | **Depósito de Basura (Tachos Plaza del Estudiante)** | Gestión Ambiental / Tachos | `0.404930` | `-78.174154` | **Alto** (Plaza peatonal) | Plaza Estudiante |
@@ -80,6 +93,7 @@ Principal polo habitacional y deportivo de la universidad (~400 a 550 residentes
 | **R-05** | **Concha Acústica Yachay Tech** | Cultural / Recreacional | `0.4018349` | `-78.1755181` | **Muy Alto** (Anfiteatro abierto)| ~350 asistentes |
 | **R-06** | **Canchas Deportivas (Fútbol / Múltiples)**| Deporte / Actividad Física | `0.402500` | `-78.171800` | **Muy Alto** (Junto a acequia)| ~120 deportistas/tarde |
 | **R-07** | **Parada (Arco de las Pats)** | Transporte / Parada de Bus | `0.402550` | `-78.172800` | **Alto** (Espera intemperie) | Flujo continuo |
+| **BUS-03** | **Parada de Buses (Frente al Arco de Las Pats)** | Movilidad y Transporte | `0.402712` | `-78.173721` | **Alto** (Espera a la intemperie) | ~250 usuarios/día |
 | **R-08** | **Plaza de las Multis** | Espacio Comunitario / Convivencia | `0.402151` | `-78.175186` | **Crítico** (Espacio abierto residencial) | ~200 residentes |
 | **P-03** | **Parqueadero Residencias 'Las Multis'** | Infraestructura / Parqueo | `0.401669` | `-78.174945` | **Alto** (Acceso sur Multifamiliares) | ~30 vehículos |
 | **P-04** | **Parqueadero Complejo Deportivo** | Infraestructura / Parqueo | `0.403445` | `-78.172986` | **Alto** (Acceso a canchas) | ~40 vehículos |
@@ -226,6 +240,15 @@ Las edificaciones del campus fueron regularizadas rigurosamente bajo criterios d
     2. `0.4070583, -78.1698613`
     3. `0.4070134, -78.1699005`
     4. `0.4070667, -78.1699616`
+
+* **Container Modular en Desuso Mantenido (`POLY-CONTAINER-DESUSO`):**
+  * *Ubicación:* Sector norte exterior contiguo a la vía de acceso y Centro Médico. Estructura modular tipo contenedor en desuso operativo pero con mantenimiento exterior preservado.
+  * *Superficie:* ~36.3 m² | *Centroide:* `[0.4077862, -78.1703076]`
+  * *Vértices (Lat, Lon):*
+    1. `0.4077409, -78.1702754`
+    2. `0.4077590, -78.1702546`
+    3. `0.4078326, -78.1703435`
+    4. `0.4078145, -78.1703601`
 
 ---
 
@@ -1232,6 +1255,17 @@ Complejo de recreación y acondicionamiento físico de alto rendimiento contiguo
     3. `0.4022614, -78.1717886`
     4. `0.4022675, -78.1719671`
 
+* **Área de Gimnasia al Aire Libre (`POLY-GIMNASIO-AIRE-LIBRE`):**
+  * *Tipo:* Deporte y Recreación / Gimnasio y Calistenia | *Zona:* Complejo Deportivo Sur
+  * *Superficie aproximada:* ~244.9 m² | *Centroide:* `[0.4022032, -78.1724260]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4021387, -78.1725228`
+    2. `0.4021492, -78.1723480`
+    3. `0.4022852, -78.1723464`
+    4. `0.4022851, -78.1723834`
+    5. `0.4022179, -78.1725194`
+    6. `0.4021387, -78.1725242`
+
 ### 2.8. Zona 3: Sector Residencias de Docentes (Villas e Infraestructura)
 Complejo habitacional del profesorado e investigadores residentes en el cuadrante suroccidental del campus:
 
@@ -1596,6 +1630,36 @@ El sistema hidrológico del campus combina **canales de agua corriente rápida (
     3. `0.4050082, -78.1751801`
 * **Importancia Epidemiológica:** Este canal descubierto discurre inmediatamente adyacente a la **Parada de Buses de la Sala Capitular**. Los usuarios en reposo estático esperando el transporte universitario actúan como atractor de kairomonas ($\text{CO}_2$ y temperatura corporal), lo cual, combinado con la vegetación sombreada y el agua lótica a escasos metros, genera la mayor concentración subjetiva y objetiva de picaduras reportada en este sector.
 
+### 6.11. Canal de Agua Sector San José (`LINE-CANAL-SANJOSE`)
+* **Tipo Hidráulico:** Acequia lótica activa descubierta.
+* **Longitud Lineal:** ~19.5 metros | Flujo continuo en la retaguardia del Edificio 20 y Sala de Estar San José.
+* **Vértices Oficiales (WGS84):**
+    1. `0.4045979, -78.1764123`
+    2. `0.4045743, -78.1764386`
+    3. `0.4045700, -78.1764951`
+    4. `0.4045492, -78.1765761`
+
+### 6.12. Canal Conector hacia Esclusa Este (`LINE-CANAL-ESCLUSA-ESTE`)
+* **Tipo Hidráulico:** Conducción lótica descubierta de alimentación y regulación.
+* **Longitud Lineal:** ~142.8 metros | 15 vértices topográficos.
+* **Vértices Oficiales (WGS84):**
+    1. `0.4046761, -78.1680199`
+    2. `0.4045333, -78.1681836`
+    3. `0.4043868, -78.1682822`
+    4. `0.4041962, -78.1686307`
+    5. `0.4041061, -78.1687743`
+    6. `0.4040429, -78.1689091`
+    7. `0.4040262, -78.1689233`
+    8. `0.4040011, -78.1689108`
+    9. `0.4039983, -78.1689206`
+    10. `0.4040178, -78.1689304`
+    11. `0.4040123, -78.1689487`
+    12. `0.4039886, -78.1689348`
+    13. `0.4039831, -78.1689614`
+    14. `0.4039943, -78.1689726`
+    15. `0.4039970, -78.1689739`
+* **Importancia Epidemiológica e Hidráulica:** Ramal activo que conecta la red de acequias de conducción con la esclusa de regulación este (`0.403961, -78.168981`). Punto neurálgico para la bio-dosificación con Bti y la regulación hidráulica.
+
 ## 7. Delimitación de Zonas Principales del Campus y Modelado Epidemiológico
 
 ### 7.1. Delimitación de Distritos Universitarios mediante Envolventes Orgánicas Suaves (Algoritmo de Chaikin)
@@ -1651,7 +1715,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
 
 ---
 
-## 8. Snippet GeoJSON Oficial Completo (240 Entidades: Hitos, Huellas, Canales, Reservorio y Líneas Divisorias)
+## 8. Snippet GeoJSON Oficial Completo (257 Entidades: Hitos, Huellas, Canales, Reservorio y Líneas Divisorias)
 
 ```json
 {
@@ -9515,6 +9579,393 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
           [
             -78.1765761,
             0.4045492
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "I-22",
+        "nombre": "Antiguo Humedal / Posible Fuente Hídrica Subterránea",
+        "categoria": "Sospecha Hídrica / Paleohumedal",
+        "zona": "Sector Ingenio Azucarero",
+        "descripcion": "Sector de antiguo lago con vegetación persistente tras poda/fumigación; evidencia de nivel freático alto y potencial fuente hídrica subterránea."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.1733964,
+          0.4058428
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "I-23",
+        "nombre": "Esclusa y Compuerta Hidráulica Este",
+        "categoria": "Infraestructura Hídrica / Esclusa",
+        "zona": "Sector Este - Recursos Hídricos",
+        "descripcion": "Compuerta/esclusa de regulación y control de caudal conectada al canal de conducción este; punto neurálgico para bio-dosificación con Bti."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.1689813,
+          0.4039612
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "P-07",
+        "nombre": "Parqueadero San José 4 (Extremo Oeste)",
+        "zona": "Sector San José - Oeste",
+        "categoria": "Infraestructura / Parqueadero"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.1767816,
+          0.4039391
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "P-08",
+        "nombre": "Sitio de Parqueo en Vía (Biblioteca Sur)",
+        "zona": "Sector Ingenio Azucarero",
+        "categoria": "Infraestructura / Parqueo en Vía"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.1739939,
+          0.4045529
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "P-09",
+        "nombre": "Sitio de Parqueo en Vía (Biblioteca Central)",
+        "zona": "Sector Ingenio Azucarero",
+        "categoria": "Infraestructura / Parqueo en Vía"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.1740554,
+          0.4050925
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "P-10",
+        "nombre": "Sitio de Parqueo en Vía (Torre del Ingenio)",
+        "zona": "Sector Ingenio Azucarero",
+        "categoria": "Infraestructura / Parqueo en Vía"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.1741467,
+          0.4052694
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "P-11",
+        "nombre": "Sitio de Parqueo en Vía (Chimenea Norte)",
+        "zona": "Sector Ingenio Azucarero",
+        "categoria": "Infraestructura / Parqueo en Vía"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.1742427,
+          0.4054657
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "P-12",
+        "nombre": "Sitio de Parqueo en Vía (Senescyt Norte 1)",
+        "zona": "Sector Senescyt",
+        "categoria": "Infraestructura / Parqueo en Vía"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.1703796,
+          0.4075754
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "P-13",
+        "nombre": "Sitio de Parqueo en Vía (Senescyt Norte 2)",
+        "zona": "Sector Senescyt",
+        "categoria": "Infraestructura / Parqueo en Vía"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.1702623,
+          0.4074696
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "P-14",
+        "nombre": "Sitio de Parqueo en Vía (Senescyt Acceso Principal)",
+        "zona": "Sector Senescyt",
+        "categoria": "Infraestructura / Parqueo en Vía"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.1701017,
+          0.4073308
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "P-15",
+        "nombre": "Sitio de Parqueo en Vía (Senescyt Este / Comedor)",
+        "zona": "Sector Senescyt",
+        "categoria": "Infraestructura / Parqueo en Vía"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.1696585,
+          0.4069505
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUS-01",
+        "nombre": "Parada de Buses (Edificio Senescyt)",
+        "zona": "Sector Senescyt",
+        "categoria": "Movilidad y Transporte Universitario"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.1699859,
+          0.4071972
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUS-02",
+        "nombre": "Parada de Buses (Sala Capitular)",
+        "zona": "Sector San José - Sala Capitular",
+        "categoria": "Movilidad y Transporte Universitario"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.1750936,
+          0.4040003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BUS-03",
+        "nombre": "Parada de Buses (Frente al Arco de Las Pats)",
+        "zona": "Sector Residencial Sur (Las Pats)",
+        "categoria": "Movilidad y Transporte Universitario"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.1737212,
+          0.4027118
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "POLY-GIMNASIO-AIRE-LIBRE",
+        "nombre": "Área de Gimnasia al Aire Libre",
+        "tipo": "Instalación Deportiva y Calistenia",
+        "zona": "Complejo Deportivo Sur",
+        "area_m2": 244.9,
+        "interior": false,
+        "is_perimeter": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.1725228,
+              0.4021387
+            ],
+            [
+              -78.172348,
+              0.4021492
+            ],
+            [
+              -78.1723464,
+              0.4022852
+            ],
+            [
+              -78.1723834,
+              0.4022851
+            ],
+            [
+              -78.1725194,
+              0.4022179
+            ],
+            [
+              -78.1725242,
+              0.4021387
+            ],
+            [
+              -78.1725228,
+              0.4021387
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "POLY-CONTAINER-DESUSO",
+        "nombre": "Container Modular (En Desuso Mantenido)",
+        "tipo": "Infraestructura Logística y Almacén",
+        "zona": "Senescyt",
+        "area_m2": 36.3,
+        "interior": false,
+        "is_perimeter": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.1702754,
+              0.4077409
+            ],
+            [
+              -78.1702546,
+              0.407759
+            ],
+            [
+              -78.1703435,
+              0.4078326
+            ],
+            [
+              -78.1703601,
+              0.4078145
+            ],
+            [
+              -78.1702754,
+              0.4077409
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LINE-CANAL-ESCLUSA-ESTE",
+        "nombre": "Canal Conector hacia Esclusa Este",
+        "tipo": "Conducción Hídrica Lótica Descubierta (Ramal Esclusa)",
+        "longitud_m": 142.8,
+        "zona": "Sector Este - Recursos Hídricos"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.1680199,
+            0.4046761
+          ],
+          [
+            -78.1681836,
+            0.4045333
+          ],
+          [
+            -78.1682822,
+            0.4043868
+          ],
+          [
+            -78.1686307,
+            0.4041962
+          ],
+          [
+            -78.1687743,
+            0.4041061
+          ],
+          [
+            -78.1689091,
+            0.4040429
+          ],
+          [
+            -78.1689233,
+            0.4040262
+          ],
+          [
+            -78.1689108,
+            0.4040011
+          ],
+          [
+            -78.1689206,
+            0.4039983
+          ],
+          [
+            -78.1689304,
+            0.4040178
+          ],
+          [
+            -78.1689487,
+            0.4040123
+          ],
+          [
+            -78.1689348,
+            0.4039886
+          ],
+          [
+            -78.1689614,
+            0.4039831
+          ],
+          [
+            -78.1689726,
+            0.4039943
+          ],
+          [
+            -78.1689739,
+            0.403997
           ]
         ]
       }
