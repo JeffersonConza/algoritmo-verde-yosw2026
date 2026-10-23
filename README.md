@@ -6,6 +6,24 @@
 
 ---
 
+## 🌐🗺️ ¡Explora el Mapa Interactivo en Vivo! (Acceso Directo)
+
+> **¿Escaneaste nuestro Código QR?** Haz clic en el botón inferior para abrir directamente el **Visor Geoespacial Interactivo del Campus Yachay Tech** (Bilingüe `ES/EN`, Modo `Claro/Oscuro`, 286 entidades GIS, 7 tramos de Cercas Vivas y Evidencia de Campo):
+
+<div align="center">
+
+[![🗺️ ABRIR MAPA INTERACTIVO EN VIVO](https://img.shields.io/badge/%F0%9F%97%BA%EF%B8%8F_VER_MAPA_INTERACTIVO_EN_VIVO-Click_Aqu%C3%AD_(Abrir_Visor_Web)-10ac84?style=for-the-badge&logoColor=white)](https://jeffersonconza.github.io/algoritmo-verde-yosw2026/)
+
+### 👉 [**https://jeffersonconza.github.io/algoritmo-verde-yosw2026/**](https://jeffersonconza.github.io/algoritmo-verde-yosw2026/) 👈
+
+[![📄 Documento Técnico](https://img.shields.io/badge/%F0%9F%93%84_Documento_T%C3%A9cnico_APA-Ver_Markdown-1e3799?style=flat-square)](reto3_Control_Arenillas/DOCUMENTO_TECNICO_RETO3_ALGORITMO_VERDE.md)
+[![📍 Catálogo GIS (286 Entidades)](https://img.shields.io/badge/%F0%9F%93%8D_Cat%C3%A1logo_GIS_Campus-286_Entidades-0abde3?style=flat-square)](reto3_Control_Arenillas/CATALOGO_PUNTOS_GEOREFERENCIADOS_CAMPUS.md)
+[![🧮 Modelo Matemático SLSQP](https://img.shields.io/badge/%F0%9F%A7%AE_Optimizaci%C3%B3n_SLSQP-Python_SciPy-e67e22?style=flat-square)](reto3_Control_Arenillas/modelo_optimizacion_matematica.py)
+
+</div>
+
+---
+
 ## 👥 Equipo "Algoritmo Verde YT"
 
 | Integrante | Carrera / Perfil | Rol en el Proyecto |

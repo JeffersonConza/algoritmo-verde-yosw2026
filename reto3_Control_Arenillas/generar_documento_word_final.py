@@ -387,18 +387,15 @@ def main():
                 r_img5_after = p.add_run("\n\n")
 
             r_qr_txt = p.add_run(
-                "3. Acceso Móvil mediante Códigos QR con Logo Institucional (Nivel H - 30%):\n"
-                "El jurado calificador y la comunidad universitaria pueden escanear los códigos QR oficiales (izquierda: Prototipo Web Interactivo; derecha: Repositorio Público GitHub) para explorar el proyecto desde cualquier dispositivo móvil:\n"
+                "3. Acceso Móvil mediante Código QR de GitHub con Logo Institucional (Nivel H - 30%):\n"
+                "El jurado calificador y la comunidad universitaria pueden escanear el código QR oficial para abrir el Repositorio Público en GitHub, donde se encuentra en la parte superior el botón de acceso directo al Mapa Interactivo en vivo:\n"
             )
             r_qr_txt.font.name = 'Arial'
             r_qr_txt.font.size = Pt(9.5)
 
-            if os.path.exists(qr_web_path) and os.path.exists(qr_git_path):
+            if os.path.exists(qr_web_path):
                 r_qrs = p.add_run("\n")
-                r_qrs.add_picture(qr_web_path, width=Inches(1.65))
-                r_qrs_space = p.add_run("      ")
-                r_qrs_repo = p.add_run()
-                r_qrs_repo.add_picture(qr_git_path, width=Inches(1.65))
+                r_qrs.add_picture(qr_web_path, width=Inches(1.85))
 
     # GUARDAR DOCUMENTOS COMPLETADOS
     print(f"Guardando documento completado en: {OUTPUT_DOCX_PATH}")

@@ -3972,41 +3972,61 @@ def generar_mapa():
     <style>
         :root {{
             --bg-body: #ffffff;
-            --bg-navbar: rgba(255, 255, 255, 0.94);
-            --bg-panel: rgba(255, 255, 255, 0.96);
-            --bg-card: #f8fafc;
-            --border-color: #dcdde1;
-            --border-accent: rgba(16, 172, 132, 0.35);
-            --text-color: #2f3640;
-            --text-muted: #57606f;
+            --bg-navbar: rgba(255, 255, 255, 0.66);
+            --bg-panel: rgba(255, 255, 255, 0.66);
+            --bg-card: rgba(248, 250, 252, 0.58);
+            --border-color: rgba(203, 213, 225, 0.75);
+            --border-accent: rgba(16, 172, 132, 0.45);
+            --text-color: #1e293b;
+            --text-muted: #475569;
             --primary-color: #10ac84;
             --secondary-color: #1e3799;
-            --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.16);
-            --btn-bg: #ffffff;
-            --btn-text: #2f3640;
-            --btn-hover: #f1f2f6;
+            --shadow-card: 0 8px 28px rgba(0, 0, 0, 0.14);
+            --btn-bg: rgba(255, 255, 255, 0.72);
+            --btn-text: #1e293b;
+            --btn-hover: rgba(255, 255, 255, 0.94);
         }}
 
         body[data-theme="dark"] {{
             --bg-body: #0f172a;
-            --bg-navbar: rgba(15, 23, 42, 0.94);
-            --bg-panel: rgba(30, 41, 59, 0.96);
-            --bg-card: #1e293b;
-            --border-color: #334155;
-            --border-accent: rgba(46, 213, 115, 0.45);
-            --text-color: #f1f2f6;
-            --text-muted: #94a3b8;
+            --bg-navbar: rgba(15, 23, 42, 0.68);
+            --bg-panel: rgba(15, 23, 42, 0.68);
+            --bg-card: rgba(30, 41, 59, 0.58);
+            --border-color: rgba(71, 85, 105, 0.75);
+            --border-accent: rgba(46, 213, 115, 0.5);
+            --text-color: #f1f5f9;
+            --text-muted: #cbd5e1;
             --primary-color: #2ed573;
             --secondary-color: #4a69bd;
-            --shadow-card: 0 6px 25px rgba(0, 0, 0, 0.55);
-            --btn-bg: #1e293b;
-            --btn-text: #f1f2f6;
-            --btn-hover: #334155;
+            --shadow-card: 0 8px 30px rgba(0, 0, 0, 0.5);
+            --btn-bg: rgba(30, 41, 59, 0.72);
+            --btn-text: #f1f5f9;
+            --btn-hover: rgba(51, 65, 85, 0.92);
         }}
 
-        /* Adaptación de controles Leaflet en Modo Oscuro */
+        /* Adaptación y transparencia de controles Leaflet */
+        .leaflet-top.leaflet-right {{
+            z-index: 10005 !important;
+        }}
+        .leaflet-control-layers {{
+            background: rgba(255, 255, 255, 0.75) !important;
+            backdrop-filter: blur(14px) saturate(160%) !important;
+            -webkit-backdrop-filter: blur(14px) saturate(160%) !important;
+            border-radius: 12px !important;
+            border: 1px solid var(--border-accent) !important;
+            box-shadow: var(--shadow-card) !important;
+        }}
+        .leaflet-control-layers-expanded {{
+            background: rgba(255, 255, 255, 0.78) !important;
+            backdrop-filter: blur(16px) saturate(170%) !important;
+            -webkit-backdrop-filter: blur(16px) saturate(170%) !important;
+            color: #1e293b !important;
+            padding: 8px 12px !important;
+            max-height: 78vh !important;
+            overflow-y: auto !important;
+        }}
         body[data-theme="dark"] .leaflet-bar a {{
-            background-color: #1e293b !important;
+            background-color: rgba(30, 41, 59, 0.8) !important;
             color: #f1f2f6 !important;
             border-bottom: 1px solid #334155 !important;
         }}
@@ -4015,12 +4035,12 @@ def generar_mapa():
             color: #2ed573 !important;
         }}
         body[data-theme="dark"] .leaflet-control-layers {{
-            background: #1e293b !important;
+            background: rgba(15, 23, 42, 0.76) !important;
             color: #f1f2f6 !important;
-            border: 1px solid #334155 !important;
+            border: 1px solid rgba(46, 213, 115, 0.45) !important;
         }}
         body[data-theme="dark"] .leaflet-control-layers-expanded {{
-            background: #1e293b !important;
+            background: rgba(15, 23, 42, 0.82) !important;
             color: #f1f2f6 !important;
         }}
         /* Ventanas Emergentes (Popups) Semitransparentes con Glassmorphism */
@@ -4124,51 +4144,86 @@ def generar_mapa():
             background: var(--bg-body);
         }}
 
-        /* Barra de navegación superior (Storytelling Bar · Compacta en 1 sola fila) */
+        /* Ventana Flotante Vertical de Navegación (Superior Izquierda, Arrastrable y Transparente) */
         #story-nav-bar {{
             position: fixed;
             top: 12px;
-            left: 60px;
-            z-index: 1000;
+            left: 56px;
+            width: 222px;
+            z-index: 1002;
             background: var(--bg-navbar);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            padding: 5px 12px;
-            border-radius: 28px;
+            backdrop-filter: blur(15px) saturate(165%);
+            -webkit-backdrop-filter: blur(15px) saturate(165%);
+            border-radius: 14px;
             box-shadow: var(--shadow-card);
             border: 1px solid var(--border-accent);
             display: flex;
-            align-items: center;
-            gap: 5px;
-            flex-wrap: nowrap;
-            max-width: calc(100vw - 410px);
-            overflow-x: auto;
-            scrollbar-width: none;
+            flex-direction: column;
+            overflow: hidden;
             color: var(--text-color);
-            transition: all 0.3s ease;
+            user-select: none;
         }}
-        #story-nav-bar::-webkit-scrollbar {{
-            display: none;
+        .story-nav-header {{
+            background: linear-gradient(135deg, rgba(16, 172, 132, 0.84) 0%, rgba(30, 55, 153, 0.84) 100%);
+            color: white;
+            padding: 8px 11px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: grab;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }}
+        .story-nav-header:active {{
+            cursor: grabbing;
+        }}
+        .story-nav-body {{
+            padding: 8px 9px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            max-height: calc(100vh - 110px);
+            overflow-y: auto;
+        }}
+        .nav-section-divider {{
+            font-size: 9.8px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+            color: var(--text-muted);
+            margin: 3px 4px 1px 4px;
+            padding-top: 4px;
+            border-top: 1px dashed var(--border-color);
         }}
 
-        /* Dock Utilitario Independiente (Superior Derecha, junto a Capas: Toggles de Idioma/Tema + QR + GitHub) */
+        /* Dock Utilitario Independiente Flotante (Arrastrable, lejos del selector de capas derecho) */
         #utility-dock {{
             position: fixed;
             top: 12px;
-            right: 62px;
-            z-index: 1001;
+            left: 290px;
+            z-index: 1002;
             background: var(--bg-navbar);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            padding: 5px 10px;
-            border-radius: 28px;
+            backdrop-filter: blur(15px) saturate(165%);
+            -webkit-backdrop-filter: blur(15px) saturate(165%);
+            padding: 5px 11px;
+            border-radius: 26px;
             box-shadow: var(--shadow-card);
             border: 1px solid var(--border-accent);
             display: flex;
             align-items: center;
             gap: 8px;
             color: var(--text-color);
-            transition: all 0.3s ease;
+            cursor: grab;
+            user-select: none;
+        }}
+        #utility-dock:active {{
+            cursor: grabbing;
+        }}
+        .drag-grip {{
+            font-size: 13px;
+            opacity: 0.75;
+            cursor: grab;
+            padding: 0 2px;
+            line-height: 1;
         }}
 
         /* Interruptores Deslizantes (Toggle Switches para Idioma ES/EN y Modo Light/Dark) */
@@ -4247,25 +4302,30 @@ def generar_mapa():
             background: var(--btn-bg);
             border: 1px solid var(--border-color);
             color: var(--btn-text);
-            padding: 6px 12px;
-            border-radius: 20px;
-            font-size: 12px;
+            padding: 6px 11px;
+            border-radius: 10px;
+            font-size: 11.8px;
             font-weight: 600;
             cursor: pointer;
-            transition: all 0.25s ease;
-            display: inline-flex;
+            transition: all 0.2s ease;
+            display: flex;
             align-items: center;
-            gap: 5px;
+            justify-content: flex-start;
+            width: 100%;
+            box-sizing: border-box;
+            gap: 7px;
             outline: none;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            text-align: left;
         }}
         .nav-btn:hover {{
             background: var(--btn-hover);
-            transform: translateY(-1px);
-            box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+            transform: translateX(2px);
+            border-color: var(--primary-color);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
         }}
         .nav-btn-highlight {{
-            background: var(--primary-color) !important;
+            background: rgba(16, 172, 132, 0.88) !important;
             color: #ffffff !important;
             border-color: var(--primary-color) !important;
         }}
@@ -4273,7 +4333,7 @@ def generar_mapa():
             filter: brightness(0.95);
         }}
         .nav-btn-alert {{
-            background: #f39c12 !important;
+            background: rgba(243, 156, 18, 0.90) !important;
             color: #ffffff !important;
             border-color: #e67e22 !important;
         }}
@@ -4281,45 +4341,49 @@ def generar_mapa():
             background: #d68910 !important;
         }}
         .nav-btn-info {{
-            background: var(--secondary-color) !important;
+            background: rgba(30, 55, 153, 0.86) !important;
             color: #ffffff !important;
             border-color: var(--secondary-color) !important;
         }}
         .nav-btn-info:hover {{
-            filter: brightness(0.9);
+            filter: brightness(0.95);
         }}
 
-        /* Leyenda visual intuitiva (Lateral Izquierda Media, sin colisión con Minimapa inferior) */
+        /* Leyenda visual flotante (Inferior Izquierda junto al Minimapa, Cero Solapamiento, Arrastrable y Transparente) */
         #panel-leyenda {{
             position: fixed;
-            top: 148px;
-            left: 12px;
+            bottom: 24px;
+            left: 174px;
             z-index: 1001;
             background: var(--bg-panel);
-            backdrop-filter: blur(8px);
-            border-radius: 10px;
+            backdrop-filter: blur(15px) saturate(165%);
+            -webkit-backdrop-filter: blur(15px) saturate(165%);
+            border-radius: 12px;
             box-shadow: var(--shadow-card);
-            border: 1px solid var(--primary-color);
-            width: 230px;
-            font-size: 10.8px;
+            border: 1px solid var(--border-accent);
+            width: 225px;
+            font-size: 10.6px;
             overflow: hidden;
-            transition: all 0.3s ease;
             color: var(--text-color);
+            user-select: none;
         }}
         .leyenda-header {{
-            background: var(--primary-color);
+            background: linear-gradient(135deg, rgba(16, 172, 132, 0.84) 0%, rgba(22, 160, 133, 0.84) 100%);
             color: white;
-            padding: 6px 10px;
+            padding: 7px 10px;
             font-weight: bold;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            cursor: pointer;
-            font-size: 12px;
+            cursor: grab;
+            font-size: 11.8px;
+        }}
+        .leyenda-header:active {{
+            cursor: grabbing;
         }}
         .leyenda-content {{
             padding: 8px 10px;
-            line-height: 1.6;
+            line-height: 1.55;
             color: var(--text-color);
         }}
         .leyenda-item {{
@@ -4336,32 +4400,38 @@ def generar_mapa():
             flex-shrink: 0;
         }}
 
-        /* Dashboard flotante humanista (Inferior Derecha) */
+        /* Dashboard flotante humanista (Inferior Derecha, Transparente y Arrastrable) */
         #dashboard-flotante {{
             position: fixed;
-            bottom: 25px;
-            right: 25px;
-            width: 330px;
-            z-index: 9999;
+            bottom: 24px;
+            right: 20px;
+            width: 315px;
+            z-index: 1001;
             background: var(--bg-panel);
-            border: 2px solid var(--primary-color);
+            backdrop-filter: blur(15px) saturate(165%);
+            -webkit-backdrop-filter: blur(15px) saturate(165%);
+            border: 1px solid var(--border-accent);
             border-radius: 14px;
             box-shadow: var(--shadow-card);
             font-family: 'Segoe UI', -apple-system, sans-serif;
             overflow: hidden;
-            transition: all 0.3s ease;
             color: var(--text-color);
+            user-select: none;
         }}
         .dash-header {{
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            background: linear-gradient(135deg, rgba(16, 172, 132, 0.84) 0%, rgba(30, 55, 153, 0.84) 100%);
             color: white;
-            padding: 10px 14px;
+            padding: 9px 13px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            cursor: grab;
+        }}
+        .dash-header:active {{
+            cursor: grabbing;
         }}
         .dash-body {{
-            padding: 12px 16px;
+            padding: 11px 14px;
         }}
         .toggle-btn {{
             background: rgba(255, 255, 255, 0.25);
@@ -4498,85 +4568,87 @@ def generar_mapa():
 
         @media (max-width: 1150px) {{
             #story-nav-bar {{
-                top: 8px;
+                top: 10px;
                 left: 52px;
-                max-width: calc(100vw - 65px);
-                padding: 5px 8px;
-                gap: 5px;
+                width: 205px;
             }}
             #utility-dock {{
-                top: 56px;
-                right: 12px;
+                top: 10px;
+                left: 266px;
                 padding: 4px 8px;
             }}
-            .nav-btn {{
-                padding: 5px 10px;
-                font-size: 11px;
-                flex-shrink: 0;
-            }}
             #dashboard-flotante {{
-                width: 280px;
-                bottom: 15px;
-                right: 15px;
+                width: 275px;
+                bottom: 14px;
+                right: 14px;
             }}
             #panel-leyenda {{
                 width: 205px;
-                top: 150px;
+                bottom: 14px;
+                left: 168px;
             }}
         }}
     </style>
 
-    <!-- 1. BARRA SUPERIOR DE NAVEGACIÓN Y STORYTELLING (1 SOLA FILA LIMPIA) -->
+    <!-- 1. VENTANA FLOTANTE VERTICAL DE NAVEGACIÓN (ARRASTRABLE Y TRANSPARENTE) -->
     <div id="story-nav-bar">
-        <!-- Logo / Marca: Abre modal del equipo -->
-        <div id="nav-brand" style="display: flex; align-items: center; gap: 7px; padding: 2px 10px 2px 4px; border-right: 1px solid var(--border-color); cursor: pointer; border-radius: 8px; flex-shrink: 0; transition: background 0.2s;" onclick="toggleModalEquipo(true)" title="Clic para ver Integrantes del Equipo y Detalles" onmouseover="this.style.background='rgba(16,172,132,0.12)'" onmouseout="this.style.background='transparent'">
-            <svg width="24" height="24" viewBox="0 0 100 100">
-                <rect width="100" height="100" rx="26" fill="url(#brandGrad)"/>
-                <defs>
-                    <linearGradient id="brandGrad" x1="0%" y1="100%" x2="100%" y2="0%">
-                        <stop offset="0%" stop-color="#1e3799"/>
-                        <stop offset="50%" stop-color="#10ac84"/>
-                        <stop offset="100%" stop-color="#2ecc71"/>
-                    </linearGradient>
-                </defs>
-                <path d="M 50 14 C 28 32, 22 66, 50 86 C 78 66, 72 32, 50 14 Z" fill="#ffffff" opacity="0.95"/>
-                <path d="M 50 20 L 50 80" stroke="#10ac84" stroke-width="4" stroke-linecap="round"/>
-                <circle cx="36" cy="50" r="4.5" fill="#1e3799"/>
-                <circle cx="64" cy="50" r="4.5" fill="#1e3799"/>
-                <circle cx="50" cy="22" r="5" fill="#f39c12"/>
-            </svg>
-            <div style="display: flex; flex-direction: column; line-height: 1.15;">
-                <span style="font-weight: 800; font-size: 12.5px; color: var(--text-color); letter-spacing: -0.3px;">Algoritmo Verde (YT)</span>
-                <span style="font-size: 9.2px; font-weight: 700; color: #10ac84;">👥 Equipo &raquo;</span>
+        <div id="story-nav-header" class="story-nav-header" title="Arrastra para mover esta ventana">
+            <div style="display: flex; align-items: center; gap: 7px;">
+                <span class="drag-grip">⠿</span>
+                <svg width="20" height="20" viewBox="0 0 100 100">
+                    <rect width="100" height="100" rx="26" fill="#ffffff" opacity="0.22"/>
+                    <path d="M 50 14 C 28 32, 22 66, 50 86 C 78 66, 72 32, 50 14 Z" fill="#ffffff" opacity="0.95"/>
+                    <path d="M 50 20 L 50 80" stroke="#10ac84" stroke-width="5" stroke-linecap="round"/>
+                    <circle cx="50" cy="22" r="6" fill="#f39c12"/>
+                </svg>
+                <span style="font-weight: 800; font-size: 12.5px; letter-spacing: -0.2px;" data-i18n="nav_header_title">Algoritmo Verde YT</span>
             </div>
+            <button class="toggle-btn" onclick="toggleNavMenu()" title="Minimizar / Expandir menú" id="btn-nav-toggle">−</button>
         </div>
 
-        <button id="btn-info" class="nav-btn nav-btn-info" onclick="toggleModalBienvenida(true)" title="Conocer el propósito humano del proyecto" style="flex-shrink: 0;">
-            ℹ️ <span data-i18n="nav_vision">Visión y Propósito</span>
-        </button>
-        <button id="btn-solucion" class="nav-btn nav-btn-highlight" onclick="activarModoSolucion()" title="Ver la solución ecológica activa" style="flex-shrink: 0;">
-            🌿 <span data-i18n="nav_solution">Solución Verde (Activa)</span>
-        </button>
-        <button id="btn-diagnostico" class="nav-btn" onclick="activarModoDiagnostico()" title="Ver mapa de calor continuo y focos epidemiológicos de picaduras" style="flex-shrink: 0;">
-            🔥 <span data-i18n="nav_diagnosis">Ver Mapa de Calor</span>
-        </button>
-        <span style="color: var(--border-color); margin: 0 1px;">|</span>
-        <button class="nav-btn" onclick="irAZona('senescyt')" title="Enfocar Sector Senescyt (Aulas, Bloques, Centro Médico)" style="flex-shrink: 0;">
-            🏛️ <span data-i18n="nav_senescyt">1. Senescyt</span>
-        </button>
-        <button class="nav-btn" onclick="irAZona('ingenio')" title="Enfocar Sector Ingenio Azucarero (Aulas B/I, Biblioteca, Mikuna)" style="flex-shrink: 0;">
-            🏭 <span data-i18n="nav_ingenio">2. Ingenio</span>
-        </button>
-        <button class="nav-btn" onclick="irAZona('residencias')" title="Enfocar Sector Las Pats y Multis (T's, Docentes, Deportes)" style="flex-shrink: 0;">
-            🏡 <span data-i18n="nav_residencias">3. Pats y Multis</span>
-        </button>
-        <button class="nav-btn" onclick="irAZona('general')" title="Restablecer vista completa del campus" style="flex-shrink: 0;">
-            🔭 <span data-i18n="nav_campus">Campus</span>
-        </button>
+        <div id="story-nav-body" class="story-nav-body">
+            <!-- Item 1: Equipo Algoritmo Verde YT -->
+            <button class="nav-btn" onclick="toggleModalEquipo(true)" title="Ver Integrantes del Equipo y Detalles del Proyecto">
+                <span>👥</span> <span data-i18n="nav_team">Algoritmo Verde YT (Equipo)</span>
+            </button>
+
+            <!-- Item 2: Misión y Propósito -->
+            <button id="btn-info" class="nav-btn nav-btn-info" onclick="toggleModalBienvenida(true)" title="Conocer la misión y propósito humano del proyecto">
+                <span>ℹ️</span> <span data-i18n="nav_vision">Misión y Propósito</span>
+            </button>
+
+            <!-- Item 3: Solución Verde -->
+            <button id="btn-solucion" class="nav-btn nav-btn-highlight" onclick="activarModoSolucion()" title="Ver la solución ecológica activa">
+                <span>🌿</span> <span data-i18n="nav_solution">Solución Verde (Activa)</span>
+            </button>
+
+            <!-- Item 4: Ver Mapa de Calor -->
+            <button id="btn-diagnostico" class="nav-btn" onclick="activarModoDiagnostico()" title="Ver mapa de calor continuo y focos epidemiológicos de picaduras">
+                <span>🔥</span> <span data-i18n="nav_diagnosis">Ver Mapa de Calor</span>
+            </button>
+
+            <div class="nav-section-divider" data-i18n="nav_sectors_label">📍 Sectores del Campus</div>
+
+            <!-- Item 5..8: Sectores -->
+            <button class="nav-btn" onclick="irAZona('senescyt')" title="Enfocar Sector Senescyt (Aulas, Bloques, Centro Médico)">
+                <span>🏛️</span> <span data-i18n="nav_senescyt">1. Senescyt</span>
+            </button>
+            <button class="nav-btn" onclick="irAZona('ingenio')" title="Enfocar Sector Ingenio Azucarero (Aulas B/I, Biblioteca, Mikuna)">
+                <span>🏭</span> <span data-i18n="nav_ingenio">2. Ingenio Azucarero</span>
+            </button>
+            <button class="nav-btn" onclick="irAZona('residencias')" title="Enfocar Sector Las Pats y Multis (T's, Docentes, Deportes)">
+                <span>🏡</span> <span data-i18n="nav_residencias">3. Las Pats y Multis</span>
+            </button>
+            <button class="nav-btn" onclick="irAZona('general')" title="Restablecer vista completa del campus">
+                <span>🔭</span> <span data-i18n="nav_campus">Vista General Campus</span>
+            </button>
+        </div>
     </div>
 
-    <!-- 2. DOCK UTILITARIO INDEPENDIENTE (SUPERIOR DERECHA: TOGGLES ES/EN, LIGHT/DARK, QR Y GITHUB) -->
-    <div id="utility-dock" aria-label="Configuración de idioma, tema y acceso móvil">
+    <!-- 2. DOCK UTILITARIO INDEPENDIENTE FLOTANTE (ARRASTRABLE, LEJOS DE CAPAS) -->
+    <div id="utility-dock" aria-label="Configuración de idioma, tema y acceso móvil" title="Arrastra desde el icono ⠿ para mover este panel">
+        <span id="utility-drag-handle" class="drag-grip" title="Arrastrar barra utilitaria">⠿</span>
+
         <!-- Toggle Switch Bilingüe (ES ⇄ EN) -->
         <div id="switch-lang" class="pill-switch" role="switch" aria-checked="false" tabindex="0" onclick="toggleIdioma()" onkeydown="if(event.key==='Enter'||event.key===' ')toggleIdioma()" title="Cambiar Idioma Español / English (Switch Language)">
             <span class="switch-thumb"></span>
@@ -4591,23 +4663,26 @@ def generar_mapa():
             <span class="switch-opt switch-opt-right">🌙</span>
         </div>
 
-        <!-- Botón Código QR con Logo -->
-        <button id="btn-qr" class="utility-icon-btn" onclick="toggleModalQR(true)" title="Escanear QR con nuestro logo o descargar para diapositivas">
-            📱 <span data-i18n="nav_qr">QR</span>
+        <!-- Botón Código QR de GitHub con Logo -->
+        <button id="btn-qr" class="utility-icon-btn" onclick="toggleModalQR(true)" title="Mostrar Código QR del Repositorio GitHub (con enlace al Mapa Interactivo)">
+            📱 <span data-i18n="nav_qr">Código QR</span>
         </button>
 
         <!-- Enlace Directo al Repositorio Público en GitHub -->
-        <a href="https://github.com/JeffersonConza/algoritmo-verde-yosw2026" target="_blank" rel="noopener noreferrer" class="utility-icon-btn" title="Abrir Repositorio Público en GitHub (Código, Modelos SLSQP y Catálogo GIS)">
+        <a href="https://github.com/JeffersonConza/algoritmo-verde-yosw2026" target="_blank" rel="noopener noreferrer" class="utility-icon-btn" title="Abrir Repositorio Público en GitHub">
             <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
             <span>GitHub</span>
         </a>
     </div>
 
-    <!-- LEYENDA VISUAL ACCESIBLE (Encima del minimapa) -->
+    <!-- LEYENDA VISUAL FLOTANTE (ARRASTRABLE Y TRANSPARENTE) -->
     <div id="panel-leyenda">
-        <div class="leyenda-header" onclick="toggleLeyenda()">
-            <span data-i18n="leyenda_title">📋 Simbología Humanista</span>
-            <span id="leyenda-icon-toggle">−</span>
+        <div id="leyenda-header" class="leyenda-header" title="Arrastra para mover esta ventana">
+            <div style="display: flex; align-items: center; gap: 6px;">
+                <span class="drag-grip">⠿</span>
+                <span data-i18n="leyenda_title">📋 Simbología Humanista</span>
+            </div>
+            <button class="toggle-btn" onclick="toggleLeyenda()" title="Minimizar / Expandir simbología" id="leyenda-icon-toggle">−</button>
         </div>
         <div id="leyenda-body" class="leyenda-content">
             <div class="leyenda-item">
@@ -4645,12 +4720,15 @@ def generar_mapa():
         </div>
     </div>
 
-    <!-- DASHBOARD FLOTANTE HUMANISTA -->
+    <!-- DASHBOARD FLOTANTE HUMANISTA (ARRASTRABLE Y TRANSPARENTE) -->
     <div id="dashboard-flotante">
-        <div class="dash-header">
-            <div>
-                <span style="font-weight: 700; font-size: 14px; letter-spacing: 0.3px;" data-i18n="dash_title">🌱 Algoritmo Verde YT</span><br>
-                <span style="font-size: 11px; opacity: 0.9;" data-i18n="dash_sub">Yachay Open Science Week 2026</span>
+        <div id="dash-header" class="dash-header" title="Arrastra para mover esta ventana">
+            <div style="display: flex; align-items: center; gap: 7px;">
+                <span class="drag-grip">⠿</span>
+                <div>
+                    <span style="font-weight: 700; font-size: 13.5px; letter-spacing: 0.2px;" data-i18n="dash_title">🌱 Algoritmo Verde YT</span><br>
+                    <span style="font-size: 10.5px; opacity: 0.92;" data-i18n="dash_sub">Yachay Open Science Week 2026</span>
+                </div>
             </div>
             <button class="toggle-btn" onclick="toggleDashboard()" title="Minimizar / Expandir panel" id="btn-dash-toggle">−</button>
         </div>
@@ -4874,48 +4952,36 @@ def generar_mapa():
         </div>
     </div>
 
-    <!-- MODAL DE CÓDIGO QR PARA CELULAR Y REPOSITORIO GITHUB (CON LOGO EMBEBIDO) -->
+    <!-- MODAL DE CÓDIGO QR EXCLUSIVO DE GITHUB (CON LOGO EMBEBIDO Y ACCESO AL MAPA INTERACTIVO) -->
     <div id="modal-qr" class="modal-overlay" style="display: none;" onclick="if(event.target===this) toggleModalQR(false)">
-        <div class="modal-card" style="max-width: 560px; text-align: center;">
-            <div class="modal-header">
+        <div class="modal-card" style="max-width: 420px; text-align: center;">
+            <div class="modal-header" style="cursor: grab;" title="Arrastra para mover esta ventana">
                 <button onclick="toggleModalQR(false)" class="btn-modal-close-round" title="Cerrar ventana (Esc)" aria-label="Cerrar">✕</button>
-                <h2 style="margin: 0; font-size: 18px; font-weight: 700;" data-i18n="qr_title">📱 Escanea con tu Celular (QR con Nuestro Logo)</h2>
-                <div style="font-size: 12px; opacity: 0.95; margin-top: 4px;" data-i18n="qr_sub">
-                    Accede al Prototipo Interactivo en vivo y al Repositorio Público en GitHub
+                <h2 style="margin: 0; font-size: 17.5px; font-weight: 700;" data-i18n="qr_title">📱 Repositorio Oficial en GitHub</h2>
+                <div style="font-size: 11.5px; opacity: 0.95; margin-top: 4px;" data-i18n="qr_sub">
+                    Escanea para abrir GitHub (incluye el botón directo al Mapa Interactivo)
                 </div>
             </div>
-            <div class="modal-body" style="padding: 20px 22px;">
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(215px, 1fr)); gap: 16px; align-items: stretch;">
-                    <!-- QR 1: Prototipo Web en Vivo -->
-                    <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 14px; padding: 14px;">
-                        <div style="font-weight: 800; font-size: 12.5px; color: var(--primary-color); margin-bottom: 8px;" data-i18n="qr_card_live">🌐 Prototipo Web en Vivo</div>
-                        <div style="background: white; padding: 10px; border-radius: 12px; display: inline-block; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border: 2px solid #10ac84;">
-                            <img src="data:image/png;base64,{qr_b64}" alt="QR Prototipo Algoritmo Verde YT" style="width: 175px; height: 175px; display: block; margin: 0 auto;">
-                        </div>
-                        <div style="margin: 8px 0; font-family: monospace; font-size: 10px; background: rgba(16,172,132,0.08); padding: 6px; border-radius: 6px; word-break: break-all;">
-                            <a href="https://jeffersonconza.github.io/algoritmo-verde-yosw2026/" target="_blank" rel="noopener noreferrer" style="color: var(--primary-color); text-decoration: none; font-weight: 700;">jeffersonconza.github.io/algoritmo-verde-yosw2026</a>
-                        </div>
-                        <a href="data:image/png;base64,{qr_b64}" download="QR_Logo_Prototipo_Algoritmo_Verde_YT.png" class="modal-btn-close" style="text-decoration: none; display: inline-flex; align-items: center; gap: 5px; font-size: 11px; padding: 7px 14px; margin-top: 4px;">
-                            ⬇️ <span data-i18n="qr_download">Descargar QR Web</span>
-                        </a>
+            <div class="modal-body" style="padding: 18px 20px;">
+                <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 14px; padding: 14px;">
+                    <div style="font-weight: 800; font-size: 13px; color: var(--secondary-color); margin-bottom: 8px;" data-i18n="qr_card_repo">🐙 Algoritmo Verde YT · GitHub</div>
+                    <div style="background: white; padding: 10px; border-radius: 14px; display: inline-block; box-shadow: 0 4px 14px rgba(0,0,0,0.12); border: 2px solid #10ac84;">
+                        <img src="data:image/png;base64,{qr_b64}" alt="QR GitHub Algoritmo Verde YT" style="width: 210px; height: 210px; display: block; margin: 0 auto;">
                     </div>
-
-                    <!-- QR 2: Repositorio Público GitHub -->
-                    <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 14px; padding: 14px;">
-                        <div style="font-weight: 800; font-size: 12.5px; color: #1e3799; margin-bottom: 8px;" data-i18n="qr_card_repo">🐙 Repositorio Público GitHub</div>
-                        <div style="background: white; padding: 10px; border-radius: 12px; display: inline-block; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border: 2px solid #1e3799;">
-                            <img src="data:image/png;base64,{qr_repo_b64}" alt="QR GitHub Algoritmo Verde YT" style="width: 175px; height: 175px; display: block; margin: 0 auto;">
-                        </div>
-                        <div style="margin: 8px 0; font-family: monospace; font-size: 10px; background: rgba(30,55,153,0.08); padding: 6px; border-radius: 6px; word-break: break-all;">
-                            <a href="https://github.com/JeffersonConza/algoritmo-verde-yosw2026" target="_blank" rel="noopener noreferrer" style="color: #1e3799; text-decoration: none; font-weight: 700;">github.com/JeffersonConza/algoritmo-verde-yosw2026</a>
-                        </div>
-                        <a href="data:image/png;base64,{qr_repo_b64}" download="QR_Logo_GitHub_Algoritmo_Verde_YT.png" class="modal-btn-close" style="background: #1e3799; text-decoration: none; display: inline-flex; align-items: center; gap: 5px; font-size: 11px; padding: 7px 14px; margin-top: 4px;">
-                            ⬇️ <span data-i18n="qr_download_repo">Descargar QR GitHub</span>
+                    <div style="margin: 10px 0 8px 0; font-family: monospace; font-size: 11px; background: rgba(16,172,132,0.1); padding: 7px 8px; border-radius: 6px; word-break: break-all;">
+                        <a href="https://github.com/JeffersonConza/algoritmo-verde-yosw2026" target="_blank" rel="noopener noreferrer" style="color: var(--primary-color); text-decoration: none; font-weight: 700;">github.com/JeffersonConza/algoritmo-verde-yosw2026</a>
+                    </div>
+                    <div style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-top: 8px;">
+                        <a href="https://github.com/JeffersonConza/algoritmo-verde-yosw2026" target="_blank" rel="noopener noreferrer" class="modal-btn-close" style="background: #1e3799; text-decoration: none; display: inline-flex; align-items: center; gap: 5px; font-size: 11.5px; padding: 8px 14px;">
+                            🐙 <span data-i18n="qr_open_repo">Abrir GitHub</span>
+                        </a>
+                        <a href="data:image/png;base64,{qr_b64}" download="QR_GitHub_Algoritmo_Verde_YT.png" class="modal-btn-close" style="text-decoration: none; display: inline-flex; align-items: center; gap: 5px; font-size: 11.5px; padding: 8px 14px;">
+                            ⬇️ <span data-i18n="qr_download_repo">Descargar QR</span>
                         </a>
                     </div>
                 </div>
-                <p style="margin: 12px 0 0 0; font-size: 11.5px; color: var(--text-muted);" data-i18n="qr_desc">
-                    Ambos códigos QR incluyen el logo oficial de Algoritmo Verde YT con corrección de errores nivel H (30%).
+                <p style="margin: 10px 0 0 0; font-size: 11px; color: var(--text-muted);" data-i18n="qr_desc">
+                    Dentro del README principal de GitHub encontrarás el botón destacado para abrir este Mapa Interactivo en vivo desde cualquier celular o navegador.
                 </p>
             </div>
         </div>
@@ -5014,7 +5080,20 @@ def generar_mapa():
             if (modal) modal.style.display = show ? 'flex' : 'none';
         }}
 
-        // 5. Minimizar/Expandir Dashboard
+        // 5. Minimizar/Expandir Menú Vertical, Dashboard y Leyenda
+        function toggleNavMenu() {{
+            var body = document.getElementById('story-nav-body');
+            var btn = document.getElementById('btn-nav-toggle');
+            if (!body || !btn) return;
+            if (body.style.display === 'none') {{
+                body.style.display = 'flex';
+                btn.innerHTML = '−';
+            }} else {{
+                body.style.display = 'none';
+                btn.innerHTML = '+';
+            }}
+        }}
+
         function toggleDashboard() {{
             var content = document.getElementById('dash-content');
             var btn = document.getElementById('btn-dash-toggle');
@@ -5040,6 +5119,65 @@ def generar_mapa():
                 body.style.display = 'none';
                 icon.innerHTML = '+';
             }}
+        }}
+
+        // 6.5 Motor Universal de Ventanas Flotantes Arrastrables (Mouse + Touch)
+        var highestZ = 1010;
+        function hacerArrastrable(panelEl, handleEl) {{
+            if (!panelEl || !handleEl) return;
+            var isDragging = false;
+            var startX = 0, startY = 0;
+            var origLeft = 0, origTop = 0;
+
+            function onStart(e) {{
+                var target = e.target;
+                if (target.closest('button') || target.closest('a') || target.closest('.pill-switch') || target.closest('input')) {{
+                    return;
+                }}
+                var pt = e.touches ? e.touches[0] : e;
+                var rect = panelEl.getBoundingClientRect();
+                origLeft = rect.left;
+                origTop = rect.top;
+                startX = pt.clientX;
+                startY = pt.clientY;
+                isDragging = true;
+
+                highestZ += 1;
+                panelEl.style.zIndex = highestZ;
+                panelEl.style.left = origLeft + 'px';
+                panelEl.style.top = origTop + 'px';
+                panelEl.style.right = 'auto';
+                panelEl.style.bottom = 'auto';
+                panelEl.style.margin = '0';
+
+                document.addEventListener('mousemove', onMove);
+                document.addEventListener('mouseup', onEnd);
+                document.addEventListener('touchmove', onMove, {{ passive: false }});
+                document.addEventListener('touchend', onEnd);
+            }}
+
+            function onMove(e) {{
+                if (!isDragging) return;
+                if (e.cancelable) e.preventDefault();
+                var pt = e.touches ? e.touches[0] : e;
+                var dx = pt.clientX - startX;
+                var dy = pt.clientY - startY;
+                var newLeft = Math.max(4, Math.min(window.innerWidth - 60, origLeft + dx));
+                var newTop = Math.max(4, Math.min(window.innerHeight - 40, origTop + dy));
+                panelEl.style.left = newLeft + 'px';
+                panelEl.style.top = newTop + 'px';
+            }}
+
+            function onEnd() {{
+                isDragging = false;
+                document.removeEventListener('mousemove', onMove);
+                document.removeEventListener('mouseup', onEnd);
+                document.removeEventListener('touchmove', onMove);
+                document.removeEventListener('touchend', onEnd);
+            }}
+
+            handleEl.addEventListener('mousedown', onStart);
+            handleEl.addEventListener('touchstart', onStart, {{ passive: true }});
         }}
 
         // 7. Alternador Deslizante (Toggle Switch) de Tema Claro / Oscuro
@@ -5080,13 +5218,16 @@ def generar_mapa():
         var currentLang = 'es';
         var i18nDict = {{
             es: {{
-                nav_vision: "Visión y Propósito",
+                nav_header_title: "Algoritmo Verde YT",
+                nav_team: "Algoritmo Verde YT (Equipo)",
+                nav_vision: "Misión y Propósito",
                 nav_solution: "Solución Verde (Activa)",
                 nav_diagnosis: "Ver Mapa de Calor",
+                nav_sectors_label: "📍 Sectores del Campus",
                 nav_senescyt: "1. Senescyt",
                 nav_ingenio: "2. Ingenio Azucarero",
                 nav_residencias: "3. Las Pats y Multis",
-                nav_campus: "Vista Campus",
+                nav_campus: "Vista General Campus",
                 nav_qr: "Código QR",
                 nav_theme: document.body.getAttribute('data-theme') === 'dark' ? "Claro" : "Oscuro",
                 
@@ -5119,7 +5260,7 @@ def generar_mapa():
                 dash_monitoring_val: "6 estaciones GPS",
                 dash_reduction: "📉 <b>Mitigación Picaduras:</b>",
                 dash_reduction_val: "82% efectividad",
-                dash_hint: "💡 <i>Usa los botones superiores para recorrer el campus</i>",
+                dash_hint: "💡 <i>Puedes arrastrar (⠿) cualquier ventana flotante</i>",
 
                 modal_title: "🌱 Algoritmo Verde: Un Campus para Vivir y Estudiar en Paz",
                 modal_sub: "Propuesta Multidisciplinar · YOSW 2026 Ideatón (Reto 3 - Control de Arenillas)",
@@ -5132,23 +5273,25 @@ def generar_mapa():
                 modal_card3_desc: "Los canales de riego que cruzan Yachay alimentan los cultivos de Urcuquí. Nuestro control biológico usa <b>ninfas de libélulas nativas</b> y micro-larvicidas biológicos (Bti) que preservan la calidad del agua para las comunidades vecinas.",
                 modal_btn_explore: "✨ ¡Explorar el Campus Protegido!",
 
-                qr_title: "📱 Escanea con tu Celular (QR con Nuestro Logo)",
-                qr_sub: "Accede al Prototipo Interactivo en vivo y al Repositorio Público en GitHub",
-                qr_card_live: "🌐 Prototipo Web en Vivo",
-                qr_card_repo: "🐙 Repositorio Público GitHub",
-                qr_desc: "Ambos códigos QR incluyen el logo oficial de Algoritmo Verde YT con corrección de errores nivel H (30%).",
-                qr_download: "Descargar QR Web",
-                qr_download_repo: "Descargar QR GitHub"
+                qr_title: "📱 Repositorio Oficial en GitHub",
+                qr_sub: "Escanea para abrir GitHub (incluye el botón directo al Mapa Interactivo)",
+                qr_card_repo: "🐙 Algoritmo Verde YT · GitHub",
+                qr_open_repo: "Abrir GitHub",
+                qr_desc: "Dentro del README principal de GitHub encontrarás el botón destacado para abrir este Mapa Interactivo en vivo desde cualquier celular o navegador.",
+                qr_download_repo: "Descargar QR"
             }},
             en: {{
-                nav_vision: "Vision & Purpose",
+                nav_header_title: "Algoritmo Verde YT",
+                nav_team: "Algoritmo Verde YT (Team)",
+                nav_vision: "Mission & Purpose",
                 nav_solution: "Green Solution (Active)",
                 nav_diagnosis: "View Heatmap",
+                nav_sectors_label: "📍 Campus Sectors",
                 nav_senescyt: "1. Senescyt",
                 nav_ingenio: "2. Sugar Mill",
                 nav_residencias: "3. Pats & Multis",
-                nav_campus: "Campus",
-                nav_qr: "QR",
+                nav_campus: "Full Campus View",
+                nav_qr: "QR Code",
                 nav_theme: document.body.getAttribute('data-theme') === 'dark' ? "Light" : "Dark",
                 
                 leyenda_title: "📋 Human-Centered Legend",
@@ -5163,7 +5306,7 @@ def generar_mapa():
                 
                 dash_title: "🌱 Algoritmo Verde YT",
                 dash_sub: "Yachay Open Science Week 2026",
-                dash_desc: "Challenge 3: Ecological blackfly management prioritizing health, study and outdoor living at Yachay Tech.",
+                dash_desc: "Challenge 3: Ecological biting midge & blackfly management prioritizing health, study and outdoor living at Yachay Tech.",
                 dash_community: "👥 <b>Protected Community:</b>",
                 dash_community_val: "~800+ people",
                 dash_fences: "🌿 <b>3-Strata Living Fences:</b>",
@@ -5180,7 +5323,7 @@ def generar_mapa():
                 dash_monitoring_val: "6 GPS stations",
                 dash_reduction: "📉 <b>Bite Reduction:</b>",
                 dash_reduction_val: "82% effectiveness",
-                dash_hint: "💡 <i>Use top buttons to explore the campus</i>",
+                dash_hint: "💡 <i>You can drag (⠿) any floating window</i>",
 
                 modal_title: "🌱 Algoritmo Verde: A Campus to Live and Study in Peace",
                 modal_sub: "Multidisciplinary Proposal · YOSW 2026 Ideathon (Challenge 3 - Biting Midge & Blackfly Control)",
@@ -5193,13 +5336,12 @@ def generar_mapa():
                 modal_card3_desc: "The irrigation canals crossing Yachay nourish the agriculture of Urcuqui. Our biocontrol employs <b>native dragonfly nymphs</b> and microbial bio-larvicides (Bti) that preserve water quality for neighboring communities.",
                 modal_btn_explore: "✨ Explore the Protected Campus!",
 
-                qr_title: "📱 Scan with your Phone (Branded QR)",
-                qr_sub: "Access the Live Interactive Prototype and Public GitHub Repository",
-                qr_card_live: "🌐 Live Web Prototype",
-                qr_card_repo: "🐙 Public GitHub Repo",
-                qr_desc: "Both QR codes feature the official Algoritmo Verde YT logo with Level H (30%) error correction.",
-                qr_download: "Download Web QR",
-                qr_download_repo: "Download GitHub QR"
+                qr_title: "📱 Official GitHub Repository",
+                qr_sub: "Scan to open GitHub (includes direct button to the Live Interactive Map)",
+                qr_card_repo: "🐙 Algoritmo Verde YT · GitHub",
+                qr_open_repo: "Open GitHub",
+                qr_desc: "At the top of the GitHub README you will find a prominent button to launch this Live Interactive Map on any phone or browser.",
+                qr_download_repo: "Download QR"
             }}
         }};
 
@@ -5243,8 +5385,19 @@ def generar_mapa():
             }}
         }});
 
-        // Mostrar bienvenida automáticamente cuando la ventana haya cargado
+        // Inicializar arrastre de todas las ventanas flotantes y mostrar bienvenida
         window.addEventListener('load', function() {{
+            hacerArrastrable(document.getElementById('story-nav-bar'), document.getElementById('story-nav-header'));
+            hacerArrastrable(document.getElementById('utility-dock'), document.getElementById('utility-dock'));
+            hacerArrastrable(document.getElementById('panel-leyenda'), document.getElementById('leyenda-header'));
+            hacerArrastrable(document.getElementById('dashboard-flotante'), document.getElementById('dash-header'));
+
+            var modals = document.querySelectorAll('.modal-card');
+            modals.forEach(function(mc) {{
+                var mh = mc.querySelector('.modal-header');
+                if (mh) hacerArrastrable(mc, mh);
+            }});
+
             setTimeout(function() {{
                 toggleModalBienvenida(true);
             }}, 350);
