@@ -1724,11 +1724,6 @@ def generar_mapa():
     # -------------------------------------------------------------
     # COORDENADAS TOPOGRÁFICAS DE LOS CANALES LÓTICOS (FOCOS LARVARIOS)
     # -------------------------------------------------------------
-    acequia_ingenio = [
-        [0.4056, -78.1738],
-        [0.4050, -78.1732],
-        [0.4045, -78.1728]
-    ]
     canal_suroeste = [
         [0.4009199, -78.1764438],
         [0.4012991, -78.1753884]
@@ -1779,17 +1774,7 @@ def generar_mapa():
     rng = random.Random(42)
     heat_data = []
 
-    # 1. Puntos a lo largo de la Acequia Secundaria Ingenio
-    for i in range(len(acequia_ingenio) - 1):
-        p1, p2 = acequia_ingenio[i], acequia_ingenio[i+1]
-        for s in range(10):
-            alpha = s / 9
-            lat = p1[0] + alpha * (p2[0] - p1[0])
-            lon = p1[1] + alpha * (p2[1] - p1[1])
-            heat_data.append([lat, lon, 0.95])
-            heat_data.append([lat + rng.gauss(0, 0.00012), lon + rng.gauss(0, 0.00012), 0.78])
-
-    # 3. Puntos a lo largo del Canal Suroeste (Concha Acústica / Multifamiliares)
+    # 1. Puntos a lo largo del Canal Suroeste (Concha Acústica / Multifamiliares)
     for s in range(12):
         alpha = s / 11
         lat = canal_suroeste[0][0] + alpha * (canal_suroeste[1][0] - canal_suroeste[0][0])
@@ -1903,7 +1888,7 @@ def generar_mapa():
             "sector": "Ingenio Azucarero, Aulas B/I y Biblioteca Patrimonial",
             "coords": [0.4048, -78.1738],
             "poblacion": "~250 estudiantes, docentes y comensales en horas pico",
-            "foco": "Acequia Secundaria Ingenio y arboledas históricas sombreadas",
+            "foco": "Arboledas históricas sombreadas, jardines patrimoniales y microclima húmedo de Plaza Mikuna / El Colibrí",
             "impacto": "La alta demanda del Restaurante El Colibrí (almuerzo económico de USD 2.50 frente a USD 3.50 de Senescyt) satura las mesas abiertas de Plaza Mikuna al mediodía, generando un foco concentrado de atracción térmica y picaduras.",
             "solucion": "Cerca Viva 2 (280 m) como cortina rompevientos con molle y lavanda melífera protegiendo las mesas de comida.",
             "color": "#e67e22"
@@ -4412,24 +4397,7 @@ def generar_mapa():
     # -------------------------------------------------------------
     # 5. RECURSOS HÍDRICOS (CANALES LÓTICOS Y RESERVORIO LÉNTICO)
     # -------------------------------------------------------------
-    # 5.1. Acequia Secundaria Ingenio
-    folium.PolyLine(
-        locations=acequia_ingenio,
-        color="#0abde3",
-        weight=3,
-        dash_array='5, 5',
-        popup=folium.Popup("""
-            <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 240px;">
-                <h4 style="color: #0abde3; margin: 0 0 5px 0;">💧 Acequia Secundaria Ingenio</h4>
-                <p style="font-size: 12px; color: #34495e; margin: 0;">
-                    Flujo patrimonial intervenido con micro-dosificación selectiva y barrera arbórea perimetral.
-                </p>
-            </div>
-        """, max_width=260),
-        tooltip="💧 Acequia Secundaria Ingenio"
-    ).add_to(fg_canales)
-
-    # 5.3. Canal de Agua Suroeste (Sector Concha Acústica / Multifamiliares)
+    # 5.1. Canal de Agua Suroeste (Sector Concha Acústica / Multifamiliares)
     folium.PolyLine(
         locations=canal_suroeste,
         color="#00cec9",

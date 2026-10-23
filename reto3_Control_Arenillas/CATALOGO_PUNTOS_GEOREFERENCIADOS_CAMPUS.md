@@ -1512,7 +1512,6 @@ El sistema hidrológico del campus combina **canales de agua corriente rápida (
 
 | ID | Nombre de la Fuente | Tipo Hidráulico | Régimen de Flujo | Latitud (WGS84) | Longitud (WGS84) | Rol Entomológico (Simulium spp.) | Estrategia de Manejo |
 | :---: | :--- | :--- | :--- | :---: | :---: | :--- | :--- |
-| **LINE-ACEQUIA-ING** | **Acequia Secundaria Ingenio** | Conducción Lótica | Flujo moderado empedrado | `0.405600` a `0.404500` | `-78.173800` a `-78.172800` | **Criadero Secundario** (Sombra y bajo viento) | Bti selectivo + Cerca 2 |
 | **LINE-CANAL-SW** | **Canal de Agua Suroeste** | Conducción Lótica | Flujo continuo perimetral (~124.5 m) | `0.400920` a `0.401299` | `-78.176444` a `-78.175388` | **Foco Lotiforme Sur** (Junto a Multis) | Cerca 1 (Arrayán/Cedrón) |
 | **LINE-CANAL-ESTE** | **Canal de Agua Este (34 pts)** | Conducción Lótica | Flujo sinuoso hacia reservorio (~280.6 m)| `0.403124` a `0.404101` | `-78.171061` a `-78.168949` | **Foco de Transición** (Transporte ninfal) | Dosificación biológica |
 | **H-01 / POLY-LAGUNA** | **Laguna Artificial / Reservorio** | Cuerpo Léntico | Agua estancada en reposo (~2,006.2 m²) | `0.404121` | `-78.168316` | **Inocuo / Protector** (0% reproducción de arenillas) | Vivero de libélulas (*Odonata*) |
@@ -1703,7 +1702,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
 * **Epicentro 2: Sector Central (Casco Histórico Ingenio Azucarero y San José):**
   - Coordenadas de núcleo: `0.4048000, -78.1738000` | Ponderación demográfica: $w_2 = 0.25$
   - Población expuesta: ~250 personas (aulas B e I, laboratorios, biblioteca y caminerías).
-  - Foco hídrico: Acequia Secundaria Ingenio y arboledas sombreadas de reposo adulto.
+  - Foco hídrico: Arboledas sombreadas de reposo adulto, jardines patrimoniales y microclima húmedo de Plaza Mikuna.
 
 * **Epicentro 3: Sector Académico Norte (Edificio Senescyt y Residencias Los Bloques):**
   - Coordenadas de núcleo: `0.4068000, -78.1708000` | Ponderación demográfica: $w_3 = 0.30$
@@ -1717,7 +1716,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
 
 ---
 
-## 8. Snippet GeoJSON Oficial Completo (259 Entidades: Hitos, Huellas, Canales, Reservorio y Líneas Divisorias)
+## 8. Snippet GeoJSON Oficial Completo (258 Entidades: Hitos, Huellas, Canales, Reservorio y Líneas Divisorias)
 
 ```json
 {
@@ -4517,33 +4516,6 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
               -78.1757779,
               0.4009273
             ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "LINE-CANAL-SEC",
-        "nombre": "Canal Secundario de Desvío Patrimonial",
-        "zona": "Ingenio Azucarero",
-        "categoria": "Recurso Hídrico Lótico",
-        "descripcion": "Derivación secundaria hacia el sector histórico del Ingenio Azucarero."
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -78.1715,
-            0.4058
-          ],
-          [
-            -78.1728,
-            0.4054
-          ],
-          [
-            -78.1738,
-            0.4051
           ]
         ]
       }
