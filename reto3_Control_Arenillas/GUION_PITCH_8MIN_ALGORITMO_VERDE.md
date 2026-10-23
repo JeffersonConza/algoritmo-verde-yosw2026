@@ -55,7 +55,7 @@ flowchart LR
 * **Apoyo Visual:** Diapositiva 4 con la formulación matemática SLSQP y, de inmediato, cambiar a pantalla compartida / navegador con el visor interactivo [`mapa_interactivo_control_arenillas.html`](file:///mnt/c/Users/jconza/Documents/YOSW/reto3_Control_Arenillas/mapa_interactivo_control_arenillas.html).
 * **Guion sugerido:**
   > *"¿Cómo sabemos exactamente dónde y cuánto sembrar sin despilfarrar recursos? Como matemático, formulé un modelo de **Optimización Espacial Multiobjetivo (algoritmo SLSQP)** que pondera la densidad humana, la dirección del viento andino y la cercanía a los focos de agua de los canales.*  
-  > *El modelo demostró que no necesitamos cercar todo el cantón: el cerramiento óptimo requiere exactamente **12 segmentos estratégicos que suman 980 metros lineales**.*  
+  > *El modelo demostró que no necesitamos cercar todo el cantón: el cerramiento óptimo se divide en **7 tramos viales estratégicos (`CV-1A..CV-3B`) que suman exactamente 980 metros lineales**, respetando al 100% los pasos vehiculares y caminerías peatonales (0 cruces de calles).*  
   > *(Cambio al visor GIS):*  
   > *Aquí observan nuestra plataforma geoespacial interactiva desarrollada en Python y Folium. Mapeamos y validamos **286 entidades GIS** cubriendo las **124 edificaciones del campus**, **12 áreas verdes y jardines patrimoniales** y **16 ejes viales y caminerías**: desde el complejo residencial sur (Las Multis, Las T's y Las Pats) hasta el Casco Histórico de San José y el Edificio Senescyt al norte.*  
   > *Diseñamos el visor de forma que los polígonos históricos del Ingenio y Sala Capitular no interfieran con la selección individual de cada edificio, permitiendo a la Dirección de Mantenimiento consultar las coordenadas exactas de cada segmento de barrera, las acequias activas y las 6 estaciones telemétricas de monitoreo con un solo clic."*
@@ -99,8 +99,9 @@ flowchart LR
 
 ## 4. Checklist Técnico previo a las 17:03
 
+- [x] Presentación oficial PDF de 12 diapositivas generada y verificada (`PRESENTACION_OFICIAL_RETO3_ALGORITMO_VERDE_YT.pdf`).
 - [x] Documento técnico oficial generado en Word (`DOCUMENTO_TECNICO_FINAL_RETO3_ALGORITMO_VERDE.docx`).
-- [x] Copia entregada para Christopher en `WhatsApp Chat with Ideaton/Plantilla Documento Tecnico Reto 3.01_COMPLETO.docx`.
-- [x] Mapa interactivo funcionando en local y con servidor listo para compartir pantalla (`reto3_Control_Arenillas/mapa_interactivo_control_arenillas.html`).
-- [x] Código QR generado y probado en teléfonos móviles (`qr_algoritmo_verde.png`).
+- [x] Copia entregada para Christopher en `WhatsApp Chat with Ideaton/Plantilla Documento Tecnico Reto 3.01_COMPLETO.docx` y `PRESENTACION_OFICIAL_RETO3_ALGORITMO_VERDE_YT.pdf`.
+- [x] Mapa interactivo funcionando con ventanas flotantes arrastrables y transparentes (`reto3_Control_Arenillas/mapa_interactivo_control_arenillas.html`).
+- [x] Código QR con logo hacia el repositorio de GitHub (con botón de acceso al Mapa Interactivo en el `README.md` principal).
 - [x] Roles asignados y tiempos de 8 minutos ensayados con cronómetro.
