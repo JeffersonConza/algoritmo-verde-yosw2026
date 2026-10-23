@@ -257,11 +257,11 @@ El costo unitario optimizado de la cerca multiestrato con riego gravitacional es
 ---
 
 ## 8. Conclusiones
-1. **Resolución Integral del Problema en 122 Edificaciones:** La propuesta «Algoritmo Verde YT» resuelve de raíz la proliferación de arenillas (*Simulium* spp.) en Yachay Tech blindando las 122 edificaciones académicas, deportivas y residenciales (Los Bloques, Las Multis, Las T's, Las Pats, San José y Villas Docentes) mediante una estrategia ecosistémica con un **82.8% de mitigación comprobada** sin plaguicidas sintéticos contaminantes.
+1. **Resolución Integral del Problema en 124 Edificaciones:** La propuesta «Algoritmo Verde YT» resuelve de raíz la proliferación de arenillas (*Simulium* spp.) en Yachay Tech blindando las 124 edificaciones académicas, deportivas y residenciales (Los Bloques, Las Multis, Las T's, Las Pats, San José y Villas Docentes) mediante una estrategia ecosistémica con un **82.8% de mitigación comprobada** sin plaguicidas sintéticos contaminantes.
 2. **Biocompatibilidad Médica e Inclusión Hipoalergénica:** El diseño pionero incorpora un protocolo de zonificación botánica que sustituye especies alcanforadas (como el romero) por cedrón (*Aloysia citrodora*) y huacatay (*Tagetes minuta*) a menos de 5 metros de dormitorios, protegiendo a estudiantes con asma, rinitis o alergias cutáneas.
 3. **Cero Impacto Hídrico y Santuario de Odonatos:** Protege las fuentes de agua de riego comunales de Urcuquí y transforma el reservorio este (~2,006 m²) en un vivero biológico de libélulas depredadoras sin verter químicos tóxicos.
 4. **Factibilidad y Retorno Económico:** Con un presupuesto ajustado de **$1,470.00 USD** ($1.50/m lineal) y riego por gravedad, la universidad puede iniciar la siembra de inmediato, amortizándose en menos de un trimestre frente a los costos de fumigación.
-5. **Rigor Técnico Multidisciplinar:** La integración de Optimización Espacial SLSQP, cartografía oficial de 240 entidades GIS, Química Verde y Biomedicina cumple con creces los lineamientos institucionales y del mentor Ing. José Luis Flores M.Sc.
+5. **Rigor Técnico Multidisciplinar:** La integración de Optimización Espacial SLSQP, cartografía oficial de 257 entidades GIS, Química Verde y Biomedicina cumple con creces los lineamientos institucionales y del mentor Ing. José Luis Flores M.Sc.
 
 ---
 
@@ -302,5 +302,5 @@ El costo unitario optimizado de la cerca multiestrato con riego gravitacional es
    Módulo `api_telemetria.py` desplegable con documentación interactiva Swagger (`/docs`).
 4. **Código QR para Escaneo en Celular:**  
    Disponible en el archivo `reto3_Control_Arenillas/qr_algoritmo_verde.png`.
-5. **Catálogo Georreferenciado Oficial de Infraestructura y Red Hídrica (51 Hitos de Vida y Estaciones, 123 Huellas Arquitectónicas/Cuerpos de Agua [incluyendo Las T's, Las Multis, Las Pats, San José, Complejo Deportivo, Villas Docentes, Complejos Inconclusos, Sala de Estar y Anexo Capitular], 66 Canales y Líneas Divisorias/Parqueos, 6 Estaciones GPS y GeoJSON SIG de 240 Entidades):**  
+5. **Catálogo Georreferenciado Oficial de Infraestructura y Red Hídrica (65 Hitos de Vida, Paradas y Parqueos, 125 Huellas Arquitectónicas/Cuerpos de Agua [incluyendo Las T's, Las Multis, Las Pats, San José, Complejo Deportivo, Gimnasio al Aire Libre, Villas Docentes, Container, Complejos Inconclusos, Sala de Estar y Anexo Capitular], 67 Canales y Líneas Divisorias/Parqueos, 6 Estaciones GPS y GeoJSON SIG de 257 Entidades):**  
    Disponible en el archivo `reto3_Control_Arenillas/CATALOGO_PUNTOS_GEOREFERENCIADOS_CAMPUS.md`.

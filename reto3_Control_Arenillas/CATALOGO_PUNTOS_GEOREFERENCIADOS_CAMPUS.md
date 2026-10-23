@@ -1470,7 +1470,7 @@ Puntos calibrados en las acequias y canales lotiformes para el fomento de ninfas
 
 ## 5. Trazado Georreferenciado de Cercas Vivas Multiestrato (980 m Lineales) con Protocolo Hipoalergénico
 
-Las cercas vivas multiestrato fueron calibradas mediante optimización espacial no lineal (algoritmo SLSQP) y georreferenciadas con GPS submétrico para interceptar el vuelo de las arenillas y cortar la brisa del cañón del río Ambi, protegiendo las **122 edificaciones e infraestructuras catalogadas**. El diseño incorpora una **Zonificación Botánica Hipoalergénica**: en los perímetros residenciales (<5 m de dormitorios), se prohíbe el uso de especies alcanforadas y se sustituye el romero por **Cedrón (*Aloysia citrodora*)** y **Huacatay (*Tagetes minuta*)** para proteger a personas con atopia, asma o alergias a Lamiaceae.
+Las cercas vivas multiestrato fueron calibradas mediante optimización espacial no lineal (algoritmo SLSQP) y georreferenciadas con GPS submétrico para interceptar el vuelo de las arenillas y cortar la brisa del cañón del río Ambi, protegiendo las **124 edificaciones e infraestructuras catalogadas**. El diseño incorpora una **Zonificación Botánica Hipoalergénica**: en los perímetros residenciales (<5 m de dormitorios), se prohíbe el uso de especies alcanforadas y se sustituye el romero por **Cedrón (*Aloysia citrodora*)** y **Huacatay (*Tagetes minuta*)** para proteger a personas con atopia, asma o alergias a Lamiaceae.
 
 ### Cerca Viva 1: Sector Residencial Sur (Las Multis, Las T's y Las Pats)
 * **Longitud Lineal:** **380 metros**
