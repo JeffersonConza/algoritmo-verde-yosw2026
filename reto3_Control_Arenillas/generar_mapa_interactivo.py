@@ -1832,6 +1832,17 @@ def generar_mapa():
         heat_data.append([pt[0], pt[1], 0.95])
         heat_data.append([pt[0] + rng.gauss(0, 0.00008), pt[1] + rng.gauss(0, 0.00008), 0.85])
 
+    # Puntos a lo largo del Canal San José (Contiguo a Edificio 20 y Sala de Estar)
+    canal_sanjose_heat = [
+        [0.4045979, -78.1764123],
+        [0.4045743, -78.1764386],
+        [0.4045700, -78.1764951],
+        [0.4045492, -78.1765761]
+    ]
+    for pt in canal_sanjose_heat:
+        heat_data.append([pt[0], pt[1], 0.90])
+        heat_data.append([pt[0] + rng.gauss(0, 0.00008), pt[1] + rng.gauss(0, 0.00008), 0.80])
+
     # 5. Epicentros de atracción humana (CO2 y emisión térmica)
     # Sector Sur: Las Multis, Las T's, Las Pats, Concha Acústica (~550 hab.)
     for _ in range(120):
@@ -4465,6 +4476,33 @@ def generar_mapa():
             </div>
         """, max_width=270),
         tooltip="💧 Canal de Agua Jardines Sala Capitular (Cercano a Parada de Bus)"
+    ).add_to(fg_canales)
+
+    # 5.8. Canal de Agua Sector San José (Contiguo a Edificio 20 y Sala de Estar)
+    canal_sanjose = [
+        [0.4045979, -78.1764123],
+        [0.4045743, -78.1764386],
+        [0.4045700, -78.1764951],
+        [0.4045492, -78.1765761]
+    ]
+    folium.PolyLine(
+        locations=canal_sanjose,
+        color="#0984e3",
+        weight=3.5,
+        dash_array='5, 5',
+        popup=folium.Popup("""
+            <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 250px;">
+                <h4 style="color: #0984e3; margin: 0 0 5px 0;">💧 Canal de Agua Sector San José</h4>
+                <p style="font-size: 12px; color: #34495e; margin: 0;">
+                    Acequia lótica activa descubierta que discurre en la retaguardia del Edificio 20 y la Sala de Estar de San José.<br>
+                    <b>Intervención Verde:</b> Bio-mitigación con barrera vegetal tri-estrato CV-07 y control biológico con Bti.
+                </p>
+                <div style="font-size: 10px; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 3px; margin-top: 5px;">
+                    Longitud: <b>19.5 m</b> | Sector San José / Casco Histórico
+                </div>
+            </div>
+        """, max_width=270),
+        tooltip="💧 Canal de Agua Sector San José (Contiguo a Edificio 20 y Sala de Estar)"
     ).add_to(fg_canales)
 
     # 5.6. Fuentes de Agua Ornamentales e Infraestructura Hidráulica

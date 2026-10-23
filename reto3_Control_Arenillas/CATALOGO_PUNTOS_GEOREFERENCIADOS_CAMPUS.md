@@ -1465,6 +1465,7 @@ El sistema hidrológico del campus combina **canales de agua corriente rápida (
 | **I-17** | **Pileta de Jardines (San José)** | Fuente Ornamental | Permanece seca habitualmente | `0.404346` | `-78.175689` | **0% Riesgo Vectorial** (Estructura seca) | Embellecimiento paisajístico |
 | **I-18** | **Molino de Agua (Patrimonial)** | Patrimonio Hidráulico | Accionamiento mecánico por acequia | `0.405305` | `-78.174875` | **Monumento Histórico** (Paso hídrico) | Conservación patrimonial |
 | **LINE-CANAL-CAPITULAR** | **Canal Jardines Sala Capitular** | Conducción Lótica | Flujo continuo descubierto (~41.1 m) | `0.404642` a `0.405008` | `-78.175125` a `-78.175180` | **Foco Crítico Local** (Cercano a Parada de Bus Sala Capitular) | Micro-dosificación Bti + Barrera aromática |
+| **LINE-CANAL-SANJOSE** | **Canal de Agua Sector San José** | Conducción Lótica | Acequia activa descubierta (~19.5 m) | `0.404598` a `0.404549` | `-78.176412` a `-78.176576` | **Foco Crítico Local** (Contiguo a Sala de Estar y Edificio 20) | Mantenimiento de caudal + Barrera fitoquímica |
 
 ### 6.1. Canal de Riego Principal (Eje Transversal Norte-Sur)
 * **Longitud y Pendiente:** Desciende de 1,950 m a 1,885 m s.n.m. en flujo continuo (~850 m de recorrido).
@@ -1634,7 +1635,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
 
 ---
 
-## 8. Snippet GeoJSON Oficial Completo (238 Entidades: Hitos, Huellas, Canales, Reservorio y Líneas Divisorias)
+## 8. Snippet GeoJSON Oficial Completo (239 Entidades: Hitos, Huellas, Canales, Reservorio y Líneas Divisorias)
 
 ```json
 {
@@ -9411,6 +9412,39 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
         "coordinates": [
           -78.1750098,
           0.4044473
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LINE-CANAL-SANJOSE",
+        "nombre": "Canal de Agua Sector San José",
+        "zona": "Sector Central (San José)",
+        "tipo": "Acequia Lótica Activa",
+        "longitud_m": 19.5,
+        "nivel_riesgo_basal": "Foco Crítico Local (Contiguo a Sala de Estar y Edificio 20)",
+        "descripcion": "Acequia lótica activa descubierta que discurre en la retaguardia del Edificio 20 y la Sala de Estar de San José."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.1764123,
+            0.4045979
+          ],
+          [
+            -78.1764386,
+            0.4045743
+          ],
+          [
+            -78.1764951,
+            0.40457
+          ],
+          [
+            -78.1765761,
+            0.4045492
+          ]
         ]
       }
     }
