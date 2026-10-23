@@ -66,18 +66,21 @@ def main():
     print("Cargando plantilla Word original...")
     doc = docx.Document(PLANTILLA_PATH)
 
-    # 1. ACTUALIZAR TABLA DE INTEGRANTES (Tabla 1)
-    # Jefferson Conza
-    t_integrantes = doc.tables[1]
-    format_cell(t_integrantes.rows[4].cells[0], "Jefferson Alfredo Conza Fajardo", bold=True, font_size=9.5)
-    format_cell(t_integrantes.rows[4].cells[1], "Matemáticas (9.º sem.)", font_size=9.5)
-    format_cell(t_integrantes.rows[4].cells[2], "Líder Técnico, Modelado Geoespacial y Optimización Matemática", font_size=9.5)
-
-    # Eliminar fila vacía sobrante si existe
-    if len(t_integrantes.rows) > 5 and not t_integrantes.rows[5].cells[0].text.strip():
-        # vaciar texto
-        for c in t_integrantes.rows[5].cells:
-            c.text = ""
+    # 1. ACTUALIZAR TABLA DE INTEGRANTES
+    t_integrantes = None
+    for t in doc.tables:
+        if len(t.rows) > 0 and len(t.rows[0].cells) > 0:
+            if "Nombre completo" in t.rows[0].cells[0].text:
+                t_integrantes = t
+                break
+    
+    if t_integrantes:
+        format_cell(t_integrantes.rows[4].cells[0], "Jefferson Alfredo Conza Fajardo", bold=True, font_size=9.5)
+        format_cell(t_integrantes.rows[4].cells[1], "Matemáticas (9.º sem.)", font_size=9.5)
+        format_cell(t_integrantes.rows[4].cells[2], "Líder Técnico, Modelado Geoespacial y Optimización Matemática", font_size=9.5)
+        if len(t_integrantes.rows) > 5 and not t_integrantes.rows[5].cells[0].text.strip():
+            for c in t_integrantes.rows[5].cells:
+                c.text = ""
 
     # 2. SECCIÓN 1: RESUMEN EJECUTIVO (Párrafo 30)
     for p in doc.paragraphs:
@@ -183,6 +186,38 @@ def main():
                 "líneas de agua activa, se determinó el despliegue óptimo de 12 segmentos de cerramiento vivo:\n"
             ).font.size = Pt(9.5)
 
+            # Insertar Tabla de los 12 segmentos
+            t_seg = doc.add_table(rows=13, cols=5)
+            t_seg.alignment = WD_TABLE_ALIGNMENT.CENTER
+            p._p.addnext(t_seg._tbl)
+
+            # Encabezados de la tabla
+            headers_seg = ["Código", "Nombre del Segmento", "Sector del Campus", "Longitud", "Estratos y Especies"]
+            for col_idx, h_text in enumerate(headers_seg):
+                format_cell(t_seg.rows[0].cells[col_idx], h_text, bold=True, font_size=8.5, color=RGBColor(255, 255, 255), fill_hex="103662", align=WD_ALIGN_PARAGRAPH.CENTER)
+
+            seg_data = [
+                ("CV-01", "Cerca Sur Las Multis - Canal Maestro", "Sector Sur (Las Multis)", "120 m", "Molle + Arrayán/Cedrón + Hierba Luisa"),
+                ("CV-02", "Cerca Oeste Las Multis - Concha Acústica", "Sector Sur (Las Multis)", "90 m", "Molle + Arrayán/Cedrón + Hierba Luisa"),
+                ("CV-03", "Cerca Sur Las Pats - Límite Acequia", "Sector Sur (Las Pats)", "80 m", "Molle + Arrayán/Huacatay + Hierba Luisa"),
+                ("CV-04", "Cerca Este Las Pats - Vía Acceso", "Sector Sur (Las Pats)", "90 m", "Molle + Arrayán/Huacatay + Hierba Luisa"),
+                ("CV-05", "Cerca Central Ingenio - Biblioteca", "Sector Central (Ingenio)", "85 m", "Molle + Arrayán + Hierba Luisa"),
+                ("CV-06", "Cerca Central Plaza Mikuna - Aulas", "Sector Central (Plaza Mikuna)", "95 m", "Molle + Arrayán + Hierba Luisa"),
+                ("CV-07", "Cerca San José - Sala Capitular y Parada", "Sector Central (San José)", "100 m", "Molle + Arrayán/Cedrón + Hierba Luisa"),
+                ("CV-08", "Cerca Norte Senescyt - Canal Principal", "Sector Académico Norte", "110 m", "Molle + Arrayán/Romero + Hierba Luisa"),
+                ("CV-09", "Cerca Norte Residencias Bloques - Canal", "Sector Académico Norte", "110 m", "Molle + Arrayán/Cedrón + Hierba Luisa"),
+                ("CV-10", "Cerca Este Reservorio - Sendero", "Sector Periferia Este", "70 m", "Molle + Arrayán + Hierba Luisa"),
+                ("CV-11", "Cerca Complejo Deportivo - Sur Canchas", "Sector Sur (Deportivo)", "60 m", "Molle + Arrayán + Hierba Luisa"),
+                ("CV-12", "Cerca Villas Docentes - Borde Acequia", "Sector Sur (Docentes)", "60 m", "Molle + Arrayán/Cedrón + Hierba Luisa"),
+            ]
+            for row_idx, data in enumerate(seg_data, start=1):
+                fill = "F7F9FB" if row_idx % 2 == 1 else "FFFFFF"
+                format_cell(t_seg.rows[row_idx].cells[0], data[0], bold=True, font_size=8, fill_hex=fill, align=WD_ALIGN_PARAGRAPH.CENTER)
+                format_cell(t_seg.rows[row_idx].cells[1], data[1], font_size=8, fill_hex=fill)
+                format_cell(t_seg.rows[row_idx].cells[2], data[2], font_size=8, fill_hex=fill)
+                format_cell(t_seg.rows[row_idx].cells[3], data[3], bold=True, font_size=8, fill_hex=fill, align=WD_ALIGN_PARAGRAPH.RIGHT)
+                format_cell(t_seg.rows[row_idx].cells[4], data[4], font_size=8, fill_hex=fill)
+
     # 5. SECCIÓN 5: CRONOGRAMA Y OPERACIÓN
     for p in doc.paragraphs:
         if "Implementación: se estableció un cronograma y plazo de ejecución como se ve en la tabla 1." in p.text:
@@ -226,21 +261,40 @@ def main():
         if "Estimación de costos de implementación y mantenimiento:" in p.text:
             p.text = (
                 "7.1. Presupuesto Detallado y Benchmarking de Viabilidad:\n"
-                "El presupuesto total de inversión inicial asciende exactamente a $1,470.00 USD, lo que representa un costo sumamente bajo de $1.50 USD por metro lineal:\n"
-                "• Plántulas y Material Vegetal (1,960 unidades): $680.00 USD (Schinus molle a $0.50 c/u; Myrcianthes hallii a $0.45 c/u; Cymbopogon citratus y Aloysia citrodora a $0.25 c/u mediante convenio con viveros forestales locales).\n"
-                "• Sistema de Riego por Goteo por Gravedad (980 m manguera PE 16mm + goteros autocompensantes + válvulas manuales): $420.00 USD.\n"
-                "• Enmiendas Orgánicas y Compost: $0.00 USD (suministrado íntegramente por la planta de compostaje institucional de Yachay Tech).\n"
-                "• Postes tutores de bambú andino y señalética QR informativa: $170.00 USD.\n"
-                "• Herramientas menores y logística comunitaria de siembra: $200.00 USD.\n"
-                "Total Inversión Inicial: $1,470.00 USD.\n\n"
-                "7.2. Comparación Costo-Beneficio frente a Químicos Sintéticos:\n"
-                "Fumigación química tradicional: Costo recurrente de $400 USD/mes ($4,800 USD/año), con pérdida de eficacia por resistencia biológica y grave riesgo ambiental.\n"
-                "Algoritmo Verde: Inversión única de $1,470 USD, autosostenible y con costo operativo anual menor a $120 USD (mantenimiento preventivo)."
+                "El presupuesto total de inversión inicial asciende exactamente a $1,470.00 USD, lo que representa un costo sumamente bajo de $1.50 USD por metro lineal desplegado (980 m lineales totales):\n"
             )
             p.paragraph_format.line_spacing = 1.15
             for run in p.runs:
                 run.font.name = 'Arial'
                 run.font.size = Pt(9.5)
+
+            # Insertar Tabla Presupuestaria Oficial
+            t_pre = doc.add_table(rows=7, cols=5)
+            t_pre.alignment = WD_TABLE_ALIGNMENT.CENTER
+            p._p.addnext(t_pre._tbl)
+
+            headers_pre = ["Partida / Rubro", "Descripción Técnica de Insumos", "Cantidad", "Costo Unit.", "Total USD"]
+            for col_idx, h_text in enumerate(headers_pre):
+                format_cell(t_pre.rows[0].cells[col_idx], h_text, bold=True, font_size=8.5, color=RGBColor(255, 255, 255), fill_hex="103662", align=WD_ALIGN_PARAGRAPH.CENTER)
+
+            budget_data = [
+                ("Material Vegetal", "Plántulas de Molle (S. molle), Arrayán (M. hallii), Cedrón (A. citrodora) y esquejes de C. citratus", "1,960 plántulas", "Prom. $0.35", "$680.00"),
+                ("Sistema de Riego", "Manguera PE 16mm, microgoteros autocompensantes 2 L/h, llaves de paso y conectores a gravedad", "980 m lineales", "$0.43 / m", "$420.00"),
+                ("Enmiendas Orgánicas", "Compost maduro institucional producido en la planta de tratamiento de Yachay Tech", "1.5 toneladas", "$0.00 (Interno)", "$0.00"),
+                ("Infraestructura Apoyo", "Postes tutores de caña guadua / bambú andino y placas QR informativas en acrílico", "120 unidades", "$1.42 c/u", "$170.00"),
+                ("Logística de Siembra", "Herramientas menores, guantes, palas y refrigerios de brigadas de voluntariado", "1 evento global", "Global", "$200.00"),
+                ("TOTAL INVERSIÓN", "Costo unitario global optimizado: $1.50 USD / metro lineal", "980 m totales", "-", "$1,470.00"),
+            ]
+            for row_idx, data in enumerate(budget_data, start=1):
+                is_total = (row_idx == len(budget_data))
+                fill = "EBF3FA" if is_total else ("F7F9FB" if row_idx % 2 == 1 else "FFFFFF")
+                bold = is_total
+                font_sz = 8.5 if is_total else 8
+                format_cell(t_pre.rows[row_idx].cells[0], data[0], bold=bold, font_size=font_sz, fill_hex=fill, align=WD_ALIGN_PARAGRAPH.LEFT)
+                format_cell(t_pre.rows[row_idx].cells[1], data[1], bold=bold, font_size=font_sz, fill_hex=fill)
+                format_cell(t_pre.rows[row_idx].cells[2], data[2], bold=bold, font_size=font_sz, fill_hex=fill, align=WD_ALIGN_PARAGRAPH.CENTER)
+                format_cell(t_pre.rows[row_idx].cells[3], data[3], bold=bold, font_size=font_sz, fill_hex=fill, align=WD_ALIGN_PARAGRAPH.RIGHT)
+                format_cell(t_pre.rows[row_idx].cells[4], data[4], bold=True, font_size=font_sz, fill_hex=fill, align=WD_ALIGN_PARAGRAPH.RIGHT)
 
     # 8. SECCIÓN 8: CONCLUSIONES (Párrafo 127)
     for p in doc.paragraphs:
@@ -268,9 +322,15 @@ def main():
             ref_paragraph = p
             break
     
-    # 10. ANEXO A: DECLARACIÓN DE USO DE INTELIGENCIA ARTIFICIAL (Tabla 3 y P144)
-    if len(doc.tables) > 3:
-        t_ia = doc.tables[3]
+    # 10. ANEXO A: DECLARACIÓN DE USO DE INTELIGENCIA ARTIFICIAL (Tabla IA y P144)
+    t_ia = None
+    for t in doc.tables:
+        if len(t.rows) > 0 and len(t.rows[0].cells) > 0:
+            if "Herramienta de IA utilizada" in t.rows[0].cells[0].text:
+                t_ia = t
+                break
+    
+    if t_ia:
         ia_data = [
             ("Modelos de Lenguaje (Claude / ChatGPT)", "Revisión ortográfica, traducción técnica al inglés y formateo de referencias bibliográficas en estilo APA 7.ª edición.", "Sección 1 (Resumen bilingüe), Sección 9 (Referencias)"),
             ("Entornos de Computación Científica (Python / SciPy / Folium)", "Optimización matemática multiobjetivo de trayectorias (algoritmo SLSQP) y renderizado del mapa geoespacial interactivo de 236 entidades.", "Sección 2.3 (SIG), Sección 4 (Diseño de segmentos), Sección 6 (Eficacia)"),
