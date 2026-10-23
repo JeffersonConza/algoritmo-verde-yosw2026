@@ -1456,7 +1456,6 @@ El sistema hidrológico del campus combina **canales de agua corriente rápida (
 
 | ID | Nombre de la Fuente | Tipo Hidráulico | Régimen de Flujo | Latitud (WGS84) | Longitud (WGS84) | Rol Entomológico (Simulium spp.) | Estrategia de Manejo |
 | :---: | :--- | :--- | :--- | :---: | :---: | :--- | :--- |
-| **LINE-CANAL-PPAL** | **Canal de Riego Principal** | Conducción Lótica | Flujo continuo rápido (0.3–1.2 m/s) | `0.408500` a `0.401500` | `-78.169000` a `-78.172800` | **Criadero Primario Crítico** (Fijación ninfal) | Bti líquido selectivo + Cerca 3 |
 | **LINE-ACEQUIA-ING** | **Acequia Secundaria Ingenio** | Conducción Lótica | Flujo moderado empedrado | `0.405600` a `0.404500` | `-78.173800` a `-78.172800` | **Criadero Secundario** (Sombra y bajo viento) | Bti selectivo + Cerca 2 |
 | **LINE-CANAL-SW** | **Canal de Agua Suroeste** | Conducción Lótica | Flujo continuo perimetral (~124.5 m) | `0.400920` a `0.401299` | `-78.176444` a `-78.175388` | **Foco Lotiforme Sur** (Junto a Multis) | Cerca 1 (Arrayán/Cedrón) |
 | **LINE-CANAL-ESTE** | **Canal de Agua Este (34 pts)** | Conducción Lótica | Flujo sinuoso hacia reservorio (~280.6 m)| `0.403124` a `0.404101` | `-78.171061` a `-78.168949` | **Foco de Transición** (Transporte ninfal) | Dosificación biológica |
@@ -1466,16 +1465,6 @@ El sistema hidrológico del campus combina **canales de agua corriente rápida (
 | **I-18** | **Molino de Agua (Patrimonial)** | Patrimonio Hidráulico | Accionamiento mecánico por acequia | `0.405305` | `-78.174875` | **Monumento Histórico** (Paso hídrico) | Conservación patrimonial |
 | **LINE-CANAL-CAPITULAR** | **Canal Jardines Sala Capitular** | Conducción Lótica | Flujo continuo descubierto (~41.1 m) | `0.404642` a `0.405008` | `-78.175125` a `-78.175180` | **Foco Crítico Local** (Cercano a Parada de Bus Sala Capitular) | Micro-dosificación Bti + Barrera aromática |
 | **LINE-CANAL-SANJOSE** | **Canal de Agua Sector San José** | Conducción Lótica | Acequia activa descubierta (~19.5 m) | `0.404598` a `0.404549` | `-78.176412` a `-78.176576` | **Foco Crítico Local** (Contiguo a Sala de Estar y Edificio 20) | Mantenimiento de caudal + Barrera fitoquímica |
-
-### 6.1. Canal de Riego Principal (Eje Transversal Norte-Sur)
-* **Longitud y Pendiente:** Desciende de 1,950 m a 1,885 m s.n.m. en flujo continuo (~850 m de recorrido).
-* **Vértices de Recorrido:**
-  1. `0.408500° N, -78.169000° W` — *Ingreso Norte al Campus desde cota alta.*
-  2. `0.407200° N, -78.170500° W` — *Flujo lateral frente al Edificio Senescyt.*
-  3. `0.405800° N, -78.171500° W` — *Descenso por talud hacia el Ingenio.*
-  4. `0.404800° N, -78.172000° W` — *Paso por los Laboratorios de Carrera.*
-  5. `0.403500° N, -78.172500° W` — *Cruce perimetral junto a Canchas Deportivas.*
-  6. `0.401500° N, -78.172800° W` — *Salida sur hacia agricultura de San José de Urcuquí.*
 
 ### 6.2. Canal Secundario de Desvío Patrimonial (Ingenio Azucarero)
 * **Vértices de Recorrido:**
@@ -1626,7 +1615,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
 * **Epicentro 3: Sector Académico Norte (Edificio Senescyt y Residencias Los Bloques):**
   - Coordenadas de núcleo: `0.4068000, -78.1708000` | Ponderación demográfica: $w_3 = 0.30$
   - Población expuesta: ~450 personas (aulas magnas, decanatos y Bloques A-I).
-  - Foco hídrico: Canal de Riego Principal (a $<35\text{ m}$ de ventanas este).
+  - Foco hídrico: Acequias de coronación y drenajes pluviales del talud norte.
 
 * **Epicentro 4: Sector Recursos Hídricos Este (Reservorio Agroforestal y Periferia):**
   - Coordenadas de núcleo: `0.4041214, -78.1683157` | Ponderación demográfica: $w_4 = 0.10$
@@ -1635,7 +1624,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
 
 ---
 
-## 8. Snippet GeoJSON Oficial Completo (239 Entidades: Hitos, Huellas, Canales, Reservorio y Líneas Divisorias)
+## 8. Snippet GeoJSON Oficial Completo (238 Entidades: Hitos, Huellas, Canales, Reservorio y Líneas Divisorias)
 
 ```json
 {
@@ -4432,45 +4421,6 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
               -78.1757779,
               0.4009273
             ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "LINE-CANAL-PPAL",
-        "nombre": "Canal de Riego Principal (Eje Central)",
-        "zona": "Eje Transversal Norte-Sur",
-        "categoria": "Recurso Hídrico Lótico",
-        "descripcion": "Canal maestro abierto de conducción de riego que atraviesa el campus de norte a sur."
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -78.169,
-            0.4085
-          ],
-          [
-            -78.1705,
-            0.4072
-          ],
-          [
-            -78.1715,
-            0.4058
-          ],
-          [
-            -78.172,
-            0.4048
-          ],
-          [
-            -78.1725,
-            0.4035
-          ],
-          [
-            -78.1728,
-            0.4015
           ]
         ]
       }

@@ -1724,14 +1724,6 @@ def generar_mapa():
     # -------------------------------------------------------------
     # COORDENADAS TOPOGRÁFICAS DE LOS CANALES LÓTICOS (FOCOS LARVARIOS)
     # -------------------------------------------------------------
-    canal_coords = [
-        [0.4085, -78.1690],
-        [0.4072, -78.1705],
-        [0.4058, -78.1715],
-        [0.4048, -78.1720],
-        [0.4035, -78.1725],
-        [0.4015, -78.1728]
-    ]
     acequia_ingenio = [
         [0.4056, -78.1738],
         [0.4050, -78.1732],
@@ -1787,19 +1779,7 @@ def generar_mapa():
     rng = random.Random(42)
     heat_data = []
 
-    # 1. Puntos a lo largo del Canal Principal (Eje Norte-Sur)
-    for i in range(len(canal_coords) - 1):
-        p1, p2 = canal_coords[i], canal_coords[i+1]
-        n_steps = 14
-        for s in range(n_steps + 1):
-            alpha = s / n_steps
-            lat = p1[0] + alpha * (p2[0] - p1[0])
-            lon = p1[1] + alpha * (p2[1] - p1[1])
-            heat_data.append([lat, lon, 1.0])
-            for _ in range(2):
-                heat_data.append([lat + rng.gauss(0, 0.00014), lon + rng.gauss(0, 0.00014), 0.82])
-
-    # 2. Puntos a lo largo de la Acequia Secundaria Ingenio
+    # 1. Puntos a lo largo de la Acequia Secundaria Ingenio
     for i in range(len(acequia_ingenio) - 1):
         p1, p2 = acequia_ingenio[i], acequia_ingenio[i+1]
         for s in range(10):
@@ -1917,7 +1897,7 @@ def generar_mapa():
             "sector": "Edificio Senescyt y Residencias Los Bloques A-I",
             "coords": [0.4068, -78.1708],
             "poblacion": "~450 estudiantes y personal administrativo",
-            "foco": "Canal de Riego Principal (a menos de 35 m de las ventanas este)",
+            "foco": "Acequias de coronación y drenajes pluviales del talud norte",
             "impacto": "Imposibilidad de ventilación natural en clases durante horas de la tarde; estrés en exámenes y consultas frecuentes al Centro Médico por dermatitis.",
             "solucion": "Cerca Viva 3 (320 m) con estrato alto rompevientos y reducción proyectada del 82.8% de penetración.",
             "color": "#c0392b"
@@ -4331,25 +4311,7 @@ def generar_mapa():
     # -------------------------------------------------------------
     # 5. RECURSOS HÍDRICOS (CANALES LÓTICOS Y RESERVORIO LÉNTICO)
     # -------------------------------------------------------------
-    # 5.1. Canal de Riego Principal (Eje Central Norte-Sur)
-    folium.PolyLine(
-        locations=canal_coords,
-        color="#0abde3",
-        weight=4,
-        dash_array='7, 7',
-        popup=folium.Popup("""
-            <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 250px;">
-                <h4 style="color: #0abde3; margin: 0 0 5px 0;">💧 Canal de Riego Principal</h4>
-                <p style="font-size: 12px; color: #34495e; margin: 0;">
-                    Agua corriente que nutre la agricultura del valle. Es el hábitat lótico donde se fija la larva de <i>Simulium</i>.<br>
-                    <b>Tratamiento Verde:</b> No usamos venenos químicos. Se introduce control biológico con ninfas de libélulas y Bti ecológico.
-                </p>
-            </div>
-        """, max_width=270),
-        tooltip="💧 Canal de Riego Principal: Hábitat Hídrico (Intervención Limpia)"
-    ).add_to(fg_canales)
-
-    # 5.2. Acequia Secundaria Ingenio
+    # 5.1. Acequia Secundaria Ingenio
     folium.PolyLine(
         locations=acequia_ingenio,
         color="#0abde3",
