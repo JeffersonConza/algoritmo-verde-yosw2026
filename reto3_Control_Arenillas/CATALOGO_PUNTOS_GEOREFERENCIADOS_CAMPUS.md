@@ -55,7 +55,8 @@ Antiguo complejo histórico de la Hacienda San José, epicentro de la vida cultu
 | **H-01** | **Laguna Artificial / Reservorio de Agua** | Recurso Hídrico / Biocontrol | `0.404121` | `-78.168316` | **Nulo / Protector** (Léntico / Odonatos)| ~2,006 m² espejo de agua |
 | **I-16** | **Pileta Histórica (Claustro Sala Capitular)** | Patrimonial / Fuente Ornamental (Seca) | `0.404377` | `-78.175446` | **Nulo / Inocuo** (Permanece seca) | Hito patrimonial (0% larvas) |
 | **I-17** | **Pileta de Jardines (Sala Capitular)** | Patrimonial / Fuente Ornamental (Seca) | `0.404346` | `-78.175689` | **Nulo / Inocuo** (Permanece seca) | Espacio paisajístico (0% larvas) |
-| **I-18** | **Molino de Agua (Patrimonial)** | Patrimonio Industrial Hidráulico | `0.405305` | `-78.174875` | **Alto** (Acequia histórica) | Monumento hidráulico |
+| **I-21** | **Pileta de Agua (Sector Sala Capitular)** | Patrimonial / Fuente Ornamental (Seca) | `0.404298` | `-78.175198` | **Nulo / Inocuo** (Monitoreada / Seca) | Fuente exterior sin estancamiento |
+| **I-18** | **Molino de Agua (Patrimonial, Fuera de Uso)** | Patrimonio Industrial Hidráulico | `0.405305` | `-78.174875` | **Inocuo / Sin flujo** (No en uso) | Monumento histórico inactivo |
 | **P-01** | **Parqueadero San José 1 (Norte)** | Infraestructura / Parqueo | `0.404388` | `-78.175985` | **Medio-Alto** (Junto a Sala Defensas) | ~15 vehículos |
 | **P-02** | **Parqueadero San José 2 (Central)** | Infraestructura / Parqueo | `0.404449` | `-78.176274` | **Medio-Alto** (Oeste Edificio 20) | ~20 vehículos |
 | **P-06** | **Parqueadero San José 3 (Oeste)** | Infraestructura / Parqueo | `0.404247` | `-78.177079` | **Medio** (Acceso occidental) | ~18 vehículos |
@@ -475,6 +476,23 @@ Las edificaciones del campus fueron regularizadas rigurosamente bajo criterios d
     8. `0.4044267, -78.1754982`
     9. `0.4043353, -78.1754868`
     10. `0.4043488, -78.1753400`
+
+* **Edificio Anexo Sala Capitular (`POLY-EDIF-ANEXO-CAPITULAR`):**
+  * *Tipo:* Patrimonio / Edificación Administrativa | *Zona:* Sector San José - Sala Capitular
+  * *Superficie aproximada:* ~238.3 m² | *Centroide:* `[0.4045586, -78.1752602]`
+  * *Vértices de Huella Arquitectónica (WGS84):*
+    1. `0.4045397, -78.1752611`
+    2. `0.4045260, -78.1753461`
+    3. `0.4046098, -78.1753618`
+    4. `0.4046150, -78.1753101`
+    5. `0.4046336, -78.1753144`
+    6. `0.4046385, -78.1752783`
+    7. `0.4046156, -78.1752740`
+    8. `0.4046267, -78.1752258`
+    9. `0.4046123, -78.1752199`
+    10. `0.4046115, -78.1751904`
+    11. `0.4044712, -78.1751837`
+    12. `0.4044623, -78.1752512`
 
 * **Edificio 20 San José (`RECT-EDIF-20`):**
   * *Tipo:* Infraestructura y Servicios San José | *Zona:* Sector San José
@@ -1462,7 +1480,8 @@ El sistema hidrológico del campus combina **canales de agua corriente rápida (
 | **H-01 / POLY-LAGUNA** | **Laguna Artificial / Reservorio** | Cuerpo Léntico | Agua estancada en reposo (~2,006.2 m²) | `0.404121` | `-78.168316` | **Inocuo / Protector** (0% reproducción de arenillas) | Vivero de libélulas (*Odonata*) |
 | **I-16** | **Pileta Histórica (Claustro)** | Fuente Ornamental | Permanece seca la mayor parte del año | `0.404377` | `-78.175446` | **0% Riesgo Vectorial** (Estructura seca) | Mantenimiento patrimonial |
 | **I-17** | **Pileta de Jardines (San José)** | Fuente Ornamental | Permanece seca habitualmente | `0.404346` | `-78.175689` | **0% Riesgo Vectorial** (Estructura seca) | Embellecimiento paisajístico |
-| **I-18** | **Molino de Agua (Patrimonial)** | Patrimonio Hidráulico | Accionamiento mecánico por acequia | `0.405305` | `-78.174875` | **Monumento Histórico** (Paso hídrico) | Conservación patrimonial |
+| **I-21** | **Pileta de Agua (Sector Sala Capitular)** | Fuente Ornamental | Monitoreada / Sin estancamiento | `0.404298` | `-78.175198` | **0% Riesgo Vectorial** (Estructura ornamental) | Mantenimiento preventivo |
+| **I-18** | **Molino de Agua (Patrimonial, Fuera de Uso)** | Patrimonio Hidráulico | Inactivo / No en uso | `0.405305` | `-78.174875` | **Monumento Histórico** (Sin molienda activa) | Conservación patrimonial |
 | **LINE-CANAL-CAPITULAR** | **Canal Jardines Sala Capitular** | Conducción Lótica | Flujo continuo descubierto (~41.1 m) | `0.404642` a `0.405008` | `-78.175125` a `-78.175180` | **Foco Crítico Local** (Cercano a Parada de Bus Sala Capitular) | Micro-dosificación Bti + Barrera aromática |
 | **LINE-CANAL-SANJOSE** | **Canal de Agua Sector San José** | Conducción Lótica | Acequia activa descubierta (~19.5 m) | `0.404598` a `0.404549` | `-78.176412` a `-78.176576` | **Foco Crítico Local** (Contiguo a Sala de Estar y Edificio 20) | Mantenimiento de caudal + Barrera fitoquímica |
 
@@ -1552,15 +1571,21 @@ El sistema hidrológico del campus combina **canales de agua corriente rápida (
 * **Estado Físico y Régimen:** Permanece seca habitualmente.
 * **Diagnóstico Entomológico:** Sin riesgo para arenillas ni mosquitos. Embellecimiento paisajístico seco.
 
-### 6.8. Molino de Agua Patrimonial (`I-18`)
+### 6.8. Pileta de Agua Exterior (Sector Sala Capitular - `I-21`)
+* **Coordenadas GPS (WGS84):** `0.4042981, -78.1751977`
+* **Tipo:** Fuente Ornamental Exterior
+* **Estado Físico y Régimen:** Estructura ornamental exterior contigua a la Sala Capitular, monitoreada periódicamente para evitar acumulación pluvial estancada.
+* **Diagnóstico Entomológico:** 0% riesgo vectorial si se preserva libre de estancamiento.
+
+### 6.9. Molino de Agua Patrimonial (`I-18`)
 * **Coordenadas GPS (WGS84):** `0.4053046, -78.1748750`
-* **Tipo:** Monumento Industrial Hidráulico
-* **Régimen Hidráulico:** Rueda y canaleta histórica accionada por la red de acequias de la antigua Hacienda San José.
+* **Tipo:** Monumento Industrial Hidráulico (Fuera de Uso)
+* **Estado Operativo:** Fuera de uso / inactivo; sin flujo motriz ni molienda activa. Estructura histórica conservada de la antigua Hacienda San José.
 * **Significancia:** Evidencia histórica del uso ancestral de la fuerza hidráulica gravitacional en el territorio de Yachay Tech.
 
 ---
 
-### 6.9. Canal de Agua Jardines Sala Capitular / Ingenio (`LINE-CANAL-CAPITULAR`)
+### 6.10. Canal de Agua Jardines Sala Capitular / Ingenio (`LINE-CANAL-CAPITULAR`)
 * **Tipo Hidráulico:** Conducción lótica descubierta secundaria.
 * **Longitud Lineal:** ~41.1 metros | Flujo continuo hacia los jardines del Ingenio.
 * **Vértices Oficiales (WGS84):**
@@ -1624,7 +1649,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
 
 ---
 
-## 8. Snippet GeoJSON Oficial Completo (238 Entidades: Hitos, Huellas, Canales, Reservorio y Líneas Divisorias)
+## 8. Snippet GeoJSON Oficial Completo (240 Entidades: Hitos, Huellas, Canales, Reservorio y Líneas Divisorias)
 
 ```json
 {
@@ -7284,9 +7309,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "I-18",
-        "nombre": "Molino de Agua (Patrimonial)",
+        "nombre": "Molino de Agua (Patrimonial, Fuera de Uso)",
         "zona": "Sector Ingenio Azucarero",
-        "categoria": "Patrimonio Industrial Hidráulico"
+        "categoria": "Patrimonio Industrial Hidráulico (No en Uso)",
+        "descripcion": "Molino hidráulico histórico de la Hacienda San José. Actualmente fuera de uso / inactivo; sin flujo motriz ni molienda activa."
       },
       "geometry": {
         "type": "Point",
@@ -7631,6 +7657,77 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
             [
               -78.175332,
               0.40424
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "POLY-EDIF-ANEXO-CAPITULAR",
+        "nombre": "Edificio Anexo Sala Capitular",
+        "tipo": "Patrimonio / Edificación Administrativa",
+        "zona": "Sector San José - Sala Capitular",
+        "area_m2": 238.3,
+        "interior": false,
+        "is_perimeter": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.17526107572444,
+              0.4045396964142846
+            ],
+            [
+              -78.17534611107887,
+              0.4045260050582979
+            ],
+            [
+              -78.175361761138,
+              0.404609840980748
+            ],
+            [
+              -78.1753101170312,
+              0.4046150036913649
+            ],
+            [
+              -78.1753144049758,
+              0.40463355988830263
+            ],
+            [
+              -78.17527830353698,
+              0.40463849313901573
+            ],
+            [
+              -78.17527400021251,
+              0.40461558547259185
+            ],
+            [
+              -78.17522577523509,
+              0.40462666073768727
+            ],
+            [
+              -78.17521994200987,
+              0.4046123362828976
+            ],
+            [
+              -78.17519041498646,
+              0.40461150996838957
+            ],
+            [
+              -78.1751837268196,
+              0.40447122857397105
+            ],
+            [
+              -78.17525119795917,
+              0.4044622953106167
+            ],
+            [
+              -78.17526107572444,
+              0.4045396964142846
             ]
           ]
         ]
@@ -9362,6 +9459,25 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
         "coordinates": [
           -78.1750098,
           0.4044473
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "I-21",
+        "nombre": "Pileta de Agua (Sector Sala Capitular)",
+        "zona": "Sector San José - Sala Capitular",
+        "categoria": "Patrimonial / Fuente Ornamental (Seca)",
+        "tipo": "Fuente Ornamental Exterior",
+        "nivel_riesgo_basal": "Nulo / Inocuo (Permanece seca o sin estancamiento)",
+        "descripcion": "Pileta ornamental en el sector exterior cercano a la Sala Capitular; estructura monitoreada para evitar estancamiento o proliferación entomológica."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.1751977,
+          0.4042981
         ]
       }
     },

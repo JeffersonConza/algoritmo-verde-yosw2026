@@ -2025,8 +2025,10 @@ def generar_mapa():
          "⛲ Fuente Ornamental Claustral (Seca)", "Pileta central de piedra en claustro de Sala Capitular. Permanece seca la mayor parte del año; 0% riesgo de cría larvaria de vectores."),
         ([0.4043464, -78.1756891], "Pileta de Jardines (Sala Capitular)", "tint", "cadetblue",
          "⛲ Fuente Ornamental de Jardín (Seca)", "Pileta ornamental en jardines exteriores San José. Permanece seca habitualmente; nulo riesgo de proliferación entomológica."),
-        ([0.4053046, -78.1748750], "Molino de Agua (Patrimonial)", "cog", "purple",
-         "⚙️ Patrimonio Industrial Hidráulico", "Molino hidráulico histórico impulsado por la red de acequias de la Hacienda San José."),
+        ([0.4042981, -78.1751977], "Pileta de Agua (Sector Sala Capitular)", "tint", "blue",
+         "⛲ Fuente Ornamental Exterior", "Pileta ornamental en el sector exterior contiguo a la Sala Capitular; estructura monitoreada sin estancamiento."),
+        ([0.4053046, -78.1748750], "Molino de Agua (Patrimonial, Fuera de Uso)", "cog", "purple",
+         "⚙️ Patrimonio Industrial Hidráulico (No en Uso)", "Molino hidráulico histórico de la antigua Hacienda San José. Actualmente no está en uso; sin flujo motriz ni molienda activa."),
         ([0.4043885, -78.1759853], "Parqueadero San José 1 (Norte)", "car", "gray",
          "🚗 Estacionamiento Vehicular", "Área de parqueo norte junto a la Sala de Defensas y Sala Capitular."),
         ([0.4044492, -78.1762745], "Parqueadero San José 2 (Central)", "car", "gray",
@@ -3197,6 +3199,31 @@ def generar_mapa():
             "color": "#6c5ce7", "fill": "#a29bfe",
             "interior": False, "is_perimeter": False,
             "desc": "Edificio claustral y galerías perimetrales en U en el sector patrimonial Sala Capitular."
+        },
+        {
+            "id": "POLY-EDIF-ANEXO-CAPITULAR",
+            "nombre": "Edificio Anexo Sala Capitular",
+            "tipo": "Patrimonio / Edificación Administrativa",
+            "zona": "Sector San José - Sala Capitular",
+            "coords": [
+                [0.4045396964142846, -78.17526107572444],
+                [0.4045260050582979, -78.17534611107887],
+                [0.404609840980748, -78.175361761138],
+                [0.4046150036913649, -78.1753101170312],
+                [0.40463355988830263, -78.1753144049758],
+                [0.40463849313901573, -78.17527830353698],
+                [0.40461558547259185, -78.17527400021251],
+                [0.40462666073768727, -78.17522577523509],
+                [0.4046123362828976, -78.17521994200987],
+                [0.40461150996838957, -78.17519041498646],
+                [0.40447122857397105, -78.1751837268196],
+                [0.4044622953106167, -78.17525119795917]
+            ],
+            "centroid": [0.4045586, -78.1752602],
+            "area": 238.3,
+            "color": "#6c5ce7", "fill": "#a29bfe",
+            "interior": False, "is_perimeter": False,
+            "desc": "Edificación anexa en el sector de la Sala Capitular, contigua al canal y área de parada."
         },
         {
             "id": "RECT-EDIF-20",
@@ -4508,23 +4535,43 @@ def generar_mapa():
         tooltip="⛲ Pileta de Jardines: Fuente Ornamental Exterior (Seca)"
     ).add_to(fg_canales)
 
-    # Molino de Agua (Patrimonial)
+    # Pileta de Agua (Sector Sala Capitular)
+    folium.Marker(
+        location=[0.4042981, -78.1751977],
+        icon=folium.Icon(icon='tint', prefix='fa', color='blue'),
+        popup=folium.Popup("""
+            <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 260px; line-height: 1.4;">
+                <div style="color: #0984e3; font-weight: bold; font-size: 13.5px; margin-bottom: 2px;">⛲ Pileta de Agua (Sector Sala Capitular)</div>
+                <span style="background: #e0f2fe; color: #0369a1; padding: 2px 6px; border-radius: 4px; font-size: 10px; font-weight: 600;">Fuente Ornamental Exterior</span>
+                <p style="margin: 6px 0 4px 0; font-size: 11.5px; color: #34495e;">
+                    <b>Estado Físico:</b> Fuente ornamental exterior contigua a la Sala Capitular.<br>
+                    <b>Riesgo Entomológico:</b> Nulo para vectores si se mantiene limpia y sin acumulación de agua estancada.
+                </p>
+                <div style="font-size: 10px; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 3px;">
+                    📍 GPS: 0.404298, -78.175198 | Sector Sala Capitular
+                </div>
+            </div>
+        """, max_width=280),
+        tooltip="⛲ Pileta de Agua: Fuente Ornamental (Sector Sala Capitular)"
+    ).add_to(fg_canales)
+
+    # Molino de Agua (Patrimonial, Fuera de Uso)
     folium.Marker(
         location=[0.4053046, -78.1748750],
         icon=folium.Icon(icon='cog', prefix='fa', color='purple'),
         popup=folium.Popup("""
             <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 260px; line-height: 1.4;">
-                <div style="color: #8e44ad; font-weight: bold; font-size: 13.5px; margin-bottom: 2px;">⚙️ Molino de Agua (Patrimonial)</div>
-                <span style="background: #f3e5f5; color: #7b1fa2; padding: 2px 6px; border-radius: 4px; font-size: 10px; font-weight: 600;">Patrimonio Industrial Hidráulico</span>
+                <div style="color: #8e44ad; font-weight: bold; font-size: 13.5px; margin-bottom: 2px;">⚙️ Molino de Agua (Patrimonial, Fuera de Uso)</div>
+                <span style="background: #f3e5f5; color: #7b1fa2; padding: 2px 6px; border-radius: 4px; font-size: 10px; font-weight: 600;">Patrimonio Industrial Hidráulico (No en Uso)</span>
                 <p style="margin: 6px 0 4px 0; font-size: 11.5px; color: #34495e;">
-                    <b>Régimen Hidráulico:</b> Rueda y canaleta histórica impulsada por la fuerza de las acequias de la Hacienda San José para mover el molino del Ingenio.
+                    <b>Régimen Hidráulico:</b> Rueda y canaleta histórica de la antigua Hacienda San José. Actualmente no está en uso; sin flujo motriz ni molienda activa.
                 </p>
                 <div style="font-size: 10px; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 3px;">
-                    📍 GPS: 0.405305, -78.174875 | Sector Aulas I
+                    📍 GPS: 0.405305, -78.174875 | Sector Aulas I / Biblioteca
                 </div>
             </div>
         """, max_width=280),
-        tooltip="⚙️ Molino de Agua: Patrimonio Hidráulico del Ingenio"
+        tooltip="⚙️ Molino de Agua: Patrimonio Hidráulico del Ingenio (No en Uso)"
     ).add_to(fg_canales)
 
     # -------------------------------------------------------------
