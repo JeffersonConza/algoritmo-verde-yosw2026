@@ -14,12 +14,18 @@ from folium import plugins
 def generar_mapa():
     base_dir = os.path.dirname(os.path.abspath(__file__))
     
-    # Cargar código QR en base64 para inclusión autónoma
+    # Cargar códigos QR con logo en base64 para inclusión autónoma (Web App y Repositorio GitHub)
     qr_path = os.path.join(base_dir, "qr_algoritmo_verde.png")
     qr_b64 = ""
     if os.path.exists(qr_path):
         with open(qr_path, "rb") as f:
             qr_b64 = base64.b64encode(f.read()).decode("utf-8")
+
+    qr_repo_path = os.path.join(base_dir, "qr_github_repo.png")
+    qr_repo_b64 = qr_b64
+    if os.path.exists(qr_repo_path):
+        with open(qr_repo_path, "rb") as f:
+            qr_repo_b64 = base64.b64encode(f.read()).decode("utf-8")
 
     # Coordenadas centrales calibradas de Yachay Tech
     center_lat = 0.4048
@@ -4086,27 +4092,123 @@ def generar_mapa():
             background: var(--bg-body);
         }}
 
-        /* Barra de navegación superior (Storytelling Bar) */
+        /* Barra de navegación superior (Storytelling Bar · Compacta en 1 sola fila) */
         #story-nav-bar {{
             position: fixed;
-            top: 14px;
-            left: 50%;
-            transform: translateX(-50%);
+            top: 12px;
+            left: 60px;
             z-index: 1000;
             background: var(--bg-navbar);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            padding: 6px 14px;
-            border-radius: 30px;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            padding: 5px 12px;
+            border-radius: 28px;
             box-shadow: var(--shadow-card);
             border: 1px solid var(--border-accent);
             display: flex;
             align-items: center;
-            gap: 6px;
-            flex-wrap: wrap;
-            max-width: 96vw;
+            gap: 5px;
+            flex-wrap: nowrap;
+            max-width: calc(100vw - 410px);
+            overflow-x: auto;
+            scrollbar-width: none;
             color: var(--text-color);
             transition: all 0.3s ease;
+        }}
+        #story-nav-bar::-webkit-scrollbar {{
+            display: none;
+        }}
+
+        /* Dock Utilitario Independiente (Superior Derecha, junto a Capas: Toggles de Idioma/Tema + QR + GitHub) */
+        #utility-dock {{
+            position: fixed;
+            top: 12px;
+            right: 62px;
+            z-index: 1001;
+            background: var(--bg-navbar);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            padding: 5px 10px;
+            border-radius: 28px;
+            box-shadow: var(--shadow-card);
+            border: 1px solid var(--border-accent);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-color);
+            transition: all 0.3s ease;
+        }}
+
+        /* Interruptores Deslizantes (Toggle Switches para Idioma ES/EN y Modo Light/Dark) */
+        .pill-switch {{
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 62px;
+            height: 28px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 2px 5px;
+            cursor: pointer;
+            user-select: none;
+            box-sizing: border-box;
+            transition: all 0.25s ease;
+            box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+        }}
+        .pill-switch:hover {{
+            border-color: var(--primary-color);
+        }}
+        .pill-switch .switch-opt {{
+            font-size: 10.5px;
+            font-weight: 800;
+            z-index: 2;
+            line-height: 1;
+            width: 24px;
+            text-align: center;
+            transition: color 0.25s ease;
+            color: var(--text-muted);
+        }}
+        .pill-switch .switch-thumb {{
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 28px;
+            height: 22px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: 16px;
+            transition: transform 0.26s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.22);
+            z-index: 1;
+        }}
+        .pill-switch.active-right .switch-thumb {{
+            transform: translateX(28px);
+        }}
+        .pill-switch:not(.active-right) .switch-opt-left,
+        .pill-switch.active-right .switch-opt-right {{
+            color: #ffffff !important;
+        }}
+
+        .utility-icon-btn {{
+            background: var(--btn-bg);
+            border: 1px solid var(--border-color);
+            color: var(--btn-text);
+            padding: 5px 10px;
+            border-radius: 18px;
+            font-size: 11.5px;
+            font-weight: 700;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }}
+        .utility-icon-btn:hover {{
+            background: var(--btn-hover);
+            border-color: var(--primary-color);
+            transform: translateY(-1px);
         }}
 
         .nav-btn {{
@@ -4155,19 +4257,19 @@ def generar_mapa():
             filter: brightness(0.9);
         }}
 
-        /* Leyenda visual intuitiva (Inferior Izquierda, sobre minimapa sin colisión) */
+        /* Leyenda visual intuitiva (Lateral Izquierda Media, sin colisión con Minimapa inferior) */
         #panel-leyenda {{
             position: fixed;
-            bottom: 195px;
-            left: 15px;
+            top: 148px;
+            left: 12px;
             z-index: 1001;
             background: var(--bg-panel);
             backdrop-filter: blur(8px);
             border-radius: 10px;
             box-shadow: var(--shadow-card);
             border: 1px solid var(--primary-color);
-            width: 235px;
-            font-size: 11px;
+            width: 230px;
+            font-size: 10.8px;
             overflow: hidden;
             transition: all 0.3s ease;
             color: var(--text-color);
@@ -4362,21 +4464,18 @@ def generar_mapa():
             to {{ transform: translateY(0); opacity: 1; }}
         }}
 
-        @media (max-width: 860px) {{
+        @media (max-width: 1150px) {{
             #story-nav-bar {{
                 top: 8px;
+                left: 52px;
+                max-width: calc(100vw - 65px);
                 padding: 5px 8px;
                 gap: 5px;
-                overflow-x: auto;
-                white-space: nowrap;
-                flex-wrap: nowrap;
-                justify-content: flex-start;
-                max-width: 95vw;
-                -webkit-overflow-scrolling: touch;
-                scrollbar-width: none;
             }}
-            #story-nav-bar::-webkit-scrollbar {{
-                display: none;
+            #utility-dock {{
+                top: 56px;
+                right: 12px;
+                padding: 4px 8px;
             }}
             .nav-btn {{
                 padding: 5px 10px;
@@ -4389,16 +4488,16 @@ def generar_mapa():
                 right: 15px;
             }}
             #panel-leyenda {{
-                width: 200px;
-                bottom: 185px;
+                width: 205px;
+                top: 150px;
             }}
         }}
     </style>
 
-    <!-- BARRA SUPERIOR DE NAVEGACIÓN Y STORYTELLING -->
+    <!-- 1. BARRA SUPERIOR DE NAVEGACIÓN Y STORYTELLING (1 SOLA FILA LIMPIA) -->
     <div id="story-nav-bar">
         <!-- Logo / Marca: Abre modal del equipo -->
-        <div id="nav-brand" style="display: flex; align-items: center; gap: 7px; padding: 2px 10px 2px 4px; border-right: 1px solid var(--border-color); cursor: pointer; border-radius: 8px; transition: background 0.2s;" onclick="toggleModalEquipo(true)" title="Clic para ver Integrantes del Equipo y Detalles" onmouseover="this.style.background='rgba(16,172,132,0.12)'" onmouseout="this.style.background='transparent'">
+        <div id="nav-brand" style="display: flex; align-items: center; gap: 7px; padding: 2px 10px 2px 4px; border-right: 1px solid var(--border-color); cursor: pointer; border-radius: 8px; flex-shrink: 0; transition: background 0.2s;" onclick="toggleModalEquipo(true)" title="Clic para ver Integrantes del Equipo y Detalles" onmouseover="this.style.background='rgba(16,172,132,0.12)'" onmouseout="this.style.background='transparent'">
             <svg width="24" height="24" viewBox="0 0 100 100">
                 <rect width="100" height="100" rx="26" fill="url(#brandGrad)"/>
                 <defs>
@@ -4415,46 +4514,61 @@ def generar_mapa():
                 <circle cx="50" cy="22" r="5" fill="#f39c12"/>
             </svg>
             <div style="display: flex; flex-direction: column; line-height: 1.15;">
-                <span style="font-weight: 800; font-size: 13px; color: var(--text-color); letter-spacing: -0.3px;">Algoritmo Verde (YT)</span>
-                <span style="font-size: 9.5px; font-weight: 700; color: #10ac84;">👥 Conoce al Equipo &raquo;</span>
+                <span style="font-weight: 800; font-size: 12.5px; color: var(--text-color); letter-spacing: -0.3px;">Algoritmo Verde (YT)</span>
+                <span style="font-size: 9.2px; font-weight: 700; color: #10ac84;">👥 Equipo &raquo;</span>
             </div>
         </div>
 
-        <button id="btn-info" class="nav-btn nav-btn-info" onclick="toggleModalBienvenida(true)" title="Conocer el propósito humano del proyecto">
+        <button id="btn-info" class="nav-btn nav-btn-info" onclick="toggleModalBienvenida(true)" title="Conocer el propósito humano del proyecto" style="flex-shrink: 0;">
             ℹ️ <span data-i18n="nav_vision">Visión y Propósito</span>
         </button>
-        <button id="btn-solucion" class="nav-btn nav-btn-highlight" onclick="activarModoSolucion()" title="Ver la solución ecológica activa">
+        <button id="btn-solucion" class="nav-btn nav-btn-highlight" onclick="activarModoSolucion()" title="Ver la solución ecológica activa" style="flex-shrink: 0;">
             🌿 <span data-i18n="nav_solution">Solución Verde (Activa)</span>
         </button>
-        <button id="btn-diagnostico" class="nav-btn" onclick="activarModoDiagnostico()" title="Ver mapa de calor continuo y focos epidemiológicos de picaduras">
+        <button id="btn-diagnostico" class="nav-btn" onclick="activarModoDiagnostico()" title="Ver mapa de calor continuo y focos epidemiológicos de picaduras" style="flex-shrink: 0;">
             🔥 <span data-i18n="nav_diagnosis">Ver Mapa de Calor</span>
         </button>
-        <span style="color: var(--border-color); margin: 0 2px;">|</span>
-        <button class="nav-btn" onclick="irAZona('senescyt')" title="Enfocar Sector Senescyt (Aulas, Bloques, Centro Médico)">
+        <span style="color: var(--border-color); margin: 0 1px;">|</span>
+        <button class="nav-btn" onclick="irAZona('senescyt')" title="Enfocar Sector Senescyt (Aulas, Bloques, Centro Médico)" style="flex-shrink: 0;">
             🏛️ <span data-i18n="nav_senescyt">1. Senescyt</span>
         </button>
-        <button class="nav-btn" onclick="irAZona('ingenio')" title="Enfocar Sector Ingenio Azucarero (Aulas B/I, Biblioteca, Mikuna)">
-            🏭 <span data-i18n="nav_ingenio">2. Ingenio Azucarero</span>
+        <button class="nav-btn" onclick="irAZona('ingenio')" title="Enfocar Sector Ingenio Azucarero (Aulas B/I, Biblioteca, Mikuna)" style="flex-shrink: 0;">
+            🏭 <span data-i18n="nav_ingenio">2. Ingenio</span>
         </button>
-        <button class="nav-btn" onclick="irAZona('residencias')" title="Enfocar Sector Las Pats y Multis (T's, Docentes, Deportes)">
-            🏡 <span data-i18n="nav_residencias">3. Las Pats y Multis</span>
+        <button class="nav-btn" onclick="irAZona('residencias')" title="Enfocar Sector Las Pats y Multis (T's, Docentes, Deportes)" style="flex-shrink: 0;">
+            🏡 <span data-i18n="nav_residencias">3. Pats y Multis</span>
         </button>
-        <button class="nav-btn" onclick="irAZona('general')" title="Restablecer vista completa del campus">
-            🔭 <span data-i18n="nav_campus">Vista Campus</span>
+        <button class="nav-btn" onclick="irAZona('general')" title="Restablecer vista completa del campus" style="flex-shrink: 0;">
+            🔭 <span data-i18n="nav_campus">Campus</span>
         </button>
-        <span style="color: var(--border-color); margin: 0 2px;">|</span>
-        <!-- Botón Código QR para celular / Pitch -->
-        <button id="btn-qr" class="nav-btn" onclick="toggleModalQR(true)" title="Escanear con celular o descargar para presentación">
-            📱 <span data-i18n="nav_qr">Código QR</span>
+    </div>
+
+    <!-- 2. DOCK UTILITARIO INDEPENDIENTE (SUPERIOR DERECHA: TOGGLES ES/EN, LIGHT/DARK, QR Y GITHUB) -->
+    <div id="utility-dock" aria-label="Configuración de idioma, tema y acceso móvil">
+        <!-- Toggle Switch Bilingüe (ES ⇄ EN) -->
+        <div id="switch-lang" class="pill-switch" role="switch" aria-checked="false" tabindex="0" onclick="toggleIdioma()" onkeydown="if(event.key==='Enter'||event.key===' ')toggleIdioma()" title="Cambiar Idioma Español / English (Switch Language)">
+            <span class="switch-thumb"></span>
+            <span class="switch-opt switch-opt-left">ES</span>
+            <span class="switch-opt switch-opt-right">EN</span>
+        </div>
+
+        <!-- Toggle Switch de Modo (☀️ Claro ⇄ 🌙 Oscuro) -->
+        <div id="switch-theme" class="pill-switch" role="switch" aria-checked="false" tabindex="0" onclick="toggleTema()" onkeydown="if(event.key==='Enter'||event.key===' ')toggleTema()" title="Alternar Modo Claro / Oscuro (Light / Dark Mode)">
+            <span class="switch-thumb"></span>
+            <span class="switch-opt switch-opt-left">☀️</span>
+            <span class="switch-opt switch-opt-right">🌙</span>
+        </div>
+
+        <!-- Botón Código QR con Logo -->
+        <button id="btn-qr" class="utility-icon-btn" onclick="toggleModalQR(true)" title="Escanear QR con nuestro logo o descargar para diapositivas">
+            📱 <span data-i18n="nav_qr">QR</span>
         </button>
-        <!-- Alternador Tema Claro / Oscuro -->
-        <button id="btn-theme" class="nav-btn" onclick="toggleTema()" title="Cambiar Tema Claro / Oscuro">
-            <span id="theme-icon">🌙</span> <span id="theme-label" data-i18n="nav_theme">Oscuro</span>
-        </button>
-        <!-- Selector Bilingüe ES / EN -->
-        <button id="btn-lang" class="nav-btn" onclick="toggleIdioma()" title="Switch Language / Cambiar Idioma" style="font-weight: 700; color: var(--primary-color);">
-            🌐 <span id="lang-label">EN</span>
-        </button>
+
+        <!-- Enlace Directo al Repositorio Público en GitHub -->
+        <a href="https://github.com/JeffersonConza/algoritmo-verde-yosw2026" target="_blank" rel="noopener noreferrer" class="utility-icon-btn" title="Abrir Repositorio Público en GitHub (Código, Modelos SLSQP y Catálogo GIS)">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+            <span>GitHub</span>
+        </a>
     </div>
 
     <!-- LEYENDA VISUAL ACCESIBLE (Encima del minimapa) -->
@@ -4728,31 +4842,49 @@ def generar_mapa():
         </div>
     </div>
 
-    <!-- MODAL DE CÓDIGO QR PARA CELULAR Y PITCH -->
+    <!-- MODAL DE CÓDIGO QR PARA CELULAR Y REPOSITORIO GITHUB (CON LOGO EMBEBIDO) -->
     <div id="modal-qr" class="modal-overlay" style="display: none;" onclick="if(event.target===this) toggleModalQR(false)">
-        <div class="modal-card" style="max-width: 440px; text-align: center;">
+        <div class="modal-card" style="max-width: 560px; text-align: center;">
             <div class="modal-header">
                 <button onclick="toggleModalQR(false)" class="btn-modal-close-round" title="Cerrar ventana (Esc)" aria-label="Cerrar">✕</button>
-                <h2 style="margin: 0; font-size: 18px; font-weight: 700;" data-i18n="qr_title">📱 Escanea con tu Celular</h2>
+                <h2 style="margin: 0; font-size: 18px; font-weight: 700;" data-i18n="qr_title">📱 Escanea con tu Celular (QR con Nuestro Logo)</h2>
                 <div style="font-size: 12px; opacity: 0.95; margin-top: 4px;" data-i18n="qr_sub">
-                    Accede al Prototipo Interactivo en tiempo real
+                    Accede al Prototipo Interactivo en vivo y al Repositorio Público en GitHub
                 </div>
             </div>
-            <div class="modal-body" style="padding: 24px;">
-                <div style="background: white; padding: 14px; border-radius: 12px; display: inline-block; box-shadow: 0 4px 15px rgba(0,0,0,0.12); border: 2px solid var(--primary-color);">
-                    <img src="data:image/png;base64,{qr_b64}" alt="QR Algoritmo Verde" style="width: 210px; height: 210px; display: block; margin: 0 auto;">
+            <div class="modal-body" style="padding: 20px 22px;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(215px, 1fr)); gap: 16px; align-items: stretch;">
+                    <!-- QR 1: Prototipo Web en Vivo -->
+                    <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 14px; padding: 14px;">
+                        <div style="font-weight: 800; font-size: 12.5px; color: var(--primary-color); margin-bottom: 8px;" data-i18n="qr_card_live">🌐 Prototipo Web en Vivo</div>
+                        <div style="background: white; padding: 10px; border-radius: 12px; display: inline-block; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border: 2px solid #10ac84;">
+                            <img src="data:image/png;base64,{qr_b64}" alt="QR Prototipo Algoritmo Verde YT" style="width: 175px; height: 175px; display: block; margin: 0 auto;">
+                        </div>
+                        <div style="margin: 8px 0; font-family: monospace; font-size: 10px; background: rgba(16,172,132,0.08); padding: 6px; border-radius: 6px; word-break: break-all;">
+                            <a href="https://jeffersonconza.github.io/algoritmo-verde-yosw2026/" target="_blank" rel="noopener noreferrer" style="color: var(--primary-color); text-decoration: none; font-weight: 700;">jeffersonconza.github.io/algoritmo-verde-yosw2026</a>
+                        </div>
+                        <a href="data:image/png;base64,{qr_b64}" download="QR_Logo_Prototipo_Algoritmo_Verde_YT.png" class="modal-btn-close" style="text-decoration: none; display: inline-flex; align-items: center; gap: 5px; font-size: 11px; padding: 7px 14px; margin-top: 4px;">
+                            ⬇️ <span data-i18n="qr_download">Descargar QR Web</span>
+                        </a>
+                    </div>
+
+                    <!-- QR 2: Repositorio Público GitHub -->
+                    <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 14px; padding: 14px;">
+                        <div style="font-weight: 800; font-size: 12.5px; color: #1e3799; margin-bottom: 8px;" data-i18n="qr_card_repo">🐙 Repositorio Público GitHub</div>
+                        <div style="background: white; padding: 10px; border-radius: 12px; display: inline-block; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border: 2px solid #1e3799;">
+                            <img src="data:image/png;base64,{qr_repo_b64}" alt="QR GitHub Algoritmo Verde YT" style="width: 175px; height: 175px; display: block; margin: 0 auto;">
+                        </div>
+                        <div style="margin: 8px 0; font-family: monospace; font-size: 10px; background: rgba(30,55,153,0.08); padding: 6px; border-radius: 6px; word-break: break-all;">
+                            <a href="https://github.com/JeffersonConza/algoritmo-verde-yosw2026" target="_blank" rel="noopener noreferrer" style="color: #1e3799; text-decoration: none; font-weight: 700;">github.com/JeffersonConza/algoritmo-verde-yosw2026</a>
+                        </div>
+                        <a href="data:image/png;base64,{qr_repo_b64}" download="QR_Logo_GitHub_Algoritmo_Verde_YT.png" class="modal-btn-close" style="background: #1e3799; text-decoration: none; display: inline-flex; align-items: center; gap: 5px; font-size: 11px; padding: 7px 14px; margin-top: 4px;">
+                            ⬇️ <span data-i18n="qr_download_repo">Descargar QR GitHub</span>
+                        </a>
+                    </div>
                 </div>
-                <p style="margin: 14px 0 6px 0; font-size: 12.5px; color: var(--text-color);" data-i18n="qr_desc">
-                    Apunta con la cámara de tu smartphone para explorar el mapa en vivo durante la presentación.
+                <p style="margin: 12px 0 0 0; font-size: 11.5px; color: var(--text-muted);" data-i18n="qr_desc">
+                    Ambos códigos QR incluyen el logo oficial de Algoritmo Verde YT con corrección de errores nivel H (30%).
                 </p>
-                <div style="margin: 10px 0; font-family: monospace; font-size: 11px; background: var(--bg-card); padding: 8px; border-radius: 6px; word-break: break-all; color: var(--primary-color);">
-                    https://jeffersonconza.github.io/algoritmo-verde-yosw2026/
-                </div>
-                <div style="margin-top: 16px; display: flex; gap: 10px; justify-content: center;">
-                    <a href="data:image/png;base64,{qr_b64}" download="QR_Algoritmo_Verde_YT.png" class="modal-btn-close" style="text-decoration: none; display: inline-flex; align-items: center; gap: 6px; font-size: 12px; padding: 8px 18px;">
-                        ⬇️ <span data-i18n="qr_download">Descargar PNG para Diapositivas</span>
-                    </a>
-                </div>
             </div>
         </div>
     </div>
@@ -4878,28 +5010,33 @@ def generar_mapa():
             }}
         }}
 
-        // 7. Alternador de Tema Claro / Oscuro
+        // 7. Alternador Deslizante (Toggle Switch) de Tema Claro / Oscuro
         function toggleTema() {{
             var body = document.body;
             var isDark = body.getAttribute('data-theme') === 'dark';
             var newTheme = isDark ? 'light' : 'dark';
             body.setAttribute('data-theme', newTheme);
-            
-            var icon = document.getElementById('theme-icon');
-            var label = document.getElementById('theme-label');
+
+            var swTheme = document.getElementById('switch-theme');
+            if (swTheme) {{
+                if (newTheme === 'dark') {{
+                    swTheme.classList.add('active-right');
+                    swTheme.setAttribute('aria-checked', 'true');
+                }} else {{
+                    swTheme.classList.remove('active-right');
+                    swTheme.setAttribute('aria-checked', 'false');
+                }}
+            }}
+
             var foliumMap = getMap();
             var darkL = getDarkLayer();
             var streetL = getStreetsLayer();
 
             if (newTheme === 'dark') {{
-                if (icon) icon.textContent = '☀️';
-                if (label) label.textContent = (currentLang === 'es') ? 'Claro' : 'Light';
                 if (foliumMap && darkL && !foliumMap.hasLayer(darkL)) {{
                     foliumMap.addLayer(darkL);
                 }}
             }} else {{
-                if (icon) icon.textContent = '🌙';
-                if (label) label.textContent = (currentLang === 'es') ? 'Oscuro' : 'Dark';
                 if (foliumMap && darkL && foliumMap.hasLayer(darkL)) {{
                     foliumMap.removeLayer(darkL);
                     if (streetL && !foliumMap.hasLayer(streetL)) foliumMap.addLayer(streetL);
@@ -4963,10 +5100,13 @@ def generar_mapa():
                 modal_card3_desc: "Los canales de riego que cruzan Yachay alimentan los cultivos de Urcuquí. Nuestro control biológico usa <b>ninfas de libélulas nativas</b> y micro-larvicidas biológicos (Bti) que preservan la calidad del agua para las comunidades vecinas.",
                 modal_btn_explore: "✨ ¡Explorar el Campus Protegido!",
 
-                qr_title: "📱 Escanea con tu Celular",
-                qr_sub: "Accede al Prototipo Interactivo en tiempo real",
-                qr_desc: "Apunta con la cámara de tu smartphone para explorar el mapa en vivo durante la presentación.",
-                qr_download: "Descargar PNG para Diapositivas"
+                qr_title: "📱 Escanea con tu Celular (QR con Nuestro Logo)",
+                qr_sub: "Accede al Prototipo Interactivo en vivo y al Repositorio Público en GitHub",
+                qr_card_live: "🌐 Prototipo Web en Vivo",
+                qr_card_repo: "🐙 Repositorio Público GitHub",
+                qr_desc: "Ambos códigos QR incluyen el logo oficial de Algoritmo Verde YT con corrección de errores nivel H (30%).",
+                qr_download: "Descargar QR Web",
+                qr_download_repo: "Descargar QR GitHub"
             }},
             en: {{
                 nav_vision: "Vision & Purpose",
@@ -4975,8 +5115,8 @@ def generar_mapa():
                 nav_senescyt: "1. Senescyt",
                 nav_ingenio: "2. Sugar Mill",
                 nav_residencias: "3. Pats & Multis",
-                nav_campus: "Campus Overview",
-                nav_qr: "QR Code",
+                nav_campus: "Campus",
+                nav_qr: "QR",
                 nav_theme: document.body.getAttribute('data-theme') === 'dark' ? "Light" : "Dark",
                 
                 leyenda_title: "📋 Human-Centered Legend",
@@ -5021,17 +5161,28 @@ def generar_mapa():
                 modal_card3_desc: "The irrigation canals crossing Yachay nourish the agriculture of Urcuqui. Our biocontrol employs <b>native dragonfly nymphs</b> and microbial bio-larvicides (Bti) that preserve water quality for neighboring communities.",
                 modal_btn_explore: "✨ Explore the Protected Campus!",
 
-                qr_title: "📱 Scan with your Phone",
-                qr_sub: "Access the Interactive Prototype in real time",
-                qr_desc: "Point your smartphone camera to explore the live map during the pitch presentation.",
-                qr_download: "Download PNG for Slides"
+                qr_title: "📱 Scan with your Phone (Branded QR)",
+                qr_sub: "Access the Live Interactive Prototype and Public GitHub Repository",
+                qr_card_live: "🌐 Live Web Prototype",
+                qr_card_repo: "🐙 Public GitHub Repo",
+                qr_desc: "Both QR codes feature the official Algoritmo Verde YT logo with Level H (30%) error correction.",
+                qr_download: "Download Web QR",
+                qr_download_repo: "Download GitHub QR"
             }}
         }};
 
         function toggleIdioma() {{
             currentLang = (currentLang === 'es') ? 'en' : 'es';
-            var langLabel = document.getElementById('lang-label');
-            if (langLabel) langLabel.textContent = (currentLang === 'es') ? 'EN' : 'ES';
+            var swLang = document.getElementById('switch-lang');
+            if (swLang) {{
+                if (currentLang === 'en') {{
+                    swLang.classList.add('active-right');
+                    swLang.setAttribute('aria-checked', 'true');
+                }} else {{
+                    swLang.classList.remove('active-right');
+                    swLang.setAttribute('aria-checked', 'false');
+                }}
+            }}
             aplicarIdioma(currentLang);
         }}
 
