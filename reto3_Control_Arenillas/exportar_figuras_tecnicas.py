@@ -18,11 +18,11 @@ def crear_figura_diagnostico():
     y = np.linspace(-420, 360, 350)
     X, Y = np.meshgrid(x, y)
 
-    # Canal de Riego Principal (Agua corriente - Foco Simuliidae)
+    # Red Hidrológica Activa (Acequias y canales lóticos - Focos Simuliidae)
     canal_x = np.linspace(-400, 400, 250)
     canal_y = 0.5 * canal_x - 30 + 15 * np.sin(canal_x / 50)
 
-    # Distancia euclídea vectorial mínima al canal
+    # Distancia euclídea vectorial mínima a la red hídrica
     from scipy.spatial import cKDTree
     pts_canal = np.column_stack([canal_x, canal_y])
     grid_pts = np.column_stack([X.ravel(), Y.ravel()])
@@ -31,7 +31,7 @@ def crear_figura_diagnostico():
     dist_to_canal = dist_to_canal.reshape(X.shape)
 
     # Modelado de intensidad térmica (Kernel Density continuo)
-    # Foco lótico (canal)
+    # Foco lótico (acequias y canales)
     I_canal = np.exp(-(dist_to_canal**2) / (2 * 45**2))
     # Epicentros de atracción humana
     I_sur = 0.96 * np.exp(-((X + 260)**2 + (Y + 260)**2) / (2 * 80**2))
@@ -51,8 +51,8 @@ def crear_figura_diagnostico():
     iso_curves = ax.contour(X, Y, Z, levels=[40, 70], colors=['#e67e22', '#c0392b'], linewidths=1.2, linestyles='--')
     ax.clabel(iso_curves, inline=True, fontsize=8, fmt='%1.0f%%')
 
-    # Trazo del Canal de Riego Principal
-    ax.plot(canal_x, canal_y, color='#0984e3', lw=3, linestyle='-', label='Canal de Riego Principal (Foco Larvario Lótico)')
+    # Trazo de la Red Hidrológica Activa
+    ax.plot(canal_x, canal_y, color='#0984e3', lw=3, linestyle='-', label='Red Hidrológica Activa (Canales y Acequias Lóticas)')
 
     # Edificaciones sensibles calibradas
     ax.scatter([-240, -280], [-250, -290], color='#d35400', s=100, marker='s', edgecolors='black', lw=1.2,
@@ -94,10 +94,10 @@ def crear_figura_diseno_tecnico():
     z3_y = [140, 200, 160, 80, 100, 140]
     ax.fill(z3_x, z3_y, color='#e74c3c', alpha=0.15)
 
-    # Canal
+    # Red Hidrológica Activa
     canal_x = np.linspace(-350, 350, 100)
     canal_y = 0.5 * canal_x - 30 + 15 * np.sin(canal_x / 50)
-    ax.plot(canal_x, canal_y, color='#0984e3', lw=2, linestyle=':', alpha=0.7, label='Canal Hídrico')
+    ax.plot(canal_x, canal_y, color='#0984e3', lw=2, linestyle=':', alpha=0.7, label='Red Hidrológica Activa')
 
     # Cercas Vivas Multiestrato
     c1_x = [-280, -200, -160]
