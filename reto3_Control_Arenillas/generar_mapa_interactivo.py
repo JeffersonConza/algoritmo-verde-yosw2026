@@ -2106,7 +2106,11 @@ def generar_mapa():
         ([0.4060672, -78.1702615], "Parqueadero Senescyt (Sur 1)", "car", "gray",
          "🚗 Estacionamiento Vehicular", "Punto de estacionamiento vehicular en el área de parqueadero sur del Edificio Senescyt."),
         ([0.4062500, -78.1704686], "Parqueadero Senescyt (Sur 2)", "car", "gray",
-         "🚗 Estacionamiento Vehicular", "Punto de estacionamiento vehicular en el área de parqueadero sur del Edificio Senescyt.")
+         "🚗 Estacionamiento Vehicular", "Punto de estacionamiento vehicular en el área de parqueadero sur del Edificio Senescyt."),
+        ([0.4061990, -78.1698907], "Parqueadero Senescyt (Este 1)", "car", "gray",
+         "🚗 Estacionamiento Vehicular", "Punto de estacionamiento vehicular en el área de parqueadero este del Edificio Senescyt."),
+        ([0.4065601, -78.1695897], "Parqueadero Senescyt (Este 2)", "car", "gray",
+         "🚗 Estacionamiento Vehicular", "Punto de estacionamiento vehicular en el área de parqueadero este del Edificio Senescyt.")
     ]
 
     for coord, nombre, icono, color, categoria, descripcion_humana in hitos_humanos:

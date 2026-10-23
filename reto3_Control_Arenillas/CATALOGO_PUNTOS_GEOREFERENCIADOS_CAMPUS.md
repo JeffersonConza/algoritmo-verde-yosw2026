@@ -31,6 +31,8 @@ Polo académico norte y residencial estudiantil modular, con una población habi
 | **BUS-01** | **Parada de Buses (Edificio Senescyt)** | Movilidad y Transporte | `0.407197` | `-78.169986` | **Alto** (Espera a la intemperie) | ~200 usuarios/día |
 | **P-16** | **Parqueadero Senescyt (Sur 1)** | Infraestructura / Parqueadero | `0.406067` | `-78.170262` | **Medio** (Parqueadero sur Senescyt) | ~15 vehículos |
 | **P-17** | **Parqueadero Senescyt (Sur 2)** | Infraestructura / Parqueadero | `0.406250` | `-78.170469` | **Medio** (Parqueadero sur Senescyt) | ~15 vehículos |
+| **P-18** | **Parqueadero Senescyt (Este 1)** | Infraestructura / Parqueadero | `0.406199` | `-78.169891` | **Medio** (Parqueadero este Senescyt) | ~15 vehículos |
+| **P-19** | **Parqueadero Senescyt (Este 2)** | Infraestructura / Parqueadero | `0.406560` | `-78.169590` | **Medio** (Parqueadero este Senescyt) | ~15 vehículos |
 | **P-12** | **Sitio de Parqueo en Vía (Senescyt Norte 1)** | Infraestructura / Parqueo en Vía | `0.407575` | `-78.170380` | **Medio** (Calzada acceso norte) | ~5 vehículos |
 | **P-13** | **Sitio de Parqueo en Vía (Senescyt Norte 2)** | Infraestructura / Parqueo en Vía | `0.407470` | `-78.170262` | **Medio** (Calzada acceso norte) | ~5 vehículos |
 | **P-14** | **Sitio de Parqueo en Vía (Senescyt Acceso Principal)** | Infraestructura / Parqueo en Vía | `0.407331` | `-78.170102` | **Medio** (Calzada principal) | ~8 vehículos |
@@ -1715,7 +1717,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
 
 ---
 
-## 8. Snippet GeoJSON Oficial Completo (257 Entidades: Hitos, Huellas, Canales, Reservorio y Líneas Divisorias)
+## 8. Snippet GeoJSON Oficial Completo (259 Entidades: Hitos, Huellas, Canales, Reservorio y Líneas Divisorias)
 
 ```json
 {
@@ -9953,6 +9955,38 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
         "coordinates": [
           -78.1704686,
           0.40625
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "P-18",
+        "nombre": "Parqueadero Senescyt (Este 1)",
+        "zona": "Sector Senescyt",
+        "categoria": "Infraestructura / Parqueadero"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.1698907,
+          0.406199
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "P-19",
+        "nombre": "Parqueadero Senescyt (Este 2)",
+        "zona": "Sector Senescyt",
+        "categoria": "Infraestructura / Parqueadero"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.1695897,
+          0.4065601
         ]
       }
     }
