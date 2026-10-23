@@ -2061,7 +2061,11 @@ def generar_mapa():
         ([0.4049303, -78.1741545], "Depósito de Basura (Tachos Plaza del Estudiante)", "trash", "gray",
          "🗑️ Tachos de Residuos Menores", "Tachos de clasificación de residuos en Plaza del Estudiante."),
         ([0.4043180, -78.1738190], "Depósito de Basura (Tachos Plaza Mikuna)", "trash", "gray",
-         "🗑️ Tachos de Residuos Menores", "Punto ecológico de tachos de basura en patio gastronómico Plaza Mikuna.")
+         "🗑️ Tachos de Residuos Menores", "Punto ecológico de tachos de basura en patio gastronómico Plaza Mikuna."),
+        ([0.4041680, -78.1767040], "Tachos de Basura (San José / Restaurantes)", "trash", "gray",
+         "🗑️ Tachos de Residuos Menores", "Punto de recolección de residuos orgánicos entre baterías sanitarias y comedores Analí y Pato Goloso."),
+        ([0.4044473, -78.1750098], "Pozo Histórico en Desuso (Sala Capitular Este)", "exclamation-triangle", "red",
+         "⚠️ Foco Entomológico (Pozo en Mal Estado)", "Estructura de pozo en mal estado con retención de agua y humedad sombría; punto prioritario de inspección y control biológico de Culicoides spp.")
     ]
 
     for coord, nombre, icono, color, categoria, descripcion_humana in hitos_humanos:

@@ -63,7 +63,9 @@ Antiguo complejo histórico de la Hacienda San José, epicentro de la vida cultu
 | **B-04** | **Depósito de Basura (Tachos Aulas B)** | Gestión Ambiental / Tachos | `0.404748` | `-78.174325` | **Alto** (Flujo estudiantil) | Aulas B |
 | **B-05** | **Depósito de Basura (Tachos Plaza del Estudiante)** | Gestión Ambiental / Tachos | `0.404930` | `-78.174154` | **Alto** (Plaza peatonal) | Plaza Estudiante |
 | **B-06** | **Depósito de Basura (Tachos Plaza Mikuna)** | Gestión Ambiental / Tachos | `0.404318` | `-78.173819` | **Muy Alto** (Patio gastronómico) | Plaza Mikuna |
+| **B-08** | **Tachos de Basura (San José / Restaurantes)** | Gestión Ambiental / Tachos | `0.404168` | `-78.176704` | **Medio** (Residuos orgánicos) | Entre baños y restaurantes |
 | **I-19** | **Plaza Edificio ITT** | Espacio Público / Cívico | `0.405864` | `-78.170695` | **Medio** (Plaza cívica entre bloques ITT) | Tránsito peatonal |
+| **I-20** | **Pozo Histórico en Desuso (Sala Capitular Este)** | Infraestructura Hídrica / Riesgo | `0.404447` | `-78.175010` | **Alto** (Agua estancada sombría) | Foco potencial de Culicoides |
 
 ### 1.3. Zona 3: Sector Residencias "Las T's", "Las Pats" y "Multifamiliares" (Sur)
 Principal polo habitacional y deportivo de la universidad (~400 a 550 residentes):
@@ -1632,7 +1634,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
 
 ---
 
-## 8. Snippet GeoJSON Oficial Completo (236 Entidades: Hitos, Huellas, Canales, Reservorio y Líneas Divisorias)
+## 8. Snippet GeoJSON Oficial Completo (238 Entidades: Hitos, Huellas, Canales, Reservorio y Líneas Divisorias)
 
 ```json
 {
@@ -9371,6 +9373,44 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
               0.4042569
             ]
           ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "B-08",
+        "nombre": "Tachos de Basura (Sector San José / Restaurantes)",
+        "zona": "Casco Histórico y San José",
+        "categoria": "Gestión Ambiental / Residuos Menores",
+        "tipo": "Punto Ecológico de Tachos",
+        "nivel_riesgo_basal": "Medio (Residuos orgánicos / Atrayente de dípteros)",
+        "descripcion": "Punto de recolección de residuos orgánicos ubicado entre las baterías sanitarias de San José y los restaurantes Comedor Analí y Pato Goloso."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.176704,
+          0.404168
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "I-20",
+        "nombre": "Pozo Histórico en Desuso (Sala Capitular Este)",
+        "zona": "Casco Histórico y Sala Capitular",
+        "categoria": "Infraestructura Hídrica / Riesgo Entomológico",
+        "tipo": "Pozo en Mal Estado (Agua Estancada)",
+        "nivel_riesgo_basal": "Alto (Criadero potencial de Culicoides y mosquitos lénticos)",
+        "descripcion": "Estructura de pozo histórico en mal estado al este de Sala Capitular; retención sombría de humedad y agua estancada que constituye foco prioritario de bio-monitoreo e intervención."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.1750098,
+          0.4044473
         ]
       }
     }
