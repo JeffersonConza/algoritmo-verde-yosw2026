@@ -3732,116 +3732,132 @@ def generar_mapa():
         ).add_to(fg_biocontrol)
 
     # -------------------------------------------------------------
-    # 7. CERCAS VIVAS EN 3 ESTRATOS (980 METROS ÓPTIMOS)
+    # 7. CERCAS VIVAS EN 3 ESTRATOS (980 METROS ÓPTIMOS EN 7 TRAMOS VIALES)
     # -------------------------------------------------------------
-    cerca1 = [
-        [0.4031, -78.1750],
-        [0.4030, -78.1738],
-        [0.4024, -78.1730]
+    # Tramos discontinuos calibrados paralelamente a las vías y bordes de parques
+    # (0 cruces de calles/caminerías LINE-VIA-01..16, 0 cruces de edificios, 0 cruces de canales)
+    cerca1_tramos = [
+        ("CV-1A (134.8m · Margen Sur Vía Acceso Sur / Las Multis)", [[0.40368, -78.17472], [0.40320, -78.17458], [0.402756, -78.174018]]),
+        ("CV-1B (97.3m · Corredor Verde Residencial POLY-VERDE-10)", [[0.40220, -78.17405], [0.40198, -78.17365], [0.40158, -78.17352]]),
+        ("CV-1C (147.9m · Margen Sur Vía Sur-Este / Las Pats y Canchas)", [[0.40253, -78.17344], [0.40268, -78.17295], [0.402913, -78.172167]])
     ]
-    folium.PolyLine(
-        locations=cerca1,
-        color="#10ac84",
-        weight=6,
-        popup=folium.Popup("""
-            <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 280px;">
-                <div style="background: #10ac84; color: white; padding: 6px 10px; border-radius: 6px 6px 0 0; font-weight: bold; font-size: 13px;">
-                    🌿 Cerca Viva 1 · Sector Residencial (380m)
-                </div>
-                <div style="padding: 10px; border: 1px solid #10ac84; border-top: none; border-radius: 0 0 6px 6px; font-size: 12px;">
-                    <b>🌱 Arquitectura en 3 Estratos Hipoalergénica:</b><br>
-                    • <b>Alto (3.5-5m):</b> <i>Schinus molle</i> (Molle andino) - Cortina rompeviento y sombra.<br>
-                    • <b>Medio (1.2-2m · Buffer Hipoalergénico):</b> <i>Myrcianthes hallii</i> (Arrayán nativo) combinado con <i>Aloysia citrodora</i> (Cedrón) y <i>Tagetes minuta</i> (Huacatay). <b>100% libre de Romero a <5m de dormitorios</b> para proteger a residentes con alergias respiratorias o asma.<br>
-                    • <b>Bajo (0.4-0.8m):</b> <i>Cymbopogon citratus</i> (Hierba luisa) - Perfume cítrico y barrera basal de citronelal.<br>
-                    <div style="margin-top: 6px; padding: 5px; background: #e8f8f5; border-radius: 4px; color: #0e6251;">
-                        <b>🛡️ Inclusión Médica:</b> Blindaje fitoquímico seguro para Las Multis, Las T's y Las Pats con cero irritación bronquial.
-                    </div>
-                </div>
-            </div>
-        """, max_width=300),
-        tooltip="🌿 Cerca Viva 1: Corredor Residencial (380m) - Confort y Protección"
-    ).add_to(fg_cercas)
-
-    cerca2 = [
-        [0.4055, -78.1734],
-        [0.4048, -78.1728],
-        [0.4040, -78.1726]
-    ]
-    folium.PolyLine(
-        locations=cerca2,
-        color="#10ac84",
-        weight=6,
-        popup=folium.Popup("""
-            <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 280px;">
-                <div style="background: #10ac84; color: white; padding: 6px 10px; border-radius: 6px 6px 0 0; font-weight: bold; font-size: 13px;">
-                    🌿 Cerca Viva 2 · Sector Ingenio / Laboratorios (280m)
-                </div>
-                <div style="padding: 10px; border: 1px solid #10ac84; border-top: none; border-radius: 0 0 6px 6px; font-size: 12px;">
-                    <b>🌱 Arquitectura en 3 Estratos:</b><br>
-                    • <b>Alto:</b> <i>Schinus molle</i> (Cortina contra vientos del valle).<br>
-                    • <b>Medio:</b> <i>Lantana camara</i> y Lavanda (Flores melíferas para polinizadores).<br>
-                    • <b>Bajo:</b> <i>Cymbopogon citratus</i> (Aroma cítrico continuo).<br>
-                    <div style="margin-top: 6px; padding: 5px; background: #e8f8f5; border-radius: 4px; color: #0e6251;">
-                        <b>✨ Impacto en el Estudio:</b> Permite disfrutar las caminerías históricas y estudiar en áreas abiertas del Ingenio.
-                    </div>
-                </div>
-            </div>
-        """, max_width=300),
-        tooltip="🌿 Cerca Viva 2: Corredor Histórico / Laboratorios (280m)"
-    ).add_to(fg_cercas)
-
-    cerca3 = [
-        [0.4072, -78.1718],
-        [0.4066, -78.1708],
-        [0.4060, -78.1702]
-    ]
-    folium.PolyLine(
-        locations=cerca3,
-        color="#10ac84",
-        weight=6,
-        popup=folium.Popup("""
-            <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 280px;">
-                <div style="background: #10ac84; color: white; padding: 6px 10px; border-radius: 6px 6px 0 0; font-weight: bold; font-size: 13px;">
-                    🌿 Cerca Viva 3 · Sector Senescyt / Los Bloques (320m)
-                </div>
-                <div style="padding: 10px; border: 1px solid #10ac84; border-top: none; border-radius: 0 0 6px 6px; font-size: 12px;">
-                    <b>🌱 Arquitectura en 3 Estratos:</b><br>
-                    • <b>Alto:</b> <i>Schinus molle</i>.<br>
-                    • <b>Medio:</b> <i>Myrcianthes hallii</i> (Arrayán) con Cedrón en dormitorios y Romero confinado al talud abierto del canal.<br>
-                    • <b>Bajo:</b> <i>Cymbopogon citratus</i>.<br>
-                    <div style="margin-top: 6px; padding: 5px; background: #e8f8f5; border-radius: 4px; color: #0e6251;">
-                        <b>✨ Impacto Académico:</b> Ventilación natural en aulas Senescyt y descanso protegido sin alérgenos en Los Bloques.
-                    </div>
-                </div>
-            </div>
-        """, max_width=300),
-        tooltip="🌿 Cerca Viva 3: Corredor Académico Senescyt / Los Bloques (320m)"
-    ).add_to(fg_cercas)
-
-    # -------------------------------------------------------------
-    # 8. BUFFERS DE COBERTURA Y AROMATERAPIA (40 METROS)
-    # -------------------------------------------------------------
-    for c_coords, c_name, c_desc in [
-        (cerca1, "Zona Protegida Residencias", "Cubre Las Multis, Patrimoniales y Concha Acústica"),
-        (cerca2, "Zona Protegida Ingenio", "Cubre Biblioteca, Chimenea y Caminerías"),
-        (cerca3, "Zona Protegida Senescyt", "Cubre Aulas Ed. Senescyt y Residencias Los Bloques")
-    ]:
+    for tramo_label, tramo_coords in cerca1_tramos:
         folium.PolyLine(
-            locations=c_coords,
-            color="#2ecc71",
-            weight=36,
-            opacity=0.25,
+            locations=tramo_coords,
+            color="#10ac84",
+            weight=6,
+            line_cap="butt",
+            line_join="round",
             popup=folium.Popup(f"""
-                <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 240px;">
-                    <b style="color: #27ae60;">🛡️ {c_name} (Buffer 40m)</b><br>
-                    <span style="font-size: 12px; color: #2c3e50;">{c_desc}</span><br>
-                    <p style="font-size: 11px; color: #555; margin: 4px 0 0 0;">
-                        Los monoterpenos volátiles (citronelal, cineol, pineno) saturan los receptores olfativos de las arenillas, impidiendo que ubiquen a las personas.
-                    </p>
+                <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 280px;">
+                    <div style="background: #10ac84; color: white; padding: 6px 10px; border-radius: 6px 6px 0 0; font-weight: bold; font-size: 13px;">
+                        🌿 Cerca Viva 1 · Sector Residencial (380m totales)<br>
+                        <span style="font-size: 11px; font-weight: normal;">Tramo: {tramo_label}</span>
+                    </div>
+                    <div style="padding: 10px; border: 1px solid #10ac84; border-top: none; border-radius: 0 0 6px 6px; font-size: 12px;">
+                        <b>🌱 Arquitectura en 3 Estratos Hipoalergénica:</b><br>
+                        • <b>Alto (3.5-5m):</b> <i>Schinus molle</i> (Molle andino) - Cortina rompeviento y sombra.<br>
+                        • <b>Medio (1.2-2m · Buffer Hipoalergénico):</b> <i>Myrcianthes hallii</i> (Arrayán nativo) combinado con <i>Aloysia citrodora</i> (Cedrón) y <i>Tagetes minuta</i> (Huacatay). <b>100% libre de Romero a &lt;5m de dormitorios</b> para proteger a residentes con alergias respiratorias o asma.<br>
+                        • <b>Bajo (0.4-0.8m):</b> <i>Cymbopogon citratus</i> (Hierba luisa) - Perfume cítrico y barrera basal de citronelal.<br>
+                        <div style="margin-top: 6px; padding: 5px; background: #e8f8f5; border-radius: 4px; color: #0e6251;">
+                            <b>🛡️ Trazado Vial Limpio:</b> Segmento paralelo a las vías sin obstruir cruces peatonales ni vehiculares.
+                        </div>
+                    </div>
                 </div>
-            """, max_width=260),
-            tooltip=f"🛡️ Área de Confort y Protección Aromática ({c_name})"
-        ).add_to(fg_buffer)
+            """, max_width=300),
+            tooltip=f"🌿 Cerca Viva 1 [{tramo_label}] · Total Sector: 380m"
+        ).add_to(fg_cercas)
+
+    cerca2_tramos = [
+        ("CV-2A (137.3m · Margen Norte Vía Transversal / Acceso Labs)", [[0.40363, -78.17360], [0.40387, -78.17306], [0.404132, -78.172472]]),
+        ("CV-2B (142.7m · Borde Jardín Botánico Sur / Explanada Central)", [[0.40436, -78.17368], [0.40496, -78.17358], [0.40504, -78.172907]])
+    ]
+    for tramo_label, tramo_coords in cerca2_tramos:
+        folium.PolyLine(
+            locations=tramo_coords,
+            color="#10ac84",
+            weight=6,
+            line_cap="butt",
+            line_join="round",
+            popup=folium.Popup(f"""
+                <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 280px;">
+                    <div style="background: #10ac84; color: white; padding: 6px 10px; border-radius: 6px 6px 0 0; font-weight: bold; font-size: 13px;">
+                        🌿 Cerca Viva 2 · Sector Ingenio / Laboratorios (280m totales)<br>
+                        <span style="font-size: 11px; font-weight: normal;">Tramo: {tramo_label}</span>
+                    </div>
+                    <div style="padding: 10px; border: 1px solid #10ac84; border-top: none; border-radius: 0 0 6px 6px; font-size: 12px;">
+                        <b>🌱 Arquitectura en 3 Estratos:</b><br>
+                        • <b>Alto:</b> <i>Schinus molle</i> (Cortina contra vientos del valle).<br>
+                        • <b>Medio:</b> <i>Myrcianthes hallii</i> y <i>Tagetes minuta</i> (Huacatay y flora melífera para polinizadores).<br>
+                        • <b>Bajo:</b> <i>Cymbopogon citratus</i> (Aroma cítrico continuo).<br>
+                        <div style="margin-top: 6px; padding: 5px; background: #e8f8f5; border-radius: 4px; color: #0e6251;">
+                            <b>✨ Impacto en el Estudio:</b> Respeta los cruces viales (LINE-VIA-05 y LINE-VIA-10) protegiendo las caminerías y áreas abiertas del Ingenio.
+                        </div>
+                    </div>
+                </div>
+            """, max_width=300),
+            tooltip=f"🌿 Cerca Viva 2 [{tramo_label}] · Total Sector: 280m"
+        ).add_to(fg_cercas)
+
+    cerca3_tramos = [
+        ("CV-3A (227.4m · Borde Este Parque Central Norte / Los Bloques)", [[0.40578, -78.17192], [0.40635, -78.17182], [0.40686, -78.17173], [0.40706, -78.17238], [0.406875, -78.172581]]),
+        ("CV-3B (92.6m · Parterre Oriental Edificio Senescyt POLY-VERDE-02)", [[0.40610, -78.16995], [0.40638, -78.16983], [0.40678, -78.16967], [0.406874, -78.169632]])
+    ]
+    for tramo_label, tramo_coords in cerca3_tramos:
+        folium.PolyLine(
+            locations=tramo_coords,
+            color="#10ac84",
+            weight=6,
+            line_cap="butt",
+            line_join="round",
+            popup=folium.Popup(f"""
+                <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 280px;">
+                    <div style="background: #10ac84; color: white; padding: 6px 10px; border-radius: 6px 6px 0 0; font-weight: bold; font-size: 13px;">
+                        🌿 Cerca Viva 3 · Sector Senescyt / Los Bloques (320m totales)<br>
+                        <span style="font-size: 11px; font-weight: normal;">Tramo: {tramo_label}</span>
+                    </div>
+                    <div style="padding: 10px; border: 1px solid #10ac84; border-top: none; border-radius: 0 0 6px 6px; font-size: 12px;">
+                        <b>🌱 Arquitectura en 3 Estratos:</b><br>
+                        • <b>Alto:</b> <i>Schinus molle</i>.<br>
+                        • <b>Medio:</b> <i>Myrcianthes hallii</i> (Arrayán) con Cedrón en dormitorios y Romero confinado al talud abierto del canal.<br>
+                        • <b>Bajo:</b> <i>Cymbopogon citratus</i>.<br>
+                        <div style="margin-top: 6px; padding: 5px; background: #e8f8f5; border-radius: 4px; color: #0e6251;">
+                            <b>✨ Impacto Académico:</b> Ventilación natural en aulas Senescyt y descanso protegido en Los Bloques respetando las vías LINE-VIA-04, 07 y 08.
+                        </div>
+                    </div>
+                </div>
+            """, max_width=300),
+            tooltip=f"🌿 Cerca Viva 3 [{tramo_label}] · Total Sector: 320m"
+        ).add_to(fg_cercas)
+
+    # -------------------------------------------------------------
+    # 8. BUFFERS DE COBERTURA Y AROMATERAPIA (40 METROS · RESPETANDO CRUCES VIALES)
+    # -------------------------------------------------------------
+    for tramos_list, c_name, c_desc in [
+        (cerca1_tramos, "Zona Protegida Residencias", "Cubre Las Multis, Patrimoniales y Complejo Deportivo sin cruzar calles"),
+        (cerca2_tramos, "Zona Protegida Ingenio", "Cubre Biblioteca, Jardín Botánico Sur, Laboratorios y Caminerías respetando cruces"),
+        (cerca3_tramos, "Zona Protegida Senescyt", "Cubre Aulas Ed. Senescyt y Residencias Los Bloques respetando intersecciones viales")
+    ]:
+        for tramo_label, c_coords in tramos_list:
+            folium.PolyLine(
+                locations=c_coords,
+                color="#2ecc71",
+                weight=22,
+                opacity=0.25,
+                line_cap="butt",
+                line_join="round",
+                popup=folium.Popup(f"""
+                    <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 250px;">
+                        <b style="color: #27ae60;">🛡️ {c_name} (Buffer 40m)</b><br>
+                        <span style="font-size: 11px; color: #16a085; font-weight: bold;">{tramo_label}</span><br>
+                        <span style="font-size: 12px; color: #2c3e50;">{c_desc}</span><br>
+                        <p style="font-size: 11px; color: #555; margin: 4px 0 0 0;">
+                            Los monoterpenos volátiles (citronelal, cineol, pineno) saturan los receptores olfativos de las arenillas en los corredores verdes adyacentes a las vías, interrumpiéndose limpiamente en cada cruce vehicular y peatonal.
+                        </p>
+                    </div>
+                """, max_width=270),
+                tooltip=f"🛡️ {c_name} · {tramo_label}"
+            ).add_to(fg_buffer)
 
     # -------------------------------------------------------------
     # 9. RED DE BIO-MONITOREO DE BIENESTAR COMUNITARIO (CALIBRADA EN ÁREAS VERDES)

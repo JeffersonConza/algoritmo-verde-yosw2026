@@ -1507,33 +1507,27 @@ Puntos calibrados en las acequias y canales lotiformes para el fomento de ninfas
 
 Las cercas vivas multiestrato fueron calibradas mediante optimización espacial no lineal (algoritmo SLSQP) y georreferenciadas con GPS submétrico para interceptar el vuelo de las arenillas y cortar la brisa del cañón del río Ambi, protegiendo las **124 edificaciones e infraestructuras catalogadas**. El diseño incorpora una **Zonificación Botánica Hipoalergénica**: en los perímetros residenciales (<5 m de dormitorios), se prohíbe el uso de especies alcanforadas y se sustituye el romero por **Cedrón (*Aloysia citrodora*)** y **Huacatay (*Tagetes minuta*)** para proteger a personas con atopia, asma o alergias a Lamiaceae.
 
-### Cerca Viva 1: Sector Residencial Sur (Las Multis, Las T's y Las Pats)
-* **Longitud Lineal:** **380 metros**
+### Cerca Viva 1: Sector Residencial Sur (Las Multis, Las T's y Las Pats · 3 Tramos Viales Discontinuos)
+* **Longitud Lineal Total:** **380.0 metros** (`134.8 m + 97.3 m + 147.9 m`)
 * **Composición Vegetal Adaptativa:** 190 árboles de *Schinus molle* (Molle), 380 arbustos de *Myrcianthes hallii* (Arrayán andino) combinados con *Aloysia citrodora* (Cedrón hipoalergénico), 760 macollas de *Cymbopogon citratus* (Hierba Luisa). Total: **1,330 plántulas**.
-* **Criterio de Salud:** 100% libre de romero en el frente de balcones y dormitorios; fragancia cítrica suave no sensibilizante.
-* **Radio de Buffer Fitoquímico:** 40 metros (~15,200 m² de cobertura).
-* **Coordenadas de Vértices:**
-  1. *Extremo Oeste (Concha Acústica / Las Multis):* `0.403100° N`, `-78.175000° W`
-  2. *Vértice Intermedio (Las T's y Las Multis):* `0.403000° N`, `-78.173800° W`
-  3. *Extremo Este (Canchas / Las Pats):* `0.402400° N`, `-78.173000° W`
+* **Criterio de Salud y Vialidad:** 100% libre de romero frente a balcones y dormitorios; dividida en **3 tramos discontinuos** paralelos a los bordes viales y corredores verdes para **respetar el 100% de los cruces de calles y caminerías (`0.0 m` de cruce sobre `LINE-VIA-01..16`)**:
+  - **Tramo `CV-1A` (`134.8 m` · Margen Sur de Vía Acceso Sur `LINE-VIA-02` / Norte de Las Multis):** `[[0.403680, -78.174720], [0.403200, -78.174580], [0.402756, -78.174018]]`
+  - **Tramo `CV-1B` (`97.3 m` · Corredor Verde Central de Residencias `POLY-VERDE-10`):** `[[0.402200, -78.174050], [0.401980, -78.173650], [0.401580, -78.173520]]`
+  - **Tramo `CV-1C` (`147.9 m` · Margen Sur de Vía Sur-Este `LINE-VIA-06` frente a Las Pats y Canchas):** `[[0.402530, -78.173440], [0.402680, -78.172950], [0.402913, -78.172167]]`
 
-### Cerca Viva 2: Sector Central (Ingenio Azucarero, Laboratorios e Invernaderos)
-* **Longitud Lineal:** **280 metros**
+### Cerca Viva 2: Sector Central (Ingenio Azucarero, Laboratorios e Invernaderos · 2 Tramos Viales Discontinuos)
+* **Longitud Lineal Total:** **280.0 metros** (`137.3 m + 142.7 m`)
 * **Composición Vegetal:** 140 árboles de *Schinus molle*, 280 arbustos de *Myrcianthes hallii* y *Tagetes minuta* (Huacatay andino), 560 macollas de *Cymbopogon citratus*. Total: **980 plántulas**.
-* **Radio de Buffer Fitoquímico:** 40 metros (~11,200 m² de cobertura).
-* **Coordenadas de Vértices:**
-  1. *Extremo Noroeste (Chimenea / Biblioteca Patrimonial):* `0.405500° N`, `-78.173400° W`
-  2. *Vértice Intermedio (Frente a Laboratorios de Docencia):* `0.404800° N`, `-78.172800° W`
-  3. *Extremo Sureste (Acceso a Laboratorios de Carrera):* `0.404000° N`, `-78.172600° W`
+* **Radio de Buffer Fitoquímico y Trazado Vial:** 40 metros (~11,200 m² de cobertura), estructurado en **2 tramos discontinuos** con apertura limpia en las intersecciones de `LINE-VIA-05` y `LINE-VIA-10`:
+  - **Tramo `CV-2A` (`137.3 m` · Margen Norte de Vía Transversal `LINE-VIA-05` / Acceso a Laboratorios):** `[[0.403630, -78.173600], [0.403870, -78.173060], [0.404132, -78.172472]]`
+  - **Tramo `CV-2B` (`142.7 m` · Borde Noroccidental de Jardín Botánico Sur / Explanada Central `POLY-VERDE-07`):** `[[0.404360, -78.173680], [0.404960, -78.173580], [0.405040, -78.172907]]`
 
-### Cerca Viva 3: Sector Académico Norte (Edificio Senescyt y Los Bloques)
-* **Longitud Lineal:** **320 metros**
+### Cerca Viva 3: Sector Académico Norte (Edificio Senescyt y Los Bloques · 2 Tramos Viales Discontinuos)
+* **Longitud Lineal Total:** **320.0 metros** (`227.4 m + 92.6 m`)
 * **Composición Vegetal:** 160 árboles de *Schinus molle*, 320 arbustos de *Myrcianthes hallii* (con Cedrón frente a dormitorios de Los Bloques y Romero confinado al talud abierto del canal), 640 macollas de *Cymbopogon citratus*. Total: **1,120 plántulas**.
-* **Radio de Buffer Fitoquímico:** 40 metros (~12,800 m² de cobertura).
-* **Coordenadas de Vértices:**
-  1. *Extremo Norte (Atrás de Bloques F-G / Vida Comunitaria):* `0.407200° N`, `-78.171800° W`
-  2. *Vértice Intermedio (Corredor Verde entre Los Bloques e ITT):* `0.406600° N`, `-78.170800° W`
-  3. *Extremo Sur (Frente a Fachada Aulas Senescyt):* `0.406000° N`, `-78.170200° W`
+* **Radio de Buffer Fitoquímico y Trazado Vial:** 40 metros (~12,800 m² de cobertura), dividido en **2 tramos discontinuos** que respetan las vías `LINE-VIA-04`, `LINE-VIA-07`, `LINE-VIA-08` y `LINE-VIA-09`:
+  - **Tramo `CV-3A` (`227.4 m` · Borde Este de Parque Central Norte `POLY-VERDE-03` paralelo a `LINE-VIA-04`):** `[[0.405780, -78.171920], [0.406350, -78.171820], [0.406860, -78.171730], [0.407060, -78.172380], [0.406875, -78.172581]]`
+  - **Tramo `CV-3B` (`92.6 m` · Parterre Oriental de Edificio Senescyt `POLY-VERDE-02`):** `[[0.406100, -78.169950], [0.406380, -78.169830], [0.406780, -78.169670], [0.406874, -78.169632]]`
 
 ---
 
