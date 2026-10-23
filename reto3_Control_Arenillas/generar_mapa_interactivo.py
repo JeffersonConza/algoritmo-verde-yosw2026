@@ -1464,7 +1464,7 @@ def generar_mapa():
                 "fill": "#74b9ff",
                 "icono": "tint",
                 "poblacion": "~120 usuarios y comensales diarios",
-                "edificios_clave": "Laguna Artificial / Reservorio Agroforestal (~2,006 m\u00b2), Canal Este (34 v\u00e9rtices), Comedor do\u00f1a Perci y Sacha Home.",
+                "edificios_clave": "Laguna Artificial / Reservorio Agroforestal (~2,006 m\u00b2), Canal Este (34 v\u00e9rtices), Comedor do\u00f1a Perci y Habitaciones Privadas Sacha Home (Sin Convenio).",
                 "estrategia": "Santuario de odonatos (lib\u00e9lulas nativas) + inoculaci\u00f3n selectiva con Bti en canal l\u00f3tico.",
                 "ring": [
                         [
@@ -1904,7 +1904,7 @@ def generar_mapa():
         },
         {
             "nombre": "Epicentro Este: Recursos Hídricos y Conducción",
-            "sector": "Reservorio Agroforestal, Comedor doña Perci y Sacha Home",
+            "sector": "Reservorio Agroforestal, Comedor doña Perci y Habitaciones Privadas Sacha Home (Sin Convenio)",
             "coords": [0.4041, -78.1685],
             "poblacion": "~30 a 50 usuarios diarios (baja afluencia en Comedor doña Perci)",
             "foco": "Canal Sinuoso Este (34 vértices) y Laguna Artificial (~2,006 m²)",

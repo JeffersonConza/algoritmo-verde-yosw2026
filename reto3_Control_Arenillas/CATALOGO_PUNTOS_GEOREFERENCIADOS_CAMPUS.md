@@ -1623,7 +1623,7 @@ Para superar las limitaciones visuales de los polígonos con bordes rectos artif
   - *Superficie delimitada:* ~13,478 m² | *Centroide Operativo:* `[0.4041715, -78.1685566]`
   - *Identidad visual:* Borde azul cian hídrico (`#00a8ff`), relleno celeste translúcido (`#74b9ff`).
   - *Población y Aforo:* ~120 comensales y residentes periurbanos diarios.
-  - *Infraestructura contenida:* Laguna Artificial / Reservorio Agroforestal (~2,006 m²), Canal de Conducción Este (34 vértices), Comedor doña Perci y Residencias Privadas Sacha Home.
+  - *Infraestructura contenida:* Laguna Artificial / Reservorio Agroforestal (~2,006 m²), Canal de Conducción Este (34 vértices), Comedor doña Perci y Habitaciones Privadas Sacha Home (Sin Convenio).
 
 ### 7.2. Modelado Epidemiológico: Mapa de Calor Continuo y Epicentros de Picaduras (Simulium spp.)
 
@@ -1646,7 +1646,7 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
 
 * **Epicentro 4: Sector Recursos Hídricos Este (Reservorio Agroforestal y Periferia):**
   - Coordenadas de núcleo: `0.4041214, -78.1683157` | Ponderación demográfica: $w_4 = 0.10$
-  - Población expuesta: ~120 usuarios (Comedor doña Perci, residencias externas Sacha Home).
+  - Población expuesta: ~120 usuarios (Comedor doña Perci, habitaciones privadas externas Sacha Home).
   - Foco hídrico: Canal Este (34 vértices) y Laguna Artificial (~2,006 m²).
 
 ---
@@ -2580,8 +2580,8 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "INT-BIB",
-        "nombre": "Biblioteca Universitaria",
-        "tipo": "Sala de Estudio (Local Interior en Edificio Senescyt)",
+        "nombre": "Biblioteca Universitaria (Senescyt - 24/7)",
+        "tipo": "Sala de Estudio y Lectura 24/7 (Local Interior en Edificio Senescyt)",
         "zona": "Senescyt",
         "area_m2": 514.6,
         "interior": true,
@@ -2709,8 +2709,8 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "POLY-BIB-PAT",
-        "nombre": "Biblioteca Patrimonial Principal",
-        "tipo": "Biblioteca y Patrimonio Histórico (13 Vértices)",
+        "nombre": "Biblioteca Patrimonial Principal (24/7)",
+        "tipo": "Biblioteca Patrimonial y Salas de Lectura 24/7 (13 Vértices)",
         "zona": "Ingenio Azucarero",
         "area_m2": 869.5,
         "interior": false,
