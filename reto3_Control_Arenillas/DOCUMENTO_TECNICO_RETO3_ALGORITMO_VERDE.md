@@ -205,12 +205,12 @@ La operación y mantenimiento regular se integran en la estructura existente de 
 
 ### 6.1. Red de Monitoreo Biológico (6 Estaciones GPS)
 Para verificar empíricamente la reducción de picaduras exigida por el requisito RF-04, se dispuso una red de seis estaciones de monitoreo continuo:
-1. **T-01 ($0.4024^\circ\text{ N}, -78.1730^\circ\text{ W}$):** Residencias Patrimoniales y Canchas Deportivas.
-2. **T-02 ($0.4028^\circ\text{ N}, -78.1750^\circ\text{ W}$):** Residencias Las Multis y Concha Acústica.
-3. **T-03 ($0.4052^\circ\text{ N}, -78.1742^\circ\text{ W}$):** Biblioteca Patrimonial y Chimenea Central.
-4. **T-04 ($0.4047^\circ\text{ N}, -78.1724^\circ\text{ W}$):** Nave de Laboratorios de Carrera.
-5. **T-05 ($0.4067^\circ\text{ N}, -78.1702^\circ\text{ W}$):** Fachada Sur del Edificio Senescyt.
-6. **T-06 ($0.4070^\circ\text{ N}, -78.1714^\circ\text{ W}$):** Residencias Los Bloques y Centro de Vida Comunitaria.
+1. **T-01 ($0.402120^\circ\text{ N}, -78.172920^\circ\text{ W}$):** Parque Deportivo Sur y Caminería Las Pats (`POLY-VERDE-09`).
+2. **T-02 ($0.402280^\circ\text{ N}, -78.175150^\circ\text{ W}$):** Jardín Central y Caminería Curva de Las Multis (`LINE-VIA-14`).
+3. **T-03 ($0.404620^\circ\text{ N}, -78.174250^\circ\text{ W}$):** Jardines Cuadrangulares de Plaza del Estudiante y Biblioteca Patrimonial (`POLY-VERDE-06`).
+4. **T-04 ($0.404020^\circ\text{ N}, -78.172780^\circ\text{ W}$):** Acceso a Nave de Laboratorios de Carrera e Invernaderos (`LINE-VIA-10`).
+5. **T-05 ($0.406480^\circ\text{ N}, -78.169820^\circ\text{ W}$):** Parterres y Jardines Orientales del Edificio Senescyt (`POLY-VERDE-02`).
+6. **T-06 ($0.407420^\circ\text{ N}, -78.170760^\circ\text{ W}$):** Jardín Central de Residencias Los Bloques y Centro Médico (`POLY-VERDE-01`).
 
 **Mecanismo de Trampeo Ecológico:** Trampas adhesivas de silueta oscura calibradas con atrayentes volátiles orgánicos: fermentación de levadura con sacarosa (productora de $\text{CO}_2$ sostenido a $250\text{ mL/min}$) y micro-gotero de ácido L-láctico al 5%, imitando las señales de aliento y transpiración humana (Allan et al., 1987).
 

@@ -1479,14 +1479,14 @@ Estructuras de gran escala proyectadas originalmente en el plan maestro de la Ci
 
 Red de muestreo pasivo y activo equipada con trampas de silueta oscura, cebadas con emanación controlada de $\text{CO}_2$ biológico y ácido L-láctico para cuantificar la densidad de hembras hematófagas en vuelo.
 
-| Código Estación | Nombre Operativo | Latitud (WGS84) | Longitud (WGS84) | Entorno Inmediato | Frecuencia de Lectura | Tasa Basal Previa | Tasa Proyectada (Semana 16) | Reducción Lograda |
+| Código Estación | Nombre Operativo | Latitud (WGS84) | Longitud (WGS84) | Entorno Inmediato (Área Verde / Caminería) | Frecuencia de Lectura | Tasa Basal Previa | Tasa Proyectada (Semana 16) | Reducción Lograda |
 | :---: | :--- | :---: | :---: | :--- | :---: | :---: | :---: | :---: |
-| **T-01** | **Estación Sur 1** | `0.402400` | `-78.173000` | Residencias Patrimoniales y Canchas | Semanal | 148 pic/hora | 24 pic/hora | **-83.8%** |
-| **T-02** | **Estación Sur 2** | `0.402800` | `-78.175000` | Las Multis y Concha Acústica | Semanal | 162 pic/hora | 26 pic/hora | **-84.0%** |
-| **T-03** | **Estación Central 1** | `0.405200` | `-78.174200` | Biblioteca Patrimonial y Jardines | Semanal | 115 pic/hora | 21 pic/hora | **-81.7%** |
-| **T-04** | **Estación Central 2** | `0.404700` | `-78.172400` | Acceso a Laboratorios de Carrera | Semanal | 134 pic/hora | 23 pic/hora | **-82.8%** |
-| **T-05** | **Estación Norte 1** | `0.406700` | `-78.170200` | Edificio Senescyt (Fachada Aulas) | Semanal | 172 pic/hora | 30 pic/hora | **-82.6%** |
-| **T-06** | **Estación Norte 2** | `0.407000` | `-78.171400` | Residencias Los Bloques y Vida Com. | Semanal | 129 pic/hora | 22 pic/hora | **-82.9%** |
+| **T-01** | **Estación Sur 1** | `0.402120` | `-78.172920` | Parque Deportivo y Caminería Las Pats (`POLY-VERDE-09`) | Semanal | 148 pic/hora | 24 pic/hora | **-83.8%** |
+| **T-02** | **Estación Sur 2** | `0.402280` | `-78.175150` | Jardín Central y Caminería Las Multis (`LINE-VIA-14`) | Semanal | 162 pic/hora | 26 pic/hora | **-84.0%** |
+| **T-03** | **Estación Central 1** | `0.404620` | `-78.174250` | Jardines Plaza del Estudiante y Biblioteca (`POLY-VERDE-06`) | Semanal | 115 pic/hora | 21 pic/hora | **-81.7%** |
+| **T-04** | **Estación Central 2** | `0.404020` | `-78.172780` | Acceso a Laboratorios de Carrera e Invernaderos (`LINE-VIA-10`) | Semanal | 134 pic/hora | 23 pic/hora | **-82.8%** |
+| **T-05** | **Estación Norte 1** | `0.406480` | `-78.169820` | Parterres Orientales Edificio Senescyt (`POLY-VERDE-02`) | Semanal | 172 pic/hora | 30 pic/hora | **-82.6%** |
+| **T-06** | **Estación Norte 2** | `0.407420` | `-78.170760` | Jardín Central Los Bloques y Centro Médico (`POLY-VERDE-01`) | Semanal | 129 pic/hora | 22 pic/hora | **-82.9%** |
 | **PROMEDIO** | **Red Global** | — | — | **Campus Yachay Tech** | **Semanal** | **143.3 pic/h** | **24.3 pic/h** | **-82.8% ($t=25.85, p<0.001$)** |
 
 ---

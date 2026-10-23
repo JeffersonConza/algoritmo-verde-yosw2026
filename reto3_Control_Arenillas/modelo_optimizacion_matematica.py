@@ -140,12 +140,12 @@ def simular_telemetria_biomonitoreo():
     semanas = np.arange(1, 17)
     
     estaciones = [
-        {"id": "T-01", "nombre": "Residencias Patrimoniales / Canchas", "lat": 0.4024, "lon": -78.1730, "base": 88},
-        {"id": "T-02", "nombre": "Las Multis / Concha Acústica", "lat": 0.4028, "lon": -78.1750, "base": 92},
-        {"id": "T-03", "nombre": "Biblioteca Patrimonial / Chimenea", "lat": 0.4052, "lon": -78.1742, "base": 78},
-        {"id": "T-04", "nombre": "Laboratorios de Carrera", "lat": 0.4047, "lon": -78.1724, "base": 82},
-        {"id": "T-05", "nombre": "Edificio Senescyt (Fachada Sur)", "lat": 0.4067, "lon": -78.1702, "base": 86},
-        {"id": "T-06", "nombre": "Residencias Los Bloques / Vida Com.", "lat": 0.4070, "lon": -78.1714, "base": 90}
+        {"id": "T-01", "nombre": "Parque Deportivo / Las Pats", "lat": 0.402120, "lon": -78.172920, "base": 88},
+        {"id": "T-02", "nombre": "Jardín Central Las Multis", "lat": 0.402280, "lon": -78.175150, "base": 92},
+        {"id": "T-03", "nombre": "Jardines Plaza del Estudiante / Biblioteca", "lat": 0.404620, "lon": -78.174250, "base": 78},
+        {"id": "T-04", "nombre": "Acceso Laboratorios de Carrera", "lat": 0.404020, "lon": -78.172780, "base": 82},
+        {"id": "T-05", "nombre": "Parterres Orientales Senescyt", "lat": 0.406480, "lon": -78.169820, "base": 86},
+        {"id": "T-06", "nombre": "Jardín Central Los Bloques / Centro Médico", "lat": 0.407420, "lon": -78.170760, "base": 90}
     ]
     
     registros = []

@@ -3844,15 +3844,15 @@ def generar_mapa():
         ).add_to(fg_buffer)
 
     # -------------------------------------------------------------
-    # 9. RED DE BIO-MONITOREO DE BIENESTAR COMUNITARIO
+    # 9. RED DE BIO-MONITOREO DE BIENESTAR COMUNITARIO (CALIBRADA EN ÁREAS VERDES)
     # -------------------------------------------------------------
     trampas_humanas = [
-        ([0.4024, -78.1730], "Estación Sur 1", "Residencias Patrimoniales y Canchas Deportivas"),
-        ([0.4028, -78.1750], "Estación Sur 2", "Las Multis y Concha Acústica"),
-        ([0.4052, -78.1742], "Estación Central 1", "Biblioteca Patrimonial y Jardines"),
-        ([0.4047, -78.1724], "Estación Central 2", "Acceso a Laboratorios de Carrera"),
-        ([0.4067, -78.1702], "Estación Norte 1", "Edificio Senescyt (Fachada Aulas)"),
-        ([0.4070, -78.1714], "Estación Norte 2", "Residencias Los Bloques y Vida Comunitaria")
+        ([0.402120, -78.172920], "Estación Sur 1 (T-01)", "Parque Deportivo y Caminería Las Pats (POLY-VERDE-09)"),
+        ([0.402280, -78.175150], "Estación Sur 2 (T-02)", "Jardín Central y Caminería Las Multis (LINE-VIA-14)"),
+        ([0.404620, -78.174250], "Estación Central 1 (T-03)", "Jardines Plaza del Estudiante y Biblioteca (POLY-VERDE-06)"),
+        ([0.404020, -78.172780], "Estación Central 2 (T-04)", "Acceso a Laboratorios de Carrera e Invernaderos (LINE-VIA-10)"),
+        ([0.406480, -78.169820], "Estación Norte 1 (T-05)", "Parterres Orientales Edificio Senescyt (POLY-VERDE-02)"),
+        ([0.407420, -78.170760], "Estación Norte 2 (T-06)", "Jardín Central Residencias Los Bloques y Centro Médico (POLY-VERDE-01)")
     ]
     for pt, codigo, ubicacion in trampas_humanas:
         folium.Marker(
