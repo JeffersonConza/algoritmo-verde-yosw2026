@@ -14,10 +14,22 @@
 
 ## 1. Zonas Principales de la Universidad e Hitos de Vida en el Campus
 
-La infraestructura del campus de la Universidad Yachay Tech se articula en **cuatro sectores y distritos principales** (Polo Académico Norte, Casco Histórico Central, Gran Distrito Residencial y Deportivo Sur, y Eje Hídrico Agroforestal Este), cada uno con dinámicas académicas, residenciales, hídricas y de exposición diferencial a la plaga de simúlidos:
+La infraestructura del campus de la Universidad Yachay Tech se articula en **cuatro grandes zonas y distritos principales**, delimitadas y calibradas mediante envolventes orgánicas continuas (algoritmo de Chaikin, 3 iteraciones) que cubren el 100% de las 124 edificaciones y 69 hitos del campus:
 
-### 1.1. Zona 1: Sector Senescyt (Académica, Residencias Los Bloques y Salud)
-Polo académico norte y residencial estudiantil modular, con una población habitual de ~450 a 650 personas:
+```
+[ZONA-1-NORTE]   🏷️ Polo Académico Norte, Residencias Los Bloques y Salud (~7.71 ha)
+[ZONA-2-CENTRAL] 🏷️ Casco Histórico, Patrimonio Cultural e Ingenio Azucarero (~10.74 ha)
+[ZONA-3-SUR]     🏷️ Gran Distrito Residencial, Complejo Deportivo y Concha Acústica (~27.37 ha)
+[ZONA-4-ESTE]    🏷️ Eje Hídrico Agroforestal y Periferia Oriental (~6.64 ha)
+```
+
+---
+
+### 1.1. [ZONA-1-NORTE] · Zona 1: Polo Académico Norte, Residencias Los Bloques y Salud
+> **Tags:** `#AulasMagnas` `#Senescyt` `#LosBloques` `#CentroMedico` `#Biblioteca247` `#ITT` `#Container`  
+> **Superficie Calibrada:** ~77,134.1 m² (~7.71 ha) | **Centroide Operativo:** `0.406838, -78.170608`  
+> **Población Habitual:** ~450 a 650 personas (estudiantes, docentes, médicos y personal administrativo)  
+> **Enfoque Ecosistémico:** Blindaje contra vientos del norte con Cerca Viva 3 (320 m) y monitoreo de drenajes pluviales de ladera.
 
 | ID | Nombre del Hito / Edificación | Categoría de Uso | Latitud (WGS84) | Longitud (WGS84) | Nivel de Riesgo Basal | Población / Aforo |
 | :---: | :--- | :--- | :---: | :---: | :---: | :---: |
@@ -39,8 +51,11 @@ Polo académico norte y residencial estudiantil modular, con una población habi
 | **P-15** | **Sitio de Parqueo en Vía (Senescyt Este / Comedor)** | Infraestructura / Parqueo en Vía | `0.406951` | `-78.169658` | **Medio** (Calzada este) | ~6 vehículos |
 | **S-07** | **Hall del Edificio Senescyt (Planta Baja)** | Convivencia / Tránsito Estudiantil | `0.406559` | `-78.170184` | **Crítico** (Vestíbulo principal a nivel de suelo, alto flujo) | ~200 personas/hora pico |
 
-### 1.2. Zona 2: Sector Ingenio Azucarero (Patrimonial, Docencia, Plazas y Recursos Hídricos)
-Antiguo complejo histórico de la Hacienda San José, epicentro de la vida cultural, científica y gastronómica (~400 a 600 usuarios diarios):
+### 1.2. [ZONA-2-CENTRAL] · Zona 2: Casco Histórico, Patrimonio Cultural e Ingenio Azucarero
+> **Tags:** `#PatrimonioSanJose` `#IngenioAzucarero` `#BibliotecaPatrimonial` `#PlazaMikuna` `#SalaCapitular` `#Paleohumedal`  
+> **Superficie Calibrada:** ~107,418.2 m² (~10.74 ha) | **Centroide Operativo:** `0.404776, -78.174739`  
+> **Población Habitual:** ~350 a 600 usuarios diarios (estudiantes en docencia, lectores de biblioteca y comensales en horas pico)  
+> **Enfoque Ecosistémico:** Blindaje de terrazas gastronómicas con Cerca Viva 2 (280 m), microclima sombreado y bio-control en Canales San José y Capitular.
 
 | ID | Nombre del Hito / Espacio | Categoría de Uso | Latitud (WGS84) | Longitud (WGS84) | Nivel de Riesgo Basal | Población / Aforo |
 | :---: | :--- | :--- | :---: | :---: | :---: | :---: |
@@ -83,8 +98,11 @@ Antiguo complejo histórico de la Hacienda San José, epicentro de la vida cultu
 | **I-19** | **Plaza Edificio ITT** | Espacio Público / Cívico | `0.405864` | `-78.170695` | **Medio** (Plaza cívica entre bloques ITT) | Tránsito peatonal |
 | **I-20** | **Pozo Histórico en Desuso (Sala Capitular Este)** | Infraestructura Hídrica / Riesgo | `0.404447` | `-78.175010` | **Alto** (Agua estancada sombría) | Foco potencial de Culicoides |
 
-### 1.3. Zona 3: Sector Residencias "Las T's", "Las Pats" y "Multifamiliares" (Sur)
-Principal polo habitacional y deportivo de la universidad (~400 a 550 residentes):
+### 1.3. [ZONA-3-SUR] · Zona 3: Gran Distrito Residencial, Complejo Deportivo y Concha Acústica
+> **Tags:** `#LasMultis` `#LasPats` `#LasTs` `#ComplejoDeportivo` `#ConchaAcustica` `#VillasDocentes` `#Gimnasio`  
+> **Superficie Calibrada:** ~273,735.7 m² (~27.37 ha) | **Centroide Operativo:** `0.402254, -78.173507`  
+> **Población Habitual:** ~550 residentes activos (estudiantes y profesores) + deportistas  
+> **Enfoque Ecosistémico:** Cerca Viva 1 (380 m) multiestrato hipoalergénica con sustitución de romero por cedrón/huacatay en dormitorios y protección perimetral del Complejo Deportivo.
 
 | ID | Nombre del Hito / Residencia | Categoría de Uso | Latitud (WGS84) | Longitud (WGS84) | Nivel de Riesgo Basal | Población / Aforo |
 | :---: | :--- | :--- | :---: | :---: | :---: | :---: |
@@ -102,6 +120,21 @@ Principal polo habitacional y deportivo de la universidad (~400 a 550 residentes
 | **P-05** | **Parqueadero Sector 'Las Pats'** | Infraestructura / Parqueo | `0.402021` | `-78.173364` | **Alto** (Arco de Las Pats) | ~25 vehículos |
 | **B-02** | **Depósito de Basura Principal (Las Pats)** | Gestión Residuos Sólidos | `0.402211` | `-78.173391` | **Alto** (Estación contenedores) | Servicio Las Pats |
 | **B-07** | **Depósito de Basura (Sector Residencias Docentes / Multis)** | Gestión Residuos Sólidos | `0.403651` | `-78.175117` | **Alto** (Estación contenedores) | Servicio Docentes y Multis |
+
+### 1.4. [ZONA-4-ESTE] · Zona 4: Eje Hídrico Agroforestal y Periferia Oriental
+> **Tags:** `#ReservorioLéntico` `#CanalEste` `#EsclusaEste` `#SantuarioOdonatos` `#SachaHome` `#ComedorPerci`  
+> **Superficie Calibrada:** ~66,417.2 m² (~6.64 ha) | **Centroide Operativo:** `0.404445, -78.168985`  
+> **Población Habitual:** ~120 usuarios y comensales diarios  
+> **Enfoque Ecosistémico:** Santuario de odonatos (*Odonata*) en la Laguna Artificial (~2,006 m²) + bio-dosificación selectiva de Bti en Canal Este y Canal Conector de la Esclusa Este.
+
+| ID | Nombre del Hito / Espacio | Categoría de Uso | Latitud (WGS84) | Longitud (WGS84) | Nivel de Riesgo Basal | Población / Aforo |
+| :---: | :--- | :--- | :---: | :---: | :---: | :---: |
+| **H-01 / POLY-LAGUNA** | **Laguna Artificial / Reservorio Agroforestal** | Cuerpo Léntico / Santuario Odonatos | `0.404121` | `-78.168316` | **Inocuo / Protector** (0% cría Simulium) | ~2,006 m² (Vivero de libélulas) |
+| **I-23** | **Esclusa y Compuerta Hidráulica Este** | Infraestructura Hídrica / Regulación | `0.403961` | `-78.168981` | **Alto** (Flujo hídrico y turbulencia) | Punto de dosificación Bti |
+| **RECT-REST-PERCI** | **Comedor doña Perci** | Gastronómico Tradicional | `0.404100` | `-78.168500` | **Bajo-Medio** (Afluencia reducida) | ~20-30 clientes/día |
+| **RECT-SACHA-HOME** | **Habitaciones Privadas Sacha Home (Sin Convenio)** | Alojamiento Privado Externo | `0.404603` | `-78.168353` | **Medio** (Inmueble privado de 2 pisos) | 8 habitaciones individuales |
+| **POLY-BARRIADA** | **Asentamiento Perimetral Barriada** | Residencial Perimetral | `0.403282` | `-78.169634` | **Medio** (Límite rural este) | ~15 residentes |
+| **POLY-ABANDON-TECHO** | **Edificación Abandonada (Sin Techo)** | Estructura en Desuso | `0.405581` | `-78.169165` | **Bajo** (Estructura abierta) | Sin uso activo |
 
 ---
 
