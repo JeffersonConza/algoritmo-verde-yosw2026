@@ -84,10 +84,10 @@ def generar_figura_3():
                                    color='#43a047', alpha=0.7)
         ax.add_patch(copa_sub)
 
-    ax.annotate("ESTRATO MEDIO (1.2 - 2.0 m)\n• Myrcianthes hallii (Arrayán nativo)\n• Rosmarinus officinalis (Romero)\n• Metabolitos: 1,8-Cineol y Alcanfor\n• Función: Barrera física a altura de vuelo",
-                xy=(3.8, 2.05), xytext=(2.5, 5.2),
+    ax.annotate("ESTRATO MEDIO (1.2 - 2.0 m · Hipoalergénico)\n• Myrcianthes hallii + Cedrón/Huacatay (<5 m hab.)\n• Rosmarinus officinalis (solo en talud de canal)\n• Metabolitos: Citral, 1,8-Cineol y Limoneno\n• Función: Barrera física libre de alérgenos",
+                xy=(3.8, 2.05), xytext=(1.35, 5.15),
                 arrowprops=dict(facecolor='#388e3c', edgecolor='none', width=1.8, headwidth=7),
-                fontsize=8.8, fontweight='bold', color='#1b5e20',
+                fontsize=8.3, fontweight='bold', color='#1b5e20',
                 bbox=dict(boxstyle="round,pad=0.4", fc="#edf7ed", ec="#4caf50", lw=1.2))
 
     # -------------------------------------------------------------
@@ -152,14 +152,14 @@ def generar_figura_3():
     farola = patches.Circle((11.8, 2.25), radius=0.18, color='#ffd54f', ec='#ffb300', lw=1.5)
     ax.add_patch(farola)
     
-    ax.text(10.2, 1.1, "Zona Protegida\n(Campus Yachay Tech)\n• Reducción de picaduras ~82%\n• Confort térmico y paisajismo",
-            fontsize=9.2, fontweight='bold', color='#1a237e', ha='center',
-            bbox=dict(boxstyle="square,pad=0.4", fc="#e8eaf6", ec="#3f51b5", lw=1.2))
+    ax.text(10.15, 1.55, "Zona Protegida\n(Campus Yachay Tech)\n• Mitigación global: 82.8% (SLSQP)\n• Confort térmico e hipoalergénico",
+            fontsize=9.0, fontweight='bold', color='#1a237e', ha='center',
+            bbox=dict(boxstyle="round,pad=0.4", fc="#e8eaf6", ec="#3f51b5", lw=1.2))
 
     # Arenillas repelidas (Simuliidae)
-    for insect_pos in [(0.7, 1.6), (0.9, 2.1), (0.4, 1.2)]:
+    for insect_pos in [(0.75, 1.65), (0.95, 2.1), (0.65, 1.25)]:
         ax.plot(insect_pos[0], insect_pos[1], marker='x', markersize=9, color='#d32f2f', mew=2.2)
-        ax.annotate("", xy=(insect_pos[0] - 0.5, insect_pos[1] + 0.25), xytext=insect_pos,
+        ax.annotate("", xy=(insect_pos[0] - 0.35, insect_pos[1] + 0.22), xytext=insect_pos,
                     arrowprops=dict(arrowstyle="->", color='#d32f2f', lw=1.8, ls='--'))
     
     ax.text(0.7, 2.5, "Bloqueo Físico y Repelencia\nde Arenillas (Simuliidae)", 

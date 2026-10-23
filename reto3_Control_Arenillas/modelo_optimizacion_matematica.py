@@ -239,7 +239,7 @@ def generar_figura4_apa(df_telemetria):
     # Líneas de fases
     ax1.axvspan(1, 4.5, color='#fadbd8', alpha=0.35, label='Fase I: Diagnóstico Pre-Intervención')
     ax1.axvspan(4.5, 8.5, color='#fdebd0', alpha=0.35, label='Fase II: Siembra + Bio-Larvicida Bti')
-    ax1.axvspan(8.5, 16, color='#d4efdf', alpha=0.35, label='Fase III: Consolidación Multiestrato (82% Red.)')
+    ax1.axvspan(8.5, 16, color='#d4efdf', alpha=0.35, label='Fase III: Consolidación Multiestrato (82.8% Red. SLSQP)')
     
     # Trazar estaciones individuales en tenue
     for est_id, color in zip(["T-01", "T-02", "T-03", "T-04", "T-05", "T-06"],
@@ -248,7 +248,7 @@ def generar_figura4_apa(df_telemetria):
         ax1.plot(df_est["semana"], df_est["capturas_semanales"], linestyle=':', color=color, alpha=0.6, linewidth=1.2)
         
     # Trazar promedio general con IC 95%
-    ax1.plot(semanas, medias, color='#1e3799', linewidth=2.8, marker='o', markersize=6, label='Media General (6 Estaciones GPS)')
+    ax1.plot(semanas, medias, color='#1e3799', linewidth=2.8, marker='o', markersize=6, label='Media General (6 Estaciones GPS en Áreas Verdes)')
     ax1.fill_between(semanas, medias - ic95, medias + ic95, color='#4a69bd', alpha=0.25, label='Intervalo de Confianza (95%)')
     
     ax1.set_title("A. Dinámica de Captura Poblacional de Simulium spp. (16 Semanas)", fontsize=11, fontweight='bold', pad=10)
@@ -259,9 +259,9 @@ def generar_figura4_apa(df_telemetria):
     ax1.legend(loc='upper right', fontsize=8, framealpha=0.9)
     
     # Anotación APA de reducción
-    ax1.annotate(f'Eficacia Alcanzada:\n-82.4% (p < 0.001)', xy=(16, medias[-1]), xytext=(12.5, 42),
+    ax1.annotate(f'Eficacia Alcanzada:\n-82.8% Global SLSQP\n(-82.4% Trampas, p < 0.001)', xy=(16, medias[-1]), xytext=(11.2, 42),
                  arrowprops=dict(facecolor='#27ae60', shrink=0.08, width=1.5, headwidth=6),
-                 fontsize=9, fontweight='bold', color='#1e8449',
+                 fontsize=8.5, fontweight='bold', color='#1e8449',
                  bbox=dict(boxstyle="round,pad=0.4", fc="#e8f8f5", ec="#27ae60", lw=1.2))
                  
     # -------------------------------------------------------------
