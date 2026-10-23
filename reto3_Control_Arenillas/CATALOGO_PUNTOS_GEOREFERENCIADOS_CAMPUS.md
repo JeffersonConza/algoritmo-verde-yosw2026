@@ -24,7 +24,7 @@ Polo académico norte y residencial estudiantil modular, con una población habi
 | **S-01** | **Edificio Senescyt (Aulas / Decanatos / Oficinas)** | Académica / Administrativa (4 Pisos) | `0.406633` | `-78.170096` | **Crítico** (Acequia a 35m) | ~450 personas (Primer piso: hall, biblioteca, Krispan, comedor y aulas; Pisos 2-4: oficinas y decanatos) |
 | **S-02** | **Residencias Estudiantiles "Los Bloques"** | Residencial (Bloques A-I) | `0.406950` | `-78.171150` | **Muy Alto** (Viento rasante) | ~180 residentes |
 | **S-03** | **Centro Médico Tipo A / Bienestar Estudiantil** | Salud / Bienestar | `0.407655` | `-78.170721` | **Alto** (Área abierta) | ~200 usuarios/día |
-| **S-04** | **Biblioteca (Edificio Senescyt)** | Biblioteca / Estudio (Primer Piso) | `0.406259` | `-78.170117` | **Medio-Alto** (Primer piso Sen.) | ~120 lectores/día |
+| **S-04** | **Biblioteca (Edificio Senescyt - 24/7)** | Biblioteca / Sala de Estudio 24/7 | `0.406259` | `-78.170117` | **Medio-Alto** (Primer piso Sen.) | ~120 lectores/día (Atención continua 24/7) |
 | **S-05** | **Minimarket Krispan** | Cafetería / Abastecimiento (Primer Piso) | `0.406501` | `-78.170395` | **Medio-Alto** (Primer piso Sen.) | ~150 clientes/día |
 | **S-06** | **Comedor Sol del Ecuador** | Restaurante Universitario (Primer Piso) | `0.407063` | `-78.169911` | **Medio-Alto** (Primer piso Sen.) | ~110 comensales/día (Almuerzo USD 3.50; docentes y personal) |
 | **B-01** | **Depósito de Basura Principal (Senescyt)** | Gestión Residuos Sólidos | `0.407422` | `-78.169763` | **Medio** (Estación contenedores) | Servicio campus norte |
@@ -37,7 +37,7 @@ Antiguo complejo histórico de la Hacienda San José, epicentro de la vida cultu
 
 | ID | Nombre del Hito / Espacio | Categoría de Uso | Latitud (WGS84) | Longitud (WGS84) | Nivel de Riesgo Basal | Población / Aforo |
 | :---: | :--- | :--- | :---: | :---: | :---: | :---: |
-| **I-01** | **Biblioteca Patrimonial Principal** | Académica / Patrimonial | `0.405060` | `-78.174257` | **Alto** (Arboleda húmeda) | ~300 lectores/día |
+| **I-01** | **Biblioteca Patrimonial Principal (24/7)** | Académica / Patrimonial 24/7 | `0.405060` | `-78.174257` | **Alto** (Arboleda húmeda) | ~300 lectores/día (Salas de estudio 24/7) |
 | **I-02** | **Torre del Ingenio (Chimenea Histórica)** | Monumento Histórico | `0.405220` | `-78.174354` | **Medio** (Tránsito cívico) | Espacio público |
 | **I-03** | **Plaza del Ingenio** | Explanada Cultural | `0.405324` | `-78.174470` | **Medio-Alto** (Área abierta)| Eventos masivos |
 | **I-04** | **Plaza del Estudiante** | Convivencia / Descanso | `0.404933` | `-78.174292` | **Alto** (Plaza arbolada) | ~180 usuarios/tarde |
@@ -75,7 +75,7 @@ Principal polo habitacional y deportivo de la universidad (~400 a 550 residentes
 | :---: | :--- | :--- | :---: | :---: | :---: | :---: |
 | **R-01** | **Residencias Estudiantiles "Las Multis"** | Residencial Multifamiliar (3 Pisos) | `0.402750` | `-78.174800` | **Crítico** (Máxima densidad humana) | ~500 residentes (13 bloques de 3 pisos, ~5 deptos/piso, 2-6 pers/depto) |
 | **R-02** | **Residencias Estudiantiles "Las Pats"** | Residencial Patrimonial (1 y 2 Pisos) | `0.402297` | `-78.173836` | **Crítico** (Humedad y sombra) | ~80 residentes (casas de 1 piso ~6 pers; 2 pisos ~8 pers) |
-| **R-03** | **Residencias Estudiantiles "Las T's"** | Bloques Modulares en T (Desocupadas) | `0.402950` | `-78.174200` | **Bajo** (Sin residentes activos) | 0 residentes activos (Estructuras actualmente desocupadas) |
+| **R-03** | **Residencias Estudiantiles "Las T's"** | Bloques Modulares en T (Sector Sur) | `0.400650` | `-78.175090` | **Bajo** (Sin residentes activos) | 0 residentes activos (13 casas modulares en T desocupadas en sector sur) |
 | **R-04** | **Residencias de Docentes** | Villas Residenciales Docentes| `0.402150` | `-78.174500` | **Alto** (Arboledas bajas) | ~40 docentes |
 | **R-05** | **Concha Acústica Yachay Tech** | Cultural / Recreacional | `0.4018349` | `-78.1755181` | **Muy Alto** (Anfiteatro abierto)| ~350 asistentes |
 | **R-06** | **Canchas Deportivas (Fútbol / Múltiples)**| Deporte / Actividad Física | `0.402500` | `-78.171800` | **Muy Alto** (Junto a acequia)| ~120 deportistas/tarde |
@@ -197,8 +197,8 @@ Las edificaciones del campus fueron regularizadas rigurosamente bajo criterios d
     7. `0.4061159, -78.1700531`
     8. `0.4064619, -78.1704732`
 
-* **Biblioteca Universitaria (Sala de Estudio (Primer Piso - Edificio Senescyt)):**
-  * *Ubicación:* Local interior en el primer piso (ala sur) estrictamente contenido dentro del perímetro del Edificio Senescyt.
+* **Biblioteca Universitaria (Primer Piso - Edificio Senescyt - 24/7):**
+  * *Ubicación:* Local interior en el primer piso (ala sur) estrictamente contenido dentro del perímetro del Edificio Senescyt. Servicio ininterrumpido 24/7 para estudio e investigación.
   * *Superficie interna:* ~514.6 m² | *Centroide:* `[0.4062594, -78.1701174]`
   * *Vértices Interiores (Lat, Lon):*
     1. `0.4062218, -78.1699562`
@@ -233,7 +233,8 @@ Las edificaciones del campus fueron regularizadas rigurosamente bajo criterios d
 
 #### A. Casco Central del Ingenio y Biblioteca Patrimonial
 
-* **Biblioteca Patrimonial Principal (Biblioteca y Patrimonio Histórico (13 Vértices)):**
+* **Biblioteca Patrimonial Principal (24/7 - 13 Vértices):**
+  * *Ubicación:* Casco patrimonial del Ingenio Azucarero. Atención y salas de lectura continuas 24/7 para la comunidad universitaria.
   * *Superficie:* ~869.5 m² | *Centroide:* `[0.4050602, -78.1742572]`
   * *Vértices (Lat, Lon):*
     1. `0.4049740, -78.1745032`
@@ -1124,8 +1125,9 @@ Edificaciones ubicadas en el perímetro este del campus, contiguas a la Laguna A
     3. `0.4046456, -78.1685216`
     4. `0.4045904, -78.1685564`
 
-* **Residencias Estudiantiles Sacha Home (`RECT-SACHA-HOME`):**
-  * *Tipo:* Alojamiento Estudiantil Privado Convenio | *Zona:* Sector Reservorio Este
+* **Habitaciones Privadas Sacha Home (`RECT-SACHA-HOME`):**
+  * *Tipo:* Alojamiento Privado Externo (Sin Convenio con la Universidad) | *Zona:* Sector Reservorio Este (Externo)
+  * *Descripción:* Inmueble privado de habitaciones individuales (8 habitaciones distribuidas en 2 pisos) sin convenio institucional con Yachay Tech, ubicado en las inmediaciones del límite este del campus.
   * *Superficie aproximada:* ~191.0 m² | *Centroide:* `[0.4046028, -78.1683528]`
   * *Vértices de Huella Arquitectónica (WGS84):*
     1. `0.4046659, -78.1684636`
@@ -1714,9 +1716,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "S-04",
-        "nombre": "Biblioteca (Edificio Senescyt)",
+        "nombre": "Biblioteca (Edificio Senescyt - 24/7)",
         "zona": "Senescyt",
-        "categoria": "Biblioteca / Sala de Estudio"
+        "categoria": "Biblioteca / Sala de Estudio 24/7",
+        "descripcion": "Sala de lectura y estudio en el primer piso del Edificio Senescyt con atención continua 24/7."
       },
       "geometry": {
         "type": "Point",
@@ -1762,9 +1765,10 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "I-01",
-        "nombre": "Biblioteca Patrimonial Principal",
+        "nombre": "Biblioteca Patrimonial Principal (24/7)",
         "zona": "Ingenio Azucarero",
-        "categoria": "Patrimonial / Estudio Central"
+        "categoria": "Patrimonial / Estudio Central 24/7",
+        "descripcion": "Biblioteca histórica y patrimonial de la Hacienda San José con atención continua 24/7."
       },
       "geometry": {
         "type": "Point",
@@ -2036,13 +2040,14 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
         "id": "R-03",
         "nombre": "Residencias Las T's",
         "zona": "Las T's y Multis",
-        "categoria": "Bloques Residenciales en T"
+        "categoria": "Bloques Residenciales en T",
+        "descripcion": "13 casas modulares en T ubicadas en el sector patrimonial sur (actualmente desocupadas)."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -78.1742,
-          0.40295
+          -78.17509,
+          0.40065
         ]
       }
     },
@@ -5738,15 +5743,15 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
       "type": "Feature",
       "properties": {
         "id": "RECT-SACHA-HOME",
-        "nombre": "Residencias Estudiantiles Sacha Home",
+        "nombre": "Habitaciones Privadas Sacha Home (Sin Convenio)",
         "zona": "Sector Reservorio Este (Externo)",
-        "categoria": "Alojamiento Estudiantil Privado Convenio",
+        "categoria": "Alojamiento Privado Externo (Sin Convenio)",
         "area_m2": 191.0,
         "centroide": [
           -78.1683528,
           0.4046028
         ],
-        "descripcion": "Complejo habitacional estudiantil privado colindante al límite este del campus universitario."
+        "descripcion": "Inmueble privado de habitaciones individuales (8 habitaciones distribuidas en 2 pisos) sin convenio con la universidad, ubicado en las inmediaciones del límite este del campus."
       },
       "geometry": {
         "type": "Polygon",

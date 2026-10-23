@@ -1955,8 +1955,8 @@ def generar_mapa():
          "🏥 Salud y Bienestar Estudiantil", "Centro Médico Tipo A y Promoción de Vida Comunitaria. Atención primaria médica y psicológica."),
         ([0.406950, -78.171150], "Residencias Estudiantiles 'Los Bloques'", "bed", "darkred",
          "🛌 Alojamiento Estudiantil (Bloques A-I)", "Complejo habitacional de 9 bloques modulares (A a I) blindado por la Cerca Viva 3."),
-        ([0.406259, -78.170117], "Biblioteca (Edificio Senescyt)", "book", "blue",
-         "📚 Biblioteca y Sala de Estudio (Primer Piso)", "Sala de lectura y consulta individual situada en el primer piso (ala sur) del Edificio Senescyt."),
+        ([0.406259, -78.170117], "Biblioteca (Edificio Senescyt - 24/7)", "book", "blue",
+         "📚 Biblioteca y Sala de Estudio (24/7)", "Sala de lectura, consulta individual y estudio en el primer piso (ala sur) del Edificio Senescyt. Servicio continuo 24/7 para estudiantes e investigadores."),
         ([0.406501, -78.170395], "Minimarket Krispan", "shopping-cart", "orange",
          "☕ Cafetería y Abastecimiento (Primer Piso)", "Local interior de alimentos, café y artículos de primera necesidad en el primer piso (ala oeste) de Senescyt."),
         ([0.407063, -78.169911], "Comedor Sol del Ecuador", "cutlery", "orange",
@@ -1967,8 +1967,8 @@ def generar_mapa():
         # =============================================================
         # ZONA 2: INGENIO AZUCARERO
         # =============================================================
-        ([0.405060, -78.174257], "Biblioteca Patrimonial Principal", "book", "blue",
-         "📚 Patrimonio y Estudio Central", "Emblemática biblioteca histórica de la Hacienda San José con jardines y salas de lectura."),
+        ([0.405060, -78.174257], "Biblioteca Patrimonial Principal (24/7)", "book", "blue",
+         "📚 Biblioteca Central Patrimonial (24/7)", "Emblemática biblioteca histórica de la Hacienda San José con atención ininterrumpida 24/7, jardines y salas de lectura."),
         ([0.405220, -78.174354], "Torre del Ingenio Azucarero", "history", "purple",
          "🏛️ Monumento Histórico", "Chimenea y torre histórica de la Hacienda San José. Símbolo patrimonial de Urcuquí y del campus."),
         ([0.405324, -78.174470], "Plaza del Ingenio", "sun-o", "purple",
@@ -2009,8 +2009,8 @@ def generar_mapa():
          "🏢 Complejo Multifamiliar (3 Pisos)", "13 edificios de 3 pisos con ~5 departamentos por piso (2 a 6 personas por depto; ~30-90 residentes/bloque). Máxima densidad estudiantil del campus."),
         ([0.402297, -78.173836], "Residencias Estudiantiles 'Las Pats'", "home", "green",
          "🏡 Residencias Patrimoniales", "Edificios de 1 piso (~6 personas) y de 2 pisos (~8 personas conviviendo) en arquitectura tradicional de teja."),
-        ([0.402950, -78.174200], "Residencias Estudiantiles 'Las T\'s'", "home", "gray",
-         "🏘️ Módulos en T (Actualmente Desocupados)", "13 estructuras modulares pareadas en T. Actualmente desocupadas (sin residentes activos); baja emisión antropogénica."),
+        ([0.400650, -78.175090], "Residencias Estudiantiles 'Las T\'s'", "home", "gray",
+         "🏘️ Módulos en T (Sector Residencial Sur)", "13 estructuras modulares pareadas en T ubicadas en este sector patrimonial sur. Estructuras actualmente desocupadas (sin residentes activos); baja emisión antropogénica."),
         ([0.402150, -78.174500], "Residencias de Docentes", "briefcase", "cadetblue",
          "🏠 Villas Docentes", "Conjunto de viviendas asignadas al cuerpo docente e investigadores residentes."),
         ([0.4018349, -78.1755181], "Concha Acústica Yachay Tech", "music", "darkgreen",
@@ -2227,8 +2227,8 @@ def generar_mapa():
         },
         {
             "id": "INT-BIB",
-            "nombre": "Biblioteca Universitaria",
-            "tipo": "Sala de Estudio (Primer Piso - Edificio Senescyt)",
+            "nombre": "Biblioteca Universitaria (Senescyt - 24/7)",
+            "tipo": "Sala de Estudio y Lectura 24/7 (Primer Piso)",
             "zona": "Senescyt",
             "coords": [[0.4062218, -78.1699562], [0.4061159, -78.1700531], [0.406315, -78.1702949], [0.4063677, -78.1702261], [0.4063425, -78.1701969], [0.4063898, -78.170154], [0.4062959, -78.1700414]],
             "centroid": [0.4062594, -78.1701174],
@@ -2236,7 +2236,7 @@ def generar_mapa():
             "color": "#1d6fa5", "fill": "#3498db",
             "interior": True,
             "is_perimeter": False,
-            "desc": "Biblioteca interior situada en el primer piso (ala sur) del Edificio Senescyt."
+            "desc": "Biblioteca interior en el primer piso (ala sur) del Edificio Senescyt. Servicio ininterrumpido de estudio e investigación 24/7."
         },
         {
             "id": "INT-KRISPAN",
@@ -2266,8 +2266,8 @@ def generar_mapa():
         },
         {
             "id": "POLY-BIB-PAT",
-            "nombre": "Biblioteca Patrimonial Principal",
-            "tipo": "Biblioteca y Patrimonio Histórico (13 Vértices)",
+            "nombre": "Biblioteca Patrimonial Principal (24/7)",
+            "tipo": "Biblioteca y Patrimonio Histórico 24/7 (13 Vértices)",
             "zona": "Ingenio Azucarero",
             "coords": [[0.404974, -78.1745032], [0.4050648, -78.1745478], [0.4052466, -78.1741918], [0.4049036, -78.1740328], [0.4048781, -78.1740757], [0.4048509, -78.174063], [0.4048342, -78.1740918], [0.4048677, -78.1741103], [0.4048446, -78.1741485], [0.4049049, -78.174179], [0.4049301, -78.1741401], [0.4051064, -78.1742397], [0.4049746, -78.1745002]],
             "centroid": [0.4050602, -78.1742572],
@@ -2275,7 +2275,7 @@ def generar_mapa():
             "color": "#2980b9", "fill": "#3498db",
             "interior": False,
             "is_perimeter": False,
-            "desc": "Biblioteca patrimonial histórica de la Hacienda San José."
+            "desc": "Biblioteca patrimonial histórica de la Hacienda San José. Salas de estudio y lectura con atención ininterrumpida 24/7."
         },
         {
             "id": "RECT-BANOS-BIB",
@@ -3007,8 +3007,8 @@ def generar_mapa():
         },
         {
             "id": "RECT-SACHA-HOME",
-            "nombre": "Residencias Estudiantiles Sacha Home",
-            "tipo": "Alojamiento Estudiantil Privado Convenio",
+            "nombre": "Habitaciones Privadas Sacha Home (Sin Convenio)",
+            "tipo": "Alojamiento Privado Externo (Sin Convenio)",
             "zona": "Sector Reservorio Este (Externo)",
             "coords": [[0.4046659, -78.1684636], [0.4044948, -78.168285], [0.4045398, -78.1682419], [0.4047109, -78.1684205]],
             "centroid": [0.4046028, -78.1683528],
@@ -3016,7 +3016,7 @@ def generar_mapa():
             "color": "#16a085", "fill": "#1abc9c",
             "interior": False,
             "is_perimeter": False,
-            "desc": "Complejo habitacional estudiantil privado colindante al límite este del campus universitario."
+            "desc": "Inmueble privado de habitaciones individuales (8 habitaciones distribuidas en 2 pisos) sin convenio con la universidad, ubicadas en las inmediaciones del límite este del campus."
         },
         {
             "id": "RECT-PATS-01",
@@ -4839,19 +4839,82 @@ def generar_mapa():
             background: #1e293b !important;
             color: #f1f2f6 !important;
         }}
+        /* Ventanas Emergentes (Popups) Semitransparentes con Glassmorphism */
+        .leaflet-popup-content-wrapper {{
+            background: rgba(255, 255, 255, 0.84) !important;
+            backdrop-filter: blur(14px) saturate(180%) !important;
+            -webkit-backdrop-filter: blur(14px) saturate(180%) !important;
+            color: var(--text-color) !important;
+            border-radius: 14px !important;
+            box-shadow: 0 10px 32px rgba(0, 0, 0, 0.22) !important;
+            padding: 4px 6px !important;
+            border: 1px solid rgba(255, 255, 255, 0.65) !important;
+        }}
+        .leaflet-popup-tip {{
+            background: rgba(255, 255, 255, 0.84) !important;
+            backdrop-filter: blur(14px) !important;
+            -webkit-backdrop-filter: blur(14px) !important;
+        }}
         body[data-theme="dark"] .leaflet-popup-content-wrapper {{
-            background: #1e293b !important;
+            background: rgba(15, 23, 42, 0.86) !important;
+            backdrop-filter: blur(14px) saturate(180%) !important;
+            -webkit-backdrop-filter: blur(14px) saturate(180%) !important;
             color: #f1f2f6 !important;
-            border-color: #334155 !important;
+            border: 1px solid rgba(255, 255, 255, 0.15) !important;
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.65) !important;
         }}
         body[data-theme="dark"] .leaflet-popup-tip {{
-            background: #1e293b !important;
+            background: rgba(15, 23, 42, 0.86) !important;
         }}
-        body[data-theme="dark"] .leaflet-popup-content p,
-        body[data-theme="dark"] .leaflet-popup-content span,
-        body[data-theme="dark"] .leaflet-popup-content b,
-        body[data-theme="dark"] .leaflet-popup-content div {{
-            color: #f1f2f6 !important;
+        /* Botón de Cierre Fácil y Prominente en Popups */
+        .leaflet-popup-close-button {{
+            width: 30px !important;
+            height: 30px !important;
+            line-height: 28px !important;
+            font-size: 20px !important;
+            font-weight: 700 !important;
+            color: #475569 !important;
+            background: rgba(0, 0, 0, 0.08) !important;
+            border-radius: 50% !important;
+            top: 8px !important;
+            right: 8px !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            text-decoration: none !important;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+            padding: 0 !important;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15) !important;
+            z-index: 1000 !important;
+            border: 1px solid rgba(255, 255, 255, 0.6) !important;
+            cursor: pointer !important;
+        }}
+        .leaflet-popup-close-button:hover {{
+            background: #ef4444 !important;
+            color: #ffffff !important;
+            transform: scale(1.12) rotate(90deg) !important;
+            box-shadow: 0 4px 12px rgba(239, 68, 68, 0.45) !important;
+            border-color: #ef4444 !important;
+        }}
+        body[data-theme="dark"] .leaflet-popup-close-button {{
+            background: rgba(255, 255, 255, 0.14) !important;
+            color: #cbd5e1 !important;
+            border-color: rgba(255, 255, 255, 0.2) !important;
+        }}
+        body[data-theme="dark"] .leaflet-popup-close-button:hover {{
+            background: #ef4444 !important;
+            color: #ffffff !important;
+        }}
+
+        /* Transparencia en tarjetas interiores dentro de los popups */
+        .leaflet-popup-content div[style*="background: #fff"],
+        .leaflet-popup-content div[style*="background:#fff"],
+        .leaflet-popup-content div[style*="background: #fffdfa"],
+        .leaflet-popup-content div[style*="background: #fbfdff"],
+        .leaflet-popup-content div[style*="background: #fffcfc"] {{
+            background: rgba(255, 255, 255, 0.55) !important;
+            backdrop-filter: blur(4px) !important;
+            border-radius: 8px !important;
         }}
         body[data-theme="dark"] .leaflet-popup-content div[style*="background: #fff"],
         body[data-theme="dark"] .leaflet-popup-content div[style*="background:#fff"],
@@ -4860,22 +4923,18 @@ def generar_mapa():
         body[data-theme="dark"] .leaflet-popup-content div[style*="background: #fffcfc"],
         body[data-theme="dark"] .leaflet-popup-content div[style*="background: #e8f8f5"],
         body[data-theme="dark"] .leaflet-popup-content div[style*="background: #eef2f7"] {{
-            background: #0f172a !important;
+            background: rgba(15, 23, 42, 0.65) !important;
             border-color: #334155 !important;
+            color: #f1f2f6 !important;
+            border-radius: 8px !important;
+        }}
+        body[data-theme="dark"] .leaflet-popup-content p,
+        body[data-theme="dark"] .leaflet-popup-content span,
+        body[data-theme="dark"] .leaflet-popup-content b,
+        body[data-theme="dark"] .leaflet-popup-content div {{
+            color: #f1f2f6 !important;
         }}
 
-        /* Tipografía y accesibilidad general */
-        .leaflet-popup-content-wrapper {{
-            background: var(--bg-panel);
-            color: var(--text-color);
-            border-radius: 12px;
-            box-shadow: var(--shadow-card);
-            padding: 2px;
-            border: 1px solid var(--border-color);
-        }}
-        .leaflet-popup-tip {{
-            background: var(--bg-panel);
-        }}
         .leaflet-container {{
             font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif !important;
             background: var(--bg-body);
@@ -5059,15 +5118,54 @@ def generar_mapa():
             animation: fadeIn 0.3s ease;
         }}
         .modal-card {{
-            background: var(--bg-panel);
+            background: rgba(255, 255, 255, 0.88) !important;
+            backdrop-filter: blur(16px) saturate(180%) !important;
+            -webkit-backdrop-filter: blur(16px) saturate(180%) !important;
             color: var(--text-color);
             max-width: 620px;
             width: 100%;
-            border-radius: 16px;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.35);
-            border: 1px solid var(--border-color);
+            border-radius: 18px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+            border: 1px solid rgba(255, 255, 255, 0.65);
             overflow: hidden;
             animation: slideUp 0.35s ease;
+            position: relative;
+        }}
+        body[data-theme="dark"] .modal-card {{
+            background: rgba(15, 23, 42, 0.88) !important;
+            backdrop-filter: blur(16px) saturate(180%) !important;
+            -webkit-backdrop-filter: blur(16px) saturate(180%) !important;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }}
+        /* Botón de Cierre Circular Prominente y Accesible (Solo icono X para sencillez de uso) */
+        .btn-modal-close-round {{
+            position: absolute;
+            top: 14px;
+            right: 16px;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.22);
+            border: 2px solid rgba(255, 255, 255, 0.85);
+            color: #ffffff;
+            font-size: 19px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 50;
+            transition: all 0.2s ease;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+            line-height: 1;
+            padding: 0;
+            outline: none;
+        }}
+        .btn-modal-close-round:hover {{
+            background: #ef4444;
+            border-color: #ef4444;
+            transform: scale(1.12) rotate(90deg);
+            box-shadow: 0 4px 14px rgba(239, 68, 68, 0.5);
         }}
         .modal-header {{
             background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
@@ -5304,12 +5402,10 @@ def generar_mapa():
     <!-- MODAL DE VISIÓN Y PROPÓSITO (CON BOTÓN DE CIERRE PROMINENTE Y FÁCIL) -->
     <div id="modal-bienvenida" class="modal-overlay" style="display: none;" onclick="if(event.target===this) toggleModalBienvenida(false)">
         <div class="modal-card">
-            <div class="modal-header" style="position: relative; padding-right: 120px;">
-                <!-- Botón de Cierre Superior Prominente y Accesible -->
-                <button onclick="toggleModalBienvenida(false)" style="position: absolute; top: 14px; right: 16px; background: #e74c3c; border: 2px solid #ffffff; color: #ffffff; font-size: 13px; font-weight: 800; padding: 6px 14px; border-radius: 20px; cursor: pointer; display: flex; align-items: center; gap: 5px; box-shadow: 0 4px 12px rgba(231,76,60,0.4); z-index: 20; transition: transform 0.15s, background 0.15s;" onmouseover="this.style.transform='scale(1.06)'; this.style.background='#c0392b'" onmouseout="this.style.transform='scale(1)'; this.style.background='#e74c3c'" title="Cerrar ventana (Esc)">
-                    <span style="font-size: 15px; font-weight: 900; line-height: 1;">✕</span> <span>Cerrar</span>
-                </button>
-                <h2 style="margin: 0; font-size: 19px; font-weight: 700;" data-i18n="modal_title">🌱 Algoritmo Verde: Un Campus para Vivir y Estudiar en Paz</h2>
+            <div class="modal-header">
+                <!-- Botón de Cierre Fácil y Prominente (Solo icono X) -->
+                <button onclick="toggleModalBienvenida(false)" class="btn-modal-close-round" title="Cerrar ventana (Esc)" aria-label="Cerrar">✕</button>
+                <h2 style="margin: 0; font-size: 19px; font-weight: 700; padding-right: 40px;" data-i18n="modal_title">🌱 Algoritmo Verde: Un Campus para Vivir y Estudiar en Paz</h2>
                 <div style="font-size: 12px; opacity: 0.95; margin-top: 4px;" data-i18n="modal_sub">
                     Propuesta Multidisciplinar · YOSW 2026 Ideatón (Reto 3 - Control de Arenillas)
                 </div>
@@ -5352,9 +5448,7 @@ def generar_mapa():
     <div id="modal-equipo" class="modal-overlay" style="display: none;" onclick="if(event.target===this) toggleModalEquipo(false)">
         <div class="modal-card" style="max-width: 640px;">
             <div class="modal-header" style="background: linear-gradient(135deg, #1e3799, #10ac84); position: relative; padding: 20px 24px;">
-                <button onclick="toggleModalEquipo(false)" style="position: absolute; top: 14px; right: 16px; background: #e74c3c; border: 2px solid #ffffff; color: #ffffff; font-size: 13px; font-weight: 800; padding: 6px 14px; border-radius: 20px; cursor: pointer; display: flex; align-items: center; gap: 5px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); z-index: 20; transition: transform 0.15s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" title="Cerrar (Esc)">
-                    <span style="font-size: 15px; line-height: 1;">✕</span> <span>Cerrar</span>
-                </button>
+                <button onclick="toggleModalEquipo(false)" class="btn-modal-close-round" title="Cerrar ventana (Esc)" aria-label="Cerrar">✕</button>
                 <div style="display: flex; align-items: center; gap: 12px;">
                     <div style="background: white; border-radius: 12px; padding: 6px; display: flex; align-items: center; justify-content: center; box-shadow: 0 3px 8px rgba(0,0,0,0.2);">
                         <svg width="32" height="32" viewBox="0 0 100 100">
@@ -5484,7 +5578,7 @@ def generar_mapa():
     <div id="modal-qr" class="modal-overlay" style="display: none;" onclick="if(event.target===this) toggleModalQR(false)">
         <div class="modal-card" style="max-width: 440px; text-align: center;">
             <div class="modal-header">
-                <button onclick="toggleModalQR(false)" style="position: absolute; top: 16px; right: 18px; background: rgba(255,255,255,0.2); border: none; color: white; font-size: 18px; font-weight: bold; width: 32px; height: 32px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.35)'" onmouseout="this.style.background='rgba(255,255,255,0.2)'" title="Cerrar (Esc)">✕</button>
+                <button onclick="toggleModalQR(false)" class="btn-modal-close-round" title="Cerrar ventana (Esc)" aria-label="Cerrar">✕</button>
                 <h2 style="margin: 0; font-size: 18px; font-weight: 700;" data-i18n="qr_title">📱 Escanea con tu Celular</h2>
                 <div style="font-size: 12px; opacity: 0.95; margin-top: 4px;" data-i18n="qr_sub">
                     Accede al Prototipo Interactivo en tiempo real
