@@ -27,6 +27,19 @@ def generar_mapa():
         with open(qr_repo_path, "rb") as f:
             qr_repo_b64 = base64.b64encode(f.read()).decode("utf-8")
 
+    # Cargar evidencia fotográfica de campo en Sala Capitular (base64 para popup autónomo)
+    pozo1_path = os.path.join(base_dir, "evidencia_pozo_capitular_1.jpg")
+    pozo1_b64 = ""
+    if os.path.exists(pozo1_path):
+        with open(pozo1_path, "rb") as f:
+            pozo1_b64 = base64.b64encode(f.read()).decode("utf-8")
+
+    pozo2_path = os.path.join(base_dir, "evidencia_pozo_capitular_2.jpg")
+    pozo2_b64 = ""
+    if os.path.exists(pozo2_path):
+        with open(pozo2_path, "rb") as f:
+            pozo2_b64 = base64.b64encode(f.read()).decode("utf-8")
+
     # Coordenadas centrales calibradas de Yachay Tech
     center_lat = 0.4048
     center_lon = -78.1725
@@ -920,7 +933,7 @@ def generar_mapa():
     }
     plugins.HeatMap(
         heat_data,
-        name="🔥 Mapa de Calor Epidemiológico (Simulium spp.)",
+        name="🔥 Mapa de Calor Epidemiológico (Culicoides / Lutzomyia / Simulium)",
         min_opacity=0.35,
         max_zoom=18,
         radius=28,
@@ -1116,7 +1129,7 @@ def generar_mapa():
         ([0.4041680, -78.1767040], "Tachos de Basura (San José / Restaurantes)", "trash", "gray",
          "🗑️ Tachos de Residuos Menores", "Punto de recolección de residuos orgánicos entre baterías sanitarias y comedores Analí y Pato Goloso."),
         ([0.4044473, -78.1750098], "Pozo Histórico en Desuso (Sala Capitular Este)", "exclamation-triangle", "red",
-         "⚠️ Foco Entomológico (Pozo en Mal Estado)", "Estructura de pozo en mal estado con retención de agua y humedad sombría; punto prioritario de inspección y control biológico de Culicoides spp."),
+         "⚠️ Foco Entomológico (Pozo Abierto con Cinta de Peligro)", "Ducto/pozo sin tapa perimetral acordonado con cinta de peligro junto a la parada de buses de Sala Capitular. La acumulación de hojarasca húmeda, lodo orgánico y sombra constituye un microhábitat crítico de cría de arenillas verdaderas (Culicoides spp. [Ceratopogonidae] y Lutzomyia spp. [Psychodidae]), sumado a Simulium spp. en el canal contiguo."),
         ([0.4058428, -78.1733964], "Antiguo Humedal / Posible Fuente Hídrica Subterránea", "tint", "darkblue",
          "💧 Sospecha Hídrica / Paleohumedal", "Sector de antiguo lago con presencia persistente de vegetación densa tras labores de poda/fumigación. Evidencia de posible nivel freático alto, paleohumedal o fuente hídrica subterránea; foco prioritario de inspección larvaria y refugio de adultos de Simulium spp."),
         ([0.4039612, -78.1689813], "Esclusa y Compuerta Hidráulica Este", "filter", "blue",
@@ -1156,19 +1169,38 @@ def generar_mapa():
     ]
 
     for coord, nombre, icono, color, categoria, descripcion_humana in hitos_humanos:
+        galeria_evidencia_html = ""
+        popup_width = 250
+        max_w = 270
+        if "Pozo Histórico en Desuso" in nombre and pozo1_b64 and pozo2_b64:
+            popup_width = 305
+            max_w = 325
+            galeria_evidencia_html = f"""
+                <div style="margin: 8px 0 6px 0; background: #fff5f5; border: 1px solid #feb2b2; border-radius: 6px; padding: 6px;">
+                    <div style="font-size: 10.5px; font-weight: 700; color: #c0392b; margin-bottom: 4px;">📸 Evidencia de Inspección In Situ (Sala Capitular):</div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 5px;">
+                        <img src="data:image/jpeg;base64,{pozo1_b64}" alt="Evidencia Pozo Sala Capitular 1" style="width: 100%; height: 110px; object-fit: cover; border-radius: 4px; border: 1px solid #e74c3c;">
+                        <img src="data:image/jpeg;base64,{pozo2_b64}" alt="Evidencia Pozo Sala Capitular 2" style="width: 100%; height: 110px; object-fit: cover; border-radius: 4px; border: 1px solid #e74c3c;">
+                    </div>
+                    <div style="font-size: 9.5px; color: #7f1d1d; margin-top: 4px; line-height: 1.25;">
+                        Pozo/canal abierto con cinta de peligro y sustrato fangoso propicio para <i>Culicoides</i> spp. (Ceratopogonidae) y <i>Lutzomyia</i> spp. (Psychodidae).
+                    </div>
+                </div>
+            """
         folium.Marker(
             location=coord,
             icon=folium.Icon(icon=icono, prefix='fa', color=color),
             popup=folium.Popup(f"""
-                <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 250px; line-height: 1.4;">
+                <div style="font-family: 'Segoe UI', Arial, sans-serif; width: {popup_width}px; line-height: 1.4;">
                     <div style="color: #1e3799; font-weight: bold; font-size: 14px; margin-bottom: 3px;">{nombre}</div>
                     <span style="background: #eef2f7; color: #34495e; padding: 2px 7px; border-radius: 4px; font-size: 11px; font-weight: 600;">{categoria}</span>
                     <p style="margin: 8px 0 6px 0; font-size: 12px; color: #2c3e50;">{descripcion_humana}</p>
+                    {galeria_evidencia_html}
                     <div style="font-size: 10px; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 4px;">
                         📍 GPS Google: {coord[0]:.6f}, {coord[1]:.6f}
                     </div>
                 </div>
-            """, max_width=270),
+            """, max_width=max_w),
             tooltip=f"{nombre} ({categoria})"
         ).add_to(fg_edificios)
 
@@ -4580,7 +4612,7 @@ def generar_mapa():
         <div id="leyenda-body" class="leyenda-content">
             <div class="leyenda-item">
                 <span class="leyenda-badge" style="background: linear-gradient(to right, #2ecc71, #f1c40f, #e67e22, #e74c3c, #8e44ad); border-radius: 2px;"></span>
-                <span data-i18n="leyenda_heat"><b>Mapa de Calor:</b> Presión hematófaga (Simulium spp.)</span>
+                <span data-i18n="leyenda_heat"><b>Mapa de Calor:</b> Dípteros (<i>Culicoides</i>, <i>Lutzomyia</i>, <i>Simulium</i>)</span>
             </div>
             <div class="leyenda-item">
                 <span class="leyenda-badge" style="background: rgba(46, 204, 113, 0.4); border: 1px solid #27ae60;"></span>
@@ -4681,7 +4713,7 @@ def generar_mapa():
             <div class="modal-body">
                 <p style="margin-top: 0; font-size: 13.5px;" data-i18n="modal_p1">
                     <b>¿Por qué existe este proyecto?</b><br>
-                    En el campus de Yachay Tech, las picaduras diurnas de arenillas (<i>Simulium</i> spp.) afectan la concentración en clases, el descanso en residencias y el uso de espacios culturales. Nuestra propuesta <b>no es llenar el campus de venenos sintéticos</b>, sino devolverle la armonía al territorio mediante ciencia aplicada, ecología y diseño paisajístico.
+                    En el campus de Yachay Tech, las picaduras del complejo de dípteros hematófagos —arenillas verdaderas (<i>Culicoides</i> spp. [Ceratopogonidae] y <i>Lutzomyia</i> spp. [Psychodidae]) y moscas negras lóticas (<i>Simulium</i> spp. [Simuliidae])— afectan la concentración en clases, el descanso en residencias y el uso de espacios culturales. Nuestra propuesta <b>no es llenar el campus de venenos sintéticos</b>, sino devolverle la armonía al territorio mediante ciencia aplicada, ecología y diseño paisajístico.
                 </p>
 
                 <div class="card-pilar">
@@ -5059,7 +5091,7 @@ def generar_mapa():
                 nav_theme: document.body.getAttribute('data-theme') === 'dark' ? "Claro" : "Oscuro",
                 
                 leyenda_title: "📋 Simbología Humanista",
-                leyenda_heat: "<b>Mapa de Calor:</b> Presión hematófaga (Simulium spp.)",
+                leyenda_heat: "<b>Mapa de Calor:</b> Dípteros (<i>Culicoides</i>, <i>Lutzomyia</i>, <i>Simulium</i>)",
                 leyenda_safe: "<b>Zona Segura:</b> Aromaterapia natural y aire limpio",
                 leyenda_fences: "<b>Cercas Vivas:</b> 3 estratos (Molle, Arrayán, H. Luisa)",
                 leyenda_canals: "<b>Canales Hídricos:</b> Biocontrol con Libélulas + Bti",
@@ -5091,7 +5123,7 @@ def generar_mapa():
 
                 modal_title: "🌱 Algoritmo Verde: Un Campus para Vivir y Estudiar en Paz",
                 modal_sub: "Propuesta Multidisciplinar · YOSW 2026 Ideatón (Reto 3 - Control de Arenillas)",
-                modal_p1: "<b>¿Por qué existe este proyecto?</b><br>En el campus de Yachay Tech, las picaduras diurnas de arenillas (<i>Simulium</i> spp.) afectan la concentración en clases, el descanso en residencias y el uso de espacios culturales. Nuestra propuesta <b>no es llenar el campus de venenos sintéticos</b>, sino devolverle la armonía al territorio mediante ciencia aplicada, ecología y diseño paisajístico.",
+                modal_p1: "<b>¿Por qué existe este proyecto?</b><br>En el campus de Yachay Tech, las picaduras del complejo de dípteros hematófagos —arenillas verdaderas (<i>Culicoides</i> spp. [Ceratopogonidae] y <i>Lutzomyia</i> spp. [Psychodidae]) y moscas negras lóticas (<i>Simulium</i> spp. [Simuliidae])— afectan la concentración en clases, el descanso en residencias y el uso de espacios culturales. Nuestra propuesta <b>no es llenar el campus de venenos sintéticos</b>, sino devolverle la armonía al territorio mediante ciencia aplicada, ecología y diseño paisajístico.",
                 modal_card1_title: "👥 Las Personas Primero (Salud y Confort)",
                 modal_card1_desc: "Protegemos a más de 800 residentes, docentes y trabajadores. Eliminamos el uso de pesticidas tóxicos protegiendo el aire que respiran los estudiantes en Las Multis, Los Bloques y aulas.",
                 modal_card2_title: "🌿 Naturaleza que Protege e Inclusión Hipoalergénica",
@@ -5120,7 +5152,7 @@ def generar_mapa():
                 nav_theme: document.body.getAttribute('data-theme') === 'dark' ? "Light" : "Dark",
                 
                 leyenda_title: "📋 Human-Centered Legend",
-                leyenda_heat: "<b>Heatmap:</b> Biting pressure (Simulium spp.)",
+                leyenda_heat: "<b>Heatmap:</b> Diptera (<i>Culicoides</i>, <i>Lutzomyia</i>, <i>Simulium</i>)",
                 leyenda_safe: "<b>Safe Zone:</b> Natural aromatherapy & clean air",
                 leyenda_fences: "<b>Living Fences:</b> 3 strata (Molle, Arrayan, Lemongrass)",
                 leyenda_canals: "<b>Waterways:</b> Biocontrol with Dragonflies + Bti",
@@ -5151,8 +5183,8 @@ def generar_mapa():
                 dash_hint: "💡 <i>Use top buttons to explore the campus</i>",
 
                 modal_title: "🌱 Algoritmo Verde: A Campus to Live and Study in Peace",
-                modal_sub: "Multidisciplinary Proposal · YOSW 2026 Ideathon (Challenge 3 - Blackfly Control)",
-                modal_p1: "<b>Why does this project exist?</b><br>At Yachay Tech campus, daytime blackfly bites (<i>Simulium</i> spp.) disrupt classroom concentration, residential sleep, and the use of cultural spaces. Our proposal <b>is not to drench the campus in synthetic poisons</b>, but to restore territorial harmony through applied science, ecology, and landscape design.",
+                modal_sub: "Multidisciplinary Proposal · YOSW 2026 Ideathon (Challenge 3 - Biting Midge & Blackfly Control)",
+                modal_p1: "<b>Why does this project exist?</b><br>At Yachay Tech campus, bites from the hematophagous dipteran complex—true biting midges/sandflies (<i>Culicoides</i> spp. [Ceratopogonidae] and <i>Lutzomyia</i> spp. [Psychodidae]) and lotic blackflies (<i>Simulium</i> spp. [Simuliidae])—disrupt classroom concentration, residential sleep, and cultural spaces. Our proposal <b>is not to drench the campus in synthetic poisons</b>, but to restore territorial harmony through applied science, ecology, and landscape design.",
                 modal_card1_title: "👥 People First (Health & Comfort)",
                 modal_card1_desc: "We protect over 800 residents, professors, and staff. We eliminate toxic pesticides, safeguarding the air students breathe in student housing and lecture halls.",
                 modal_card2_title: "🌿 Nature that Protects & Hypoallergenic Inclusion",

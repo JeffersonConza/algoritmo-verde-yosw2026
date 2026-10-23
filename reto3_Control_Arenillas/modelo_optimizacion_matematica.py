@@ -251,7 +251,7 @@ def generar_figura4_apa(df_telemetria):
     ax1.plot(semanas, medias, color='#1e3799', linewidth=2.8, marker='o', markersize=6, label='Media General (6 Estaciones GPS en Áreas Verdes)')
     ax1.fill_between(semanas, medias - ic95, medias + ic95, color='#4a69bd', alpha=0.25, label='Intervalo de Confianza (95%)')
     
-    ax1.set_title("A. Dinámica de Captura Poblacional de Simulium spp. (16 Semanas)", fontsize=11, fontweight='bold', pad=10)
+    ax1.set_title("A. Captura de Dípteros (Culicoides / Lutzomyia / Simulium, 16 Sem.)", fontsize=10.5, fontweight='bold', pad=10)
     ax1.set_xlabel("Semana de Monitoreo", fontsize=10, fontweight='bold')
     ax1.set_ylabel("Captura Media (Adultos / Trampa / Semana)", fontsize=10, fontweight='bold')
     ax1.set_xticks(semanas)

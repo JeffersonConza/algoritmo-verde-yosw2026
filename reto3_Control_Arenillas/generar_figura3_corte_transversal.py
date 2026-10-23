@@ -162,8 +162,8 @@ def generar_figura_3():
         ax.annotate("", xy=(insect_pos[0] - 0.35, insect_pos[1] + 0.22), xytext=insect_pos,
                     arrowprops=dict(arrowstyle="->", color='#d32f2f', lw=1.8, ls='--'))
     
-    ax.text(0.7, 2.5, "Bloqueo Físico y Repelencia\nde Arenillas (Simuliidae)", 
-            color='#b71c1c', fontsize=8.5, fontweight='bold', ha='center')
+    ax.text(0.7, 2.5, "Bloqueo Físico y Repelencia\n(Culicoides, Lutzomyia, Simulium)", 
+            color='#b71c1c', fontsize=8.3, fontweight='bold', ha='center')
 
     # -------------------------------------------------------------
     # 8. EJES Y COTAS ESTÁNDAR APA (SIN SOLAPAMIENTO)

@@ -360,25 +360,45 @@ def main():
                 run.font.size = Pt(9.5)
 
     # 11. ANEXO B: MATERIAL ADICIONAL
+    fig5_path = os.path.join(OUTPUT_DIR, 'Figura5_Evidencia_Campo_Sala_Capitular.png')
+    qr_web_path = os.path.join(OUTPUT_DIR, 'qr_algoritmo_verde.png')
+    qr_git_path = os.path.join(OUTPUT_DIR, 'qr_github_repo.png')
+
     for p in doc.paragraphs:
         if "[Material adicional, si aplica]" in p.text:
             p.text = (
                 "Material Adicional de Soporte y Evidencia de Campo:\n\n"
                 "1. Visor Geoespacial Interactivo Web (Folium / Leaflet):\n"
                 "Plataforma cartográfica interactiva con 286 entidades GIS (124 edificios catalogados, 12 áreas verdes/jardines, 80 canales, vías, caminerías y líneas divisorias, 69 puntos de hitos, paradas y parqueos, "
-                "12 segmentos de barreras vivas y 6 estaciones de bio-monitoreo GPS). Capa de polígonos patrimoniales no bloqueante para facilitar la navegación:\n"
-                "Enlace de acceso libre: https://jeffersonconza.github.io/algoritmo-verde-yosw2026/\n"
-                "Repositorio de código y datos abiertos: https://github.com/JeffersonConza/algoritmo-verde-yosw2026\n\n"
-                "2. Registro Fotográfico de Campo (Plaga de Arenillas en la Parada de Sala Capitular):\n"
-                "Inspección de campo efectuada el 22 de octubre de 2026 evidenciando la saturación de dípteros hematófagos en el punto de espera de transporte público "
-                "(registrada en los archivos fotográficos IMG-20261022-WA0009.jpg y IMG-20261022-WA0010.jpg anexados al expediente del proyecto).\n\n"
-                "3. Acceso Móvil mediante Código QR:\n"
-                "El jurado calificador y la comunidad universitaria pueden escanear el código QR del proyecto para explorar el visor satelital directamente desde cualquier dispositivo móvil."
+                "7 tramos viales de barreras vivas [980 m] y 6 estaciones de bio-monitoreo GPS). Incluye conmutadores deslizantes (Toggle Switches) de Idioma (ES ⇄ EN) y Modo (Claro ⇄ Oscuro) en dock independiente:\n"
+                "• Enlace de acceso libre: https://jeffersonconza.github.io/algoritmo-verde-yosw2026/\n"
+                "• Repositorio público de código y datos abiertos: https://github.com/JeffersonConza/algoritmo-verde-yosw2026\n\n"
+                "2. Registro Fotográfico de Campo en Sala Capitular (Foco de Culicoides spp., Lutzomyia spp. y Simulium spp.):\n"
+                "Inspección in situ efectuada el 22 de octubre de 2026 junto a la parada de buses de Sala Capitular (0.4044473° N, -78.1750098° W), evidenciando el ducto/pozo sin tapa perimetral acordonado con cinta de peligro y acumulación de hojarasca húmeda:\n"
             )
             p.paragraph_format.line_spacing = 1.15
             for run in p.runs:
                 run.font.name = 'Arial'
                 run.font.size = Pt(9.5)
+
+            if os.path.exists(fig5_path):
+                r_img5 = p.add_run("\n")
+                r_img5.add_picture(fig5_path, width=Inches(5.8))
+                r_img5_after = p.add_run("\n\n")
+
+            r_qr_txt = p.add_run(
+                "3. Acceso Móvil mediante Códigos QR con Logo Institucional (Nivel H - 30%):\n"
+                "El jurado calificador y la comunidad universitaria pueden escanear los códigos QR oficiales (izquierda: Prototipo Web Interactivo; derecha: Repositorio Público GitHub) para explorar el proyecto desde cualquier dispositivo móvil:\n"
+            )
+            r_qr_txt.font.name = 'Arial'
+            r_qr_txt.font.size = Pt(9.5)
+
+            if os.path.exists(qr_web_path) and os.path.exists(qr_git_path):
+                r_qrs = p.add_run("\n")
+                r_qrs.add_picture(qr_web_path, width=Inches(1.65))
+                r_qrs_space = p.add_run("      ")
+                r_qrs_repo = p.add_run()
+                r_qrs_repo.add_picture(qr_git_path, width=Inches(1.65))
 
     # GUARDAR DOCUMENTOS COMPLETADOS
     print(f"Guardando documento completado en: {OUTPUT_DOCX_PATH}")

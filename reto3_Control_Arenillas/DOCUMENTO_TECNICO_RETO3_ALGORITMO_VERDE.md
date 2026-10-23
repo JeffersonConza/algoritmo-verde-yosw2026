@@ -34,22 +34,22 @@
 ## 1. Resumen Ejecutivo
 
 ### Español
-En la Universidad Yachay Tech (valle de Urcuquí), la proliferación diurna de arenillas hematófagas (*Simulium* spp., familia Simuliidae) causa dermatitis y pérdida de habitabilidad en 124 edificaciones académicas, deportivas y residenciales (Los Bloques, Las Multis, Las T's, Las Pats, San José y Villas Docentes). Las fumigaciones sintéticas son inviables debido a que las larvas habitan en acequias y canales de riego que abastecen la agricultura comunal del cantón.
+En la Universidad Yachay Tech (valle de Urcuquí), la proliferación del complejo de dípteros hematófagos —arenillas verdaderas (*Culicoides* spp. [Ceratopogonidae] y *Lutzomyia* spp. [Psychodidae]) y moscas negras lóticas (*Simulium* spp. [Simuliidae])— causa dermatitis y pérdida de habitabilidad en 124 edificaciones académicas, deportivas y residenciales (Los Bloques, Las Multis, Las T's, Las Pats, San José y Villas Docentes). Las fumigaciones sintéticas son inviables debido a que las larvas habitan en acequias, canales de riego y sustratos húmedos que abastecen la agricultura comunal del cantón.
 
-Para resolver este desafío de forma sostenible, el equipo **Algoritmo Verde YT** formuló una estrategia de Manejo Integrado Ecosistémico en tres pilares: (1) **Cercas vivas multiestrato hipoalergénicas** (980 m lineales; 1,960 plántulas) estructuradas con *Schinus molle*, *Myrcianthes hallii*, *Cymbopogon citratus* y sustitución adaptativa de romero por cedrón (*Aloysia citrodora*) o huacatay (*Tagetes minuta*) en perímetros inmediatos a dormitorios para prevenir alergias respiratorias o cutáneas; (2) **Control biológico específico** mediante conservación de ninfas nativas de odonatos en el reservorio léntico (~2,006 m²) y micro-dosificación selectiva de *Bacillus thuringiensis israelensis* (Bti); y (3) **Optimización espacial multiobjetivo** (algoritmo SLSQP) calibrada por 286 entidades georreferenciadas y 6 estaciones de bio-monitoreo.
+Para resolver este desafío de forma sostenible, el equipo **Algoritmo Verde YT** formuló una estrategia de Manejo Integrado Ecosistémico en tres pilares: (1) **Cercas vivas multiestrato hipoalergénicas** (980 m lineales en 7 tramos viales; 1,960 plántulas) estructuradas con *Schinus molle*, *Myrcianthes hallii*, *Cymbopogon citratus* y sustitución adaptativa de romero por cedrón (*Aloysia citrodora*) o huacatay (*Tagetes minuta*) en perímetros inmediatos a dormitorios para prevenir alergias respiratorias o cutáneas; (2) **Control biológico específico** mediante conservación de ninfas nativas de odonatos en el reservorio léntico (~2,006 m²) y micro-dosificación selectiva de *Bacillus thuringiensis israelensis* (Bti); y (3) **Optimización espacial multiobjetivo** (algoritmo SLSQP) calibrada por 286 entidades georreferenciadas y 6 estaciones de bio-monitoreo.
 
 La solución proyecta una reducción del **82.8%** en la densidad de picaduras ($t = 25.85, p < 0.001$), blindando un área de amortiguamiento de 39,200 m² y protegiendo a más de 800 miembros universitarios. Con una inversión inicial de **$1,470.00 USD** ($1.50/m), se garantiza inocuidad agroquímica, resiliencia bioclimática, inclusión médica y total sostenibilidad comunitaria.
 
-**Palabras clave:** *Simuliidae*, Manejo Integrado Ecosistémico, Cercas vivas multiestrato, Optimización espacial SLSQP, Bio-monitoreo telemétrico, Yachay Tech.
+**Palabras clave:** *Culicoides*, *Lutzomyia*, *Simuliidae*, Manejo Integrado Ecosistémico, Cercas vivas multiestrato, Optimización espacial SLSQP, Yachay Tech.
 
 ### English (Executive Summary)
-At Yachay Tech University (Urcuquí Valley, Ecuador), the diurnal proliferation of hematophagous blackflies (*Simulium* spp., family Simuliidae) diminishes habitability and causes painful bites across 124 academic, sports, and residential buildings (Los Bloques, Las Multis, Las T's, Las Pats, San José, and Faculty Villas). Synthetic chemical fogging is ecologically unfeasible because blackfly larvae inhabit lotic irrigation canals supplying rural agriculture.
+At Yachay Tech University (Urcuquí Valley, Ecuador), the proliferation of the hematophagous dipteran complex—true biting midges/sandflies (*Culicoides* spp. [Ceratopogonidae] and *Lutzomyia* spp. [Psychodidae]) and lotic blackflies (*Simulium* spp. [Simuliidae])—diminishes habitability and causes painful bites across 124 academic, sports, and residential buildings (Los Bloques, Las Multis, Las T's, Las Pats, San José, and Faculty Villas). Synthetic chemical fogging is ecologically unfeasible because immature stages inhabit lotic irrigation canals and damp organic substrates supplying rural agriculture.
 
-To provide a sustainable, high-impact solution, the multidisciplinary team **Algoritmo Verde YT** designed an Integrated Ecosystemic Management model based on three pillars: (1) **Hypoallergenic 3-strata living fences** (980 linear meters; 1,960 seedlings) combining *Schinus molle*, *Myrcianthes hallii*, and *Cymbopogon citratus*, incorporating an adaptive replacement of rosemary with lemon verbena (*Aloysia citrodora*) or Andean marigold (*Tagetes minuta*) near bedroom windows to protect individuals with plant allergies or respiratory hyperreactivity; (2) **Targeted biological control** preserving native odonate predators in the lentic reservoir (~2,006 m²) alongside micro-dosed *Bacillus thuringiensis israelensis* (Bti); and (3) **Multi-objective spatial optimization** (SLSQP algorithm) calibrated across 286 georeferenced entities and verified by 6 telemetry bio-stations.
+To provide a sustainable, high-impact solution, the multidisciplinary team **Algoritmo Verde YT** designed an Integrated Ecosystemic Management model based on three pillars: (1) **Hypoallergenic 3-strata living fences** (980 linear meters across 7 road-respecting segments; 1,960 seedlings) combining *Schinus molle*, *Myrcianthes hallii*, and *Cymbopogon citratus*, incorporating an adaptive replacement of rosemary with lemon verbena (*Aloysia citrodora*) or Andean marigold (*Tagetes minuta*) near bedroom windows to protect individuals with plant allergies or respiratory hyperreactivity; (2) **Targeted biological control** preserving native odonate predators in the lentic reservoir (~2,006 m²) alongside micro-dosed *Bacillus thuringiensis israelensis* (Bti); and (3) **Multi-objective spatial optimization** (SLSQP algorithm) calibrated across 286 georeferenced entities and verified by 6 telemetry bio-stations.
 
 The solution projects an **82.8% reduction** in biting pressure ($t = 25.85, p < 0.001$), protecting a buffer zone of 39,200 m² and more than 800 community members. With an initial investment of **$1,470.00 USD** ($1.50/m), the project ensures zero chemical runoff into shared watersheds, medical inclusiveness, and long-term institutional sustainability.
 
-**Keywords:** *Simuliidae*, Ecosystem-based pest management, Multi-strata living fences, SLSQP spatial optimization, Telemetric bio-monitoring, Yachay Tech.
+**Keywords:** *Culicoides*, *Lutzomyia*, *Simuliidae*, Ecosystem-based pest management, Multi-strata living fences, SLSQP spatial optimization, Yachay Tech.
 
 ---
 
@@ -257,7 +257,7 @@ El costo unitario optimizado de la cerca multiestrato con riego gravitacional es
 ---
 
 ## 8. Conclusiones
-1. **Resolución Integral del Problema en 124 Edificaciones:** La propuesta «Algoritmo Verde YT» resuelve de raíz la proliferación de arenillas (*Simulium* spp.) en Yachay Tech blindando las 124 edificaciones académicas, deportivas y residenciales (Los Bloques, Las Multis, Las T's, Las Pats, San José y Villas Docentes) mediante una estrategia ecosistémica con un **82.8% de mitigación comprobada** sin plaguicidas sintéticos contaminantes.
+1. **Resolución Integral del Problema en 124 Edificaciones:** La propuesta «Algoritmo Verde YT» resuelve de raíz la proliferación del complejo de dípteros hematófagos —arenillas verdaderas (*Culicoides* spp., *Lutzomyia* spp.) y moscas negras (*Simulium* spp.)— en Yachay Tech blindando las 124 edificaciones académicas, deportivas y residenciales (Los Bloques, Las Multis, Las T's, Las Pats, San José y Villas Docentes) mediante una estrategia ecosistémica con un **82.8% de mitigación comprobada** sin plaguicidas sintéticos contaminantes.
 2. **Biocompatibilidad Médica e Inclusión Hipoalergénica:** El diseño pionero incorpora un protocolo de zonificación botánica que sustituye especies alcanforadas (como el romero) por cedrón (*Aloysia citrodora*) y huacatay (*Tagetes minuta*) a menos de 5 metros de dormitorios, protegiendo a estudiantes con asma, rinitis o alergias cutáneas.
 3. **Cero Impacto Hídrico y Santuario de Odonatos:** Protege las fuentes de agua de riego comunales de Urcuquí y transforma el reservorio este (~2,006 m²) en un vivero biológico de libélulas depredadoras sin verter químicos tóxicos.
 4. **Factibilidad y Retorno Económico:** Con un presupuesto ajustado de **$1,470.00 USD** ($1.50/m lineal) y riego por gravedad, la universidad puede iniciar la siembra de inmediato, amortizándose en menos de un trimestre frente a los costos de fumigación.
@@ -300,7 +300,14 @@ El costo unitario optimizado de la cerca multiestrato con riego gravitacional es
    `https://github.com/JeffersonConza/algoritmo-verde-yosw2026`
 3. **API REST de Telemetría y Optimización:**  
    Módulo `api_telemetria.py` desplegable con documentación interactiva Swagger (`/docs`).
-4. **Código QR para Escaneo en Celular:**  
-   Disponible en el archivo `reto3_Control_Arenillas/qr_algoritmo_verde.png`.
+4. **Códigos QR con Logo Institucional para Escaneo en Celular:**  
+   Disponibles en `reto3_Control_Arenillas/qr_algoritmo_verde.png` (Visor Web) y `reto3_Control_Arenillas/qr_github_repo.png` (Repositorio GitHub).
 5. **Catálogo Georreferenciado Oficial de Infraestructura y Red Hídrica (69 Hitos de Vida, Paradas y Parqueos, 137 Huellas Arquitectónicas/Áreas Verdes/Cuerpos de Agua [incluyendo Las T's, Las Multis, Las Pats, San José, Complejo Deportivo, Gimnasio al Aire Libre, Villas Docentes, Container, Complejos Inconclusos, Sala de Estar, Anexo Capitular y 12 Jardines/Parques], 80 Canales, Vías, Caminerías y Líneas Divisorias, 6 Estaciones GPS y GeoJSON SIG de 286 Entidades):**  
    Disponible en el archivo `reto3_Control_Arenillas/CATALOGO_PUNTOS_GEOREFERENCIADOS_CAMPUS.md`.
+6. **Evidencia Fotográfica de Inspección de Campo en Sala Capitular (Foco de *Culicoides* spp., *Lutzomyia* spp. y *Simulium* spp.):**  
+   Pozo/canal abierto sin tapa perimetral acordonado con cinta de peligro junto a la parada de buses de Sala Capitular ($0.4044473^\circ\text{ N}, -78.1750098^\circ\text{ W}$), documentado en el levantamiento de campo del 22 de octubre de 2026:
+
+```
+[FIGURA 5: EVIDENCIA FOTOGRÁFICA DE CAMPO: FOCO ENTOMOLÓGICO EN POZO Y CANAL ABIERTO JUNTO A PARADA DE BUSES DE SALA CAPITULAR]
+Archivo de imagen: reto3_Control_Arenillas/Figura5_Evidencia_Campo_Sala_Capitular.png (300 DPI, Formato APA)
+```
