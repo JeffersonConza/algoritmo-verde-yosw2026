@@ -3703,12 +3703,12 @@ def generar_mapa():
     ).add_to(fg_canales)
 
     # -------------------------------------------------------------
-    # 6. BIOCONTROL ACUÁTICO (LIBÉLULAS + Bti)
+    # 6. BIOCONTROL ACUÁTICO (LIBÉLULAS + Bti · CALIBRADO SOBRE CANALES REALES)
     # -------------------------------------------------------------
     puntos_biocontrol = [
-        ([0.4072, -78.1705], "Bio-Estación Hídrica Norte", "Sector Canal Senescyt"),
-        ([0.4048, -78.1720], "Bio-Estación Hídrica Central", "Sector Canal Laboratorios"),
-        ([0.4028, -78.1726], "Bio-Estación Hídrica Sur", "Sector Canal Canchas y Residencias")
+        ([0.4048221, -78.1751372], "Bio-Estación Hídrica Patrimonial (BIO-N)", "Canal Jardines Sala Capitular y San José (LINE-CANAL-CAPITULAR)"),
+        ([0.4040429, -78.1689091], "Bio-Estación Hídrica Este (BIO-C)", "Canal Conector hacia Esclusa y Reservorio Este (LINE-CANAL-ESCLUSA-ESTE)"),
+        ([0.4011095, -78.1759160], "Bio-Estación Hídrica Sur (BIO-S)", "Canal de Agua Suroeste · Las Multis y Concha Acústica (LINE-CANAL-SO)")
     ]
     for pt, titulo, detalle in puntos_biocontrol:
         folium.CircleMarker(
@@ -3792,7 +3792,7 @@ def generar_mapa():
 
     cerca3 = [
         [0.4072, -78.1718],
-        [0.4066, -78.1710],
+        [0.4066, -78.1708],
         [0.4060, -78.1702]
     ]
     folium.PolyLine(

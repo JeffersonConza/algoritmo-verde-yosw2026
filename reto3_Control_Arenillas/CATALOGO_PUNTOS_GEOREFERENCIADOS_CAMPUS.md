@@ -1495,11 +1495,11 @@ Red de muestreo pasivo y activo equipada con trampas de silueta oscura, cebadas 
 
 Puntos calibrados en las acequias y canales lotiformes para el fomento de ninfas nativas depredadoras de libélula (*Odonata*) y la micro-dosificación controlada del larvicida microbiano *Bacillus thuringiensis israelensis* (Bti).
 
-| Código | Denominación | Latitud (WGS84) | Longitud (WGS84) | Tramo del Canal | Estrategia Biológica Aplicada |
+| Código | Denominación | Latitud (WGS84) | Longitud (WGS84) | Tramo del Canal (Cauce Real) | Estrategia Biológica Aplicada |
 | :---: | :--- | :---: | :---: | :--- | :--- |
-| **BIO-N** | **Bio-Estación Hídrica Norte** | `0.407200` | `-78.170500` | Drenajes y Acequias Norte (Senescyt) | Aplicación primaria de Bti en cabecera de drenaje y talud norte. |
-| **BIO-C** | **Bio-Estación Hídrica Central**| `0.404800` | `-78.172000` | Remanso frente a Laboratorios | Siembra y refugio rocoso para ninfas de libélula (*Odonata*). |
-| **BIO-S** | **Bio-Estación Hídrica Sur** | `0.402800` | `-78.172600` | Desvío hacia Canchas y Residencias | Refuerzo de Bti antes de derivar hacia los campos de Urcuquí. |
+| **BIO-N** | **Bio-Estación Hídrica Patrimonial** | `0.4048221` | `-78.1751372` | Canal Jardines Sala Capitular (`LINE-CANAL-CAPITULAR`) | Aplicación selectiva de Bti en acequia contigua a Parada de Bus Sala Capitular y San José. |
+| **BIO-C** | **Bio-Estación Hídrica Este** | `0.4040429` | `-78.1689091` | Canal Conector y Esclusa Este (`LINE-CANAL-ESCLUSA-ESTE`) | Dosificación de Bti y fomento de ninfas de libélula (*Odonata*) junto al Reservorio Este. |
+| **BIO-S** | **Bio-Estación Hídrica Sur** | `0.4011095` | `-78.1759160` | Canal de Agua Suroeste (`LINE-CANAL-SO`) | Control larvario biológico con Bti en el flanco sur de Las Multis, Las T's y Concha Acústica. |
 
 ---
 
@@ -1532,7 +1532,7 @@ Las cercas vivas multiestrato fueron calibradas mediante optimización espacial 
 * **Radio de Buffer Fitoquímico:** 40 metros (~12,800 m² de cobertura).
 * **Coordenadas de Vértices:**
   1. *Extremo Norte (Atrás de Bloques F-G / Vida Comunitaria):* `0.407200° N`, `-78.171800° W`
-  2. *Vértice Intermedio (Paralelo al eje perimetral Senescyt):* `0.406600° N`, `-78.171000° W`
+  2. *Vértice Intermedio (Corredor Verde entre Los Bloques e ITT):* `0.406600° N`, `-78.170800° W`
   3. *Extremo Sur (Frente a Fachada Aulas Senescyt):* `0.406000° N`, `-78.170200° W`
 
 ---

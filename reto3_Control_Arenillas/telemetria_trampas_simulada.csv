@@ -1,97 +1,97 @@
 semana,estacion_id,estacion_nombre,lat,lon,capturas_semanales,linea_base,reduccion_pct,fase
-1,T-01,Residencias Patrimoniales / Canchas,0.4024,-78.173,91,88,0.0,Pre-Intervención (Línea Base)
-2,T-01,Residencias Patrimoniales / Canchas,0.4024,-78.173,87,88,1.1,Pre-Intervención (Línea Base)
-3,T-01,Residencias Patrimoniales / Canchas,0.4024,-78.173,92,88,0.0,Pre-Intervención (Línea Base)
-4,T-01,Residencias Patrimoniales / Canchas,0.4024,-78.173,98,88,0.0,Pre-Intervención (Línea Base)
-5,T-01,Residencias Patrimoniales / Canchas,0.4024,-78.173,74,88,15.9,Instalación & Tratamiento Bti
-6,T-01,Residencias Patrimoniales / Canchas,0.4024,-78.173,60,88,31.8,Instalación & Tratamiento Bti
-7,T-01,Residencias Patrimoniales / Canchas,0.4024,-78.173,56,88,36.4,Instalación & Tratamiento Bti
-8,T-01,Residencias Patrimoniales / Canchas,0.4024,-78.173,39,88,55.7,Instalación & Tratamiento Bti
-9,T-01,Residencias Patrimoniales / Canchas,0.4024,-78.173,31,88,64.8,Consolidación Ecosistémica
-10,T-01,Residencias Patrimoniales / Canchas,0.4024,-78.173,28,88,68.2,Consolidación Ecosistémica
-11,T-01,Residencias Patrimoniales / Canchas,0.4024,-78.173,22,88,75.0,Consolidación Ecosistémica
-12,T-01,Residencias Patrimoniales / Canchas,0.4024,-78.173,20,88,77.3,Consolidación Ecosistémica
-13,T-01,Residencias Patrimoniales / Canchas,0.4024,-78.173,19,88,78.4,Consolidación Ecosistémica
-14,T-01,Residencias Patrimoniales / Canchas,0.4024,-78.173,14,88,84.1,Consolidación Ecosistémica
-15,T-01,Residencias Patrimoniales / Canchas,0.4024,-78.173,13,88,85.2,Consolidación Ecosistémica
-16,T-01,Residencias Patrimoniales / Canchas,0.4024,-78.173,15,88,83.0,Consolidación Ecosistémica
-1,T-02,Las Multis / Concha Acústica,0.4028,-78.175,85,92,7.6,Pre-Intervención (Línea Base)
-2,T-02,Las Multis / Concha Acústica,0.4028,-78.175,94,92,0.0,Pre-Intervención (Línea Base)
-3,T-02,Las Multis / Concha Acústica,0.4028,-78.175,86,92,6.5,Pre-Intervención (Línea Base)
-4,T-02,Las Multis / Concha Acústica,0.4028,-78.175,83,92,9.8,Pre-Intervención (Línea Base)
-5,T-02,Las Multis / Concha Acústica,0.4028,-78.175,86,92,6.5,Instalación & Tratamiento Bti
-6,T-02,Las Multis / Concha Acústica,0.4028,-78.175,63,92,31.5,Instalación & Tratamiento Bti
-7,T-02,Las Multis / Concha Acústica,0.4028,-78.175,51,92,44.6,Instalación & Tratamiento Bti
-8,T-02,Las Multis / Concha Acústica,0.4028,-78.175,30,92,67.4,Instalación & Tratamiento Bti
-9,T-02,Las Multis / Concha Acústica,0.4028,-78.175,32,92,65.2,Consolidación Ecosistémica
-10,T-02,Las Multis / Concha Acústica,0.4028,-78.175,28,92,69.6,Consolidación Ecosistémica
-11,T-02,Las Multis / Concha Acústica,0.4028,-78.175,22,92,76.1,Consolidación Ecosistémica
-12,T-02,Las Multis / Concha Acústica,0.4028,-78.175,22,92,76.1,Consolidación Ecosistémica
-13,T-02,Las Multis / Concha Acústica,0.4028,-78.175,18,92,80.4,Consolidación Ecosistémica
-14,T-02,Las Multis / Concha Acústica,0.4028,-78.175,18,92,80.4,Consolidación Ecosistémica
-15,T-02,Las Multis / Concha Acústica,0.4028,-78.175,16,92,82.6,Consolidación Ecosistémica
-16,T-02,Las Multis / Concha Acústica,0.4028,-78.175,20,92,78.3,Consolidación Ecosistémica
-1,T-03,Biblioteca Patrimonial / Chimenea,0.4052,-78.1742,78,78,0.0,Pre-Intervención (Línea Base)
-2,T-03,Biblioteca Patrimonial / Chimenea,0.4052,-78.1742,71,78,9.0,Pre-Intervención (Línea Base)
-3,T-03,Biblioteca Patrimonial / Chimenea,0.4052,-78.1742,83,78,0.0,Pre-Intervención (Línea Base)
-4,T-03,Biblioteca Patrimonial / Chimenea,0.4052,-78.1742,70,78,10.3,Pre-Intervención (Línea Base)
-5,T-03,Biblioteca Patrimonial / Chimenea,0.4052,-78.1742,67,78,14.1,Instalación & Tratamiento Bti
-6,T-03,Biblioteca Patrimonial / Chimenea,0.4052,-78.1742,45,78,42.3,Instalación & Tratamiento Bti
-7,T-03,Biblioteca Patrimonial / Chimenea,0.4052,-78.1742,36,78,53.8,Instalación & Tratamiento Bti
-8,T-03,Biblioteca Patrimonial / Chimenea,0.4052,-78.1742,32,78,59.0,Instalación & Tratamiento Bti
-9,T-03,Biblioteca Patrimonial / Chimenea,0.4052,-78.1742,30,78,61.5,Consolidación Ecosistémica
-10,T-03,Biblioteca Patrimonial / Chimenea,0.4052,-78.1742,24,78,69.2,Consolidación Ecosistémica
-11,T-03,Biblioteca Patrimonial / Chimenea,0.4052,-78.1742,20,78,74.4,Consolidación Ecosistémica
-12,T-03,Biblioteca Patrimonial / Chimenea,0.4052,-78.1742,18,78,76.9,Consolidación Ecosistémica
-13,T-03,Biblioteca Patrimonial / Chimenea,0.4052,-78.1742,14,78,82.1,Consolidación Ecosistémica
-14,T-03,Biblioteca Patrimonial / Chimenea,0.4052,-78.1742,14,78,82.1,Consolidación Ecosistémica
-15,T-03,Biblioteca Patrimonial / Chimenea,0.4052,-78.1742,14,78,82.1,Consolidación Ecosistémica
-16,T-03,Biblioteca Patrimonial / Chimenea,0.4052,-78.1742,16,78,79.5,Consolidación Ecosistémica
-1,T-04,Laboratorios de Carrera,0.4047,-78.1724,84,82,0.0,Pre-Intervención (Línea Base)
-2,T-04,Laboratorios de Carrera,0.4047,-78.1724,71,82,13.4,Pre-Intervención (Línea Base)
-3,T-04,Laboratorios de Carrera,0.4047,-78.1724,84,82,0.0,Pre-Intervención (Línea Base)
-4,T-04,Laboratorios de Carrera,0.4047,-78.1724,79,82,3.7,Pre-Intervención (Línea Base)
-5,T-04,Laboratorios de Carrera,0.4047,-78.1724,66,82,19.5,Instalación & Tratamiento Bti
-6,T-04,Laboratorios de Carrera,0.4047,-78.1724,60,82,26.8,Instalación & Tratamiento Bti
-7,T-04,Laboratorios de Carrera,0.4047,-78.1724,50,82,39.0,Instalación & Tratamiento Bti
-8,T-04,Laboratorios de Carrera,0.4047,-78.1724,37,82,54.9,Instalación & Tratamiento Bti
-9,T-04,Laboratorios de Carrera,0.4047,-78.1724,28,82,65.9,Consolidación Ecosistémica
-10,T-04,Laboratorios de Carrera,0.4047,-78.1724,24,82,70.7,Consolidación Ecosistémica
-11,T-04,Laboratorios de Carrera,0.4047,-78.1724,22,82,73.2,Consolidación Ecosistémica
-12,T-04,Laboratorios de Carrera,0.4047,-78.1724,21,82,74.4,Consolidación Ecosistémica
-13,T-04,Laboratorios de Carrera,0.4047,-78.1724,17,82,79.3,Consolidación Ecosistémica
-14,T-04,Laboratorios de Carrera,0.4047,-78.1724,16,82,80.5,Consolidación Ecosistémica
-15,T-04,Laboratorios de Carrera,0.4047,-78.1724,13,82,84.1,Consolidación Ecosistémica
-16,T-04,Laboratorios de Carrera,0.4047,-78.1724,13,82,84.1,Consolidación Ecosistémica
-1,T-05,Edificio Senescyt (Fachada Sur),0.4067,-78.1702,91,86,0.0,Pre-Intervención (Línea Base)
-2,T-05,Edificio Senescyt (Fachada Sur),0.4067,-78.1702,95,86,0.0,Pre-Intervención (Línea Base)
-3,T-05,Edificio Senescyt (Fachada Sur),0.4067,-78.1702,86,86,0.0,Pre-Intervención (Línea Base)
-4,T-05,Edificio Senescyt (Fachada Sur),0.4067,-78.1702,93,86,0.0,Pre-Intervención (Línea Base)
-5,T-05,Edificio Senescyt (Fachada Sur),0.4067,-78.1702,75,86,12.8,Instalación & Tratamiento Bti
-6,T-05,Edificio Senescyt (Fachada Sur),0.4067,-78.1702,57,86,33.7,Instalación & Tratamiento Bti
-7,T-05,Edificio Senescyt (Fachada Sur),0.4067,-78.1702,49,86,43.0,Instalación & Tratamiento Bti
-8,T-05,Edificio Senescyt (Fachada Sur),0.4067,-78.1702,42,86,51.2,Instalación & Tratamiento Bti
-9,T-05,Edificio Senescyt (Fachada Sur),0.4067,-78.1702,31,86,64.0,Consolidación Ecosistémica
-10,T-05,Edificio Senescyt (Fachada Sur),0.4067,-78.1702,29,86,66.3,Consolidación Ecosistémica
-11,T-05,Edificio Senescyt (Fachada Sur),0.4067,-78.1702,17,86,80.2,Consolidación Ecosistémica
-12,T-05,Edificio Senescyt (Fachada Sur),0.4067,-78.1702,22,86,74.4,Consolidación Ecosistémica
-13,T-05,Edificio Senescyt (Fachada Sur),0.4067,-78.1702,19,86,77.9,Consolidación Ecosistémica
-14,T-05,Edificio Senescyt (Fachada Sur),0.4067,-78.1702,17,86,80.2,Consolidación Ecosistémica
-15,T-05,Edificio Senescyt (Fachada Sur),0.4067,-78.1702,16,86,81.4,Consolidación Ecosistémica
-16,T-05,Edificio Senescyt (Fachada Sur),0.4067,-78.1702,12,86,86.0,Consolidación Ecosistémica
-1,T-06,Residencias Los Bloques / Vida Com.,0.407,-78.1714,89,90,1.1,Pre-Intervención (Línea Base)
-2,T-06,Residencias Los Bloques / Vida Com.,0.407,-78.1714,92,90,0.0,Pre-Intervención (Línea Base)
-3,T-06,Residencias Los Bloques / Vida Com.,0.407,-78.1714,100,90,0.0,Pre-Intervención (Línea Base)
-4,T-06,Residencias Los Bloques / Vida Com.,0.407,-78.1714,87,90,3.3,Pre-Intervención (Línea Base)
-5,T-06,Residencias Los Bloques / Vida Com.,0.407,-78.1714,72,90,20.0,Instalación & Tratamiento Bti
-6,T-06,Residencias Los Bloques / Vida Com.,0.407,-78.1714,60,90,33.3,Instalación & Tratamiento Bti
-7,T-06,Residencias Los Bloques / Vida Com.,0.407,-78.1714,54,90,40.0,Instalación & Tratamiento Bti
-8,T-06,Residencias Los Bloques / Vida Com.,0.407,-78.1714,38,90,57.8,Instalación & Tratamiento Bti
-9,T-06,Residencias Los Bloques / Vida Com.,0.407,-78.1714,32,90,64.4,Consolidación Ecosistémica
-10,T-06,Residencias Los Bloques / Vida Com.,0.407,-78.1714,28,90,68.9,Consolidación Ecosistémica
-11,T-06,Residencias Los Bloques / Vida Com.,0.407,-78.1714,24,90,73.3,Consolidación Ecosistémica
-12,T-06,Residencias Los Bloques / Vida Com.,0.407,-78.1714,23,90,74.4,Consolidación Ecosistémica
-13,T-06,Residencias Los Bloques / Vida Com.,0.407,-78.1714,18,90,80.0,Consolidación Ecosistémica
-14,T-06,Residencias Los Bloques / Vida Com.,0.407,-78.1714,17,90,81.1,Consolidación Ecosistémica
-15,T-06,Residencias Los Bloques / Vida Com.,0.407,-78.1714,16,90,82.2,Consolidación Ecosistémica
-16,T-06,Residencias Los Bloques / Vida Com.,0.407,-78.1714,13,90,85.6,Consolidación Ecosistémica
+1,T-01,Parque Deportivo / Las Pats,0.40212,-78.17292,91,88,0.0,Pre-Intervención (Línea Base)
+2,T-01,Parque Deportivo / Las Pats,0.40212,-78.17292,87,88,1.1,Pre-Intervención (Línea Base)
+3,T-01,Parque Deportivo / Las Pats,0.40212,-78.17292,92,88,0.0,Pre-Intervención (Línea Base)
+4,T-01,Parque Deportivo / Las Pats,0.40212,-78.17292,98,88,0.0,Pre-Intervención (Línea Base)
+5,T-01,Parque Deportivo / Las Pats,0.40212,-78.17292,74,88,15.9,Instalación & Tratamiento Bti
+6,T-01,Parque Deportivo / Las Pats,0.40212,-78.17292,60,88,31.8,Instalación & Tratamiento Bti
+7,T-01,Parque Deportivo / Las Pats,0.40212,-78.17292,56,88,36.4,Instalación & Tratamiento Bti
+8,T-01,Parque Deportivo / Las Pats,0.40212,-78.17292,39,88,55.7,Instalación & Tratamiento Bti
+9,T-01,Parque Deportivo / Las Pats,0.40212,-78.17292,31,88,64.8,Consolidación Ecosistémica
+10,T-01,Parque Deportivo / Las Pats,0.40212,-78.17292,28,88,68.2,Consolidación Ecosistémica
+11,T-01,Parque Deportivo / Las Pats,0.40212,-78.17292,22,88,75.0,Consolidación Ecosistémica
+12,T-01,Parque Deportivo / Las Pats,0.40212,-78.17292,20,88,77.3,Consolidación Ecosistémica
+13,T-01,Parque Deportivo / Las Pats,0.40212,-78.17292,19,88,78.4,Consolidación Ecosistémica
+14,T-01,Parque Deportivo / Las Pats,0.40212,-78.17292,14,88,84.1,Consolidación Ecosistémica
+15,T-01,Parque Deportivo / Las Pats,0.40212,-78.17292,13,88,85.2,Consolidación Ecosistémica
+16,T-01,Parque Deportivo / Las Pats,0.40212,-78.17292,15,88,83.0,Consolidación Ecosistémica
+1,T-02,Jardín Central Las Multis,0.40228,-78.17515,85,92,7.6,Pre-Intervención (Línea Base)
+2,T-02,Jardín Central Las Multis,0.40228,-78.17515,94,92,0.0,Pre-Intervención (Línea Base)
+3,T-02,Jardín Central Las Multis,0.40228,-78.17515,86,92,6.5,Pre-Intervención (Línea Base)
+4,T-02,Jardín Central Las Multis,0.40228,-78.17515,83,92,9.8,Pre-Intervención (Línea Base)
+5,T-02,Jardín Central Las Multis,0.40228,-78.17515,86,92,6.5,Instalación & Tratamiento Bti
+6,T-02,Jardín Central Las Multis,0.40228,-78.17515,63,92,31.5,Instalación & Tratamiento Bti
+7,T-02,Jardín Central Las Multis,0.40228,-78.17515,51,92,44.6,Instalación & Tratamiento Bti
+8,T-02,Jardín Central Las Multis,0.40228,-78.17515,30,92,67.4,Instalación & Tratamiento Bti
+9,T-02,Jardín Central Las Multis,0.40228,-78.17515,32,92,65.2,Consolidación Ecosistémica
+10,T-02,Jardín Central Las Multis,0.40228,-78.17515,28,92,69.6,Consolidación Ecosistémica
+11,T-02,Jardín Central Las Multis,0.40228,-78.17515,22,92,76.1,Consolidación Ecosistémica
+12,T-02,Jardín Central Las Multis,0.40228,-78.17515,22,92,76.1,Consolidación Ecosistémica
+13,T-02,Jardín Central Las Multis,0.40228,-78.17515,18,92,80.4,Consolidación Ecosistémica
+14,T-02,Jardín Central Las Multis,0.40228,-78.17515,18,92,80.4,Consolidación Ecosistémica
+15,T-02,Jardín Central Las Multis,0.40228,-78.17515,16,92,82.6,Consolidación Ecosistémica
+16,T-02,Jardín Central Las Multis,0.40228,-78.17515,20,92,78.3,Consolidación Ecosistémica
+1,T-03,Jardines Plaza del Estudiante / Biblioteca,0.40462,-78.17425,78,78,0.0,Pre-Intervención (Línea Base)
+2,T-03,Jardines Plaza del Estudiante / Biblioteca,0.40462,-78.17425,71,78,9.0,Pre-Intervención (Línea Base)
+3,T-03,Jardines Plaza del Estudiante / Biblioteca,0.40462,-78.17425,83,78,0.0,Pre-Intervención (Línea Base)
+4,T-03,Jardines Plaza del Estudiante / Biblioteca,0.40462,-78.17425,70,78,10.3,Pre-Intervención (Línea Base)
+5,T-03,Jardines Plaza del Estudiante / Biblioteca,0.40462,-78.17425,67,78,14.1,Instalación & Tratamiento Bti
+6,T-03,Jardines Plaza del Estudiante / Biblioteca,0.40462,-78.17425,45,78,42.3,Instalación & Tratamiento Bti
+7,T-03,Jardines Plaza del Estudiante / Biblioteca,0.40462,-78.17425,36,78,53.8,Instalación & Tratamiento Bti
+8,T-03,Jardines Plaza del Estudiante / Biblioteca,0.40462,-78.17425,32,78,59.0,Instalación & Tratamiento Bti
+9,T-03,Jardines Plaza del Estudiante / Biblioteca,0.40462,-78.17425,30,78,61.5,Consolidación Ecosistémica
+10,T-03,Jardines Plaza del Estudiante / Biblioteca,0.40462,-78.17425,24,78,69.2,Consolidación Ecosistémica
+11,T-03,Jardines Plaza del Estudiante / Biblioteca,0.40462,-78.17425,20,78,74.4,Consolidación Ecosistémica
+12,T-03,Jardines Plaza del Estudiante / Biblioteca,0.40462,-78.17425,18,78,76.9,Consolidación Ecosistémica
+13,T-03,Jardines Plaza del Estudiante / Biblioteca,0.40462,-78.17425,14,78,82.1,Consolidación Ecosistémica
+14,T-03,Jardines Plaza del Estudiante / Biblioteca,0.40462,-78.17425,14,78,82.1,Consolidación Ecosistémica
+15,T-03,Jardines Plaza del Estudiante / Biblioteca,0.40462,-78.17425,14,78,82.1,Consolidación Ecosistémica
+16,T-03,Jardines Plaza del Estudiante / Biblioteca,0.40462,-78.17425,16,78,79.5,Consolidación Ecosistémica
+1,T-04,Acceso Laboratorios de Carrera,0.40402,-78.17278,84,82,0.0,Pre-Intervención (Línea Base)
+2,T-04,Acceso Laboratorios de Carrera,0.40402,-78.17278,71,82,13.4,Pre-Intervención (Línea Base)
+3,T-04,Acceso Laboratorios de Carrera,0.40402,-78.17278,84,82,0.0,Pre-Intervención (Línea Base)
+4,T-04,Acceso Laboratorios de Carrera,0.40402,-78.17278,79,82,3.7,Pre-Intervención (Línea Base)
+5,T-04,Acceso Laboratorios de Carrera,0.40402,-78.17278,66,82,19.5,Instalación & Tratamiento Bti
+6,T-04,Acceso Laboratorios de Carrera,0.40402,-78.17278,60,82,26.8,Instalación & Tratamiento Bti
+7,T-04,Acceso Laboratorios de Carrera,0.40402,-78.17278,50,82,39.0,Instalación & Tratamiento Bti
+8,T-04,Acceso Laboratorios de Carrera,0.40402,-78.17278,37,82,54.9,Instalación & Tratamiento Bti
+9,T-04,Acceso Laboratorios de Carrera,0.40402,-78.17278,28,82,65.9,Consolidación Ecosistémica
+10,T-04,Acceso Laboratorios de Carrera,0.40402,-78.17278,24,82,70.7,Consolidación Ecosistémica
+11,T-04,Acceso Laboratorios de Carrera,0.40402,-78.17278,22,82,73.2,Consolidación Ecosistémica
+12,T-04,Acceso Laboratorios de Carrera,0.40402,-78.17278,21,82,74.4,Consolidación Ecosistémica
+13,T-04,Acceso Laboratorios de Carrera,0.40402,-78.17278,17,82,79.3,Consolidación Ecosistémica
+14,T-04,Acceso Laboratorios de Carrera,0.40402,-78.17278,16,82,80.5,Consolidación Ecosistémica
+15,T-04,Acceso Laboratorios de Carrera,0.40402,-78.17278,13,82,84.1,Consolidación Ecosistémica
+16,T-04,Acceso Laboratorios de Carrera,0.40402,-78.17278,13,82,84.1,Consolidación Ecosistémica
+1,T-05,Parterres Orientales Senescyt,0.40648,-78.16982,91,86,0.0,Pre-Intervención (Línea Base)
+2,T-05,Parterres Orientales Senescyt,0.40648,-78.16982,95,86,0.0,Pre-Intervención (Línea Base)
+3,T-05,Parterres Orientales Senescyt,0.40648,-78.16982,86,86,0.0,Pre-Intervención (Línea Base)
+4,T-05,Parterres Orientales Senescyt,0.40648,-78.16982,93,86,0.0,Pre-Intervención (Línea Base)
+5,T-05,Parterres Orientales Senescyt,0.40648,-78.16982,75,86,12.8,Instalación & Tratamiento Bti
+6,T-05,Parterres Orientales Senescyt,0.40648,-78.16982,57,86,33.7,Instalación & Tratamiento Bti
+7,T-05,Parterres Orientales Senescyt,0.40648,-78.16982,49,86,43.0,Instalación & Tratamiento Bti
+8,T-05,Parterres Orientales Senescyt,0.40648,-78.16982,42,86,51.2,Instalación & Tratamiento Bti
+9,T-05,Parterres Orientales Senescyt,0.40648,-78.16982,31,86,64.0,Consolidación Ecosistémica
+10,T-05,Parterres Orientales Senescyt,0.40648,-78.16982,29,86,66.3,Consolidación Ecosistémica
+11,T-05,Parterres Orientales Senescyt,0.40648,-78.16982,17,86,80.2,Consolidación Ecosistémica
+12,T-05,Parterres Orientales Senescyt,0.40648,-78.16982,22,86,74.4,Consolidación Ecosistémica
+13,T-05,Parterres Orientales Senescyt,0.40648,-78.16982,19,86,77.9,Consolidación Ecosistémica
+14,T-05,Parterres Orientales Senescyt,0.40648,-78.16982,17,86,80.2,Consolidación Ecosistémica
+15,T-05,Parterres Orientales Senescyt,0.40648,-78.16982,16,86,81.4,Consolidación Ecosistémica
+16,T-05,Parterres Orientales Senescyt,0.40648,-78.16982,12,86,86.0,Consolidación Ecosistémica
+1,T-06,Jardín Central Los Bloques / Centro Médico,0.40742,-78.17076,89,90,1.1,Pre-Intervención (Línea Base)
+2,T-06,Jardín Central Los Bloques / Centro Médico,0.40742,-78.17076,92,90,0.0,Pre-Intervención (Línea Base)
+3,T-06,Jardín Central Los Bloques / Centro Médico,0.40742,-78.17076,100,90,0.0,Pre-Intervención (Línea Base)
+4,T-06,Jardín Central Los Bloques / Centro Médico,0.40742,-78.17076,87,90,3.3,Pre-Intervención (Línea Base)
+5,T-06,Jardín Central Los Bloques / Centro Médico,0.40742,-78.17076,72,90,20.0,Instalación & Tratamiento Bti
+6,T-06,Jardín Central Los Bloques / Centro Médico,0.40742,-78.17076,60,90,33.3,Instalación & Tratamiento Bti
+7,T-06,Jardín Central Los Bloques / Centro Médico,0.40742,-78.17076,54,90,40.0,Instalación & Tratamiento Bti
+8,T-06,Jardín Central Los Bloques / Centro Médico,0.40742,-78.17076,38,90,57.8,Instalación & Tratamiento Bti
+9,T-06,Jardín Central Los Bloques / Centro Médico,0.40742,-78.17076,32,90,64.4,Consolidación Ecosistémica
+10,T-06,Jardín Central Los Bloques / Centro Médico,0.40742,-78.17076,28,90,68.9,Consolidación Ecosistémica
+11,T-06,Jardín Central Los Bloques / Centro Médico,0.40742,-78.17076,24,90,73.3,Consolidación Ecosistémica
+12,T-06,Jardín Central Los Bloques / Centro Médico,0.40742,-78.17076,23,90,74.4,Consolidación Ecosistémica
+13,T-06,Jardín Central Los Bloques / Centro Médico,0.40742,-78.17076,18,90,80.0,Consolidación Ecosistémica
+14,T-06,Jardín Central Los Bloques / Centro Médico,0.40742,-78.17076,17,90,81.1,Consolidación Ecosistémica
+15,T-06,Jardín Central Los Bloques / Centro Médico,0.40742,-78.17076,16,90,82.2,Consolidación Ecosistémica
+16,T-06,Jardín Central Los Bloques / Centro Médico,0.40742,-78.17076,13,90,85.6,Consolidación Ecosistémica
