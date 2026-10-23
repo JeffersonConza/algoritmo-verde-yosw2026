@@ -115,6 +115,7 @@ def generar_mapa():
     # 2. FEATURE GROUPS (CAPAS TEMÁTICAS HUMANIZADAS)
     # -------------------------------------------------------------
     fg_distritos = folium.FeatureGroup(name="🏛️ Zonas Principales: Envolventes Orgánicas Suaves", show=True)
+    fg_vias = folium.FeatureGroup(name="🛣️ Red Vial y Corredores del Campus (6 Ejes)", show=True)
     fg_zonas = folium.FeatureGroup(name="🔥 Diagnóstico: Mapa de Calor de Picaduras y Riesgo (Simulium spp.)", show=False)
     fg_perimetros = folium.FeatureGroup(name="📐 Perímetros de Conjunto Histórico y Delimitaciones", show=False)
     fg_edificios = folium.FeatureGroup(name="🏛️ Vida en el Campus (Residencias, Aulas, Cultura)", show=True)
@@ -285,6 +286,139 @@ def generar_mapa():
                 </div>
             """, max_width=280)
         ).add_to(fg_distritos)
+
+    # -------------------------------------------------------------
+    # 2.2 RED VIAL Y CORREDORES DEL CAMPUS YACHAY TECH (6 EJES GEOREFERENCIADOS)
+    # -------------------------------------------------------------
+    red_vial_campus = [
+        {
+            "id": "LINE-VIA-01",
+            "nombre": "Vía a Yachay (Eje Troncal Norte-Sur · Ingenio – Las Pats)",
+            "tipo": "Vía Troncal Principal",
+            "longitud_m": 671.8,
+            "color": "#4b6584",
+            "weight": 4.5,
+            "dash": "10, 5",
+            "coords": [
+                [0.4084238, -78.1741618], [0.4082660, -78.1741927], [0.4078673, -78.1742708],
+                [0.4072715, -78.1741692], [0.4067812, -78.1742957], [0.4066571, -78.1743311],
+                [0.4064648, -78.1743985], [0.4061327, -78.1744380], [0.4059525, -78.1744278],
+                [0.4057413, -78.1743894], [0.4056429, -78.1743332], [0.4053810, -78.1741835],
+                [0.4052319, -78.1740983], [0.4051363, -78.1740437], [0.4050620, -78.1740209],
+                [0.4048954, -78.1739697], [0.4048767, -78.1739640], [0.4047470, -78.1739753],
+                [0.4046351, -78.1739851], [0.4045346, -78.1739883], [0.4043184, -78.1739953],
+                [0.4043009, -78.1739960], [0.4041101, -78.1739874], [0.4040370, -78.1739948],
+                [0.4038327, -78.1740062], [0.4037358, -78.1740257], [0.4036051, -78.1740157],
+                [0.4035334, -78.1740064], [0.4032900, -78.1739194], [0.4031836, -78.1738850],
+                [0.4030601, -78.1738240], [0.4028205, -78.1737057], [0.4026043, -78.1736018]
+            ],
+            "desc": "Arteria principal norte-sur que bordea el Casco Histórico e Ingenio Azucarero (Chimenea, Torre, Biblioteca 24/7, Aulas B y Plaza Mikuna) hasta el Arco de Las Pats (BUS-03). Alberga los parqueos en vía P-08, P-09, P-10 y P-11."
+        },
+        {
+            "id": "LINE-VIA-02",
+            "nombre": "Vía a Yachay / Proyecto Yachay (Eje Transversal San José – Sala Capitular – Las Pats)",
+            "tipo": "Vía Colectora Patrimonial",
+            "longitud_m": 466.6,
+            "color": "#4b6584",
+            "weight": 4.5,
+            "dash": "10, 5",
+            "coords": [
+                [0.4045471, -78.1770499], [0.4045341, -78.1770157], [0.4043661, -78.1764704],
+                [0.4040172, -78.1753376], [0.4039373, -78.1751792], [0.4036132, -78.1747903],
+                [0.4031498, -78.1746821], [0.4029399, -78.1744892], [0.4026958, -78.1740567],
+                [0.4026350, -78.1738397], [0.4026043, -78.1736018]
+            ],
+            "desc": "Conecta el extremo oeste de San José (Edificio 41, Comedores Analí y Pato Goloso, Parqueaderos P-01, P-02, P-06), pasa frente a la Sala Capitular y su Parada de Buses (BUS-02) y empalma en el Arco de Las Pats."
+        },
+        {
+            "id": "LINE-VIA-03",
+            "nombre": "Vía Hacienda San José y Acceso Las Multis / Concha Acústica",
+            "tipo": "Vía Asfaltada y Acceso Residencial Sur",
+            "longitud_m": 663.4,
+            "color": "#596275",
+            "weight": 4.0,
+            "dash": "8, 4",
+            "coords": [
+                [0.4039373, -78.1751792], [0.4032949, -78.1753398], [0.4031886, -78.1753670],
+                [0.4028186, -78.1754532], [0.4023183, -78.1756609], [0.4010013, -78.1769687],
+                [0.4008154, -78.1764895], [0.4008802, -78.1762625], [0.4011971, -78.1753544],
+                [0.4013180, -78.1752380], [0.4014418, -78.1752129], [0.4017145, -78.1752174],
+                [0.4018678, -78.1752188]
+            ],
+            "desc": "Desciende desde la intersección de Sala Capitular bordeando las Villas de Docentes y Las Multis hasta la Concha Acústica, e ingresa por el ramal sur paralelo al Canal Suroeste hacia el Parqueadero P-03 y la Plaza de las Multis."
+        },
+        {
+            "id": "LINE-VIA-04",
+            "nombre": "Circuito Vial del Polo Académico Norte (Anillo Senescyt y Los Bloques)",
+            "tipo": "Anillo Vial Adoquinado y Perimetral Norte",
+            "longitud_m": 897.0,
+            "color": "#3867d6",
+            "weight": 4.2,
+            "dash": "8, 4",
+            "coords": [
+                [0.4056851, -78.1712618], [0.4064579, -78.1714921], [0.4072668, -78.1716068],
+                [0.4080157, -78.1716587], [0.4082536, -78.1711806], [0.4074898, -78.1702973],
+                [0.4072556, -78.1700264], [0.4067406, -78.1693880], [0.4059124, -78.1700414],
+                [0.4064241, -78.1706111], [0.4072556, -78.1700264]
+            ],
+            "desc": "Circuito vial que envuelve los Bloques A-I, el Centro Médico, el Container y el Edificio Senescyt. Articula la Parada de Buses Senescyt (BUS-01), los parqueos en vía P-12 a P-15 y los estacionamientos P-16, P-17 (Sur) y P-18, P-19 (Este)."
+        },
+        {
+            "id": "LINE-VIA-05",
+            "nombre": "Corredor Diagonal Inter-Zonal (Las Pats – Canchas – Invernaderos – ITT – Senescyt)",
+            "tipo": "Corredor Interno de Articulación Universitaria",
+            "longitud_m": 660.7,
+            "color": "#576574",
+            "weight": 3.8,
+            "dash": "6, 6",
+            "coords": [
+                [0.4026043, -78.1736018], [0.4025974, -78.1735614], [0.4027072, -78.1734875],
+                [0.4036114, -78.1737604], [0.4041898, -78.1724761], [0.4043629, -78.1725395],
+                [0.4051128, -78.1726439], [0.4053502, -78.1719272], [0.4056851, -78.1712618],
+                [0.4058770, -78.1710562], [0.4060647, -78.1709009], [0.4061614, -78.1708229],
+                [0.4064241, -78.1706111]
+            ],
+            "desc": "Eje interno diagonal que enlaza el Arco de Las Pats, el Complejo Deportivo (P-04), los Laboratorios de Carrera, los Invernaderos Experimentales, el Complejo ITT y el acceso sur del Edificio Senescyt."
+        },
+        {
+            "id": "LINE-VIA-06",
+            "nombre": "Vía a Hoja Blanca y Conector Reservorio Este – Senescyt",
+            "tipo": "Vía Periférica Sur-Este y Eje Agroforestal",
+            "longitud_m": 855.0,
+            "color": "#778ca3",
+            "weight": 3.8,
+            "dash": "6, 6",
+            "coords": [
+                [0.4025974, -78.1735614], [0.4026156, -78.1734607], [0.4026695, -78.1732853],
+                [0.4027138, -78.1731525], [0.4027684, -78.1729520], [0.4028752, -78.1725062],
+                [0.4030545, -78.1720939], [0.4031387, -78.1717623], [0.4031076, -78.1712216],
+                [0.4030312, -78.1708227], [0.4030078, -78.1704475], [0.4031045, -78.1700939],
+                [0.4038071, -78.1693926], [0.4039682, -78.1690738], [0.4040779, -78.1689639],
+                [0.4047174, -78.1685938], [0.4059124, -78.1700414]
+            ],
+            "desc": "Borde sur del Complejo Deportivo y Gimnasio al Aire Libre hacia Barriada, ascendiendo por la Esclusa Hidráulica Este (I-23), la Laguna/Reservorio Agroforestal, Comedor doña Perci y Sacha Home hasta conectar con Senescyt Sur."
+        }
+    ]
+
+    for via in red_vial_campus:
+        folium.PolyLine(
+            locations=via["coords"],
+            color=via["color"],
+            weight=via["weight"],
+            opacity=0.82,
+            dash_array=via["dash"],
+            tooltip=f"🛣️ {via['nombre']} (~{via['longitud_m']} m)",
+            popup=folium.Popup(f"""
+                <div style="font-family: 'Segoe UI', Arial, sans-serif; width: 265px; line-height: 1.4;">
+                    <div style="color: #2c3e50; font-weight: bold; font-size: 13.5px; margin-bottom: 3px;">🛣️ {via['nombre']}</div>
+                    <span style="background: #eef2f7; color: #4b6584; padding: 2px 7px; border-radius: 4px; font-size: 10.5px; font-weight: 700;">{via['id']} · {via['tipo']}</span>
+                    <p style="margin: 8px 0 6px 0; font-size: 11.5px; color: #34495e;">{via['desc']}</p>
+                    <div style="font-size: 10.5px; color: #7f8c8d; border-top: 1px solid #ecf0f1; padding-top: 4px;">
+                        Longitud trazada: <b>{via['longitud_m']} m</b> | Vértices: <b>{len(via['coords'])} pts</b>
+                    </div>
+                </div>
+            """, max_width=285)
+        ).add_to(fg_vias)
 
     # -------------------------------------------------------------
     # COORDENADAS TOPOGRÁFICAS DE LOS CANALES LÓTICOS (FOCOS LARVARIOS)
@@ -3387,6 +3521,7 @@ def generar_mapa():
 
     # Agregar capas al mapa
     fg_distritos.add_to(m)
+    fg_vias.add_to(m)
     fg_zonas.add_to(m)
     fg_canales.add_to(m)
     fg_biocontrol.add_to(m)

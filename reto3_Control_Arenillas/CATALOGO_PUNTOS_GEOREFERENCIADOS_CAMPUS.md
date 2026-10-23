@@ -1699,29 +1699,33 @@ El sistema hidrológico del campus combina **canales de agua corriente rápida (
 ### 7.1. Delimitación de Distritos Universitarios mediante Envolventes Orgánicas Suaves (Algoritmo de Chaikin)
 Para superar las limitaciones visuales de los polígonos con bordes rectos artificiales, las cuatro zonas clave del campus se delimitan mediante **envolventes orgánicas continuas** generadas a partir de la distribución real de las edificaciones y suavizadas con el **algoritmo de corte de esquinas de Chaikin** (3 iteraciones). Esta técnica produce contornos curvos aerodinámicos, biofílicos y no invasivos con opacidad translúcida del 12%:
 
-* **Distrito 1: Polo Académico Norte y Residencias Los Bloques (`DIST-NORTE`):**
-  - *Superficie delimitada:* ~47,212 m² | *Centroide Operativo:* `[0.4070045, -78.1705335]`
+* **Distrito 1: `[ZONA-1-NORTE]` Polo Académico Norte, Residencias Los Bloques y Salud (`DIST-NORTE`):**
+  - *Superficie delimitada:* ~77,134.1 m² (~7.71 ha) | *Centroide Operativo:* `[0.4068383, -78.1706075]`
+  - *Tags:* `#AulasMagnas #Senescyt #LosBloques #CentroMedico #Biblioteca247 #ITT #Container`
   - *Identidad visual:* Borde azul zafiro institucional (`#1e3799`), relleno translúcido (`#3498db`).
   - *Población y Aforo:* ~650 estudiantes, docentes y personal administrativo.
-  - *Infraestructura contenida:* Edificio Senescyt (Aulas Magnas, Decanatos, Rectorado), Centro Médico Tipo A, Residencias Los Bloques (A-I), Biblioteca Senescyt, Minimarket Krispan, Comedor Sol del Ecuador y parqueaderos este/sur.
+  - *Infraestructura contenida:* Edificio Senescyt (Aulas Magnas, Decanatos, Rectorado, Biblioteca 24/7, Minimarket Krispan, Comedor Sol del Ecuador), Centro Médico Tipo A, Residencias Los Bloques (A-I), Complejo ITT (Bloques 1 y 2, Plaza ITT), Container en desuso, Parada de Buses Senescyt (`BUS-01`) y estacionamientos `P-12` a `P-19`.
 
-* **Distrito 2: Casco Histórico, Patrimonio Cultural y San José (`DIST-CENTRAL`):**
-  - *Superficie delimitada:* ~75,665 m² | *Centroide Operativo:* `[0.4045911, -78.1744364]`
-  - *Identidad visual:* Borde púrpura patrimonial (`#6c5ce7`), relleno lavanda translúcido (`#a29bfe`).
-  - *Población y Aforo:* ~400 a 600 usuarios diarios (estudiantes, investigadores y visitantes).
-  - *Infraestructura contenida:* Biblioteca Patrimonial, Torre del Ingenio, Aulas B (Norte y Sur), Aulas I, Invernaderos Experimentales 1–4, Laboratorios de Carrera, Claustro Sala Capitular, Sala de Defensas, Edificios 20, 37–41, Restaurantes "El Colibrí", "Pato Goloso", "Comedor Analí" y Plaza Mikuna.
+* **Distrito 2: `[ZONA-2-CENTRAL]` Casco Histórico, Patrimonio Cultural e Ingenio Azucarero (`DIST-CENTRAL`):**
+  - *Superficie delimitada:* ~107,418.2 m² (~10.74 ha) | *Centroide Operativo:* `[0.4047761, -78.1747386]`
+  - *Tags:* `#PatrimonioSanJose #IngenioAzucarero #BibliotecaPatrimonial #PlazaMikuna #SalaCapitular #Paleohumedal`
+  - *Identidad visual:* Borde ámbar patrimonial (`#d35400`), relleno dorado translúcido (`#f39c12`).
+  - *Población y Aforo:* ~350 a 600 usuarios diarios (estudiantes, investigadores y visitantes).
+  - *Infraestructura contenida:* Biblioteca Patrimonial 24/7, Torre y Chimenea del Ingenio, Aulas B (Norte y Sur), Aulas I, Claustro Sala Capitular, Anexo Capitular, Sala de Defensas, Sala de Estar, Baños, Edificios 20, 37–41, Restaurantes "El Colibrí", "Pato Goloso", "Comedor Analí", Plaza Mikuna, Molino de Agua, Pozo en Desuso, Paleohumedal (`I-22`), Parada de Buses Sala Capitular (`BUS-02`) y estacionamientos `P-01`, `P-02`, `P-06` a `P-11`.
 
-* **Distrito 3: Gran Distrito Residencial Sur, Deportes y Cultura (`DIST-SUR`):**
-  - *Superficie delimitada:* ~138,326 m² | *Centroide Operativo:* `[0.4019818, -78.1744314]`
-  - *Identidad visual:* Borde verde esmeralda biofílico (`#009432`), relleno verde primavera translúcido (`#2ecc71`).
+* **Distrito 3: `[ZONA-3-SUR]` Gran Distrito Residencial, Complejo Deportivo y Concha Acústica (`DIST-SUR`):**
+  - *Superficie delimitada:* ~273,735.7 m² (~27.37 ha) | *Centroide Operativo:* `[0.4022536, -78.1735068]`
+  - *Tags:* `#LasMultis #LasPats #LasTs #ComplejoDeportivo #ConchaAcustica #VillasDocentes #Gimnasio`
+  - *Identidad visual:* Borde verde esmeralda biofílico (`#27ae60`), relleno verde primavera translúcido (`#2ecc71`).
   - *Población y Aforo:* ~550 estudiantes, deportistas y docentes residentes continuos.
-  - *Infraestructura contenida:* 13 Bloques Multifamiliares ("Las Multis"), Plaza de las Multis, 9 Bloques Patrimoniales ("Las Pats"), 13 Casas Patrimoniales en T ("Las T's"), Complejo Deportivo Sur (7 canchas reglamentarias: volley playa, 3 basketball, 3 fútbol sintético), 9 Residencias de Docentes (villas 1-8 + edificio comunitario) y Concha Acústica.
+  - *Infraestructura contenida:* 13 Bloques Multifamiliares ("Las Multis"), Plaza de las Multis, 9 Bloques Patrimoniales ("Las Pats"), 13 Casas Patrimoniales en T ("Las T's"), Complejo Deportivo Sur (7 canchas reglamentarias + Gimnasio al Aire Libre), 9 estructuras en Residencias de Docentes (villas 1-8 + edificio comunitario), Laboratorios de Carrera, Concha Acústica, Parada de Buses Arco Las Pats (`BUS-03`) y estacionamientos `P-03`, `P-04`, `P-05`.
 
-* **Distrito 4: Eje Hídrico Agroforestal y Periferia Este (`DIST-ESTE`):**
-  - *Superficie delimitada:* ~13,478 m² | *Centroide Operativo:* `[0.4041715, -78.1685566]`
+* **Distrito 4: `[ZONA-4-ESTE]` Eje Hídrico Agroforestal y Periferia Oriental (`DIST-ESTE`):**
+  - *Superficie delimitada:* ~66,417.2 m² (~6.64 ha) | *Centroide Operativo:* `[0.4044449, -78.1689849]`
+  - *Tags:* `#ReservorioLéntico #CanalEste #EsclusaEste #SantuarioOdonatos #SachaHome #ComedorPerci`
   - *Identidad visual:* Borde azul cian hídrico (`#00a8ff`), relleno celeste translúcido (`#74b9ff`).
   - *Población y Aforo:* ~120 comensales y residentes periurbanos diarios.
-  - *Infraestructura contenida:* Laguna Artificial / Reservorio Agroforestal (~2,006 m²), Canal de Conducción Este (34 vértices), Comedor doña Perci y Habitaciones Privadas Sacha Home (Sin Convenio).
+  - *Infraestructura contenida:* Laguna Artificial / Reservorio Agroforestal (~2,006 m²), Canal de Conducción Este (34 vértices), Esclusa Hidráulica Este (`I-23`) y Canal Conector (15 vértices), Comedor doña Perci, Habitaciones Privadas Sacha Home (Sin Convenio), Barriada y Edificación sin techo.
 
 ### 7.2. Modelado Epidemiológico: Mapa de Calor Continuo y Epicentros de Picaduras (Simulium spp.)
 
@@ -1747,9 +1751,22 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
   - Población expuesta: ~120 usuarios (Comedor doña Perci, habitaciones privadas externas Sacha Home).
   - Foco hídrico: Canal Este (34 vértices) y Laguna Artificial (~2,006 m²).
 
+### 7.3. Red Vial y Corredores de Movilidad del Campus Yachay Tech (6 Ejes Georreferenciados)
+
+La articulación vial entre las 4 zonas principales suma **4,214.5 m lineales (~4.21 km)** distribuidos en **6 corredores y circuitos viales**:
+
+| ID | Nombre Oficial del Corredor Vial | Tipo / Superficie | Vértices | Longitud (m) | Hitos, Paradas y Estacionamientos Conectados |
+| :---: | :--- | :--- | :---: | :---: | :--- |
+| **LINE-VIA-01** | **Vía a Yachay (Eje Troncal Norte-Sur · Ingenio – Las Pats)** | Vía Troncal Principal | 33 | `671.8 m` | Chimenea, Torre del Ingenio, Biblioteca 24/7, Aulas B, Plaza Mikuna, Parada `BUS-03`, Parqueos en vía `P-08` a `P-11` y Basura `B-03`. |
+| **LINE-VIA-02** | **Vía a Yachay / Proyecto Yachay (Transversal San José – Sala Capitular – Las Pats)** | Vía Colectora Patrimonial | 11 | `466.6 m` | Edificio 41, Comedores Analí y Pato Goloso, Sala Capitular, Parada `BUS-02`, Parqueos `P-01`, `P-02`, `P-06` y empalme Arco Las Pats (`BUS-03`). |
+| **LINE-VIA-03** | **Vía Hacienda San José y Acceso Las Multis / Concha Acústica** | Vía Asfaltada y Ramal Sur | 13 | `663.4 m` | Intersección Sala Capitular, Villas Docentes, Contenedor `B-07`, Concha Acústica, Canal Suroeste, Parqueadero Las Multis (`P-03`) y Plaza Multis. |
+| **LINE-VIA-04** | **Circuito Vial del Polo Académico Norte (Anillo Senescyt y Los Bloques)** | Anillo Adoquinado y Perimetral | 11 | `897.0 m` | Edificio Senescyt, Bloques A–I, Centro Médico, Container, Parada `BUS-01`, Basura `B-01`, Parqueos en vía `P-12` a `P-15` y Parqueos `P-16` a `P-19`. |
+| **LINE-VIA-05** | **Corredor Diagonal Inter-Zonal (Las Pats – Canchas – Invernaderos – ITT – Senescyt)** | Corredor Interno Universitario | 13 | `660.7 m` | Arco de Las Pats, Complejo Deportivo (`P-04`), Laboratorios de Carrera, Invernaderos 1–4, Complejo ITT (`I-19`) y Senescyt Sur. |
+| **LINE-VIA-06** | **Vía a Hoja Blanca y Conector Reservorio Este – Senescyt** | Vía Periférica y Agroforestal | 17 | `855.0 m` | Acceso Las Pats (`P-05`, `B-02`), Gimnasio al Aire Libre, Barriada, Esclusa Este (`I-23`), Reservorio (`H-01`), Comedor doña Perci y Sacha Home. |
+
 ---
 
-## 8. Snippet GeoJSON Oficial Completo (258 Entidades: Hitos, Huellas, Canales, Reservorio y Líneas Divisorias)
+## 8. Snippet GeoJSON Oficial Completo (264 Entidades: Hitos, Huellas, Red Vial, Canales, Reservorio y Líneas Divisorias)
 
 ```json
 {
@@ -9992,6 +10009,488 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
         "coordinates": [
           -78.1695897,
           0.4065601
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LINE-VIA-01",
+        "nombre": "Vía a Yachay (Eje Troncal Norte-Sur · Ingenio – Las Pats)",
+        "zona": "Eje Troncal Central-Sur",
+        "categoria": "Red Vial / Vía Troncal Principal",
+        "longitud_m": 671.8
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.1741618,
+            0.4084238
+          ],
+          [
+            -78.1741927,
+            0.408266
+          ],
+          [
+            -78.1742708,
+            0.4078673
+          ],
+          [
+            -78.1741692,
+            0.4072715
+          ],
+          [
+            -78.1742957,
+            0.4067812
+          ],
+          [
+            -78.1743311,
+            0.4066571
+          ],
+          [
+            -78.1743985,
+            0.4064648
+          ],
+          [
+            -78.174438,
+            0.4061327
+          ],
+          [
+            -78.1744278,
+            0.4059525
+          ],
+          [
+            -78.1743894,
+            0.4057413
+          ],
+          [
+            -78.1743332,
+            0.4056429
+          ],
+          [
+            -78.1741835,
+            0.405381
+          ],
+          [
+            -78.1740983,
+            0.4052319
+          ],
+          [
+            -78.1740437,
+            0.4051363
+          ],
+          [
+            -78.1740209,
+            0.405062
+          ],
+          [
+            -78.1739697,
+            0.4048954
+          ],
+          [
+            -78.173964,
+            0.4048767
+          ],
+          [
+            -78.1739753,
+            0.404747
+          ],
+          [
+            -78.1739851,
+            0.4046351
+          ],
+          [
+            -78.1739883,
+            0.4045346
+          ],
+          [
+            -78.1739953,
+            0.4043184
+          ],
+          [
+            -78.173996,
+            0.4043009
+          ],
+          [
+            -78.1739874,
+            0.4041101
+          ],
+          [
+            -78.1739948,
+            0.404037
+          ],
+          [
+            -78.1740062,
+            0.4038327
+          ],
+          [
+            -78.1740257,
+            0.4037358
+          ],
+          [
+            -78.1740157,
+            0.4036051
+          ],
+          [
+            -78.1740064,
+            0.4035334
+          ],
+          [
+            -78.1739194,
+            0.40329
+          ],
+          [
+            -78.173885,
+            0.4031836
+          ],
+          [
+            -78.173824,
+            0.4030601
+          ],
+          [
+            -78.1737057,
+            0.4028205
+          ],
+          [
+            -78.1736018,
+            0.4026043
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LINE-VIA-02",
+        "nombre": "Vía a Yachay / Proyecto Yachay (Transversal San José – Sala Capitular – Las Pats)",
+        "zona": "Sector San José / Casco Histórico",
+        "categoria": "Red Vial / Vía Colectora Patrimonial",
+        "longitud_m": 466.6
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.1770499,
+            0.4045471
+          ],
+          [
+            -78.1770157,
+            0.4045341
+          ],
+          [
+            -78.1764704,
+            0.4043661
+          ],
+          [
+            -78.1753376,
+            0.4040172
+          ],
+          [
+            -78.1751792,
+            0.4039373
+          ],
+          [
+            -78.1747903,
+            0.4036132
+          ],
+          [
+            -78.1746821,
+            0.4031498
+          ],
+          [
+            -78.1744892,
+            0.4029399
+          ],
+          [
+            -78.1740567,
+            0.4026958
+          ],
+          [
+            -78.1738397,
+            0.402635
+          ],
+          [
+            -78.1736018,
+            0.4026043
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LINE-VIA-03",
+        "nombre": "Vía Hacienda San José y Acceso Las Multis / Concha Acústica",
+        "zona": "Sector Residencial Sur",
+        "categoria": "Red Vial / Vía Asfaltada y Acceso Residencial",
+        "longitud_m": 663.4
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.1751792,
+            0.4039373
+          ],
+          [
+            -78.1753398,
+            0.4032949
+          ],
+          [
+            -78.175367,
+            0.4031886
+          ],
+          [
+            -78.1754532,
+            0.4028186
+          ],
+          [
+            -78.1756609,
+            0.4023183
+          ],
+          [
+            -78.1769687,
+            0.4010013
+          ],
+          [
+            -78.1764895,
+            0.4008154
+          ],
+          [
+            -78.1762625,
+            0.4008802
+          ],
+          [
+            -78.1753544,
+            0.4011971
+          ],
+          [
+            -78.175238,
+            0.401318
+          ],
+          [
+            -78.1752129,
+            0.4014418
+          ],
+          [
+            -78.1752174,
+            0.4017145
+          ],
+          [
+            -78.1752188,
+            0.4018678
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LINE-VIA-04",
+        "nombre": "Circuito Vial del Polo Académico Norte (Anillo Senescyt y Los Bloques)",
+        "zona": "Sector Senescyt / Los Bloques",
+        "categoria": "Red Vial / Anillo Perimetral Norte",
+        "longitud_m": 897.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.1712618,
+            0.4056851
+          ],
+          [
+            -78.1714921,
+            0.4064579
+          ],
+          [
+            -78.1716068,
+            0.4072668
+          ],
+          [
+            -78.1716587,
+            0.4080157
+          ],
+          [
+            -78.1711806,
+            0.4082536
+          ],
+          [
+            -78.1702973,
+            0.4074898
+          ],
+          [
+            -78.1700264,
+            0.4072556
+          ],
+          [
+            -78.169388,
+            0.4067406
+          ],
+          [
+            -78.1700414,
+            0.4059124
+          ],
+          [
+            -78.1706111,
+            0.4064241
+          ],
+          [
+            -78.1700264,
+            0.4072556
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LINE-VIA-05",
+        "nombre": "Corredor Diagonal Inter-Zonal (Las Pats – Canchas – Invernaderos – ITT – Senescyt)",
+        "zona": "Conector Inter-Zonal",
+        "categoria": "Red Vial / Corredor Interno Universitario",
+        "longitud_m": 660.7
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.1736018,
+            0.4026043
+          ],
+          [
+            -78.1735614,
+            0.4025974
+          ],
+          [
+            -78.1734875,
+            0.4027072
+          ],
+          [
+            -78.1737604,
+            0.4036114
+          ],
+          [
+            -78.1724761,
+            0.4041898
+          ],
+          [
+            -78.1725395,
+            0.4043629
+          ],
+          [
+            -78.1726439,
+            0.4051128
+          ],
+          [
+            -78.1719272,
+            0.4053502
+          ],
+          [
+            -78.1712618,
+            0.4056851
+          ],
+          [
+            -78.1710562,
+            0.405877
+          ],
+          [
+            -78.1709009,
+            0.4060647
+          ],
+          [
+            -78.1708229,
+            0.4061614
+          ],
+          [
+            -78.1706111,
+            0.4064241
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "LINE-VIA-06",
+        "nombre": "Vía a Hoja Blanca y Conector Reservorio Este – Senescyt",
+        "zona": "Sector Reservorio Este / Periferia",
+        "categoria": "Red Vial / Vía Periférica y Agroforestal",
+        "longitud_m": 855.0
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -78.1735614,
+            0.4025974
+          ],
+          [
+            -78.1734607,
+            0.4026156
+          ],
+          [
+            -78.1732853,
+            0.4026695
+          ],
+          [
+            -78.1731525,
+            0.4027138
+          ],
+          [
+            -78.172952,
+            0.4027684
+          ],
+          [
+            -78.1725062,
+            0.4028752
+          ],
+          [
+            -78.1720939,
+            0.4030545
+          ],
+          [
+            -78.1717623,
+            0.4031387
+          ],
+          [
+            -78.1712216,
+            0.4031076
+          ],
+          [
+            -78.1708227,
+            0.4030312
+          ],
+          [
+            -78.1704475,
+            0.4030078
+          ],
+          [
+            -78.1700939,
+            0.4031045
+          ],
+          [
+            -78.1693926,
+            0.4038071
+          ],
+          [
+            -78.1690738,
+            0.4039682
+          ],
+          [
+            -78.1689639,
+            0.4040779
+          ],
+          [
+            -78.1685938,
+            0.4047174
+          ],
+          [
+            -78.1700414,
+            0.4059124
+          ]
         ]
       }
     }

@@ -104,7 +104,7 @@ def main():
                 "(1) Barrera viva vegetal tri-estrato de 980 metros lineales (Schinus molle en estrato arbóreo, Myrcianthes hallii en estrato arbustivo, "
                 "y Cymbopogon citratus junto con Aloysia citrodora en estrato herbáceo hipoalergénico); (2) Manejo biológico de bajo impacto mediante "
                 "conservación de ninfas autóctonas de odonatos en el reservorio léntico y micro-dosificación selectiva de Bacillus thuringiensis israelensis (Bti); "
-                "y (3) Optimización matemática espacial (SLSQP) alimentada por un catálogo SIG de 258 entidades georreferenciadas. "
+                "y (3) Optimización matemática espacial (SLSQP) alimentada por un catálogo SIG de 264 entidades georreferenciadas. "
                 "El modelo alcanza una reducción estimada del 82.8% en la tasa de picaduras con una inversión inicial sumamente eficiente de "
                 "$1,470.00 USD ($1.50/m lineal), integrando riego por goteo por gravedad, compostaje propio y monitoreo telemétrico accesible vía web.\n\n"
                 "Palabras clave: Simuliidae, Culicoides, Manejo Integrado Ecosistémico, Cercas vivas tri-estrato, Optimización SLSQP, Yachay Tech.\n\n"
@@ -126,7 +126,7 @@ def main():
                 "engineered an Ecosystem-based Integrated Pest Management framework centered on three components: (1) A 980-meter hypoallergenic "
                 "3-strata botanical barrier (Schinus molle, Myrcianthes hallii, and Cymbopogon citratus paired with Aloysia citrodora); "
                 "(2) Biological conservation leveraging native odonate nymphs in the campus reservoir alongside targeted Bacillus thuringiensis israelensis (Bti) "
-                "micro-applications; and (3) Non-linear mathematical spatial optimization (SLSQP algorithm) informed by a 258-entity GIS database. "
+                "micro-applications; and (3) Non-linear mathematical spatial optimization (SLSQP algorithm) informed by a 264-entity GIS database. "
                 "The system achieves an estimated 82.8% biting reduction at an extraordinarily cost-effective budget of $1,470.00 USD ($1.50 per linear meter). "
                 "This solution guarantees environmental safety, long-term bioclimatic resilience, and participatory campus stewardship.\n\n"
                 "Keywords: Simuliidae, Culicoides, Ecosystem Management, 3-Strata Living Fences, SLSQP Optimization, GIS Campus Map."
@@ -302,7 +302,7 @@ def main():
             p.text = (
                 "1. Problema Resuelto: Se diseñó una solución biológica, no invasiva y de alta ingeniería para mitigar el ataque del complejo vectorial "
                 "de arenillas (Simulium spp., Culicoides spp., Lutzomyia spp.) en el campus de Yachay Tech, protegiendo 124 edificaciones sin verter agroquímicos a los canales de riego.\n"
-                "2. Rigor Científico y Tecnológico: La integración del catálogo SIG de 258 entidades georreferenciadas con la optimización espacial SLSQP permitió dimensionar "
+                "2. Rigor Científico y Tecnológico: La integración del catálogo SIG de 264 entidades georreferenciadas con la optimización espacial SLSQP permitió dimensionar "
                 "una barrera viva tri-estrato de 980 metros lineales que maximiza la protección humana (82.8% de mitigación estimada) por un presupuesto realista de $1,470.00 USD.\n"
                 "3. Limitaciones Reconocidas: La barrera arbórea y arbustiva requiere de 6 a 12 meses para su consolidación estructural completa; sin embargo, el estrato basal herbáceo "
                 "de Hierba Luisa y Cedrón provee repelencia fitoquímica funcional a partir de la tercera semana de siembra.\n"
@@ -333,7 +333,7 @@ def main():
     if t_ia:
         ia_data = [
             ("Modelos de Lenguaje (Claude / ChatGPT)", "Revisión ortográfica, traducción técnica al inglés y formateo de referencias bibliográficas en estilo APA 7.ª edición.", "Sección 1 (Resumen bilingüe), Sección 9 (Referencias)"),
-            ("Entornos de Computación Científica (Python / SciPy / Folium)", "Optimización matemática multiobjetivo de trayectorias (algoritmo SLSQP) y renderizado del mapa geoespacial interactivo de 258 entidades.", "Sección 2.3 (SIG), Sección 4 (Diseño de segmentos), Sección 6 (Eficacia)"),
+            ("Entornos de Computación Científica (Python / SciPy / Folium)", "Optimización matemática multiobjetivo de trayectorias (algoritmo SLSQP) y renderizado del mapa geoespacial interactivo de 264 entidades.", "Sección 2.3 (SIG), Sección 4 (Diseño de segmentos), Sección 6 (Eficacia)"),
             ("Herramientas de Análisis Fitoquímico Asistido", "Búsqueda y contrastación de metabolitos volátiles de plantas andinas en bases de datos biomédicas.", "Sección 2.2 y 3.1"),
             ("Generador Cartográfico GeoJSON", "Validación topológica y coordenadas GPS del campus Yachay Tech.", "Sección 2.3 y Anexo B")
         ]
@@ -365,7 +365,7 @@ def main():
             p.text = (
                 "Material Adicional de Soporte y Evidencia de Campo:\n\n"
                 "1. Visor Geoespacial Interactivo Web (Folium / Leaflet):\n"
-                "Plataforma cartográfica interactiva con 258 entidades GIS (124 edificios catalogados, 64 canales y líneas divisorias, 69 puntos de hitos, paradas y parqueos, "
+                "Plataforma cartográfica interactiva con 264 entidades GIS (124 edificios catalogados, 70 canales, vías y líneas divisorias, 69 puntos de hitos, paradas y parqueos, "
                 "12 segmentos de barreras vivas y 6 estaciones de bio-monitoreo GPS). Capa de polígonos patrimoniales no bloqueante para facilitar la navegación:\n"
                 "Enlace de acceso libre: https://jeffersonconza.github.io/algoritmo-verde-yosw2026/\n"
                 "Repositorio de código y datos abiertos: https://github.com/JeffersonConza/algoritmo-verde-yosw2026\n\n"
