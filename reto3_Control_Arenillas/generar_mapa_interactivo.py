@@ -2102,7 +2102,11 @@ def generar_mapa():
         ([0.4040003, -78.1750936], "Parada de Buses (Sala Capitular)", "bus", "purple",
          "🚌 Movilidad y Transporte Universitario", "Parada de transporte público y buses universitarios en el sector patrimonial San José - Sala Capitular."),
         ([0.4027118, -78.1737212], "Parada de Buses (Frente al Arco de Las Pats)", "bus", "purple",
-         "🚌 Movilidad y Transporte Universitario", "Parada de transporte público y buses universitarios frente al arco patrimonial de acceso a Residencias Las Pats.")
+         "🚌 Movilidad y Transporte Universitario", "Parada de transporte público y buses universitarios frente al arco patrimonial de acceso a Residencias Las Pats."),
+        ([0.4060672, -78.1702615], "Parqueadero Senescyt (Sur 1)", "car", "gray",
+         "🚗 Estacionamiento Vehicular", "Punto de estacionamiento vehicular en el área de parqueadero sur del Edificio Senescyt."),
+        ([0.4062500, -78.1704686], "Parqueadero Senescyt (Sur 2)", "car", "gray",
+         "🚗 Estacionamiento Vehicular", "Punto de estacionamiento vehicular en el área de parqueadero sur del Edificio Senescyt.")
     ]
 
     for coord, nombre, icono, color, categoria, descripcion_humana in hitos_humanos:
@@ -4389,29 +4393,15 @@ def generar_mapa():
             "coords": [[0.4035530, -78.1761398], [0.4035359, -78.1760731]],
             "color": "#1b4f72",
             "desc": "Tabique transversal medianero interior que independiza las dos unidades de la Residencia de Docentes 8."
-        },
-        {
-            "nombre": "Parqueadero Lineal Senescyt (Calzada Este)",
-            "coords": [[0.4062069, -78.1698884], [0.4065531, -78.1695806]],
-            "color": "#7f8c8d",
-            "desc": "Franja lineal de parqueo vehicular en batería sobre la calzada este del Edificio Senescyt."
-        },
-        {
-            "nombre": "Parqueadero Lineal Senescyt (Calzada Sur)",
-            "coords": [[0.4060763, -78.1702622], [0.4062677, -78.1704835]],
-            "color": "#7f8c8d",
-            "desc": "Franja lineal de parqueo vehicular sobre la calzada sur de acceso al Edificio Senescyt."
         }
     ]
     for ld in lineas_divisorias:
-        is_parking = "Parqueadero" in ld["nombre"]
-        icon_prefix = "🚗" if is_parking else "📏"
         folium.PolyLine(
             locations=ld["coords"],
             color=ld["color"],
-            weight=4 if is_parking else 3,
-            dash_array=None if is_parking else "4, 4",
-            tooltip=f"{icon_prefix} {ld['nombre']}",
+            weight=3,
+            dash_array="4, 4",
+            tooltip=f"📏 {ld['nombre']}",
             popup=folium.Popup(f"<b>{ld['nombre']}</b><br>{ld['desc']}", max_width=220)
         ).add_to(fg_edificios)
 

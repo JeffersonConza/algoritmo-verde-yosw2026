@@ -29,8 +29,8 @@ Polo académico norte y residencial estudiantil modular, con una población habi
 | **S-06** | **Comedor Sol del Ecuador** | Restaurante Universitario (Primer Piso) | `0.407063` | `-78.169911` | **Medio-Alto** (Primer piso Sen.) | ~110 comensales/día (Almuerzo USD 3.50; docentes y personal) |
 | **B-01** | **Depósito de Basura Principal (Senescyt)** | Gestión Residuos Sólidos | `0.407422` | `-78.169763` | **Medio** (Estación contenedores) | Servicio campus norte |
 | **BUS-01** | **Parada de Buses (Edificio Senescyt)** | Movilidad y Transporte | `0.407197` | `-78.169986` | **Alto** (Espera a la intemperie) | ~200 usuarios/día |
-| **LINE-PARK-01** | **Parqueadero Lineal Senescyt (Calzada Este)** | Infraestructura / Parqueo | `0.406380` | `-78.169734` | **Medio** (Franja en batería este) | ~25 vehículos |
-| **LINE-PARK-02** | **Parqueadero Lineal Senescyt (Calzada Sur)** | Infraestructura / Parqueo | `0.406172` | `-78.170373` | **Medio** (Calzada de acceso sur) | ~20 vehículos |
+| **P-16** | **Parqueadero Senescyt (Sur 1)** | Infraestructura / Parqueadero | `0.406067` | `-78.170262` | **Medio** (Parqueadero sur Senescyt) | ~15 vehículos |
+| **P-17** | **Parqueadero Senescyt (Sur 2)** | Infraestructura / Parqueadero | `0.406250` | `-78.170469` | **Medio** (Parqueadero sur Senescyt) | ~15 vehículos |
 | **P-12** | **Sitio de Parqueo en Vía (Senescyt Norte 1)** | Infraestructura / Parqueo en Vía | `0.407575` | `-78.170380` | **Medio** (Calzada acceso norte) | ~5 vehículos |
 | **P-13** | **Sitio de Parqueo en Vía (Senescyt Norte 2)** | Infraestructura / Parqueo en Vía | `0.407470` | `-78.170262` | **Medio** (Calzada acceso norte) | ~5 vehículos |
 | **P-14** | **Sitio de Parqueo en Vía (Senescyt Acceso Principal)** | Infraestructura / Parqueo en Vía | `0.407331` | `-78.170102` | **Medio** (Calzada principal) | ~8 vehículos |
@@ -7625,52 +7625,6 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
     {
       "type": "Feature",
       "properties": {
-        "id": "LINE-PARK-01",
-        "nombre": "Parqueadero Lineal Senescyt (Calzada Este)",
-        "zona": "Zona Senescyt",
-        "categoria": "Infraestructura Vial / Parqueadero Lineal",
-        "descripcion": "Franja lineal de parqueo vehicular en batería sobre la calzada este del Edificio Senescyt."
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -78.1698884,
-            0.4062069
-          ],
-          [
-            -78.1695806,
-            0.4065531
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "LINE-PARK-02",
-        "nombre": "Parqueadero Lineal Senescyt (Calzada Sur)",
-        "zona": "Zona Senescyt",
-        "categoria": "Infraestructura Vial / Parqueadero Lineal",
-        "descripcion": "Franja lineal de parqueo vehicular sobre la calzada sur de acceso al Edificio Senescyt."
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -78.1702622,
-            0.4060763
-          ],
-          [
-            -78.1704835,
-            0.4062677
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": "RECT-CAPITULAR-CLAUSTRO",
         "nombre": "Claustro y Galerías Sala Capitular",
         "tipo": "Patrimonio / Claustro Colonial",
@@ -9967,6 +9921,38 @@ En lugar de polígonos geométricos con bordes rectos artificiales, la distribuc
             -78.1689739,
             0.403997
           ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "P-16",
+        "nombre": "Parqueadero Senescyt (Sur 1)",
+        "zona": "Sector Senescyt",
+        "categoria": "Infraestructura / Parqueadero"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.1702615,
+          0.4060672
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "P-17",
+        "nombre": "Parqueadero Senescyt (Sur 2)",
+        "zona": "Sector Senescyt",
+        "categoria": "Infraestructura / Parqueadero"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.1704686,
+          0.40625
         ]
       }
     }

@@ -365,7 +365,7 @@ def main():
             p.text = (
                 "Material Adicional de Soporte y Evidencia de Campo:\n\n"
                 "1. Visor Geoespacial Interactivo Web (Folium / Leaflet):\n"
-                "Plataforma cartográfica interactiva con 257 entidades GIS (124 edificios catalogados, 67 tramos de canales/acequias, "
+                "Plataforma cartográfica interactiva con 257 entidades GIS (124 edificios catalogados, 65 canales y líneas divisorias, 67 puntos de hitos, paradas y parqueos, "
                 "12 segmentos de barreras vivas y 6 estaciones de bio-monitoreo GPS). Capa de polígonos patrimoniales no bloqueante para facilitar la navegación:\n"
                 "Enlace de acceso libre: https://jeffersonconza.github.io/algoritmo-verde-yosw2026/\n"
                 "Repositorio de código y datos abiertos: https://github.com/JeffersonConza/algoritmo-verde-yosw2026\n\n"
