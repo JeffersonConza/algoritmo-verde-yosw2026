@@ -2278,7 +2278,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Bloque A",
         "tipo": "Residencia Estudiantil (Rectangular)",
         "zona": "Senescyt",
-        "area_m2": 599.6,
+        "area_m2": 599.0,
         "interior": false,
         "is_perimeter": false
       },
@@ -2287,24 +2287,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1707225,
-              0.4067538
+              -78.1705988,
+              0.4066437
             ],
             [
-              -78.1705279,
-              0.4069739
+              -78.1704042,
+              0.4068638
             ],
             [
-              -78.1704038,
-              0.4068642
+              -78.1705275,
+              0.4069743
             ],
             [
-              -78.1705984,
-              0.4066441
+              -78.1707221,
+              0.4067542
             ],
             [
-              -78.1707225,
-              0.4067538
+              -78.1705988,
+              0.4066437
             ]
           ]
         ]
@@ -2317,7 +2317,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Bloque B",
         "tipo": "Residencia Estudiantil (Rectangular)",
         "zona": "Senescyt",
-        "area_m2": 607.1,
+        "area_m2": 606.5,
         "interior": false,
         "is_perimeter": false
       },
@@ -2326,24 +2326,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1708846,
-              0.4069112
+              -78.1707558,
+              0.4068046
             ],
             [
-              -78.1706975,
-              0.4071388
+              -78.1705687,
+              0.4070322
             ],
             [
-              -78.1705683,
-              0.4070326
+              -78.1706971,
+              0.4071392
             ],
             [
-              -78.1707554,
-              0.406805
+              -78.1708842,
+              0.4069116
             ],
             [
-              -78.1708846,
-              0.4069112
+              -78.1707558,
+              0.4068046
             ]
           ]
         ]
@@ -2356,7 +2356,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Bloque C",
         "tipo": "Residencia Estudiantil (Rectangular)",
         "zona": "Senescyt",
-        "area_m2": 577.1,
+        "area_m2": 576.5,
         "interior": false,
         "is_perimeter": false
       },
@@ -2365,24 +2365,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1707382,
-              0.4072065
+              -78.1708548,
+              0.4073102
             ],
             [
-              -78.170937,
-              0.4069815
+              -78.1710536,
+              0.4070852
             ],
             [
-              -78.1710539,
-              0.4070848
+              -78.1709373,
+              0.4069811
             ],
             [
-              -78.1708551,
-              0.4073098
+              -78.1707385,
+              0.4072061
             ],
             [
-              -78.1707382,
-              0.4072065
+              -78.1708548,
+              0.4073102
             ]
           ]
         ]
@@ -2395,7 +2395,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Bloque D",
         "tipo": "Residencia Estudiantil (Rectangular)",
         "zona": "Senescyt",
-        "area_m2": 641.7,
+        "area_m2": 641.1,
         "interior": false,
         "is_perimeter": false
       },
@@ -2404,24 +2404,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1711226,
-              0.4071311
+              -78.1712265,
+              0.4074551
             ],
             [
-              -78.1713426,
-              0.4073159
+              -78.1713421,
+              0.4073155
             ],
             [
-              -78.171226,
-              0.4074547
+              -78.1711221,
+              0.4071307
             ],
             [
-              -78.171006,
-              0.4072699
+              -78.1710065,
+              0.4072703
             ],
             [
-              -78.1711226,
-              0.4071311
+              -78.1712265,
+              0.4074551
             ]
           ]
         ]
@@ -2434,7 +2434,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Bloque E",
         "tipo": "Residencia Estudiantil (Rectangular)",
         "zona": "Senescyt",
-        "area_m2": 586.5,
+        "area_m2": 585.8,
         "interior": false,
         "is_perimeter": false
       },
@@ -2443,24 +2443,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1709972,
-              0.4072764
+              -78.170891,
+              0.4073993
             ],
             [
-              -78.1712182,
-              0.4074687
+              -78.171112,
+              0.4075916
             ],
             [
-              -78.1711116,
-              0.4075913
+              -78.1712178,
+              0.4074684
             ],
             [
-              -78.1708906,
-              0.407399
+              -78.1709968,
+              0.4072761
             ],
             [
-              -78.1709972,
-              0.4072764
+              -78.170891,
+              0.4073993
             ]
           ]
         ]
@@ -2473,7 +2473,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Bloque F",
         "tipo": "Residencia Estudiantil (Rectangular Independiente)",
         "zona": "Senescyt",
-        "area_m2": 689.6,
+        "area_m2": 688.9,
         "interior": false,
         "is_perimeter": false
       },
@@ -2482,24 +2482,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1714552,
-              0.4075616
-            ],
-            [
-              -78.171474,
-              0.4078955
+              -78.1712881,
+              0.4075711
             ],
             [
               -78.1713069,
-              0.4079049
+              0.407905
             ],
             [
-              -78.1712881,
-              0.407571
+              -78.171474,
+              0.4078954
             ],
             [
               -78.1714552,
-              0.4075616
+              0.4075615
+            ],
+            [
+              -78.1712881,
+              0.4075711
             ]
           ]
         ]
@@ -2512,7 +2512,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Bloque G",
         "tipo": "Residencia Estudiantil (Rectangular Independiente)",
         "zona": "Senescyt",
-        "area_m2": 679.6,
+        "area_m2": 678.9,
         "interior": false,
         "is_perimeter": false
       },
@@ -2521,24 +2521,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1713166,
-              0.4078877
-            ],
-            [
-              -78.1709736,
-              0.4079317
-            ],
-            [
-              -78.1709533,
-              0.4077735
-            ],
-            [
-              -78.1712963,
+              -78.1712964,
               0.4077295
             ],
             [
-              -78.1713166,
+              -78.1709534,
+              0.4077735
+            ],
+            [
+              -78.1709735,
+              0.4079317
+            ],
+            [
+              -78.1713165,
               0.4078877
+            ],
+            [
+              -78.1712964,
+              0.4077295
             ]
           ]
         ]
@@ -2551,7 +2551,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Bloque H",
         "tipo": "Residencia Estudiantil (Rectangular)",
         "zona": "Senescyt",
-        "area_m2": 647.5,
+        "area_m2": 646.8,
         "interior": false,
         "is_perimeter": false
       },
@@ -2560,24 +2560,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1703263,
-              0.4071925
+              -78.1702242,
+              0.4073091
             ],
             [
-              -78.1705805,
-              0.4074167
+              -78.1704784,
+              0.4075333
             ],
             [
-              -78.170478,
-              0.407533
+              -78.1705801,
+              0.4074164
             ],
             [
-              -78.1702238,
-              0.4073088
+              -78.1703259,
+              0.4071922
             ],
             [
-              -78.1703263,
-              0.4071925
+              -78.1702242,
+              0.4073091
             ]
           ]
         ]
@@ -2590,7 +2590,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Bloque I",
         "tipo": "Residencia Estudiantil (Rectangular)",
         "zona": "Senescyt",
-        "area_m2": 604.0,
+        "area_m2": 603.4,
         "interior": false,
         "is_perimeter": false
       },
@@ -2599,24 +2599,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1704146,
-              0.4070515
+              -78.1703055,
+              0.406956
             ],
             [
-              -78.1701927,
-              0.4073067
+              -78.1700836,
+              0.4072112
             ],
             [
-              -78.1700833,
-              0.4072116
+              -78.1701924,
+              0.4073071
             ],
             [
-              -78.1703052,
-              0.4069564
+              -78.1704143,
+              0.4070519
             ],
             [
-              -78.1704146,
-              0.4070515
+              -78.1703055,
+              0.406956
             ]
           ]
         ]
@@ -2629,7 +2629,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Centro Médico / Bienestar Estudiantil",
         "tipo": "Salud y Vida Comunitaria (Rectangular)",
         "zona": "Senescyt",
-        "area_m2": 450.9,
+        "area_m2": 450.4,
         "interior": false,
         "is_perimeter": false
       },
@@ -2638,24 +2638,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1706569,
-              0.407518
+              -78.1705729,
+              0.4076239
             ],
             [
-              -78.1708685,
-              0.407687
+              -78.1707845,
+              0.4077929
             ],
             [
-              -78.1707842,
-              0.4077926
+              -78.1708682,
+              0.4076867
             ],
             [
-              -78.1705726,
-              0.4076236
+              -78.1706566,
+              0.4075177
             ],
             [
-              -78.1706569,
-              0.407518
+              -78.1705729,
+              0.4076239
             ]
           ]
         ]
@@ -2774,7 +2774,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Minimarket Krispan",
         "tipo": "Comercial / Cafetería (Local Interior en Edificio Senescyt)",
         "zona": "Senescyt",
-        "area_m2": 191.7,
+        "area_m2": 191.4,
         "interior": true,
         "is_perimeter": false
       },
@@ -2783,24 +2783,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1703109,
-              0.4065494
+              -78.1703881,
+              0.4065976
             ],
             [
-              -78.1704011,
-              0.4064042
+              -78.1704783,
+              0.4064524
             ],
             [
-              -78.1704784,
-              0.4064522
+              -78.1704012,
+              0.406404
             ],
             [
-              -78.1703882,
-              0.4065974
+              -78.170311,
+              0.4065492
             ],
             [
-              -78.1703109,
-              0.4065494
+              -78.1703881,
+              0.4065976
             ]
           ]
         ]
@@ -2813,7 +2813,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Comedor Sol del Ecuador",
         "tipo": "Restaurante Universitario (Local Interior en Edificio Senescyt)",
         "zona": "Senescyt",
-        "area_m2": 59.6,
+        "area_m2": 59.5,
         "interior": true,
         "is_perimeter": false
       },
@@ -2822,24 +2822,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1699224,
-              0.4071116
+              -78.1699003,
+              0.4070133
             ],
             [
-              -78.1698613,
-              0.4070583
+              -78.1698615,
+              0.4070584
             ],
             [
-              -78.1699005,
-              0.4070134
+              -78.1699226,
+              0.4071117
             ],
             [
-              -78.1699616,
-              0.4070667
+              -78.1699614,
+              0.4070666
             ],
             [
-              -78.1699224,
-              0.4071116
+              -78.1699003,
+              0.4070133
             ]
           ]
         ]
@@ -2936,24 +2936,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.174346,
-              0.404742
+              -78.1743339,
+              0.4048204
             ],
             [
-              -78.1743738,
-              0.4048017
+              -78.1743737,
+              0.4048016
             ],
             [
-              -78.1743338,
-              0.4048203
+              -78.1743459,
+              0.4047419
             ],
             [
-              -78.174306,
-              0.4047606
+              -78.1743061,
+              0.4047607
             ],
             [
-              -78.174346,
-              0.404742
+              -78.1743339,
+              0.4048204
             ]
           ]
         ]
@@ -2966,7 +2966,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Aulas B (Sur Biblioteca)",
         "tipo": "Docencia y Seminarios",
         "zona": "Ingenio Azucarero",
-        "area_m2": 342.6,
+        "area_m2": 342.3,
         "interior": false,
         "is_perimeter": false
       },
@@ -2975,24 +2975,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1743079,
-              0.4044119
+              -78.1744022,
+              0.4043666
             ],
             [
-              -78.1741934,
-              0.404172
+              -78.1742877,
+              0.4041267
             ],
             [
-              -78.1742878,
-              0.4041269
+              -78.1741935,
+              0.4041722
             ],
             [
-              -78.1744023,
-              0.4043668
+              -78.174308,
+              0.4044121
             ],
             [
-              -78.1743079,
-              0.4044119
+              -78.1744022,
+              0.4043666
             ]
           ]
         ]
@@ -3005,7 +3005,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Aulas B (Norte)",
         "tipo": "Docencia y Seminarios",
         "zona": "Ingenio Azucarero",
-        "area_m2": 358.5,
+        "area_m2": 358.1,
         "interior": false,
         "is_perimeter": false
       },
@@ -3014,24 +3014,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1743369,
-              0.4055181
+              -78.1744181,
+              0.4054775
             ],
             [
-              -78.1741944,
-              0.4052311
+              -78.1742756,
+              0.4051905
             ],
             [
-              -78.1742757,
-              0.4051907
+              -78.1741945,
+              0.4052313
             ],
             [
-              -78.1744182,
-              0.4054777
+              -78.174337,
+              0.4055183
             ],
             [
-              -78.1743369,
-              0.4055181
+              -78.1744181,
+              0.4054775
             ]
           ]
         ]
@@ -3044,7 +3044,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Aulas I (Módulo 1 - Antiguo Ingenio)",
         "tipo": "Aulas Técnicas y Talleres",
         "zona": "Ingenio Azucarero",
-        "area_m2": 379.3,
+        "area_m2": 378.9,
         "interior": false,
         "is_perimeter": false
       },
@@ -3053,24 +3053,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1745126,
-              0.4051256
+              -78.1746148,
+              0.4050766
             ],
             [
-              -78.1746142,
-              0.4050769
+              -78.1745132,
+              0.4051253
             ],
             [
-              -78.1747322,
-              0.4053233
+              -78.17463,
+              0.4053723
             ],
             [
-              -78.1746306,
-              0.405372
+              -78.1747316,
+              0.4053236
             ],
             [
-              -78.1745126,
-              0.4051256
+              -78.1746148,
+              0.4050766
             ]
           ]
         ]
@@ -3083,7 +3083,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Aulas I (Módulo 2 - Antiguo Ingenio)",
         "tipo": "Aulas Técnicas y Talleres",
         "zona": "Ingenio Azucarero",
-        "area_m2": 143.0,
+        "area_m2": 142.8,
         "interior": false,
         "is_perimeter": false
       },
@@ -3092,24 +3092,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1746678,
-              0.4054504
+              -78.1746405,
+              0.4053979
             ],
             [
-              -78.1744942,
-              0.4055414
+              -78.1744669,
+              0.4054889
             ],
             [
-              -78.1744667,
-              0.405489
+              -78.174494,
+              0.4055415
             ],
             [
-              -78.1746403,
-              0.405398
+              -78.1746676,
+              0.4054505
             ],
             [
-              -78.1746678,
-              0.4054504
+              -78.1746405,
+              0.4053979
             ]
           ]
         ]
@@ -3122,7 +3122,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Baños Aulas I",
         "tipo": "Servicios Higiénicos Yuxtapuestos",
         "zona": "Ingenio Azucarero",
-        "area_m2": 119.2,
+        "area_m2": 119.0,
         "interior": false,
         "is_perimeter": false
       },
@@ -3131,24 +3131,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1747475,
-              0.405327
+              -78.1746612,
+              0.4054451
             ],
             [
-              -78.174776,
-              0.4054
+              -78.1747759,
+              0.4053998
             ],
             [
-              -78.1746611,
-              0.4054449
+              -78.1747474,
+              0.4053268
             ],
             [
-              -78.1746326,
-              0.4053719
+              -78.1746327,
+              0.4053721
             ],
             [
-              -78.1747475,
-              0.405327
+              -78.1746612,
+              0.4054451
             ]
           ]
         ]
@@ -3161,7 +3161,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Sala de Docentes (Ingenio)",
         "tipo": "Área de Profesores",
         "zona": "Ingenio Azucarero",
-        "area_m2": 97.8,
+        "area_m2": 97.7,
         "interior": false,
         "is_perimeter": false
       },
@@ -3170,24 +3170,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1744952,
-              0.4055409
+              -78.1744616,
+              0.4054868
             ],
             [
-              -78.1743896,
-              0.405607
+              -78.174356,
+              0.4055529
             ],
             [
-              -78.1743558,
-              0.405553
+              -78.1743894,
+              0.4056071
             ],
             [
-              -78.1744614,
-              0.4054869
+              -78.174495,
+              0.405541
             ],
             [
-              -78.1744952,
-              0.4055409
+              -78.1744616,
+              0.4054868
             ]
           ]
         ]
@@ -3200,7 +3200,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Laboratorios de Docencia",
         "tipo": "Talleres y Docencia Práctica",
         "zona": "Ingenio Azucarero",
-        "area_m2": 522.2,
+        "area_m2": 521.5,
         "interior": false,
         "is_perimeter": false
       },
@@ -3209,24 +3209,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1748217,
-              0.4054855
+              -78.174779,
+              0.4054003
             ],
             [
-              -78.1744248,
-              0.4056858
+              -78.1743821,
+              0.4056006
             ],
             [
-              -78.1743819,
-              0.4056007
+              -78.1744246,
+              0.4056859
             ],
             [
-              -78.1747788,
-              0.4054004
+              -78.1748215,
+              0.4054856
             ],
             [
-              -78.1748217,
-              0.4054855
+              -78.174779,
+              0.4054003
             ]
           ]
         ]
@@ -3248,24 +3248,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1737925,
-              0.4042855
+              -78.1737612,
+              0.4043708
             ],
             [
               -78.1738179,
-              0.4043474
-            ],
-            [
-              -78.1737612,
-              0.4043707
-            ],
-            [
-              -78.1737358,
-              0.4043088
+              0.4043473
             ],
             [
               -78.1737925,
-              0.4042855
+              0.4042854
+            ],
+            [
+              -78.1737358,
+              0.4043089
+            ],
+            [
+              -78.1737612,
+              0.4043708
             ]
           ]
         ]
@@ -3278,7 +3278,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Mesas y Sitio de Estar (Plaza Mikuna)",
         "tipo": "Comedor Cubierto al Aire Libre",
         "zona": "Ingenio Azucarero",
-        "area_m2": 75.7,
+        "area_m2": 75.6,
         "interior": false,
         "is_perimeter": false
       },
@@ -3291,16 +3291,16 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
               0.4042451
             ],
             [
-              -78.1738246,
-              0.404176
-            ],
-            [
-              -78.1739135,
-              0.404176
-            ],
-            [
               -78.1739135,
               0.4042451
+            ],
+            [
+              -78.1739135,
+              0.404176
+            ],
+            [
+              -78.1738246,
+              0.404176
             ],
             [
               -78.1738246,
@@ -3326,24 +3326,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1737629,
-              0.4046048
-            ],
-            [
-              -78.1737985,
-              0.4045036
+              -78.1737918,
+              0.404615
             ],
             [
               -78.1738274,
               0.4045138
             ],
             [
-              -78.1737918,
-              0.404615
+              -78.1737985,
+              0.4045036
             ],
             [
               -78.1737629,
               0.4046048
+            ],
+            [
+              -78.1737918,
+              0.404615
             ]
           ]
         ]
@@ -3356,7 +3356,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Containers de Comida 2 (Plaza Mikuna)",
         "tipo": "Módulos Gastronómicos",
         "zona": "Ingenio Azucarero",
-        "area_m2": 21.7,
+        "area_m2": 21.6,
         "interior": false,
         "is_perimeter": false
       },
@@ -3365,24 +3365,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1738863,
-              0.4045006
+              -78.1738877,
+              0.4045637
             ],
             [
               -78.1739152,
-              0.4045461
-            ],
-            [
-              -78.1738877,
-              0.4045636
-            ],
-            [
-              -78.1738588,
-              0.4045181
+              0.404546
             ],
             [
               -78.1738863,
-              0.4045006
+              0.4045005
+            ],
+            [
+              -78.1738588,
+              0.4045182
+            ],
+            [
+              -78.1738877,
+              0.4045637
             ]
           ]
         ]
@@ -3395,7 +3395,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Invernadero Experimental 1",
         "tipo": "Investigación Agropecuaria",
         "zona": "Ingenio Azucarero",
-        "area_m2": 469.7,
+        "area_m2": 469.2,
         "interior": false,
         "is_perimeter": false
       },
@@ -3404,24 +3404,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1729552,
-              0.4041395
+              -78.172832,
+              0.4041851
             ],
             [
-              -78.1730552,
-              0.4044119
+              -78.172932,
+              0.4044575
             ],
             [
-              -78.1729319,
-              0.4044572
+              -78.1730551,
+              0.4044116
             ],
             [
-              -78.1728319,
-              0.4041848
+              -78.1729551,
+              0.4041392
             ],
             [
-              -78.1729552,
-              0.4041395
+              -78.172832,
+              0.4041851
             ]
           ]
         ]
@@ -3434,7 +3434,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Invernadero Experimental 2",
         "tipo": "Investigación Agropecuaria",
         "zona": "Ingenio Azucarero",
-        "area_m2": 222.2,
+        "area_m2": 221.9,
         "interior": false,
         "is_perimeter": false
       },
@@ -3443,24 +3443,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1731279,
-              0.4043837
-            ],
-            [
-              -78.1730253,
-              0.4041097
+              -78.1731856,
+              0.404362
             ],
             [
               -78.173083,
-              0.4040881
+              0.404088
             ],
             [
-              -78.1731856,
-              0.4043621
+              -78.1730253,
+              0.4041098
             ],
             [
               -78.1731279,
-              0.4043837
+              0.4043838
+            ],
+            [
+              -78.1731856,
+              0.404362
             ]
           ]
         ]
@@ -3473,7 +3473,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Invernadero Experimental 3",
         "tipo": "Investigación Agropecuaria",
         "zona": "Ingenio Azucarero",
-        "area_m2": 238.0,
+        "area_m2": 237.9,
         "interior": false,
         "is_perimeter": false
       },
@@ -3482,24 +3482,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1732037,
-              0.4040372
+              -78.1731421,
+              0.4040595
             ],
             [
-              -78.1733036,
-              0.4043145
+              -78.173242,
+              0.4043368
             ],
             [
-              -78.1732419,
-              0.4043367
+              -78.1733035,
+              0.4043144
             ],
             [
-              -78.173142,
-              0.4040594
+              -78.1732036,
+              0.4040371
             ],
             [
-              -78.1732037,
-              0.4040372
+              -78.1731421,
+              0.4040595
             ]
           ]
         ]
@@ -3512,7 +3512,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Invernadero Experimental 4",
         "tipo": "Investigación Agropecuaria",
         "zona": "Ingenio Azucarero",
-        "area_m2": 215.3,
+        "area_m2": 215.0,
         "interior": false,
         "is_perimeter": false
       },
@@ -3521,24 +3521,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1733332,
-              0.4039885
-            ],
-            [
-              -78.173434,
-              0.4042629
+              -78.1732771,
+              0.4040092
             ],
             [
               -78.1733779,
-              0.4042835
+              0.4042836
             ],
             [
-              -78.1732771,
-              0.4040091
+              -78.173434,
+              0.4042628
             ],
             [
               -78.1733332,
-              0.4039885
+              0.4039884
+            ],
+            [
+              -78.1732771,
+              0.4040092
             ]
           ]
         ]
@@ -3551,7 +3551,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Laboratorios de Carrera (Ingenierías)",
         "tipo": "Talleres y Naves Tecnológicas",
         "zona": "Ingenio Azucarero",
-        "area_m2": 1232.9,
+        "area_m2": 1231.5,
         "interior": false,
         "is_perimeter": false
       },
@@ -3560,24 +3560,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1728994,
-              0.4038491
+              -78.1728326,
+              0.4036264
             ],
             [
-              -78.1724875,
-              0.4039735
+              -78.1724207,
+              0.4037508
             ],
             [
-              -78.1724203,
-              0.4037509
+              -78.1724871,
+              0.4039736
             ],
             [
-              -78.1728322,
-              0.4036265
+              -78.172899,
+              0.4038492
             ],
             [
-              -78.1728994,
-              0.4038491
+              -78.1728326,
+              0.4036264
             ]
           ]
         ]
@@ -3599,23 +3599,23 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1728016,
+              -78.1728017,
               0.4038265
             ],
             [
-              -78.1728845,
-              0.4037989
-            ],
-            [
-              -78.1729014,
-              0.4038497
-            ],
-            [
-              -78.1728185,
+              -78.1728184,
               0.4038773
             ],
             [
-              -78.1728016,
+              -78.1729013,
+              0.4038497
+            ],
+            [
+              -78.1728846,
+              0.4037989
+            ],
+            [
+              -78.1728017,
               0.4038265
             ]
           ]
@@ -3629,7 +3629,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Sala Capitular",
         "tipo": "Monumento y Sala Patrimonial",
         "zona": "Ingenio Azucarero",
-        "area_m2": 142.8,
+        "area_m2": 142.7,
         "interior": false,
         "is_perimeter": false
       },
@@ -3638,24 +3638,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1753652,
-              0.4044278
-            ],
-            [
-              -78.1752043,
-              0.4044453
+              -78.1753575,
+              0.4043566
             ],
             [
               -78.1751966,
               0.4043741
             ],
             [
-              -78.1753575,
-              0.4043566
+              -78.1752043,
+              0.4044453
             ],
             [
               -78.1753652,
               0.4044278
+            ],
+            [
+              -78.1753575,
+              0.4043566
             ]
           ]
         ]
@@ -3677,24 +3677,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1756988,
-              0.4045321
-            ],
-            [
-              -78.1760378,
-              0.4045271
+              -78.1756995,
+              0.4045826
             ],
             [
               -78.1760385,
               0.4045776
             ],
             [
-              -78.1756995,
-              0.4045826
+              -78.1760378,
+              0.4045271
             ],
             [
               -78.1756988,
               0.4045321
+            ],
+            [
+              -78.1756995,
+              0.4045826
             ]
           ]
         ]
@@ -3707,7 +3707,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Edificio Sur Caballerizas",
         "tipo": "Edificación Auxiliar",
         "zona": "Ingenio Azucarero",
-        "area_m2": 155.3,
+        "area_m2": 155.0,
         "interior": false,
         "is_perimeter": false
       },
@@ -3716,24 +3716,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1757655,
-              0.4042508
-            ],
-            [
-              -78.1756006,
-              0.4042153
-            ],
-            [
-              -78.1756163,
-              0.4041423
-            ],
-            [
-              -78.1757812,
+              -78.1757811,
               0.4041778
             ],
             [
-              -78.1757655,
+              -78.1756162,
+              0.4041423
+            ],
+            [
+              -78.1756007,
+              0.4042153
+            ],
+            [
+              -78.1757656,
               0.4042508
+            ],
+            [
+              -78.1757811,
+              0.4041778
             ]
           ]
         ]
@@ -3755,24 +3755,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1758678,
-              0.4043876
-            ],
-            [
-              -78.1757886,
-              0.4044402
+              -78.1758525,
+              0.4043644
             ],
             [
               -78.1757733,
               0.404417
             ],
             [
-              -78.1758524,
-              0.4043644
+              -78.1757886,
+              0.4044402
             ],
             [
-              -78.1758678,
+              -78.1758677,
               0.4043876
+            ],
+            [
+              -78.1758525,
+              0.4043644
             ]
           ]
         ]
@@ -3798,16 +3798,16 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
               0.4044248
             ],
             [
-              -78.1757722,
-              0.4044254
+              -78.1758135,
+              0.4043903
             ],
             [
               -78.1757717,
               0.4043909
             ],
             [
-              -78.1758135,
-              0.4043903
+              -78.1757722,
+              0.4044254
             ],
             [
               -78.175814,
@@ -3824,7 +3824,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Edificio Anexo San José",
         "tipo": "Edificación Administrativa",
         "zona": "Ingenio Azucarero",
-        "area_m2": 109.1,
+        "area_m2": 109.0,
         "interior": false,
         "is_perimeter": false
       },
@@ -3833,24 +3833,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1758643,
-              0.4043874
+              -78.1757777,
+              0.4044887
             ],
             [
               -78.1758681,
               0.4044852
             ],
             [
-              -78.1757777,
-              0.4044887
+              -78.1758643,
+              0.4043874
             ],
             [
               -78.1757739,
               0.4043909
             ],
             [
-              -78.1758643,
-              0.4043874
+              -78.1757777,
+              0.4044887
             ]
           ]
         ]
@@ -3863,7 +3863,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Polígono Complejo Ingenio Azucarero",
         "tipo": "Perímetro Complejo Histórico",
         "zona": "Ingenio Azucarero",
-        "area_m2": 5174.3,
+        "area_m2": 5169.2,
         "interior": false,
         "is_perimeter": true
       },
@@ -3872,24 +3872,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1748234,
-              0.405489
+              -78.1744374,
+              0.4056888
             ],
             [
-              -78.1744328,
-              0.4056908
+              -78.1748312,
+              0.4054845
             ],
             [
-              -78.1740107,
-              0.4048442
+              -78.1743999,
+              0.4046419
             ],
             [
-              -78.1744077,
-              0.4046374
+              -78.1740061,
+              0.4048462
             ],
             [
-              -78.1748234,
-              0.405489
+              -78.1744374,
+              0.4056888
             ]
           ]
         ]
@@ -4056,7 +4056,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Casa Patrimonial Las T's 1",
         "zona": "Las T's y Multis",
         "categoria": "Residencia Estudiantil Patrimonial (Casa T)",
-        "area_m2": 386.5,
+        "area_m2": 386.3,
         "centroide": [
           -78.1745134,
           0.4005171
@@ -4068,24 +4068,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1746762,
-              0.400474
+              -78.1746254,
+              0.400391
             ],
             [
-              -78.1744016,
-              0.400643
+              -78.1743508,
+              0.40056
             ],
             [
-              -78.1743506,
-              0.4005601
+              -78.1744014,
+              0.4006431
             ],
             [
-              -78.1746252,
-              0.4003911
+              -78.174676,
+              0.4004741
             ],
             [
-              -78.1746762,
-              0.400474
+              -78.1746254,
+              0.400391
             ]
           ]
         ]
@@ -4098,7 +4098,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Casa Patrimonial Las T's 2",
         "zona": "Las T's y Multis",
         "categoria": "Residencia Estudiantil Patrimonial (Casa T)",
-        "area_m2": 398.2,
+        "area_m2": 397.9,
         "centroide": [
           -78.174831,
           0.4003218
@@ -4110,24 +4110,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1746641,
-              0.4003661
+              -78.1747145,
+              0.4004497
             ],
             [
-              -78.1749471,
-              0.4001941
+              -78.1749975,
+              0.4002777
             ],
             [
-              -78.1749978,
-              0.4002775
+              -78.1749474,
+              0.4001939
             ],
             [
-              -78.1747148,
-              0.4004495
+              -78.1746644,
+              0.4003659
             ],
             [
-              -78.1746641,
-              0.4003661
+              -78.1747145,
+              0.4004497
             ]
           ]
         ]
@@ -4140,7 +4140,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Casa Patrimonial Las T's 3",
         "zona": "Las T's y Multis",
         "categoria": "Residencia Estudiantil Patrimonial (Casa T)",
-        "area_m2": 393.4,
+        "area_m2": 393.1,
         "centroide": [
           -78.1746546,
           0.4005975
@@ -4152,24 +4152,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1748175,
-              0.4005556
+              -78.1747657,
+              0.4004708
             ],
             [
-              -78.1745438,
-              0.4007241
+              -78.174492,
+              0.4006393
             ],
             [
-              -78.1744917,
-              0.4006395
+              -78.1745435,
+              0.4007243
             ],
             [
-              -78.1747654,
-              0.400471
+              -78.1748172,
+              0.4005558
             ],
             [
-              -78.1748175,
-              0.4005556
+              -78.1747657,
+              0.4004708
             ]
           ]
         ]
@@ -4182,7 +4182,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Casa Patrimonial Las T's 4",
         "zona": "Las T's y Multis",
         "categoria": "Residencia Estudiantil Patrimonial (Casa T)",
-        "area_m2": 404.4,
+        "area_m2": 404.0,
         "centroide": [
           -78.1749711,
           0.4004056
@@ -4194,24 +4194,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1748063,
-              0.4004492
+              -78.1748594,
+              0.4005348
             ],
             [
-              -78.1750826,
-              0.4002765
+              -78.1751357,
+              0.4003621
             ],
             [
-              -78.175136,
-              0.4003619
+              -78.1750829,
+              0.4002763
             ],
             [
-              -78.1748597,
-              0.4005346
+              -78.1748066,
+              0.400449
             ],
             [
-              -78.1748063,
-              0.4004492
+              -78.1748594,
+              0.4005348
             ]
           ]
         ]
@@ -4224,7 +4224,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Casa Patrimonial Las T's 5",
         "zona": "Las T's y Multis",
         "categoria": "Residencia Estudiantil Patrimonial (Casa T)",
-        "area_m2": 269.5,
+        "area_m2": 269.1,
         "centroide": [
           -78.1747765,
           0.400728
@@ -4236,24 +4236,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1746561,
-              0.4007249
+              -78.1746948,
+              0.4008168
             ],
             [
-              -78.1748581,
-              0.4006393
+              -78.1748968,
+              0.4007311
             ],
             [
-              -78.174897,
-              0.400731
+              -78.1748583,
+              0.4006392
             ],
             [
-              -78.174695,
-              0.4008167
+              -78.1746563,
+              0.4007248
             ],
             [
-              -78.1746561,
-              0.4007249
+              -78.1746948,
+              0.4008168
             ]
           ]
         ]
@@ -4266,7 +4266,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Casa Patrimonial Las T's 6",
         "zona": "Las T's y Multis",
         "categoria": "Residencia Estudiantil Patrimonial (Casa T)",
-        "area_m2": 271.4,
+        "area_m2": 271.2,
         "centroide": [
           -78.1750168,
           0.4006182
@@ -4278,24 +4278,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1751363,
-              0.4006223
+              -78.1750962,
+              0.4005286
             ],
             [
-              -78.1749377,
-              0.4007077
+              -78.1748976,
+              0.400614
             ],
             [
-              -78.1748974,
-              0.4006141
+              -78.1749375,
+              0.4007078
             ],
             [
-              -78.175096,
-              0.4005287
+              -78.1751361,
+              0.4006224
             ],
             [
-              -78.1751363,
-              0.4006223
+              -78.1750962,
+              0.4005286
             ]
           ]
         ]
@@ -4308,7 +4308,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Casa Patrimonial Las T's 7",
         "zona": "Las T's y Multis",
         "categoria": "Residencia Estudiantil Patrimonial (Casa T)",
-        "area_m2": 268.8,
+        "area_m2": 268.5,
         "centroide": [
           -78.1752603,
           0.4005131
@@ -4320,24 +4320,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1751382,
-              0.4005132
+              -78.175177,
+              0.4006026
             ],
             [
-              -78.1753434,
-              0.4004237
+              -78.1753822,
+              0.4005131
             ],
             [
-              -78.1753824,
-              0.400513
+              -78.1753436,
+              0.4004236
             ],
             [
-              -78.1751772,
-              0.4006025
+              -78.1751384,
+              0.4005131
             ],
             [
-              -78.1751382,
-              0.4005132
+              -78.175177,
+              0.4006026
             ]
           ]
         ]
@@ -4350,7 +4350,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Casa Patrimonial Las T's 8",
         "zona": "Las T's y Multis",
         "categoria": "Residencia Estudiantil Patrimonial (Casa T)",
-        "area_m2": 272.7,
+        "area_m2": 272.6,
         "centroide": [
           -78.1749251,
           0.4008123
@@ -4362,24 +4362,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1750482,
-              0.400812
+              -78.175009,
+              0.400722
             ],
             [
-              -78.1748415,
-              0.4009025
+              -78.1748023,
+              0.4008125
             ],
             [
-              -78.1748021,
-              0.4008126
+              -78.1748413,
+              0.4009026
             ],
             [
-              -78.1750088,
-              0.4007221
+              -78.175048,
+              0.4008121
             ],
             [
-              -78.1750482,
-              0.400812
+              -78.175009,
+              0.400722
             ]
           ]
         ]
@@ -4392,7 +4392,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Casa Patrimonial Las T's 9",
         "zona": "Las T's y Multis",
         "categoria": "Residencia Estudiantil Patrimonial (Casa T)",
-        "area_m2": 258.7,
+        "area_m2": 258.4,
         "centroide": [
           -78.1751704,
           0.4007038
@@ -4404,24 +4404,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1752905,
-              0.400705
+              -78.1752538,
+              0.4006171
             ],
             [
-              -78.1750873,
-              0.4007905
+              -78.1750506,
+              0.4007026
             ],
             [
-              -78.1750504,
-              0.4007027
+              -78.1750871,
+              0.4007906
             ],
             [
-              -78.1752536,
-              0.4006172
+              -78.1752903,
+              0.4007051
             ],
             [
-              -78.1752905,
-              0.400705
+              -78.1752538,
+              0.4006171
             ]
           ]
         ]
@@ -4434,7 +4434,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Casa Patrimonial Las T's 10",
         "zona": "Las T's y Multis",
         "categoria": "Residencia Estudiantil Patrimonial (Casa T)",
-        "area_m2": 266.4,
+        "area_m2": 266.1,
         "centroide": [
           -78.1754152,
           0.4005981
@@ -4446,24 +4446,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1752945,
-              0.4005981
+              -78.1753341,
+              0.4006878
             ],
             [
-              -78.175496,
-              0.4005085
+              -78.1755356,
+              0.4005982
             ],
             [
-              -78.1755358,
-              0.4005981
+              -78.1754962,
+              0.4005084
             ],
             [
-              -78.1753343,
-              0.4006877
+              -78.1752947,
+              0.400598
             ],
             [
-              -78.1752945,
-              0.4005981
+              -78.1753341,
+              0.4006878
             ]
           ]
         ]
@@ -4476,7 +4476,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Casa Patrimonial Las T's 11",
         "zona": "Las T's y Multis",
         "categoria": "Residencia Estudiantil Patrimonial (Casa T - Módulo Cuádruple)",
-        "area_m2": 531.4,
+        "area_m2": 531.0,
         "centroide": [
           -78.1751525,
           0.4009106
@@ -4488,24 +4488,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1753736,
-              0.400901
-            ],
-            [
-              -78.1749582,
-              0.4010165
-            ],
-            [
-              -78.1749314,
-              0.4009201
-            ],
-            [
-              -78.1753468,
+              -78.175347,
               0.4008046
             ],
             [
-              -78.1753736,
+              -78.1749316,
+              0.4009201
+            ],
+            [
+              -78.174958,
+              0.4010165
+            ],
+            [
+              -78.1753734,
               0.400901
+            ],
+            [
+              -78.175347,
+              0.4008046
             ]
           ]
         ]
@@ -4518,7 +4518,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Casa Patrimonial Las T's 12",
         "zona": "Las T's y Multis",
         "categoria": "Residencia Estudiantil Patrimonial (Casa T - Módulo Cuádruple)",
-        "area_m2": 536.4,
+        "area_m2": 536.0,
         "centroide": [
           -78.1755995,
           0.4007803
@@ -4530,24 +4530,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1758188,
-              0.4007697
+              -78.1757906,
+              0.4006717
             ],
             [
-              -78.1754085,
-              0.4008887
+              -78.1753803,
+              0.4007907
             ],
             [
-              -78.1753801,
-              0.4007908
+              -78.1754083,
+              0.4008888
             ],
             [
-              -78.1757904,
-              0.4006718
+              -78.1758186,
+              0.4007698
             ],
             [
-              -78.1758188,
-              0.4007697
+              -78.1757906,
+              0.4006717
             ]
           ]
         ]
@@ -4560,7 +4560,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Casa Patrimonial Las T's 13",
         "zona": "Las T's y Multis",
         "categoria": "Residencia Estudiantil Patrimonial (Casa T)",
-        "area_m2": 275.0,
+        "area_m2": 274.7,
         "centroide": [
           -78.1758705,
           0.4008493
@@ -4572,24 +4572,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1757779,
-              0.4009273
+              -78.1757512,
+              0.4008298
             ],
             [
-              -78.1757511,
-              0.4008294
+              -78.175778,
+              0.4009277
             ],
             [
-              -78.1759632,
-              0.4007714
+              -78.1759899,
+              0.4008689
             ],
             [
-              -78.17599,
-              0.4008693
+              -78.1759631,
+              0.400771
             ],
             [
-              -78.1757779,
-              0.4009273
+              -78.1757512,
+              0.4008298
             ]
           ]
         ]
@@ -5309,7 +5309,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Bloque Multifamiliar Las Multis 3",
         "zona": "Sector Las Multis",
         "categoria": "Residencia Estudiantil Multifamiliar",
-        "area_m2": 527.7,
+        "area_m2": 524.2,
         "centroide": [
           -78.1747377,
           0.4025221
@@ -5321,24 +5321,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1747352,
-              0.4023441
+              -78.1748532,
+              0.4023872
             ],
             [
-              -78.1748526,
-              0.4023891
+              -78.1747301,
+              0.4023444
             ],
             [
-              -78.1747476,
-              0.4026945
+              -78.174624,
+              0.4026536
             ],
             [
-              -78.1746189,
-              0.4026539
+              -78.174747,
+              0.4026964
             ],
             [
-              -78.1747352,
-              0.4023441
+              -78.1748532,
+              0.4023872
             ]
           ]
         ]
@@ -5351,7 +5351,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Bloque Multifamiliar Las Multis 4",
         "zona": "Sector Las Multis",
         "categoria": "Residencia Estudiantil Multifamiliar",
-        "area_m2": 526.9,
+        "area_m2": 523.4,
         "centroide": [
           -78.1749874,
           0.4026518
@@ -5363,24 +5363,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1749807,
-              0.4024762
+              -78.1749809,
+              0.4024747
             ],
             [
-              -78.174872,
-              0.402784
+              -78.1748719,
+              0.402785
             ],
             [
-              -78.1749937,
-              0.4028293
+              -78.1749938,
+              0.4028283
             ],
             [
-              -78.175103,
-              0.4025165
+              -78.1751028,
+              0.402518
             ],
             [
-              -78.1749807,
-              0.4024762
+              -78.1749809,
+              0.4024747
             ]
           ]
         ]
@@ -5393,7 +5393,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Bloque Multifamiliar Las Multis 5",
         "zona": "Sector Las Multis",
         "categoria": "Residencia Estudiantil Multifamiliar",
-        "area_m2": 425.6,
+        "area_m2": 422.7,
         "centroide": [
           -78.175341,
           0.4025888
@@ -5405,24 +5405,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1752355,
-              0.4027056
+              -78.1752411,
+              0.4027092
             ],
             [
-              -78.1753495,
-              0.4027461
+              -78.175352,
+              0.4027452
             ],
             [
-              -78.1754443,
-              0.4024638
+              -78.1754418,
+              0.4024647
             ],
             [
-              -78.1753364,
-              0.4024323
+              -78.1753308,
+              0.4024287
             ],
             [
-              -78.1752355,
-              0.4027056
+              -78.1752411,
+              0.4027092
             ]
           ]
         ]
@@ -5435,7 +5435,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Bloque Multifamiliar Las Multis 6",
         "zona": "Sector Las Multis",
         "categoria": "Residencia Estudiantil Multifamiliar",
-        "area_m2": 416.1,
+        "area_m2": 413.3,
         "centroide": [
           -78.175498,
           0.402272
@@ -5447,24 +5447,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1753669,
-              0.4023572
+              -78.1753744,
+              0.4023625
             ],
             [
-              -78.1754702,
-              0.4024229
+              -78.1754726,
+              0.4024238
             ],
             [
-              -78.1756271,
-              0.4021778
+              -78.1756247,
+              0.4021769
             ],
             [
-              -78.1755339,
-              0.4021209
+              -78.1755264,
+              0.4021156
             ],
             [
-              -78.1753669,
-              0.4023572
+              -78.1753744,
+              0.4023625
             ]
           ]
         ]
@@ -5477,7 +5477,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Bloque Multifamiliar Las Multis 7",
         "zona": "Sector Las Multis",
         "categoria": "Residencia Estudiantil Multifamiliar",
-        "area_m2": 458.3,
+        "area_m2": 455.3,
         "centroide": [
           -78.1757324,
           0.4020048
@@ -5489,24 +5489,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1758794,
-              0.4019338
+              -78.1758787,
+              0.4019331
             ],
             [
-              -78.1757889,
-              0.4018517
+              -78.1757882,
+              0.401851
             ],
             [
-              -78.1755855,
-              0.4020759
+              -78.1755862,
+              0.4020766
             ],
             [
-              -78.175676,
-              0.402158
+              -78.1756767,
+              0.4021587
             ],
             [
-              -78.1758794,
-              0.4019338
+              -78.1758787,
+              0.4019331
             ]
           ]
         ]
@@ -5519,7 +5519,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Bloque Multifamiliar Las Multis 8",
         "zona": "Sector Las Multis",
         "categoria": "Residencia Estudiantil Multifamiliar",
-        "area_m2": 422.0,
+        "area_m2": 419.2,
         "centroide": [
           -78.1759762,
           0.4017455
@@ -5531,24 +5531,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1758313,
-              0.4018174
+              -78.1759222,
+              0.4018926
             ],
             [
-              -78.1760321,
-              0.4015988
+              -78.1761179,
+              0.4016766
             ],
             [
-              -78.1761176,
-              0.4016753
+              -78.1760318,
+              0.4015975
             ],
             [
-              -78.1759271,
-              0.4018888
+              -78.1758362,
+              0.4018136
             ],
             [
-              -78.1758313,
-              0.4018174
+              -78.1759222,
+              0.4018926
             ]
           ]
         ]
@@ -5561,7 +5561,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Bloque Multifamiliar Las Multis 9",
         "zona": "Sector Las Multis",
         "categoria": "Residencia Estudiantil Multifamiliar",
-        "area_m2": 437.7,
+        "area_m2": 434.8,
         "centroide": [
           -78.176231,
           0.4014933
@@ -5573,24 +5573,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1761706,
-              0.4016364
+              -78.1760858,
+              0.4015547
             ],
             [
-              -78.17608,
-              0.4015532
+              -78.1761697,
+              0.4016397
             ],
             [
-              -78.1763006,
-              0.4013471
+              -78.1763787,
+              0.4014306
             ],
             [
-              -78.1763778,
-              0.4014339
+              -78.1762948,
+              0.4013456
             ],
             [
-              -78.1761706,
-              0.4016364
+              -78.1760858,
+              0.4015547
             ]
           ]
         ]
@@ -5603,7 +5603,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Bloque Multifamiliar Las Multis 10",
         "zona": "Sector Las Multis",
         "categoria": "Residencia Estudiantil Multifamiliar",
-        "area_m2": 411.0,
+        "area_m2": 408.3,
         "centroide": [
           -78.1764998,
           0.4012463
@@ -5615,24 +5615,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1764358,
-              0.4013873
+              -78.1763569,
+              0.4013053
             ],
             [
-              -78.1763543,
-              0.4013031
+              -78.1764357,
+              0.4013878
             ],
             [
-              -78.1765685,
-              0.4011053
+              -78.1766447,
+              0.4011856
             ],
             [
-              -78.1766446,
-              0.4011861
+              -78.1765659,
+              0.4011031
             ],
             [
-              -78.1764358,
-              0.4013873
+              -78.1763569,
+              0.4013053
             ]
           ]
         ]
@@ -5645,7 +5645,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Edificio Técnico y de Servicios Las Multis",
         "zona": "Sector Las Multis",
         "categoria": "Edificio de Servicios / Soporte Técnico",
-        "area_m2": 147.0,
+        "area_m2": 146.0,
         "centroide": [
           -78.1750039,
           0.4015424
@@ -5657,24 +5657,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.175048,
-              0.4016072
+              -78.1750479,
+              0.4016075
             ],
             [
-              -78.1750779,
-              0.4015167
+              -78.1750778,
+              0.401517
             ],
             [
-              -78.1749597,
-              0.4014777
+              -78.1749598,
+              0.4014774
             ],
             [
-              -78.1749298,
-              0.4015682
+              -78.1749299,
+              0.4015679
             ],
             [
-              -78.175048,
-              0.4016072
+              -78.1750479,
+              0.4016075
             ]
           ]
         ]
@@ -5687,7 +5687,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Cancha Deportiva Las Multis",
         "zona": "Sector Las Multis",
         "categoria": "Instalación Deportiva y Recreativa",
-        "area_m2": 464.5,
+        "area_m2": 461.4,
         "centroide": [
           -78.1745256,
           0.4024195
@@ -5699,24 +5699,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1744405,
-              0.4025336
+              -78.1744447,
+              0.4025337
             ],
             [
-              -78.1746075,
-              0.4025305
+              -78.174611,
+              0.4025302
             ],
             [
-              -78.1746098,
-              0.4023046
+              -78.1746063,
+              0.4023049
             ],
             [
-              -78.1744442,
-              0.4023086
+              -78.17444,
+              0.4023085
             ],
             [
-              -78.1744405,
-              0.4025336
+              -78.1744447,
+              0.4025337
             ]
           ]
         ]
@@ -5729,7 +5729,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Tienda / Minimarket Las Multis",
         "zona": "Sector Las Multis",
         "categoria": "Comercio Interior en Residencia",
-        "area_m2": 22.6,
+        "area_m2": 22.4,
         "centroide": [
           -78.1753152,
           0.4015734
@@ -5741,24 +5741,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1752884,
-              0.4015656
+              -78.175345,
+              0.4015762
             ],
             [
-              -78.1753156,
-              0.4015418
+              -78.1753144,
+              0.4015423
             ],
             [
-              -78.1753438,
-              0.4015767
+              -78.1752849,
+              0.4015693
             ],
             [
-              -78.1753119,
-              0.4016069
+              -78.1753154,
+              0.4016032
             ],
             [
-              -78.1752884,
-              0.4015656
+              -78.175345,
+              0.4015762
             ]
           ]
         ]
@@ -5817,7 +5817,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Restaurante Comedor doña Perci",
         "zona": "Sector Reservorio Este",
         "categoria": "Servicio de Alimentación / Gastronomía",
-        "area_m2": 46.2,
+        "area_m2": 45.8,
         "centroide": [
           -78.1685148,
           0.4046028
@@ -5829,24 +5829,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1685081,
-              0.40456
+              -78.1685082,
+              0.4045598
             ],
             [
-              -78.1684733,
-              0.4046152
+              -78.1684734,
+              0.404615
             ],
             [
-              -78.1685216,
-              0.4046456
+              -78.1685215,
+              0.4046458
             ],
             [
-              -78.1685564,
-              0.4045904
+              -78.1685563,
+              0.4045906
             ],
             [
-              -78.1685081,
-              0.40456
+              -78.1685082,
+              0.4045598
             ]
           ]
         ]
@@ -5859,7 +5859,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Habitaciones Privadas Sacha Home (Sin Convenio)",
         "zona": "Sector Reservorio Este (Externo)",
         "categoria": "Alojamiento Privado Externo (Sin Convenio)",
-        "area_m2": 191.0,
+        "area_m2": 189.7,
         "centroide": [
           -78.1683528,
           0.4046028
@@ -5871,24 +5871,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1684636,
-              0.4046659
+              -78.1684635,
+              0.4046658
             ],
             [
-              -78.168285,
-              0.4044948
+              -78.1682849,
+              0.4044947
             ],
             [
-              -78.1682419,
-              0.4045398
+              -78.168242,
+              0.4045399
             ],
             [
-              -78.1684205,
-              0.4047109
+              -78.1684206,
+              0.404711
             ],
             [
-              -78.1684636,
-              0.4046659
+              -78.1684635,
+              0.4046658
             ]
           ]
         ]
@@ -5901,7 +5901,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Residencia Patrimonial Las Pats 1",
         "zona": "Sector Las Pats",
         "categoria": "Residencia Estudiantil Patrimonial",
-        "area_m2": 367.8,
+        "area_m2": 365.2,
         "centroide": [
           -78.173054,
           0.4015153
@@ -5913,24 +5913,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1732153,
-              0.40147
+              -78.1732148,
+              0.4014692
             ],
             [
-              -78.1731671,
-              0.4013916
+              -78.1731666,
+              0.4013908
             ],
             [
-              -78.1728926,
-              0.4015606
+              -78.1728931,
+              0.4015614
             ],
             [
-              -78.1729409,
-              0.401639
+              -78.1729414,
+              0.4016398
             ],
             [
-              -78.1732153,
-              0.40147
+              -78.1732148,
+              0.4014692
             ]
           ]
         ]
@@ -5943,7 +5943,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Residencia Patrimonial Las Pats 2",
         "zona": "Sector Las Pats",
         "categoria": "Residencia Estudiantil Patrimonial",
-        "area_m2": 395.8,
+        "area_m2": 393.1,
         "centroide": [
           -78.1733669,
           0.4013177
@@ -5955,24 +5955,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1734779,
-              0.4011861
+              -78.1734782,
+              0.4011859
             ],
             [
-              -78.1732024,
-              0.4013688
+              -78.1732027,
+              0.4013686
             ],
             [
-              -78.1732558,
-              0.4014493
+              -78.1732555,
+              0.4014495
             ],
             [
-              -78.1735313,
-              0.4012666
+              -78.173531,
+              0.4012668
             ],
             [
-              -78.1734779,
-              0.4011861
+              -78.1734782,
+              0.4011859
             ]
           ]
         ]
@@ -5985,7 +5985,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Residencia Patrimonial Las Pats 3",
         "zona": "Sector Las Pats",
         "categoria": "Residencia Estudiantil Patrimonial",
-        "area_m2": 466.3,
+        "area_m2": 463.2,
         "centroide": [
           -78.1737541,
           0.4013703
@@ -5997,24 +5997,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1735933,
-              0.401227
+              -78.1735939,
+              0.4012259
             ],
             [
-              -78.173549,
-              0.4013045
+              -78.1735496,
+              0.4013034
             ],
             [
-              -78.173915,
-              0.4015137
+              -78.1739144,
+              0.4015148
             ],
             [
-              -78.1739593,
-              0.4014362
+              -78.1739587,
+              0.4014373
             ],
             [
-              -78.1735933,
-              0.401227
+              -78.1735939,
+              0.4012259
             ]
           ]
         ]
@@ -6027,7 +6027,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Residencia Patrimonial Las Pats 4",
         "zona": "Sector Las Pats",
         "categoria": "Residencia Estudiantil Patrimonial",
-        "area_m2": 658.0,
+        "area_m2": 653.9,
         "centroide": [
           -78.17425,
           0.4016518
@@ -6039,24 +6039,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1745351,
-              0.4017578
+              -78.1745349,
+              0.4017577
             ],
             [
-              -78.1740073,
-              0.4014684
+              -78.1740071,
+              0.4014683
             ],
             [
-              -78.1739649,
-              0.4015458
+              -78.1739651,
+              0.4015459
             ],
             [
-              -78.1744927,
-              0.4018352
+              -78.1744929,
+              0.4018353
             ],
             [
-              -78.1745351,
-              0.4017578
+              -78.1745349,
+              0.4017577
             ]
           ]
         ]
@@ -6069,7 +6069,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Residencia Patrimonial Las Pats 5",
         "zona": "Sector Las Pats",
         "categoria": "Residencia Estudiantil Patrimonial",
-        "area_m2": 876.0,
+        "area_m2": 870.3,
         "centroide": [
           -78.1744021,
           0.402128
@@ -6081,24 +6081,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1742363,
-              0.4025027
+              -78.1742362,
+              0.4025029
             ],
             [
-              -78.174643,
-              0.4017966
+              -78.1746429,
+              0.4017968
             ],
             [
-              -78.1745678,
-              0.4017533
+              -78.1745679,
+              0.4017531
             ],
             [
-              -78.1741611,
-              0.4024594
+              -78.1741612,
+              0.4024592
             ],
             [
-              -78.1742363,
-              0.4025027
+              -78.1742362,
+              0.4025029
             ]
           ]
         ]
@@ -6111,7 +6111,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Residencia Patrimonial Las Pats 6",
         "zona": "Sector Las Pats",
         "categoria": "Residencia Estudiantil Patrimonial",
-        "area_m2": 446.7,
+        "area_m2": 443.8,
         "centroide": [
           -78.1739595,
           0.4023854
@@ -6123,24 +6123,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1737619,
-              0.4023284
+              -78.1737621,
+              0.4023285
             ],
             [
-              -78.174114,
-              0.4025212
+              -78.1741142,
+              0.4025213
             ],
             [
-              -78.1741571,
-              0.4024424
+              -78.1741569,
+              0.4024423
             ],
             [
-              -78.173805,
-              0.4022496
+              -78.1738048,
+              0.4022495
             ],
             [
-              -78.1737619,
-              0.4023284
+              -78.1737621,
+              0.4023285
             ]
           ]
         ]
@@ -6153,7 +6153,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Residencia Patrimonial Las Pats 7",
         "zona": "Sector Las Pats",
         "categoria": "Residencia Estudiantil Patrimonial",
-        "area_m2": 443.1,
+        "area_m2": 440.2,
         "centroide": [
           -78.1735616,
           0.4021599
@@ -6165,24 +6165,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1733646,
-              0.4020997
+              -78.1733648,
+              0.4020998
             ],
             [
-              -78.173715,
-              0.4022975
+              -78.1737152,
+              0.4022976
             ],
             [
-              -78.1737587,
-              0.4022201
+              -78.1737585,
+              0.40222
             ],
             [
-              -78.1734083,
-              0.4020223
+              -78.1734081,
+              0.4020222
             ],
             [
-              -78.1733646,
-              0.4020997
+              -78.1733648,
+              0.4020998
             ]
           ]
         ]
@@ -6195,7 +6195,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Residencia Patrimonial Las Pats 8",
         "zona": "Sector Las Pats",
         "categoria": "Residencia Estudiantil Patrimonial",
-        "area_m2": 1215.0,
+        "area_m2": 1207.2,
         "centroide": [
           -78.1745988,
           0.40281
@@ -6207,24 +6207,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1740908,
-              0.4025969
+              -78.174091,
+              0.402597
             ],
             [
-              -78.1750656,
-              0.4031024
+              -78.1750658,
+              0.4031025
             ],
             [
-              -78.1751067,
-              0.4030231
+              -78.1751065,
+              0.403023
             ],
             [
-              -78.1741319,
-              0.4025176
+              -78.1741317,
+              0.4025175
             ],
             [
-              -78.1740908,
-              0.4025969
+              -78.174091,
+              0.402597
             ]
           ]
         ]
@@ -6237,7 +6237,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Laboratorio de Campo Las Pats",
         "zona": "Sector Las Pats",
         "categoria": "Laboratorio / Investigación Científica",
-        "area_m2": 150.0,
+        "area_m2": 149.0,
         "centroide": [
           -78.1744906,
           0.4016386
@@ -6249,24 +6249,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1745652,
-              0.4017122
+              -78.1745649,
+              0.4017127
             ],
             [
-              -78.1745934,
-              0.4016589
+              -78.1745931,
+              0.4016594
             ],
             [
-              -78.174416,
-              0.401565
+              -78.1744163,
+              0.4015645
             ],
             [
-              -78.1743878,
-              0.4016183
+              -78.1743881,
+              0.4016178
             ],
             [
-              -78.1745652,
-              0.4017122
+              -78.1745649,
+              0.4017127
             ]
           ]
         ]
@@ -6279,7 +6279,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Edificio TICs y Conectividad Las Pats",
         "zona": "Sector Las Pats",
         "categoria": "Tecnología / Soporte y Telecomunicaciones",
-        "area_m2": 162.1,
+        "area_m2": 161.0,
         "centroide": [
           -78.1752238,
           0.4029913
@@ -6291,24 +6291,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1752435,
-              0.4030727
+              -78.1752434,
+              0.4030729
             ],
             [
-              -78.1752928,
-              0.4029439
+              -78.1752927,
+              0.4029441
             ],
             [
-              -78.1752042,
-              0.40291
+              -78.1752043,
+              0.4029098
             ],
             [
-              -78.1751549,
-              0.4030388
+              -78.175155,
+              0.4030386
             ],
             [
-              -78.1752435,
-              0.4030727
+              -78.1752434,
+              0.4030729
             ]
           ]
         ]
@@ -6321,7 +6321,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Villas Residenciales de Docentes",
         "zona": "Sector Las Pats",
         "categoria": "Residencia de Docentes e Investigadores",
-        "area_m2": 122.8,
+        "area_m2": 122.0,
         "centroide": [
           -78.1753353,
           0.402876
@@ -6333,24 +6333,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1752754,
-              0.4029138
+              -78.1752756,
+              0.4029139
             ],
             [
-              -78.1753629,
-              0.4029413
+              -78.1753631,
+              0.4029414
             ],
             [
-              -78.1753953,
-              0.4028382
+              -78.1753951,
+              0.4028381
             ],
             [
-              -78.1753078,
-              0.4028107
+              -78.1753076,
+              0.4028106
             ],
             [
-              -78.1752754,
-              0.4029138
+              -78.1752756,
+              0.4029139
             ]
           ]
         ]
@@ -7168,7 +7168,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Bloque Multifamiliar Las Multis 11",
         "zona": "Sector Las Multis",
         "categoria": "Residencia Estudiantil Multifamiliar",
-        "area_m2": 460.1,
+        "area_m2": 458.3,
         "centroide": [
           -78.1754351,
           0.4015207
@@ -7180,24 +7180,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.175511,
-              0.401374
+              -78.1755052,
+              0.4013703
             ],
             [
-              -78.175288,
-              0.401561
+              -78.1752877,
+              0.4015703
             ],
             [
-              -78.175372,
-              0.401673
+              -78.1753723,
+              0.4016637
             ],
             [
-              -78.175584,
-              0.40146
+              -78.1755898,
+              0.4014637
             ],
             [
-              -78.175511,
-              0.401374
+              -78.1755052,
+              0.4013703
             ]
           ]
         ]
@@ -7210,7 +7210,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Bloque Multifamiliar Las Multis 12",
         "zona": "Sector Las Multis",
         "categoria": "Residencia Estudiantil Multifamiliar",
-        "area_m2": 441.8,
+        "area_m2": 440.1,
         "centroide": [
           -78.1757845,
           0.4013919
@@ -7222,24 +7222,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.175933,
-              0.401332
+              -78.1758528,
+              0.4012451
             ],
             [
-              -78.17572,
-              0.40154
+              -78.1756383,
+              0.4014426
             ],
             [
-              -78.175639,
-              0.401436
+              -78.1757207,
+              0.4015334
             ],
             [
-              -78.175855,
-              0.401249
+              -78.1759352,
+              0.4013359
             ],
             [
-              -78.175933,
-              0.401332
+              -78.1758528,
+              0.4012451
             ]
           ]
         ]
@@ -7252,7 +7252,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Bloque Multifamiliar Las Multis 13",
         "zona": "Sector Las Multis",
         "categoria": "Residencia Estudiantil Multifamiliar",
-        "area_m2": 415.1,
+        "area_m2": 413.5,
         "centroide": [
           -78.1761296,
           0.4012578
@@ -7264,24 +7264,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.175989,
-              0.4013
+              -78.1760659,
+              0.401395
             ],
             [
-              -78.176199,
-              0.40112
+              -78.1762769,
+              0.4012015
             ],
             [
-              -78.176276,
-              0.401196
+              -78.1761981,
+              0.4011145
             ],
             [
-              -78.176064,
-              0.401403
+              -78.1759871,
+              0.401308
             ],
             [
-              -78.175989,
-              0.4013
+              -78.1760659,
+              0.401395
             ]
           ]
         ]
@@ -7294,7 +7294,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Residencia Patrimonial Las Pats 9",
         "zona": "Sector Las Pats",
         "categoria": "Residencia Estudiantil Patrimonial",
-        "area_m2": 393.1,
+        "area_m2": 391.6,
         "centroide": [
           -78.1733144,
           0.4018124
@@ -7306,24 +7306,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.173188,
-              0.401931
+              -78.1732029,
+              0.4019373
             ],
             [
-              -78.173282,
-              0.401974
+              -78.1732904,
+              0.4019788
             ],
             [
-              -78.173438,
-              0.401686
+              -78.1734296,
+              0.4016812
             ],
             [
-              -78.173357,
-              0.401646
+              -78.1733421,
+              0.4016397
             ],
             [
-              -78.173188,
-              0.401931
+              -78.1732029,
+              0.4019373
             ]
           ]
         ]
@@ -7821,24 +7821,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1760998960864,
-              0.4042613018403834
+              -78.1760995,
+              0.4042651
             ],
             [
-              -78.17608846041709,
-              0.4043092936161369
+              -78.1760874,
+              0.4043109
             ],
             [
-              -78.17620740414793,
-              0.40434474337116183
+              -78.1762084,
+              0.4043432
             ],
             [
-              -78.17622010330457,
-              0.40430115536149835
+              -78.1762205,
+              0.4042974
             ],
             [
-              -78.1760998960864,
-              0.4042613018403834
+              -78.1760995,
+              0.4042651
             ]
           ]
         ]
@@ -7851,7 +7851,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Cancha de Volley Playa (Arena)",
         "tipo": "Deporte y Recreación / Cancha de Arena",
         "zona": "Complejo Deportivo Sur",
-        "area_m2": 396.4,
+        "area_m2": 396.0,
         "interior": false,
         "is_perimeter": false
       },
@@ -7860,24 +7860,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.17299007290745,
-              0.4025861600605359
+              -78.172866,
+              0.4025878
             ],
             [
-              -78.17286166687853,
-              0.4025842300089088
+              -78.1730001,
+              0.4025819
             ],
             [
-              -78.17285994863846,
-              0.40235194000536745
+              -78.1729897,
+              0.4023425
             ],
             [
-              -78.17299975708694,
-              0.40233825911290455
+              -78.1728556,
+              0.4023484
             ],
             [
-              -78.17299007290745,
-              0.4025861600605359
+              -78.172866,
+              0.4025878
             ]
           ]
         ]
@@ -7890,7 +7890,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Cancha de Basketball 1",
         "tipo": "Deporte y Recreación / Cancha de Baloncesto",
         "zona": "Complejo Deportivo Sur",
-        "area_m2": 601.0,
+        "area_m2": 600.5,
         "interior": false,
         "is_perimeter": false
       },
@@ -7899,24 +7899,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.17262017830531,
-              0.40228557017200245
+              -78.1727869,
+              0.4025711
             ],
             [
-              -78.17279072890534,
-              0.4022828888612006
+              -78.1727898,
+              0.4022851
             ],
             [
-              -78.17278597294019,
-              0.40257329585712437
+              -78.1726192,
+              0.4022834
             ],
             [
-              -78.17261542483678,
-              0.40256714258832177
+              -78.1726164,
+              0.4025694
             ],
             [
-              -78.17262017830531,
-              0.40228557017200245
+              -78.1727869,
+              0.4025711
             ]
           ]
         ]
@@ -7929,7 +7929,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Cancha de Basketball 2",
         "tipo": "Deporte y Recreación / Cancha de Baloncesto",
         "zona": "Complejo Deportivo Sur",
-        "area_m2": 509.2,
+        "area_m2": 508.8,
         "interior": false,
         "is_perimeter": false
       },
@@ -7938,24 +7938,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.17229870730031,
-              0.4023890144287728
+              -78.1724501,
+              0.4023918
             ],
             [
-              -78.1724493204527,
-              0.4023920568119697
+              -78.1723002,
+              0.4023893
             ],
             [
-              -78.17244629640133,
-              0.40266729410813257
+              -78.1722956,
+              0.402665
             ],
             [
-              -78.17229713258551,
-              0.4026652204280081
+              -78.1724455,
+              0.4026675
             ],
             [
-              -78.17229870730031,
-              0.4023890144287728
+              -78.1724501,
+              0.4023918
             ]
           ]
         ]
@@ -7968,7 +7968,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Cancha de Basketball 3",
         "tipo": "Deporte y Recreación / Cancha de Baloncesto",
         "zona": "Complejo Deportivo Sur",
-        "area_m2": 503.3,
+        "area_m2": 502.9,
         "interior": false,
         "is_perimeter": false
       },
@@ -7977,24 +7977,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.17206146245567,
-              0.4027909097980843
+              -78.1720626,
+              0.4027914
             ],
             [
-              -78.17220993324644,
-              0.40279148333782916
+              -78.1722119,
+              0.402791
             ],
             [
-              -78.17221321915268,
-              0.4025168444205669
+              -78.1722113,
+              0.4025173
             ],
             [
-              -78.17206312374493,
-              0.4025181243070779
+              -78.172062,
+              0.4025177
             ],
             [
-              -78.17206146245567,
-              0.4027909097980843
+              -78.1720626,
+              0.4027914
             ]
           ]
         ]
@@ -8007,7 +8007,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Cancha de Fútbol Sintética 1 (Cercada)",
         "tipo": "Deporte y Recreación / Fútbol Sintético",
         "zona": "Complejo Deportivo Sur",
-        "area_m2": 1267.9,
+        "area_m2": 1266.8,
         "interior": false,
         "is_perimeter": false
       },
@@ -8016,24 +8016,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.17236796565483,
-              0.40209252598424083
+              -78.1723731,
+              0.402089
             ],
             [
-              -78.17260800363452,
-              0.40208233822360445
+              -78.1726108,
+              0.4020858
             ],
             [
-              -78.17260779323227,
-              0.40165628949352405
+              -78.172605,
+              0.4016529
             ],
             [
-              -78.17237240586813,
-              0.4016526038666191
+              -78.1723673,
+              0.4016561
             ],
             [
-              -78.17236796565483,
-              0.40209252598424083
+              -78.1723731,
+              0.402089
             ]
           ]
         ]
@@ -8046,7 +8046,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Cancha de Fútbol Sintética 2 (Cercada)",
         "tipo": "Deporte y Recreación / Fútbol Sintético",
         "zona": "Complejo Deportivo Sur",
-        "area_m2": 1187.7,
+        "area_m2": 1186.7,
         "interior": false,
         "is_perimeter": false
       },
@@ -8055,24 +8055,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.17230336934185,
-              0.40223108513129635
+              -78.1720634,
+              0.4022265
             ],
             [
-              -78.172062332801,
-              0.40222409652123897
+              -78.1722985,
+              0.4022287
             ],
             [
-              -78.1720683136697,
-              0.40181875311686155
+              -78.1723023,
+              0.4018186
             ],
             [
-              -78.17229743361754,
-              0.401816173567501
+              -78.1720672,
+              0.4018164
             ],
             [
-              -78.17230336934185,
-              0.40223108513129635
+              -78.1720634,
+              0.4022265
             ]
           ]
         ]
@@ -8085,7 +8085,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Cancha de Fútbol Sintética 3 (Cercada)",
         "tipo": "Deporte y Recreación / Fútbol Sintético",
         "zona": "Complejo Deportivo Sur",
-        "area_m2": 672.4,
+        "area_m2": 671.8,
         "interior": false,
         "is_perimeter": false
       },
@@ -8094,24 +8094,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.17197007418827,
-              0.40195721709224796
+              -78.1719696,
+              0.4019596
             ],
             [
-              -78.17179118686657,
-              0.40196081391685234
+              -78.1717909,
+              0.4019584
             ],
             [
-              -78.17178857753838,
-              0.40226137989635063
+              -78.1717888,
+              0.4022638
             ],
             [
-              -78.1719670839912,
-              0.40226750026629277
+              -78.1719675,
+              0.4022651
             ],
             [
-              -78.17197007418827,
-              0.40195721709224796
+              -78.1719696,
+              0.4019596
             ]
           ]
         ]
@@ -8179,7 +8179,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Residencia de Docentes 2",
         "tipo": "Residencia de Docentes e Investigadores",
         "zona": "Sector Residencias Docentes",
-        "area_m2": 224.3,
+        "area_m2": 224.1,
         "interior": false,
         "is_perimeter": false
       },
@@ -8188,24 +8188,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.17557991761626,
-              0.4035058418082375
+              -78.1754868,
+              0.4034803
             ],
             [
-              -78.17553113679166,
-              0.40368979868839344
+              -78.1754378,
+              0.4036615
             ],
             [
-              -78.17543803362949,
-              0.4036587904803255
+              -78.1755314,
+              0.4036871
             ],
             [
-              -78.17548726709248,
-              0.40348043378653464
+              -78.1755804,
+              0.403506
             ],
             [
-              -78.17557991761626,
-              0.4035058418082375
+              -78.1754868,
+              0.4034803
             ]
           ]
         ]
@@ -8218,7 +8218,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Residencia de Docentes 3",
         "tipo": "Residencia de Docentes e Investigadores",
         "zona": "Sector Residencias Docentes",
-        "area_m2": 174.2,
+        "area_m2": 174.0,
         "interior": false,
         "is_perimeter": false
       },
@@ -8227,24 +8227,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1755252375428,
-              0.4037476411895457
+              -78.175392,
+              0.4038555
             ],
             [
-              -78.17549032201262,
-              0.4038818212547698
+              -78.1754911,
+              0.4038808
             ],
             [
-              -78.17539282014432,
-              0.4038545128083486
+              -78.1755249,
+              0.4037468
             ],
             [
-              -78.17542534823382,
-              0.40372073591745794
+              -78.1754257,
+              0.4037215
             ],
             [
-              -78.1755252375428,
-              0.4037476411895457
+              -78.175392,
+              0.4038555
             ]
           ]
         ]
@@ -8257,7 +8257,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Residencia de Docentes 4",
         "tipo": "Residencia de Docentes e Investigadores",
         "zona": "Sector Residencias Docentes",
-        "area_m2": 170.9,
+        "area_m2": 170.7,
         "interior": false,
         "is_perimeter": false
       },
@@ -8266,24 +8266,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1755999134971,
-              0.4037532394194796
+              -78.1756635,
+              0.4039154
             ],
             [
-              -78.1756951934876,
-              0.40377127893214637
+              -78.1756935,
+              0.403772
             ],
             [
-              -78.17566177330714,
-              0.40391611473941935
+              -78.1756009,
+              0.4037524
             ],
             [
-              -78.17557179127812,
-              0.4038948400052535
+              -78.1755708,
+              0.4038957
             ],
             [
-              -78.1755999134971,
-              0.4037532394194796
+              -78.1756635,
+              0.4039154
             ]
           ]
         ]
@@ -8296,7 +8296,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Residencia de Docentes 5",
         "tipo": "Residencia de Docentes e Investigadores",
         "zona": "Sector Residencias Docentes",
-        "area_m2": 122.9,
+        "area_m2": 122.8,
         "interior": false,
         "is_perimeter": false
       },
@@ -8305,24 +8305,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.17564059729222,
-              0.40358234289246236
+              -78.1756411,
+              0.4035844
             ],
             [
-              -78.17572338828448,
-              0.40360440058953484
+              -78.1756163,
+              0.4036993
             ],
             [
-              -78.1756997583329,
-              0.4037156117408911
+              -78.1756992,
+              0.4037175
             ],
             [
-              -78.17561677651535,
-              0.40370142023332534
+              -78.175724,
+              0.4036026
             ],
             [
-              -78.17564059729222,
-              0.40358234289246236
+              -78.1756411,
+              0.4035844
             ]
           ]
         ]
@@ -8335,7 +8335,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Edificio Comunitario / No Residencial (Docentes)",
         "tipo": "Equipamiento Comunitario y Servicios",
         "zona": "Sector Residencias Docentes",
-        "area_m2": 214.0,
+        "area_m2": 213.9,
         "interior": false,
         "is_perimeter": false
       },
@@ -8344,24 +8344,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1759031942055,
-              0.40324304597535526
+              -78.1758414,
+              0.4032325
             ],
             [
-              -78.17584776761707,
-              0.4035214193391899
+              -78.1757894,
+              0.4035136
             ],
             [
-              -78.17579067461945,
-              0.40351696828514927
+              -78.1758491,
+              0.4035248
             ],
             [
-              -78.17583935576278,
-              0.40323308002676506
+              -78.1759011,
+              0.4032437
             ],
             [
-              -78.1759031942055,
-              0.40324304597535526
+              -78.1758414,
+              0.4032325
             ]
           ]
         ]
@@ -8374,7 +8374,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Residencia de Docentes 6",
         "tipo": "Residencia de Docentes e Investigadores",
         "zona": "Sector Residencias Docentes",
-        "area_m2": 211.1,
+        "area_m2": 210.9,
         "interior": false,
         "is_perimeter": false
       },
@@ -8383,24 +8383,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.17587575557651,
-              0.40387879399406623
+              -78.1757863,
+              0.4038526
             ],
             [
-              -78.1758250209943,
-              0.40405620634993067
+              -78.1757352,
+              0.4040284
             ],
             [
-              -78.17573525220743,
-              0.40402705150552726
+              -78.175825,
+              0.4040548
             ],
             [
-              -78.17578665461019,
-              0.4038527651904324
+              -78.1758761,
+              0.403879
             ],
             [
-              -78.17587575557651,
-              0.40387879399406623
+              -78.1757863,
+              0.4038526
             ]
           ]
         ]
@@ -8413,7 +8413,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Residencia de Docentes 7",
         "tipo": "Residencia de Docentes e Investigadores",
         "zona": "Sector Residencias Docentes",
-        "area_m2": 315.2,
+        "area_m2": 315.0,
         "interior": false,
         "is_perimeter": false
       },
@@ -8422,24 +8422,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.17593886434996,
-              0.40399083308609157
+              -78.1759479,
+              0.4039921
             ],
             [
-              -78.17601900690731,
-              0.40400638670525724
+              -78.1760284,
+              0.404009
             ],
             [
-              -78.17610106077338,
-              0.403706932409291
+              -78.1760917,
+              0.4037043
             ],
             [
-              -78.17602027664064,
-              0.40368862851209686
+              -78.1760112,
+              0.4036874
             ],
             [
-              -78.17593886434996,
-              0.40399083308609157
+              -78.1759479,
+              0.4039921
             ]
           ]
         ]
@@ -8452,7 +8452,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Residencia de Docentes 8 (Bifamiliar)",
         "tipo": "Residencia de Docentes e Investigadores",
         "zona": "Sector Residencias Docentes",
-        "area_m2": 151.6,
+        "area_m2": 151.5,
         "interior": false,
         "is_perimeter": false
       },
@@ -8461,24 +8461,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.17616348286064,
-              0.4034709211178097
+              -78.1760948,
+              0.4034525
             ],
             [
-              -78.17611892659224,
-              0.4036378625066064
+              -78.1760509,
+              0.4036212
             ],
             [
-              -78.17605104552078,
-              0.40362256650572353
+              -78.1761191,
+              0.4036392
             ],
             [
-              -78.17609436336367,
-              0.4034521176605463
+              -78.176163,
+              0.4034705
             ],
             [
-              -78.17616348286064,
-              0.4034709211178097
+              -78.1760948,
+              0.4034525
             ]
           ]
         ]
@@ -8503,24 +8503,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1763943,
-              0.4042389
+              -78.1763933,
+              0.404241
             ],
             [
-              -78.1764382,
-              0.4042569
+              -78.1764392,
+              0.4042548
             ],
             [
-              -78.1764679,
-              0.4041601
+              -78.1764668,
+              0.4041621
             ],
             [
-              -78.1764199,
-              0.4041504
+              -78.1764209,
+              0.4041483
             ],
             [
-              -78.1763943,
-              0.4042389
+              -78.1763933,
+              0.404241
             ]
           ]
         ]
@@ -8533,7 +8533,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Edificio 38 (San José)",
         "tipo": "Edificio Administrativo y Operativo",
         "zona": "Sector San José",
-        "area_m2": 155.8,
+        "area_m2": 156.0,
         "interior": false,
         "is_perimeter": false
       },
@@ -8542,24 +8542,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.17668579084234,
-              0.404213301532898
+              -78.176554,
+              0.4043119
             ],
             [
-              -78.17664338480479,
-              0.40434474337116183
+              -78.1766451,
+              0.404341
             ],
             [
-              -78.1765556598624,
-              0.40430820746524393
+              -78.1766849,
+              0.4042146
             ],
             [
-              -78.17659284889407,
-              0.4041867832892328
+              -78.1765938,
+              0.4041855
             ],
             [
-              -78.17668579084234,
-              0.404213301532898
+              -78.176554,
+              0.4043119
             ]
           ]
         ]
@@ -8581,24 +8581,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.17657909628454,
-              0.4039881695303205
+              -78.1765798,
+              0.4039912
             ],
             [
-              -78.17659349605131,
-              0.40394774317195414
+              -78.1765922,
+              0.4039465
             ],
             [
-              -78.17648654219273,
-              0.4039159568316363
+              -78.1764878,
+              0.4039172
             ],
             [
-              -78.17647615665793,
-              0.4039650048518703
+              -78.1764754,
+              0.4039619
             ],
             [
-              -78.17657909628454,
-              0.4039881695303205
+              -78.1765798,
+              0.4039912
             ]
           ]
         ]
@@ -8611,7 +8611,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Edificio 40 (San José)",
         "tipo": "Edificio Polivalente San José",
         "zona": "Sector San José",
-        "area_m2": 269.6,
+        "area_m2": 269.4,
         "interior": false,
         "is_perimeter": false
       },
@@ -8620,24 +8620,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.17668871013962,
-              0.40417029791370934
+              -78.1766884,
+              0.4041698
             ],
             [
-              -78.17674116491273,
-              0.40398480040210594
+              -78.1767406,
+              0.4039882
             ],
             [
-              -78.17662885123883,
-              0.4039591650499329
+              -78.1766294,
+              0.4039558
             ],
             [
-              -78.17657692050491,
-              0.4041368223423578
+              -78.1765772,
+              0.4041374
             ],
             [
-              -78.17668871013962,
-              0.40417029791370934
+              -78.1766884,
+              0.4041698
             ]
           ]
         ]
@@ -8730,24 +8730,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.17665611628786,
-              0.4042956013511884
+              -78.1766571,
+              0.4042965
             ],
             [
-              -78.17661256146175,
-              0.4042846843054159
+              -78.1766135,
+              0.4042843
             ],
             [
-              -78.17660118513263,
-              0.404331228715073
+              -78.1766003,
+              0.4043317
             ],
             [
-              -78.17664481704243,
-              0.4043448855288352
+              -78.1766439,
+              0.4043439
             ],
             [
-              -78.17665611628786,
-              0.4042956013511884
+              -78.1766571,
+              0.4042965
             ]
           ]
         ]
@@ -8760,7 +8760,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "nombre": "Restaurante 'Comedor Analí'",
         "tipo": "Gastronomía y Alimentación / Restaurante",
         "zona": "Sector Gastronómico San José",
-        "area_m2": 38.3,
+        "area_m2": 38.2,
         "interior": false,
         "is_perimeter": false
       },
@@ -8769,24 +8769,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.17665611628786,
-              0.4042956013511884
+              -78.1766567,
+              0.4042976
             ],
             [
-              -78.17661256146175,
-              0.4042846843054159
+              -78.1766769,
+              0.4042361
             ],
             [
-              -78.17663000363017,
-              0.4042187098924085
+              -78.1766314,
+              0.404221
             ],
             [
-              -78.176677545081,
-              0.40423812982681984
+              -78.1766112,
+              0.4042824
             ],
             [
-              -78.17665611628786,
-              0.4042956013511884
+              -78.1766567,
+              0.4042976
             ]
           ]
         ]
@@ -8808,24 +8808,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.17663000363017,
-              0.4042187098924085
+              -78.1766301,
+              0.4042204
             ],
             [
-              -78.176677545081,
-              0.40423812982681984
+              -78.1766772,
+              0.4042364
             ],
             [
-              -78.17668492325618,
-              0.4042106691286265
+              -78.1766852,
+              0.4042124
             ],
             [
-              -78.17663813939762,
-              0.4041981534608102
+              -78.1766381,
+              0.4041965
             ],
             [
-              -78.17663000363017,
-              0.4042187098924085
+              -78.1766301,
+              0.4042204
             ]
           ]
         ]
@@ -8847,24 +8847,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.17669053334565,
-              0.40397770829273366
+              -78.1766092,
+              0.4040122
             ],
             [
-              -78.17667322278062,
-              0.4040335081217475
+              -78.1766736,
+              0.4040324
             ],
             [
-              -78.17660955551632,
-              0.4040111203343552
+              -78.1766917,
+              0.4039738
             ],
             [
-              -78.17662843796816,
-              0.40394965649017067
+              -78.1766273,
+              0.4039536
             ],
             [
-              -78.17669053334565,
-              0.40397770829273366
+              -78.1766092,
+              0.4040122
             ]
           ]
         ]
@@ -8955,24 +8955,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1744906,
-              0.4049716
+              -78.1744918,
+              0.4049709
             ],
             [
-              -78.1745557,
-              0.404939
+              -78.1745531,
+              0.4049404
             ],
             [
-              -78.1744626,
-              0.4047628
+              -78.1744651,
+              0.4047614
             ],
             [
-              -78.1744049,
-              0.4047913
+              -78.1744038,
+              0.404792
             ],
             [
-              -78.1744906,
-              0.4049716
+              -78.1744918,
+              0.4049709
             ]
           ]
         ]
@@ -8997,24 +8997,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1691615,
-              0.4055451
+              -78.1691682,
+              0.405617
             ],
             [
-              -78.1692018,
-              0.4055812
+              -78.1692007,
+              0.4055801
             ],
             [
-              -78.169167,
-              0.405616
+              -78.1691617,
+              0.4055454
             ],
             [
-              -78.1691295,
-              0.4055826
+              -78.1691292,
+              0.4055823
             ],
             [
-              -78.1691615,
-              0.4055451
+              -78.1691682,
+              0.405617
             ]
           ]
         ]
@@ -9345,24 +9345,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1725167,
-              0.4047356
+              -78.1726251,
+              0.4050261
             ],
             [
-              -78.1726148,
-              0.4050809
+              -78.1724608,
+              0.4047
             ],
             [
-              -78.1721052,
-              0.4052421
+              -78.1719305,
+              0.4049708
             ],
             [
-              -78.1718746,
-              0.4049352
+              -78.1720948,
+              0.4052969
             ],
             [
-              -78.1725167,
-              0.4047356
+              -78.1726251,
+              0.4050261
             ]
           ]
         ]
@@ -9473,24 +9473,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1764382,
-              0.4042569
+              -78.1764357,
+              0.4042583
             ],
             [
-              -78.176417,
-              0.4042514
+              -78.1764477,
+              0.4042344
             ],
             [
-              -78.1764227,
-              0.4042191
+              -78.1764258,
+              0.4042233
             ],
             [
-              -78.1764452,
-              0.4042358
+              -78.1764138,
+              0.4042472
             ],
             [
-              -78.1764382,
-              0.4042569
+              -78.1764357,
+              0.4042583
             ]
           ]
         ]
@@ -9875,24 +9875,24 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
         "coordinates": [
           [
             [
-              -78.1702754,
-              0.4077409
+              -78.1702787,
+              0.4077367
             ],
             [
-              -78.1702546,
-              0.407759
+              -78.17026,
+              0.4077548
             ],
             [
-              -78.1703435,
-              0.4078326
+              -78.1703381,
+              0.4078368
             ],
             [
-              -78.1703601,
-              0.4078145
+              -78.1703568,
+              0.4078187
             ],
             [
-              -78.1702754,
-              0.4077409
+              -78.1702787,
+              0.4077367
             ]
           ]
         ]
