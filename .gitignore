@@ -21,3 +21,10 @@ desktop.ini
 # Large temporary files
 *.tmp
 *.bak
+
+# Temporary screenshots & raw working captures
+Algunas_Capturas_del_Mapa_de_Yachay/
+Vista.png
+
+# Team WhatsApp chat & private media
+WhatsApp Chat with Ideaton/
