@@ -1,5 +1,5 @@
 """
-API REST de Telemetría y Optimización - Reto 3: Control de Arenillas
+API REST de Telemetría y Optimización - Reto N° 6: Control de Arenillas
 Equipo: Algoritmo Verde YT | Yachay Open Science Week 2026
 Compatible con despliegues en Azure / Heroku / Appwrite (GitHub Student Pack)
 """
@@ -43,7 +43,7 @@ def root():
     return {
         "proyecto": "Algoritmo Verde YT",
         "evento": "Yachay Open Science Week 2026",
-        "reto": "Reto 3 - Manejo Integrado de Arenillas",
+        "reto": "Reto N° 6 - Manejo Integrado de Arenillas",
         "docs": "/docs",
         "status": "healthy"
     }

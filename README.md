@@ -1,6 +1,6 @@
 # Algoritmo Verde YT 🌱🦟
 ### Yachay Open Science Week 2026 · Ideatón
-**Reto 3:** Estrategias Innovadoras para el Control de Arenillas en el Campus de Yachay Tech  
+**Reto N° 6:** Estrategias Innovadoras para el Control de Arenillas en el Campus de Yachay Tech  
 **Institución:** Universidad Yachay Tech — Urcuquí, Imbabura, Ecuador  
 **Mentor:** Ing. José Luis Flores M.Sc.  
 
@@ -65,7 +65,7 @@ El proyecto aborda la problemática de insectos picadores (*Simuliidae* / moscas
 │   └── Respaldo_Estrategico_Ideaton_YOSW.md         # Documento maestro de estrategia
 ├── 02_Correos_y_Comunicaciones/                     # Trazabilidad de correos y WhatsApp
 ├── 03_Documentos_Congreso/                          # Guías, reglamentos y programa oficial YOSW
-├── reto3_Control_Arenillas/                         # Insumos y entregables del Reto 3
+├── reto3_Control_Arenillas/                         # Insumos y entregables del Reto N° 6
 │   ├── DOCUMENTO_TECNICO_RETO3_ALGORITMO_VERDE.md  # Documento técnico maestro (APA 7.ª ed.)
 │   ├── DECLARACION_USO_IA_ALGORITMO_VERDE.md        # Declaración obligatoria de IA (Sec. 13)
 │   ├── CATALOGO_PUNTOS_GEOREFERENCIADOS_CAMPUS.md  # Catálogo oficial de coordenadas y GeoJSON

@@ -1,5 +1,5 @@
 # YACHAY OPEN SCIENCE WEEK 2026 · IDEATÓN
-## RETO 3: Estrategias Innovadoras para el Control de Arenillas en el Campus de Yachay Tech
+## RETO N° 6: Estrategias Innovadoras para el Control de Arenillas en el Campus de Yachay Tech
 
 ---
 

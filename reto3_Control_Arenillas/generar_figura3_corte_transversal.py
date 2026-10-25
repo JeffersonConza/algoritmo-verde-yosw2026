@@ -1,6 +1,6 @@
 """
 Generador de la Figura 3: Corte Transversal Arquitectónico y Agronómico de Cercas Vivas en 3 Estratos
-Equipo: Algoritmo Verde YT - Reto 3: Control de Arenillas (YOSW 2026)
+Equipo: Algoritmo Verde YT - Reto N° 6: Control de Arenillas (YOSW 2026)
 Formato: APA 7ma Edición (300 DPI) - Versión de Alta Precisión Gráfica
 """
 

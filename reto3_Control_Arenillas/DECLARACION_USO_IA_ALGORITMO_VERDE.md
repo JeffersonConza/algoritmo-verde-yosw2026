@@ -6,7 +6,7 @@
 
 ## 1. Datos Generales
 
-* **Número y Nombre del Reto:** Reto 3 — Estrategias Innovadoras para el Control de Arenillas en el Campus de Yachay Tech
+* **Número y Nombre del Reto:** Reto N° 6 — Estrategias Innovadoras para el Control de Arenillas en el Campus de Yachay Tech
 * **Nombre del Equipo:** Algoritmo Verde YT
 * **Fecha de Declaración:** 23 de octubre de 2026
 * **Institución:** Universidad de Investigación de Tecnología Experimental Yachay Tech

@@ -1,5 +1,5 @@
 """
-Generador del Visor Geoespacial Interactivo - Reto 3: Control de Arenillas
+Generador del Visor Geoespacial Interactivo - Reto N° 6: Control de Arenillas
 Equipo: Algoritmo Verde YT | Yachay Open Science Week 2026
 Enfoque: Humanista, Bilingüe (ES/EN), Tema Claro/Oscuro, Identidad de Marca y Acceso Móvil QR
 Calibrado con Coordenadas GPS Oficiales de Google Maps y Capas Base Optimizadas
@@ -3732,40 +3732,127 @@ def generar_mapa():
     # 10. INTERFAZ HUMANISTA, BILINGÜE, DARK/LIGHT Y QR (HTML + CSS + JS)
     # -------------------------------------------------------------
     interfaz_humanista_html = f"""
-    <!-- ESTILOS ADAPTABLES: CLARO / OSCURO / MÓVIL -->
+    <!-- ESTILOS ADAPTABLES: CLARO / OSCURO / MÓVIL (FRONT-END DESIGN SYSTEM) -->
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+
         :root {{
-            --bg-body: #ffffff;
-            --bg-navbar: rgba(255, 255, 255, 0.66);
-            --bg-panel: rgba(255, 255, 255, 0.66);
-            --bg-card: rgba(248, 250, 252, 0.58);
-            --border-color: rgba(203, 213, 225, 0.75);
+            --bg-body: #f8fafc;
+            --bg-navbar: rgba(255, 255, 255, 0.75);
+            --bg-panel: rgba(255, 255, 255, 0.75);
+            --bg-card: rgba(248, 250, 252, 0.68);
+            --bg-kpi: rgba(255, 255, 255, 0.85);
+            --border-color: rgba(203, 213, 225, 0.85);
             --border-accent: rgba(16, 172, 132, 0.45);
-            --text-color: #1e293b;
+            --text-color: #0f172a;
             --text-muted: #475569;
             --primary-color: #10ac84;
+            --primary-glow: rgba(16, 172, 132, 0.35);
             --secondary-color: #1e3799;
-            --shadow-card: 0 8px 28px rgba(0, 0, 0, 0.14);
-            --btn-bg: rgba(255, 255, 255, 0.72);
-            --btn-text: #1e293b;
-            --btn-hover: rgba(255, 255, 255, 0.94);
+            --shadow-card: 0 14px 34px -4px rgba(15, 23, 42, 0.12), 0 4px 14px -2px rgba(15, 23, 42, 0.06), inset 0 1px 1px rgba(255, 255, 255, 0.95);
+            --btn-bg: rgba(255, 255, 255, 0.82);
+            --btn-text: #0f172a;
+            --btn-hover: #ffffff;
+            --accent-gradient: linear-gradient(135deg, #10ac84 0%, #1e3799 100%);
         }}
 
         body[data-theme="dark"] {{
-            --bg-body: #0f172a;
-            --bg-navbar: rgba(15, 23, 42, 0.68);
-            --bg-panel: rgba(15, 23, 42, 0.68);
-            --bg-card: rgba(30, 41, 59, 0.58);
-            --border-color: rgba(71, 85, 105, 0.75);
+            --bg-body: #0b1120;
+            --bg-navbar: rgba(15, 23, 42, 0.78);
+            --bg-panel: rgba(15, 23, 42, 0.78);
+            --bg-card: rgba(30, 41, 59, 0.65);
+            --bg-kpi: rgba(15, 23, 42, 0.72);
+            --border-color: rgba(51, 65, 85, 0.75);
             --border-accent: rgba(46, 213, 115, 0.5);
-            --text-color: #f1f5f9;
-            --text-muted: #cbd5e1;
+            --text-color: #f8fafc;
+            --text-muted: #94a3b8;
             --primary-color: #2ed573;
+            --primary-glow: rgba(46, 213, 115, 0.4);
             --secondary-color: #4a69bd;
-            --shadow-card: 0 8px 30px rgba(0, 0, 0, 0.5);
-            --btn-bg: rgba(30, 41, 59, 0.72);
+            --shadow-card: 0 18px 45px -6px rgba(0, 0, 0, 0.65), inset 0 1px 1px rgba(255, 255, 255, 0.12);
+            --btn-bg: rgba(30, 41, 59, 0.75);
             --btn-text: #f1f5f9;
-            --btn-hover: rgba(51, 65, 85, 0.92);
+            --btn-hover: rgba(51, 65, 85, 0.95);
+            --accent-gradient: linear-gradient(135deg, #2ed573 0%, #3867d6 100%);
+        }}
+
+        *, *::before, *::after {{
+            box-sizing: border-box;
+        }}
+
+        body, .leaflet-container {{
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
+        }}
+
+        h1, h2, h3, .story-nav-header, .dash-header, .leyenda-header, .modal-header, .nav-btn, .kpi-num {{
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+        }}
+
+        /* Scrollbar estilizada y moderna */
+        ::-webkit-scrollbar {{
+            width: 5px;
+            height: 5px;
+        }}
+        ::-webkit-scrollbar-track {{
+            background: transparent;
+        }}
+        ::-webkit-scrollbar-thumb {{
+            background: rgba(16, 172, 132, 0.4);
+            border-radius: 10px;
+        }}
+        ::-webkit-scrollbar-thumb:hover {{
+            background: rgba(16, 172, 132, 0.75);
+        }}
+
+        /* Pulsing Live Badge */
+        @keyframes pulseDot {{
+            0% {{ transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 172, 132, 0.7); }}
+            70% {{ transform: scale(1); box-shadow: 0 0 0 5px rgba(16, 172, 132, 0); }}
+            100% {{ transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 172, 132, 0); }}
+        }}
+        .live-pill {{
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 9.5px;
+            font-weight: 800;
+            padding: 2px 7px;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.22);
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            letter-spacing: 0.4px;
+        }}
+        .live-dot {{
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #2ecc71;
+            animation: pulseDot 1.8s infinite;
+        }}
+
+        /* Controles Leaflet con Glassmorphism 2.0 */
+        .leaflet-control-zoom {{
+            border: none !important;
+            box-shadow: var(--shadow-card) !important;
+            border-radius: 12px !important;
+            overflow: hidden !important;
+        }}
+        .leaflet-control-zoom a {{
+            background: var(--bg-navbar) !important;
+            backdrop-filter: blur(16px) saturate(180%) !important;
+            -webkit-backdrop-filter: blur(16px) saturate(180%) !important;
+            color: var(--text-color) !important;
+            border-bottom: 1px solid var(--border-color) !important;
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+        }}
+        .leaflet-control-zoom a:hover {{
+            background: var(--primary-color) !important;
+            color: #ffffff !important;
+            transform: scale(1.04);
         }}
 
         /* Adaptación y transparencia de controles Leaflet */
@@ -4366,6 +4453,7 @@ def generar_mapa():
                     <circle cx="50" cy="22" r="6" fill="#f39c12"/>
                 </svg>
                 <span style="font-weight: 800; font-size: 12.5px; letter-spacing: -0.2px;" data-i18n="nav_header_title">Algoritmo Verde YT</span>
+                <span class="live-pill"><span class="live-dot"></span><span data-i18n="live_status">EN VIVO</span></span>
             </div>
             <button class="toggle-btn" onclick="toggleNavMenu()" title="Minimizar / Expandir menú" id="btn-nav-toggle">−</button>
         </div>
@@ -4498,42 +4586,38 @@ def generar_mapa():
         </div>
         <div id="dash-content" class="dash-body">
             <p style="margin: 0 0 8px 0; font-size: 11.5px; color: var(--text-muted); line-height: 1.35;" data-i18n="dash_desc">
-                Reto 3: Manejo ecológico de arenillas que prioriza la salud, el estudio y la vida al aire libre en Yachay Tech.
+                Reto N° 6: Manejo ecológico de arenillas que prioriza la salud, el estudio y la vida al aire libre en Yachay Tech.
             </p>
-            <table style="width: 100%; font-size: 11.5px; line-height: 1.65; color: var(--text-color); border-collapse: collapse;">
-                <tr>
-                    <td data-i18n="dash_community">👥 <b>Comunidad Protegida:</b></td>
-                    <td style="text-align: right; font-weight: 700; color: var(--secondary-color);" data-i18n="dash_community_val">~800+ personas</td>
-                </tr>
-                <tr>
-                    <td data-i18n="dash_fences">🌿 <b>Cercas en 3 Estratos:</b></td>
-                    <td style="text-align: right; font-weight: 700; color: var(--primary-color);" data-i18n="dash_fences_val">980 m lineales</td>
-                </tr>
-                <tr>
-                    <td data-i18n="dash_comfort">🛡️ <b>Área de Confort:</b></td>
-                    <td style="text-align: right; font-weight: 700; color: #009432;" data-i18n="dash_comfort_val">~39,200 m²</td>
-                </tr>
-                <tr>
-                    <td data-i18n="dash_seedlings">🌳 <b>Plántulas Repelentes:</b></td>
-                    <td style="text-align: right; font-weight: 700; color: var(--primary-color);" data-i18n="dash_seedlings_val">~1,960 plantas</td>
-                </tr>
-                <tr>
-                    <td data-i18n="dash_chemicals">🚫 <b>Insecticidas Químicos:</b></td>
-                    <td style="text-align: right; font-weight: 700; color: var(--primary-color);" data-i18n="dash_chemicals_val">0% (Cero toxicidad)</td>
-                </tr>
-                <tr>
-                    <td data-i18n="dash_biocontrol">🦗 <b>Control Biológico:</b></td>
-                    <td style="text-align: right; font-weight: 700; color: #0984e3;" data-i18n="dash_biocontrol_val">Libélulas + Bti</td>
-                </tr>
-                <tr>
-                    <td data-i18n="dash_monitoring">🎯 <b>Bio-Monitoreo:</b></td>
-                    <td style="text-align: right; font-weight: 700; color: var(--secondary-color);" data-i18n="dash_monitoring_val">6 estaciones GPS</td>
-                </tr>
-                <tr style="border-top: 1px dashed var(--border-color);">
-                    <td data-i18n="dash_reduction">📉 <b>Mitigación Picaduras:</b></td>
-                    <td style="text-align: right; font-weight: 800; color: #e74c3c; font-size: 12.5px;" data-i18n="dash_reduction_val">82% efectividad</td>
-                </tr>
-            </table>
+            <!-- KPI Cards Grid (Estilo Dashboard Ejecutivo Moderno) -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 7px; margin-bottom: 9px;">
+                <div style="background: var(--bg-kpi); border: 1px solid var(--border-accent); border-radius: 10px; padding: 7px 9px; box-shadow: 0 2px 6px rgba(0,0,0,0.04); transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <div style="font-size: 9.8px; color: var(--text-muted); font-weight: 700; text-transform: uppercase; letter-spacing: 0.3px;">📉 Mitigación</div>
+                    <div style="font-size: 18px; font-weight: 800; color: #10ac84; line-height: 1.15; margin: 1px 0;" class="kpi-num">-82.8%</div>
+                    <div style="font-size: 9.2px; color: var(--text-muted);">t=25.85 (p&lt;0.001)</div>
+                </div>
+                <div style="background: var(--bg-kpi); border: 1px solid var(--border-color); border-radius: 10px; padding: 7px 9px; box-shadow: 0 2px 6px rgba(0,0,0,0.04); transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <div style="font-size: 9.8px; color: var(--text-muted); font-weight: 700; text-transform: uppercase; letter-spacing: 0.3px;">🌿 Cercas Vivas</div>
+                    <div style="font-size: 18px; font-weight: 800; color: #1e3799; line-height: 1.15; margin: 1px 0;" class="kpi-num">980 m</div>
+                    <div style="font-size: 9.2px; color: var(--text-muted);">7 tramos discontinuos</div>
+                </div>
+                <div style="background: var(--bg-kpi); border: 1px solid var(--border-color); border-radius: 10px; padding: 7px 9px; box-shadow: 0 2px 6px rgba(0,0,0,0.04); transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <div style="font-size: 9.8px; color: var(--text-muted); font-weight: 700; text-transform: uppercase; letter-spacing: 0.3px;">💰 Inversión</div>
+                    <div style="font-size: 18px; font-weight: 800; color: #d35400; line-height: 1.15; margin: 1px 0;" class="kpi-num">$1,470</div>
+                    <div style="font-size: 9.2px; color: var(--text-muted);">$1.50 / metro lineal</div>
+                </div>
+                <div style="background: var(--bg-kpi); border: 1px solid var(--border-color); border-radius: 10px; padding: 7px 9px; box-shadow: 0 2px 6px rgba(0,0,0,0.04); transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <div style="font-size: 9.8px; color: var(--text-muted); font-weight: 700; text-transform: uppercase; letter-spacing: 0.3px;">👥 Protección</div>
+                    <div style="font-size: 18px; font-weight: 800; color: #27ae60; line-height: 1.15; margin: 1px 0;" class="kpi-num">+800</div>
+                    <div style="font-size: 9.2px; color: var(--text-muted);">124 edificaciones</div>
+                </div>
+            </div>
+
+            <!-- Ticker de Características Ecológicas -->
+            <div style="display: flex; gap: 4px; flex-wrap: wrap; justify-content: space-between; font-size: 10px; margin-bottom: 6px; padding: 5px 8px; background: rgba(16, 172, 132, 0.08); border-radius: 8px; border: 1px dashed var(--border-accent);">
+                <span>💧 <b>0% Químicos</b></span>
+                <span>🦗 <b>Odonatos + Bti</b></span>
+                <span>🛰️ <b>6 Estaciones GPS</b></span>
+            </div>
             <div style="margin-top: 10px; font-size: 10.5px; color: var(--text-muted); text-align: center;" data-i18n="dash_hint">
                 💡 <i>Usa los botones superiores para recorrer el campus</i>
             </div>
@@ -4549,7 +4633,7 @@ def generar_mapa():
                 <button onclick="toggleModalBienvenida(false)" class="btn-modal-close-round" title="Cerrar ventana (Esc)" aria-label="Cerrar">✕</button>
                 <h2 style="margin: 0; font-size: 19px; font-weight: 700; padding-right: 40px;" data-i18n="modal_title">🌱 Algoritmo Verde: Un Campus para Vivir y Estudiar en Paz</h2>
                 <div style="font-size: 12px; opacity: 0.95; margin-top: 4px;" data-i18n="modal_sub">
-                    Propuesta Multidisciplinar · YOSW 2026 Ideatón (Reto 3 - Control de Arenillas)
+                    Propuesta Multidisciplinar · YOSW 2026 Ideatón (Reto N° 6 - Control de Arenillas)
                 </div>
             </div>
             <div class="modal-body">
@@ -4614,7 +4698,7 @@ def generar_mapa():
                     <div>
                         <h2 style="margin: 0; font-size: 19px; font-weight: 800; color: white;">Equipo: Algoritmo Verde YT</h2>
                         <div style="font-size: 12px; opacity: 0.95; color: #e0f2fe; margin-top: 2px;">
-                            Yachay Open Science Week 2026 · Reto 3 (Control Ecosistémico de Arenillas)
+                            Yachay Open Science Week 2026 · Reto N° 6 (Control Ecosistémico de Arenillas)
                         </div>
                     </div>
                 </div>
@@ -4983,6 +5067,7 @@ def generar_mapa():
         var i18nDict = {{
             es: {{
                 nav_header_title: "Algoritmo Verde YT",
+                live_status: "EN VIVO",
                 nav_team: "Algoritmo Verde YT (Equipo)",
                 nav_vision: "Misión y Propósito",
                 nav_solution: "Solución Verde (Activa)",
@@ -5007,7 +5092,7 @@ def generar_mapa():
                 
                 dash_title: "🌱 Algoritmo Verde YT",
                 dash_sub: "Yachay Open Science Week 2026",
-                dash_desc: "Reto 3: Manejo ecológico de arenillas que prioriza la salud, el estudio y la vida al aire libre en Yachay Tech.",
+                dash_desc: "Reto N° 6: Manejo ecológico de arenillas que prioriza la salud, el estudio y la vida al aire libre en Yachay Tech.",
                 dash_community: "👥 <b>Comunidad Protegida:</b>",
                 dash_community_val: "~800+ personas",
                 dash_fences: "🌿 <b>Cercas en 3 Estratos:</b>",
@@ -5027,7 +5112,7 @@ def generar_mapa():
                 dash_hint: "💡 <i>Puedes arrastrar (⠿) cualquier ventana flotante</i>",
 
                 modal_title: "🌱 Algoritmo Verde: Un Campus para Vivir y Estudiar en Paz",
-                modal_sub: "Propuesta Multidisciplinar · YOSW 2026 Ideatón (Reto 3 - Control de Arenillas)",
+                modal_sub: "Propuesta Multidisciplinar · YOSW 2026 Ideatón (Reto N° 6 - Control de Arenillas)",
                 modal_p1: "<b>¿Por qué existe este proyecto?</b><br>En el campus de Yachay Tech, las picaduras del complejo de dípteros hematófagos —arenillas verdaderas (<i>Culicoides</i> spp. [Ceratopogonidae] y <i>Lutzomyia</i> spp. [Psychodidae]) y moscas negras lóticas (<i>Simulium</i> spp. [Simuliidae])— afectan la concentración en clases, el descanso en residencias y el uso de espacios culturales. Nuestra propuesta <b>no es llenar el campus de venenos sintéticos</b>, sino devolverle la armonía al territorio mediante ciencia aplicada, ecología y diseño paisajístico.",
                 modal_card1_title: "👥 Las Personas Primero (Salud y Confort)",
                 modal_card1_desc: "Protegemos a más de 800 residentes, docentes y trabajadores. Eliminamos el uso de pesticidas tóxicos protegiendo el aire que respiran los estudiantes en Las Multis, Los Bloques y aulas.",
@@ -5046,6 +5131,7 @@ def generar_mapa():
             }},
             en: {{
                 nav_header_title: "Algoritmo Verde YT",
+                live_status: "LIVE",
                 nav_team: "Algoritmo Verde YT (Team)",
                 nav_vision: "Mission & Purpose",
                 nav_solution: "Green Solution (Active)",
@@ -5070,7 +5156,7 @@ def generar_mapa():
                 
                 dash_title: "🌱 Algoritmo Verde YT",
                 dash_sub: "Yachay Open Science Week 2026",
-                dash_desc: "Challenge 3: Ecological biting midge & blackfly management prioritizing health, study and outdoor living at Yachay Tech.",
+                dash_desc: "Challenge 6: Ecological biting midge & blackfly management prioritizing health, study and outdoor living at Yachay Tech.",
                 dash_community: "👥 <b>Protected Community:</b>",
                 dash_community_val: "~800+ people",
                 dash_fences: "🌿 <b>3-Strata Living Fences:</b>",
@@ -5090,7 +5176,7 @@ def generar_mapa():
                 dash_hint: "💡 <i>You can drag (⠿) any floating window</i>",
 
                 modal_title: "🌱 Algoritmo Verde: A Campus to Live and Study in Peace",
-                modal_sub: "Multidisciplinary Proposal · YOSW 2026 Ideathon (Challenge 3 - Biting Midge & Blackfly Control)",
+                modal_sub: "Multidisciplinary Proposal · YOSW 2026 Ideathon (Challenge 6 - Biting Midge & Blackfly Control)",
                 modal_p1: "<b>Why does this project exist?</b><br>At Yachay Tech campus, bites from the hematophagous dipteran complex—true biting midges/sandflies (<i>Culicoides</i> spp. [Ceratopogonidae] and <i>Lutzomyia</i> spp. [Psychodidae]) and lotic blackflies (<i>Simulium</i> spp. [Simuliidae])—disrupt classroom concentration, residential sleep, and cultural spaces. Our proposal <b>is not to drench the campus in synthetic poisons</b>, but to restore territorial harmony through applied science, ecology, and landscape design.",
                 modal_card1_title: "👥 People First (Health & Comfort)",
                 modal_card1_desc: "We protect over 800 residents, professors, and staff. We eliminate toxic pesticides, safeguarding the air students breathe in student housing and lecture halls.",

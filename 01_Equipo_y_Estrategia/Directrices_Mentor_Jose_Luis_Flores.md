@@ -1,7 +1,7 @@
 # Directrices Oficiales del Mentor - Ing. José Luis Flores M.Sc.
 **Fecha de reunión presencial / WhatsApp:** Lunes 19 de octubre de 2026 (14:15 - 15:10)  
 **Lugar:** Oficina de Agroindustria, Edificio Senescyt, 1er piso  
-**Equipo:** Algoritmo Verde YT | **Reto 3:** Control de Arenillas  
+**Equipo:** Algoritmo Verde YT | **Reto N° 6:** Control de Arenillas  
 
 ---
 

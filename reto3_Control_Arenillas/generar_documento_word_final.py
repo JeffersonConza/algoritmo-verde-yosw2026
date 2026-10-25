@@ -1,5 +1,5 @@
 """
-Script para generar el Documento Técnico Oficial del Reto 3 - Algoritmo Verde YT
+Script para generar el Documento Técnico Oficial del Reto N° 6 - Algoritmo Verde YT
 Rellena la plantilla oficial de Word (.docx) manteniendo estilos APA, tablas,
 imágenes de campo y anexos reglamentarios (Declaración de IA y Material Adicional).
 """

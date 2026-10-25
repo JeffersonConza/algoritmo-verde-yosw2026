@@ -1,6 +1,6 @@
 """
 Generador de Figuras Técnicas 1 y 2 para el Documento Word (Formato APA 7ma Edición)
-Equipo: Algoritmo Verde YT - Reto 3: Control de Arenillas
+Equipo: Algoritmo Verde YT - Reto N° 6: Control de Arenillas
 Sincronizado al 100% con el Catálogo GIS de 286 Entidades, 16 Vías, 12 Áreas Verdes y 7 Tramos Viales de Cercas Vivas
 """
 

@@ -1,5 +1,5 @@
 # CATÁLOGO OFICIAL DE PUNTOS GEOREFERENCIADOS E INFRAESTRUCTURA DEL CAMPUS
-## Yachay Tech · Reto 3: Control Ecosistémico de Arenillas (*Simulium* spp.)
+## Yachay Tech · Reto N° 6: Control Ecosistémico de Arenillas (*Simulium* spp.)
 ### Equipo: Algoritmo Verde YT | Yachay Open Science Week 2026
 
 ---
@@ -1796,7 +1796,7 @@ El sistema de infraestructura verde abierta del campus comprende **59,681.1 m² 
 ```json
 {
   "type": "FeatureCollection",
-  "name": "Infraestructura_y_Recursos_Hidricos_YachayTech_Reto3",
+  "name": "Infraestructura_y_Recursos_Hidricos_YachayTech_Reto6",
   "crs": {
     "type": "name",
     "properties": {

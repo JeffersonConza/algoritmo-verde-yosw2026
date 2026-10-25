@@ -1,4 +1,4 @@
-Estimado Ing. Flores, buenas tardes. Le saluda el equipo Algoritmo Verde YT del Ideatón (Reto 3 - Control de Arenillas).
+Estimado Ing. Flores, buenas tardes. Le saluda el equipo Algoritmo Verde YT del Ideatón (Reto N° 6 - Control de Arenillas).
 
 Muchas gracias por facilitarnos su contacto por correo. Ya estuvimos revisando las directrices oficiales y el mapa de zonas críticas del campus, y tenemos perfilado el enfoque (barreras biológicas + optimización matemática).
 

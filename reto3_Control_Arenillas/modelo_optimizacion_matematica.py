@@ -83,7 +83,7 @@ def ejecutar_optimizacion_espacial():
         "metadata": {
             "proyecto": "Algoritmo Verde YT",
             "evento": "Yachay Open Science Week 2026",
-            "reto": "Reto 3 - Control de Arenillas",
+            "reto": "Reto N° 6 - Control de Arenillas",
             "algoritmo": "Sequential Least Squares Programming (SLSQP)"
         },
         "parametros_sistema": {

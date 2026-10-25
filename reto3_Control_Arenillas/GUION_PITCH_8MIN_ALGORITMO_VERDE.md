@@ -1,5 +1,5 @@
 # GUION OFICIAL Y ESTRATEGIA DE PRESENTACIÓN (PITCH DE 8 MINUTOS)
-## Yachay Open Science Week 2026 · Reto 3: Control de Arenillas
+## Yachay Open Science Week 2026 · Reto N° 6: Control de Arenillas
 ### Equipo: Algoritmo Verde YT
 **Horario Asignado:** Viernes 23 de octubre de 2026 — **17:03**  
 **Duración Estricta:** 8 minutos de exposición + ronda de preguntas del jurado.  
@@ -99,7 +99,7 @@ flowchart LR
 
 ## 4. Checklist Técnico previo a las 17:03
 
-- [x] Presentación oficial PDF de 12 diapositivas generada y verificada (`PRESENTACION_OFICIAL_RETO3_ALGORITMO_VERDE_YT.pdf`).
+- [x] Presentación oficial PDF de 12 diapositivas generada y verificada (`Ideaton_Reto6_AlgoritmoVerdeYT.pdf`).
 - [x] Documento técnico oficial generado en Word (`DOCUMENTO_TECNICO_FINAL_RETO3_ALGORITMO_VERDE.docx`).
 - [x] Copia entregada para Christopher en `WhatsApp Chat with Ideaton/Plantilla Documento Tecnico Reto 3.01_COMPLETO.docx` y `PRESENTACION_OFICIAL_RETO3_ALGORITMO_VERDE_YT.pdf`.
 - [x] Mapa interactivo funcionando con ventanas flotantes arrastrables y transparentes (`reto3_Control_Arenillas/mapa_interactivo_control_arenillas.html`).

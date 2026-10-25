@@ -1,6 +1,6 @@
 # DOCUMENTO EXPLICATIVO DE LA PRESENTACIÓN OFICIAL
 # «CONTROL ECOSISTÉMICO DE ARENILLAS EN EL CAMPUS DE YACHAY TECH»
-## Ideatón Yachay Open Science Week 2026 · Reto 3 / Reto 6
+## Ideatón Yachay Open Science Week 2026 · Reto N° 6
 ### Equipo «Algoritmo Verde YT»
 
 **Documento PDF Asociado:** [`Ideaton_Reto6_AlgoritmoVerdeYT.pdf`](./Ideaton_Reto6_AlgoritmoVerdeYT.pdf)  

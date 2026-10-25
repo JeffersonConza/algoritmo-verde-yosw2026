@@ -2,7 +2,7 @@
 
 ## 1. Estado y Confirmación Oficial
 * **Equipo:** Algoritmo Verde YT *(Unión confirmada oficialmente por el Comité Organizador)*
-* **Reto Asignado:** **Reto 3 - Estrategias Innovadoras para el Control de Arenillas en el Campus de Yachay Tech**
+* **Reto Asignado:** **Reto N° 6 - Estrategias Innovadoras para el Control de Arenillas en el Campus de Yachay Tech**
 * **Mentor Asignado:** Ing. José Luis Flores M.Sc. (Contacto: `[Institucional / Decanato]`)
 * **Ubicación de Materiales:** Carpeta local [`reto3_Control_Arenillas/`](./reto3_Control_Arenillas/)
 
