@@ -3689,6 +3689,240 @@ def generar_mapa():
             tooltip=f"🎯 {codigo}: Monitoreo de Bienestar ({ubicacion})"
         ).add_to(fg_trampas)
 
+    # -------------------------------------------------------------
+    # 9.5. LÍNEA DE TIEMPO INTERACTIVA: CAPAS TEMPORALES DEL DESPLIEGUE (16 SEMANAS)
+    # -------------------------------------------------------------
+    fg_tl_0 = folium.FeatureGroup(name="⏳ Línea de Tiempo: T0 (Semana 0 · Diagnóstico Basal)", show=False)
+    fg_tl_1 = folium.FeatureGroup(name="🚜 Línea de Tiempo: T1 (Sem. 1–2 · Fase I: Trazado y Riego)", show=False)
+    fg_tl_2 = folium.FeatureGroup(name="🌱 Línea de Tiempo: T2 (Sem. 3–5 · Fase II: Siembra 3 Estratos)", show=False)
+    fg_tl_3 = folium.FeatureGroup(name="🦗 Línea de Tiempo: T3 (Sem. 6–8 · Fase III: Biocontrol y Sensores)", show=False)
+    fg_tl_4 = folium.FeatureGroup(name="🛡️ Línea de Tiempo: T4 (Sem. 9–16+ · Fase IV: Consolidación -82.8%)", show=False)
+
+    # --- T0: Diagnóstico Basal (Semana 0) ---
+    plugins.HeatMap(
+        heat_data,
+        name="🔥 T0: Calor Epidemiológico Basal",
+        min_opacity=0.38,
+        max_zoom=18,
+        radius=28,
+        blur=20,
+        gradient=gradient_calor
+    ).add_to(fg_tl_0)
+
+    for tramos_list, label_s in [(cerca1_tramos, "Sector Sur"), (cerca2_tramos, "Sector Centro"), (cerca3_tramos, "Sector Norte")]:
+        for tramo_lbl, tramo_coords in tramos_list:
+            folium.PolyLine(
+                locations=tramo_coords,
+                color="#7f8c8d",
+                weight=3,
+                dash_array="6, 6",
+                popup=folium.Popup(f"<b>⏳ T0: Trazo Proyectado ({tramo_lbl})</b><br>980 m proyectados. Sin barrera vegetal instalada.<br>Densidad basal de picaduras: <b>86.3 adultos/trampa/sem</b>.", max_width=260),
+                tooltip=f"⏳ T0: Trazo Proyectado ({tramo_lbl})"
+            ).add_to(fg_tl_0)
+
+    for epi in epicentros_diagnostico:
+        folium.CircleMarker(
+            location=epi["coords"],
+            radius=12,
+            color="#c0392b",
+            fill=True,
+            fill_color="#e74c3c",
+            fill_opacity=0.85,
+            tooltip=f"🚨 T0: Foco Crítico Basal ({epi['sector']})",
+            popup=folium.Popup(f"<b>🚨 T0: Foco Crítico Basal ({epi['nombre']})</b><br>Población afectada: {epi['poblacion']}<br>Molestia severa: <b>86.3 picaduras/sem</b>.<br>Canal lótico activo sin tratamiento biológico.", max_width=270)
+        ).add_to(fg_tl_0)
+
+    for pt, codigo, ubicacion in trampas_humanas:
+        folium.CircleMarker(
+            location=pt,
+            radius=8,
+            color="#c0392b",
+            fill=True,
+            fill_color="#e74c3c",
+            fill_opacity=0.9,
+            tooltip=f"🎯 T0: {codigo} · Línea Base (86.3 insectos/semana)",
+            popup=folium.Popup(f"<b>🎯 {codigo} (Línea Base Pre-intervención)</b><br>Captura media: <b>86.3 ± 6.5 adultos/trampa/sem</b>.<br>Ubicación: {ubicacion}", max_width=240)
+        ).add_to(fg_tl_0)
+
+    # --- T1: Fase I (Semanas 1–2: Trazado Topográfico y Riego por Gravedad) ---
+    for tramos_list, label_s in [(cerca1_tramos, "Sector Sur"), (cerca2_tramos, "Sector Centro"), (cerca3_tramos, "Sector Norte")]:
+        for tramo_lbl, tramo_coords in tramos_list:
+            folium.PolyLine(
+                locations=tramo_coords,
+                color="#e67e22",
+                weight=5,
+                dash_array="8, 6",
+                popup=folium.Popup(f"<b>🚜 T1: Trazado y Zanjeo 40×40 cm ({tramo_lbl})</b><br>Replanteo geodésico GPS de alta precisión.<br>Zanjado manual y preparación de camas de siembra.<br>Presupuesto ejecutado: $320 USD.", max_width=260),
+                tooltip=f"🚜 T1: Zanjeo & Replanteo GPS ({tramo_lbl})"
+            ).add_to(fg_tl_1)
+
+    red_goteo_coords = [
+        [[0.404286, -78.168346], [0.40520, -78.16910], [0.40610, -78.16995], [0.40687, -78.16963]],
+        [[0.404286, -78.168346], [0.40410, -78.17050], [0.40387, -78.17306], [0.40504, -78.17290]],
+        [[0.404286, -78.168346], [0.40300, -78.17020], [0.40200, -78.17250], [0.40212, -78.17478]]
+    ]
+    for r_coords in red_goteo_coords:
+        folium.PolyLine(
+            locations=r_coords,
+            color="#0abde3",
+            weight=3.5,
+            dash_array="4, 4",
+            popup=folium.Popup("<b>💧 T1: Tendido de Microrriego por Gravedad (PE 16mm)</b><br>Conectado al Reservorio Agroforestal (cota 1,920 m s.n.m.).<br>Goteros autocompensantes (2 L/h). Consumo eléctrico: <b>0 kWh</b>.", max_width=260),
+            tooltip="💧 T1: Manguera de Goteo Gravitacional (0 kWh)"
+        ).add_to(fg_tl_1)
+
+    puntos_censo = [
+        ([0.402280, -78.175150], "Censo Residencias Sur", "Las Multis y Las Pats: 100% encuestados. Módulos hipoalergénicos con Cedrón y Huacatay confirmados."),
+        ([0.406800, -78.170800], "Censo Sector Norte", "Edificio Senescyt y Los Bloques: Sustitución de romero cerca de dormitorios aprobada.")
+    ]
+    for cpt, cnom, cdesc in puntos_censo:
+        folium.Marker(
+            location=cpt,
+            icon=folium.Icon(icon="check-square", prefix="fa", color="orange"),
+            popup=folium.Popup(f"<b>📋 T1: {cnom}</b><br>{cdesc}", max_width=240),
+            tooltip=f"📋 T1: {cnom}"
+        ).add_to(fg_tl_1)
+
+    # --- T2: Fase II (Semanas 3–5: Siembra Escalonada de 3 Estratos) ---
+    for tramos_list, label_s in [(cerca1_tramos, "Sector Sur"), (cerca2_tramos, "Sector Centro"), (cerca3_tramos, "Sector Norte")]:
+        for tramo_lbl, tramo_coords in tramos_list:
+            folium.PolyLine(
+                locations=tramo_coords,
+                color="#2ecc71",
+                weight=6,
+                popup=folium.Popup(f"<b>🌱 T2: Siembra 3 Estratos ({tramo_lbl})</b><br>1,960 plántulas autóctonas plantadas con 1.5 t de compost orgánico.<br>Estrato alto (Molle), medio (Arrayán/Cedrón), bajo (Hierba Luisa).<br>Riego de establecimiento por goteo activado.<br>Presupuesto acumulado: $1,150 USD.", max_width=270),
+                tooltip=f"🌱 T2: Siembra Activa ({tramo_lbl})"
+            ).add_to(fg_tl_2)
+            folium.PolyLine(
+                locations=tramo_coords,
+                color="#2ecc71",
+                weight=24,
+                opacity=0.30,
+                tooltip=f"🌿 T2: Pluma Terpénica Inicial 20m ({tramo_lbl})"
+            ).add_to(fg_tl_2)
+
+    heat_data_t2 = [[pt[0], pt[1], pt[2] * 0.65] for pt in heat_data]
+    plugins.HeatMap(
+        heat_data_t2,
+        name="🔥 T2: Calor Atenuado (-35%)",
+        min_opacity=0.28,
+        max_zoom=18,
+        radius=24,
+        blur=18,
+        gradient=gradient_calor
+    ).add_to(fg_tl_2)
+
+    for pt, codigo, ubicacion in trampas_humanas:
+        folium.CircleMarker(
+            location=pt,
+            radius=8,
+            color="#27ae60",
+            fill=True,
+            fill_color="#2ecc71",
+            fill_opacity=0.85,
+            tooltip=f"🎯 T2: {codigo} · Captura: ~56.1 insectos/sem (-35%)",
+            popup=folium.Popup(f"<b>🎯 {codigo} (Semanas 3 a 5)</b><br>Captura media: <b>56.1 ± 4.2 adultos/trampa/sem</b>.<br>Inflexión biológica inicial reportada.", max_width=240)
+        ).add_to(fg_tl_2)
+
+    # --- T3: Fase III (Semanas 6–8: Biocontrol Acuático y Red Telemétrica) ---
+    for tramos_list, label_s in [(cerca1_tramos, "Sector Sur"), (cerca2_tramos, "Sector Centro"), (cerca3_tramos, "Sector Norte")]:
+        for tramo_lbl, tramo_coords in tramos_list:
+            folium.PolyLine(
+                locations=tramo_coords,
+                color="#10ac84",
+                weight=7,
+                popup=folium.Popup(f"<b>🌿 T3: Crecimiento y Densificación ({tramo_lbl})</b><br>Cercas vivas al 70% de altura final.<br>Emisión terpénica sostenida en 3 estratos.", max_width=260),
+                tooltip=f"🌿 T3: Cerca Viva Activa ({tramo_lbl})"
+            ).add_to(fg_tl_3)
+            folium.PolyLine(
+                locations=tramo_coords,
+                color="#10ac84",
+                weight=36,
+                opacity=0.35,
+                tooltip=f"🛡️ T3: Buffer en Expansión (30m) · {tramo_lbl}"
+            ).add_to(fg_tl_3)
+
+    santuarios_tl = [
+        ([0.4042861, -78.1683457], "Santuario Central de Odonatos", "Reservorio Agroforestal (~2,006 m²): Liberación y reproducción de ninfas nativas. Depredación larvaria y aérea continua."),
+        ([0.4048221, -78.1751372], "Remanso Ecológico Ingenio", "Canal Jardines Sala Capitular: Crianza de libélulas en aguas someras con macrófitas.")
+    ]
+    for spt, snom, sdesc in santuarios_tl:
+        folium.Marker(
+            location=spt,
+            icon=folium.Icon(icon="tint", prefix="fa", color="blue"),
+            popup=folium.Popup(f"<b>🦗 T3: {snom}</b><br>{sdesc}", max_width=250),
+            tooltip=f"🦗 T3: {snom}"
+        ).add_to(fg_tl_3)
+
+    for bpt, bnom, bdesc in puntos_biocontrol:
+        folium.CircleMarker(
+            location=bpt,
+            radius=9,
+            color="#0288d1",
+            fill=True,
+            fill_color="#00bcd4",
+            fill_opacity=0.9,
+            popup=folium.Popup(f"<b>💧 T3: Microdosificación Bti ({bnom})</b><br>{bdesc}<br>Inocuidad total para abejas, peces y fauna acuática.", max_width=260),
+            tooltip=f"💧 T3: Bio-dosificación Bti ({bnom})"
+        ).add_to(fg_tl_3)
+
+    heat_data_t3 = [[pt[0], pt[1], pt[2] * 0.35] for pt in heat_data]
+    plugins.HeatMap(
+        heat_data_t3,
+        name="🔥 T3: Calor Reducido (-65%)",
+        min_opacity=0.18,
+        max_zoom=18,
+        radius=18,
+        blur=14,
+        gradient=gradient_calor
+    ).add_to(fg_tl_3)
+
+    for pt, codigo, ubicacion in trampas_humanas:
+        folium.Marker(
+            location=pt,
+            icon=folium.Icon(icon="wifi", prefix="fa", color="cadetblue"),
+            tooltip=f"📡 T3: {codigo} · Telemetría: ~30.2 insectos/sem (-65%)",
+            popup=folium.Popup(f"<b>📡 {codigo} (Red Telemétrica Activa)</b><br>Captura media: <b>30.2 ± 3.1 adultos/trampa/sem</b>.<br>Reducción del <b>65.0%</b> en picaduras comunitarias.", max_width=250)
+        ).add_to(fg_tl_3)
+
+    # --- T4: Fase IV (Semanas 9–16+: Consolidación Ecosistémica y Mitigación -82.8%) ---
+    for tramos_list, label_s in [(cerca1_tramos, "Sector Sur"), (cerca2_tramos, "Sector Centro"), (cerca3_tramos, "Sector Norte")]:
+        for tramo_lbl, tramo_coords in tramos_list:
+            folium.PolyLine(
+                locations=tramo_coords,
+                color="#0e6251",
+                weight=8,
+                popup=folium.Popup(f"<b>🌿 T4: Cerca Viva Multiestrato Madura ({tramo_lbl})</b><br>• Alto (3-5m Molle), Medio (2m Arrayán/Cedrón), Bajo (0.8m Citronela).<br>• 124 edificaciones blindadas de picaduras.<br>• Retorno de inversión en &lt; 3 meses.<br>• Presupuesto total: $1,470 USD.", max_width=280),
+                tooltip=f"🌿 T4: Cerca Viva Consolidada ({tramo_lbl})"
+            ).add_to(fg_tl_4)
+            folium.PolyLine(
+                locations=tramo_coords,
+                color="#10ac84",
+                weight=48,
+                opacity=0.45,
+                tooltip=f"🛡️ T4: Buffer Pleno de Confort (40m) · {tramo_lbl}"
+            ).add_to(fg_tl_4)
+
+    for pt, codigo, ubicacion in trampas_humanas:
+        folium.Marker(
+            location=pt,
+            icon=folium.Icon(icon="shield", prefix="fa", color="green"),
+            tooltip=f"🛡️ T4: {codigo} · Eficacia Validada (-82.8%)",
+            popup=folium.Popup(f"<b>🛡️ {codigo} (Consolidación Exitosa)</b><br>Captura media: <b>14.8 ± 2.0 adultos/trampa/sem</b>.<br>Mitigación oficial: <b>-82.8%</b>.<br>Inferencia: t = 25.85, p &lt; 0.001.", max_width=250)
+        ).add_to(fg_tl_4)
+
+    adopcion_hitos = [
+        ([0.40240, -78.17400], "Minga Estudiantil «Adopta un Tramo» (Sur)", "Estudiantes residentes de Las Multis y Las Pats cuidan los 380m de barrera vegetal."),
+        ([0.40460, -78.17320], "Invernadero y Autopropagación (Centro)", "Propagación de esquejes de molle y arrayán en vivero universitario a costo USD $0.")
+    ]
+    for apt, anom, adesc in adopcion_hitos:
+        folium.Marker(
+            location=apt,
+            icon=folium.Icon(icon="heart", prefix="fa", color="darkgreen"),
+            popup=folium.Popup(f"<b>🤝 T4: {anom}</b><br>{adesc}", max_width=250),
+            tooltip=f"🤝 T4: {anom}"
+        ).add_to(fg_tl_4)
+
     # Agregar capas al mapa (fg_areas_verdes debajo de fg_edificios para preservar clicabilidad total de edificios)
     fg_distritos.add_to(m)
     fg_areas_verdes.add_to(m)
@@ -3701,6 +3935,13 @@ def generar_mapa():
     fg_cercas.add_to(m)
     fg_buffer.add_to(m)
     fg_trampas.add_to(m)
+
+    # Agregar capas temporales al mapa
+    fg_tl_0.add_to(m)
+    fg_tl_1.add_to(m)
+    fg_tl_2.add_to(m)
+    fg_tl_3.add_to(m)
+    fg_tl_4.add_to(m)
 
     # Controles estándar de Folium (collapsed=True evita colisión visual con la barra superior)
     folium.LayerControl(position='topright', collapsed=True).add_to(m)
@@ -3727,6 +3968,11 @@ def generar_mapa():
     edificios_var = fg_edificios.get_name()
     dark_var = tile_dark.get_name()
     streets_var = tile_streets.get_name()
+    tl0_var = fg_tl_0.get_name()
+    tl1_var = fg_tl_1.get_name()
+    tl2_var = fg_tl_2.get_name()
+    tl3_var = fg_tl_3.get_name()
+    tl4_var = fg_tl_4.get_name()
 
     # -------------------------------------------------------------
     # 10. INTERFAZ HUMANISTA, BILINGÜE, DARK/LIGHT Y QR (HTML + CSS + JS)
@@ -4439,6 +4685,186 @@ def generar_mapa():
                 left: 168px;
             }}
         }}
+
+        /* TIMELINE CONTROLLER (GLASSMORPHISM 2.0 & INTERACTIVE STEPPER) */
+        .timeline-controller {{
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 92%;
+            max-width: 860px;
+            background: var(--bg-panel);
+            backdrop-filter: blur(20px) saturate(180%);
+            -webkit-backdrop-filter: blur(20px) saturate(180%);
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-card);
+            border-radius: 16px;
+            z-index: 1000;
+            overflow: hidden;
+            transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+        }}
+        .timeline-header {{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 9px 14px;
+            background: var(--accent-gradient);
+            color: white;
+            cursor: move;
+            user-select: none;
+        }}
+        .timeline-body {{
+            padding: 12px 16px;
+            max-height: 250px;
+            overflow-y: auto;
+        }}
+        .timeline-stepper {{
+            position: relative;
+            margin-bottom: 12px;
+            padding: 4px 6px 0 6px;
+        }}
+        .timeline-track {{
+            position: absolute;
+            top: 18px;
+            left: 45px;
+            right: 45px;
+            height: 4px;
+            background: rgba(203, 213, 225, 0.6);
+            border-radius: 4px;
+            z-index: 1;
+        }}
+        .timeline-progress-bar {{
+            height: 100%;
+            background: linear-gradient(90deg, #10ac84, #1e3799);
+            border-radius: 4px;
+            transition: width 0.35s ease;
+        }}
+        .timeline-steps-row {{
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            z-index: 2;
+        }}
+        .tl-step-btn {{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            padding: 0;
+            transition: transform 0.2s;
+        }}
+        .tl-step-btn:hover {{
+            transform: translateY(-2px);
+        }}
+        .tl-step-num {{
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: var(--bg-card);
+            border: 2px solid var(--border-color);
+            color: var(--text-muted);
+            font-size: 11px;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+            transition: all 0.25s ease;
+        }}
+        .tl-step-btn.active .tl-step-num {{
+            background: #10ac84;
+            border-color: #ffffff;
+            color: #ffffff;
+            box-shadow: 0 0 0 4px var(--primary-glow);
+            transform: scale(1.12);
+        }}
+        .tl-step-label {{
+            margin-top: 5px;
+            font-size: 10px;
+            color: var(--text-muted);
+            text-align: center;
+            line-height: 1.15;
+            max-width: 95px;
+        }}
+        .tl-step-btn.active .tl-step-label {{
+            color: var(--text-color);
+            font-weight: 700;
+        }}
+        .tl-play-btn {{
+            background: rgba(255, 255, 255, 0.25);
+            border: 1px solid rgba(255, 255, 255, 0.45);
+            color: #ffffff;
+            padding: 3px 10px;
+            border-radius: 8px;
+            font-size: 11px;
+            font-weight: 700;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            transition: all 0.2s;
+        }}
+        .tl-play-btn:hover {{
+            background: rgba(255, 255, 255, 0.4);
+            transform: scale(1.04);
+        }}
+        .tl-kpi-box {{
+            background: var(--bg-kpi);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 5px 8px;
+            text-align: center;
+            transition: transform 0.2s;
+        }}
+        .tl-kpi-box:hover {{
+            transform: translateY(-1px);
+        }}
+        .tl-kpi-lbl {{
+            font-size: 9px;
+            color: var(--text-muted);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.2px;
+        }}
+        .tl-kpi-val {{
+            font-size: 15px;
+            font-weight: 800;
+            margin: 1px 0;
+            line-height: 1.1;
+        }}
+        .tl-kpi-sub {{
+            font-size: 8.5px;
+            color: var(--text-muted);
+        }}
+        .nav-btn-timeline-active {{
+            background: linear-gradient(135deg, rgba(16, 172, 132, 0.25) 0%, rgba(30, 55, 153, 0.25) 100%) !important;
+            border-color: #10ac84 !important;
+            font-weight: 700 !important;
+            color: var(--text-color) !important;
+        }}
+        @media (max-width: 768px) {{
+            .timeline-controller {{
+                bottom: 8px;
+                width: 96%;
+                max-width: none;
+            }}
+            .tl-step-label {{
+                font-size: 8px;
+                max-width: 58px;
+            }}
+            .tl-kpi-val {{
+                font-size: 12.5px;
+            }}
+            .tl-step-num {{
+                width: 26px;
+                height: 26px;
+                font-size: 9.5px;
+            }}
+        }}
     </style>
 
     <!-- 1. VENTANA FLOTANTE VERTICAL DE NAVEGACIÓN (ARRASTRABLE Y TRANSPARENTE) -->
@@ -4477,6 +4903,11 @@ def generar_mapa():
             <!-- Item 4: Ver Mapa de Calor -->
             <button id="btn-diagnostico" class="nav-btn" onclick="activarModoDiagnostico()" title="Ver mapa de calor continuo y focos epidemiológicos de picaduras">
                 <span>🔥</span> <span data-i18n="nav_diagnosis">Ver Mapa de Calor</span>
+            </button>
+
+            <!-- Item 4.5: Línea de Tiempo de Implementación -->
+            <button id="btn-timeline" class="nav-btn" onclick="toggleTimeline()" title="Visualizar la línea de tiempo interactiva de implementación (16 semanas)">
+                <span>⏱️</span> <span data-i18n="nav_timeline">Línea de Tiempo (16 Sem.)</span>
             </button>
 
             <div class="nav-section-divider" data-i18n="nav_sectors_label">📍 Sectores del Campus</div>
@@ -4620,6 +5051,90 @@ def generar_mapa():
             </div>
             <div style="margin-top: 10px; font-size: 10.5px; color: var(--text-muted); text-align: center;" data-i18n="dash_hint">
                 💡 <i>Usa los botones superiores para recorrer el campus</i>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. VENTANA FLOTANTE DE LÍNEA DE TIEMPO INTERACTIVA (16 SEMANAS) -->
+    <div id="timeline-controller" class="timeline-controller" style="display: none;">
+        <div id="timeline-header" class="timeline-header" title="Arrastra desde aquí para mover el panel temporal">
+            <div style="display: flex; align-items: center; gap: 8px;">
+                <span class="drag-grip">⠿</span>
+                <span style="font-size: 15px;">⏱️</span>
+                <div>
+                    <span style="font-weight: 800; font-size: 12.5px; letter-spacing: -0.2px;" data-i18n="tl_title">Línea de Tiempo: Despliegue de Algoritmo Verde (16 Semanas)</span><br>
+                    <span style="font-size: 10px; opacity: 0.92;" data-i18n="tl_sub">Evolución biológica, civil y entomológica paso a paso</span>
+                </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 6px;">
+                <button id="btn-tl-play" class="tl-play-btn" onclick="togglePlayTimeline()" title="Reproducir recorrido automático paso a paso">
+                    <span id="tl-play-icon">▶</span> <span id="tl-play-text" data-i18n="tl_play">Reproducir</span>
+                </button>
+                <button class="toggle-btn" onclick="toggleTimelineContent()" title="Minimizar / Expandir panel" id="btn-tl-toggle">−</button>
+                <button class="toggle-btn" onclick="toggleTimeline(false)" title="Cerrar línea de tiempo">✕</button>
+            </div>
+        </div>
+
+        <div id="timeline-body" class="timeline-body">
+            <!-- Barra de Progreso y Pasos Temporales -->
+            <div class="timeline-stepper">
+                <div class="timeline-track">
+                    <div id="timeline-progress-bar" class="timeline-progress-bar" style="width: 0%;"></div>
+                </div>
+                <div class="timeline-steps-row">
+                    <button class="tl-step-btn active" onclick="setTimelinePhase(0)" id="tl-step-0" title="Semana 0: Diagnóstico Basal Pre-Intervención">
+                        <span class="tl-step-num">T0</span>
+                        <span class="tl-step-label" data-i18n="tl_step0_label">Semana 0<br><b>Línea Base</b></span>
+                    </button>
+                    <button class="tl-step-btn" onclick="setTimelinePhase(1)" id="tl-step-1" title="Fase I (Semanas 1–2): Trazado Topográfico, Zanjeo y Riego">
+                        <span class="tl-step-num">T1</span>
+                        <span class="tl-step-label" data-i18n="tl_step1_label">Sem. 1–2<br><b>Trazado & Riego</b></span>
+                    </button>
+                    <button class="tl-step-btn" onclick="setTimelinePhase(2)" id="tl-step-2" title="Fase II (Semanas 3–5): Siembra Escalonada de 3 Estratos">
+                        <span class="tl-step-num">T2</span>
+                        <span class="tl-step-label" data-i18n="tl_step2_label">Sem. 3–5<br><b>Siembra 3 Estratos</b></span>
+                    </button>
+                    <button class="tl-step-btn" onclick="setTimelinePhase(3)" id="tl-step-3" title="Fase III (Semanas 6–8): Biocontrol Acuático (Libélulas + Bti) y Telemetría">
+                        <span class="tl-step-num">T3</span>
+                        <span class="tl-step-label" data-i18n="tl_step3_label">Sem. 6–8<br><b>Biocontrol & Bti</b></span>
+                    </button>
+                    <button class="tl-step-btn" onclick="setTimelinePhase(4)" id="tl-step-4" title="Fase IV (Semanas 9–16+): Consolidación Ecosistémica y Mitigación Plena">
+                        <span class="tl-step-num">T4</span>
+                        <span class="tl-step-label" data-i18n="tl_step4_label">Sem. 9–16+<br><b>Consolidación -82.8%</b></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Tarjeta Informativa de la Fase Activa -->
+            <div id="tl-info-card" class="tl-info-card">
+                <!-- Dynamic KPI Grid -->
+                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 7px; margin-bottom: 8px;">
+                    <div class="tl-kpi-box">
+                        <div class="tl-kpi-lbl" data-i18n="tl_kpi_bites">🦟 Picaduras / Trampa</div>
+                        <div id="tl-val-bites" class="tl-kpi-val" style="color: #e74c3c;">86.3</div>
+                        <div id="tl-sub-bites" class="tl-kpi-sub" data-i18n="tl_sub_bites">Adultos / trampa / sem.</div>
+                    </div>
+                    <div class="tl-kpi-box">
+                        <div class="tl-kpi-lbl" data-i18n="tl_kpi_red">📉 Mitigación</div>
+                        <div id="tl-val-red" class="tl-kpi-val" style="color: #7f8c8d;">0.0%</div>
+                        <div id="tl-sub-red" class="tl-kpi-sub" data-i18n="tl_sub_red">Línea de base</div>
+                    </div>
+                    <div class="tl-kpi-box">
+                        <div class="tl-kpi-lbl" data-i18n="tl_kpi_area">🛡️ Confort Protegido</div>
+                        <div id="tl-val-area" class="tl-kpi-val" style="color: #1e3799;">0 m²</div>
+                        <div id="tl-sub-area" class="tl-kpi-sub" data-i18n="tl_sub_area">Buffer aromático</div>
+                    </div>
+                    <div class="tl-kpi-box">
+                        <div class="tl-kpi-lbl" data-i18n="tl_kpi_inv">💰 Presupuesto</div>
+                        <div id="tl-val-inv" class="tl-kpi-val" style="color: #d35400;">$0</div>
+                        <div id="tl-sub-inv" class="tl-kpi-sub" data-i18n="tl_sub_inv">$1.50 / m lineal</div>
+                    </div>
+                </div>
+
+                <!-- Descripción de Actividades de la Fase -->
+                <div id="tl-phase-desc" style="font-size: 11.8px; line-height: 1.42; color: var(--text-color); background: var(--bg-card); padding: 8px 12px; border-radius: 8px; border-left: 3px solid #10ac84;">
+                    <!-- Rellenado dinámicamente -->
+                </div>
             </div>
         </div>
     </div>
@@ -4849,6 +5364,283 @@ def generar_mapa():
         function getFGEdificios() {{ return window['{edificios_var}']; }}
         function getDarkLayer() {{ return window['{dark_var}']; }}
         function getStreetsLayer() {{ return window['{streets_var}']; }}
+        function getTL0() {{ return window['{tl0_var}']; }}
+        function getTL1() {{ return window['{tl1_var}']; }}
+        function getTL2() {{ return window['{tl2_var}']; }}
+        function getTL3() {{ return window['{tl3_var}']; }}
+        function getTL4() {{ return window['{tl4_var}']; }}
+
+        // Estado global de la Línea de Tiempo
+        var currentTimelinePhase = 0;
+        var timelinePlayInterval = null;
+        var isTimelineActive = false;
+
+        var timelinePhaseData = {{
+            es: [
+                {{
+                    phase: "T0",
+                    name: "Semana 0: Diagnóstico Basal Pre-Intervención",
+                    bites: "86.3",
+                    bites_col: "#e74c3c",
+                    red: "0.0%",
+                    red_col: "#7f8c8d",
+                    area: "0 m²",
+                    inv: "$0",
+                    desc: "<b>🚨 T0 · Diagnóstico Basal (Semana 0):</b> Alta proliferación larvaria en acequias y canales lóticos. Puntos críticos abiertos en Las Multis, Ingenio y Senescyt (86.3 ± 6.5 adultos/trampa/sem). Sin barreras vivas ni biocontrol instalado; afectación continua en aulas, comedores y descanso estudiantil."
+                }},
+                {{
+                    phase: "T1",
+                    name: "Fase I (Sem. 1–2): Trazado Topográfico, Zanjeo y Riego a Gravedad",
+                    bites: "86.3",
+                    bites_col: "#e67e22",
+                    red: "0.0%",
+                    red_col: "#7f8c8d",
+                    area: "0 m²",
+                    inv: "$320",
+                    desc: "<b>🚜 T1 · Fase I (Semanas 1–2):</b> Replanteo topográfico geodésico GPS de los 980 m lineales (7 tramos discontinuos) respetando cruces viales y peatonales. Zanjeo de 40×40 cm. Tendido de línea de microrriego por goteo gravitacional conectada al Reservorio Agroforestal (cota 1,920 m s.n.m., 0 kWh eléctricos). Censo de alergias con Bienestar Estudiantil validando reemplazo de romero por Cedrón y Huacatay cerca de dormitorios."
+                }},
+                {{
+                    phase: "T2",
+                    name: "Fase II (Sem. 3–5): Siembra Escalonada de 3 Estratos y Compostaje",
+                    bites: "56.1",
+                    bites_col: "#27ae60",
+                    red: "-35.0%",
+                    red_col: "#27ae60",
+                    area: "~19,600 m²",
+                    inv: "$1,150",
+                    desc: "<b>🌱 T2 · Fase II (Semanas 3–5):</b> Incorporación de 1.5 t de compost orgánico producido en campus. Siembra escalonada de las 1,960 plántulas autóctonas (Molle, Arrayán, Romero/Cedrón/Huacatay, Citronela). Riego de prendimiento y entutorado. Inicio de emisión de monoterpenos volátiles (citronelal, pineno) en un buffer inicial de 20 metros; primera reducción biológica de picaduras."
+                }},
+                {{
+                    phase: "T3",
+                    name: "Fase III (Sem. 6–8): Biocontrol Acuático (Libélulas + Bti) y Telemetría",
+                    bites: "30.2",
+                    bites_col: "#10ac84",
+                    red: "-65.0%",
+                    red_col: "#10ac84",
+                    area: "~31,000 m²",
+                    inv: "$1,410",
+                    desc: "<b>🦗 T3 · Fase III (Semanas 6–8):</b> Santuario de libélulas y caballitos del diablo (Odonata) en el reservorio este (~2,006 m²) y remansos de acequias. Microdosificación puntual de Bacillus thuringiensis israelensis (Bti) líquido en cabeceras de canales (control larvario 100% selectivo e inocuo para abejas y peces). Encendido de las 6 estaciones telemétricas GPS reportando -65% de picaduras."
+                }},
+                {{
+                    phase: "T4",
+                    name: "Fase IV (Sem. 9–16+): Consolidación Ecosistémica y Mitigación Plena",
+                    bites: "14.8",
+                    bites_col: "#0e6251",
+                    red: "-82.8%",
+                    red_col: "#0e6251",
+                    area: "39,200 m²",
+                    inv: "$1,470",
+                    desc: "<b>🛡️ T4 · Fase IV (Semanas 9–16+):</b> Maduración y densificación total de las cercas vivas multiestrato (Alto 3-5m, Medio 2m, Bajo 0.8m). Buffer pleno de 40 metros blindando 124 edificaciones y >800 personas. Eficacia validada estadísticamente (14.8 picaduras/trampa/sem, -82.8%, t=25.85, p<0.001). Mingas estudiantiles «Adopta un Tramo» y autopropagación de esquejes en invernaderos institucionales a costo USD $0."
+                }}
+            ],
+            en: [
+                {{
+                    phase: "T0",
+                    name: "Week 0: Pre-Intervention Baseline Diagnosis",
+                    bites: "86.3",
+                    bites_col: "#e74c3c",
+                    red: "0.0%",
+                    red_col: "#7f8c8d",
+                    area: "0 m²",
+                    inv: "$0",
+                    desc: "<b>🚨 T0 · Baseline Diagnosis (Week 0):</b> High larval proliferation in lotic irrigation canals. Critical epidemiological hotspots active in Las Multis, Sugar Mill, and Senescyt (86.3 ± 6.5 adults/trap/wk). No living barriers or biocontrol in place; persistent disruption of classrooms, dining areas, and student sleep."
+                }},
+                {{
+                    phase: "T1",
+                    name: "Phase I (Wk. 1–2): Topographic Survey, Trenching & Gravity Irrigation",
+                    bites: "86.3",
+                    bites_col: "#e67e22",
+                    red: "0.0%",
+                    red_col: "#7f8c8d",
+                    area: "0 m²",
+                    inv: "$320",
+                    desc: "<b>🚜 T1 · Phase I (Weeks 1–2):</b> High-precision GPS topographic staking of the 980 linear meters (7 discontinuous segments) respecting road and pedestrian crossings. 40×40 cm trenching. Gravitational drip irrigation PE 16mm tubing connected to the Eastern Reservoir (elevation 1,920 m a.s.l., 0 kWh electric consumption). Student allergy survey with Student Welfare approving rosemary substitution with Lemon Verbena and Huacatay near dormitories."
+                }},
+                {{
+                    phase: "T2",
+                    name: "Phase II (Wk. 3–5): Staggered 3-Strata Planting & Soil Composting",
+                    bites: "56.1",
+                    bites_col: "#27ae60",
+                    red: "-35.0%",
+                    red_col: "#27ae60",
+                    area: "~19,600 m²",
+                    inv: "$1,150",
+                    desc: "<b>🌱 T2 · Phase II (Weeks 3–5):</b> Soil enrichment with 1.5 tons of organic compost produced on campus. Staggered planting of 1,960 native seedlings (Molle, Arrayan, Rosemary/Lemon Verbena/Huacatay, Lemongrass). Initial drip irrigation and staking. Onset of volatile monoterpene emission (citronellal, pinene) across a 20-meter preliminary buffer; first biological reduction in biting activity."
+                }},
+                {{
+                    phase: "T3",
+                    name: "Phase III (Wk. 6–8): Aquatic Biocontrol (Dragonflies + Bti) & Telemetry",
+                    bites: "30.2",
+                    bites_col: "#10ac84",
+                    red: "-65.0%",
+                    red_col: "#10ac84",
+                    area: "~31,000 m²",
+                    inv: "$1,410",
+                    desc: "<b>🦗 T3 · Phase III (Weeks 6–8):</b> Dragonfly and damselfly (Odonata) sanctuary established in eastern reservoir (~2,006 m²) and canal backwaters. Micro-dosing of Bacillus thuringiensis israelensis (Bti) in canal headwaters (100% selective bio-larvicide harmless to bees, fish, and wildlife). Activation of all 6 GPS telemetry stations reporting -65% biting reduction."
+                }},
+                {{
+                    phase: "T4",
+                    name: "Phase IV (Wk. 9–16+): Ecosystem Consolidation & Full Mitigation",
+                    bites: "14.8",
+                    bites_col: "#0e6251",
+                    red: "-82.8%",
+                    red_col: "#0e6251",
+                    area: "39,200 m²",
+                    inv: "$1,470",
+                    desc: "<b>🛡️ T4 · Phase IV (Weeks 9–16+):</b> Full maturation and foliage density across all 3 strata (High 3-5m, Medium 2m, Low 0.8m). Full 40-meter aromatic comfort buffer protecting 124 buildings and >800 people. Statistically validated efficacy (14.8 bites/trap/wk, -82.8%, t=25.85, p<0.001). «Adopt a Section» student mingas and zero-cost seedling propagation in institutional greenhouses."
+                }}
+            ]
+        }};
+
+        function desactivarModoTimeline() {{
+            var foliumMap = getMap();
+            if (!foliumMap) return;
+            var tls = [getTL0(), getTL1(), getTL2(), getTL3(), getTL4()];
+            tls.forEach(function(tl) {{
+                if (tl && foliumMap.hasLayer(tl)) foliumMap.removeLayer(tl);
+            }});
+            isTimelineActive = false;
+            var btnTl = document.getElementById('btn-timeline');
+            if (btnTl) btnTl.classList.remove('nav-btn-timeline-active');
+            if (timelinePlayInterval) {{
+                clearInterval(timelinePlayInterval);
+                timelinePlayInterval = null;
+                var playIcon = document.getElementById('tl-play-icon');
+                var playText = document.getElementById('tl-play-text');
+                if (playIcon) playIcon.innerHTML = '▶';
+                if (playText) {{
+                    playText.setAttribute('data-i18n', 'tl_play');
+                    playText.innerHTML = (currentLang === 'es') ? 'Reproducir' : 'Play';
+                }}
+            }}
+        }}
+
+        function activarCapaTimeline(step) {{
+            var foliumMap = getMap();
+            if (!foliumMap) return;
+            isTimelineActive = true;
+
+            // Ocultar capas estándar que puedan colisionar visualmente
+            var fgCercas = getFGCercas();
+            var fgBuffer = getFGBuffer();
+            var fgBiocontrol = getFGBiocontrol();
+            var fgTrampas = getFGTrampas();
+            var fgZonas = getFGZonas();
+            if (fgCercas && foliumMap.hasLayer(fgCercas)) foliumMap.removeLayer(fgCercas);
+            if (fgBuffer && foliumMap.hasLayer(fgBuffer)) foliumMap.removeLayer(fgBuffer);
+            if (fgBiocontrol && foliumMap.hasLayer(fgBiocontrol)) foliumMap.removeLayer(fgBiocontrol);
+            if (fgTrampas && foliumMap.hasLayer(fgTrampas)) foliumMap.removeLayer(fgTrampas);
+            if (fgZonas && foliumMap.hasLayer(fgZonas)) foliumMap.removeLayer(fgZonas);
+
+            var tls = [getTL0(), getTL1(), getTL2(), getTL3(), getTL4()];
+            tls.forEach(function(tl, idx) {{
+                if (tl) {{
+                    if (idx === step) {{
+                        if (!foliumMap.hasLayer(tl)) foliumMap.addLayer(tl);
+                    }} else {{
+                        if (foliumMap.hasLayer(tl)) foliumMap.removeLayer(tl);
+                    }}
+                }}
+            }});
+
+            var btnSol = document.getElementById('btn-solucion');
+            var btnDiag = document.getElementById('btn-diagnostico');
+            var btnTl = document.getElementById('btn-timeline');
+            if (btnSol) btnSol.classList.remove('nav-btn-highlight');
+            if (btnDiag) btnDiag.classList.remove('nav-btn-alert');
+            if (btnTl) btnTl.classList.add('nav-btn-timeline-active');
+        }}
+
+        function setTimelinePhase(step) {{
+            currentTimelinePhase = step;
+            activarCapaTimeline(step);
+
+            for (var i = 0; i < 5; i++) {{
+                var btn = document.getElementById('tl-step-' + i);
+                if (btn) {{
+                    if (i === step) btn.classList.add('active');
+                    else btn.classList.remove('active');
+                }}
+            }}
+
+            var pBar = document.getElementById('timeline-progress-bar');
+            if (pBar) {{
+                pBar.style.width = (step * 25) + '%';
+            }}
+
+            var dataList = timelinePhaseData[currentLang] || timelinePhaseData['es'];
+            var data = dataList[step];
+            if (!data) return;
+
+            var valBites = document.getElementById('tl-val-bites');
+            var valRed = document.getElementById('tl-val-red');
+            var valArea = document.getElementById('tl-val-area');
+            var valInv = document.getElementById('tl-val-inv');
+            var descBox = document.getElementById('tl-phase-desc');
+
+            if (valBites) {{ valBites.innerHTML = data.bites; valBites.style.color = data.bites_col; }}
+            if (valRed) {{ valRed.innerHTML = data.red; valRed.style.color = data.red_col; }}
+            if (valArea) {{ valArea.innerHTML = data.area; }}
+            if (valInv) {{ valInv.innerHTML = data.inv; }}
+            if (descBox) {{ descBox.innerHTML = data.desc; }}
+        }}
+
+        function toggleTimeline(show) {{
+            var box = document.getElementById('timeline-controller');
+            if (!box) return;
+            if (show === undefined) {{
+                show = (box.style.display === 'none');
+            }}
+            if (show) {{
+                box.style.display = 'block';
+                var body = document.getElementById('timeline-body');
+                if (body) body.style.display = 'block';
+                var btnToggle = document.getElementById('btn-tl-toggle');
+                if (btnToggle) btnToggle.innerHTML = '−';
+                setTimelinePhase(currentTimelinePhase);
+            }} else {{
+                box.style.display = 'none';
+                desactivarModoTimeline();
+                activarModoSolucion();
+            }}
+        }}
+
+        function togglePlayTimeline() {{
+            var playIcon = document.getElementById('tl-play-icon');
+            var playText = document.getElementById('tl-play-text');
+            if (timelinePlayInterval) {{
+                clearInterval(timelinePlayInterval);
+                timelinePlayInterval = null;
+                if (playIcon) playIcon.innerHTML = '▶';
+                if (playText) {{
+                    playText.setAttribute('data-i18n', 'tl_play');
+                    playText.innerHTML = (currentLang === 'es') ? 'Reproducir' : 'Play';
+                }}
+            }} else {{
+                if (playIcon) playIcon.innerHTML = '⏸';
+                if (playText) {{
+                    playText.setAttribute('data-i18n', 'tl_pause');
+                    playText.innerHTML = (currentLang === 'es') ? 'Pausar' : 'Pause';
+                }}
+                timelinePlayInterval = setInterval(function() {{
+                    currentTimelinePhase = (currentTimelinePhase + 1) % 5;
+                    setTimelinePhase(currentTimelinePhase);
+                }}, 3800);
+            }}
+        }}
+
+        function toggleTimelineContent() {{
+            var body = document.getElementById('timeline-body');
+            var btn = document.getElementById('btn-tl-toggle');
+            if (!body || !btn) return;
+            if (body.style.display === 'none') {{
+                body.style.display = 'block';
+                btn.innerHTML = '−';
+            }} else {{
+                body.style.display = 'none';
+                btn.innerHTML = '+';
+            }}
+        }}
 
         // 1. Alternar modo Solución Verde
         function activarModoSolucion() {{
@@ -4861,6 +5653,12 @@ def generar_mapa():
             var fgZonas = getFGZonas();
             var fgDistritos = getFGDistritos();
             if (!foliumMap) return;
+
+            if (isTimelineActive) {{
+                desactivarModoTimeline();
+                var tlBox = document.getElementById('timeline-controller');
+                if (tlBox) tlBox.style.display = 'none';
+            }}
 
             if (fgDistritos && !foliumMap.hasLayer(fgDistritos)) foliumMap.addLayer(fgDistritos);
 
@@ -4885,6 +5683,12 @@ def generar_mapa():
             var fgEdificios = getFGEdificios();
             var fgBuffer = getFGBuffer();
             if (!foliumMap) return;
+
+            if (isTimelineActive) {{
+                desactivarModoTimeline();
+                var tlBox = document.getElementById('timeline-controller');
+                if (tlBox) tlBox.style.display = 'none';
+            }}
 
             if (fgZonas && !foliumMap.hasLayer(fgZonas)) foliumMap.addLayer(fgZonas);
             if (fgCanales && !foliumMap.hasLayer(fgCanales)) foliumMap.addLayer(fgCanales);
@@ -5072,6 +5876,7 @@ def generar_mapa():
                 nav_vision: "Misión y Propósito",
                 nav_solution: "Solución Verde (Activa)",
                 nav_diagnosis: "Ver Mapa de Calor",
+                nav_timeline: "Línea de Tiempo (16 Sem.)",
                 nav_sectors_label: "📍 Sectores del Campus",
                 nav_senescyt: "1. Senescyt",
                 nav_ingenio: "2. Ingenio Azucarero",
@@ -5127,7 +5932,25 @@ def generar_mapa():
                 qr_card_repo: "🐙 Algoritmo Verde YT · GitHub",
                 qr_open_repo: "Abrir GitHub",
                 qr_desc: "Dentro del README principal de GitHub encontrarás el botón destacado para abrir este Mapa Interactivo en vivo desde cualquier celular o navegador.",
-                qr_download_repo: "Descargar QR"
+                qr_download_repo: "Descargar QR",
+
+                tl_title: "Línea de Tiempo: Despliegue de Algoritmo Verde (16 Semanas)",
+                tl_sub: "Evolución biológica, civil y entomológica paso a paso",
+                tl_play: "Reproducir",
+                tl_pause: "Pausar",
+                tl_step0_label: "Semana 0<br><b>Línea Base</b>",
+                tl_step1_label: "Sem. 1–2<br><b>Trazado & Riego</b>",
+                tl_step2_label: "Sem. 3–5<br><b>Siembra 3 Estratos</b>",
+                tl_step3_label: "Sem. 6–8<br><b>Biocontrol & Bti</b>",
+                tl_step4_label: "Sem. 9–16+<br><b>Consolidación -82.8%</b>",
+                tl_kpi_bites: "🦟 Picaduras / Trampa",
+                tl_kpi_red: "📉 Mitigación",
+                tl_kpi_area: "🛡️ Confort Protegido",
+                tl_kpi_inv: "💰 Presupuesto",
+                tl_sub_bites: "Adultos / trampa / sem.",
+                tl_sub_red: "Línea de base",
+                tl_sub_area: "Buffer aromático",
+                tl_sub_inv: "$1.50 / m lineal"
             }},
             en: {{
                 nav_header_title: "Algoritmo Verde YT",
@@ -5136,6 +5959,7 @@ def generar_mapa():
                 nav_vision: "Mission & Purpose",
                 nav_solution: "Green Solution (Active)",
                 nav_diagnosis: "View Heatmap",
+                nav_timeline: "Timeline (16 Weeks)",
                 nav_sectors_label: "📍 Campus Sectors",
                 nav_senescyt: "1. Senescyt",
                 nav_ingenio: "2. Sugar Mill",
@@ -5191,7 +6015,25 @@ def generar_mapa():
                 qr_card_repo: "🐙 Algoritmo Verde YT · GitHub",
                 qr_open_repo: "Open GitHub",
                 qr_desc: "At the top of the GitHub README you will find a prominent button to launch this Live Interactive Map on any phone or browser.",
-                qr_download_repo: "Download QR"
+                qr_download_repo: "Download QR",
+
+                tl_title: "Implementation Timeline: Algoritmo Verde (16 Weeks)",
+                tl_sub: "Biological, civil & entomological step-by-step progress",
+                tl_play: "Play",
+                tl_pause: "Pause",
+                tl_step0_label: "Week 0<br><b>Baseline</b>",
+                tl_step1_label: "Wk. 1–2<br><b>Survey & Drip</b>",
+                tl_step2_label: "Wk. 3–5<br><b>3-Strata Planting</b>",
+                tl_step3_label: "Wk. 6–8<br><b>Biocontrol & Bti</b>",
+                tl_step4_label: "Wk. 9–16+<br><b>Consolidation -82.8%</b>",
+                tl_kpi_bites: "🦟 Bites / Trap",
+                tl_kpi_red: "📉 Reduction",
+                tl_kpi_area: "🛡️ Protected Area",
+                tl_kpi_inv: "💰 Budget",
+                tl_sub_bites: "Adults / trap / wk.",
+                tl_sub_red: "From baseline",
+                tl_sub_area: "Aromatic buffer",
+                tl_sub_inv: "$1.50 / linear meter"
             }}
         }};
 
@@ -5224,6 +6066,11 @@ def generar_mapa():
                     el.innerHTML = dict[key];
                 }}
             }});
+
+            var tlBox = document.getElementById('timeline-controller');
+            if (tlBox && tlBox.style.display !== 'none') {{
+                setTimelinePhase(currentTimelinePhase);
+            }}
         }}
 
         // Cerrar modales con tecla Escape
@@ -5241,12 +6088,15 @@ def generar_mapa():
             hacerArrastrable(document.getElementById('utility-dock'), document.getElementById('utility-dock'));
             hacerArrastrable(document.getElementById('panel-leyenda'), document.getElementById('leyenda-header'));
             hacerArrastrable(document.getElementById('dashboard-flotante'), document.getElementById('dash-header'));
+            hacerArrastrable(document.getElementById('timeline-controller'), document.getElementById('timeline-header'));
 
             var modals = document.querySelectorAll('.modal-card');
             modals.forEach(function(mc) {{
                 var mh = mc.querySelector('.modal-header');
                 if (mh) hacerArrastrable(mc, mh);
             }});
+
+            setTimelinePhase(0);
 
             setTimeout(function() {{
                 toggleModalBienvenida(true);
