@@ -52,7 +52,7 @@ flowchart LR
 
 ### Minuto 3:00 – 5:30 · Diapositivas 4 y 5: Optimización SLSQP y Demostración en Vivo del Mapa GIS
 * **Orador:** Jefferson Conza.
-* **Apoyo Visual:** Diapositiva 4 con la formulación matemática SLSQP y, de inmediato, cambiar a pantalla compartida / navegador con el visor interactivo [`mapa_interactivo_control_arenillas.html`](file:///mnt/c/Users/jconza/Documents/YOSW/reto3_Control_Arenillas/mapa_interactivo_control_arenillas.html).
+* **Apoyo Visual:** Diapositiva 4 con la formulación matemática SLSQP y, de inmediato, cambiar a pantalla compartida / navegador con el visor interactivo [`mapa_interactivo_control_arenillas.html`](./mapa_interactivo_control_arenillas.html).
 * **Guion sugerido:**
   > *"¿Cómo sabemos exactamente dónde y cuánto sembrar sin despilfarrar recursos? Como matemático, formulé un modelo de **Optimización Espacial Multiobjetivo (algoritmo SLSQP)** que pondera la densidad humana, la dirección del viento andino y la cercanía a los focos de agua de los canales.*  
   > *El modelo demostró que no necesitamos cercar todo el cantón: el cerramiento óptimo se divide en **7 tramos viales estratégicos (`CV-1A..CV-3B`) que suman exactamente 980 metros lineales**, respetando al 100% los pasos vehiculares y caminerías peatonales (0 cruces de calles).*  

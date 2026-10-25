@@ -3,8 +3,8 @@
 ## 1. Estado y Confirmación Oficial
 * **Equipo:** Algoritmo Verde YT *(Unión confirmada oficialmente por el Comité Organizador)*
 * **Reto Asignado:** **Reto 3 - Estrategias Innovadoras para el Control de Arenillas en el Campus de Yachay Tech**
-* **Mentor Asignado:** Ing. José Luis Flores M.Sc. (Contacto: `0982086625`)
-* **Ubicación de Materiales:** Carpeta local [`reto3_Control_Arenillas/`](file:///mnt/c/Users/jconza/Documents/YOSW/reto3_Control_Arenillas/)
+* **Mentor Asignado:** Ing. José Luis Flores M.Sc. (Contacto: `[Institucional / Decanato]`)
+* **Ubicación de Materiales:** Carpeta local [`reto3_Control_Arenillas/`](./reto3_Control_Arenillas/)
 
 ---
 
@@ -23,7 +23,7 @@ El equipo cuenta con una integración multidisciplinaria idónea para abordar el
 
 ## 3. Diagnóstico Espacial y Puntos Críticos (Mapa Corregido)
 
-Se ha recibido y verificado la versión corregida del mapa: [`Corregido_Mapa de puntos críticos de proliferación de mosquitos en el campus.png`](file:///mnt/c/Users/jconza/Documents/YOSW/reto3_Control_Arenillas/Corregido_Mapa%20de%20puntos%20cr%C3%ADticos%20de%20proliferaci%C3%B3n%20de%20mosquitos%20en%20el%20campus.png).
+Se ha recibido y verificado la versión corregida del mapa: [`Corregido_Mapa de puntos críticos de proliferación de mosquitos en el campus.png`](./reto3_Control_Arenillas/Corregido_Mapa%20de%20puntos%20cr%C3%ADticos%20de%20proliferaci%C3%B3n%20de%20mosquitos%20en%20el%20campus.png).
 
 La distribución oficial corregida de las zonas críticas en el campus es:
 * **Zona 1 (Verde - Suroeste / Sur):** Zona de Bloques Multifamiliares y Pats (residencias estudiantiles, alta densidad de personas expuestas en horarios matutinos y vespertinos).
@@ -47,6 +47,6 @@ La distribución oficial corregida de las zonas críticas en el campus es:
 ---
 
 ## 5. Próximas Acciones Inmediatas
-1. **Contacto con el mentor:** Escribir al Ing. José Luis Flores (`0982086625`) para alinear expectativas técnicas y criterios clave de evaluación.
+1. **Contacto con el mentor:** Coordinar con el Ing. José Luis Flores vía canal institucional para alinear expectativas técnicas y criterios clave de evaluación.
 2. **Definición de la estrategia integrada:** Consensuar con el equipo la combinación óptima (barreras vegetales repelentes + manejo focalizado de canales hídricos + modelo algorítmico de optimización espacial).
 3. **Redacción técnica:** Empezar a completar la sección de *Diagnóstico y Justificación* en la plantilla Word usando los datos reales del mapa corregido.

@@ -1,5 +1,6 @@
-| Nro. | Cédula / Pasaporte | Nombres | Apellidos | Carrera | Semestre Provisional | Correo Institucional |
+| Nro. | Identificación | Nombres | Apellidos | Carrera | Semestre | Correo Institucional |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 329 | 1005363088 | LUIS ANGEL | COLLAGUAZO ANGULO | BIOMEDICINA | 2 | luis.collaguazo@yachaytech.edu.ec |
-| 566 | 1005085418 | FRANCISCO JOSUE | IBUJES ALMEIDA | QUÍMICA | 2 | francisco.ibujes@yachaytech.edu.ec |
-| 903 | 1005318843 | CHRISTOPHER JORDAN | PICUASI JIMENEZ | COMPUTACIÓN | 3 | christopher.picuasi@yachaytech.edu.ec |
+| 1 | [PROTEGIDO] | JEFFERSON ALFREDO | CONZA FAJARDO | MATEMÁTICAS / COMPUTACIÓN | 9 | jefferson.conza@yachaytech.edu.ec |
+| 329 | [PROTEGIDO] | LUIS ANGEL | COLLAGUAZO ANGULO | BIOMEDICINA | 2 | luis.collaguazo@yachaytech.edu.ec |
+| 566 | [PROTEGIDO] | FRANCISCO JOSUE | IBUJES ALMEIDA | QUÍMICA | 2 | francisco.ibujes@yachaytech.edu.ec |
+| 903 | [PROTEGIDO] | CHRISTOPHER JORDAN | PICUASI JIMENEZ | COMPUTACIÓN | 3 | christopher.picuasi@yachaytech.edu.ec |

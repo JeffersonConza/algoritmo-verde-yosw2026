@@ -3,7 +3,7 @@
 ## Ideatón Yachay Open Science Week 2026 · Reto 3 / Reto 6
 ### Equipo «Algoritmo Verde YT»
 
-**Documento PDF Asociado:** [`Ideaton_Reto6_AlgoritmoVerdeYT.pdf`](file:///mnt/c/Users/jconza/Documents/YOSW/reto3_Control_Arenillas/Ideaton_Reto6_AlgoritmoVerdeYT.pdf)  
+**Documento PDF Asociado:** [`Ideaton_Reto6_AlgoritmoVerdeYT.pdf`](./reto3_Control_Arenillas/Ideaton_Reto6_AlgoritmoVerdeYT.pdf)  
 **Formato de Diapositivas:** Widescreen 16:9 (`figsize=(13.333, 7.5)` in, 300 DPI, tipografía adaptada para auditorio)  
 **Total de Diapositivas:** 12 diapositivas (cumplimiento estricto del límite máximo de 15 diapositivas)  
 **Autores:** Jefferson Conza (Matemáticas / Computación), Christopher Picuasi (Computación), Francisco Ibujés (Química), Luis Collaguazo (Biomedicina)  
@@ -13,7 +13,7 @@
 
 ## 1. Resumen Ejecutivo y Métricas Clave de la Presentación
 
-La presentación [`Ideaton_Reto6_AlgoritmoVerdeYT.pdf`](file:///mnt/c/Users/jconza/Documents/YOSW/reto3_Control_Arenillas/Ideaton_Reto6_AlgoritmoVerdeYT.pdf) sintetiza una solución integral, científicamente rigurosa, económicamente viable y respetuosa con el medio ambiente para controlar la proliferación del complejo de dípteros hematófagos (*Culicoides* spp., *Lutzomyia* spp. y *Simulium* spp.) en el campus de la Universidad Yachay Tech (San Miguel de Urcuquí, Imbabura).
+La presentación [`Ideaton_Reto6_AlgoritmoVerdeYT.pdf`](./reto3_Control_Arenillas/Ideaton_Reto6_AlgoritmoVerdeYT.pdf) sintetiza una solución integral, científicamente rigurosa, económicamente viable y respetuosa con el medio ambiente para controlar la proliferación del complejo de dípteros hematófagos (*Culicoides* spp., *Lutzomyia* spp. y *Simulium* spp.) en el campus de la Universidad Yachay Tech (San Miguel de Urcuquí, Imbabura).
 
 ```mermaid
 flowchart TD
@@ -242,11 +242,11 @@ Al exponer ante el tribunal de evaluación del Ideatón, se recomienda enfocar e
 
 ## 5. Referencias de Archivos Relacionados en el Repositorio
 
-- **Presentación Oficial en PDF:** [`reto3_Control_Arenillas/Ideaton_Reto6_AlgoritmoVerdeYT.pdf`](file:///mnt/c/Users/jconza/Documents/YOSW/reto3_Control_Arenillas/Ideaton_Reto6_AlgoritmoVerdeYT.pdf)
-- **Script Generador de la Presentación:** [`reto3_Control_Arenillas/generar_presentacion_pdf.py`](file:///mnt/c/Users/jconza/Documents/YOSW/reto3_Control_Arenillas/generar_presentacion_pdf.py)
-- **Visor Geoespacial Web Interactivo:** [`reto3_Control_Arenillas/mapa_interactivo_control_arenillas.html`](file:///mnt/c/Users/jconza/Documents/YOSW/reto3_Control_Arenillas/mapa_interactivo_control_arenillas.html)
-- **Script Generador del Visor Web:** [`reto3_Control_Arenillas/generar_mapa_interactivo.py`](file:///mnt/c/Users/jconza/Documents/YOSW/reto3_Control_Arenillas/generar_mapa_interactivo.py)
-- **Modelo de Optimización Matemática SLSQP:** [`reto3_Control_Arenillas/modelo_optimizacion_matematica.py`](file:///mnt/c/Users/jconza/Documents/YOSW/reto3_Control_Arenillas/modelo_optimizacion_matematica.py)
-- **Documento Técnico Extendido:** [`reto3_Control_Arenillas/DOCUMENTO_TECNICO_RETO3_ALGORITMO_VERDE.md`](file:///mnt/c/Users/jconza/Documents/YOSW/reto3_Control_Arenillas/DOCUMENTO_TECNICO_RETO3_ALGORITMO_VERDE.md)
-- **Catálogo de Coordenadas Georreferenciadas:** [`reto3_Control_Arenillas/CATALOGO_PUNTOS_GEOREFERENCIADOS_CAMPUS.md`](file:///mnt/c/Users/jconza/Documents/YOSW/reto3_Control_Arenillas/CATALOGO_PUNTOS_GEOREFERENCIADOS_CAMPUS.md)
-- **Guion Minuto a Minuto del Pitch:** [`reto3_Control_Arenillas/GUION_PITCH_8MIN_ALGORITMO_VERDE.md`](file:///mnt/c/Users/jconza/Documents/YOSW/reto3_Control_Arenillas/GUION_PITCH_8MIN_ALGORITMO_VERDE.md)
+- **Presentación Oficial en PDF:** [`reto3_Control_Arenillas/Ideaton_Reto6_AlgoritmoVerdeYT.pdf`](./reto3_Control_Arenillas/Ideaton_Reto6_AlgoritmoVerdeYT.pdf)
+- **Script Generador de la Presentación:** [`reto3_Control_Arenillas/generar_presentacion_pdf.py`](./reto3_Control_Arenillas/generar_presentacion_pdf.py)
+- **Visor Geoespacial Web Interactivo:** [`reto3_Control_Arenillas/mapa_interactivo_control_arenillas.html`](./reto3_Control_Arenillas/mapa_interactivo_control_arenillas.html)
+- **Script Generador del Visor Web:** [`reto3_Control_Arenillas/generar_mapa_interactivo.py`](./reto3_Control_Arenillas/generar_mapa_interactivo.py)
+- **Modelo de Optimización Matemática SLSQP:** [`reto3_Control_Arenillas/modelo_optimizacion_matematica.py`](./reto3_Control_Arenillas/modelo_optimizacion_matematica.py)
+- **Documento Técnico Extendido:** [`reto3_Control_Arenillas/DOCUMENTO_TECNICO_RETO3_ALGORITMO_VERDE.md`](./reto3_Control_Arenillas/DOCUMENTO_TECNICO_RETO3_ALGORITMO_VERDE.md)
+- **Catálogo de Coordenadas Georreferenciadas:** [`reto3_Control_Arenillas/CATALOGO_PUNTOS_GEOREFERENCIADOS_CAMPUS.md`](./reto3_Control_Arenillas/CATALOGO_PUNTOS_GEOREFERENCIADOS_CAMPUS.md)
+- **Guion Minuto a Minuto del Pitch:** [`reto3_Control_Arenillas/GUION_PITCH_8MIN_ALGORITMO_VERDE.md`](./reto3_Control_Arenillas/GUION_PITCH_8MIN_ALGORITMO_VERDE.md)
